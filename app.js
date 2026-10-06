@@ -34,7 +34,10 @@
 
   // ---------- data ----------
   function buildIndex(raw) {
-    const campaigns = raw.campaigns.map((c, i) => ({ ...c, id: i, talent: c.talent || [], sources: c.sources || [] }));
+    const campaigns = raw.campaigns.map((c, i) => {
+      const images = (c.images || (c.image ? [{ src: c.image }] : [])).map(img => ({ talent: [], ...img }));
+      return { ...c, id: i, talent: c.talent || [], sources: c.sources || [], images };
+    });
     campaigns.sort(byNewest);
 
     const brands = new Map();
@@ -61,13 +64,35 @@
     return { updated: raw.updated, campaigns, brands, models };
   }
 
-  // ---------- components ----------
-  function visual(c, cls) {
-    if (c.image) {
-      const alt = `${c.talent.join(', ')} for ${c.brand}, ${label(c)}`;
-      return `<img src="${esc(c.image)}" alt="${esc(alt)}" loading="lazy">`;
-    }
-    return `<div class="placeholder ${cls || ''}"><b>${esc(c.brand)}</b><span>${esc(label(c))}</span></div>`;
+  // ---------- photos ----------
+  // Photos of one person in a campaign: the ones tagged with her first, then untagged group shots.
+  // With no person given, every photo of the campaign.
+  function photosOf(c, person) {
+    if (!person) return c.images;
+    const mine = c.images.filter(i => i.talent.includes(person));
+    const group = c.images.filter(i => !i.talent.length);
+    return mine.length || group.length ? [...mine, ...group] : [];
+  }
+  const altText = (c, img) => `${(img.talent.length ? img.talent : c.talent).join(', ')} for ${c.brand}, ${label(c)}`;
+  // On a model page only her own (or group) photos qualify, so another model's shot never stands in for her.
+  const coverOf = (c, person) => person ? photosOf(c, person)[0] : c.images[0];
+
+  // Every clickable photo carries data-c (campaign id) and data-i (index in c.images) for the lightbox.
+  const photoTag = (c, img, extra = '') =>
+    `<img src="${esc(img.src)}" alt="${esc(altText(c, img))}" loading="lazy" data-c="${c.id}" data-i="${c.images.indexOf(img)}" ${extra}>`;
+
+  function visual(c, person) {
+    const img = coverOf(c, person);
+    if (img) return photoTag(c, img);
+    return `<div class="placeholder"><b>${esc(c.brand)}</b><span>${esc(label(c))}</span></div>`;
+  }
+
+  // A strip of photos. `max` limits how many show; the last tile then says how many more there are.
+  function gallery(c, person, max = 6) {
+    const imgs = photosOf(c, person);
+    if (!imgs.length) return '';
+    const shown = imgs.slice(0, max), more = imgs.length - shown.length;
+    return `<div class="gallery">${shown.map((img, n) => `<button class="shot" type="button" aria-label="Open photo: ${esc(altText(c, img))}">${photoTag(c, img)}${n === shown.length - 1 && more > 0 ? `<span class="more">+${more}</span>` : ''}</button>`).join('')}</div>`;
   }
 
   const sources = c => c.sources.length
@@ -81,31 +106,49 @@
 
   const card = c => `
     <article class="card">
-      <a class="card-img" href="#/brand/${slug(c.brand)}" aria-label="${esc(c.brand)} campaigns">${visual(c)}</a>
+      <a class="card-img" href="#/brand/${slug(c.brand)}" aria-label="${esc(c.brand)} campaigns">${visual(c)}${c.images.length > 1 ? `<span class="count-badge">${c.images.length} photos</span>` : ''}</a>
       <div class="card-meta">${brandLink(c.brand)}<a href="#/year/${c.year}">${esc(label(c))}</a></div>
       <h3>${list(c.talent)}</h3>
       ${credits(c)}${sources(c)}
     </article>`;
 
-  // One row on a timeline. `focus` decides what the headline shows: the models (brand page) or the brand (model page).
-  const entry = (c, focus) => `
-    <div class="entry">
-      <div class="entry-thumb">${visual(c)}</div>
+  // One row on a timeline. On a brand page the headline is the models; on a model page (person given) it is the brand.
+  function entry(c, person) {
+    const others = person ? c.talent.filter(t => t !== person) : [];
+    const pics = gallery(c, person);
+    return `
+    <div class="entry${pics ? ' has-photos' : ''}">
+      ${pics ? '' : `<div class="entry-thumb">${visual(c, person)}</div>`}
       <div>
         <div class="season">${esc(c.season || '')}</div>
-        <h3>${focus === 'brand' ? brandLink(c.brand) : list(c.talent)}</h3>
-        ${focus === 'brand' && c.talent.length > 1 ? `<p>With ${list(c.talent)}</p>` : ''}
+        <h3>${person ? brandLink(c.brand) : list(c.talent)}</h3>
+        ${others.length ? `<p>With ${list(others)}</p>` : ''}
         ${credits(c)}${sources(c)}
       </div>
+      ${pics}
     </div>`;
+  }
 
-  function timeline(campaigns, focus) {
+  function timeline(campaigns, person) {
     const years = groupBy(campaigns, c => c.year);
     return [...years].map(([y, cs]) => `
       <section class="year-block" id="y${y}">
         <h2><a href="#/year/${y}" style="text-decoration:none">${y}</a></h2>
-        <div class="entries">${cs.map(c => entry(c, focus)).join('')}</div>
+        <div class="entries">${cs.map(c => entry(c, person)).join('')}</div>
       </section>`).join('');
+  }
+
+  // A model as a card: her best photo, and the brands she has fronted.
+  function modelCard(m) {
+    const c = m.campaigns.find(x => photosOf(x, m.name).length) || m.campaigns[0];
+    const brands = [...new Set(m.campaigns.map(x => x.brand))];
+    return `
+    <article class="card">
+      <a class="card-img" href="#/model/${slug(m.name)}">${visual(c, m.name).replace(/ data-c="[^"]*" data-i="[^"]*"/, '')}</a>
+      <div class="card-meta"><span>${plural(m.campaigns.length, 'campaign')}</span><span>${range(m.first, m.last)}</span></div>
+      <h3>${modelLink(m.name)}</h3>
+      <p>${brands.map(brandLink).join(' · ')}</p>
+    </article>`;
   }
 
   function directory(items, href) {
@@ -122,7 +165,7 @@
     const { campaigns, brands, models } = db;
     const latestYear = campaigns[0]?.year;
     const latest = campaigns.filter(c => c.year === latestYear);
-    const hero = latest.find(c => c.featured && c.image) || latest.find(c => c.image) || campaigns.find(c => c.image);
+    const hero = latest.find(c => c.featured && c.images.length) || latest.find(c => c.images.length) || campaigns.find(c => c.images.length);
     const years = [...groupBy(campaigns, c => c.year)];
     const allYears = campaigns.map(c => c.year);
     const topBrands = [...brands.values()].sort((a, b) => b.campaigns.length - a.campaigns.length || a.name.localeCompare(b.name)).slice(0, 14);
@@ -184,20 +227,23 @@
         <p class="lede">${plural(b.campaigns.length, 'campaign')} · ${plural(faces.size, 'face')} · ${range(b.first, b.last)}</p>
       </section>
       ${years.length > 1 ? `<div class="chips">${years.map(y => `<a class="chip" href="#y${y}" data-jump="y${y}">${y}</a>`).join('')}</div>` : ''}
-      ${timeline(b.campaigns, 'models')}`;
+      ${timeline(b.campaigns)}`;
   }
 
   function viewModel(s) {
     const m = db.models.get(s);
     if (!m) return notFound('model');
-    const brands = new Set(m.campaigns.map(c => c.brand));
+    const brands = groupBy(m.campaigns, c => c.brand);
+    const photos = m.campaigns.reduce((n, c) => n + photosOf(c, m.name).length, 0);
     return `
       <section class="page-head">
         <div class="eyebrow">Model / campaign face</div>
         <h1>${esc(m.name)}</h1>
-        <p class="lede">${plural(m.campaigns.length, 'campaign')} for ${plural(brands.size, 'brand')} · ${range(m.first, m.last)}</p>
+        <p class="lede">${plural(m.campaigns.length, 'campaign')} for ${plural(brands.size, 'brand')} · ${range(m.first, m.last)}${photos ? ` · ${plural(photos, 'photo')}` : ''}</p>
       </section>
-      ${timeline(m.campaigns, 'brand')}`;
+      <div class="chips"><span class="chips-label">Advertised for</span>${[...brands].map(([b, cs]) =>
+        `<a class="chip" href="#/brand/${slug(b)}">${esc(b)}<small>${cs.map(label).join(', ')}</small></a>`).join('')}</div>
+      ${timeline(m.campaigns, m.name)}`;
   }
 
   function viewYear(y) {
@@ -232,7 +278,7 @@
         <p class="lede">${total ? `${plural(brands.length, 'brand')} · ${plural(models.length, 'face')} · ${plural(campaigns.length, 'campaign')}` : 'No matches yet. The archive is growing, so try another spelling or check back later.'}</p>
       </section>
       ${brands.length ? `<div class="results-group"><h2>Brands</h2><div class="directory">${brands.map(b => `<a href="#/brand/${slug(b.name)}"><span>${esc(b.name)}</span><small>${plural(b.campaigns.length, 'campaign')} · ${range(b.first, b.last)}</small></a>`).join('')}</div></div>` : ''}
-      ${models.length ? `<div class="results-group"><h2>Faces</h2><div class="directory">${models.map(m => `<a href="#/model/${slug(m.name)}"><span>${esc(m.name)}</span><small>${plural(m.campaigns.length, 'campaign')} · ${range(m.first, m.last)}</small></a>`).join('')}</div></div>` : ''}
+      ${models.length ? `<div class="results-group"><h2>Faces</h2><div class="grid">${models.map(modelCard).join('')}</div></div>` : ''}
       ${campaigns.length ? `<div class="results-group"><h2>Campaigns</h2><div class="grid">${campaigns.map(card).join('')}</div></div>` : ''}`;
   }
 
@@ -278,6 +324,51 @@
     return `<section class="page-head"><h1>Not found</h1><p class="lede">That ${what} isn't in the archive yet. <a href="#/">Back to the start</a>.</p></section>`;
   }
 
+  // ---------- lightbox ----------
+  const box = document.getElementById('lightbox');
+  let boxSet = [], boxAt = 0;
+
+  // The set a photo opens into: the photos of that campaign shown in the same gallery (or the whole campaign).
+  function openPhoto(img) {
+    const c = db.campaigns.find(x => x.id === Number(img.dataset.c));
+    const gal = img.closest('.gallery');
+    const person = gal && decodeURIComponent((location.hash.match(/^#\/model\/(.+)$/) || [])[1] || '');
+    const m = person && db.models.get(person);
+    const set = m ? photosOf(c, m.name) : [];
+    boxSet = (set.length ? set : c.images).map(i => ({ c, img: i }));
+    boxAt = Math.max(0, boxSet.findIndex(x => x.img === c.images[Number(img.dataset.i)]));
+    showPhoto();
+    if (!box.open) box.showModal();
+  }
+  function showPhoto() {
+    const { c, img } = boxSet[boxAt];
+    const who = img.talent.length ? img.talent : c.talent;
+    box.querySelector('.lb-img').innerHTML = `<img src="${esc(img.src)}" alt="${esc(altText(c, img))}">`;
+    box.querySelector('.lb-caption').innerHTML = `
+      <div class="eyebrow">${brandLink(c.brand)} · ${esc(label(c))}</div>
+      <h3>${list(who)}</h3>
+      ${c.photographer ? `<p>Photography: ${esc(c.photographer)}</p>` : ''}
+      ${sources(c)}
+      ${boxSet.length > 1 ? `<p class="lb-count">${boxAt + 1} / ${boxSet.length}</p>` : ''}`;
+    box.querySelectorAll('.lb-nav').forEach(b => { b.hidden = boxSet.length < 2; });
+  }
+  const step = d => { boxAt = (boxAt + d + boxSet.length) % boxSet.length; showPhoto(); };
+  box.querySelector('.lb-prev').addEventListener('click', () => step(-1));
+  box.querySelector('.lb-next').addEventListener('click', () => step(1));
+  box.querySelector('.lb-close').addEventListener('click', () => box.close());
+  box.addEventListener('click', e => { if (e.target === box || e.target.closest('a')) box.close(); });
+  box.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft') step(-1);
+    if (e.key === 'ArrowRight') step(1);
+  });
+  let touchX = null;
+  box.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+  box.addEventListener('touchend', e => {
+    if (touchX === null || boxSet.length < 2) return;
+    const dx = e.changedTouches[0].clientX - touchX; touchX = null;
+    if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1);
+  });
+
   // ---------- router ----------
   function route() {
     if (!db) return;
@@ -299,6 +390,9 @@
 
   // In-page year jumps on brand pages (plain #y2017 anchors would be treated as routes).
   app.addEventListener('click', e => {
+    const shot = e.target.closest('.shot, .hero-image, .entry-thumb');
+    const img = shot && shot.querySelector('img[data-c]');
+    if (img) { e.preventDefault(); openPhoto(img); return; }
     const a = e.target.closest('[data-jump]');
     if (a) { e.preventDefault(); document.getElementById(a.dataset.jump)?.scrollIntoView({ behavior: 'smooth' }); }
   });
