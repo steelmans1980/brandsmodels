@@ -1,0 +1,254 @@
+{
+  "updated": "2026-10-06",
+  "brands": {
+    "bebe": { "aliases": ["bébé", "bebe stores"], "country": "United States" },
+    "Mango": { "country": "Spain" },
+    "Guess": { "aliases": ["guess jeans", "guess?"], "country": "United States" },
+    "FRAME": { "country": "United States" },
+    "Gucci": { "country": "Italy" },
+    "Hunter": { "country": "United Kingdom" },
+    "J.Crew": { "aliases": ["jcrew", "j crew"], "country": "United States" },
+    "Fendi": { "country": "Italy" },
+    "Miu Miu": { "country": "Italy" },
+    "Calvin Klein": { "aliases": ["ck"], "country": "United States" },
+    "Tommy Hilfiger": { "country": "United States" },
+    "Marc Jacobs": { "country": "United States" },
+    "Michael Kors": { "country": "United States" },
+    "Burberry": { "country": "United Kingdom" },
+    "Simkhai": { "country": "United States" },
+    "Zadig & Voltaire": { "aliases": ["zadig et voltaire", "zadig and voltaire"], "country": "France" },
+    "Free People": { "country": "United States" },
+    "Saint Laurent": { "aliases": ["ysl", "yves saint laurent"], "country": "France" },
+    "COS": { "country": "United Kingdom" },
+    "Kate Spade New York": { "aliases": ["kate spade"], "country": "United States" },
+    "Gap": { "country": "United States" },
+    "Alo": { "aliases": ["alo yoga"], "country": "United States" },
+    "7 For All Mankind": { "aliases": ["seven for all mankind"], "country": "United States" },
+    "Loewe": { "country": "Spain" },
+    "Alaïa": { "aliases": ["alaia"], "country": "France" },
+    "JW Anderson": { "country": "United Kingdom" }
+  },
+  "campaigns": [
+    {
+      "brand": "FRAME", "year": 2026, "season": "Fall/Winter",
+      "talent": ["Kendall Jenner"], "photographer": "Robin Galiegue",
+      "note": "Set in the Hollywood Hills.", "image": "assets/frame.jpg", "featured": true,
+      "sources": [{ "name": "ELLE", "url": "https://www.elle.com/fashion/g71231506/best-fall-winter-2026-campaigns/" }]
+    },
+    {
+      "brand": "Gucci", "year": 2026, "season": "Fall/Winter", "title": "Primavera",
+      "talent": ["Alex Consani", "Kate Moss", "Rico Nasty"], "photographer": "Michal Chelbin",
+      "image": "assets/gucci.jpg",
+      "sources": [
+        { "name": "NYLON", "url": "https://www.nylon.com/fashion/gucci-primavera-fall-winter-2026-campaign" },
+        { "name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns" }
+      ]
+    },
+    {
+      "brand": "Hunter", "year": 2026, "season": "Fall/Winter",
+      "talent": ["Kate Moss"], "photographer": "Mikael Jansson",
+      "note": "Hunter's 170th-anniversary campaign.", "image": "assets/hunter.jpg",
+      "sources": [{ "name": "ELLE", "url": "https://www.elle.com/fashion/g71231506/best-fall-winter-2026-campaigns/" }]
+    },
+    {
+      "brand": "J.Crew", "year": 2026, "season": "Fall/Winter",
+      "talent": ["Hari Nef"], "photographer": "Robert Nethery", "image": "assets/jcrew.jpg",
+      "sources": [{ "name": "ELLE", "url": "https://www.elle.com/fashion/g71231506/best-fall-winter-2026-campaigns/" }]
+    },
+    {
+      "brand": "Fendi", "year": 2026, "season": "Fall/Winter",
+      "talent": ["Yara Shahidi"], "photographer": "Laura Sciacovelli",
+      "note": "Puts the Peekaboo bag in focus.", "image": "assets/fendi.jpg",
+      "sources": [{ "name": "ELLE", "url": "https://www.elle.com/fashion/g71231506/best-fall-winter-2026-campaigns/" }]
+    },
+    {
+      "brand": "Miu Miu", "year": 2026, "season": "Fall/Winter", "title": "After Dark",
+      "talent": ["Hailey Bieber", "Xiao Wen Ju"], "photographer": "Zoe Ghertner",
+      "sources": [
+        { "name": "Complex", "url": "https://www.complex.com/style/a/treyalston/hailey-bieber-miu-miu-fall-2026-campaign-xiao-wen-ju" },
+        { "name": "The Impression", "url": "https://theimpression.com/miu-miu-fall-2026-ad-campaign-review/" }
+      ]
+    },
+    {
+      "brand": "Calvin Klein", "year": 2026, "season": "Fall", "title": "Feel the Fit (denim)",
+      "talent": ["Tate McRae"], "photographer": "Carlijn Jacobs",
+      "sources": [{ "name": "FashionUnited", "url": "https://fashionunited.com/news/fashion/tate-mcrae-joins-calvin-kleins-celebrity-campaign-roster/2026082574254" }]
+    },
+    {
+      "brand": "Calvin Klein", "year": 2026, "season": "Fall",
+      "talent": ["Sadie Sink"], "photographer": "Aidan Zamiri",
+      "sources": [{ "name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns" }]
+    },
+    {
+      "brand": "Tommy Hilfiger", "year": 2026, "season": "Fall",
+      "talent": ["Gigi Hadid", "Jisoo"], "photographer": "Lachlan Bailey",
+      "sources": [{ "name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns" }]
+    },
+    {
+      "brand": "Marc Jacobs", "year": 2026, "season": "Fall",
+      "talent": ["Jemima Kirke", "Rowan Blanchard"],
+      "sources": [{ "name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns" }]
+    },
+    {
+      "brand": "Michael Kors", "year": 2026, "season": "Fall",
+      "talent": ["Lea Michele", "Audra McDonald", "Sutton Foster", "Misty Copeland", "Judith Light", "Kara Young"],
+      "photographer": "Inez & Vinoodh",
+      "sources": [{ "name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns" }]
+    },
+    {
+      "brand": "Burberry", "year": 2026, "season": "Fall",
+      "talent": ["FKA twigs"], "photographer": "Glen Luchford",
+      "sources": [{ "name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns" }]
+    },
+    {
+      "brand": "Simkhai", "year": 2026, "season": "Fall",
+      "talent": ["Naomi Watts", "Kai Schreiber"],
+      "sources": [{ "name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns" }]
+    },
+    {
+      "brand": "Zadig & Voltaire", "year": 2026, "season": "Fall",
+      "talent": ["Lila Moss"], "note": "Lila Moss's first season as the brand's new muse.",
+      "sources": [{ "name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns" }]
+    },
+    {
+      "brand": "Free People", "year": 2026, "season": "Fall",
+      "talent": ["Willow"], "photographer": "Zoey Grossman",
+      "sources": [{ "name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns" }]
+    },
+    {
+      "brand": "Saint Laurent", "year": 2026, "season": "Fall",
+      "talent": ["Rosé", "Liu Wen"], "photographer": "Talia Chetrit",
+      "sources": [{ "name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns" }]
+    },
+    {
+      "brand": "COS", "year": 2026, "season": "Fall",
+      "talent": ["Park Gyuyoung", "Awar Odhiang", "Noor Khan", "Alaina Rae"], "photographer": "Mark Kean",
+      "sources": [{ "name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns" }]
+    },
+    {
+      "brand": "Kate Spade New York", "year": 2026, "season": "Fall",
+      "talent": ["Tyla"],
+      "sources": [{ "name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns" }]
+    },
+    {
+      "brand": "Gap", "year": 2026, "season": "Fall",
+      "talent": ["Inde Navarrette"], "photographer": "Bjorn Iooss",
+      "sources": [{ "name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns" }]
+    },
+    {
+      "brand": "Alo", "year": 2026, "season": "Fall",
+      "talent": ["Kylie Jenner"], "photographer": "Mert & Marcus",
+      "note": "Kylie Jenner's first campaign as the official face of Alo.",
+      "sources": [{ "name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns" }]
+    },
+    {
+      "brand": "7 For All Mankind", "year": 2026, "season": "Fall",
+      "talent": ["Chloë Sevigny"], "photographer": "Marili Andre",
+      "sources": [{ "name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns" }]
+    },
+    {
+      "brand": "Loewe", "year": 2026, "season": "Fall",
+      "talent": ["Julia Garner"], "photographer": "Talia Chetrit",
+      "sources": [{ "name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns" }]
+    },
+    {
+      "brand": "Alaïa", "year": 2026, "season": "Fall",
+      "talent": ["Teyana Taylor"], "photographer": "David Sims",
+      "sources": [{ "name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns" }]
+    },
+    {
+      "brand": "JW Anderson", "year": 2026, "season": "Fall",
+      "talent": ["Dree Hemingway"],
+      "sources": [{ "name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns" }]
+    },
+
+    {
+      "brand": "bebe", "year": 2017, "season": "Fall", "title": "Be Bold. Be Different. Be You.",
+      "talent": ["Jasmine Sanders", "Inka Williams", "Pia Mia", "Herizen Guardiola"], "photographer": "Emma Summerton",
+      "sources": [{ "name": "NYLON", "url": "https://www.nylon.com/articles/bebe-fall-2017-campaign" }]
+    },
+    {
+      "brand": "bebe", "year": 2017, "season": "Spring",
+      "talent": ["Hailey Clauson"],
+      "sources": [{ "name": "Bellazon", "url": "https://www.bellazon.com/blog/hailey-clauson-strikes-a-pose-for-bebe/" }]
+    },
+    {
+      "brand": "bebe", "year": 2016, "season": "Holiday",
+      "talent": ["Hailey Clauson"],
+      "sources": [{ "name": "Bellazon", "url": "https://www.bellazon.com/blog/hailey-clauson-strikes-a-pose-for-bebe/" }]
+    },
+    {
+      "brand": "bebe", "year": 2019, "season": "Full year",
+      "talent": ["Bebe Rexha"], "note": "Singer; face of bebe's 2019 campaign.",
+      "sources": [{ "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Bebe_Stores" }]
+    },
+    {
+      "brand": "bebe", "year": 2009, "season": "Spring",
+      "talent": ["Anne Marie van Dijk"], "photographer": "Camilla Åkrans",
+      "note": "Shot in Beverly Hills.",
+      "sources": [{ "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Bebe_Stores" }]
+    },
+    {
+      "brand": "bebe", "year": 2007, "season": "Spring",
+      "talent": ["Rebecca Romijn"], "note": "Face of bebe from Spring 2007 through Spring 2008.",
+      "sources": [{ "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Bebe_Stores" }]
+    },
+    {
+      "brand": "bebe", "year": 2007, "season": "Spring", "title": "bebe sport",
+      "talent": ["Eva Longoria"], "note": "Face of bebe sport from Spring 2007 through Spring 2009.",
+      "sources": [{ "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Bebe_Stores" }]
+    },
+    {
+      "brand": "bebe", "year": 2007, "season": "Full year",
+      "talent": ["Brenda Song"],
+      "sources": [{ "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Bebe_Stores" }]
+    },
+    {
+      "brand": "bebe", "year": 2006, "season": "Full year",
+      "talent": ["Mischa Barton"],
+      "sources": [{ "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Bebe_Stores" }]
+    },
+
+    {
+      "brand": "Mango", "year": 2016, "season": "Spring", "title": "Tribal Spirit",
+      "talent": ["Kendall Jenner"],
+      "sources": [{ "name": "HuffPost", "url": "https://www.huffingtonpost.ca/2016/01/14/kendall-jenner-mango_n_8979120.html" }]
+    },
+    {
+      "brand": "Mango", "year": 2015, "season": "Fall/Winter",
+      "talent": ["Kate Moss", "Cara Delevingne"],
+      "sources": [{ "name": "The Upcoming", "url": "https://theupcoming.co.uk/?p=216660" }]
+    },
+    {
+      "brand": "Mango", "year": 2014, "season": "Spring/Summer",
+      "talent": ["Daria Werbowy"], "photographer": "Josh Olins", "note": "Shot in Lanzarote.",
+      "sources": [{ "name": "Grazia", "url": "https://graziadaily.co.uk/fashion/news/daria-werbowy-s-spring-summer-2014-mango-campaign-landed-compare-miranda-kerr" }]
+    },
+    {
+      "brand": "Mango", "year": 2013, "season": "Spring/Summer",
+      "talent": ["Miranda Kerr"], "note": "Took over from Kate Moss; fronted two seasons.",
+      "sources": [{ "name": "HELLO!", "url": "https://www.hellomagazine.com/fashion/437420/miranda-kerr-mango/" }]
+    },
+    {
+      "brand": "Mango", "year": 2012, "season": "Full year",
+      "talent": ["Kate Moss"], "note": "Face of Mango from January 2012.",
+      "sources": [{ "name": "HELLO!", "url": "https://www.hellomagazine.com/fashion/437420/miranda-kerr-mango/" }]
+    },
+
+    {
+      "brand": "Guess", "year": 2018, "season": "Fall",
+      "talent": ["Jennifer Lopez"],
+      "sources": [{ "name": "W Magazine", "url": "https://www.wmagazine.com/gallery/guess-best-ad-campaigns" }]
+    },
+    {
+      "brand": "Guess", "year": 1992, "season": "Full year",
+      "talent": ["Anna Nicole Smith"], "note": "Replaced Claudia Schiffer as the face of Guess.",
+      "sources": [{ "name": "W Magazine", "url": "https://www.wmagazine.com/gallery/guess-best-ad-campaigns" }]
+    },
+    {
+      "brand": "Guess", "year": 1989, "season": "Full year",
+      "talent": ["Claudia Schiffer"], "note": "Appeared in six Guess campaigns between 1989 and 1991.",
+      "sources": [{ "name": "WWD", "url": "https://wwd.com/business-news/marketing-promotion/feature/claudia-schiffer-helps-guess-mark-three-decades-5829423-652909" }]
+    }
+  ]
+}
