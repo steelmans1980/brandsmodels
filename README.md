@@ -5,7 +5,7 @@ Example: search **bebe** and you'll see that Hailey Clauson fronted its Spring 2
 
 ## How it works
 
-Plain static site, no build step, deployed by Cloudflare Pages straight from this repo.
+Plain static site, no build step, deployed by Cloudflare straight from this repo.
 
 | File | Purpose |
 |---|---|
@@ -15,7 +15,7 @@ Plain static site, no build step, deployed by Cloudflare Pages straight from thi
 | `data/campaigns.json` | **The data.** Edit this to add campaigns |
 | `assets/` | Campaign images (only those from credited press coverage) |
 
-Cloudflare Pages settings: framework preset **None**, build command empty, output directory `/`.
+Cloudflare (Workers): build command empty, deploy command `npx wrangler deploy`. `wrangler.jsonc` serves the repo root as static files; `.assetsignore` keeps `.git`, this README and the config files off the site.
 
 ## Adding a campaign
 
