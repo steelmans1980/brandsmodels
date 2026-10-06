@@ -28,7 +28,9 @@ Add one object to the `campaigns` array in `data/campaigns.json`:
   "photographer": "optional",
   "title": "optional campaign name",
   "note": "optional one-line note",
-  "image": "optional, e.g. assets/bebe-ss17.jpg",
+  "images": [
+    { "src": "assets/campaigns/bebe-2017-spring-1.jpg", "talent": ["Hailey Clauson"] }
+  ],
   "sources": [{ "name": "Bellazon", "url": "https://…" }]
 }
 ```
@@ -36,6 +38,9 @@ Add one object to the `campaigns` array in `data/campaigns.json`:
 - `season`: one of `Full year` (use when only the year is known), `Resort`, `Cruise`, `Spring`, `Spring/Summer`, `Summer`, `Pre-Fall`, `Fall`, `Fall/Winter`, `Winter`, `Holiday`.
 - If the brand is new, also add it to the `brands` object (country and search aliases, e.g. `"bébé"`). Search ignores accents and case.
 - Always include at least one source link.
+- Photos go in `assets/campaigns/`, named `brand-year-season-N.jpg`, resized to at most 1200px on the long side.
+  Tag each photo with who is in it (`talent`); leave it out for group shots. A model's page shows her
+  tagged photos plus group shots, and never another model's solo shot. The first photo is the cover.
 - Bump `"updated"` at the top of the file.
 
 ## Local preview

@@ -304,7 +304,7 @@
     <div class="prose">
       <p>The Campaign Edit records which women have fronted the advertising campaigns of the world's clothing brands, and when. Search a brand to see all its faces by year and season, or search a model to see every brand she has worked for.</p>
       <p>Every entry links to the published coverage it is based on. Where a source gives only a year and no season, the entry is marked “Full year”. The archive is a work in progress, not a complete record. If you know of a campaign that is missing, it can be added.</p>
-      <p>Brand names and campaign photographs belong to their respective owners. Images appear only where they come with credited press coverage; other entries show a plain title card.</p>
+      <p>Brand names and campaign photographs belong to their respective owners. Photos are taken from the press coverage each entry links to; entries without one show a plain title card. Each photo is tagged with who appears in it, so a model’s page shows her own shots first.</p>
       <h2>Adding a campaign</h2>
       <p>All data lives in <code>data/campaigns.json</code>. Add one object per campaign:</p>
       <pre>{
@@ -313,7 +313,9 @@
   "photographer": "optional",
   "title": "optional campaign name",
   "note": "optional one-line note",
-  "image": "optional, e.g. assets/bebe-ss17.jpg",
+  "images": [
+    { "src": "assets/campaigns/bebe-2017-spring-1.jpg", "talent": ["Hailey Clauson"] }
+  ],
   "featured": "optional, true = show in the home page spotlight",
   "sources": [{ "name": "Publication", "url": "https://…" }]
 }</pre>
