@@ -1,4 +1,4 @@
-// The Campaign Edit — static archive of brand campaigns and the women who fronted them.
+// The Model Archive — models and their work for brands and fashion designers: campaigns, runway shows, ambassadorships.
 // All data lives in data/campaigns.json; this file only reads and renders it.
 (() => {
   'use strict';
@@ -9,6 +9,10 @@
     'Pre-Fall': 4, 'Fall': 5, 'Fall/Winter': 5, 'Winter': 6, 'Holiday': 7
   };
   const SEARCH_LIMIT = 60;
+  const SITE = 'The Model Archive';
+  const OWNER_EMAIL = 'marwan@gedeon.org';
+  const KIND_LABEL = { runway: 'Runway show', ambassador: 'Ambassador' };
+  const TYPE_LABEL = { designer: 'Fashion house / designer', brand: 'Brand / retailer' };
 
   const app = document.getElementById('app');
   const searchInput = document.getElementById('search');
@@ -112,6 +116,8 @@
   const sourceLinks = srcs => srcs.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)} ↗</a>`).join(' · ');
   const sources = c => c.sources.length ? `<div class="sources">Source: ${sourceLinks(c.sources)}</div>` : '';
 
+  const kindBadge = c => KIND_LABEL[c.kind] ? `<span class="kind kind-${esc(c.kind)}">${KIND_LABEL[c.kind]}</span>` : '';
+
   const credits = c => [
     c.title ? `<p><em>${esc(c.title)}</em></p>` : '',
     c.photographer ? `<p>Photography: ${esc(c.photographer)}</p>` : '',
@@ -123,7 +129,7 @@
       <a class="card-img" href="#/brand/${slug(c.brand)}" aria-label="${esc(c.brand)} campaigns">${visual(c)}${c.images.length > 1 ? `<span class="count-badge">${c.images.length} photos</span>` : ''}</a>
       <div class="card-meta">${brandLink(c.brand)}${dated(c) ? `<a href="#/year/${c.year}">${esc(label(c))}</a>` : `<span>${esc(label(c))}</span>`}</div>
       <h3>${list(c.talent)}</h3>
-      ${credits(c)}${sources(c)}
+      ${kindBadge(c)}${credits(c)}${sources(c)}
     </article>`;
 
   // One row on a timeline. On a brand page the headline is the models; on a model page (person given) it is the brand.
@@ -135,7 +141,7 @@
     <div class="entry${pics ? ' has-photos' : cover ? '' : ' text-only'}">
       ${pics || !cover ? '' : `<div class="entry-thumb">${visual(c, person)}</div>`}
       <div>
-        <div class="season">${esc(seasonOf(c))}</div>
+        <div class="season">${esc(seasonOf(c))}${kindBadge(c)}</div>
         <h3>${person ? brandLink(c.brand) : list(c.talent)}</h3>
         ${others.length ? `<p>With ${list(others)}</p>` : ''}
         ${credits(c)}${sources(c)}
@@ -147,7 +153,7 @@
   // Campaigns without photos, one line each: brand and season, the faces, the sources.
   const rows = cs => cs.length ? `<ul class="rows">${cs.map(c => `
     <li><span class="row-brand">${brandLink(c.brand)}<small>${esc(label(c))}</small></span>
-      <span class="row-who">${list(c.talent)}${c.title ? ` <em>${esc(c.title)}</em>` : ''}${c.note ? ` <span class="note">${esc(c.note)}</span>` : ''}</span>
+      <span class="row-who">${kindBadge(c)}${list(c.talent)}${c.title ? ` <em>${esc(c.title)}</em>` : ''}${c.note ? ` <span class="note">${esc(c.note)}</span>` : ''}</span>
       <span class="src">${sourceLinks(c.sources)}</span></li>`).join('')}</ul>` : '';
   // Photo cards first, then the rest as rows.
   const cardsThenRows = cs => {
@@ -163,9 +169,9 @@
       <section class="year-block undated" id="undated">
         <h2>Year not recorded</h2>
         <div>
-          <p class="hint">${person ? 'Brands she fronted' : 'Faces of this brand'} where the source gives no year.</p>
+          <p class="hint">${person ? 'Labels she worked for' : 'Models who worked for this label'} where the source gives no year.</p>
           <ul class="undated-list">${rows.map(c => `
-            <li><span class="who">${person ? brandLink(c.brand) : list(c.talent)}</span>
+            <li><span class="who">${person ? brandLink(c.brand) : list(c.talent)}</span>${kindBadge(c)}
               ${c.title ? `<em>${esc(c.title)}</em>` : ''}${c.note ? `<span class="note">${esc(c.note)}</span>` : ''}
               <span class="src">${sourceLinks(c.sources)}</span></li>`).join('')}
           </ul>
@@ -182,7 +188,7 @@
       </section>`).join('') + undatedBlock(campaigns.filter(c => !dated(c)), person);
   }
 
-  // A model as a card: her best photo (campaign shot, else portrait), and the brands she has fronted.
+  // A model as a card: her best photo (campaign shot, else portrait), and the labels she has worked for.
   function modelCard(m) {
     const c = m.campaigns.find(x => photosOf(x, m.name).length);
     const brands = [...new Set(m.campaigns.map(x => x.brand))];
@@ -191,7 +197,7 @@
     return `
     <article class="card">
       <a class="card-img" href="#/model/${slug(m.name)}">${img}</a>
-      <div class="card-meta"><span>${plural(m.campaigns.length, 'campaign')}</span><span>${range(m.first, m.last)}</span></div>
+      <div class="card-meta"><span>${plural(m.campaigns.length, 'credit')}</span><span>${range(m.first, m.last)}</span></div>
       <h3>${modelLink(m.name)}</h3>
       <p>${brands.slice(0, 12).map(brandLink).join(' · ')}${brands.length > 12 ? ` · +${brands.length - 12} more` : ''}</p>
     </article>`;
@@ -201,8 +207,8 @@
     const sorted = [...items].sort((a, b) => norm(a.name).localeCompare(norm(b.name)));
     const letters = groupBy(sorted, x => { const ch = norm(x.name)[0] || '#'; return /[a-z]/.test(ch) ? ch.toUpperCase() : '#'; });
     const meta = x => what === 'model'
-      ? `${plural(x.brandCount, 'brand')} · ${range(x.first, x.last)}`
-      : `${plural(x.campaigns.length, 'campaign')} · ${range(x.first, x.last)}`;
+      ? `${plural(x.brandCount, 'label')} · ${range(x.first, x.last)}`
+      : `${plural(x.campaigns.length, 'credit')} · ${range(x.first, x.last)}`;
     return `
       <nav class="az" aria-label="Jump to letter">${[...letters.keys()].map(L => `<a href="#L-${L}" data-jump="L-${L}">${L}</a>`).join('')}</nav>
       <div class="directory">${[...letters].map(([L, xs]) => `
@@ -226,15 +232,15 @@
     return `
       <section class="intro">
         <div>
-          <div class="eyebrow">An archive of fashion campaign faces</div>
-          <h1>Who wore it<br><em>for the brand?</em></h1>
+          <div class="eyebrow">An archive of fashion models at work</div>
+          <h1>Who modeled<br><em>for whom?</em></h1>
         </div>
         <div>
-          <p class="lede">Search any clothing brand and see every model and campaign face it has used, year by year and season by season. Spotted a familiar face in a shop window? Look it up here.</p>
+          <p class="lede">Search a model to see every brand and fashion designer she has worked for, or search a label to see all its models: campaigns, runway shows and ambassadorships, year by year and season by season. Spotted a familiar face in a shop window? Look it up here.</p>
           <div class="stats">
-            <div><b>${brands.size.toLocaleString('en')}</b><span>Brands</span></div>
-            <div><b>${models.size.toLocaleString('en')}</b><span>Faces</span></div>
-            <div><b>${campaigns.length.toLocaleString('en')}</b><span>Campaigns</span></div>
+            <div><b>${brands.size.toLocaleString('en')}</b><span>Brands &amp; designers</span></div>
+            <div><b>${models.size.toLocaleString('en')}</b><span>Models</span></div>
+            <div><b>${campaigns.length.toLocaleString('en')}</b><span>Credits</span></div>
             <div><b>${range(Math.min(...allYears), Math.max(...allYears))}</b><span>Years</span></div>
           </div>
         </div>
@@ -246,13 +252,13 @@
           <span class="eyebrow">In focus · ${esc(hero.brand)} · ${esc(label(hero))}</span>
           <h2>${hero.talent.map(modelLink).join('<br>')}</h2>
           ${credits(hero)}
-          <p><a class="line-link" href="#/brand/${slug(hero.brand)}">Every ${esc(hero.brand)} campaign ↗</a></p>
+          <p><a class="line-link" href="#/brand/${slug(hero.brand)}">All ${esc(hero.brand)} models ↗</a></p>
         </div>
       </section>` : ''}
 
       <div class="section-top">
-        <div><span class="eyebrow">Browse a brand</span><h2>Most-documented brands</h2></div>
-        <a class="line-link" href="#/brands">All ${brands.size.toLocaleString('en')} brands ↗</a>
+        <div><span class="eyebrow">Browse a label</span><h2>Most-documented brands &amp; designers</h2></div>
+        <a class="line-link" href="#/brands">All ${brands.size.toLocaleString('en')} labels ↗</a>
       </div>
       <div class="chips">${topBrands.map(b => `<a class="chip" href="#/brand/${slug(b.name)}">${esc(b.name)}<small>${b.campaigns.length}</small></a>`).join('')}</div>
 
@@ -276,9 +282,9 @@
     const undated = b.campaigns.some(c => !dated(c));
     return `
       <section class="page-head">
-        <div class="eyebrow">Brand${b.country ? ' · ' + esc(b.country) : ''}</div>
+        <div class="eyebrow">${TYPE_LABEL[b.type] || 'Label'}${b.country ? ' · ' + esc(b.country) : ''}</div>
         <h1>${esc(b.name)}</h1>
-        <p class="lede">${plural(b.campaigns.length, 'campaign')} · ${plural(faces.size, 'face')} · ${range(b.first, b.last)}</p>
+        <p class="lede">${plural(b.campaigns.length, 'credit')} · ${plural(faces.size, 'model')} · ${range(b.first, b.last)}</p>
       </section>
       ${years.length > 1 || (years.length && undated) ? `<div class="chips">${years.map(y => `<a class="chip" href="#y${y}" data-jump="y${y}">${y}</a>`).join('')}${undated ? '<a class="chip" href="#undated" data-jump="undated">No year</a>' : ''}</div>` : ''}
       ${timeline(b.campaigns)}`;
@@ -293,14 +299,14 @@
     return `
       <section class="page-head${m.portrait ? ' with-portrait' : ''}">
         <div>
-          <div class="eyebrow">Model / campaign face${facts ? ' · ' + facts : ''}</div>
+          <div class="eyebrow">Model${facts ? ' · ' + facts : ''}</div>
           <h1>${esc(m.name)}</h1>
-          <p class="lede">${plural(m.campaigns.length, 'campaign')} for ${plural(brands.size, 'brand')} · ${range(m.first, m.last)}${photos ? ` · ${plural(photos, 'photo')}` : ''}</p>
+          <p class="lede">${plural(m.campaigns.length, 'credit')} for ${plural(brands.size, 'label')} · ${range(m.first, m.last)}${photos ? ` · ${plural(photos, 'photo')}` : ''}</p>
           ${m.wiki ? `<p class="sources"><a href="${esc(m.wiki)}" target="_blank" rel="noopener noreferrer">Biography on Wikipedia ↗</a></p>` : ''}
         </div>
         ${m.portrait ? `<figure class="portrait" data-fallback>${portraitTag(m)}<figcaption>${m.portraitPage ? `<a href="${esc(m.portraitPage)}" target="_blank" rel="noopener noreferrer">${esc(m.portraitCredit || 'Photo: Wikimedia Commons')} ↗</a>` : esc(m.portraitCredit || '')}</figcaption></figure>` : ''}
       </section>
-      <div class="chips"><span class="chips-label">Advertised for</span>${[...brands].sort((a, b) => a[0].localeCompare(b[0])).map(([b, cs]) =>
+      <div class="chips"><span class="chips-label">Worked for</span>${[...brands].sort((a, b) => a[0].localeCompare(b[0])).map(([b, cs]) =>
         `<a class="chip" href="#/brand/${slug(b)}">${esc(b)}<small>${cs.filter(dated).map(label).join(', ')}</small></a>`).join('')}</div>
       ${timeline(m.campaigns, m.name)}`;
   }
@@ -314,7 +320,7 @@
       <section class="page-head">
         <div class="eyebrow">Year</div>
         <h1>${esc(y)}</h1>
-        <p class="lede">${plural(cs.length, 'campaign')} in the archive.</p>
+        <p class="lede">${plural(cs.length, 'credit')} in the archive.</p>
       </section>
       <div class="chips">${years.map(v => `<a class="chip${v === Number(y) ? ' active' : ''}" href="#/year/${v}">${v}</a>`).join('')}</div>
       ${cs.length ? order.map(s => `
@@ -338,53 +344,78 @@
       <section class="page-head">
         <div class="eyebrow">Search</div>
         <h1>“${esc(q)}”</h1>
-        <p class="lede">${total ? `${plural(brands.length, 'brand')} · ${plural(models.length, 'face')} · ${plural(campaigns.length, 'campaign')}` : 'No matches yet. The archive is growing, so try another spelling or check back later.'}</p>
+        <p class="lede">${total ? `${plural(brands.length, 'label')} · ${plural(models.length, 'model')} · ${plural(campaigns.length, 'credit')}` : 'No matches yet. The archive is growing, so try another spelling or check back later.'}</p>
       </section>
-      ${brands.length ? `<div class="results-group"><h2>Brands</h2><div class="directory">${brands.map(b => `<a href="#/brand/${slug(b.name)}"><span>${esc(b.name)}</span><small>${plural(b.campaigns.length, 'campaign')} · ${range(b.first, b.last)}</small></a>`).join('')}</div></div>` : ''}
-      ${models.length ? `<div class="results-group"><h2>Faces</h2><div class="grid">${models.slice(0, 24).map(modelCard).join('')}</div>${more(models.length, Math.min(24, models.length), 'faces')}</div>` : ''}
+      ${brands.length ? `<div class="results-group"><h2>Brands &amp; designers</h2><div class="directory">${brands.map(b => `<a href="#/brand/${slug(b.name)}"><span>${esc(b.name)}</span><small>${plural(b.campaigns.length, 'credit')} · ${range(b.first, b.last)}</small></a>`).join('')}</div></div>` : ''}
+      ${models.length ? `<div class="results-group"><h2>Models</h2><div class="grid">${models.slice(0, 24).map(modelCard).join('')}</div>${more(models.length, Math.min(24, models.length), 'models')}</div>` : ''}
       ${campaigns.length ? `<div class="results-group"><h2>Campaigns</h2>${cardsThenRows(campaigns.slice(0, SEARCH_LIMIT))}${more(campaigns.length, Math.min(SEARCH_LIMIT, campaigns.length), 'campaigns')}</div>` : ''}`;
   }
 
-  const viewBrands = () => `
-    <section class="page-head"><div class="eyebrow">Directory</div><h1>Brands</h1>
-      <p class="lede">${plural(db.brands.size, 'brand')}. Pick one to see every campaign face by year and season.</p></section>
-    ${directory(db.brands.values(), b => `#/brand/${slug(b.name)}`, 'brand')}`;
+  // #/brands, #/brands/designer or #/brands/brand
+  function viewBrands(type) {
+    const all = [...db.brands.values()];
+    const shown = TYPE_LABEL[type] ? all.filter(b => b.type === type) : all;
+    const tab = (t, text, n) => `<a class="chip${(type || '') === t ? ' active' : ''}" href="#/brands${t ? '/' + t : ''}">${text}<small>${n}</small></a>`;
+    return `
+    <section class="page-head"><div class="eyebrow">Directory</div><h1>Brands &amp; designers</h1>
+      <p class="lede">${plural(shown.length, 'label')}. Pick one to see every model who worked for it, by year and season.</p></section>
+    <div class="chips">${tab('', 'All', all.length)}${tab('designer', 'Fashion houses &amp; designers', all.filter(b => b.type === 'designer').length)}${tab('brand', 'Brands &amp; retailers', all.filter(b => b.type === 'brand').length)}</div>
+    ${directory(shown, b => `#/brand/${slug(b.name)}`, 'brand')}`;
+  }
 
   const viewModels = () => `
-    <section class="page-head"><div class="eyebrow">Directory</div><h1>Models &amp; faces</h1>
-      <p class="lede">${plural(db.models.size, 'face')}: models, actresses and musicians who fronted a brand campaign.</p></section>
+    <section class="page-head"><div class="eyebrow">Directory</div><h1>Models</h1>
+      <p class="lede">${plural(db.models.size, 'model')}, including actresses and musicians who modeled for a label.</p></section>
     ${directory(db.models.values(), m => `#/model/${slug(m.name)}`, 'model')}`;
 
   function viewYears() {
     const years = [...groupBy(db.campaigns.filter(dated), c => c.year)];
     return `
       <section class="page-head"><div class="eyebrow">Directory</div><h1>Years</h1></section>
-      <div class="directory">${years.map(([y, cs]) => `<a href="#/year/${y}"><span>${y}</span><small>${plural(cs.length, 'campaign')}</small></a>`).join('')}</div>`;
+      <div class="directory">${years.map(([y, cs]) => `<a href="#/year/${y}"><span>${y}</span><small>${plural(cs.length, 'credit')}</small></a>`).join('')}</div>`;
   }
 
   const viewAbout = () => `
     <section class="page-head"><div class="eyebrow">About</div><h1>About the archive</h1></section>
     <div class="prose">
-      <p>The Campaign Edit records which women have fronted the advertising campaigns of the world's clothing brands, and when. Search a brand to see all its faces by year and season, or search a model to see every brand she has worked for.</p>
-      <p>Every entry links to its source. Recent campaigns come from fashion press coverage. The historical archive comes from the career sections of models' Wikipedia biographies, and from the press articles those biographies cite. When a source gives a year but no season, the entry shows the year only; when it gives no year at all, the entry is listed under “Year not recorded”.</p>
-      <p>The archive is a work in progress, not a complete record. If you know of a campaign that is missing or wrong, it can be added or corrected.</p>
-      <p>Brand names and campaign photographs belong to their respective owners. Campaign photos are taken from the press coverage each entry links to; entries without one show a plain title card. Portraits of models come from Wikimedia Commons and are credited on each model's page.</p>
-      <h2>Adding a campaign</h2>
-      <p>All data lives in <code>data/campaigns.json</code>. Add one object per campaign:</p>
-      <pre>{
-  "brand": "bebe", "year": 2017, "season": "Spring",
-  "talent": ["Hailey Clauson"],
-  "photographer": "optional",
-  "title": "optional campaign name",
-  "note": "optional one-line note",
-  "images": [
-    { "src": "assets/campaigns/bebe-2017-spring-1.jpg", "talent": ["Hailey Clauson"] }
-  ],
-  "featured": "optional, true = show in the home page spotlight",
-  "sources": [{ "name": "Publication", "url": "https://…" }]
-}</pre>
-      <p>Use <code>"year": null</code> when the source gives no year. Seasons in use: ${Object.keys(SEASON_ORDER).filter(s => s !== 'Full year').map(esc).join(', ')}.</p>
+      <p>${SITE} records the work of fashion models: the brands and fashion designers they have worked for, and when. Search a model to see her campaigns, runway shows and ambassadorships, or search a brand or designer to see every model who worked for it, year by year and season by season.</p>
+      <p>Every entry links to its source. Recent campaigns come from fashion press coverage. The historical archive comes from the career sections of models' Wikipedia biographies, from the brands' own Wikipedia articles, and from the press articles they cite. When a source gives a year but no season, the entry shows the year only; when it gives no year at all, the entry is listed under “Year not recorded”.</p>
+      <p>The archive is a work in progress, not a complete record. If you know of work that is missing or wrong, it can be added or corrected.</p>
+      <p>Brand names, designer names and photographs belong to their respective owners. Campaign photos come from the press coverage each entry links to; portraits of models come from Wikimedia Commons and are credited on each model's page. See the <a href="#/privacy">privacy &amp; copyright</a> page to request the removal of any content.</p>
     </div>`;
+
+  function viewPrivacy(arg) {
+    if (arg === 'sent') return `
+      <section class="page-head"><div class="eyebrow">Copyright</div><h1>Request received</h1>
+        <p class="lede">Thank you. Your removal request has been sent, and we will reply by email. <a href="#/">Back to the start</a>.</p></section>`;
+    const subject = `${SITE} — Copyright content removal request`;
+    return `
+    <section class="page-head"><div class="eyebrow">Legal</div><h1>Privacy &amp; copyright</h1></section>
+    <div class="prose">
+      <h2>Copyright</h2>
+      <p>All brand names, designer names, logos, photographs and other content shown on ${SITE} are the property of their respective copyright owners. They are shown for information and reference only, with a link to the original source wherever possible. ${SITE} claims no ownership of them.</p>
+      <p>If you own content that appears here and want it removed, send the form below with proof of your ownership. Content is removed once ownership is confirmed.</p>
+      <h2>Privacy</h2>
+      <p>This site does not use accounts, advertising or tracking cookies. Your browser may keep your searches locally; nothing is sent to us. Links to sources and images hosted elsewhere (for example Wikimedia Commons) are loaded from those sites, which have their own privacy policies.</p>
+      <p>If you send the removal form, the details you enter are delivered by email to the site owner through the FormSubmit service and used only to handle your request.</p>
+      <h2 id="removal">Request content removal</h2>
+      <form class="removal" action="https://formsubmit.co/${OWNER_EMAIL}" method="POST" enctype="multipart/form-data" id="removalForm">
+        <input type="hidden" name="_subject" value="${esc(subject)}">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <label>Your full name<input name="name" required autocomplete="name"></label>
+        <label>Your email<input type="email" name="email" required autocomplete="email"></label>
+        <label>Company or rights holder you represent<input name="rights_holder"></label>
+        <label>Link(s) to the content on this site<textarea name="content_urls" rows="3" required placeholder="https://…"></textarea></label>
+        <label>Proof of ownership<textarea name="proof" rows="5" required placeholder="Describe the work you own and how you can prove it (original files, registration, contract, links to the original publication…)"></textarea></label>
+        <label>Supporting document (optional)<input type="file" name="attachment" accept=".pdf,.jpg,.jpeg,.png"></label>
+        <label class="check"><input type="checkbox" name="statement" value="I confirm that I own the content or am authorised to act for the owner, and that the information above is accurate." required> I confirm that I own the content or am authorised to act for the owner, and that the information above is accurate.</label>
+        <button type="submit" class="chip active">Send removal request</button>
+        <p class="hint">Your request is emailed to the site owner with the subject “${esc(subject)}”.</p>
+      </form>
+    </div>`;
+  }
 
   function notFound(what) {
     return `<section class="page-head"><h1>Not found</h1><p class="lede">That ${what} isn't in the archive yet. <a href="#/">Back to the start</a>.</p></section>`;
@@ -442,14 +473,16 @@
     const [page, arg = ''] = parts;
     const views = {
       '': viewHome, brand: () => viewBrand(arg), model: () => viewModel(arg), year: () => viewYear(arg),
-      search: () => viewSearch(arg), brands: viewBrands, models: viewModels, years: viewYears, about: viewAbout
+      search: () => viewSearch(arg), brands: () => viewBrands(arg), models: viewModels, years: viewYears, about: viewAbout, privacy: () => viewPrivacy(arg)
     };
     app.innerHTML = (views[page] || (() => notFound('page')))();
     if (page !== 'search' && document.activeElement !== searchInput) searchInput.value = '';
     if (page === 'search' && searchInput.value !== arg) searchInput.value = arg;
     document.querySelectorAll('nav a').forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#/' + page));
-    const titles = { brand: db.brands.get(arg)?.name, model: db.models.get(arg)?.name, year: arg, search: arg && `“${arg}”`, brands: 'Brands', models: 'Models', years: 'Years', about: 'About' };
-    document.title = (titles[page] ? titles[page] + ' — ' : '') + 'The Campaign Edit';
+    const titles = { brand: db.brands.get(arg)?.name, model: db.models.get(arg)?.name, year: arg, search: arg && `“${arg}”`, brands: 'Brands & designers', models: 'Models', years: 'Years', about: 'About', privacy: 'Privacy & copyright' };
+    document.title = (titles[page] ? titles[page] + ' — ' : '') + SITE;
+    const form = document.getElementById('removalForm');
+    if (form) form.elements._next.value = location.href.split('#')[0] + '#/privacy/sent';
   }
 
   window.addEventListener('hashchange', () => { route(); if (!location.hash.startsWith('#/search')) window.scrollTo(0, 0); });

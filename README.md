@@ -1,4 +1,4 @@
-# The Campaign Edit
+# The Model Archive
 
 A searchable archive of the women who fronted clothing-brand campaigns, by brand, year and season.
 Example: search **bebe** and you'll see that Hailey Clauson fronted its Spring 2017 campaign.

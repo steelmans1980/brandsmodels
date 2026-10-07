@@ -230,3 +230,19 @@ h2 { font-size: 32px; margin: 8px 0 0; }
 }
 .card-img .over { position: absolute; inset: 0; }
 .card-img .over img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
+
+/* Work type badge */
+.kind { display: inline-block; margin-left: 8px; padding: 2px 7px; border: 1px solid var(--line); border-radius: 10px; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); vertical-align: middle; }
+.card .kind, .rows .kind, .undated-list .kind { margin: 0 6px 0 0; }
+.kind-runway { border-color: #b9a98a; color: #7a6a48; }
+.kind-ambassador { border-color: #9fb0a0; color: #4f6652; }
+
+/* Footer links */
+.site-footer a { color: inherit; }
+
+/* Removal request form */
+.removal { display: grid; gap: 14px; max-width: 560px; margin-top: 10px; }
+.removal label { display: grid; gap: 6px; font-size: 13px; color: var(--ink); }
+.removal input:not([type=checkbox]):not([type=file]), .removal textarea { font: inherit; font-size: 14px; padding: 10px; border: 1px solid var(--line); background: #fff; }
+.removal .check { display: flex; gap: 10px; align-items: flex-start; font-size: 12px; color: var(--muted); }
+.removal button { justify-self: start; font-size: 13px; }
