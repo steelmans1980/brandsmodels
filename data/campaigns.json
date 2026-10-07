@@ -17,12 +17,16 @@
     "Alex Perry": {"country": "Australia", "type": "designer"},
     "Alexander McQueen": {"country": "United Kingdom", "aliases": ["McQueen"], "type": "designer"},
     "Alexander Wang": {"country": "United States", "type": "designer"},
+    "Alexandra Golovanoff": {"type": "designer"},
     "Alexandre Herchcovitch": {"country": "Brazil", "type": "designer"},
     "AllSaints": {"country": "United Kingdom", "type": "brand"},
     "Alo": {"aliases": ["Alo Yoga", "alo yoga"], "country": "United States", "type": "brand"},
     "American Apparel": {"country": "United States", "type": "brand"},
     "American Eagle": {"country": "United States", "aliases": ["American Eagle Outfitters"], "type": "brand"},
+    "Ami Paris": {"type": "designer"},
+    "Amiri": {"type": "designer"},
     "Andrew Marc": {"country": "United States", "type": "brand"},
+    "Ann Demeulemeester": {"type": "designer"},
     "Ann Summers": {"country": "United Kingdom", "type": "brand"},
     "Ann Taylor": {"country": "United States", "aliases": ["AnnTaylor"], "type": "brand"},
     "Anna Sui": {"country": "United States", "type": "designer"},
@@ -196,7 +200,9 @@
     "Kate Spade New York": {"aliases": ["Kate Spade", "kate spade"], "country": "United States", "type": "brand"},
     "Keds": {"country": "United States", "type": "brand"},
     "Kenneth Cole": {"country": "United States", "type": "brand"},
+    "Kent & Curwen": {"type": "designer"},
     "Kenzo": {"country": "France", "type": "designer"},
+    "Khaite": {"type": "designer"},
     "Kmart": {"country": "United States", "type": "brand"},
     "Kohl's": {"country": "United States", "type": "brand"},
     "Kookaï": {"country": "France", "aliases": ["Kookai"], "type": "brand"},
@@ -224,10 +230,12 @@
     "Loro Piana": {"country": "Italy", "type": "designer"},
     "Louis Vuitton": {"country": "France", "type": "designer"},
     "Lucky Brand": {"country": "United States", "type": "brand"},
+    "Ludovic de Saint Sernin": {"type": "designer"},
     "Lululemon": {"country": "Canada", "type": "brand"},
     "Macy's": {"country": "United States", "type": "brand"},
     "Maidenform": {"country": "United States", "type": "brand"},
     "Maison Kitsuné": {"country": "France", "aliases": ["Kitsuné"], "type": "designer"},
+    "Malone Souliers": {"type": "designer"},
     "Mango": {"country": "Spain", "type": "brand"},
     "Manish Malhotra": {"country": "India", "type": "designer"},
     "Marc Jacobs": {"country": "United States", "aliases": ["Marc by Marc Jacobs"], "type": "designer"},
@@ -277,6 +285,7 @@
     "Oscar de la Renta": {"country": "United States", "type": "designer"},
     "Oysho": {"country": "Spain", "type": "brand"},
     "Patrizia Pepe": {"country": "Italy", "type": "brand"},
+    "Paul Andrew": {"type": "designer"},
     "Paul Smith": {"country": "United Kingdom", "type": "designer"},
     "Peek & Cloppenburg": {"country": "Germany", "type": "brand"},
     "Penshoppe": {"country": "Philippines", "type": "brand"},
@@ -387,6 +396,7 @@
     "Zac Posen": {"country": "United States", "type": "designer"},
     "Zadig & Voltaire": {"aliases": ["Zadig et Voltaire", "zadig and voltaire", "zadig et voltaire"], "country": "France", "type": "brand"},
     "Zara": {"country": "Spain", "type": "brand"},
+    "Zimmermann": {"type": "designer", "country": "Australia"},
     "Zuhair Murad": {"country": "Lebanon", "type": "designer"}
   },
   "models": {
@@ -1439,7 +1449,8 @@
       "note": "Set in the Hollywood Hills.",
       "featured": true,
       "sources": [
-        {"name": "ELLE", "url": "https://www.elle.com/fashion/g71231506/best-fall-winter-2026-campaigns/"}
+        {"name": "ELLE", "url": "https://www.elle.com/fashion/g71231506/best-fall-winter-2026-campaigns/"},
+        {"name": "The Impression", "url": "https://theimpression.com/frame-fall-2026-ad-campaign-kendall-jenner/"}
       ],
       "images": [
         {"src": "assets/frame.jpg", "talent": ["Kendall Jenner"]}
@@ -1565,7 +1576,8 @@
       "season": "Fall",
       "talent": ["Jemima Kirke", "Rowan Blanchard"],
       "sources": [
-        {"name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns"}
+        {"name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns"},
+        {"name": "The Impression", "url": "https://theimpression.com/marc-jacobs-fall-2026-ad-campaign-review/"}
       ],
       "images": [
         {"src": "assets/campaigns/marc-jacobs-2026-fall-1.jpg"}
@@ -1652,10 +1664,11 @@
       "brand": "COS",
       "year": 2026,
       "season": "Fall",
-      "talent": ["Park Gyuyoung", "Awar Odhiang", "Noor Khan", "Alaina Rae"],
+      "talent": ["Park Gyuyoung", "Awar Odhiang", "Noor Khan", "Alaina Rae", "Jacqui Hooper", "Yun Seo Woo"],
       "photographer": "Mark Kean",
       "sources": [
-        {"name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns"}
+        {"name": "The Zoe Report", "url": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns"},
+        {"name": "The Impression", "url": "https://theimpression.com/cos-fall-2026-ad-campaign-review/"}
       ],
       "images": [
         {"src": "assets/campaigns/cos-2026-fall-1.jpg"}
@@ -2677,6 +2690,511 @@
         {"name": "Fashion Gone Rogue", "url": "https://fashiongonerogue.com/desigual-fall-2022-campaign-mario-sorrenti"}
       ]
     },
+    {
+      "brand": "Dior",
+      "year": 2027,
+      "season": "Spring/Summer",
+      "talent": ["Amanda Nascimento", "Nimota Daudu", "Reagan Lee", "Nana Darko"],
+      "sources": [
+        {"name": "IMG Models", "url": "https://imgmodels.com"}
+      ],
+      "kind": "runway"
+    },
+    {
+      "brand": "Mugler",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Vivian Jenna Wilson"],
+      "photographer": "Robi Rodriguez",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/mugler-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Isabel Marant",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Mathilda Gvarliani"],
+      "photographer": "Drew Vickers",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/isabel-marant-fall-2026-ad-campaign-review/"},
+        {"name": "Wikipedia (Mathilda Gvarliani)", "url": "https://en.wikipedia.org/wiki/Mathilda_Gvarliani"},
+        {"name": "The Fashion Spot", "url": "https://www.thefashionspot.com/forum-buzz/947996-mathilda-gvarliani-poses-in-head-to-toe-miu-miu-on-the-may-2026-covers-of-vogue-korea/"}
+      ]
+    },
+    {
+      "brand": "Bottega Veneta",
+      "year": 2026,
+      "season": "Fall/Winter",
+      "talent": ["Binx Walton", "Lina Zhang", "Sihana Shalaj"],
+      "photographer": "Juergen Teller",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/bottega-veneta-fall-winter-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Khaite",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Raquel Zimmermann"],
+      "photographer": "David Sims",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/khaite-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Valentino",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Apolline Rocco Fohrer", "Qiuyue Li"],
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/valentino-interferenze-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Ann Demeulemeester",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Betsy Gaghan"],
+      "photographer": "Nikolai von Bismarck",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/ann-demeulemeester-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Off-White",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Vivian Jenna Wilson"],
+      "photographer": "Luke Abby",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/l-ab-c-o-off-white-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Kent & Curwen",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Roxy Mar", "Alina Tsiv"],
+      "photographer": "Olimpia Taliani de Marchio",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/kent-curwen-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Michael Kors",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Suki Waterhouse"],
+      "photographer": "Anthony Seklaoui",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/michael-kors-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Ami Paris",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Dara Gueye", "Jingwen Jia", "Rebecca Leigh Longendyke", "Saskia de Brauw"],
+      "photographer": "Karim Sadli",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/ami-paris-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Saks Fifth Avenue",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Scarlett White", "Divine Mugisha", "Sanique", "Jae Lee"],
+      "photographer": "Nadine Ijewere",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/saks-fifth-avenue-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Armani",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Christy Turlington"],
+      "photographer": "Oliver Hadlee Pearch",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/giorgio-armani-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Jil Sander",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Edie Campbell"],
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/jil-sander-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Acne Studios",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Ellie Rowsell", "Guinevere Van Seenus", "Juliette Lewis", "Raya Martigny", "Rila Fukushima", "Sandra Poulson"],
+      "photographer": "Nan Goldin",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/acne-studios-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Agent Provocateur",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Irina Shayk"],
+      "photographer": "Steven Klein",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/agent-provocateur-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Pucci",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Grace Elizabeth"],
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/pucci-il-palio-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "AllSaints",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Kiki Willems", "Lux Gillespie"],
+      "photographer": "Alasdair McLellan",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/allsaints-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Givenchy",
+      "year": 2026,
+      "season": "Winter",
+      "talent": ["Eva Herzigova", "Constance Debré", "Kaia Gerber", "Liu Wen", "Nyaduola Gabriel"],
+      "photographer": "Juergen Teller",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/givenchy-winter-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Armani",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Mia Armstrong", "Xiru Yang"],
+      "photographer": "Alasdair McLellan",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/emporio-armani-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Anne Klein",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Olivia Munn"],
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/anne-klein-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Neiman Marcus",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Cleo Wade", "Jessica de Ruiter"],
+      "photographer": "Judy Pak",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/neiman-marcus-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Burberry",
+      "year": 2026,
+      "season": "Winter",
+      "talent": ["Cathy Simmons", "Charlotte Boggia", "Douta Sidibe", "Jacqui Hooper", "Luiza Perote", "Xiao Wen Ju"],
+      "photographer": "Glen Luchford",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/burberry-winter-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Celine",
+      "year": 2026,
+      "season": "Winter",
+      "talent": ["Alaina Rae", "Esther Kim", "Faith Johnson", "Kylee Dixon", "Maya Cisse", "Viktoria Wirs"],
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/celine-hiver-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Tod's",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Mona Tougaard", "Libby Taverner"],
+      "photographer": "Alasdair McLellan",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/tods-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Amiri",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Bella Podaras", "Jade Croonenberghs", "Bianca Lexis"],
+      "photographer": "Myles Hendrik",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/amiri-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Alexandra Golovanoff",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Philippine Leroy-Beaulieu", "Sahteene Sednaoui", "Alexandra Golovanoff"],
+      "photographer": "Jody Rogac",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/alexandra-golovanoff-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Gap",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Esther Rose McGregor"],
+      "photographer": "Daniel Jackson",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/gap-studio-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Zimmermann",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Apolline Rocco Fohrer"],
+      "photographer": "Anthony Seklaoui",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/zimmermann-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Tom Ford",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Liu Wen", "Mila Van Eeten", "Aluel Makuach", "Kristen McMenamy"],
+      "photographer": "Stuart Winecoff",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/tom-ford-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Loewe",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Carin Herven", "Nyawurh Chuol"],
+      "photographer": "Talia Chetrit",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/loewe-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Malone Souliers",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Kirandeep Chahal"],
+      "photographer": "Tommy Ton",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/malone-souliers-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Burberry",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Rosemary Ferguson"],
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/burberry-autumn-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Versace",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Saar Mansvelt Beck", "Alaina Rae", "Elodie Guipaud"],
+      "photographer": "Steven Meisel",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/versace-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Salvatore Ferragamo",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Jingyu Huang", "Ning Chang", "Anok Yai", "Vittoria Ceretti"],
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/ferragamo-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Alexander McQueen",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Karen Elson", "Paloma Elsesser", "Jacqui Hooper", "Xiao Wen Ju"],
+      "photographer": "Glen Luchford",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/mcqueen-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Jimmy Choo",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Africa Garcia"],
+      "photographer": "Francesc Planes",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/jimmy-choo-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Paul Andrew",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Laura Morgan"],
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/paul-andrew-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Fendi",
+      "year": 2027,
+      "season": "Fall",
+      "talent": ["Chu Wong", "Faith Johnson"],
+      "photographer": "Jo Ann Callis",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/fendi-fall-2027-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Chloé",
+      "year": 2026,
+      "season": "Winter",
+      "talent": ["Raquel Zimmermann", "Jacqui Louise", "Thalita Ferreira", "Sarah Isaksen"],
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/chloe-winter-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Gap",
+      "year": 2026,
+      "season": "Pre-Fall",
+      "talent": ["Hailey Bieber"],
+      "photographer": "Mario Sorrenti",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/gap-the-hailey-jean-pre-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Ports 1961",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Nadja Auermann"],
+      "photographer": "Rankin",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/ports-1961-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Zimmermann",
+      "year": 2026,
+      "season": "Summer",
+      "talent": ["Rosalieke Fuchs"],
+      "photographer": "Lachlan Bailey",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/zimmermann-high-summer-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Vivienne Westwood",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Ilona Staller"],
+      "photographer": "Juergen Teller",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/vivienne-westwood-fall-2026-ad-campaign-review/"},
+        {"name": "Wikipedia (Ilona Staller)", "url": "https://en.wikipedia.org/wiki/Ilona_Staller"},
+        {"name": "MF Milano Finanza", "url": "https://www.milanofinanza.it/fashion/vivienne-westwood-sceglie-cicciolina-per-la-nuova-campagna-202607151119227090"}
+      ]
+    },
+    {
+      "brand": "Loro Piana",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Sigrid de L’Epine", "Jacqui Hooper", "Noor Khan", "Selena Forrest"],
+      "photographer": "Mario Sorrenti",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/loro-piana-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Kenzo",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Lukita Maxwell"],
+      "photographer": "Laura Jane Coulson",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/kenzo-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Balmain",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Abuk Yor", "Stephanie Cook", "Mariane Godoy", "Katherine Wilkey"],
+      "photographer": "Suffo Moncloa",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/balmain-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Ermanno Scervino",
+      "year": 2026,
+      "season": "Fall",
+      "talent": ["Mariacarla Boscono"],
+      "photographer": "Mikael Jansson",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/ermanno-scervino-fall-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Mugler",
+      "year": 2026,
+      "season": "Pre-Fall",
+      "talent": ["Saskia de Brauw"],
+      "photographer": "Rafael Pavarotti",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/mugler-pre-fall-2026-ad-campaign-review-2/"}
+      ]
+    },
+    {
+      "brand": "Pucci",
+      "year": 2026,
+      "season": "Summer",
+      "talent": ["Lulu Tenney"],
+      "photographer": "Tim El Kaïm",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/pucci-summer-2026-ad-campaign-review/"}
+      ]
+    },
+    {
+      "brand": "Ludovic de Saint Sernin",
+      "year": 2026,
+      "season": "Spring",
+      "talent": ["Barbara Valente"],
+      "photographer": "Jorge Perez Ortiz",
+      "sources": [
+        {"name": "The Impression", "url": "https://theimpression.com/ludovic-de-saint-sernin-spring-2026-swimwear-ad-campaign-review/"}
+      ]
+    },
     {"brand": "Anna Sui", "year": 2006, "talent": ["Bruna Tenório"], "sources": [{"name": "Wikipedia (Bruna Tenório)", "url": "https://en.wikipedia.org/wiki/Bruna_Ten%C3%B3rio"}], "via": "wikipedia"},
     {"brand": "Gap", "year": 2006, "talent": ["Bruna Tenório"], "sources": [{"name": "Wikipedia (Bruna Tenório)", "url": "https://en.wikipedia.org/wiki/Bruna_Ten%C3%B3rio"}], "via": "wikipedia"},
     {"brand": "Kenzo", "year": 2006, "talent": ["Bruna Tenório"], "sources": [{"name": "Wikipedia (Bruna Tenório)", "url": "https://en.wikipedia.org/wiki/Bruna_Ten%C3%B3rio"}], "via": "wikipedia"},
@@ -2761,7 +3279,6 @@
     {"brand": "Escada", "year": 2018, "talent": ["Amber Valletta"], "sources": [{"name": "Wikipedia (Amber Valletta)", "url": "https://en.wikipedia.org/wiki/Amber_Valletta"}, {"name": "vogue.de", "url": "https://www.vogue.de/mode/artikel/amber-valletta-escada"}], "via": "wikipedia"},
     {"brand": "Stella McCartney", "year": 2019, "talent": ["Amber Valletta"], "sources": [{"name": "Wikipedia (Amber Valletta)", "url": "https://en.wikipedia.org/wiki/Amber_Valletta"}, {"name": "Models.com", "url": "https://models.com/models/Amber-Valletta"}], "via": "wikipedia"},
     {"brand": "H&M", "year": 2025, "talent": ["Mathilda Gvarliani"], "sources": [{"name": "Wikipedia (Mathilda Gvarliani)", "url": "https://en.wikipedia.org/wiki/Mathilda_Gvarliani"}, {"name": "The New York Times", "url": "https://www.nytimes.com/2025/03/28/technology/hm-ai-models-social-media.html"}], "via": "wikipedia"},
-    {"brand": "Isabel Marant", "year": 2026, "season": "Fall/Winter", "talent": ["Mathilda Gvarliani"], "sources": [{"name": "Wikipedia (Mathilda Gvarliani)", "url": "https://en.wikipedia.org/wiki/Mathilda_Gvarliani"}, {"name": "The Fashion Spot", "url": "https://www.thefashionspot.com/forum-buzz/947996-mathilda-gvarliani-poses-in-head-to-toe-miu-miu-on-the-may-2026-covers-of-vogue-korea/"}], "via": "wikipedia"},
     {"brand": "True Religion", "year": 2017, "talent": ["Ireland Baldwin"], "sources": [{"name": "Wikipedia (Ireland Baldwin)", "url": "https://en.wikipedia.org/wiki/Ireland_Baldwin"}], "via": "wikipedia"},
     {"brand": "Guess", "year": 2017, "talent": ["Ireland Baldwin"], "sources": [{"name": "Wikipedia (Ireland Baldwin)", "url": "https://en.wikipedia.org/wiki/Ireland_Baldwin"}], "via": "wikipedia"},
     {"brand": "H&M", "year": 2013, "season": "Summer", "talent": ["Jade Runk"], "sources": [{"name": "Wikipedia (Jade Runk)", "url": "https://en.wikipedia.org/wiki/Jade_Runk"}, {"name": "Jezebel", "url": "http://jezebel.com/h-m-shows-collection-on-plus-size-model-doesnt-make-a-484765381"}, {"name": "The Wall Street Journal", "url": "https://blogs.wsj.com/corporate-intelligence/2013/05/01/hm-makes-a-brilliant-move-and-embraces-the-curves"}], "via": "wikipedia"},
@@ -3535,7 +4052,6 @@
     {"brand": "Dsquared2", "year": 2014, "season": "Fall/Winter", "talent": ["Amanda Murphy"], "sources": [{"name": "Wikipedia (Amanda Murphy)", "url": "https://en.wikipedia.org/wiki/Amanda_Murphy_(model)"}, {"name": "The FMD", "url": "http://www.fashionmodeldirectory.com/brands/celine/advertisements/2014/spring-summer/5220/binx-walton-91512/"}], "via": "wikipedia"},
     {"brand": "Salvatore Ferragamo", "year": 2014, "season": "Fall", "talent": ["Amanda Murphy"], "sources": [{"name": "Wikipedia (Amanda Murphy)", "url": "https://en.wikipedia.org/wiki/Amanda_Murphy_(model)"}, {"name": "The FMD", "url": "http://www.fashionmodeldirectory.com/brands/celine/advertisements/2014/spring-summer/5220/binx-walton-91512/"}], "via": "wikipedia"},
     {"brand": "Penshoppe", "year": 2015, "kind": "ambassador", "talent": ["Sandara Park"], "sources": [{"name": "Wikipedia (Sandara Park)", "url": "https://en.wikipedia.org/wiki/Sandara_Park"}, {"name": "Inquirer.net", "url": "http://lifestyle.inquirer.net/204654/sandara-x-penshoppe"}, {"name": "Wikipedia (Penshoppe)", "url": "https://en.wikipedia.org/wiki/Penshoppe"}], "via": "wikipedia"},
-    {"brand": "Vivienne Westwood", "year": 2026, "season": "Fall/Winter", "talent": ["Ilona Staller"], "sources": [{"name": "Wikipedia (Ilona Staller)", "url": "https://en.wikipedia.org/wiki/Ilona_Staller"}, {"name": "MF Milano Finanza", "url": "https://www.milanofinanza.it/fashion/vivienne-westwood-sceglie-cicciolina-per-la-nuova-campagna-202607151119227090"}], "via": "wikipedia"},
     {"brand": "Ralph Lauren", "year": 2009, "talent": ["Carly Foulkes"], "sources": [{"name": "Wikipedia (Carly Foulkes)", "url": "https://en.wikipedia.org/wiki/Carly_Foulkes"}], "via": "wikipedia"},
     {"brand": "Abercrombie & Fitch", "year": 2009, "talent": ["Carly Foulkes"], "sources": [{"name": "Wikipedia (Carly Foulkes)", "url": "https://en.wikipedia.org/wiki/Carly_Foulkes"}], "via": "wikipedia"},
     {"brand": "Macy's", "year": 2009, "talent": ["Carly Foulkes"], "sources": [{"name": "Wikipedia (Carly Foulkes)", "url": "https://en.wikipedia.org/wiki/Carly_Foulkes"}], "via": "wikipedia"},
@@ -7630,16 +8146,6 @@
     {"brand": "Chrome Hearts", "year": null, "talent": ["Gigi Hadid"], "sources": [{"name": "Wikipedia (Chrome Hearts)", "url": "https://en.wikipedia.org/wiki/Chrome_Hearts"}], "via": "wikipedia"},
     {"brand": "Heatherette", "year": null, "kind": "runway", "talent": ["Mena Suvari"], "sources": [{"name": "Wikipedia (Heatherette)", "url": "https://en.wikipedia.org/wiki/Heatherette"}, {"name": "nymag.com", "url": "http://nymag.com/fashion/fashionshows/designers/bios/heatherette/"}], "via": "wikipedia"},
     {"brand": "Heatherette", "year": null, "kind": "runway", "talent": ["Anna Nicole Smith"], "sources": [{"name": "Wikipedia (Heatherette)", "url": "https://en.wikipedia.org/wiki/Heatherette"}, {"name": "nymag.com", "url": "http://nymag.com/fashion/fashionshows/designers/bios/heatherette/"}], "via": "wikipedia"},
-    {"brand": "Heatherette", "year": null, "kind": "runway", "talent": ["Jenna Jameson"], "sources": [{"name": "Wikipedia (Heatherette)", "url": "https://en.wikipedia.org/wiki/Heatherette"}, {"name": "nymag.com", "url": "http://nymag.com/fashion/fashionshows/designers/bios/heatherette/"}], "via": "wikipedia"},
-    {
-      "brand": "Dior",
-      "year": 2027,
-      "season": "Spring/Summer",
-      "talent": ["Amanda Nascimento", "Nimota Daudu", "Reagan Lee", "Nana Darko"],
-      "sources": [
-        {"name": "IMG Models", "url": "https://imgmodels.com"}
-      ],
-      "kind": "runway"
-    }
+    {"brand": "Heatherette", "year": null, "kind": "runway", "talent": ["Jenna Jameson"], "sources": [{"name": "Wikipedia (Heatherette)", "url": "https://en.wikipedia.org/wiki/Heatherette"}, {"name": "nymag.com", "url": "http://nymag.com/fashion/fashionshows/designers/bios/heatherette/"}], "via": "wikipedia"}
   ]
 }
