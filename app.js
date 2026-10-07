@@ -97,8 +97,9 @@
   }
 
   // A model's portrait (from Wikimedia Commons), used where no campaign photo of her exists.
+  // If the image fails to load, the element marked data-fallback (or the image itself) is removed.
   const portraitTag = (m, cls = '') => m.portrait
-    ? `<img class="${cls}" src="${esc(m.portrait)}" alt="${esc(m.name)}" loading="lazy" referrerpolicy="no-referrer">` : '';
+    ? `<img class="${cls}" src="${esc(m.portrait)}" alt="${esc(m.name)}" loading="lazy" referrerpolicy="no-referrer" onerror="(this.closest('[data-fallback]')||this).remove()">` : '';
 
   // A strip of photos. `max` limits how many show; the last tile then says how many more there are.
   function gallery(c, person, max = 6) {
@@ -186,7 +187,7 @@
     const c = m.campaigns.find(x => photosOf(x, m.name).length);
     const brands = [...new Set(m.campaigns.map(x => x.brand))];
     const img = c ? visual(c, m.name).replace(/ data-c="[^"]*" data-i="[^"]*"/, '')
-      : m.portrait ? portraitTag(m) : `<div class="placeholder"><b>${esc(m.name)}</b></div>`;
+      : `<div class="placeholder"><b>${esc(m.name)}</b></div>${m.portrait ? `<span class="over" data-fallback>${portraitTag(m)}</span>` : ''}`;
     return `
     <article class="card">
       <a class="card-img" href="#/model/${slug(m.name)}">${img}</a>
@@ -297,7 +298,7 @@
           <p class="lede">${plural(m.campaigns.length, 'campaign')} for ${plural(brands.size, 'brand')} · ${range(m.first, m.last)}${photos ? ` · ${plural(photos, 'photo')}` : ''}</p>
           ${m.wiki ? `<p class="sources"><a href="${esc(m.wiki)}" target="_blank" rel="noopener noreferrer">Biography on Wikipedia ↗</a></p>` : ''}
         </div>
-        ${m.portrait ? `<figure class="portrait">${portraitTag(m)}<figcaption>${m.portraitPage ? `<a href="${esc(m.portraitPage)}" target="_blank" rel="noopener noreferrer">${esc(m.portraitCredit || 'Photo: Wikimedia Commons')} ↗</a>` : esc(m.portraitCredit || '')}</figcaption></figure>` : ''}
+        ${m.portrait ? `<figure class="portrait" data-fallback>${portraitTag(m)}<figcaption>${m.portraitPage ? `<a href="${esc(m.portraitPage)}" target="_blank" rel="noopener noreferrer">${esc(m.portraitCredit || 'Photo: Wikimedia Commons')} ↗</a>` : esc(m.portraitCredit || '')}</figcaption></figure>` : ''}
       </section>
       <div class="chips"><span class="chips-label">Advertised for</span>${[...brands].sort((a, b) => a[0].localeCompare(b[0])).map(([b, cs]) =>
         `<a class="chip" href="#/brand/${slug(b)}">${esc(b)}<small>${cs.filter(dated).map(label).join(', ')}</small></a>`).join('')}</div>

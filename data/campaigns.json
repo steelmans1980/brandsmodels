@@ -6085,6 +6085,56 @@
     {"brand": "Express", "year": null, "talent": ["Oluchi Onweagba"], "sources": [{"name": "Wikipedia (Oluchi Onweagba)", "url": "https://en.wikipedia.org/wiki/Oluchi_Onweagba"}], "via": "wikipedia"},
     {"brand": "Victoria's Secret", "year": null, "talent": ["Oluchi Onweagba"], "sources": [{"name": "Wikipedia (Oluchi Onweagba)", "url": "https://en.wikipedia.org/wiki/Oluchi_Onweagba"}], "via": "wikipedia"},
     {"brand": "Badgley Mischka", "year": null, "talent": ["Cecile Sinclair"], "sources": [{"name": "Wikipedia (Cecile Sinclair)", "url": "https://en.wikipedia.org/wiki/Cecile_Sinclair"}, {"name": "models.com", "url": "http://models.com/work/piazza-sempione-piazza-sempione-fw-10"}], "via": "wikipedia"},
-    {"brand": "Harrods", "year": null, "talent": ["Cecile Sinclair"], "sources": [{"name": "Wikipedia (Cecile Sinclair)", "url": "https://en.wikipedia.org/wiki/Cecile_Sinclair"}, {"name": "bellazon.com", "url": "http://www.bellazon.com/main/topic/37117-cecile-sinclair/"}], "via": "wikipedia"}
+    {"brand": "Harrods", "year": null, "talent": ["Cecile Sinclair"], "sources": [{"name": "Wikipedia (Cecile Sinclair)", "url": "https://en.wikipedia.org/wiki/Cecile_Sinclair"}, {"name": "bellazon.com", "url": "http://www.bellazon.com/main/topic/37117-cecile-sinclair/"}], "via": "wikipedia"},
+    {
+      "brand": "Victoria's Secret",
+      "year": 2024,
+      "season": "Holiday",
+      "talent": ["Gigi Hadid", "Candice Swanepoel", "Devyn Garcia", "Imaan Hammam", "Grace Elizabeth", "Taylor Hill", "Jasmine Tookes", "Paloma Elsesser", "Mayowa Nicholas"],
+      "sources": [
+        {"name": "Fashion Gone Rogue", "url": "https://fashiongonerogue.com/victorias-secret-holiday-24-ad-gigi-hadid"}
+      ]
+    },
+    {
+      "brand": "Victoria's Secret",
+      "year": 2024,
+      "season": "Spring",
+      "title": "Valentine's Day",
+      "talent": ["Devyn Garcia", "Mayowa Nicholas", "Adut Akech", "Jill Kortleve", "Grace Elizabeth", "Paloma Elsesser", "Elisabetta Dessy", "Mariacarla Boscono"],
+      "sources": [
+        {"name": "Fashion Gone Rogue", "url": "https://fashiongonerogue.com/victorias-secret-valentines-day-2024"}
+      ]
+    },
+    {
+      "brand": "Hunkemöller",
+      "year": 2016,
+      "season": "Fall/Winter",
+      "title": "Doutzen Stories",
+      "talent": ["Doutzen Kroes"],
+      "sources": [
+        {"name": "FashionUnited", "url": "https://fashionunited.uk/news/people/doutzen-kroes-is-revealed-as-the-new-brand-ambassador-for-hunkemo-ller/2016090121622"},
+        {"name": "Fashion Gone Rogue", "url": "https://fashiongonerogue.com/doutzen-kroes-hunkemoller-ad-campaign"}
+      ]
+    },
+    {
+      "brand": "Hunkemöller",
+      "year": 2018,
+      "season": "Summer",
+      "title": "Swimwear",
+      "talent": ["Doutzen Kroes"],
+      "sources": [
+        {"name": "Fashion Gone Rogue", "url": "https://fashiongonerogue.com/doutzen-kroes-hunkemoller-swim-campaign"}
+      ]
+    },
+    {
+      "brand": "Desigual",
+      "year": 2022,
+      "season": "Fall/Winter",
+      "talent": ["Grace Elizabeth"],
+      "photographer": "Mario Sorrenti",
+      "sources": [
+        {"name": "Fashion Gone Rogue", "url": "https://fashiongonerogue.com/desigual-fall-2022-campaign-mario-sorrenti"}
+      ]
+    }
   ]
 }

@@ -228,3 +228,5 @@ h2 { font-size: 32px; margin: 8px 0 0; }
   .rows li { grid-template-columns: 1fr; gap: 2px; }
   .rows .src { text-align: left; }
 }
+.card-img .over { position: absolute; inset: 0; }
+.card-img .over img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }

@@ -3,6 +3,16 @@
 A searchable archive of the women who fronted clothing-brand campaigns, by brand, year and season.
 Example: search **bebe** and you'll see that Hailey Clauson fronted its Spring 2017 campaign.
 
+## Where the data comes from
+
+- **Recent and high-street campaigns**: added by hand from fashion press (Fashion Gone Rogue, The Impression, NYLON, The Zoe Report, models.com credits…), each with its source link.
+- **Historical archive**: extracted from the career sections of female models' Wikipedia biographies (and brands' Wikipedia articles), using the article and the press article it cites as sources. Every dated entry that wasn't a simple "In 2014, she was the face of X" sentence was checked by hand.
+- Entries whose source gives no year are kept with `"year": null` and shown under "Year not recorded".
+- Model portraits are thumbnails from Wikimedia Commons, credited on each model page.
+- Instagram and Facebook require a login and forbid automated collection, so they are not used.
+
+Entries generated from Wikipedia carry `"via": "wikipedia"`; hand-written entries don't. Edit hand-written entries freely.
+
 ## How it works
 
 Plain static site, no build step, deployed by Cloudflare straight from this repo.
