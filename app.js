@@ -95,9 +95,20 @@
 
   const placeholder = c => `<div class="placeholder"><b>${esc(c.brand)}</b><span>${esc(label(c))}</span></div>`;
 
+  // Models of a credit who have a portrait, the given person first.
+  function portraitsOf(c, person) {
+    const names = person ? [person, ...c.talent.filter(t => t !== person)] : c.talent;
+    return names.map(n => db.models.get(slug(n))).filter(m => m && m.portrait).slice(0, person ? 1 : 4);
+  }
+
+  // A credit's picture: its own photo, else portraits of its models (labelled), else a title card.
   function visual(c, person) {
     const img = coverOf(c, person);
-    return img ? photoTag(c, img) : placeholder(c);
+    if (img) return photoTag(c, img);
+    const ps = portraitsOf(c, person);
+    if (!ps.length) return placeholder(c);
+    return `${placeholder(c)}<span class="over portraits n${ps.length}">${ps.map(m =>
+      `<img src="${esc(m.portrait)}" alt="${esc(m.name)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`).join('')}<span class="ptag">Model portrait</span></span>`;
   }
 
   // A model's portrait (from Wikimedia Commons), used where no campaign photo of her exists.
@@ -136,10 +147,9 @@
   function entry(c, person) {
     const others = person ? c.talent.filter(t => t !== person) : [];
     const pics = gallery(c, person);
-    const cover = !pics && coverOf(c, person);
     return `
-    <div class="entry${pics ? ' has-photos' : cover ? '' : ' text-only'}">
-      ${pics || !cover ? '' : `<div class="entry-thumb">${visual(c, person)}</div>`}
+    <div class="entry${pics ? ' has-photos' : ''}">
+      ${pics ? '' : `<div class="entry-thumb">${visual(c, person)}</div>`}
       <div>
         <div class="season">${esc(seasonOf(c))}${kindBadge(c)}</div>
         <h3>${person ? brandLink(c.brand) : list(c.talent)}</h3>
@@ -152,7 +162,7 @@
 
   // Campaigns without photos, one line each: brand and season, the faces, the sources.
   const rows = cs => cs.length ? `<ul class="rows">${cs.map(c => `
-    <li><span class="row-brand">${brandLink(c.brand)}<small>${esc(label(c))}</small></span>
+    <li><span class="row-pic">${visual(c)}</span><span class="row-brand">${brandLink(c.brand)}<small>${esc(label(c))}</small></span>
       <span class="row-who">${kindBadge(c)}${list(c.talent)}${c.title ? ` <em>${esc(c.title)}</em>` : ''}${c.note ? ` <span class="note">${esc(c.note)}</span>` : ''}</span>
       <span class="src">${sourceLinks(c.sources)}</span></li>`).join('')}</ul>` : '';
   // Photo cards first, then the rest as rows.
@@ -445,6 +455,7 @@
       <div class="eyebrow">${brandLink(c.brand)} · ${esc(label(c))}</div>
       <h3>${list(who)}</h3>
       ${c.photographer ? `<p>Photography: ${esc(c.photographer)}</p>` : ''}
+      ${img.from ? `<p class="sources">Photo: <a href="${esc(img.from)}" target="_blank" rel="noopener noreferrer">${esc(img.credit || 'source')} ↗</a> · © its owner</p>` : ''}
       ${sources(c)}
       ${boxSet.length > 1 ? `<p class="lb-count">${boxAt + 1} / ${boxSet.length}</p>` : ''}`;
     box.querySelectorAll('.lb-nav').forEach(b => { b.hidden = boxSet.length < 2; });
@@ -489,7 +500,7 @@
 
   // Photos open in the lightbox; in-page jumps (years, letters) scroll instead of routing.
   app.addEventListener('click', e => {
-    const shot = e.target.closest('.shot, .hero-image, .entry-thumb');
+    const shot = e.target.closest('.shot, .hero-image, .entry-thumb, .row-pic, .card-img');
     const img = shot && shot.querySelector('img[data-c]');
     if (img) { e.preventDefault(); openPhoto(img); return; }
     const a = e.target.closest('[data-jump]');
