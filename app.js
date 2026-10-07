@@ -197,7 +197,7 @@
         <div>
           <p class="hint">${person ? 'Labels she worked for' : 'Models who worked for this label'} where the source gives no year.</p>
           <ul class="undated-list">${rows.map(c => `
-            <li><span class="who">${person ? brandLink(c.brand) : list(c.talent)}</span>${kindBadge(c)}
+            <li>${c.images && c.images.length ? `<span class="row-pic u-pic">${photoTag(c, (person && coverOf(c, person)) || c.images[0])}</span>` : ''}<span class="who">${person ? brandLink(c.brand) : list(c.talent)}</span>${kindBadge(c)}
               ${c.title ? `<em>${esc(c.title)}</em>` : ''}${c.note ? `<span class="note">${esc(c.note)}</span>` : ''}
               <span class="src">${sourceLinks(c.sources)}</span></li>`).join('')}
           </ul>
