@@ -101,10 +101,24 @@
     return names.map(n => db.models.get(slug(n))).filter(m => m && m.portrait).slice(0, person ? 1 : 4);
   }
 
-  // A credit's picture: its own photo, else portraits of its models (labelled), else a title card.
+  // The first model of a credit (the given person first) with photos from her press coverage.
+  function pressOf(c, person) {
+    const names = person ? [person] : c.talent;
+    return names.map(n => db.models.get(slug(n))).find(m => m && m.press && m.press.length);
+  }
+  // A press photo of a model; it opens in the lightbox with the rest of her press photos (data-m, data-p).
+  const pressTag = (m, k) =>
+    `<img src="${esc(k.src)}" alt="${esc(m.name)}${k.title ? ' — ' + esc(k.title) : ''}" loading="lazy" data-m="${esc(slug(m.name))}" data-p="${m.press.indexOf(k)}" onerror="this.closest('.over')?.remove()">`;
+
+  // A credit's picture: its own photo, else a press photo of its model, else portraits of its models (labelled), else a title card.
   function visual(c, person) {
     const img = coverOf(c, person);
     if (img) return photoTag(c, img);
+    const pm = pressOf(c, person);
+    if (pm) {
+      const k = pm.press[c.id % pm.press.length];
+      return `${placeholder(c)}<span class="over">${pressTag(pm, k)}<span class="ptag">Press photo of ${esc(pm.name)}</span></span>`;
+    }
     const ps = portraitsOf(c, person);
     if (!ps.length) return placeholder(c);
     return `${placeholder(c)}<span class="over portraits n${ps.length}">${ps.map(m =>
@@ -203,6 +217,7 @@
     const c = m.campaigns.find(x => photosOf(x, m.name).length);
     const brands = [...new Set(m.campaigns.map(x => x.brand))];
     const img = c ? visual(c, m.name).replace(/ data-c="[^"]*" data-i="[^"]*"/, '')
+      : m.press?.length ? `<div class="placeholder"><b>${esc(m.name)}</b></div><span class="over">${pressTag(m, m.press[0]).replace(/ data-m="[^"]*" data-p="[^"]*"/, '')}</span>`
       : `<div class="placeholder"><b>${esc(m.name)}</b></div>${m.portrait ? `<span class="over" data-fallback>${portraitTag(m)}</span>` : ''}`;
     return `
     <article class="card">
@@ -318,6 +333,8 @@
       </section>
       <div class="chips"><span class="chips-label">Worked for</span>${[...brands].sort((a, b) => a[0].localeCompare(b[0])).map(([b, cs]) =>
         `<a class="chip" href="#/brand/${slug(b)}">${esc(b)}<small>${cs.filter(dated).map(label).join(', ')}</small></a>`).join('')}</div>
+      ${m.press?.length ? `<section class="press"><div class="section-top"><h2>In the press</h2><span class="hint">Lead photos of articles about ${esc(m.name)} cited on Wikipedia</span></div>
+        <div class="gallery">${m.press.map(k => `<button class="shot" type="button" aria-label="Open photo: ${esc(k.title || m.name)}">${pressTag(m, k)}</button>`).join('')}</div></section>` : ''}
       ${timeline(m.campaigns, m.name)}`;
   }
 
@@ -447,8 +464,26 @@
     showPhoto();
     if (!box.open) box.showModal();
   }
+  function openPress(img) {
+    const m = db.models.get(img.dataset.m);
+    boxSet = m.press.map(k => ({ m, img: k }));
+    boxAt = Number(img.dataset.p) || 0;
+    showPhoto();
+    if (!box.open) box.showModal();
+  }
   function showPhoto() {
-    const { c, img } = boxSet[boxAt];
+    const { c, m, img } = boxSet[boxAt];
+    if (m) {
+      box.querySelector('.lb-img').innerHTML = `<img src="${esc(img.src)}" alt="${esc(m.name)}">`;
+      box.querySelector('.lb-caption').innerHTML = `
+        <div class="eyebrow">In the press</div>
+        <h3>${modelLink(m.name)}</h3>
+        ${img.title ? `<p>${esc(img.title)}</p>` : ''}
+        <p class="sources">Photo: <a href="${esc(img.from)}" target="_blank" rel="noopener noreferrer">${esc(img.credit || 'source')} ↗</a> · © its owner</p>
+        ${boxSet.length > 1 ? `<p class="lb-count">${boxAt + 1} / ${boxSet.length}</p>` : ''}`;
+      box.querySelectorAll('.lb-nav').forEach(b => { b.hidden = boxSet.length < 2; });
+      return;
+    }
     const who = img.talent.length ? img.talent : c.talent;
     box.querySelector('.lb-img').innerHTML = `<img src="${esc(img.src)}" alt="${esc(altText(c, img))}">`;
     box.querySelector('.lb-caption').innerHTML = `
@@ -503,6 +538,8 @@
     const shot = e.target.closest('.shot, .hero-image, .entry-thumb, .row-pic, .card-img');
     const img = shot && shot.querySelector('img[data-c]');
     if (img) { e.preventDefault(); openPhoto(img); return; }
+    const pimg = shot && shot.querySelector('img[data-m]');
+    if (pimg) { e.preventDefault(); openPress(pimg); return; }
     const a = e.target.closest('[data-jump]');
     if (a) { e.preventDefault(); document.getElementById(a.dataset.jump)?.scrollIntoView({ behavior: 'smooth' }); }
   });

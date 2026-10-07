@@ -267,3 +267,7 @@ h2 { font-size: 32px; margin: 8px 0 0; }
   .rows .row-brand, .rows .row-who, .rows .src { grid-column: 2; }
   .row-pic { grid-row: span 3; width: 56px; }
 }
+.over:not(.portraits) { position: absolute; inset: 0; }
+.over:not(.portraits) > img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; cursor: zoom-in; }
+.press { margin: 28px 0 8px; }
+.press .gallery .shot img { object-position: center 25%; }
