@@ -221,7 +221,7 @@
   function viewHome() {
     const { campaigns, brands, models } = db;
     const withYear = campaigns.filter(dated);
-    const latestYear = withYear[0]?.year;
+    const latestYear = (withYear.find(c => c.images.length) || withYear[0])?.year;
     const latest = withYear.filter(c => c.year === latestYear);
     const hero = latest.find(c => c.featured && c.images.length) || latest.find(c => c.images.length) || campaigns.find(c => c.images.length);
     const years = [...groupBy(withYear, c => c.year)];
