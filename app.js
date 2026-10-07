@@ -11,8 +11,8 @@
   const SEARCH_LIMIT = 60;
   const SITE = 'The Model Archive';
   const OWNER_EMAIL = 'marwan@gedeon.org';
-  const KIND_LABEL = { runway: 'Runway show', ambassador: 'Ambassador' };
-  const TYPE_LABEL = { designer: 'Fashion house / designer', brand: 'Brand / retailer' };
+  const KIND_LABEL = { runway: 'Runway show', ambassador: 'Ambassador', cover: 'Magazine cover' };
+  const TYPE_LABEL = { designer: 'Fashion house / designer', brand: 'Brand / retailer', magazine: 'Magazine' };
 
   const app = document.getElementById('app');
   const searchInput = document.getElementById('search');
@@ -263,7 +263,7 @@
         <div>
           <p class="lede">Search a model to see every brand and fashion designer she has worked for, or search a label to see all its models: campaigns, runway shows and ambassadorships, year by year and season by season. Spotted a familiar face in a shop window? Look it up here.</p>
           <div class="stats">
-            <div><b>${brands.size.toLocaleString('en')}</b><span>Brands &amp; designers</span></div>
+            <div><b>${brands.size.toLocaleString('en')}</b><span>Labels &amp; magazines</span></div>
             <div><b>${models.size.toLocaleString('en')}</b><span>Models</span></div>
             <div><b>${campaigns.length.toLocaleString('en')}</b><span>Credits</span></div>
             <div><b>${range(Math.min(...allYears), Math.max(...allYears))}</b><span>Years</span></div>
@@ -373,7 +373,7 @@
         <h1>“${esc(q)}”</h1>
         <p class="lede">${total ? `${plural(brands.length, 'label')} · ${plural(models.length, 'model')} · ${plural(campaigns.length, 'credit')}` : 'No matches yet. The archive is growing, so try another spelling or check back later.'}</p>
       </section>
-      ${brands.length ? `<div class="results-group"><h2>Brands &amp; designers</h2><div class="directory">${brands.map(b => `<a href="#/brand/${slug(b.name)}"><span>${esc(b.name)}</span><small>${plural(b.campaigns.length, 'credit')} · ${range(b.first, b.last)}</small></a>`).join('')}</div></div>` : ''}
+      ${brands.length ? `<div class="results-group"><h2>Labels &amp; magazines</h2><div class="directory">${brands.map(b => `<a href="#/brand/${slug(b.name)}"><span>${esc(b.name)}</span><small>${plural(b.campaigns.length, 'credit')} · ${range(b.first, b.last)}</small></a>`).join('')}</div></div>` : ''}
       ${models.length ? `<div class="results-group"><h2>Models</h2><div class="grid">${models.slice(0, 24).map(modelCard).join('')}</div>${more(models.length, Math.min(24, models.length), 'models')}</div>` : ''}
       ${campaigns.length ? `<div class="results-group"><h2>Campaigns</h2>${cardsThenRows(campaigns.slice(0, SEARCH_LIMIT))}${more(campaigns.length, Math.min(SEARCH_LIMIT, campaigns.length), 'campaigns')}</div>` : ''}`;
   }
@@ -384,9 +384,9 @@
     const shown = TYPE_LABEL[type] ? all.filter(b => b.type === type) : all;
     const tab = (t, text, n) => `<a class="chip${(type || '') === t ? ' active' : ''}" href="#/brands${t ? '/' + t : ''}">${text}<small>${n}</small></a>`;
     return `
-    <section class="page-head"><div class="eyebrow">Directory</div><h1>Brands &amp; designers</h1>
+    <section class="page-head"><div class="eyebrow">Directory</div><h1>Labels &amp; magazines</h1>
       <p class="lede">${plural(shown.length, 'label')}. Pick one to see every model who worked for it, by year and season.</p></section>
-    <div class="chips">${tab('', 'All', all.length)}${tab('designer', 'Fashion houses &amp; designers', all.filter(b => b.type === 'designer').length)}${tab('brand', 'Brands &amp; retailers', all.filter(b => b.type === 'brand').length)}</div>
+    <div class="chips">${tab('', 'All', all.length)}${tab('designer', 'Fashion houses &amp; designers', all.filter(b => b.type === 'designer').length)}${tab('brand', 'Brands &amp; retailers', all.filter(b => b.type === 'brand').length)}${tab('magazine', 'Magazines', all.filter(b => b.type === 'magazine').length)}</div>
     ${directory(shown, b => `#/brand/${slug(b.name)}`, 'brand')}`;
   }
 
@@ -405,7 +405,7 @@
   const viewAbout = () => `
     <section class="page-head"><div class="eyebrow">About</div><h1>About the archive</h1></section>
     <div class="prose">
-      <p>${SITE} records the work of fashion models: the brands and fashion designers they have worked for, and when. Search a model to see her campaigns, runway shows and ambassadorships, or search a brand or designer to see every model who worked for it, year by year and season by season.</p>
+      <p>${SITE} records the work of fashion models: the brands and fashion designers they have worked for, the magazine covers they have appeared on, and when. Search a model to see her campaigns, runway shows, ambassadorships and magazine covers, or search a brand or designer to see every model who worked for it, year by year and season by season.</p>
       <p>Every entry links to its source. Recent campaigns come from fashion press coverage. The historical archive comes from the career sections of models' Wikipedia biographies, from the brands' own Wikipedia articles, and from the press articles they cite. When a source gives a year but no season, the entry shows the year only; when it gives no year at all, the entry is listed under “Year not recorded”.</p>
       <p>The archive is a work in progress, not a complete record. If you know of work that is missing or wrong, it can be added or corrected.</p>
       <p>Brand names, designer names and photographs belong to their respective owners. Campaign photos come from the press coverage each entry links to; portraits of models come from Wikimedia Commons and are credited on each model's page. See the <a href="#/privacy">privacy &amp; copyright</a> page to request the removal of any content.</p>
@@ -525,7 +525,7 @@
     if (page !== 'search' && document.activeElement !== searchInput) searchInput.value = '';
     if (page === 'search' && searchInput.value !== arg) searchInput.value = arg;
     document.querySelectorAll('nav a').forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#/' + page));
-    const titles = { brand: db.brands.get(arg)?.name, model: db.models.get(arg)?.name, year: arg, search: arg && `“${arg}”`, brands: 'Brands & designers', models: 'Models', years: 'Years', about: 'About', privacy: 'Privacy & copyright' };
+    const titles = { brand: db.brands.get(arg)?.name, model: db.models.get(arg)?.name, year: arg, search: arg && `“${arg}”`, brands: 'Labels & magazines', models: 'Models', years: 'Years', about: 'About', privacy: 'Privacy & copyright' };
     document.title = (titles[page] ? titles[page] + ' — ' : '') + SITE;
     const form = document.getElementById('removalForm');
     if (form) form.elements._next.value = location.href.split('#')[0] + '#/privacy/sent';

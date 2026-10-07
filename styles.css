@@ -236,6 +236,7 @@ h2 { font-size: 32px; margin: 8px 0 0; }
 .card .kind, .rows .kind, .undated-list .kind { margin: 0 6px 0 0; }
 .kind-runway { border-color: #b9a98a; color: #7a6a48; }
 .kind-ambassador { border-color: #9fb0a0; color: #4f6652; }
+.kind-cover { border-color: #b39aa6; color: #6e4d5d; }
 
 /* Footer links */
 .site-footer a { color: inherit; }
