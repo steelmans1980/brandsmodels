@@ -135,7 +135,9 @@
     const imgs = photosOf(c, person);
     if (!imgs.length) return '';
     const shown = imgs.slice(0, max), more = imgs.length - shown.length;
-    return `<div class="gallery">${shown.map((img, n) => `<button class="shot" type="button" aria-label="Open photo: ${esc(altText(c, img))}">${photoTag(c, img)}${n === shown.length - 1 && more > 0 ? `<span class="more">+${more}</span>` : ''}</button>`).join('')}</div>`;
+    // On a model's page, a photo not tagged with her from a campaign with several models may show the others.
+    const group = person && c.talent.length > 1 && shown.every(i => !i.talent.includes(person));
+    return `<div class="gallery">${shown.map((img, n) => `<button class="shot" type="button" aria-label="Open photo: ${esc(altText(c, img))}">${photoTag(c, img)}${n === shown.length - 1 && more > 0 ? `<span class="more">+${more}</span>` : ''}</button>`).join('')}</div>${group ? `<p class="hint group-note">Campaign photo — it may show other models from this campaign rather than ${esc(person)}.</p>` : ''}`;
   }
 
   const sourceLinks = srcs => srcs.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)} ↗</a>`).join(' · ');

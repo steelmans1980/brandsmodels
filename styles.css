@@ -272,3 +272,4 @@ h2 { font-size: 32px; margin: 8px 0 0; }
 .over:not(.portraits) > img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; cursor: zoom-in; }
 .press { margin: 28px 0 8px; }
 .press .gallery .shot img { object-position: center 25%; }
+.group-note { margin: 6px 0 0; font-size: 12px; color: var(--muted); }
