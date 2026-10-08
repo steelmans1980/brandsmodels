@@ -16,7 +16,10 @@ _local = threading.local()
 # Sites that serve no usable page to us whatever robots.txt says (login walls, data brokers).
 NEVER = ('instagram.com', 'facebook.com', 'pinterest.', 'tiktok.com', 'twitter.com', 'x.com', 'reddit.com',
          'models.com', 'fashionmodeldirectory.com', 'gettyimages.', 'shutterstock.', 'alamy.', 'ebay.', 'etsy.',
-         'amazon.', 'aliexpress.', 'wikipedia.org', 'wikimedia.org', 'youtube.com', 'tumblr.com', 'imdb.com', 'alchetron.com', 'famousfix.com')
+         'amazon.', 'aliexpress.', 'wikipedia.org', 'wikimedia.org', 'youtube.com', 'tumblr.com', 'imdb.com', 'alchetron.com', 'famousfix.com',
+         '1stdibs.com', 'therealreal.com', 'vestiairecollective.com', 'poshmark.com', 'shrimptoncouture.com',
+         # event and red-carpet photo sites: never campaign imagery
+         'redcarpet-fashionawards.com')
 
 
 def _decode(r, ctype):
@@ -109,6 +112,8 @@ def page(url, offline=False):
     """Fetch an article page (cached). Returns {'status': 'ok'|'blocked'|'never'|'error'|'http NNN'|'not html', ...}."""
     store = cache.pages_store()
     got = store.get('page', url)
+    if got is not None and never(url):
+        return {'status': 'never'}  # a host excluded after the page was cached
     if got is not None:
         if got.get('html'):
             got['html'] = repair(got['html'])

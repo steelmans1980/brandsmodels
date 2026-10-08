@@ -17,9 +17,15 @@ WORD = {
     'fall': 'FW', 'autumn': 'FW', 'winter': 'FW', 'fw': 'FW', 'f/w': 'FW', 'aw': 'FW', 'a/w': 'FW', 'ah': 'FW',
     'holiday': 'HOL', 'holidays': 'HOL', 'christmas': 'HOL', 'resort': 'RES', 'cruise': 'RES',
     'pre-fall': 'PF', 'pre fall': 'PF', 'prefall': 'PF',
+    # French, Italian, Spanish, German press ("Celine Hiver 2025", "Primavera/Estate 2016", "Herbst/Winter 2015")
+    'hiver': 'FW', 'automne': 'FW', 'printemps': 'SS', 'ete': 'SS', 'été': 'SS',
+    'autunno': 'FW', 'inverno': 'FW', 'primavera': 'SS', 'estate': 'SS',
+    'otono': 'FW', 'otoño': 'FW', 'invierno': 'FW', 'verano': 'SS',
+    'herbst': 'FW', 'fruhling': 'SS', 'frühling': 'SS', 'sommer': 'SS',
 }
 
-_S = r'(pre[- ]?fall|spring|summer|fall|autumn|winter|holidays?|christmas|resort|cruise)'
+_S = (r'(pre[- ]?fall|spring|summer|fall|autumn|winter|holidays?|christmas|resort|cruise|hiver|automne|printemps|'
+      r'[ée]t[ée]|autunno|inverno|primavera|estate|oto[ñn]o|invierno|verano|herbst|fr[üu]hling|sommer)')
 _PATTERNS = [
     # Fall/Winter 2015, Autumn-Winter 2015/16, Spring Summer '16, Fall 2015
     (re.compile(r'(?i)\b' + _S + r'(?:\s*(?:/|-|–|&|and)\s*' + _S + r'|\s+' + _S + r')?[\s,]+(?:of\s+)?((?:19|20)\d\d|[\'’]\d\d)\b'), 'word'),
@@ -51,12 +57,13 @@ def mentions(text):
                 continue
             try:
                 if kind == 'word':
-                    fam = WORD[m.group(1).lower().replace(' ', '-') if 'pre' in m.group(1).lower() else m.group(1).lower()]
+                    w = m.group(1).lower()
+                    fam = WORD[w.replace(' ', '-') if w.startswith('pre') else w]
                     y = _year(m.group(4))
                 elif kind == 'year-first':
                     y = int(m.group(1))
                     w = m.group(2).lower()
-                    fam = WORD['pre-fall' if 'pre' in w else w]
+                    fam = WORD['pre-fall' if w.startswith('pre') else w]
                 else:
                     fam = WORD[m.group(1).lower()]
                     y = _year(m.group(2))

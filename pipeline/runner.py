@@ -172,35 +172,145 @@ def cmd_trial(args):
     # The selection is drawn once and then frozen, so re-runs compare the same 50 campaigns.
     frozen = os.path.join(config.RESULTS, 'trial_selection.json')
     if os.path.exists(frozen) and not args.reselect:
-        sel = [gs[x['id']] for x in json.load(open(frozen)) if x['id'] in gs]
+        # the frozen definition is used when a later data correction changed or removed the group
+        sel = [gs.get(x['id']) or x['group'] for x in json.load(open(frozen)) if x['id'] in gs or x.get('group')]
     else:
         sel = trial_selection(gs, args.n)
-        _write_json('trial_selection.json', [{'id': g['id'], 'label': groups.label(g), 'models': g['models']} for g in sel])
-    report = {'selection': len(sel), 'arms': {}}
-    # Arm A: the improved existing pipeline (cited sources, earlier results, Brave campaign-first then model-first).
-    arm_a = ('sources', 'legacy', 'brave_web', 'brave_images')
-    # the cap covers the whole trial, across re-runs: subtract what earlier trial runs already paid
-    paid = ledger_total('trial')['usd']
-    budget_a = Budget(max(0.0, args.budget - paid), dry=args.dry_run, run='trial-improved')
-    report['already_paid_before_this_run'] = paid
-    done_a = run_groups('trial-improved', sel, data, arm_a, budget_a, redo=args.redo)
-    rows_a = [done_a[g['id']] for g in sel]
-    report['arms']['improved pipeline'] = summarize(rows_a, budget_a)
-    # Arm B: Google Images discovery through SerpApi, on the same 50, when a key is configured.
-    if serpapi.available():
-        budget_b = Budget(max(0.0, args.budget - paid - budget_a.spent), dry=args.dry_run, run='trial-google')
+        _write_json('trial_selection.json', [{'id': g['id'], 'label': groups.label(g), 'models': g['models'], 'group': g} for g in sel])
+    report = json.load(open(os.path.join(config.RESULTS, 'trial.summary.json'))) \
+        if os.path.exists(os.path.join(config.RESULTS, 'trial.summary.json')) else {}
+    report.update(selection=len(sel))
+    report.setdefault('arms', {})
+    if not args.google:
+        # Arm A: the improved existing pipeline (cited sources, earlier results, Brave campaign-first then model-first).
+        arm_a = ('sources', 'legacy', 'brave_web', 'brave_images')
+        # the cap covers the whole trial, across re-runs: subtract what earlier trial runs already paid
+        paid = ledger_total('trial-improved')['usd']
+        budget_a = Budget(max(0.0, args.budget - paid), dry=args.dry_run, run='trial-improved')
+        report['already_paid_before_this_run'] = paid
+        done_a = run_groups('trial-improved', sel, data, arm_a, budget_a, redo=args.redo)
+        rows_a = [done_a[g['id']] for g in sel]
+        report['arms']['improved pipeline'] = summarize(rows_a, budget_a)
+        _export('trial-improved', {g['id'] for g in sel})
+        report['trial_total_paid'] = ledger_total('trial-improved')
+        # what searching these 50 costs, counted once per distinct paid query
+        paid_q = {(v['provider'], v['query']) for _, v in cache.search_store().items('ledger')}
+        mine = {(st['provider'], st['query']) for r in rows_a for st in r['stages'] if st.get('query')} & paid_q
+        report['paid_queries_for_these_50'] = {'requests': len(mine), 'usd': round(sum(config.PRICE[p] for p, _ in mine), 3)}
+    else:
+        # Arm B: Google Images discovery through SerpApi on the same 50, on the Free plan only, at most
+        # --max-searches new searches. Discovery only: every page found is verified exactly like Arm A's.
+        todo = [g for g in sel if args.redo or g['id'] not in _results('trial-google')]
+        needed = 0 if args.dry_run else min(args.max_searches, sum(
+            1 for g in todo for st, prov, q in discover.queries(g)
+            if prov == 'serpapi_google_images' and serpapi.cached(prov, q) is None))
+        acc = None
+        if needed:
+            ok, acc, why = serpapi.free_allowance(needed)
+            if not ok:
+                print('Google arm not run:', why)
+                report['arms']['google images (serpapi)'] = {'skipped': why, 'account': acc}
+                _write_json('trial.summary.json', report)
+                return 1
+        budget_b = Budget(0.0, dry=args.dry_run, run='trial-google', prices={'serpapi_google_images': 0.0},
+                          max_requests={'serpapi_google_images': args.max_searches})
         done_b = run_groups('trial-google', sel, data, ('serpapi_google_images',), budget_b, redo=args.redo)
         rows_b = [done_b[g['id']] for g in sel]
-        report['arms']['google images (serpapi)'] = summarize(rows_b, budget_b)
-    else:
-        report['arms']['google images (serpapi)'] = {'skipped': 'SERPAPI_API_KEY not set'}
-    _export('trial-improved', {g['id'] for g in sel})
-    report['trial_total_paid'] = ledger_total('trial')
-    # what searching these 50 costs, counted once per distinct paid query
-    paid_q = {(v['provider'], v['query']) for _, v in cache.search_store().items('ledger')}
-    mine = {(st['provider'], st['query']) for r in rows_a for st in r['stages'] if st.get('query')} & paid_q
-    report['paid_queries_for_these_50'] = {'requests': len(mine), 'usd': round(sum(config.PRICE[p] for p, _ in mine), 3)}
+        report['arms']['google images (serpapi)'] = {**summarize(rows_b, budget_b), 'plan': 'SerpApi Free',
+                                                     'account_before': acc, 'requests_sent': budget_b.attempts,
+                                                     'account_after': serpapi.account() if needed else None}
+        _export('trial-google', {g['id'] for g in sel})
     _write_json('trial.summary.json', report)
+    print(json.dumps(report, indent=1, ensure_ascii=False))
+    return 0
+
+
+def _arm_metrics(rows, rejected):
+    """What one arm established on the trial campaigns."""
+    out = collections.Counter()
+    blocked = collections.Counter()
+    examples = collections.defaultdict(list)
+    for r in rows:
+        acc = [a for a in r['accepted'] if a['file'] not in rejected]
+        if acc:
+            out['campaigns with a verified gallery'] += 1
+            g = r.get('_group') or {}
+            named = {t for a in acc for t in a['talent']}
+            out['credited models shown in a verified photo'] += len(named & set(r['models']))
+            out['photos'] += len(acc)
+            out['photos tagged to a named model'] += sum(1 for a in acc if a['talent'])
+        elif r.get('campaign_level'):
+            out['campaign confirmed, model not named (not applied)'] += 1
+        # relevant results that could not be used: the page or the image host does not permit retrieval
+        for u, p in r['pages'].items():
+            if p.get('relevant') and p['status'] in ('never', 'blocked'):
+                why = 'page host never fetched (social/stock/resale)' if p['status'] == 'never' else 'page disallows Claude (robots.txt)'
+                blocked[why] += 1
+                if len(examples[why]) < 4:
+                    examples[why].append(f"{r['label']}: {u[:100]}")
+            for k, n in (p.get('image_failures') or {}).items():
+                if 'block' in k or 'never' in k:
+                    blocked['image host disallows Claude'] += n
+                    if len(examples['image host disallows Claude']) < 4:
+                        examples['image host disallows Claude'].append(f"{r['label']}: {u[:100]}")
+    return dict(out), dict(blocked), dict(examples)
+
+
+def cmd_compare(args):
+    """Brave arm vs Google arm on the frozen trial campaigns; writes results/trial_comparison.json and a contact
+    sheet of the campaigns only Google recovered."""
+    sel = json.load(open(os.path.join(config.RESULTS, 'trial_selection.json')))
+    rejected = {x.strip() for x in open(os.path.join(config.RESULTS, 'review_rejected.txt')) if x.strip()}
+    arms = {'brave': _results('trial-improved'), 'google': _results('trial-google')}
+    if not arms['google']:
+        print('No Google arm results yet (run: python3 -m pipeline trial --google).')
+        return 1
+    report = {'campaigns': len(sel), 'arms': {}}
+    rows = {}
+    for name, res in arms.items():
+        rs = [res[x['id']] for x in sel if x['id'] in res]
+        rows[name] = {r['id']: r for r in rs}
+        m, blocked, ex = _arm_metrics(rs, rejected)
+        fails = collections.Counter(re.sub(r':.*', '', r['failure']) for r in rs if r['failure'])
+        report['arms'][name] = {'metrics': m, 'relevant but not retrievable': blocked, 'examples': ex,
+                                'failures': dict(fails.most_common())}
+    ok = lambda name, gid: bool([a for a in rows[name].get(gid, {}).get('accepted', []) if a['file'] not in rejected])
+    only_g = [x for x in sel if ok('google', x['id']) and not ok('brave', x['id'])]
+    only_b = [x for x in sel if ok('brave', x['id']) and not ok('google', x['id'])]
+    both = [x for x in sel if ok('brave', x['id']) and ok('google', x['id'])]
+    report['google only'] = [x['label'] for x in only_g]
+    report['brave only'] = [x['label'] for x in only_b]
+    report['both'] = [x['label'] for x in both]
+    report['combined: campaigns with a verified gallery'] = len(only_g) + len(only_b) + len(both)
+    report['valid dated campaigns (frozen date still supported)'] = sum(1 for x in sel if not x.get('note'))
+    summ = json.load(open(os.path.join(config.RESULTS, 'trial.summary.json')))
+    report['cost'] = {'brave': summ.get('paid_queries_for_these_50'),
+                      'google': {'requests': summ['arms'].get('google images (serpapi)', {}).get('requests_sent'),
+                                 'usd': 0.0, 'plan': 'SerpApi Free'}}
+    _write_json('trial_comparison.json', report)
+    # contact sheet: what Google added
+    items = [(x['label'], a) for x in only_g for a in rows['google'][x['id']]['accepted'] if a['file'] not in rejected]
+    items += [('[google, campaign only] ' + x['label'], a) for x in sel
+              if not ok('google', x['id']) and not ok('brave', x['id'])
+              for a in rows['google'].get(x['id'], {}).get('campaign_level') or []]
+    W, H, C = 220, 300, 6
+    os.makedirs(os.path.join(config.CACHE, 'sheets'), exist_ok=True)
+    for s0 in range(0, len(items), 30):
+        chunk = items[s0:s0 + 30]
+        sh = Image.new('RGB', (C * W, max(1, (len(chunk) + C - 1) // C) * H), 'white')
+        dr = ImageDraw.Draw(sh)
+        for j, (label, a) in enumerate(chunk):
+            X, Y = (j % C) * W, (j // C) * H
+            im = Image.open(os.path.join(config.ROOT, a['file']))
+            im.thumbnail((W - 6, H - 62))
+            sh.paste(im, (X + 3, Y + 3))
+            dr.rectangle([X, Y + H - 58, X + W, Y + H], fill='black')
+            dr.text((X + 3, Y + H - 56), f'{s0 + j} {label}'[:36], fill='yellow')
+            dr.text((X + 3, Y + H - 40), (', '.join(a['talent']) or '(models not identified)')[:36], fill='white')
+            dr.text((X + 3, Y + H - 24), a['site'][:36], fill='#aaa')
+        sh.save(os.path.join(config.CACHE, 'sheets', f'google-new-{s0 // 30:02d}.jpg'), quality=75)
+    _write_json('google_new.sheet_index.json', [{'n': i, 'label': l, 'file': a['file'], 'page': a['page'], 'image': a['image']}
+                                                for i, (l, a) in enumerate(items)])
     print(json.dumps(report, indent=1, ensure_ascii=False))
     return 0
 
@@ -418,6 +528,8 @@ def cmd_general(args):
             confirmed = any(ok and why == 'year confirmed' for ok, why in verdicts)
             if confirmed:
                 c['yearFrom'] = 'source states the year'
+                if c.get('note'):
+                    c['note'] = c['note'].replace('year from the photo source', 'year stated on the photo’s source page')
                 report['date kept: source states the campaign year'] += 1
             else:
                 c['year'] = None

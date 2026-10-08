@@ -12,10 +12,40 @@ import requests
 from . import cached, save
 
 ENDPOINT = 'https://serpapi.com/search.json'
+ACCOUNT = 'https://serpapi.com/account.json'  # plan and searches left; not billed as a search
 
 
 def available():
     return bool(os.environ.get('SERPAPI_API_KEY'))
+
+
+def account():
+    """The account's plan and remaining searches (plan_id, plan_name, searches_per_month, plan_searches_left,
+    total_searches_left, account_rate_limit_per_hour, this_hour_searches). The key is never logged."""
+    r = requests.get(ACCOUNT, params={'api_key': os.environ['SERPAPI_API_KEY']}, timeout=30)
+    r.raise_for_status()
+    d = r.json()
+    return {k: d.get(k) for k in ('plan_id', 'plan_name', 'searches_per_month', 'plan_searches_left', 'extra_credits',
+                                  'total_searches_left', 'account_rate_limit_per_hour', 'this_hour_searches',
+                                  'last_hour_searches')}
+
+
+def free_allowance(needed):
+    """(ok, account, why): ok only on the Free plan with at least `needed` searches left this month and this hour,
+    so a run can never draw on a paid plan or overage."""
+    if not available():
+        return False, None, 'SERPAPI_API_KEY not set'
+    acc = account()
+    plan = f"{acc.get('plan_id') or ''} {acc.get('plan_name') or ''}".lower()
+    if 'free' not in plan:
+        return False, acc, f"account is on '{acc.get('plan_name')}', not the Free plan: not running"
+    left = acc.get('total_searches_left')
+    if left is None or left < needed:
+        return False, acc, f'only {left} free searches left, {needed} needed'
+    hour_left = (acc.get('account_rate_limit_per_hour') or 0) - (acc.get('this_hour_searches') or 0)
+    if hour_left < needed:
+        return False, acc, f'only {hour_left} searches left this hour, {needed} needed'
+    return True, acc, 'ok'
 
 
 def images(query, budget):

@@ -1,65 +1,127 @@
 {
+ "credits": 10540,
+ "by_appearance": {
+  "identified": 2042,
+  "dated": 1778,
+  "undated": 6720
+ },
  "coverage": {
-  "general | ambassador": {
-   "credits": 111,
-   "exact photo": 32,
+  "dated | ambassador": {
+   "credits": 140,
+   "photo tagged to the model by an earlier search (visual check only)": 88,
+   "portrait/press fallback only": 48,
+   "no picture": 4
+  },
+  "dated | campaign": {
+   "credits": 529,
+   "photo verified to show the model": 2,
+   "photo tagged to the model by an earlier search (visual check only)": 211,
+   "campaign gallery only (models not identified individually)": 5,
+   "portrait/press fallback only": 275,
+   "no picture": 36
+  },
+  "dated | cover": {
+   "credits": 492,
+   "photo tagged to the model by an earlier search (visual check only)": 218,
+   "portrait/press fallback only": 156,
+   "no picture": 118
+  },
+  "dated | runway": {
+   "credits": 617,
+   "photo tagged to the model by an earlier search (visual check only)": 69,
+   "portrait/press fallback only": 413,
+   "no picture": 135
+  },
+  "identified | ambassador": {
+   "credits": 19,
+   "photo verified to show the model": 7,
+   "photo tagged to the model by an earlier search (visual check only)": 9,
+   "portrait/press fallback only": 3
+  },
+  "identified | campaign": {
+   "credits": 825,
+   "photo verified to show the model": 103,
+   "photo tagged to the model by an earlier search (visual check only)": 427,
+   "campaign gallery only (models not identified individually)": 94,
+   "portrait/press fallback only": 165,
+   "no picture": 36
+  },
+  "identified | cover": {
+   "credits": 638,
+   "photo verified to show the model": 12,
+   "photo tagged to the model by an earlier search (visual check only)": 303,
+   "campaign gallery only (models not identified individually)": 1,
+   "portrait/press fallback only": 196,
+   "no picture": 126
+  },
+  "identified | runway": {
+   "credits": 560,
+   "photo verified to show the model": 3,
+   "photo tagged to the model by an earlier search (visual check only)": 71,
+   "portrait/press fallback only": 390,
+   "no picture": 96
+  },
+  "undated | ambassador": {
+   "credits": 113,
+   "photo tagged to the model by an earlier search (visual check only)": 34,
    "portrait/press fallback only": 73,
-   "no picture at all": 6
+   "no picture": 6
   },
-  "general | campaign": {
-   "credits": 3131,
-   "portrait/press fallback only": 2339,
-   "exact photo": 350,
-   "no picture at all": 442
+  "undated | campaign": {
+   "credits": 3150,
+   "photo tagged to the model by an earlier search (visual check only)": 364,
+   "campaign gallery only (models not identified individually)": 1,
+   "portrait/press fallback only": 2343,
+   "no picture": 442
   },
-  "general | runway": {
+  "undated | runway": {
    "credits": 3457,
-   "exact photo": 191,
-   "portrait/press fallback only": 2590,
-   "no picture at all": 676
-  },
-  "specific | ambassador": {
-   "credits": 146,
-   "portrait/press fallback only": 51,
-   "exact photo": 91,
-   "no picture at all": 4
-  },
-  "specific | campaign": {
-   "credits": 1108,
-   "exact photo": 597,
-   "exact photo, models not identified individually": 55,
-   "no picture at all": 71,
-   "portrait/press fallback only": 440
-  },
-  "specific | cover": {
-   "credits": 1130,
-   "no picture at all": 244,
-   "exact photo": 535,
-   "portrait/press fallback only": 351
-  },
-  "specific | runway": {
-   "credits": 1177,
-   "no picture at all": 232,
-   "portrait/press fallback only": 800,
-   "exact photo": 145
-  },
-  "specific (year read from a photo source) | ambassador": {
-   "credits": 15,
-   "exact photo": 15
-  },
-  "specific (year read from a photo source) | campaign": {
-   "credits": 265,
-   "exact photo": 265
+   "photo tagged to the model by an earlier search (visual check only)": 194,
+   "portrait/press fallback only": 2587,
+   "no picture": 676
   }
  },
- "missing_specific_credits_by_reason": {
-  "no relevant search results": 1083,
-  "relevant result, inaccessible source": 732,
-  "rejected: campaign/identity not confirmed": 288,
-  "accessible source, image extraction failed": 90
+ "pictures_by_appearance": {
+  "identified": {
+   "photo verified to show the model": 125,
+   "photo tagged to the model by an earlier search (visual check only)": 810,
+   "campaign gallery only (models not identified individually)": 95,
+   "portrait/press fallback only": 754,
+   "no picture": 258
+  },
+  "dated": {
+   "photo verified to show the model": 2,
+   "photo tagged to the model by an earlier search (visual check only)": 586,
+   "campaign gallery only (models not identified individually)": 5,
+   "portrait/press fallback only": 892,
+   "no picture": 293
+  },
+  "undated": {
+   "photo verified to show the model": 0,
+   "photo tagged to the model by an earlier search (visual check only)": 592,
+   "campaign gallery only (models not identified individually)": 1,
+   "portrait/press fallback only": 5003,
+   "no picture": 1124
+  }
+ },
+ "dated_without_model_photo_by_reason": {
+  "dated | no relevant search results": 554,
+  "identified | no relevant search results": 552,
+  "dated | relevant result, inaccessible source": 385,
+  "identified | relevant result, inaccessible source": 352,
+  "dated | rejected: campaign/identity not confirmed": 219,
+  "identified | rejected: campaign/identity not confirmed": 112,
+  "identified | not searched yet": 51,
+  "identified | accessible source, image extraction failed": 40,
+  "dated | accessible source, image extraction failed": 32
  },
  "examples": {
-  "no relevant search results": [
+  "identified | no relevant search results": [
+   {
+    "credit": "Gigi Hadid, Jisoo — Tommy Hilfiger Fall 2026 campaign",
+    "detail": "earlier paid search returned no candidate naming model, label and year",
+    "source": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns"
+   },
    {
     "credit": "Anne Marie van Dijk — bebe Spring 2009 campaign",
     "detail": "earlier paid search returned no candidate naming model, label and year",
@@ -67,16 +129,6 @@
    },
    {
     "credit": "Rebecca Romijn — bebe Spring 2007 campaign",
-    "detail": "earlier paid search returned no candidate naming model, label and year",
-    "source": "https://en.wikipedia.org/wiki/Bebe_Stores"
-   },
-   {
-    "credit": "Brenda Song — bebe Full year 2007 campaign",
-    "detail": "earlier paid search returned no candidate naming model, label and year",
-    "source": "https://en.wikipedia.org/wiki/Bebe_Stores"
-   },
-   {
-    "credit": "Mischa Barton — bebe Full year 2006 campaign",
     "detail": "earlier paid search returned no candidate naming model, label and year",
     "source": "https://en.wikipedia.org/wiki/Bebe_Stores"
    },
@@ -89,41 +141,110 @@
     "credit": "Aivita Mūze — Mango Fall/Winter 2023 campaign",
     "detail": "earlier paid search returned no candidate naming model, label and year",
     "source": "https://models.com/work/mango-mango-fw-2023-campaign"
+   },
+   {
+    "credit": "Kiki Willems, Leila Goldkuhl, Lexi Boling — Zara Spring/Summer 2017 campaign",
+    "detail": "earlier paid search returned no candidate naming model, label and year",
+    "source": "https://models.com/work/zara-zara-ss-2017"
    }
   ],
-  "rejected: campaign/identity not confirmed": [
+  "identified | not searched yet": [
+   {
+    "credit": "Jemima Kirke, Rowan Blanchard — Marc Jacobs Fall 2026 campaign",
+    "detail": "no usable cited source; never sent to paid search",
+    "source": "https://theimpression.com/marc-jacobs-fall-2026-ad-campaign-review/"
+   },
+   {
+    "credit": "Naomi Watts, Kai Schreiber — Simkhai Fall 2026 campaign",
+    "detail": "no usable cited source; never sent to paid search",
+    "source": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns"
+   },
+   {
+    "credit": "Rosé, Liu Wen — Saint Laurent Fall 2026 campaign",
+    "detail": "no usable cited source; never sent to paid search",
+    "source": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns"
+   },
+   {
+    "credit": "Park Gyuyoung, Awar Odhiang, Noor Khan — COS Fall 2026 campaign",
+    "detail": "no usable cited source; never sent to paid search",
+    "source": "https://theimpression.com/cos-fall-2026-ad-campaign-review/"
+   },
+   {
+    "credit": "Jasmine Sanders, Inka Williams, Pia Mia — bebe Fall 2017 campaign",
+    "detail": "no usable cited source; never sent to paid search",
+    "source": "https://www.wmagazine.com/story/bebe-comeback-jasmine-sanders-pia-mia"
+   },
+   {
+    "credit": "Cintia Dicker, Julia Dunstall — bebe Spring/Summer 2012 campaign",
+    "detail": "no usable cited source; never sent to paid search",
+    "source": "https://www.nylon.com/articles/it-girl-alert-cintia-dicker-6224"
+   }
+  ],
+  "dated | no relevant search results": [
+   {
+    "credit": "Brenda Song — bebe Full year 2007 campaign",
+    "detail": "earlier paid search returned no candidate naming model, label and year",
+    "source": "https://en.wikipedia.org/wiki/Bebe_Stores"
+   },
+   {
+    "credit": "Mischa Barton — bebe Full year 2006 campaign",
+    "detail": "earlier paid search returned no candidate naming model, label and year",
+    "source": "https://en.wikipedia.org/wiki/Bebe_Stores"
+   },
+   {
+    "credit": "Bruna Tenório — Chanel 2006 runway",
+    "detail": "earlier paid search returned no candidate naming model, label and year",
+    "source": "https://en.wikipedia.org/wiki/Bruna_Ten%C3%B3rio"
+   },
+   {
+    "credit": "Bruna Tenório — Dior 2006 runway",
+    "detail": "earlier paid search returned no candidate naming model, label and year",
+    "source": "https://en.wikipedia.org/wiki/Bruna_Ten%C3%B3rio"
+   },
+   {
+    "credit": "Bruna Tenório — Dolce & Gabbana 2006 runway",
+    "detail": "earlier paid search returned no candidate naming model, label and year",
+    "source": "https://en.wikipedia.org/wiki/Bruna_Ten%C3%B3rio"
+   },
+   {
+    "credit": "Bruna Tenório — Anna Sui 2006 campaign",
+    "detail": "earlier paid search returned no candidate naming model, label and year",
+    "source": "https://en.wikipedia.org/wiki/Bruna_Ten%C3%B3rio"
+   }
+  ],
+  "identified | rejected: campaign/identity not confirmed": [
    {
     "credit": "Chu Wong, Faith Johnson — Fendi Fall 2027 campaign",
     "detail": "article is about FW 2026",
     "source": "https://theimpression.com/fendi-fall-2027-ad-campaign-review/"
    },
    {
-    "credit": "Kiko Mizuhara — Chanel 2012 campaign",
-    "detail": "1 search image(s) rejected in visual review",
-    "source": "http://www.swinging-paris.com/2013/07/31/kiko-mizuhara-after-chanel-show/"
-   },
-   {
     "credit": "Lulu Tenney — Calvin Klein Fall/Winter 2017 runway",
-    "detail": "article is about FW 2020",
+    "detail": "no season/year stated",
     "source": "https://www.voguehk.com/zh/article/fashion/about-cover-model-lulu-tenney/"
    },
    {
-    "credit": "Hyun Ji Shin — Salvatore Ferragamo 2020 runway",
+    "credit": "Abby Champion — Dolce & Gabbana Fall/Winter 2018 runway",
     "detail": "label not named in the article",
-    "source": "https://www.marieclaire.com/fashion/g32801166/top-models-2020/?slide=5"
+    "source": "https://www.russh.com/introducing-the-make-history-issue/"
    },
    {
-    "credit": "Hyun Ji Shin — Tory Burch 2020 runway",
+    "credit": "Malika Louback — Jil Sander Spring/Summer 2020 runway",
     "detail": "label not named in the article",
-    "source": "https://www.marieclaire.com/fashion/g32801166/top-models-2020/?slide=5"
+    "source": "https://vogue.sg/malika-louback-djiboutian-model-interview/"
    },
    {
-    "credit": "Hyun Ji Shin — Saint Laurent 2020 runway",
-    "detail": "label not named in the article",
-    "source": "https://www.marieclaire.com/fashion/g32801166/top-models-2020/?slide=5"
+    "credit": "Malika Louback — Saint Laurent Spring/Summer 2020 runway",
+    "detail": "no season/year stated",
+    "source": "https://vogue.sg/malika-louback-djiboutian-model-interview/"
+   },
+   {
+    "credit": "Malika Louback — Chanel Spring/Summer 2020 runway",
+    "detail": "no season/year stated",
+    "source": "https://vogue.sg/malika-louback-djiboutian-model-interview/"
    }
   ],
-  "relevant result, inaccessible source": [
+  "dated | relevant result, inaccessible source": [
    {
     "credit": "Bruna Tenório — Gap 2006 campaign",
     "detail": "http 404",
@@ -145,36 +266,53 @@
     "source": "http://nymag.com/thecut/2010/12/meet_the_new_girl_1.html"
    },
    {
-    "credit": "Abby Champion — Elie Saab Fall/Winter 2018 runway",
+    "credit": "Africa Peñalver — JW Anderson 2017 runway",
     "detail": "blocked",
-    "source": "https://www.russh.com/introducing-the-make-history-issue/"
+    "source": "https://www.vogue.com/article/10-new-models-paris-couture-shows-fall-2017"
    },
    {
-    "credit": "Africa Peñalver — JW Anderson 2017 runway",
+    "credit": "Africa Peñalver — Dior 2017 runway",
     "detail": "blocked",
     "source": "https://www.vogue.com/article/10-new-models-paris-couture-shows-fall-2017"
    }
   ],
-  "accessible source, image extraction failed": [
+  "dated | rejected: campaign/identity not confirmed": [
+   {
+    "credit": "Kiko Mizuhara — Chanel 2012 campaign",
+    "detail": "not about a campaign",
+    "source": "http://www.swinging-paris.com/2013/07/31/kiko-mizuhara-after-chanel-show/"
+   },
+   {
+    "credit": "Hyun Ji Shin — Salvatore Ferragamo 2020 runway",
+    "detail": "label not named in the article",
+    "source": "https://www.marieclaire.com/fashion/g32801166/top-models-2020/?slide=5"
+   },
+   {
+    "credit": "Hyun Ji Shin — Tory Burch 2020 runway",
+    "detail": "label not named in the article",
+    "source": "https://www.marieclaire.com/fashion/g32801166/top-models-2020/?slide=5"
+   },
+   {
+    "credit": "Hyun Ji Shin — Louis Vuitton 2020 runway",
+    "detail": "article is about FW 2021",
+    "source": "https://www.marieclaire.com/fashion/g32801166/top-models-2020/?slide=5"
+   },
+   {
+    "credit": "Hyun Ji Shin — Saint Laurent 2020 runway",
+    "detail": "label not named in the article",
+    "source": "https://www.marieclaire.com/fashion/g32801166/top-models-2020/?slide=5"
+   },
+   {
+    "credit": "Africa Peñalver — Valentino 2017 runway",
+    "detail": "label not named in the article",
+    "source": "https://www.vogue.com/article/10-new-models-paris-couture-shows-fall-2017"
+   }
+  ],
+  "identified | accessible source, image extraction failed": [
    {
     "credit": "Abby Champion — Chanel Fall/Winter 2018 runway",
     "detail": "rejected in an earlier review (1)",
     "source": "https://www.russh.com/introducing-the-make-history-issue/"
-   },
-   {
-    "credit": "Mika Schneider — Miu Miu 2021 runway",
-    "detail": "no campaign image found in the verified article",
-    "source": "https://www.vogue.fr/fashion/article/video-24-hours-model-mika-schneider-paris-fashion-week"
-   },
-   {
-    "credit": "Malika Louback — Saint Laurent Spring/Summer 2020 runway",
-    "detail": "no campaign image found in the verified article",
-    "source": "https://vogue.sg/malika-louback-djiboutian-model-interview/"
-   },
-   {
-    "credit": "Malika Louback — Chanel Spring/Summer 2020 runway",
-    "detail": "no campaign image found in the verified article",
-    "source": "https://vogue.sg/malika-louback-djiboutian-model-interview/"
    },
    {
     "credit": "Malika Louback — Hermès Spring/Summer 2020 runway",
@@ -182,24 +320,103 @@
     "source": "https://vogue.sg/malika-louback-djiboutian-model-interview/"
    },
    {
-    "credit": "Sarocha Chankimha — Valentino 2025 ambassador",
-    "detail": "rejected in an earlier review (3)",
-    "source": "https://www.valentino.com/en-th/world-of-valentino/news/maison-valentino-appoints-new-brand-ambassador-freen-sarocha"
+    "credit": "Vlada Roslyakova — Badgley Mischka Spring/Summer 2020 campaign",
+    "detail": "no campaign image found in the verified article",
+    "source": "https://www.prnewswire.com/news-releases/badgley-mischka-launches-spring-2020-campaign-300985105.html"
+   },
+   {
+    "credit": "Madison Beer — Dolce & Gabbana Fall 2017 runway",
+    "detail": "image host blocks Claude (3)",
+    "source": "https://www.harpersbazaar.com/fashion/fashion-week/news/a20922/real-people-who-walked-in-the-dolce-gabbana-show/"
+   },
+   {
+    "credit": "Adriana Lima — Jason Wu Fall/Winter 2014 campaign",
+    "detail": "rejected in an earlier review (1)",
+    "source": "https://www.thefashionspot.com/forum-buzz/421465-jason-wu-taps-adriana-lima-for-his-fall-2014-ad-campaign-forum-buzz/"
+   },
+   {
+    "credit": "Isabeli Fontana — Versace Fall/Winter 2008 campaign",
+    "detail": "not an image (4), image http 404 (1)",
+    "source": "https://www.forbes.com/2008/04/30/models-bundchen-klum-biz-media-cz_kb_0430topmodels_slide.html"
+   }
+  ],
+  "identified | relevant result, inaccessible source": [
+   {
+    "credit": "Abby Champion — Elie Saab Fall/Winter 2018 runway",
+    "detail": "blocked",
+    "source": "https://www.russh.com/introducing-the-make-history-issue/"
+   },
+   {
+    "credit": "Africa Peñalver — Prada Resort 2017 runway",
+    "detail": "blocked",
+    "source": "https://www.vogue.com/article/10-new-models-paris-couture-shows-fall-2017"
+   },
+   {
+    "credit": "Kiki Willems — Saint Laurent Spring 2015 runway",
+    "detail": "blocked",
+    "source": "https://www.vogue.com/fashion-shows/spring-2015-ready-to-wear/saint-laurent/slideshow/collection"
+   },
+   {
+    "credit": "Dree Hemingway — Topshop Spring/Summer 2010 runway",
+    "detail": "blocked",
+    "source": "https://nymag.com/thecut/2009/09/dree_hemingway_is_londons_top.html"
+   },
+   {
+    "credit": "Frida Gustavsson — Jean Paul Gaultier Spring 2020 runway",
+    "detail": "blocked",
+    "source": "https://www.reuters.com/article/2013/06/04/maybelline-new-face-idUSnPNNY26116+1e0+PRN20130604"
+   },
+   {
+    "credit": "Gabbriette — Betsey Johnson Fall 2023 campaign",
+    "detail": "http 402",
+    "source": "https://wwd.com/footwear-news/shoe-industry-news/gabbriette-jimmy-choo-bridal-campaign-1238624412/"
+   }
+  ],
+  "dated | accessible source, image extraction failed": [
+   {
+    "credit": "Mika Schneider — Miu Miu 2021 runway",
+    "detail": "no campaign image found in the verified article",
+    "source": "https://www.vogue.fr/fashion/article/video-24-hours-model-mika-schneider-paris-fashion-week"
+   },
+   {
+    "credit": "Naomi Preizler — Balenciaga 2013 runway",
+    "detail": "no campaign image found in the verified article",
+    "source": "http://contenidos2.clarin.com/edicion-electronica/20130906/files/assets/basic-html/page11.html"
+   },
+   {
+    "credit": "Herieth Paul — Tom Ford 2013 campaign",
+    "detail": "rejected in an earlier review (1)",
+    "source": "https://www.thefashionspot.com/buzz-news/forum-buzz/306245-tom-ford-releases-previews-for-fallwinter-2013-campaign-forum-buzz/"
+   },
+   {
+    "credit": "Gigi Hadid — Isabel Marant 2016 runway",
+    "detail": "rejected in an earlier review (4)",
+    "source": "http://www.teenvogue.com/story/gigi-hadid-glitter-eyebrows-giambattista-valli-fall-2016"
+   },
+   {
+    "credit": "Sarah Jessica Parker — Gap 2004 campaign",
+    "detail": "no campaign image found in the verified article",
+    "source": "https://web.archive.org/web/20081013235201/http://www.washingtonpost.com/wp-dyn/articles/A58606-2005Mar22.html"
+   },
+   {
+    "credit": "Hayden Panettiere — Candie's 2008 ambassador",
+    "detail": "too small (80x120) (64), too small (300x300) (1), image http 404 (1)",
+    "source": "http://finance.abc7chicago.com/abclocal.wls/news/read?GUID=4671861&Symbol=ICON"
    }
   ]
  },
  "general_relationships": {
-  "credits": 6699,
-  "with a photo": 573,
+  "credits": 6720,
+  "with a photo": 593,
   "by kind": {
    "runway": 3457,
-   "campaign": 3131,
-   "ambassador": 111
+   "campaign": 3150,
+   "ambassador": 113
   }
  },
  "rendering": {
-  "referenced": 5011,
-  "local_ok": 5008,
+  "referenced": 4991,
+  "local_ok": 4988,
   "remote_urls": 3,
   "remote_examples": [
    "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Jerry_Hall.jpg/330px-Jerry_Hall.jpg",
@@ -210,5 +427,5 @@
   "problems": {},
   "problem_examples": {}
  },
- "free_pass_groups": 2010
+ "free_pass_groups": 2000
 }

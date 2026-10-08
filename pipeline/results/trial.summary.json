@@ -3,33 +3,35 @@
  "arms": {
   "improved pipeline": {
    "groups": 50,
-   "groups_with_photos": 12,
+   "groups_with_photos": 11,
    "photos": 57,
    "photos_attributed_to_a_model": 5,
    "failures": {
-    "unverified": 27,
-    "extraction failed": 11
+    "unverified": 31,
+    "extraction failed": 8
    },
    "failure_details": {
-    "unverified: none of the credited models is named": 11,
-    "extraction failed: no campaign image found in the verified article": 9,
-    "unverified: no season/year stated": 7,
+    "unverified: none of the credited models is named": 17,
+    "extraction failed: no campaign image found in the verified article": 6,
+    "unverified: no season/year stated": 4,
+    "unverified: not about a campaign": 3,
     "unverified: label not named in the article": 3,
-    "unverified: not about a campaign": 2,
+    "unverified: article is about HOL 2020": 1,
     "unverified: article is about FW 2008": 1,
     "extraction failed: image http 404 (1), rejected in an earlier review (1)": 1,
     "unverified: article is about FW 1985, FW 1992": 1,
-    "unverified: article is about SS 2008": 1,
-    "unverified: article is about FW 2003": 1,
+    "unverified: article is about FW 2007, FW 2008, SS 2007": 1,
     "extraction failed: too small (300x300) (1)": 1
    },
    "found_via": {
-    "brave_web": 12
+    "brave_web": 9,
+    "cited source": 1,
+    "earlier search result": 1
    },
-   "campaign_level_only_groups": 2,
-   "campaign_level_only_photos": 13,
+   "campaign_level_only_groups": 1,
+   "campaign_level_only_photos": 6,
    "paid_requests": {},
-   "cached_responses": 138,
+   "cached_responses": 136,
    "spent": 0.0
   },
   "google images (serpapi)": {
@@ -42,7 +44,7 @@
   "usd": 1.445
  },
  "paid_queries_for_these_50": {
-  "requests": 138,
-  "usd": 0.69
+  "requests": 136,
+  "usd": 0.68
  }
 }

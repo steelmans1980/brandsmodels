@@ -205,4 +205,4 @@ def read(html, base_url):
     for x in ld:
         if x.get('@type') in ('ImageObject',) and x.get('url'):
             add(x['url'], x.get('caption') or x.get('name') or '', '')
-    return {'title': title, 'published': published, 'text': text, 'images': images[:40]}
+    return {'title': title, 'published': published, 'text': text, 'images': images[:40], 'url': base_url}

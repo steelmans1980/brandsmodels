@@ -1,4 +1,4 @@
-"""Coverage and failure audit: why each specific (dated) credit has no exact photo yet."""
+"""Coverage and failure audit: how specific each credit is, the best picture it has, and why dated credits lack one."""
 import collections
 import json
 import os
@@ -24,6 +24,53 @@ def _fallback(c, models):
     return any(models.get(t, {}).get('press') or models.get(t, {}).get('portrait') for t in c['talent'])
 
 
+MONTH = re.compile(r'(?i)\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b|\bissue\b|\bno\.? ?\d')
+
+
+def appearance(c, evidence):
+    """How specifically a credit identifies an appearance.
+
+    identified   the issue, show or campaign is pinned down: a cover with its issue, a runway show or campaign with
+                 its season, a named campaign, or a source page verified for this model, label and season/year
+    dated        a year only: the model worked with the label that year, but which campaign or show is not known
+    undated      a relationship with no date
+    """
+    if not c.get('year'):
+        return 'undated'
+    kind = c.get('kind') or 'campaign'
+    season = c.get('season') if c.get('season') not in (None, 'Full year') else None
+    if kind == 'cover' and MONTH.search(c.get('title') or ''):
+        return 'identified'
+    if kind != 'cover' and (season or c.get('title')):
+        return 'identified'
+    if c.get('yearFrom') == 'source states the year':
+        return 'identified'  # its photo's page names the model and label and states the campaign year
+    for i in c.get('images', []):
+        e = evidence.get(i['src'])
+        if e and set(c['talent']) & set(e['evidence'].get('models_named') or []):
+            return 'identified'  # a verified page names this model for this label and period
+    return 'dated'
+
+
+PICTURES = ['photo verified to show the model', 'photo tagged to the model by an earlier search (visual check only)',
+            'campaign gallery only (models not identified individually)', 'portrait/press fallback only', 'no picture']
+
+
+def picture(c, models):
+    """The best picture a credit has, from strongest to weakest."""
+    imgs = c.get('images', [])
+    mine = [i for i in imgs if set(i.get('talent') or []) & set(c['talent'])]
+    if any(i.get('match') == 'exact' or not i.get('auto') for i in mine):
+        return PICTURES[0]  # a caption or file name names her, or the photo was curated by hand
+    if mine:
+        return PICTURES[1]
+    if imgs:
+        return PICTURES[2]
+    if _fallback(c, models):
+        return PICTURES[3]
+    return PICTURES[4]
+
+
 def run(offline=False):
     data = groups.load()
     models = data['models']
@@ -34,30 +81,26 @@ def run(offline=False):
             gid_of[idx] = g['id']
     free = runner._results('free-sources')
     legacy = _legacy_state()
+    evp = os.path.join(config.RESULTS, 'evidence.json')
+    evidence = json.load(open(evp)) if os.path.exists(evp) else {}
 
-    # ---- coverage
+    # ---- coverage: every credit counted once, by how specific it is and by its best picture
     cov = collections.defaultdict(collections.Counter)
-    for idx, c in enumerate(data['campaigns']):
-        rel = groups.relation(c)
-        if rel == 'specific' and c.get('yearFrom'):
-            rel = 'specific (year read from a photo source)'
-        kind = c.get('kind') or 'campaign'
-        row = cov[(rel, kind)]
-        row['credits'] += 1
-        if c.get('images'):
-            row['exact photo'] += 1
-            if any(not i.get('talent') for i in c['images']) and len(c['talent']) > 1:
-                row['exact photo, models not identified individually'] += 1
-        elif _fallback(c, models):
-            row['portrait/press fallback only'] += 1
-        else:
-            row['no picture at all'] += 1
+    for c in data['campaigns']:
+        key = (appearance(c, evidence), c.get('kind') or 'campaign')
+        cov[key]['credits'] += 1
+        cov[key][picture(c, models)] += 1
+    total = sum(v['credits'] for v in cov.values())
+    assert total == len(data['campaigns'])
+    by_appearance = collections.Counter()
+    for (a, _), v in cov.items():
+        by_appearance[a] += v['credits']
 
     # ---- reasons for specific credits without a photo
     reasons = collections.Counter()
     examples = collections.defaultdict(list)
     for idx, c in enumerate(data['campaigns']):
-        if groups.relation(c) != 'specific' or c.get('images'):
+        if groups.relation(c) != 'specific' or picture(c, models) in PICTURES[:2]:
             continue
         r = free.get(gid_of.get(idx))
         key = f"{c['brand']}|{c.get('year')}|{c.get('kind', 'campaign')}|{c['talent'][0]}"
@@ -78,6 +121,7 @@ def run(offline=False):
             why, detail = 'no relevant search results', 'earlier paid search returned no candidate naming model, label and year'
         else:
             why, detail = 'not searched yet', 'no usable cited source; never sent to paid search'
+        why = f'{appearance(c, evidence)} | {why}'
         reasons[why] += 1
         if len(examples[why]) < 6:
             src = [p for p, v in ((r or {}).get('pages') or {}).items()][:1]
@@ -98,8 +142,12 @@ def run(offline=False):
     render = json.load(open(os.path.join(config.RESULTS, 'validate.json')))
 
     out = {
-        'coverage': {f'{rel} | {kind}': dict(v) for (rel, kind), v in sorted(cov.items())},
-        'missing_specific_credits_by_reason': dict(reasons.most_common()),
+        'credits': total,
+        'by_appearance': dict(by_appearance),
+        'coverage': {f'{a} | {k}': {x: v[x] for x in ['credits'] + PICTURES if v[x]} for (a, k), v in sorted(cov.items())},
+        'pictures_by_appearance': {a: {p: sum(v[p] for (aa, _), v in cov.items() if aa == a) for p in PICTURES}
+                                   for a in ('identified', 'dated', 'undated')},
+        'dated_without_model_photo_by_reason': dict(reasons.most_common()),
         'examples': examples,
         'general_relationships': gen,
         'rendering': render,

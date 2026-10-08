@@ -15,6 +15,25 @@ KIND_WORDS = {
     'runway': r'runway|catwalk|\bshow\b|fashion week|walked|walks|défilé',
     'cover': r'\bcovers?\b|cover star|issue',
 }
+_MON = r'(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?'
+_DATE = (r'(?:\b' + _MON + r'\s+\d{1,2}(?:st|nd|rd|th)?,?\s+(?:19|20)\d\d|\b\d{1,2}(?:st|nd|rd|th)?\s+' + _MON +
+         r',?\s+(?:19|20)\d\d)')
+# A byline: a date after "Published/Updated/Posted", a date followed by a clock time, or an ISO date. A date in a
+# sentence ("walked the show on September 26, 2021") is left alone: it can be the event's own date.
+DATELINE = re.compile(
+    r'(?i)\b(?:published|updated|posted|last updated|modified)(?:\s+on)?\s*:?\s*' + _DATE + r'(?:\s*(?:at\s+)?\d{1,2}:\d\d\s*(?:am|pm)?(?:\s*[a-z]{2,4})?)?'
+    r'|' + _DATE + r'\s*(?:at\s+|[|·,]\s*)?\d{1,2}:\d\d\s*(?:am|pm)?(?:\s*[a-z]{2,4}\b)?'
+    r'|\b(?:19|20)\d\d-\d\d-\d\d(?:T[\d:+-]+)?')
+# Pages that list many things (profiles, tags, archives) mention campaigns without being about one.
+LISTING_URL = re.compile(r'(?i)/(?:models?|tags?|category|categories|archive|archives|author|search|page/\d+)/|[?&](?:s|tag|q)=')
+
+
+def strip_dates(text):
+    """Blank out datelines ("Mar 8, 2023 8:51 AM EST", "Published: Aug 28, 2013") so a publication date is never
+    read as a campaign year. Positions are preserved."""
+    return DATELINE.sub(lambda m: ' ' * len(m.group(0)), text or '')
+
+
 KNOWN_BRANDS = set()  # folded label names in the data, set by discover (to tell "Armani" from "Emporio Armani")
 KNOWN_MAGAZINES = set()  # folded magazine names in the data, set by discover (to spot editorials)
 KNOWN_MODELS = set()  # folded names of every model in the data, set by discover (to spot pages about someone else)
@@ -156,9 +175,11 @@ def _pub_ok(published, fam, year):
 def assess(group, article):
     """Verdict on an article for a group: {'verdict': 'exact'|'candidate'|'reject', 'reason', 'evidence'}."""
     brand = Brand(group['brand'], group.get('aliases', []))
-    title, text = article['title'] or '', article['text'] or ''
+    title, text = article['title'] or '', strip_dates(article['text'] or '')
     lead = text[:2500]
     ev = {'title': title[:200], 'published': article.get('published')}
+    if LISTING_URL.search(article.get('url') or '') or re.fullmatch(r'(?i)\s*(archive|archives|tag:.*|category:.*)\s*', title):
+        return {'verdict': 'reject', 'reason': 'listing, tag or profile page, not an article about the campaign', 'evidence': ev}
     t_brand = brand.find(title)
     b_brand = brand.find(lead)
     if not t_brand and not b_brand:
@@ -191,13 +212,27 @@ def assess(group, article):
     roundup = bool(ROUNDUP.search(title))
     ev['roundup'] = roundup
 
-    # Season/year mentions in the title, and in the body near the label.
-    near = [(f, y) for f, y, _ in seasons.mentions(title)]
+    # Season/year mentions in the title, and in the body near the label. A campaign title that is itself a season
+    # word ("Gucci Primavera") is blanked first so it is not read as a season.
+    blank = lambda t: re.sub(r'(?i)\b' + re.escape(group['title']) + r'\b', ' ' * len(group['title']), t) if group.get('title') else t
+    title_s, lead_s = blank(title), blank(lead)
     flead = groups.fold(lead)
-    for f, y, pos in seasons.mentions(lead):
+    near, snippets = [], {}
+    for f, y, pos in seasons.mentions(title_s):
+        near.append((f, y))
+        snippets.setdefault((f, y), 'headline: ' + title[max(0, pos - 60):pos + 40].strip())
+    title_periods = list(near)
+    own_name = groups.fold(group['brand'])
+    other_pos = [m.start() for b in KNOWN_BRANDS if b != own_name and len(b) >= 4 and b not in own_name
+                 for m in re.finditer(r'\b' + re.escape(b) + r'\b', flead)] if KNOWN_BRANDS else []
+    for f, y, pos in seasons.mentions(lead_s):
         p = len(groups.fold(lead[:pos]))
-        if any(abs(p - b) < 250 for b in b_brand) or kind == 'cover':
+        mine = min((abs(p - b) for b in b_brand), default=10 ** 6)
+        if other_pos and min(abs(p - o) for o in other_pos) < mine and kind != 'cover':
+            continue  # this season belongs to another label named closer to it
+        if mine < 250 or kind == 'cover':
             near.append((f, y))
+            snippets.setdefault((f, y), 'body: ' + lead[max(0, pos - 100):pos + 60].replace('\n', ' ').strip())
     ev['periods'] = sorted(set(near))
     year, fam = group['year'], group.get('family')
     if kind == 'cover':
@@ -205,17 +240,42 @@ def assess(group, article):
         ok = year in ys
         ev['years'] = sorted(set(ys))[:6]
         if not ok:
-            return {'verdict': 'candidate' if any(abs(y - year) <= 1 for y in ys) else 'reject',
+            return {'verdict': 'candidate' if any(abs(y - year) <= 1 for y in ys) or _pub_ok(article.get('published'), None, year) else 'reject',
                     'reason': f'issue year not confirmed ({", ".join(map(str, sorted(set(ys))[:4])) or "no year"})', 'evidence': ev}
     else:
         exact = [p for p in near if p[1] == year and seasons.matches(p[0], fam)]
         if not exact and fam is None:
             # a credit without a season: an explicit "<year> campaign/show" next to the label also counts
-            for m in re.finditer(r'(?<!\d)' + str(year) + r'(?!\d)', title + ' ' + lead):
-                window = groups.fold((title + ' ' + lead)[max(0, m.start() - 120):m.end() + 120])
-                if any(True for _ in brand.find(window)) and re.search(KIND_WORDS.get(kind, ''), window, re.I):
+            both = title_s + ' \n ' + lead_s
+            for m in re.finditer(r'(?<!\d)' + str(year) + r'(?!\d)', both):
+                # text around the year must name the label and the kind, stay inside the headline or the body, and
+                # carry no other season or year ("debut in 2020 at the Louis Vuitton FW21 show")
+                split = len(title_s) + 3
+                lo, hi = (0, len(title_s)) if m.start() < split else (split, len(both))
+                sent = both[max(lo, m.start() - 120):min(hi, m.end() + 120)]
+                if any(y != year for _, y, _ in seasons.mentions(sent)) or any(y != year for y in seasons.years(sent)):
+                    continue
+                # the year's own sentence must say what it dates ("the 1980 Giorgio Arman campaign"; not "named an
+                # Angel in 1997"), and the label must be next to it or in the headline
+                a_ = max(both.rfind(c, lo, m.start()) for c in '.!?|') + 1
+                ends = [i for i in (both.find(c, m.end(), hi) for c in '.!?|') if i != -1]
+                own = both[max(a_, lo):min(ends) if ends else hi]
+                close = own[max(0, m.start() - max(a_, lo) - 60):m.end() - max(a_, lo) + 60]
+                if (brand.find(sent) or t_brand) and re.search(KIND_WORDS.get(kind, ''), close, re.I):
                     exact = [(None, year)]
+                    ev['period_evidence'] = 'year next to label: ' + sent.replace('\n', ' ').strip()[:220]
                     break
+        if exact and title_periods and not any(p[1] == year and seasons.matches(p[0], fam) for p in title_periods):
+            # the headline names another period than the body: only the publication date can settle it
+            ev['conflict'] = {'headline': sorted(set(title_periods)), 'body': sorted(set(exact))}
+            pub_body = _pub_ok(article.get('published'), fam, year)
+            pub_head = any(_pub_ok(article.get('published'), f, y) for f, y in title_periods)
+            if pub_body and not pub_head:
+                ev['conflict']['resolved_by'] = f"publication date {article.get('published')} fits {fam or ''} {year}, not the headline"
+            else:
+                return {'verdict': 'candidate', 'reason': 'headline and body state different seasons', 'evidence': ev}
+        if exact and exact[0] in snippets:
+            ev['period_evidence'] = snippets[exact[0]]
         if not exact:
             other = sorted({p for p in near if p[1] != year or not seasons.matches(p[0], fam)})
             close = any(abs(p[1] - year) <= 1 for p in other) or _pub_ok(article.get('published'), fam, year)

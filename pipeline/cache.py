@@ -34,6 +34,11 @@ class Store:
             rows = self.db.execute('SELECT k, v FROM kv WHERE ns=?', (ns,)).fetchall()
         return [(k, json.loads(zlib.decompress(v))) for k, v in rows]
 
+    def delete(self, ns, k):
+        with self.lock:
+            self.db.execute('DELETE FROM kv WHERE ns=? AND k=?', (ns, k))
+            self.db.commit()
+
     def count(self, ns):
         with self.lock:
             return self.db.execute('SELECT COUNT(*) FROM kv WHERE ns=?', (ns,)).fetchone()[0]

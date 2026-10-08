@@ -1,12 +1,12 @@
 {
  "counts": {
-  "photo kept: source names model and label and states the year": 843,
-  "photo kept: source names model and label": 799,
+  "photo kept: source names model and label": 818,
+  "photo kept: source names model and label and states the year": 793,
   "photo removed: label not named on the source page": 413,
-  "date kept: source states the campaign year": 280,
-  "date removed: not stated by a source (back to undated)": 234,
-  "photo removed: model not named on the source page": 111,
-  "photo kept (reviewed earlier), source page now unreachable": 100
+  "date kept: source states the campaign year": 259,
+  "date removed: not stated by a source (back to undated)": 255,
+  "photo kept (reviewed earlier), source page now unreachable": 109,
+  "photo removed: model not named on the source page": 107
  },
  "examples": {
   "label not named on the source page": [

@@ -10,9 +10,12 @@ from .. import cache, config
 
 
 class Budget:
-    def __init__(self, dollars, dry=False, run=''):
+    def __init__(self, dollars, dry=False, run='', max_requests=None, prices=None):
         self.run = run
         self.limit = dollars
+        self.max_requests = max_requests or {}  # provider -> hard cap on requests sent (attempts, not just billed)
+        self.attempts = {}
+        self.prices = {**config.PRICE, **(prices or {})}  # e.g. a free plan prices its searches at 0
         self.spent = 0.0
         self.requests = {}
         self.cached = 0
@@ -20,16 +23,23 @@ class Budget:
         self.lock = threading.Lock()
 
     def allow(self, provider):
+        """Reserve one request: False when dry, over budget, or at the provider's request cap."""
         with self.lock:
-            return not self.dry and self.spent + config.PRICE[provider] <= self.limit + 1e-9
+            if self.dry or self.spent + self.prices[provider] > self.limit + 1e-9:
+                return False
+            cap = self.max_requests.get(provider)
+            if cap is not None and self.attempts.get(provider, 0) >= cap:
+                return False
+            self.attempts[provider] = self.attempts.get(provider, 0) + 1
+            return True
 
     def charge(self, provider, query=''):
         with self.lock:
-            self.spent += config.PRICE[provider]
+            self.spent += self.prices[provider]
             self.requests[provider] = self.requests.get(provider, 0) + 1
         # permanent record of every paid request (kept with the committed search cache)
         cache.search_store().put('ledger', f'{time.time():.3f}-{uuid.uuid4().hex[:6]}',
-                                 {'provider': provider, 'query': query, 'usd': config.PRICE[provider], 'ts': time.time(),
+                                 {'provider': provider, 'query': query, 'usd': self.prices[provider], 'ts': time.time(),
                                   'run': self.run})
 
 

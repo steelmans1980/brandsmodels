@@ -208,31 +208,66 @@ def process(g, data, budget, providers=('sources', 'legacy', 'brave_web', 'brave
                 res['pages'][u]['relevant'] = u in {x['url'] for x in rel}
             if done():
                 break
+    _join_evidence(g, res)
     res['failure'] = None if res['accepted'] else classify(res)
     return res
 
 
+def _join_evidence(g, res):
+    """One page confirms the campaign and has its images but never names the cast; another page confirms the same
+    label, season and year AND names the credited model. Together they establish the gallery. The pictures stay
+    untagged: neither page says which model is in which picture."""
+    if res['accepted'] or not res.get('campaign_level'):
+        return
+    camp = res['campaign_level'][0]['evidence']
+    want = {tuple(p) for p in camp.get('periods') or [] if p[1] == g['year']}
+    for url, p in res['pages'].items():
+        ev = p.get('evidence') or {}
+        if p.get('verdict') != 'exact' or not ev.get('models_named'):
+            continue
+        if want and not want & {tuple(x) for x in ev.get('periods') or []}:
+            continue  # the cast page must state the same season and year as the campaign page
+        for a in res['campaign_level']:
+            res['accepted'].append({**a, 'talent': [], 'via': a['via'] + ' + cast page',
+                                    'attribution': 'campaign confirmed on its page; cast confirmed on ' + url +
+                                                   ' (models not identified individually)',
+                                    'evidence': {**a['evidence'], 'cast_page': url, 'cast_named': ev['models_named'],
+                                                 'cast_title': ev.get('title'), 'cast_periods': ev.get('periods')}})
+        res['joined_evidence'] = True
+        return
+
+
 def classify(res):
-    pages = res['pages'].values()
-    if any(p.get('verdict') == 'exact' for p in pages):
+    """Primary failure reason for a group without photos. Sets res['failure_page'] to the page the reason comes
+    from, so a reason is never reported next to another page's URL."""
+    pages = res['pages']
+    res['failure_page'] = None
+    if any(p.get('verdict') == 'exact' for p in pages.values()):
         fails = {}
-        for p in pages:
+        for u, p in pages.items():
             for k, n in (p.get('image_failures') or {}).items():
                 fails[k] = fails.get(k, 0) + n
+            if p.get('verdict') == 'exact' and not res['failure_page']:
+                res['failure_page'] = u
         if fails:
             return 'extraction failed: ' + ', '.join(f'{k} ({n})' for k, n in sorted(fails.items(), key=lambda x: -x[1])[:3])
         return 'extraction failed: no campaign image found in the verified article'
-    judged = [p for p in pages if p.get('verdict') in ('candidate', 'reject') and (p.get('relevant') or p.get('via') == 'cited source')]
-    if any(p.get('verdict') == 'candidate' for p in judged):
-        reasons = [p['reason'] for p in judged if p.get('verdict') == 'candidate']
-        return 'unverified: ' + max(set(reasons), key=reasons.count)
-    relevant = [p for p in pages if p.get('relevant') or p.get('via') in ('cited source', 'earlier search result')]
-    if relevant and all(p['status'] != 'ok' for p in relevant):
-        st = [p['status'] for p in relevant]
-        return 'inaccessible source: ' + max(set(st), key=st.count)
+    judged = [(u, p) for u, p in pages.items() if p.get('verdict') in ('candidate', 'reject')
+              and (p.get('relevant') or p.get('via') in ('cited source', 'earlier search result'))]
+    # closest first: the campaign confirmed but not the model, then other candidates, then rejections
+    rank = lambda up: (0 if up[1].get('reason') == 'none of the credited models is named' else
+                       1 if up[1].get('verdict') == 'candidate' else 2)
+    cands = sorted([x for x in judged if x[1].get('verdict') == 'candidate'], key=rank)
+    if cands:
+        res['failure_page'] = cands[0][0]
+        return 'unverified: ' + cands[0][1]['reason']
+    relevant = [(u, p) for u, p in pages.items() if p.get('relevant') or p.get('via') in ('cited source', 'earlier search result')]
+    if relevant and all(p['status'] != 'ok' for _, p in relevant):
+        res['failure_page'] = relevant[0][0]
+        return 'inaccessible source: ' + relevant[0][1]['status']
     if judged:
-        reasons = [p['reason'] for p in judged]
-        return 'unverified: ' + max(set(reasons), key=reasons.count)
-    if not any(s.get('n') for s in res['stages'] if 'provider' in s) and not res['pages']:
+        res['failure_page'] = judged[0][0]
+        return 'unverified: ' + judged[0][1]['reason']
+    if not any(s.get('n') for s in res['stages'] if 'provider' in s) and not pages:
         return 'not searched'
     return 'no relevant search results'
