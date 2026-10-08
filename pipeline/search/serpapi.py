@@ -61,16 +61,25 @@ def images(query, budget):
         return hit
     if not available() or not budget.allow(provider):
         return None
-    params = {'engine': 'google_images', 'q': query, 'hl': 'en', 'gl': 'us', 'api_key': os.environ['SERPAPI_API_KEY']}
-    r = requests.get(ENDPOINT, params=params, timeout=60)
-    if r.status_code != 200:
-        return {'error': f'http {r.status_code}', 'results': []}
-    d = r.json()
-    if d.get('error') and not d.get('images_results'):
-        # SerpApi reports "no results" and account errors in the body; only successful searches are billed
-        out = {'error': d['error'], 'results': []}
-        if 'hasn' in d['error'] or 'no results' in d['error'].lower():
-            save(provider, query, out)
+    d = None
+    # google_images often reports "no results" for queries Google answers (seen on 27 of 50 trial queries);
+    # google_images_light returns the same fields for those, so it is tried once before giving up
+    for engine in ('google_images', 'google_images_light'):
+        if d is not None and not budget.allow(provider):
+            return None
+        params = {'engine': engine, 'q': query, 'hl': 'en', 'gl': 'us', 'api_key': os.environ['SERPAPI_API_KEY']}
+        r = requests.get(ENDPOINT, params=params, timeout=120)
+        if r.status_code != 200:
+            return {'error': f'http {r.status_code}', 'results': []}
+        d = r.json()
+        if d.get('images_results'):
+            break
+        if d.get('error') and not ('hasn' in d['error'] or 'no results' in d['error'].lower()):
+            return {'error': d['error'], 'results': []}  # account errors; not billed
+        budget.charge(provider, query)  # an empty search still counts against the plan
+    if not d.get('images_results'):
+        out = {'error': d.get('error') or 'no results', 'results': []}
+        save(provider, query, out)
         return out
     budget.charge(provider, query)
     res = [{'url': x.get('link'), 'title': x.get('title') or '', 'image': x.get('original'), 'source': x.get('source'),
