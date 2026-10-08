@@ -52,16 +52,17 @@ def appearance(c, evidence):
     return 'dated'
 
 
-PICTURES = ['photo verified to show the model', 'photo tagged to the model by an earlier search (visual check only)',
+PICTURES = ['photo attributed by human review', 'photo whose own caption names the model (automated)',
             'campaign gallery only (models not identified individually)', 'portrait/press fallback only', 'no picture']
 
 
-def picture(c, models):
-    """The best picture a credit has, from strongest to weakest."""
+def picture(c, models, reviews=None):
+    """The best picture a credit has, from strongest to weakest. After the attribution recheck a model tag on a photo
+    means its caption or alt text names her, or a person recorded the attribution."""
     imgs = c.get('images', [])
     mine = [i for i in imgs if set(i.get('talent') or []) & set(c['talent'])]
-    if any(i.get('match') == 'exact' or not i.get('auto') for i in mine):
-        return PICTURES[0]  # a caption or file name names her, or the photo was curated by hand
+    if reviews and any(i['src'] in reviews for i in mine):
+        return PICTURES[0]
     if mine:
         return PICTURES[1]
     if imgs:
@@ -83,13 +84,15 @@ def run(offline=False):
     legacy = _legacy_state()
     evp = os.path.join(config.RESULTS, 'evidence.json')
     evidence = json.load(open(evp)) if os.path.exists(evp) else {}
+    from . import recheck
+    reviews = recheck.human_reviews()
 
     # ---- coverage: every credit counted once, by how specific it is and by its best picture
     cov = collections.defaultdict(collections.Counter)
     for c in data['campaigns']:
         key = (appearance(c, evidence), c.get('kind') or 'campaign')
         cov[key]['credits'] += 1
-        cov[key][picture(c, models)] += 1
+        cov[key][picture(c, models, reviews)] += 1
     total = sum(v['credits'] for v in cov.values())
     assert total == len(data['campaigns'])
     by_appearance = collections.Counter()
@@ -100,7 +103,7 @@ def run(offline=False):
     reasons = collections.Counter()
     examples = collections.defaultdict(list)
     for idx, c in enumerate(data['campaigns']):
-        if groups.relation(c) != 'specific' or picture(c, models) in PICTURES[:2]:
+        if groups.relation(c) != 'specific' or picture(c, models, reviews) in PICTURES[:2]:
             continue
         r = free.get(gid_of.get(idx))
         key = f"{c['brand']}|{c.get('year')}|{c.get('kind', 'campaign')}|{c['talent'][0]}"
