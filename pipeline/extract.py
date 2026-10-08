@@ -146,7 +146,7 @@ def read(html, base_url):
     images, seen = [], set()
 
     def add(url, alt='', caption='', w=0, h=0, lead=False):
-        if not url or url.startswith('data:'):
+        if not isinstance(url, str) or not url or url.startswith('data:'):
             return
         url = urllib.parse.urljoin(base_url, url.strip())
         large = (w or 0) >= 500 and (h or 0) >= 500
@@ -204,5 +204,6 @@ def read(html, base_url):
         add(a['href'], a.get('title', '') or _text(a), '')
     for x in ld:
         if x.get('@type') in ('ImageObject',) and x.get('url'):
-            add(x['url'], x.get('caption') or x.get('name') or '', '')
+            cap = x.get('caption') or x.get('name') or ''
+            add(x['url'], cap if isinstance(cap, str) else '', '')
     return {'title': title, 'published': published, 'text': text, 'images': images[:40], 'url': base_url}

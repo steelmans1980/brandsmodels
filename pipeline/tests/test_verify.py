@@ -179,6 +179,11 @@ class Attribution(unittest.TestCase):
                  'w': 1000, 'h': 1200, 'lead': False}]
         self.assertEqual(self.pick('Seafolly 2016 campaign', imgs)[0]['talent'], [])
 
+    def test_spaced_file_name_alt_does_not_attribute(self):
+        self.assertEqual(verify.strip_slugs('Rose saint laurent fall 2026 campaign02'), '')
+        self.assertEqual(verify.strip_slugs('Sadie Sink Calvin Klein Fall 2026 Courtesy of Calvin Klein'),
+                         'Sadie Sink Calvin Klein Fall 2026 Courtesy of Calvin Klein')
+
     def test_alt_equal_to_page_title_does_not_attribute(self):
         imgs = [{'url': 'https://example.com/a.jpg', 'alt': 'Shanina Shaik for Seafolly 2016', 'caption': '',
                  'w': 1000, 'h': 1200, 'lead': False}]

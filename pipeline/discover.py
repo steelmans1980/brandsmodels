@@ -158,7 +158,8 @@ def process(g, data, budget, providers=('sources', 'legacy', 'brave_web', 'brave
             got += 1
             res['accepted'].append({'file': r['file'], 'image': img['url'], 'page': p.get('final') or url,
                                     'site': net.host_of(p.get('final') or url).replace('www.', ''),
-                                    'talent': img['talent'], 'attribution': img['attribution'], 'via': via,
+                                    'talent': img['talent'], 'attribution': img['attribution'],
+                                    'attribution_text': img.get('attribution_text', ''), 'via': via,
                                     'alt': (img.get('alt') or '')[:160], 'evidence': v['evidence'], 'duplicate_of': r.get('duplicate_of')})
         rec['downloaded'] = got
         if fails:

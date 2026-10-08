@@ -1,3 +1,108 @@
+# Image coverage: attribution fix, recheck and Google-first batch (updated 2026-10-08)
+
+This section supersedes the attribution figures below; the earlier sections are kept as history.
+Nothing is pushed to `main` or deployed. The batch photos are candidates only (`pipeline/candidates/photos`, not deployed).
+
+## A. Attribution rule (what changed)
+
+A photo is now attributed to a model only when **its own caption or alt text names her**, or a person records it in
+`results/review_attributions.json` (empty so far: no human attributions yet). Removed as attribution sources:
+- "the article is about this model alone" (the Seafolly failure: four pictures of other models tagged as her);
+- file names, and file names copied into the alt ("irina-shayk-bebe-…-campaign0", "Rose saint laurent fall 2026 campaign02");
+- the page title, which was copied onto the page's og:image as if it were its caption;
+- search-result titles, which were passed in as alt text for pictures suggested by a search;
+- alt text repeated on three or more pictures of a page, or equal to the headline (gallery boilerplate).
+
+Visual review checks content type only (campaign picture or not: events, backstage, products, lookbooks, other lines). No
+one is identified from appearance.
+
+**Season conflicts:** a headline/body conflict is no longer settled by the publication date. The page stays a candidate
+and contributes no photos; a campaign is illustrated only from a page that states its season without conflict. No published
+photo had relied on the old rule. (Celine Winter 2026 is now supported by theimpression.com, not the conflicting page.)
+
+## B. Recheck of published photos
+
+All 3,211 published photos that carried a model tag were rechecked against their source page (matched by original URL or
+perceptual hash; robots.txt respected). 2,767 of them had been tagged only because the credit names one model.
+
+| Outcome | Photos |
+|---|---:|
+| Tag kept: the picture's own caption or alt text names the model | **779** |
+| No captioned picture of her on the source page | 1,620 |
+| A captioned picture exists, but it is a different picture | 429 |
+| Only a file name named her | 115 |
+| Source page unreadable now (404, 202 holding page, blocked, …) or not recorded | 268 |
+
+Removed tags leave the photo on its campaign as "models not identified individually"; the site then shows it under
+"Campaign photos" rather than as her photo. Only image tags changed in `data/campaigns.json` (10,540 records, same order,
+no other field touched). Per-photo decisions with the supporting caption: `results/attribution_recheck.json`.
+
+## C. Trial (50 campaigns), final after visual review
+
+Both arms re-scored under the new rules from cached searches ($0). 9 further pictures rejected visually.
+
+| | Brave | Google Images | Combined |
+|---|---:|---:|---:|
+| Verified galleries | 11 | 13 | 13 |
+| Photos kept | 56 | 69 | 89 |
+| Photos attributed, automated (caption) | 1 | 1 | 2 |
+| Photos attributed, human review | 0 | 0 | 0 |
+| Credited models newly illustrated | 1 (Hanni, UGG 2024) | 1 (Eva Herzigová, Armani 2016) | 2 |
+
+## D. Google-first batch `gfirst-b1` (100 campaigns)
+
+**Selection** (`results/gfirst-b1_selection.json`): dated campaigns where no credited model had a model-specific photo,
+not dated from a photo page, at most two per label. Tier 1 (45): a cited or earlier-verified page already confirms label,
+period and credited model. Tier 2 (55): season known and a press source other than Wikipedia.
+
+**Order:** cited sources and earlier results → Google Images (SerpApi) → Brave web only where nothing was verified.
+
+**Usage, checked against the SerpApi account:**
+
+| | Value |
+|---|---:|
+| SerpApi HTTP requests | 83 |
+| of which 503 retries (not billed) | 15 |
+| Searches that could be billed | 68 |
+| **Billed per account** (921 → 853 left this month) | **68** (cap 200) |
+| Brave requests | 18 ($0.09, cap $1) |
+| Value used (68 × $0.025 of the Starter plan + Brave) | **$1.79** |
+
+No upgrade, no extra charge; 853 searches remain this month. Replays for this report used the cache only (0 requests).
+
+**Results after visual review** (626 pictures reviewed, 57 rejected: events and red carpet, a runway show, backstage,
+lookbooks and catalogues, a model-profile page's runway/cover/portrait pictures, products, logos and placeholders, collages,
+Tom Ford Eyewear; reasons per picture in `results/gfirst-b1.visual_review.json`):
+
+| | Count |
+|---|---:|
+| Campaigns with a verified gallery | **83 / 100** (tier 1: 32, tier 2: 51) |
+| … where no photo identifies a credited model (gallery only) | 66 |
+| Photos kept | 569 (394 not yet on the site) |
+| Photos attributed to a credited model: automated (caption/alt) | 25 |
+| Photos attributed to a credited model: human review | 0 |
+| **Model credits newly illustrated** | **19** |
+| Cost per verified gallery | $0.022 |
+| **Cost per newly illustrated model credit** | **$0.094** |
+
+A gallery whose models are not identified individually is not counted as a model photo. Most galleries came from cited
+sources (free); Google Images found 16 and Brave 4.
+
+**Not applied yet.** `python3 -m pipeline apply --run gfirst-b1 --reject pipeline/results/review_rejected.txt` would add
+442 photo placements to 70 credits (dry run). Contact sheet with model, campaign, caption evidence, period evidence and
+source for every picture: `results/gfirst-b1_review.html`.
+
+## E. Validation
+
+- 25 unit tests pass (attribution, boilerplate, file-name alts, conflicts).
+- `python3 -m pipeline validate`: every image reference resolves and decodes; no problems.
+- Browser (Chromium): home + 12 model pages, 367 images, 0 broken, 156 "Campaign photos" links, viewer opens, no JS errors.
+- 91 unreviewed trial downloads moved out of `assets/photos` into `pipeline/candidates/photos`. (`main` separately
+  holds 602 unreferenced photo files from earlier removals; untouched.)
+- No product-feature branch exists on GitHub; this branch changes only image tags in `data/campaigns.json`.
+
+---
+
 # Image coverage: review, audit and trial (updated 2026-10-08)
 
 This replaces the first version of this report. Its trial and coverage figures changed after the verification

@@ -312,9 +312,14 @@ def image_caption(img, boiler=frozenset()):
 _SLUG = re.compile(r'\S*[-_]\S*[-_]\S*')
 
 
+_FILE_ALT = re.compile(r'(?i)^[a-z0-9 ]+?[a-z]\d{1,3}$')
+
+
 def strip_slugs(text):
-    """Drop file-name-like tokens ("irina-shayk-bebe-2014-fall-ad-campaign0") that a CMS copies into the alt."""
-    return re.sub(r'\s+', ' ', _SLUG.sub(' ', text or '')).strip()
+    """Drop file names that a CMS copies into the alt: slug tokens ("irina-shayk-bebe-2014-fall-ad-campaign0") or a
+    whole alt that is a file name with its hyphens turned into spaces ("Rose saint laurent fall 2026 campaign02")."""
+    t = re.sub(r'\s+', ' ', _SLUG.sub(' ', text or '')).strip()
+    return '' if _FILE_ALT.match(t) else t
 
 
 def page_boilerplate(article):

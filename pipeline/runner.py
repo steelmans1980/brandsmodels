@@ -487,8 +487,8 @@ def cmd_review_sheet(args):
     if os.path.exists(os.path.join(config.RESULTS, 'review_rejected.txt')):
         rejected = {x.strip() for x in open(os.path.join(config.RESULTS, 'review_rejected.txt')) if x.strip()}
     items, n = [], 0
-    for r in sorted(rows.values(), key=lambda r: r['label']):
-        for kind, lst in (('verified', r['accepted']), ('campaign confirmed, cast not named (not applied)', [] if r['accepted'] else r.get('campaign_level') or [])):
+    for r in sorted(rows.values(), key=lambda r: (not any(a['talent'] for a in r['accepted']), r['label'])):
+        for kind, lst in (('verified', sorted(r['accepted'], key=lambda a: not a['talent'])), ('campaign confirmed, cast not named (not applied)', [] if r['accepted'] else r.get('campaign_level') or [])):
             for a in lst:
                 try:
                     im = Image.open(os.path.join(config.ROOT, a['file'])).convert('RGB')
@@ -509,6 +509,14 @@ def cmd_review_sheet(args):
 <span class="k">Status:</span> {H.escape(kind)}{' · <b>rejected in review</b>' if a['file'] in rejected else ''}<br>
 <a href="{H.escape(a['page'])}">{H.escape(a['site'])}</a> · <code>{H.escape(os.path.basename(a['file']))}</code></figcaption></figure>""")
                 n += 1
+    fin = os.path.join(config.RESULTS, f'{args.run}.final.json')
+    summary = ''
+    if os.path.exists(fin):
+        f = json.load(open(fin))
+        summary = (f"<p>{f['verified_galleries']} of {f['campaigns']} campaigns with a verified gallery; {f['photos_after_review']} photos "
+                   f"kept after visual review ({f['new_photos']} new). {f['model_attributed_photos']['automated (caption/alt)']} photos "
+                   f"name a credited model in their own caption (automated; listed first); 0 by human review. "
+                   f"Dimmed = rejected in visual review. Nothing here is published.</p>")
     page = f"""<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{H.escape(args.run)} review</title><style>
 :root{{--bg:#fff;--fg:#111;--mut:#666;--line:#ddd}}@media (prefers-color-scheme:dark){{:root{{--bg:#111;--fg:#eee;--mut:#999;--line:#333}}}}
@@ -516,7 +524,7 @@ body{{background:var(--bg);color:var(--fg);font:13px/1.4 system-ui,sans-serif;ma
 main{{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}}
 figure{{margin:0;border:1px solid var(--line);padding:6px;border-radius:6px}}figure.rej{{opacity:.45}}
 img{{max-width:100%;display:block;margin:0 auto 6px}}.k{{color:var(--mut)}}a{{color:inherit}}code{{font-size:11px}}
-</style><h1>{H.escape(args.run)}: {n} candidate photos</h1><main>{''.join(items)}</main>"""
+</style><h1>{H.escape(args.run)}: {n} candidate photos</h1>{summary}<main>{''.join(items)}</main>"""
     out = os.path.join(config.RESULTS, f'{args.run}_review.html')
     open(out, 'w').write(page)
     print(out)
@@ -580,7 +588,7 @@ def cmd_apply(args):
     ev = json.load(open(_evidence_path())) if os.path.exists(_evidence_path()) else {}
     from . import images, recheck
     reviews = recheck.human_reviews()
-    added = credits = 0
+    added = credits = tagged = 0
     for run in args.run:
         for gid, r in _results(run).items():
             g = gs.get(gid)
@@ -593,11 +601,22 @@ def cmd_apply(args):
                 before = len(imgs)
                 for a in r['accepted']:
                     pub = 'assets/photos/' + os.path.basename(a['file'])
-                    if a['file'] in rejected or a['file'] in have or pub in have:
+                    if a['file'] in rejected:
                         continue
                     review = reviews.get(a['file']) or reviews.get(pub)
                     tags = review['models'] if review else a['talent']
                     talent = [t for t in tags if t in c['talent']]
+                    same = next((i for i in imgs if i['src'] in (a['file'], pub, a.get('duplicate_of'))), None)
+                    if same is not None:
+                        # already published: a caption (or a person) now says who is in it
+                        if talent and not same.get('talent'):
+                            same['talent'] = talent
+                            ev[same['src']] = {**ev.get(same['src'], {}), 'attributed_by': 'human review' if review else
+                                               'automated: image caption or alt text',
+                                               'attribution_text': (review or {}).get('note') or a.get('attribution_text', ''),
+                                               'attribution_page': a['page'], 'run': run}
+                            tagged += 1
+                        continue
                     if tags and not talent:
                         continue  # a photo of another model of the same campaign
                     src = a['file'] if args.dry_run else images.publish(a['file'])
@@ -615,7 +634,8 @@ def cmd_apply(args):
                     added += len(imgs) - before
                 if not imgs:
                     c.pop('images')
-    print(f'{added} photos added to {credits} credits{" (dry run, nothing written)" if args.dry_run else ""}')
+    print(f'{added} photos added to {credits} credits; {tagged} published photos newly attributed'
+          f'{" (dry run, nothing written)" if args.dry_run else ""}')
     if not args.dry_run:
         _save_data(data)
         _write_json('evidence.json', ev)
