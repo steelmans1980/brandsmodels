@@ -125,3 +125,26 @@ def run(data, evidence, workers=12):
             if i % 250 == 0:
                 print(f'  {i}/{len(todo)} checked', flush=True)
     return decisions
+
+
+def collision_pass(data, captions, reviews=None):
+    """Drop a model tag where the person's name overlaps the credit's label and the photo's caption does not name
+    her as the subject (verify.attributable). `captions` maps a photo file to the caption that attributed it.
+    Human-reviewed attributions are kept. Returns the list of removals."""
+    reviews = reviews if reviews is not None else human_reviews()
+    removed = []
+    for c in data['campaigns']:
+        aliases = data['brands'].get(c['brand'], {}).get('aliases', [])
+        for im in c.get('images', []):
+            if not im.get('talent') or im['src'] in reviews:
+                continue
+            keep = []
+            for t in im['talent']:
+                if verify.name_collides(t, c['brand'], aliases) and t not in verify.attributable(
+                        [t], captions.get(im['src'], ''), c['brand'], aliases):
+                    removed.append({'src': im['src'], 'model': t, 'brand': c['brand'], 'year': c.get('year'),
+                                    'caption': captions.get(im['src'], '')})
+                    continue
+                keep.append(t)
+            im['talent'] = keep
+    return removed

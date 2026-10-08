@@ -22995,7 +22995,7 @@
   "page": "https://theimpression.com/alexandra-golovanoff-fall-2026-ad-campaign-review/",
   "image": "https://theimpression.com/wp-content/uploads/2026/08/alexandra-golovanoff-fall-2026-ad-campaign-the-impression-header.jpg",
   "attribution": "image caption or alt text names the model",
-  "attributed_by": "automated: image caption or alt text",
+  "attributed_by": "none (label name, not the subject; removed by the name-collision rule)",
   "attribution_text": "Alexandra Golovanoff Fall 2026 Ad Campaign",
   "via": "cited source",
   "run": "gfirst-b1",

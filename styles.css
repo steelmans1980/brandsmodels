@@ -163,6 +163,7 @@ h2 { font-size: 32px; margin: 8px 0 0; }
 .lb-caption { padding: 56px 26px 26px; overflow-y: auto; }
 .lb-caption .eyebrow, .lb-caption .sources a, .lb-caption p { color: #b9bdb0; }
 .lb-caption h3 { font-size: 28px; margin: 10px 0; }
+.lb-caption .lb-who { margin: 16px 0 -4px; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
 .lb-caption a { color: #f1efe8; }
 .lb-count { font-size: 11px; letter-spacing: 1px; }
 .lb-close, .lb-nav { position: absolute; z-index: 2; border: 0; background: #f6f4efe6; color: var(--ink); cursor: pointer; width: 44px; height: 44px; border-radius: 50%; font-size: 26px; line-height: 1; }

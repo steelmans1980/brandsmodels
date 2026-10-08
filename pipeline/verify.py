@@ -141,6 +141,45 @@ _TITLES = {'ms', 'mrs', 'miss', 'model', 'models', 'supermodel', 'by', 'and', 'w
            'feat', 'featuring', 'starring', 'x', 'jpg', 'img'}
 
 
+def name_collides(model, brand, aliases=()):
+    """True when a credited person's name and the label overlap ("Alexandra Golovanoff" for Alexandra Golovanoff,
+    "Margherita Missoni" for Missoni, "Zara Abid" for Zara): a mention of the name may be the label, not her."""
+    m = ' ' + groups.fold(model) + ' '
+    for b in [brand, *aliases]:
+        f = ' ' + groups.fold(b) + ' '
+        if f.strip() and (f in m or m in f):
+            return True
+    return False
+
+
+# Verbs that make a named person the subject of the picture ("Alexandra Golovanoff poses in ..."), as opposed to the
+# label's name used as a title ("Alexandra Golovanoff Fall 2026 Ad Campaign").
+_SUBJECT = re.compile(r"^[\s,’'s]*(?:\(.{0,30}\)\s*)?(?:stars?|starring|poses?|posing|wears?|wearing|fronts?|fronting|models?|"
+                      r"modell?ing|appears?|lounges?|leans?|sits?|stands?|is (?:the )?face|is pictured|photographed)\b", re.I)
+
+
+def subject_named(model, caption):
+    """The caption names this person by full name as the subject of the picture."""
+    full = groups.fold(model)
+    words = caption.split()
+    n = len(model.split())
+    for i in range(len(words) - n + 1):
+        if groups.fold(' '.join(words[i:i + n])) == full and _SUBJECT.match(' '.join(words[i + n:i + n + 6])):
+            return True
+    return False
+
+
+def attributable(models, caption, brand, aliases=()):
+    """Credited models a caption attributes. Where a name overlaps the label, only a full-name mention as the subject
+    counts; a label name, a season title or a surname alone does not."""
+    out = []
+    for m in model_hits(models, caption):
+        if name_collides(m, brand, aliases) and not subject_named(m, caption):
+            continue
+        out.append(m)
+    return out
+
+
 def _surname_alone(model, sur, text):
     """True unless every mention of the surname follows a different capitalised first name
     ("Sienna Miller" is not Alyssa Miller), also in lower-case file names."""
@@ -382,7 +421,7 @@ def pick_images(group, article, verdict, other_brands):
         mine = bool(brand.find(t))
         named = model_hits(group['models'], t)
         cap = image_caption(img, boiler)
-        named_cap = model_hits(group['models'], cap)
+        named_cap = attributable(group['models'], cap, group['brand'], group.get('aliases', []))
         others = [b for b in other_brands if b.find(t) and not _person_name(b.name, t)]
         per = seasons.mentions(t)
         if others and not mine:

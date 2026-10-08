@@ -562,13 +562,25 @@ def cmd_recheck(args):
         for im in c.get('images', []):
             if not im.get('talent'):
                 continue
-            d = decisions[recheck.key(im['src'], im['talent'])]
+            d = decisions.get(recheck.key(im['src'], im['talent']))
+            if d is None:
+                # tagged after the recheck by `apply`, from the photo's own caption (evidence.json); kept as is
+                kept += 1
+                continue
             after = [t for t in d['after'] if t in im['talent']]
             if after:
                 kept += 1
             else:
                 removed += 1
             im['talent'] = after
+    # a name that is also the label's: only a caption naming her as the subject counts
+    captions = {d['src']: d.get('caption', '') for d in decisions.values() if d['after']}
+    captions.update({k: v.get('attribution_text', '') for k, v in ev.items() if v.get('attribution_text')})
+    collisions = recheck.collision_pass(data, captions)
+    for x in collisions:
+        print(f"  name matches the label, not attributed: {x['model']} ({x['brand']} {x['year']}) “{x['caption'][:80]}”")
+    removed += len(collisions)
+    kept -= len(collisions)
     why = collections.Counter(d['why'] for d in decisions.values() if not d['after'])
     print(f'{kept} tags kept, {removed} removed{" (dry run, nothing written)" if args.dry_run else ""}')
     for k, n in why.most_common():

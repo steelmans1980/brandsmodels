@@ -12,9 +12,13 @@ Contact sheet in the repo: `results/gfirst-b1_review.html`.
 - **Attribution.** A photo is shown as a particular model only when its own caption or alt text names her (automated),
   or a person records it in `results/review_attributions.json` (human review; none yet). A page about one model, a file
   name (also when copied into the alt), a page title, a search-result title, or alt text repeated across a gallery does
-  not attribute. Uncertain identities stay unassigned.
+  not attribute. Where a credited person's name overlaps the label ("Alexandra Golovanoff" for Alexandra Golovanoff,
+  "Margherita Missoni" for Missoni), only a caption naming her by full name as the subject ("… poses in …") attributes;
+  the label's name used as a title, or a surname alone, does not. Uncertain identities stay unassigned.
 - **Galleries.** A photo verified to belong to a campaign but naming no credited model stays on the campaign as
-  "Campaign photos — models not identified individually". It is never shown as a photo of a particular model.
+  a gallery photo. On a model's page the campaign's photos that are not identified as her sit behind a neutral
+  "Other campaign photos (N)" link; the viewer shows each photo's own attribution ("Identified in this photo: …", or
+  "Models not identified individually" with the credited cast). A photo is never shown as a model it does not name.
 - **Portraits.** Where a credit has no photo of the model, the site shows her Wikimedia portrait labelled "Model portrait".
 - **Periods.** A headline/body season conflict makes the page a candidate only; a publication date supports but never
   settles it. Photos come only from a page that states the campaign's season and year without conflict.
@@ -28,12 +32,12 @@ Contact sheet in the repo: `results/gfirst-b1_review.html`.
 
 | Credits | photo attributed by human review | photo whose own caption names the model (automated) | campaign gallery only (models not identified individually) | portrait/press fallback only | no picture | Total |
 |---|---:|---:|---:|---:|---:|---:|
-| Identified | 0 | 308 | 730 | 749 | 256 | 2,043 |
+| Identified | 0 | 307 | 731 | 749 | 256 | 2,043 |
 | Dated | 0 | 140 | 453 | 892 | 292 | 1,777 |
 | Undated | 0 | 209 | 384 | 5,003 | 1,124 | 6,720 |
-| **All** | 0 | 657 | 1,567 | 6,644 | 1,672 | 10,540 |
+| **All** | 0 | 656 | 1,568 | 6,644 | 1,672 | 10,540 |
 
-Photo placements in the data: 4,159, of which 804 are attributed to a credited model by caption and 0 by human review.
+Photo placements in the data: 4,159, of which 803 are attributed to a credited model by caption and 0 by human review.
 2,224 credits carry at least one photo.
 
 Why dated or identified credits have no model-specific photo (primary reason per credit):
@@ -93,10 +97,15 @@ Order: cited sources and earlier results, then Google Images (SerpApi), then Bra
 | … adding photos | | 64 |
 | Credit changed | one model's line on one campaign that receives at least one new photo | **70** |
 | Placement | one photo on one credit (a gallery photo is placed on each credit of its campaign) | **442** (393 distinct new files) |
-| Newly illustrated model credit | a credit whose model is named in an accepted photo's own caption | **19** (25 photos) |
+| Newly illustrated model credit | a credit whose model is named in an accepted photo's own caption | **18** (24 photos) |
 
-The 19 model credits are a subset of the 70 changed credits; the other 51 changed credits gain campaign galleries only,
+The 18 model credits are a subset of the 70 changed credits; the other 52 changed credits gain campaign galleries only,
 which are not counted as model photos.
+
+**Name collision.** The Alexandra Golovanoff photo was attributed from the alt text "Alexandra Golovanoff Fall 2026 Ad
+Campaign", which names the label and campaign, not the person pictured. The attribution is removed; the photo stays in
+the campaign gallery. No other tagged photo has a name that overlaps its label (five credits do — Margherita Missoni/Missoni,
+Zara Abid/Zara, Bebe Rexha/bebe, Jorgie Porter/Porter, Chloë Sevigny/Chloé — none has a tagged photo).
 
 **Review.** 626 pictures reviewed, 57 rejected (reasons per picture: `results/gfirst-b1.visual_review.json`).
 569 photos kept, 175 of them already on the site.
@@ -110,15 +119,18 @@ which are not counted as model photos.
 | Brave requests | 18 ($0.09 of a $1 cap) |
 | Value used (68 × $0.025 of the Starter plan + Brave) | $1.79 |
 | Per verified gallery | $0.022 |
-| Per newly illustrated model credit | $0.094 |
+| Per newly illustrated model credit | $0.099 |
 
 ## 6. Validation of this branch
 
-- Unit tests (25) pass; `python3 -m pipeline validate` reports no problems.
+- Unit tests (27, including the name-collision regression tests) pass; `python3 -m pipeline validate` reports no problems.
 - Chromium, desktop (1280 px) and phone (390 px): home, labels, models and years indexes, 3 label pages, a year page and
-  24 model pages (32 routes per size), 639 images, 0 broken, no horizontal scrolling, no script errors. 24/24 "Campaign
-  photos" links open the lightbox, page forward and close; 22/22 model photos open with the model named in the caption.
-- All 25 caption-attributed batch photos appear on their model's page (19 credits).
+  25 model pages (33 routes per size), 640 images, 0 broken, no horizontal scrolling, no script errors. 25/25 "Other
+  campaign photos" links open the lightbox, page forward and close; 21/21 model photos open with the model named.
+  Every gallery link uses the neutral wording; inside the viewer each photo shows its own attribution (e.g. on Aluel
+  Makuach's page the Tom Ford Fall 2026 gallery shows "Identified in this photo: Liu Wen, Mila Van Eeten" for one photo
+  and "Models not identified individually" for nine); no photo is presented as the page's model.
+- All 24 caption-attributed batch photos appear on their model's page (18 credits).
 - Applying the batch changed only image lists (70 records, no other field). Revert commit "Apply reviewed batch gfirst-b1"
   to undo it.
 

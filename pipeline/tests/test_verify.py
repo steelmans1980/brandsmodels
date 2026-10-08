@@ -184,6 +184,26 @@ class Attribution(unittest.TestCase):
         self.assertEqual(verify.strip_slugs('Sadie Sink Calvin Klein Fall 2026 Courtesy of Calvin Klein'),
                          'Sadie Sink Calvin Klein Fall 2026 Courtesy of Calvin Klein')
 
+    def test_label_named_after_the_person_does_not_attribute(self):
+        # "Alexandra Golovanoff Fall 2026 Ad Campaign" names the label and the campaign, not who is pictured
+        g = group('Alexandra Golovanoff', 2026, 'FW', models=['Alexandra Golovanoff'])
+        imgs = [{'url': 'https://example.com/a.jpg', 'alt': 'Alexandra Golovanoff Fall 2026 Ad Campaign', 'caption': '',
+                 'w': 1000, 'h': 1200, 'lead': False}]
+        art = article('Who’s Who: Alexandra Golovanoff Fall 2026 Ad Campaign', 'Alexandra Golovanoff fall 2026 campaign.', images=imgs)
+        kept = verify.pick_images(g, art, self.v, [])[0]
+        self.assertEqual(kept[0]['talent'], [])
+        self.assertEqual(verify.attributable(['Alexandra Golovanoff'], 'Alexandra Golovanoff poses in her fall 2026 campaign',
+                                             'Alexandra Golovanoff'), ['Alexandra Golovanoff'])
+
+    def test_label_in_surname_does_not_attribute(self):
+        self.assertEqual(verify.attributable(['Margherita Missoni'], 'Missoni Fall 2026 campaign', 'Missoni'), [])
+        self.assertEqual(verify.attributable(['Margherita Missoni'], 'Margherita Missoni Missoni campaign', 'Missoni'), [])
+        self.assertEqual(verify.attributable(['Margherita Missoni'], 'Margherita Missoni wears Missoni', 'Missoni'),
+                         ['Margherita Missoni'])
+        self.assertEqual(verify.attributable(['Zara Abid'], 'Zara Abid for Zara', 'Zara'), [])
+        # no overlap: the ordinary caption rule applies
+        self.assertEqual(verify.attributable(['Sadie Sink'], 'Sadie Sink Calvin Klein Fall 2026', 'Calvin Klein'), ['Sadie Sink'])
+
     def test_alt_equal_to_page_title_does_not_attribute(self):
         imgs = [{'url': 'https://example.com/a.jpg', 'alt': 'Shanina Shaik for Seafolly 2016', 'caption': '',
                  'w': 1000, 'h': 1200, 'lead': False}]

@@ -42,8 +42,8 @@
   },
   "identified | campaign": {
    "credits": 826,
-   "photo whose own caption names the model (automated)": 199,
-   "campaign gallery only (models not identified individually)": 432,
+   "photo whose own caption names the model (automated)": 198,
+   "campaign gallery only (models not identified individually)": 433,
    "portrait/press fallback only": 161,
    "no picture": 34
   },
@@ -86,8 +86,8 @@
  "pictures_by_appearance": {
   "identified": {
    "photo attributed by human review": 0,
-   "photo whose own caption names the model (automated)": 308,
-   "campaign gallery only (models not identified individually)": 730,
+   "photo whose own caption names the model (automated)": 307,
+   "campaign gallery only (models not identified individually)": 731,
    "portrait/press fallback only": 749,
    "no picture": 256
   },
@@ -109,7 +109,7 @@
  "dated_without_model_photo_by_reason": {
   "identified | no relevant search results": 762,
   "dated | no relevant search results": 747,
-  "identified | not searched yet": 422,
+  "identified | not searched yet": 423,
   "dated | relevant result, inaccessible source": 385,
   "identified | relevant result, inaccessible source": 352,
   "dated | rejected: campaign/identity not confirmed": 263,

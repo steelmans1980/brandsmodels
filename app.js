@@ -85,7 +85,8 @@
     if (!person) return c.images;
     return c.images.filter(i => i.talent.includes(person));
   }
-  // Campaign photos that are not tagged with this person (other models, or models not identified).
+  // The campaign's other photos on her page: photos attributed to other people, and photos whose models are not
+  // identified individually. The viewer shows each photo's own attribution.
   const campaignOnly = (c, person) => c.images.filter(i => !i.talent.includes(person));
   const altText = (c, img) => img.talent.length ? `${img.talent.join(', ')} for ${c.brand}, ${label(c)}` : `${c.brand}, ${label(c)}: campaign photo`;
   // On a model page only her own (or group) photos qualify, so another model's shot never stands in for her.
@@ -139,11 +140,11 @@
     const shown = imgs.slice(0, max), more = imgs.length - shown.length;
     return `<div class="gallery">${shown.map((img, n) => `<button class="shot" type="button" aria-label="Open photo: ${esc(altText(c, img))}">${photoTag(c, img)}${n === shown.length - 1 && more > 0 ? `<span class="more">+${more}</span>` : ''}</button>`).join('')}</div>`;
   }
-  // On a model's page: a link to the campaign's photos that are not identified as her.
+  // On a model's page: a link to the campaign's other photos (none of them identified as her).
   function campaignLink(c, person) {
     const rest = person ? campaignOnly(c, person) : [];
     if (!rest.length) return '';
-    return `<p class="hint group-note"><button type="button" class="link-btn" data-campaign-gallery="${c.id}">Campaign photos (${rest.length})</button> — the models in them are not identified individually, so they are not shown as photos of ${esc(person)}.</p>`;
+    return `<p class="hint group-note"><button type="button" class="link-btn" data-campaign-gallery="${c.id}">Other campaign photos (${rest.length})</button> — not identified as ${esc(person)}; each photo shows who is identified in it.</p>`;
   }
 
   const sourceLinks = srcs => srcs.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)} ↗</a>`).join(' · ');
@@ -497,8 +498,8 @@
     box.querySelector('.lb-img').innerHTML = `<img src="${esc(img.src)}" alt="${esc(altText(c, img))}">`;
     box.querySelector('.lb-caption').innerHTML = `
       <div class="eyebrow">${brandLink(c.brand)} · ${esc(label(c))}</div>
-      ${who ? `<h3>${list(who)}</h3>` : `<h3>${esc(c.brand)} ${esc(label(c))}</h3>
-      <p>Credited: ${list(c.talent)}. The models in this photo are not identified individually.</p>`}
+      ${who ? `<p class="lb-who">Identified in this photo</p><h3>${list(who)}</h3>`
+            : `<h3>Models not identified individually</h3><p>Credited for the campaign: ${list(c.talent)}</p>`}
       ${c.photographer ? `<p>Photography: ${esc(c.photographer)}</p>` : ''}
       ${img.from ? `<p class="sources">Photo: <a href="${esc(img.from)}" target="_blank" rel="noopener noreferrer">${esc(img.credit || 'source')} ↗</a> · © its owner</p>` : ''}
       ${sources(c)}
