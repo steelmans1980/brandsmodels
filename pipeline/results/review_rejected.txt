@@ -134,3 +134,9 @@ assets/photos/faec4a4fca1b6ab6.jpg
 assets/photos/fb1841c7bfff3c70.jpg
 assets/photos/fb1f241cafa0941a.jpg
 assets/photos/fce963e9fc7a0300.jpg
+assets/photos/4d1af45b16d92e93.jpg
+assets/photos/99a5efc1d5a04979.jpg
+assets/photos/67bb2b49f2b45a45.jpg
+assets/photos/96b7cbabaf05dd41.jpg
+assets/photos/e642752fdeb6964e.jpg
+assets/photos/ae0cefb85c266725.jpg

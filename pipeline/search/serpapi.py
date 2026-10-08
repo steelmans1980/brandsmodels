@@ -6,6 +6,7 @@ image URLs: a page must still allow Claude in robots.txt and pass verification, 
 downloaded only from a host that allows it. A search result is not permission to republish.
 """
 import os
+import time
 
 import requests
 
@@ -68,7 +69,11 @@ def images(query, budget):
         if d is not None and not budget.allow(provider):
             return None
         params = {'engine': engine, 'q': query, 'hl': 'en', 'gl': 'us', 'api_key': os.environ['SERPAPI_API_KEY']}
-        r = requests.get(ENDPOINT, params=params, timeout=120)
+        for attempt in range(3):  # google_images_light answers 503 under parallel load; it succeeds when retried
+            r = requests.get(ENDPOINT, params=params, timeout=120)
+            if r.status_code not in (502, 503, 504):
+                break
+            time.sleep(5 * (attempt + 1))
         if r.status_code != 200:
             return {'error': f'http {r.status_code}', 'results': []}
         d = r.json()

@@ -1,8 +1,9 @@
 # Image coverage: review, audit and trial (updated 2026-10-08)
 
 This replaces the first version of this report. Its trial and coverage figures changed after the verification
-review below. No 500-group batch was run, and nothing is pushed to `main`. Paid spend is unchanged at **289 Brave
-requests, $1.445**. No SerpApi searches have been made (ledger in `pipeline/cache/search.sqlite`).
+review below. No 500-group batch was run, and nothing is pushed to `main`. Paid spend: **289 Brave requests,
+$1.445**, plus **79 SerpApi searches** from the Starter plan's included 1,000 (no extra charge; ledger in
+`pipeline/cache/search.sqlite`). The Google Images arm has now run (section 4).
 
 ## 1. Verification review
 
@@ -200,62 +201,57 @@ far less.
 | Wonderbra 1996 campaign | Patrizia Deitos, Sophie Anderton | not recovered | 0 | unverified: no season/year stated — https://uk.themedialeader.com/wonderbra-tops-ad-poll/ |
 | Zara 2020 campaign | Rebecca Leigh Longendyke | verified gallery | 8 (2) | https://www.designscene.net/2020/12/zara-holiday-2020.html |
 
-## 4. Google Images arm (SerpApi): ready, not yet run
+## 4. Google Images arm (SerpApi): results
 
-**Plan:** you're on SerpApi Starter: $25/month for 1,000 searches, which you say is limited to 200 a day. This
-trial needs at most 50, all from searches the subscription already includes. No upgrade is needed.
+Run on 2026-10-08 on the same frozen 50 campaigns, one model-first query each, within the Starter plan's included
+searches (`python3 -m pipeline trial --google --plans starter`, then `python3 -m pipeline compare`).
 
-**Why it hasn't run here:** environment variables load only when a session starts, so this session has no
-`SERPAPI_API_KEY`.
+| | Brave arm | Google Images arm |
+|---|---:|---:|
+| Campaigns with a verified gallery | 11 / 50 | **14 / 50** |
+| Credited models shown in a verified photo | 3 | 5 |
+| Photos accepted by the rules | 57 | 82 (6 then rejected visually, below) |
+| Photos tagged to a named model | 5 | 19 |
+| Relevant results on hosts never fetched (social, stock, resale) | 270 | 110 |
+| Relevant results on pages that disallow Claude | 188 | 33 |
+| Requests | 136 ($0.68) | 79 searches from the plan (≈ $1.98 of the $25 allowance) |
 
-**Safeguards, tested end to end with a mocked SerpApi against a throwaway cache:**
-- Before any search, `account.json` is read; SerpApi does not bill it as a search.
-- The run aborts unless:
-  - the plan is one you allow (`--plans free,starter`);
-  - this month's plan still includes the needed searches (`plan_searches_left`, not extra credits);
-  - this hour's limit allows them.
-- So it can't cause overage or an early renewal. A Developer plan, or 30 searches left, is refused before any search.
-- At most `--max-searches` (default 50) requests are sent, counted as attempts.
-- One Google Images query per campaign (model-first), so 50 searches cover the 50 campaigns.
-- The ledger values each Starter search at $0.025 (the $25 ÷ 1,000 already paid), so the trial uses about $1.25
-  of the month's allowance.
-- Every page found goes through the same verification as the Brave arm, including the cross-page cast rule.
-- Results that point to Instagram, Pinterest, Getty or similar, or to sites that disallow Claude, are counted as
-  "relevant but not retrievable" rather than fetched.
+- **Overlap:** Google recovered all 11 campaigns Brave recovered, plus 3 Brave missed: **Ralph Lauren FW 2011**
+  (Sui He, asianmodelsblog.blogspot.com), **Seafolly 2016** (Shanina Shaik, seafolly.com), **Armani SS 2016**
+  (Eva Herzigová, fashiongonerogue.com). Brave found nothing Google missed.
+- **Visual review of the 17 Google-only photos:** 11 kept. Rejected 6 (added to `results/review_rejected.txt`, now
+  142): 4 Seafolly pictures on the "Meet Shanina Shaik" page that show a different model but were tagged as her by
+  the single-model-article rule, and 2 Armani behind-the-scenes shots. The single-model-article rule should not tag
+  every picture on a brand blog page; that is the next rule fix.
+- **Remaining failures (Google, 36):** 16 unverified (5 not about a campaign, 4 model not named), 12 inaccessible
+  source, 4 no relevant results, 3 empty from both engines (Levi's 1988, Aquascutum 2012, Marc O'Polo SS 2014),
+  1 extraction failed.
 
-To run, in a session that has the key:
+**SerpApi engine problems found and fixed in `pipeline/search/serpapi.py`:**
+- `engine=google_images` answered "Google Images hasn't returned any results" for 27 of 50 queries, including
+  "Helena Christensen Victoria's Secret 1997 campaign", also with `no_cache=true`. `engine=google_images_light`
+  returns 100 results with the same fields for those queries. The adapter now falls back to it once, and no longer
+  caches an empty answer from the full engine.
+- `google_images_light` answers HTTP 503 under the pipeline's 8 parallel workers; the same query succeeds alone.
+  The adapter retries 502/503/504 twice with a short wait.
+- The ledger counts every SerpApi request at $0.025 (133 rows, $3.33). That overstates use: SerpApi serves an
+  identical query within an hour from its cache for free, and re-runs repeated queries. The account itself
+  (`account.json`) went from 1,000 to 921 searches left, so **79 searches** were used.
 
-```
-python3 -m pipeline trial --google --plans free,starter --max-searches 50   # aborts if the month's allowance can't cover it
-python3 -m pipeline compare                              # results/trial_comparison.json + cache/sheets/google-new-*.jpg
-```
+## 5. Decision
 
-`compare` reports, for each arm:
-- campaigns with a verified gallery;
-- credited models shown in a verified photo;
-- campaigns only Google recovered, and only Brave;
-- relevant results that could not be retrieved, and why;
-- requests and cost;
-- remaining failures.
-
-It also writes a contact sheet of the new candidates for review.
-
-## 5. Decision (provisional until the Google arm runs)
-
-The Brave arm is measured: 11/50 verified galleries for $0.69. But it shows a model in a verified photo for only 3
-credits. The main losses aren't about discovery:
-- 17 campaigns have pages that confirm label and season but never name the model;
-- 8 have the right article but no extractable campaign image;
-- 4 have no season or year on the page.
-
-Google Images will likely surface different pages for the uncaptioned-scan and missing-model cases.
-
-- **Recommendation:** run the Google arm (≤ 50 searches from the Starter allowance, no upgrade) before deciding.
-  - If Google adds 5 or more campaigns that Brave missed, use a combined workflow: free sources → Brave web → Google
-    Images only for campaigns still unrecovered. That spends Google searches where Brave failed.
-  - If it adds fewer, Brave alone is enough at about $0.06 per verified gallery.
-- **Before any larger batch:** visual review stays mandatory. This round's rule fixes came from reviewing real
-  pages, and 136 photos are on the reject list.
+- **Use Google Images as a discovery step.** It recovered 14/50 against Brave's 11/50, everything Brave found
+  plus 3, and pointed far less often to pages that cannot be fetched (143 against 458). It also tags more photos
+  to a named model (19 against 5), which is what model listings need.
+- The earlier threshold was "5 or more campaigns Brave missed" for a combined workflow. Google added 3, but Brave
+  added none, so Google alone does better than Brave alone. The recommended order is free sources → Google Images
+  → Brave web only for what is still unrecovered.
+- **Cost:** on Starter, 1,000 searches a month are already paid for. A 500-campaign batch needs about 500–1,000
+  searches (one query, plus the light-engine fallback when the full engine returns nothing). That fits in one
+  month only if the fallback is rare, so run batches of about 400 campaigns per month, or upgrade to Developer
+  ($75, 5,000) for larger ones.
+- **Before any larger batch:** fix the single-model-article tagging rule (Seafolly case above), and keep the
+  visual review mandatory. 142 photos are on the reject list.
 
 ---
 The first version of this report (pre-review figures) is in git history: `git show 647806a:pipeline/results/REPORT.md`.

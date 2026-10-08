@@ -36,60 +36,64 @@
   },
   "google images (serpapi)": {
    "groups": 50,
-   "groups_with_photos": 5,
-   "photos": 20,
-   "photos_attributed_to_a_model": 1,
+   "groups_with_photos": 14,
+   "photos": 82,
+   "photos_attributed_to_a_model": 19,
    "failures": {
-    "not searched": 27,
-    "inaccessible source": 7,
-    "unverified": 7,
-    "no relevant search results": 3,
+    "unverified": 16,
+    "inaccessible source": 12,
+    "no relevant search results": 4,
+    "not searched": 3,
     "extraction failed": 1
    },
    "failure_details": {
-    "not searched": 27,
-    "inaccessible source: never": 7,
-    "unverified: none of the credited models is named": 4,
-    "no relevant search results": 3,
-    "unverified: not about a campaign": 2,
+    "inaccessible source: never": 11,
+    "unverified: none of the credited models is named": 6,
+    "unverified: not about a campaign": 5,
+    "no relevant search results": 4,
+    "not searched": 3,
+    "unverified: no season/year stated": 2,
+    "unverified: article is about SS 2020": 1,
     "extraction failed: no campaign image found in the verified article": 1,
-    "unverified: no season/year stated": 1
+    "unverified: label not named in the article": 1,
+    "unverified: article is about FW 2010": 1,
+    "inaccessible source: blocked": 1
    },
    "found_via": {
-    "serpapi_google_images": 5
+    "serpapi_google_images": 14
    },
    "campaign_level_only_groups": 0,
    "campaign_level_only_photos": 0,
    "paid_requests": {
-    "serpapi_google_images": 23
+    "serpapi_google_images": 12
    },
-   "cached_responses": 0,
-   "spent": 0.575,
+   "cached_responses": 44,
+   "spent": 0.3,
    "plan": "SerpApi starter",
    "value_per_search_usd": 0.025,
    "account_before": {
     "plan_id": "starter_v4",
     "plan_name": "Starter Plan",
     "searches_per_month": 1000,
-    "plan_searches_left": 1000,
+    "plan_searches_left": 926,
     "extra_credits": 0,
-    "total_searches_left": 1000,
+    "total_searches_left": 926,
     "account_rate_limit_per_hour": 200,
-    "this_hour_searches": 0,
+    "this_hour_searches": 52,
     "last_hour_searches": 0
    },
    "requests_sent": {
-    "serpapi_google_images": 50
+    "serpapi_google_images": 12
    },
    "account_after": {
     "plan_id": "starter_v4",
     "plan_name": "Starter Plan",
     "searches_per_month": 1000,
-    "plan_searches_left": 950,
+    "plan_searches_left": 921,
     "extra_credits": 0,
-    "total_searches_left": 950,
+    "total_searches_left": 921,
     "account_rate_limit_per_hour": 200,
-    "this_hour_searches": 49,
+    "this_hour_searches": 52,
     "last_hour_searches": 0
    }
   }
