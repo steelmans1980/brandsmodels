@@ -1,0 +1,13 @@
+{
+ "referenced": 5011,
+ "local_ok": 5008,
+ "remote_urls": 3,
+ "remote_examples": [
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Jerry_Hall.jpg/330px-Jerry_Hall.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Pia_Mia_2019_by_Glenn_Francis.jpg/330px-Pia_Mia_2019_by_Glenn_Francis.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Ghost_In_The_Shell_World_Premiere_Red_Carpet-_Rila_Fukushima_%2837404702191%29_%28cropped%29.jpg/330px-Ghost_In_The_Shell_World_Premiere_Red_Carpet-_Rila_Fukushima_%2837404702191%29_%28cropped%29.jpg"
+ ],
+ "excluded_by_assetsignore": [],
+ "problems": {},
+ "problem_examples": {}
+}

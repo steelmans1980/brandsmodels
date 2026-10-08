@@ -1,0 +1,48 @@
+{
+ "selection": 50,
+ "arms": {
+  "improved pipeline": {
+   "groups": 50,
+   "groups_with_photos": 12,
+   "photos": 57,
+   "photos_attributed_to_a_model": 5,
+   "failures": {
+    "unverified": 27,
+    "extraction failed": 11
+   },
+   "failure_details": {
+    "unverified: none of the credited models is named": 11,
+    "extraction failed: no campaign image found in the verified article": 9,
+    "unverified: no season/year stated": 7,
+    "unverified: label not named in the article": 3,
+    "unverified: not about a campaign": 2,
+    "unverified: article is about FW 2008": 1,
+    "extraction failed: image http 404 (1), rejected in an earlier review (1)": 1,
+    "unverified: article is about FW 1985, FW 1992": 1,
+    "unverified: article is about SS 2008": 1,
+    "unverified: article is about FW 2003": 1,
+    "extraction failed: too small (300x300) (1)": 1
+   },
+   "found_via": {
+    "brave_web": 12
+   },
+   "campaign_level_only_groups": 2,
+   "campaign_level_only_photos": 13,
+   "paid_requests": {},
+   "cached_responses": 138,
+   "spent": 0.0
+  },
+  "google images (serpapi)": {
+   "skipped": "SERPAPI_API_KEY not set"
+  }
+ },
+ "already_paid_before_this_run": 1.445,
+ "trial_total_paid": {
+  "requests": 289,
+  "usd": 1.445
+ },
+ "paid_queries_for_these_50": {
+  "requests": 138,
+  "usd": 0.69
+ }
+}

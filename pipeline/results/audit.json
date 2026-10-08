@@ -1,0 +1,214 @@
+{
+ "coverage": {
+  "general | ambassador": {
+   "credits": 111,
+   "exact photo": 32,
+   "portrait/press fallback only": 73,
+   "no picture at all": 6
+  },
+  "general | campaign": {
+   "credits": 3131,
+   "portrait/press fallback only": 2339,
+   "exact photo": 350,
+   "no picture at all": 442
+  },
+  "general | runway": {
+   "credits": 3457,
+   "exact photo": 191,
+   "portrait/press fallback only": 2590,
+   "no picture at all": 676
+  },
+  "specific | ambassador": {
+   "credits": 146,
+   "portrait/press fallback only": 51,
+   "exact photo": 91,
+   "no picture at all": 4
+  },
+  "specific | campaign": {
+   "credits": 1108,
+   "exact photo": 597,
+   "exact photo, models not identified individually": 55,
+   "no picture at all": 71,
+   "portrait/press fallback only": 440
+  },
+  "specific | cover": {
+   "credits": 1130,
+   "no picture at all": 244,
+   "exact photo": 535,
+   "portrait/press fallback only": 351
+  },
+  "specific | runway": {
+   "credits": 1177,
+   "no picture at all": 232,
+   "portrait/press fallback only": 800,
+   "exact photo": 145
+  },
+  "specific (year read from a photo source) | ambassador": {
+   "credits": 15,
+   "exact photo": 15
+  },
+  "specific (year read from a photo source) | campaign": {
+   "credits": 265,
+   "exact photo": 265
+  }
+ },
+ "missing_specific_credits_by_reason": {
+  "no relevant search results": 1083,
+  "relevant result, inaccessible source": 732,
+  "rejected: campaign/identity not confirmed": 288,
+  "accessible source, image extraction failed": 90
+ },
+ "examples": {
+  "no relevant search results": [
+   {
+    "credit": "Anne Marie van Dijk — bebe Spring 2009 campaign",
+    "detail": "earlier paid search returned no candidate naming model, label and year",
+    "source": "https://en.wikipedia.org/wiki/Bebe_Stores"
+   },
+   {
+    "credit": "Rebecca Romijn — bebe Spring 2007 campaign",
+    "detail": "earlier paid search returned no candidate naming model, label and year",
+    "source": "https://en.wikipedia.org/wiki/Bebe_Stores"
+   },
+   {
+    "credit": "Brenda Song — bebe Full year 2007 campaign",
+    "detail": "earlier paid search returned no candidate naming model, label and year",
+    "source": "https://en.wikipedia.org/wiki/Bebe_Stores"
+   },
+   {
+    "credit": "Mischa Barton — bebe Full year 2006 campaign",
+    "detail": "earlier paid search returned no candidate naming model, label and year",
+    "source": "https://en.wikipedia.org/wiki/Bebe_Stores"
+   },
+   {
+    "credit": "Cora Keegan — bebe Spring/Summer 2013 campaign",
+    "detail": "earlier paid search returned no candidate naming model, label and year",
+    "source": "https://models.com/work/bebe-bebe-ss-13"
+   },
+   {
+    "credit": "Aivita Mūze — Mango Fall/Winter 2023 campaign",
+    "detail": "earlier paid search returned no candidate naming model, label and year",
+    "source": "https://models.com/work/mango-mango-fw-2023-campaign"
+   }
+  ],
+  "rejected: campaign/identity not confirmed": [
+   {
+    "credit": "Chu Wong, Faith Johnson — Fendi Fall 2027 campaign",
+    "detail": "article is about FW 2026",
+    "source": "https://theimpression.com/fendi-fall-2027-ad-campaign-review/"
+   },
+   {
+    "credit": "Kiko Mizuhara — Chanel 2012 campaign",
+    "detail": "1 search image(s) rejected in visual review",
+    "source": "http://www.swinging-paris.com/2013/07/31/kiko-mizuhara-after-chanel-show/"
+   },
+   {
+    "credit": "Lulu Tenney — Calvin Klein Fall/Winter 2017 runway",
+    "detail": "article is about FW 2020",
+    "source": "https://www.voguehk.com/zh/article/fashion/about-cover-model-lulu-tenney/"
+   },
+   {
+    "credit": "Hyun Ji Shin — Salvatore Ferragamo 2020 runway",
+    "detail": "label not named in the article",
+    "source": "https://www.marieclaire.com/fashion/g32801166/top-models-2020/?slide=5"
+   },
+   {
+    "credit": "Hyun Ji Shin — Tory Burch 2020 runway",
+    "detail": "label not named in the article",
+    "source": "https://www.marieclaire.com/fashion/g32801166/top-models-2020/?slide=5"
+   },
+   {
+    "credit": "Hyun Ji Shin — Saint Laurent 2020 runway",
+    "detail": "label not named in the article",
+    "source": "https://www.marieclaire.com/fashion/g32801166/top-models-2020/?slide=5"
+   }
+  ],
+  "relevant result, inaccessible source": [
+   {
+    "credit": "Bruna Tenório — Gap 2006 campaign",
+    "detail": "http 404",
+    "source": "http://www.gapinc.com/public/Media/Press_Releases/med_pr_GapHolidayMarketing110806.shtml"
+   },
+   {
+    "credit": "Bruna Tenório — Dolce & Gabbana 2006 campaign",
+    "detail": "blocked",
+    "source": "http://nymag.com/fashion/models/kivanovska/katarinaivanovska/"
+   },
+   {
+    "credit": "Laura Neiva — Chanel 2012 ambassador",
+    "detail": "blocked",
+    "source": "http://ela.oglobo.globo.com/moda/cultura-em-moda/laura-neiva-embaixadora-da-grife-chanel-4893547"
+   },
+   {
+    "credit": "Linnea Regnander — Valentino 2010 runway",
+    "detail": "blocked",
+    "source": "http://nymag.com/thecut/2010/12/meet_the_new_girl_1.html"
+   },
+   {
+    "credit": "Abby Champion — Elie Saab Fall/Winter 2018 runway",
+    "detail": "blocked",
+    "source": "https://www.russh.com/introducing-the-make-history-issue/"
+   },
+   {
+    "credit": "Africa Peñalver — JW Anderson 2017 runway",
+    "detail": "blocked",
+    "source": "https://www.vogue.com/article/10-new-models-paris-couture-shows-fall-2017"
+   }
+  ],
+  "accessible source, image extraction failed": [
+   {
+    "credit": "Abby Champion — Chanel Fall/Winter 2018 runway",
+    "detail": "rejected in an earlier review (1)",
+    "source": "https://www.russh.com/introducing-the-make-history-issue/"
+   },
+   {
+    "credit": "Mika Schneider — Miu Miu 2021 runway",
+    "detail": "no campaign image found in the verified article",
+    "source": "https://www.vogue.fr/fashion/article/video-24-hours-model-mika-schneider-paris-fashion-week"
+   },
+   {
+    "credit": "Malika Louback — Saint Laurent Spring/Summer 2020 runway",
+    "detail": "no campaign image found in the verified article",
+    "source": "https://vogue.sg/malika-louback-djiboutian-model-interview/"
+   },
+   {
+    "credit": "Malika Louback — Chanel Spring/Summer 2020 runway",
+    "detail": "no campaign image found in the verified article",
+    "source": "https://vogue.sg/malika-louback-djiboutian-model-interview/"
+   },
+   {
+    "credit": "Malika Louback — Hermès Spring/Summer 2020 runway",
+    "detail": "no campaign image found in the verified article",
+    "source": "https://vogue.sg/malika-louback-djiboutian-model-interview/"
+   },
+   {
+    "credit": "Sarocha Chankimha — Valentino 2025 ambassador",
+    "detail": "rejected in an earlier review (3)",
+    "source": "https://www.valentino.com/en-th/world-of-valentino/news/maison-valentino-appoints-new-brand-ambassador-freen-sarocha"
+   }
+  ]
+ },
+ "general_relationships": {
+  "credits": 6699,
+  "with a photo": 573,
+  "by kind": {
+   "runway": 3457,
+   "campaign": 3131,
+   "ambassador": 111
+  }
+ },
+ "rendering": {
+  "referenced": 5011,
+  "local_ok": 5008,
+  "remote_urls": 3,
+  "remote_examples": [
+   "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Jerry_Hall.jpg/330px-Jerry_Hall.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Pia_Mia_2019_by_Glenn_Francis.jpg/330px-Pia_Mia_2019_by_Glenn_Francis.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Ghost_In_The_Shell_World_Premiere_Red_Carpet-_Rila_Fukushima_%2837404702191%29_%28cropped%29.jpg/330px-Ghost_In_The_Shell_World_Premiere_Red_Carpet-_Rila_Fukushima_%2837404702191%29_%28cropped%29.jpg"
+  ],
+  "excluded_by_assetsignore": [],
+  "problems": {},
+  "problem_examples": {}
+ },
+ "free_pass_groups": 2010
+}

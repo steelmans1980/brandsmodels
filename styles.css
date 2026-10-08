@@ -275,3 +275,4 @@ h2 { font-size: 32px; margin: 8px 0 0; }
 .group-note { margin: 6px 0 0; font-size: 12px; color: var(--muted); }
 .undated-list li .u-pic { display: inline-block; width: 56px; height: 70px; margin-right: 12px; vertical-align: middle; overflow: hidden; background: var(--panel); }
 .undated-list li .u-pic img { width: 100%; height: 100%; object-fit: cover; cursor: zoom-in; }
+.link-btn { background: none; border: 0; padding: 0; font: inherit; color: inherit; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
