@@ -1,0 +1,4 @@
+{
+  "about": "Curated additions and corrections applied on top of data/campaigns.json at build time. Quarterly imports replace campaigns.json; this file is kept. Entries are added only through the reviewed process in README (Community contributions).",
+  "entries": []
+}

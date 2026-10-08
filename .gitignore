@@ -1,5 +1,7 @@
 .wrangler/
 node_modules/
+public/
+.dev.vars
 pipeline/cache/pages.sqlite
 pipeline/cache/sheets/
 __pycache__/

@@ -838,8 +838,8 @@ def cmd_validate(args):
                     bad['tiny'].append((src, where[0]))
         except Exception:
             bad['does not decode'].append((src, where[0]))
-    ign = open(os.path.join(config.ROOT, '.assetsignore')).read().split()
-    hidden = [s for s in refs if any(s.startswith(x.rstrip('/')) for x in ign if x.startswith('assets'))]
+    # scripts/build.mjs publishes all of assets/ into public/, the only folder served, so nothing referenced is hidden
+    hidden = [s for s in refs if not s.startswith('assets/') and not s.startswith('http')]
     out = {'referenced': len(refs), 'local_ok': len(refs) - len(remote) - sum(len(v) for v in bad.values()),
            'remote_urls': len(remote), 'remote_examples': remote[:5], 'excluded_by_assetsignore': hidden[:5],
            'problems': {k: len(v) for k, v in bad.items()}, 'problem_examples': {k: v[:5] for k, v in bad.items()}}
