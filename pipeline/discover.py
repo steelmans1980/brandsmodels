@@ -58,8 +58,9 @@ def other_brands(data, exclude):
     return [v for k, v in _OTHER.items() if k != exclude]
 
 
-def queries(g):
-    """(stage, provider, query) in the order they are tried."""
+def queries(g, google_first=False):
+    """(stage, provider, query) in the order they are tried. google_first: Google Images (model-first) before Brave
+    web, which then runs only for groups Google left without a verified photo; no Brave image search."""
     brand, year, kind = g['brand'], g['year'], g['kind']
     words = seasons.query_words(g.get('family'))
     season = words[0] if g.get('family') else ''
@@ -79,6 +80,9 @@ def queries(g):
                 ('google-images', 'serpapi_google_images', q)]
     camp = f'{brand}{title} {season} {year} {what}'.replace('  ', ' ')
     model = f'{m0} {brand} {season} {year} {what}'.replace('  ', ' ')
+    if google_first:
+        return [('google-images', 'serpapi_google_images', model), ('campaign-first', 'brave_web', camp),
+                ('model-first', 'brave_web', model)]
     return [('campaign-first', 'brave_web', camp), ('campaign-first', 'brave_images', camp),
             ('model-first', 'brave_web', model), ('google-images', 'serpapi_google_images', model)]
 
@@ -89,7 +93,8 @@ def _relevant(g, item):
     return bool(b.find(t)) and (bool(verify.model_hits(g['models'], t)) or str(g['year']) in t)
 
 
-def process(g, data, budget, providers=('sources', 'legacy', 'brave_web', 'brave_images', 'serpapi_google_images'), offline=False):
+def process(g, data, budget, providers=('sources', 'legacy', 'brave_web', 'brave_images', 'serpapi_google_images'), offline=False,
+            google_first=False):
     global _LEGACY
     if _LEGACY is None:
         _LEGACY = _legacy()
@@ -111,7 +116,9 @@ def process(g, data, budget, providers=('sources', 'legacy', 'brave_web', 'brave
         art = extract.read(p['html'], p.get('final') or url)
         for h in hint_images:
             if h.get('url') and not any(i['url'] == h['url'] for i in art['images']):
-                art['images'].append({'url': h['url'], 'alt': h.get('alt', ''), 'caption': '', 'w': 0, 'h': 0, 'lead': False})
+                # the search engine's result title describes the page, not the picture: kept, never used as a caption
+                art['images'].append({'url': h['url'], 'alt': '', 'caption': '', 'search_title': h.get('title', ''),
+                                      'w': 0, 'h': 0, 'lead': False})
         v = verify.assess(g, art)
         rec.update(verdict=v['verdict'], reason=v['reason'], evidence=v['evidence'], n_images=len(art['images']))
         level = v['verdict'] == 'candidate' and v['evidence'].get('campaign_level')
@@ -177,9 +184,11 @@ def process(g, data, budget, providers=('sources', 'legacy', 'brave_web', 'brave
         res['stages'].append({'stage': 'earlier search results', 'n': len(urls)})
         for u in sorted(urls):
             try_page(u, 'earlier search result')
-    for stage, provider, q in queries(g):
+    for stage, provider, q in queries(g, google_first):
         if done() or provider not in providers:
             continue
+        if google_first and provider == 'brave_web' and res['accepted']:
+            continue  # Brave only where nothing was verified yet
         if provider == 'serpapi_google_images' and not serpapi.available() and not budget.dry:
             res['stages'].append({'stage': stage, 'provider': provider, 'query': q, 'skipped': 'no SERPAPI_API_KEY'})
             continue
@@ -196,7 +205,7 @@ def process(g, data, budget, providers=('sources', 'legacy', 'brave_web', 'brave
         by_page = {}
         for x in items:
             if x.get('url'):
-                by_page.setdefault(x['url'], []).append({'url': x.get('image'), 'alt': x.get('title', '')})
+                by_page.setdefault(x['url'], []).append({'url': x.get('image'), 'title': x.get('title', '')})
         # relevant results first, then the rest (the article may establish what the title does not)
         order = [x['url'] for x in rel] + [u for u in by_page if u not in {x['url'] for x in rel}]
         for u in order[:12]:

@@ -164,7 +164,7 @@ def read(html, base_url):
         images.append({'url': url, 'alt': alt or '', 'caption': caption or '', 'w': w, 'h': h, 'lead': lead})
 
     if og:
-        add(og, title, '', lead=True)
+        add(og, '', '', lead=True)  # the page title is not this image's caption; a real alt in the body fills it
     for ns in main.find_all('noscript'):
         inner = BeautifulSoup(ns.decode_contents(), 'lxml')
         ns.replace_with(inner)

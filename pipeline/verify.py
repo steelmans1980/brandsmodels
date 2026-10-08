@@ -266,14 +266,14 @@ def assess(group, article):
                     ev['period_evidence'] = 'year next to label: ' + sent.replace('\n', ' ').strip()[:220]
                     break
         if exact and title_periods and not any(p[1] == year and seasons.matches(p[0], fam) for p in title_periods):
-            # the headline names another period than the body: only the publication date can settle it
-            ev['conflict'] = {'headline': sorted(set(title_periods)), 'body': sorted(set(exact))}
-            pub_body = _pub_ok(article.get('published'), fam, year)
-            pub_head = any(_pub_ok(article.get('published'), f, y) for f, y in title_periods)
-            if pub_body and not pub_head:
-                ev['conflict']['resolved_by'] = f"publication date {article.get('published')} fits {fam or ''} {year}, not the headline"
-            else:
-                return {'verdict': 'candidate', 'reason': 'headline and body state different seasons', 'evidence': ev}
+            # The headline names another period than the body. A publication date only supports one reading; it
+            # does not settle the conflict. The page stays a candidate; an independent page has to confirm the period.
+            ev['conflict'] = {'headline': sorted(set(title_periods)), 'body': sorted(set(exact)),
+                              'publication_date': article.get('published'),
+                              'publication_date_fits': {'body': bool(_pub_ok(article.get('published'), fam, year)),
+                                                        'headline': any(_pub_ok(article.get('published'), f, y) for f, y in title_periods)}}
+            return {'verdict': 'candidate', 'reason': 'headline and body state different seasons (needs independent corroboration)',
+                    'evidence': ev}
         if exact and exact[0] in snippets:
             ev['period_evidence'] = snippets[exact[0]]
         if not exact:
@@ -295,9 +295,30 @@ def assess(group, article):
 
 
 def image_text(img):
+    """Everything attached to an image, file name included: enough to link it to a label or reject it."""
     name = img['url'].split('?')[0].rsplit('/', 1)[-1]
     name = re.sub(r'\.\w+$', '', name)
     return ' '.join([img.get('alt') or '', img.get('caption') or '', re.sub(r'[-_]+', ' ', name)])
+
+
+def image_caption(img, boiler=frozenset()):
+    """The image's own alt text and caption (or credit): the only text that can say who is in it. File names are
+    written for search engines and page titles describe the page, so neither attributes a model. Text in `boiler`
+    (see page_boilerplate) is the page's, not this image's, and is left out."""
+    parts = [x.strip() for x in (img.get('alt') or '', img.get('caption') or '')]
+    return ' '.join(x for x in parts if x and groups.fold(x) not in boiler).strip()
+
+
+def page_boilerplate(article):
+    """Alt and caption texts that describe the page rather than one picture: the page title, or a text repeated on
+    three or more pictures (galleries that copy the headline into every alt)."""
+    seen = {}
+    for img in article['images']:
+        for x in {(img.get('alt') or '').strip(), (img.get('caption') or '').strip()} - {''}:
+            f = groups.fold(x)
+            seen[f] = seen.get(f, 0) + 1
+    title = groups.fold(article.get('title') or '')
+    return frozenset(f for f, n in seen.items() if n >= 3 or (title and (f == title or f in title)))
 
 
 MONTHS = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october',
@@ -336,17 +357,19 @@ def pick_images(group, article, verdict, other_brands):
     Returns (kept, dropped) lists; each item carries 'talent' and 'why'.
     """
     brand = Brand(group['brand'], group.get('aliases', []))
-    title_models = model_hits(group['models'], article['title'] or '')
     # A page whose title does not name the label (a model profile, an interview, a season round-up)
     # only mentions the campaign; its pictures are of something else unless they name the label.
     about = bool(brand.find(article['title'] or ''))
     gallery_ok = about and group['kind'] in ('campaign', 'ambassador') and not verdict['evidence'].get('roundup')
     kept, dropped, pending = [], [], []
+    boiler = page_boilerplate(article)
     for img in article['images']:
         t = image_text(img)
         ft = groups.fold(t)
         mine = bool(brand.find(t))
         named = model_hits(group['models'], t)
+        cap = image_caption(img, boiler)
+        named_cap = model_hits(group['models'], cap)
         others = [b for b in other_brands if b.find(t) and not _person_name(b.name, t)]
         per = seasons.mentions(t)
         if others and not mine:
@@ -384,13 +407,13 @@ def pick_images(group, article, verdict, other_brands):
         if verdict['evidence'].get('roundup') and not (mine and (named or img.get('lead'))):
             dropped.append({**img, 'why': 'round-up article: image not tied to this campaign'})
             continue
-        if named:
-            talent, how = named, 'image text names the model'
-        elif about and (mine or img.get('lead')) and len(group['models']) == 1 and title_models == group['models']:
-            talent, how = list(group['models']), 'article is about this model alone'
+        # A model is attributed only when the image's own caption or alt text names her. A page about one model
+        # does not show that every picture on it is of her, and a file name is not a caption.
+        if named_cap:
+            talent, how = named_cap, 'image caption or alt text names the model'
         else:
             talent, how = [], 'models not identified individually'
-        kept.append({**img, 'talent': talent, 'attribution': how})
+        kept.append({**img, 'talent': talent, 'attribution': how, 'attribution_text': cap[:300] if named_cap else ''})
     # a lone untitled picture is usually an author photo or a teaser, not a campaign gallery
     if len(pending) >= 2:
         kept += [{**img, 'talent': [], 'attribution': 'untitled picture in the campaign article; models not identified individually'}

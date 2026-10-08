@@ -48,6 +48,22 @@ def main(argv=None):
     t.add_argument('--reselect', action='store_true', help='draw a new set of campaigns instead of the frozen one')
     t.add_argument('--redo', action='store_true', help='re-evaluate stored results (cached searches are not paid again)')
 
+    gb = sub.add_parser('gbatch', help='Google-first batch within fixed SerpApi and Brave caps')
+    gb.add_argument('--run', required=True)
+    gb.add_argument('--n', type=int, default=100)
+    gb.add_argument('--max-searches', type=int, default=200, help='hard cap on SerpApi searches started')
+    gb.add_argument('--brave-budget', type=float, default=1.0, help='hard cap on Brave web spend, USD')
+    gb.add_argument('--plans', default='starter')
+    gb.add_argument('--reserve', type=int, default=500, help='SerpApi searches that must stay unused this month')
+    gb.add_argument('--workers', type=int, default=4)
+    gb.add_argument('--dry-run', action='store_true')
+    gb.add_argument('--reselect', action='store_true')
+    gb.add_argument('--redo', action='store_true')
+
+    rs = sub.add_parser('review-sheet', help='HTML contact sheet with attribution evidence')
+    rs.add_argument('--run', required=True)
+    rs.add_argument('--ids', help='file of group ids to include')
+
     s = sub.add_parser('sheet')
     s.add_argument('--run', required=True)
 
@@ -59,11 +75,15 @@ def main(argv=None):
     g = sub.add_parser('general')
     g.add_argument('--dry-run', action='store_true')
 
+    r = sub.add_parser('recheck', help='keep model tags on published photos only with image-specific evidence')
+    r.add_argument('--dry-run', action='store_true')
+    r.add_argument('--workers', type=int, default=12)
+
     sub.add_parser('validate')
     sub.add_parser('compare', help='Brave vs Google arm on the frozen trial campaigns')
 
     args = ap.parse_args(argv)
-    return getattr(runner, 'cmd_' + args.cmd)(args)
+    return getattr(runner, 'cmd_' + args.cmd.replace('-', '_'))(args)
 
 
 if __name__ == '__main__':

@@ -3,7 +3,9 @@ import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, 'data', 'campaigns.json')
-PHOTOS = os.path.join(ROOT, 'assets', 'photos')
+PHOTOS = os.path.join(ROOT, 'assets', 'photos')  # published photos (deployed)
+# downloads wait here until reviewed and applied; pipeline/ is not deployed (.assetsignore)
+CANDIDATES = os.path.join(ROOT, 'pipeline', 'candidates', 'photos')
 HERE = os.path.join(ROOT, 'pipeline')
 CACHE = os.path.join(HERE, 'cache')
 LEGACY = os.path.join(HERE, 'legacy')

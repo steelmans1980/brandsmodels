@@ -1,4 +1,5 @@
-"""Download, check, deduplicate and store photos in assets/photos."""
+"""Download, check and deduplicate photos. New files go to pipeline/candidates/photos; `publish` moves a reviewed one
+to assets/photos when it is applied."""
 import hashlib
 import io
 import os
@@ -28,7 +29,7 @@ def _hamming(a, b):
 
 
 def index():
-    """Perceptual hashes of every photo already stored (cached by file name)."""
+    """Perceptual hashes of every photo already stored, published or candidate (cached by file name)."""
     global _index
     with _lock:
         if _index is not None:
@@ -36,16 +37,18 @@ def index():
         store = cache.pages_store()
         known = dict(store.items('dhash'))
         _index = {}
-        for f in os.listdir(config.PHOTOS):
-            rel = 'assets/photos/' + f
-            h = known.get(rel)
-            if h is None:
-                try:
-                    h = dhash(Image.open(os.path.join(config.PHOTOS, f)))
-                except Exception:
-                    continue
-                store.put('dhash', rel, h)
-            _index[h] = rel
+        os.makedirs(config.CANDIDATES, exist_ok=True)
+        for folder in (config.PHOTOS, config.CANDIDATES):
+            for f in os.listdir(folder):
+                rel = os.path.relpath(os.path.join(folder, f), config.ROOT)
+                h = known.get(rel)
+                if h is None:
+                    try:
+                        h = dhash(Image.open(os.path.join(folder, f)))
+                    except Exception:
+                        continue
+                    store.put('dhash', rel, h)
+                _index.setdefault(h, rel)
         return _index
 
 
@@ -82,7 +85,7 @@ def fetch(url, referer=None, dry=False):
                 sha = hashlib.sha1(body).hexdigest()
                 h = dhash(im)
                 dup = near_duplicate(h)
-                rel = dup or f'assets/photos/{sha[:16]}.jpg'
+                rel = dup or os.path.relpath(os.path.join(config.CANDIDATES, f'{sha[:16]}.jpg'), config.ROOT)
                 if not dup:
                     small = im.copy()
                     small.thumbnail((720, 900))
@@ -93,3 +96,14 @@ def fetch(url, referer=None, dry=False):
                 res = {'status': 'ok', 'file': rel, 'w': im.width, 'h': im.height, 'sha1': sha, 'dhash': h, 'duplicate_of': dup}
     store.put('image', url, res)
     return res
+
+
+def publish(rel):
+    """Copy a reviewed candidate into assets/photos; returns the published path (unchanged if already published)."""
+    if not rel.startswith('pipeline/'):
+        return rel
+    dst = 'assets/photos/' + os.path.basename(rel)
+    if not os.path.exists(os.path.join(config.ROOT, dst)):
+        import shutil
+        shutil.copyfile(os.path.join(config.ROOT, rel), os.path.join(config.ROOT, dst))
+    return dst

@@ -5,11 +5,15 @@ Without it this adapter is skipped. Results are used only to find candidate arti
 image URLs: a page must still allow Claude in robots.txt and pass verification, and an image is
 downloaded only from a host that allows it. A search result is not permission to republish.
 """
+import collections
 import os
+import threading
 import time
+import uuid
 
 import requests
 
+from .. import cache
 from . import cached, save
 
 ENDPOINT = 'https://serpapi.com/search.json'
@@ -54,41 +58,70 @@ def allowance(needed, plans=('free',)):
 PLAN_PRICE_PER_SEARCH = {'free': 0.0, 'starter': 25 / 1000, 'developer': 75 / 5000, 'production': 150 / 15000}
 
 
+# SerpApi's light engine answers 503 under parallel load, so at most two searches are in flight at once.
+_slots = threading.BoundedSemaphore(2)
+
+
+def _log_attempt(query, engine, status, billable):
+    """Every HTTP request, kept apart from the ledger: an attempt is not necessarily a billed search. SerpApi bills a
+    successful search (results or "no results"), not a 5xx, an account error, or a repeat it serves from its own
+    hour-long cache, so `billable` is an upper bound; the account's own counter (account.json) is the reference."""
+    cache.search_store().put('serpapi_attempts', f'{time.time():.3f}-{uuid.uuid4().hex[:6]}',
+                             {'query': query, 'engine': engine, 'status': status, 'possibly_billable': billable,
+                              'ts': time.time()})
+
+
+def attempts_since(ts):
+    rows = [v for _, v in cache.search_store().items('serpapi_attempts') if v['ts'] >= ts]
+    return {'http_requests': len(rows), 'possibly_billable': sum(1 for r in rows if r['possibly_billable']),
+            'by_status': dict(collections.Counter(r['status'] for r in rows))}
+
+
 def images(query, budget):
     provider = 'serpapi_google_images'
     hit = cached(provider, query)
     if hit is not None:
         budget.cached += 1
         return hit
-    if not available() or not budget.allow(provider):
+    if not available():
         return None
     d = None
     # google_images often reports "no results" for queries Google answers (seen on 27 of 50 trial queries);
-    # google_images_light returns the same fields for those, so it is tried once before giving up
+    # google_images_light returns the same fields for those, so it is tried once before giving up.
+    # budget.allow() is called once per engine search, so its cap bounds the searches that can be billed.
     for engine in ('google_images', 'google_images_light'):
-        if d is not None and not budget.allow(provider):
+        if not budget.allow(provider):
             return None
         params = {'engine': engine, 'q': query, 'hl': 'en', 'gl': 'us', 'api_key': os.environ['SERPAPI_API_KEY']}
-        for attempt in range(3):  # google_images_light answers 503 under parallel load; it succeeds when retried
-            r = requests.get(ENDPOINT, params=params, timeout=120)
-            if r.status_code not in (502, 503, 504):
-                break
-            time.sleep(5 * (attempt + 1))
+        with _slots:
+            for attempt in range(3):
+                try:
+                    r = requests.get(ENDPOINT, params=params, timeout=120)
+                except requests.RequestException as e:
+                    _log_attempt(query, engine, type(e).__name__, False)
+                    return {'error': type(e).__name__, 'results': []}
+                if r.status_code not in (502, 503, 504):
+                    break
+                _log_attempt(query, engine, f'http {r.status_code}', False)
+                time.sleep(5 * (attempt + 1))
         if r.status_code != 200:
             return {'error': f'http {r.status_code}', 'results': []}
         d = r.json()
+        empty = bool(d.get('error')) and ('hasn' in d['error'] or 'no results' in d['error'].lower())
+        if d.get('error') and not d.get('images_results') and not empty:
+            _log_attempt(query, engine, 'account error', False)
+            return {'error': d['error'], 'results': []}
+        _log_attempt(query, engine, 'results' if d.get('images_results') else 'no results', True)
+        budget.charge(provider, query)
         if d.get('images_results'):
             break
-        if d.get('error') and not ('hasn' in d['error'] or 'no results' in d['error'].lower()):
-            return {'error': d['error'], 'results': []}  # account errors; not billed
-        budget.charge(provider, query)  # an empty search still counts against the plan
     if not d.get('images_results'):
         out = {'error': d.get('error') or 'no results', 'results': []}
         save(provider, query, out)
         return out
-    budget.charge(provider, query)
     res = [{'url': x.get('link'), 'title': x.get('title') or '', 'image': x.get('original'), 'source': x.get('source'),
-            'w': x.get('original_width'), 'h': x.get('original_height')} for x in d.get('images_results', [])]
+            'w': x.get('original_width'), 'h': x.get('original_height'), 'engine': engine}
+           for x in d.get('images_results', [])]
     out = {'results': res}
     save(provider, query, out)
     return out

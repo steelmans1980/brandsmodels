@@ -32,11 +32,12 @@ class Periods(unittest.TestCase):
             'their new Fall 2026 Campaign. These new Celine Hiver 2026 campaign images feature models Alaina Rae and '
             'Faith Johnson.')
 
-    def test_headline_conflict_resolved_by_publication_date(self):
+    def test_publication_date_does_not_settle_a_conflict(self):
+        # the date fits the body's season, but it is supporting evidence only: the page stays a candidate
         v = verify.assess(self.celine, article('Celine Hiver 2025 Campaign by Zoe Ghertner', self.body,
                                                published='2026-08-27T21:13:02-0400'))
-        self.assertEqual(v['verdict'], 'exact')
-        self.assertIn('resolved_by', v['evidence']['conflict'])
+        self.assertEqual(v['verdict'], 'candidate')
+        self.assertTrue(v['evidence']['conflict']['publication_date_fits']['body'])
 
     def test_headline_conflict_unresolved_is_candidate(self):
         v = verify.assess(self.celine, article('Celine Hiver 2025 Campaign by Zoe Ghertner', self.body,
@@ -137,6 +138,54 @@ class Reporting(unittest.TestCase):
             'https://shop/dg-2003': {'status': 'ok', 'verdict': 'candidate', 'reason': 'article is about FW 2003', 'relevant': True}}}
         self.assertEqual(discover.classify(res), 'unverified: none of the credited models is named')
         self.assertEqual(res['failure_page'], 'https://scans/d-g-ss-2003')
+
+
+
+class Attribution(unittest.TestCase):
+    """A model is attributed only from the image's own caption or alt text."""
+    g = group('Seafolly', 2016, models=['Shanina Shaik'])
+    v = {'verdict': 'exact', 'evidence': {'roundup': False}}
+
+    def pick(self, title, images):
+        return verify.pick_images(self.g, article(title, 'Seafolly 2016 campaign with Shanina Shaik.', images=images),
+                                  self.v, [])[0]
+
+    def test_page_about_one_model_does_not_tag_its_pictures(self):
+        imgs = [{'url': f'https://example.com/seafolly-campaign-{i}.jpg', 'alt': 'Seafolly campaign', 'caption': '',
+                 'w': 1000, 'h': 1200, 'lead': i == 0} for i in range(3)]
+        kept = self.pick('Meet Shanina Shaik, the face of Seafolly 2016', imgs)
+        self.assertEqual(len(kept), 3)
+        self.assertTrue(all(k['talent'] == [] for k in kept))
+
+    def test_file_name_does_not_attribute(self):
+        imgs = [{'url': 'https://example.com/shanina-shaik-seafolly-2016.jpg', 'alt': '', 'caption': '',
+                 'w': 1000, 'h': 1200, 'lead': True}]
+        self.assertEqual(self.pick('Seafolly 2016 campaign', imgs)[0]['talent'], [])
+
+    def test_caption_attributes(self):
+        imgs = [{'url': 'https://example.com/a.jpg', 'alt': '', 'caption': 'Shanina Shaik for Seafolly 2016',
+                 'w': 1000, 'h': 1200, 'lead': False}]
+        k = self.pick('Seafolly 2016 campaign', imgs)[0]
+        self.assertEqual(k['talent'], ['Shanina Shaik'])
+        self.assertIn('Shanina Shaik', k['attribution_text'])
+
+    def test_alt_copied_onto_every_picture_does_not_attribute(self):
+        imgs = [{'url': f'https://example.com/{i}.jpg', 'alt': 'Shanina Shaik for Seafolly', 'caption': '',
+                 'w': 1000, 'h': 1200, 'lead': False} for i in range(4)]
+        self.assertTrue(all(k['talent'] == [] for k in self.pick('Seafolly 2016 campaign', imgs)))
+
+    def test_alt_equal_to_page_title_does_not_attribute(self):
+        imgs = [{'url': 'https://example.com/a.jpg', 'alt': 'Shanina Shaik for Seafolly 2016', 'caption': '',
+                 'w': 1000, 'h': 1200, 'lead': False}]
+        self.assertEqual(self.pick('Shanina Shaik for Seafolly 2016', imgs)[0]['talent'], [])
+
+    def test_page_title_is_not_the_preview_image_caption(self):
+        html = ('<html><head><title>Shanina Shaik for Seafolly 2016</title>'
+                '<meta property="og:image" content="https://example.com/p.jpg"></head><body><article>'
+                '<p>Seafolly 2016 campaign.</p></article></body></html>')
+        art = extract.read(html, 'https://example.com/story/')
+        og = [i for i in art['images'] if i['url'].endswith('/p.jpg')][0]
+        self.assertEqual(og['alt'], '')
 
 
 if __name__ == '__main__':

@@ -135,6 +135,122 @@ def cmd_batch(args):
     return 0
 
 
+# ---------------------------------------------------------------- Google-first batch
+
+def _model_photos(data, g):
+    have = set()
+    for i in g['credits']:
+        for im in data['campaigns'][i].get('images', []):
+            have |= set(im.get('talent') or [])
+    return have
+
+
+def gbatch_selection(data, gs, n, exclude=()):
+    """Dated campaigns whose credited models have no model-specific photo, strongest evidence first.
+
+    Tier 1: a cited or earlier-verified page confirms label, season/year and the credited model (exact verdict).
+    Tier 2: season known and a cited press source other than Wikipedia. Tier 3: season known. Tier 4: year only, with
+    a press source. Groups dated only from a photo page are left out. At most two groups per label."""
+    verified = collections.defaultdict(set)
+    for run in ('free-sources', 'trial-improved', 'trial-google', 'trial-overflow'):
+        for gid_, r in _results(run).items():
+            for u, p in r['pages'].items():
+                if p.get('verdict') == 'exact':
+                    verified[gid_].add(u)
+    pool = []
+    for g in gs.values():
+        if g['kind'] not in ('campaign', 'ambassador') or not g['year'] or g['id'] in exclude or not g['models']:
+            continue
+        if any(data['campaigns'][i].get('yearFrom') for i in g['credits']):
+            continue
+        if _model_photos(data, g) & set(g['models']):
+            continue
+        press = [u for u in g['sources'] if u.startswith('http') and not discover.SKIP_SOURCE.search(u)]
+        tier = 1 if verified[g['id']] else 2 if g['family'] and press else 3 if g['family'] else 4 if press else 5
+        if tier == 5 or len(g['models']) > 4:
+            continue
+        pool.append((tier, -g['year'], g['id'], g))
+    pool.sort(key=lambda x: x[:3])
+    out, per_label = [], collections.Counter()
+    for tier, _, _, g in pool:
+        if per_label[g['brand']] >= 2:
+            continue
+        per_label[g['brand']] += 1
+        out.append({**g, 'tier': tier, 'verified_pages': sorted(verified[g['id']])})
+        if len(out) >= n:
+            break
+    return out
+
+
+def cmd_gbatch(args):
+    """Google-first batch within fixed caps: cited sources and earlier results, then Google Images (SerpApi plan
+    searches only), then Brave web only for groups still without a verified photo. Downloads stay candidates."""
+    data = groups.load()
+    gs = groups.build(data)
+    path = os.path.join(config.RESULTS, f'{args.run}_selection.json')
+    if os.path.exists(path) and not args.reselect:
+        frozen = json.load(open(path))
+        sel = [{**gs[x['id']], 'tier': x['tier'], 'verified_pages': x['verified_pages']} for x in frozen if x['id'] in gs]
+    else:
+        trial = {x['id'] for x in json.load(open(os.path.join(config.RESULTS, 'trial_selection.json')))}
+        sel = gbatch_selection(data, gs, args.n, exclude=trial)
+        _write_json(f'{args.run}_selection.json', [{'id': g['id'], 'label': groups.label(g), 'models': g['models'],
+                                                    'tier': g['tier'], 'verified_pages': g['verified_pages']} for g in sel])
+    print(f'{len(sel)} groups selected; tiers {dict(collections.Counter(g["tier"] for g in sel))}')
+    max_serp = args.max_searches
+    max_brave = int(round(args.brave_budget / config.PRICE['brave_web']))
+    todo = [g for g in sel if args.redo or g['id'] not in _results(args.run)]
+    acc_before = None
+    if not args.dry_run and todo:
+        ok, acc_before, why = serpapi.allowance(max_serp, tuple(x.strip().lower() for x in args.plans.split(',')))
+        if not ok:
+            print('SerpApi: ' + why + '; not running.')
+            return 2
+        if acc_before['plan_searches_left'] - max_serp < args.reserve:
+            print(f"SerpApi: {acc_before['plan_searches_left']} left this month; running {max_serp} would leave less "
+                  f"than the {args.reserve} reserved. Not running.")
+            return 2
+    plan_key = next((k for k in serpapi.PLAN_PRICE_PER_SEARCH if acc_before and k in (acc_before.get('plan_name') or '').lower()), 'starter')
+    budget = Budget(10 ** 6, dry=args.dry_run, run=args.run,
+                    prices={'serpapi_google_images': serpapi.PLAN_PRICE_PER_SEARCH[plan_key]},
+                    max_requests={'serpapi_google_images': max_serp, 'brave_web': max_brave, 'brave_images': 0})
+    t0 = time.time()
+    store = _store()
+    done = {} if args.redo else _results(args.run)
+
+    def one(g):
+        r = discover.process(g, data, budget, providers=('sources', 'legacy', 'serpapi_google_images', 'brave_web'),
+                             offline=budget.dry, google_first=True)
+        r['run'] = args.run
+        r['tier'] = g['tier']
+        return r
+
+    print(f'{args.run}: {len(todo)} to process; caps: {max_serp} SerpApi searches, {max_brave} Brave requests '
+          f'(${max_brave * config.PRICE["brave_web"]:.2f}){" DRY RUN" if budget.dry else ""}', flush=True)
+    with cf.ThreadPoolExecutor(args.workers) as ex:
+        for i, r in enumerate(ex.map(one, todo), 1):
+            if not budget.dry:
+                store.put(f'result:{args.run}', r['id'], r)
+            done[r['id']] = r
+            if i % 10 == 0:
+                print(f'  {i}/{len(todo)}; searches: SerpApi {budget.attempts.get("serpapi_google_images", 0)}, '
+                      f'Brave {budget.attempts.get("brave_web", 0)}; {time.time() - t0:.0f}s', flush=True)
+    acc_after = serpapi.account() if not args.dry_run and todo else None
+    rows = [done[g['id']] for g in sel if g['id'] in done]
+    s = summarize(rows, budget)
+    s['serpapi'] = {'searches_started (cap)': budget.attempts.get('serpapi_google_images', 0), 'cap': max_serp,
+                    'http': serpapi.attempts_since(t0),
+                    'account_before': acc_before and acc_before['plan_searches_left'],
+                    'account_after': acc_after and acc_after['plan_searches_left'],
+                    'billed (account)': acc_before and acc_after and acc_before['plan_searches_left'] - acc_after['plan_searches_left']}
+    s['brave'] = {'requests': budget.requests.get('brave_web', 0), 'cap': max_brave,
+                  'usd': round(budget.requests.get('brave_web', 0) * config.PRICE['brave_web'], 3)}
+    _export(args.run)
+    _write_json(f'{args.run}.summary.json', s)
+    print(json.dumps({k: s[k] for k in ('serpapi', 'brave')}, indent=1))
+    return 0
+
+
 # ---------------------------------------------------------------- trial
 
 def trial_selection(gs, n, seed=7):
@@ -357,10 +473,88 @@ def cmd_sheet(args):
     return 0
 
 
+def cmd_review_sheet(args):
+    """One HTML page per run for visual review: each candidate photo with its campaign, credited models, attribution
+    and the text that supports it, source page and period evidence. Thumbnails are embedded."""
+    import base64
+    import html as H
+    import io
+    rows = _results(args.run)
+    if args.ids:
+        keep = {x.strip() for x in open(args.ids) if x.strip()}
+        rows = {k: v for k, v in rows.items() if k in keep}
+    rejected = set()
+    if os.path.exists(os.path.join(config.RESULTS, 'review_rejected.txt')):
+        rejected = {x.strip() for x in open(os.path.join(config.RESULTS, 'review_rejected.txt')) if x.strip()}
+    items, n = [], 0
+    for r in sorted(rows.values(), key=lambda r: r['label']):
+        for kind, lst in (('verified', r['accepted']), ('campaign confirmed, cast not named (not applied)', [] if r['accepted'] else r.get('campaign_level') or [])):
+            for a in lst:
+                try:
+                    im = Image.open(os.path.join(config.ROOT, a['file'])).convert('RGB')
+                    im.thumbnail((260, 330))
+                    buf = io.BytesIO()
+                    im.save(buf, 'JPEG', quality=70)
+                    src = 'data:image/jpeg;base64,' + base64.b64encode(buf.getvalue()).decode()
+                except Exception:
+                    src = ''
+                ev = a.get('evidence') or {}
+                who = ', '.join(a['talent']) or 'not identified individually'
+                items.append(f"""<figure class="{'rej' if a['file'] in rejected else ''}"><img src="{src}" alt="">
+<figcaption><b>#{n}</b> {H.escape(r['label'])}<br>
+<span class="k">Credited:</span> {H.escape(', '.join(r['models']))}<br>
+<span class="k">Photo shows:</span> <b>{H.escape(who)}</b> <i>({H.escape(a['attribution'])})</i><br>
+{('<span class="k">Caption:</span> “' + H.escape(a.get('attribution_text') or '') + '”<br>') if a.get('attribution_text') else ''}
+<span class="k">Period:</span> {H.escape(ev.get('period_evidence') or str(ev.get('periods') or ''))[:160]}<br>
+<span class="k">Status:</span> {H.escape(kind)}{' · <b>rejected in review</b>' if a['file'] in rejected else ''}<br>
+<a href="{H.escape(a['page'])}">{H.escape(a['site'])}</a> · <code>{H.escape(os.path.basename(a['file']))}</code></figcaption></figure>""")
+                n += 1
+    page = f"""<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{H.escape(args.run)} review</title><style>
+:root{{--bg:#fff;--fg:#111;--mut:#666;--line:#ddd}}@media (prefers-color-scheme:dark){{:root{{--bg:#111;--fg:#eee;--mut:#999;--line:#333}}}}
+body{{background:var(--bg);color:var(--fg);font:13px/1.4 system-ui,sans-serif;margin:16px}}
+main{{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}}
+figure{{margin:0;border:1px solid var(--line);padding:6px;border-radius:6px}}figure.rej{{opacity:.45}}
+img{{max-width:100%;display:block;margin:0 auto 6px}}.k{{color:var(--mut)}}a{{color:inherit}}code{{font-size:11px}}
+</style><h1>{H.escape(args.run)}: {n} candidate photos</h1><main>{''.join(items)}</main>"""
+    out = os.path.join(config.RESULTS, f'{args.run}_review.html')
+    open(out, 'w').write(page)
+    print(out)
+    return 0
+
+
 # ---------------------------------------------------------------- apply
 
 def _evidence_path():
     return os.path.join(config.RESULTS, 'evidence.json')
+
+
+def cmd_recheck(args):
+    """Keep a model tag on a published photo only with image-specific evidence (see pipeline/recheck.py)."""
+    from . import recheck
+    data = groups.load()
+    ev = json.load(open(_evidence_path())) if os.path.exists(_evidence_path()) else {}
+    decisions = recheck.run(data, ev, workers=args.workers)
+    kept = removed = 0
+    for c in data['campaigns']:
+        for im in c.get('images', []):
+            if not im.get('talent'):
+                continue
+            d = decisions[recheck.key(im['src'], im['talent'])]
+            after = [t for t in d['after'] if t in im['talent']]
+            if after:
+                kept += 1
+            else:
+                removed += 1
+            im['talent'] = after
+    why = collections.Counter(d['why'] for d in decisions.values() if not d['after'])
+    print(f'{kept} tags kept, {removed} removed{" (dry run, nothing written)" if args.dry_run else ""}')
+    for k, n in why.most_common():
+        print(f'  {n:5}  {k}')
+    _write_json('attribution_recheck.json', sorted(decisions.values(), key=lambda d: d['src']))
+    if not args.dry_run:
+        _save_data(data)
+    return 0
 
 
 def cmd_apply(args):
@@ -370,6 +564,8 @@ def cmd_apply(args):
     if args.reject:
         rejected = {x.strip() for x in open(args.reject) if x.strip()}
     ev = json.load(open(_evidence_path())) if os.path.exists(_evidence_path()) else {}
+    from . import images, recheck
+    reviews = recheck.human_reviews()
     added = credits = 0
     for run in args.run:
         for gid, r in _results(run).items():
@@ -382,16 +578,24 @@ def cmd_apply(args):
                 have = {i['src'] for i in imgs}
                 before = len(imgs)
                 for a in r['accepted']:
-                    if a['file'] in rejected or a['file'] in have:
+                    pub = 'assets/photos/' + os.path.basename(a['file'])
+                    if a['file'] in rejected or a['file'] in have or pub in have:
                         continue
-                    talent = [t for t in a['talent'] if t in c['talent']]
-                    if a['talent'] and not talent:
+                    review = reviews.get(a['file']) or reviews.get(pub)
+                    tags = review['models'] if review else a['talent']
+                    talent = [t for t in tags if t in c['talent']]
+                    if tags and not talent:
                         continue  # a photo of another model of the same campaign
-                    imgs.append({'src': a['file'], 'credit': a['site'], 'from': a['page'], 'talent': talent,
+                    src = a['file'] if args.dry_run else images.publish(a['file'])
+                    imgs.append({'src': src, 'credit': a['site'], 'from': a['page'], 'talent': talent,
                                  'match': 'exact', 'auto': True})
-                    have.add(a['file'])
-                    ev[a['file']] = {'group': gid, 'label': r['label'], 'page': a['page'], 'image': a['image'],
-                                     'attribution': a['attribution'], 'via': a['via'], 'run': run, 'evidence': a['evidence']}
+                    have.add(src)
+                    ev[src] = {'group': gid, 'label': r['label'], 'page': a['page'], 'image': a['image'],
+                               'attribution': 'human review' if review else a['attribution'],
+                               'attributed_by': ('human review' if review else 'automated: image caption or alt text')
+                                                if talent else 'none (models not identified individually)',
+                               'attribution_text': (review or {}).get('note') or a.get('attribution_text', ''),
+                               'via': a['via'], 'run': run, 'evidence': a['evidence']}
                 if len(imgs) > before:
                     credits += 1
                     added += len(imgs) - before
