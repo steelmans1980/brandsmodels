@@ -534,7 +534,21 @@ def cmd_recheck(args):
     from . import recheck
     data = groups.load()
     ev = json.load(open(_evidence_path())) if os.path.exists(_evidence_path()) else {}
-    decisions = recheck.run(data, ev, workers=args.workers)
+    if args.from_file:
+        # re-apply saved decisions with the current caption rule (no network): drops tags whose only support was
+        # text the rule no longer accepts
+        decisions = {}
+        for d in json.load(open(os.path.join(config.RESULTS, 'attribution_recheck.json'))):
+            if d['after'] and d.get('why') != 'human review':
+                cap = verify.strip_slugs(d.get('caption', ''))
+                named = verify.model_hits(d['before'], cap)
+                if not named:
+                    d = {**d, 'after': [], 'why': 'caption is a file name, not a caption'}
+                else:
+                    d = {**d, 'after': named, 'caption': cap}
+            decisions[recheck.key(d['src'], d['before'])] = d
+    else:
+        decisions = recheck.run(data, ev, workers=args.workers)
     kept = removed = 0
     for c in data['campaigns']:
         for im in c.get('images', []):

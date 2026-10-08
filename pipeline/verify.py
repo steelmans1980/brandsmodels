@@ -305,8 +305,16 @@ def image_caption(img, boiler=frozenset()):
     """The image's own alt text and caption (or credit): the only text that can say who is in it. File names are
     written for search engines and page titles describe the page, so neither attributes a model. Text in `boiler`
     (see page_boilerplate) is the page's, not this image's, and is left out."""
-    parts = [x.strip() for x in (img.get('alt') or '', img.get('caption') or '')]
+    parts = [strip_slugs(x) for x in (img.get('alt') or '', img.get('caption') or '')]
     return ' '.join(x for x in parts if x and groups.fold(x) not in boiler).strip()
+
+
+_SLUG = re.compile(r'\S*[-_]\S*[-_]\S*')
+
+
+def strip_slugs(text):
+    """Drop file-name-like tokens ("irina-shayk-bebe-2014-fall-ad-campaign0") that a CMS copies into the alt."""
+    return re.sub(r'\s+', ' ', _SLUG.sub(' ', text or '')).strip()
 
 
 def page_boilerplate(article):

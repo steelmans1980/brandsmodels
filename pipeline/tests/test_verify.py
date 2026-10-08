@@ -174,6 +174,11 @@ class Attribution(unittest.TestCase):
                  'w': 1000, 'h': 1200, 'lead': False} for i in range(4)]
         self.assertTrue(all(k['talent'] == [] for k in self.pick('Seafolly 2016 campaign', imgs)))
 
+    def test_file_name_copied_into_alt_does_not_attribute(self):
+        imgs = [{'url': 'https://example.com/a.jpg', 'alt': 'shanina-shaik-seafolly-2016-campaign', 'caption': '',
+                 'w': 1000, 'h': 1200, 'lead': False}]
+        self.assertEqual(self.pick('Seafolly 2016 campaign', imgs)[0]['talent'], [])
+
     def test_alt_equal_to_page_title_does_not_attribute(self):
         imgs = [{'url': 'https://example.com/a.jpg', 'alt': 'Shanina Shaik for Seafolly 2016', 'caption': '',
                  'w': 1000, 'h': 1200, 'lead': False}]

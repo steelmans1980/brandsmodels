@@ -78,6 +78,7 @@ def main(argv=None):
     r = sub.add_parser('recheck', help='keep model tags on published photos only with image-specific evidence')
     r.add_argument('--dry-run', action='store_true')
     r.add_argument('--workers', type=int, default=12)
+    r.add_argument('--from-file', action='store_true', help='re-apply results/attribution_recheck.json without fetching')
 
     sub.add_parser('validate')
     sub.add_parser('compare', help='Brave vs Google arm on the frozen trial campaigns')
