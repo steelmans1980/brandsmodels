@@ -1,127 +1,189 @@
 {
  "credits": 10540,
  "by_appearance": {
-  "identified": 2042,
-  "dated": 1778,
+  "identified": 2043,
+  "dated": 1777,
   "undated": 6720
  },
  "coverage": {
   "dated | ambassador": {
    "credits": 140,
-   "photo tagged to the model by an earlier search (visual check only)": 88,
+   "photo whose own caption names the model (automated)": 18,
+   "campaign gallery only (models not identified individually)": 70,
    "portrait/press fallback only": 48,
    "no picture": 4
   },
   "dated | campaign": {
-   "credits": 529,
-   "photo verified to show the model": 2,
-   "photo tagged to the model by an earlier search (visual check only)": 211,
-   "campaign gallery only (models not identified individually)": 5,
+   "credits": 528,
+   "photo whose own caption names the model (automated)": 53,
+   "campaign gallery only (models not identified individually)": 165,
    "portrait/press fallback only": 275,
-   "no picture": 36
+   "no picture": 35
   },
   "dated | cover": {
    "credits": 492,
-   "photo tagged to the model by an earlier search (visual check only)": 218,
+   "photo whose own caption names the model (automated)": 48,
+   "campaign gallery only (models not identified individually)": 170,
    "portrait/press fallback only": 156,
    "no picture": 118
   },
   "dated | runway": {
    "credits": 617,
-   "photo tagged to the model by an earlier search (visual check only)": 69,
+   "photo whose own caption names the model (automated)": 21,
+   "campaign gallery only (models not identified individually)": 48,
    "portrait/press fallback only": 413,
    "no picture": 135
   },
   "identified | ambassador": {
    "credits": 19,
-   "photo verified to show the model": 7,
-   "photo tagged to the model by an earlier search (visual check only)": 9,
-   "portrait/press fallback only": 3
+   "photo whose own caption names the model (automated)": 5,
+   "campaign gallery only (models not identified individually)": 12,
+   "portrait/press fallback only": 2
   },
   "identified | campaign": {
-   "credits": 825,
-   "photo verified to show the model": 103,
-   "photo tagged to the model by an earlier search (visual check only)": 427,
-   "campaign gallery only (models not identified individually)": 94,
-   "portrait/press fallback only": 165,
-   "no picture": 36
+   "credits": 826,
+   "photo whose own caption names the model (automated)": 199,
+   "campaign gallery only (models not identified individually)": 432,
+   "portrait/press fallback only": 161,
+   "no picture": 34
   },
   "identified | cover": {
    "credits": 638,
-   "photo verified to show the model": 12,
-   "photo tagged to the model by an earlier search (visual check only)": 303,
-   "campaign gallery only (models not identified individually)": 1,
+   "photo whose own caption names the model (automated)": 82,
+   "campaign gallery only (models not identified individually)": 234,
    "portrait/press fallback only": 196,
    "no picture": 126
   },
   "identified | runway": {
    "credits": 560,
-   "photo verified to show the model": 3,
-   "photo tagged to the model by an earlier search (visual check only)": 71,
+   "photo whose own caption names the model (automated)": 22,
+   "campaign gallery only (models not identified individually)": 52,
    "portrait/press fallback only": 390,
    "no picture": 96
   },
   "undated | ambassador": {
    "credits": 113,
-   "photo tagged to the model by an earlier search (visual check only)": 34,
+   "photo whose own caption names the model (automated)": 13,
+   "campaign gallery only (models not identified individually)": 21,
    "portrait/press fallback only": 73,
    "no picture": 6
   },
   "undated | campaign": {
    "credits": 3150,
-   "photo tagged to the model by an earlier search (visual check only)": 364,
-   "campaign gallery only (models not identified individually)": 1,
+   "photo whose own caption names the model (automated)": 132,
+   "campaign gallery only (models not identified individually)": 233,
    "portrait/press fallback only": 2343,
    "no picture": 442
   },
   "undated | runway": {
    "credits": 3457,
-   "photo tagged to the model by an earlier search (visual check only)": 194,
+   "photo whose own caption names the model (automated)": 64,
+   "campaign gallery only (models not identified individually)": 130,
    "portrait/press fallback only": 2587,
    "no picture": 676
   }
  },
  "pictures_by_appearance": {
   "identified": {
-   "photo verified to show the model": 125,
-   "photo tagged to the model by an earlier search (visual check only)": 810,
-   "campaign gallery only (models not identified individually)": 95,
-   "portrait/press fallback only": 754,
-   "no picture": 258
+   "photo attributed by human review": 0,
+   "photo whose own caption names the model (automated)": 308,
+   "campaign gallery only (models not identified individually)": 730,
+   "portrait/press fallback only": 749,
+   "no picture": 256
   },
   "dated": {
-   "photo verified to show the model": 2,
-   "photo tagged to the model by an earlier search (visual check only)": 586,
-   "campaign gallery only (models not identified individually)": 5,
+   "photo attributed by human review": 0,
+   "photo whose own caption names the model (automated)": 140,
+   "campaign gallery only (models not identified individually)": 453,
    "portrait/press fallback only": 892,
-   "no picture": 293
+   "no picture": 292
   },
   "undated": {
-   "photo verified to show the model": 0,
-   "photo tagged to the model by an earlier search (visual check only)": 592,
-   "campaign gallery only (models not identified individually)": 1,
+   "photo attributed by human review": 0,
+   "photo whose own caption names the model (automated)": 209,
+   "campaign gallery only (models not identified individually)": 384,
    "portrait/press fallback only": 5003,
    "no picture": 1124
   }
  },
  "dated_without_model_photo_by_reason": {
-  "dated | no relevant search results": 554,
-  "identified | no relevant search results": 552,
+  "identified | no relevant search results": 762,
+  "dated | no relevant search results": 747,
+  "identified | not searched yet": 422,
   "dated | relevant result, inaccessible source": 385,
   "identified | relevant result, inaccessible source": 352,
-  "dated | rejected: campaign/identity not confirmed": 219,
-  "identified | rejected: campaign/identity not confirmed": 112,
-  "identified | not searched yet": 51,
+  "dated | rejected: campaign/identity not confirmed": 263,
+  "dated | not searched yet": 211,
+  "identified | rejected: campaign/identity not confirmed": 159,
   "identified | accessible source, image extraction failed": 40,
-  "dated | accessible source, image extraction failed": 32
+  "dated | accessible source, image extraction failed": 31
  },
  "examples": {
-  "identified | no relevant search results": [
+  "identified | not searched yet": [
    {
-    "credit": "Gigi Hadid, Jisoo — Tommy Hilfiger Fall 2026 campaign",
-    "detail": "earlier paid search returned no candidate naming model, label and year",
+    "credit": "Kendall Jenner — FRAME Fall/Winter 2026 campaign",
+    "detail": "no usable cited source; never sent to paid search",
+    "source": "https://theimpression.com/frame-fall-2026-ad-campaign-kendall-jenner/"
+   },
+   {
+    "credit": "Alex Consani, Kate Moss, Rico Nasty — Gucci Fall/Winter 2026 campaign",
+    "detail": "no usable cited source; never sent to paid search",
     "source": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns"
    },
+   {
+    "credit": "Hari Nef — J.Crew Fall/Winter 2026 campaign",
+    "detail": "no usable cited source; never sent to paid search",
+    "source": "https://www.elle.com/fashion/g71231506/best-fall-winter-2026-campaigns/"
+   },
+   {
+    "credit": "Hailey Bieber, Xiao Wen Ju — Miu Miu Fall/Winter 2026 campaign",
+    "detail": "no usable cited source; never sent to paid search",
+    "source": "https://theimpression.com/miu-miu-fall-2026-ad-campaign-review/"
+   },
+   {
+    "credit": "Tate McRae — Calvin Klein Fall 2026 campaign",
+    "detail": "no usable cited source; never sent to paid search",
+    "source": "https://fashionunited.com/news/fashion/tate-mcrae-joins-calvin-kleins-celebrity-campaign-roster/2026082574254"
+   },
+   {
+    "credit": "Lea Michele, Audra McDonald, Sutton Foster — Michael Kors Fall 2026 campaign",
+    "detail": "no usable cited source; never sent to paid search",
+    "source": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns"
+   }
+  ],
+  "dated | not searched yet": [
+   {
+    "credit": "Bebe Rexha — bebe Full year 2019 campaign",
+    "detail": "no usable cited source; never sent to paid search",
+    "source": "https://www.papermag.com/bebe-rexha-bebe-clothing"
+   },
+   {
+    "credit": "Anna Nicole Smith — Guess Full year 1992 campaign",
+    "detail": "no usable cited source; never sent to paid search",
+    "source": "https://www.wmagazine.com/gallery/guess-best-ad-campaigns"
+   },
+   {
+    "credit": "Claudia Schiffer — Guess Full year 1989 campaign",
+    "detail": "no usable cited source; never sent to paid search",
+    "source": "http://entertainment.msn.com/celebs/celeb.aspx?c=297914&mp=b"
+   },
+   {
+    "credit": "Lulu Tenney — Chanel 2024 campaign",
+    "detail": "no usable cited source; never sent to paid search",
+    "source": "https://www.thefashionspot.com/forum-buzz/886603-the-spectacular-lulu-tenney-poses-for-karim-sadli-in-the-chanel-fall-2024-haute-couture-teaser-campaign/"
+   },
+   {
+    "credit": "Jordan Alexander — Savage X Fenty 2022 ambassador",
+    "detail": "no usable cited source; never sent to paid search",
+    "source": "https://www.nylon.com/fashion/dove-cameron-jordan-alexander-savage-x-fenty-campaign"
+   },
+   {
+    "credit": "Dree Hemingway — Gianfranco Ferré 2010 campaign",
+    "detail": "no usable cited source; never sent to paid search",
+    "source": "https://www.luxuo.com/style/fashion/dree-hemingway-gianfranco-ferre.html"
+   }
+  ],
+  "identified | no relevant search results": [
    {
     "credit": "Anne Marie van Dijk — bebe Spring 2009 campaign",
     "detail": "earlier paid search returned no candidate naming model, label and year",
@@ -133,6 +195,16 @@
     "source": "https://en.wikipedia.org/wiki/Bebe_Stores"
    },
    {
+    "credit": "Eva Longoria — bebe Spring 2007 campaign",
+    "detail": "earlier paid search returned no candidate naming model, label and year",
+    "source": "https://www.sec.gov/Archives/edgar/data/1059272/000110465907069182/a07-23570_110k.htm"
+   },
+   {
+    "credit": "Miranda Kerr — Mango Spring/Summer 2013 campaign",
+    "detail": "earlier paid search returned no candidate naming model, label and year",
+    "source": "https://www.designscene.net/2013/02/miranda-kerr-mango-spring-2013.html"
+   },
+   {
     "credit": "Cora Keegan — bebe Spring/Summer 2013 campaign",
     "detail": "earlier paid search returned no candidate naming model, label and year",
     "source": "https://models.com/work/bebe-bebe-ss-13"
@@ -141,43 +213,6 @@
     "credit": "Aivita Mūze — Mango Fall/Winter 2023 campaign",
     "detail": "earlier paid search returned no candidate naming model, label and year",
     "source": "https://models.com/work/mango-mango-fw-2023-campaign"
-   },
-   {
-    "credit": "Kiki Willems, Leila Goldkuhl, Lexi Boling — Zara Spring/Summer 2017 campaign",
-    "detail": "earlier paid search returned no candidate naming model, label and year",
-    "source": "https://models.com/work/zara-zara-ss-2017"
-   }
-  ],
-  "identified | not searched yet": [
-   {
-    "credit": "Jemima Kirke, Rowan Blanchard — Marc Jacobs Fall 2026 campaign",
-    "detail": "no usable cited source; never sent to paid search",
-    "source": "https://theimpression.com/marc-jacobs-fall-2026-ad-campaign-review/"
-   },
-   {
-    "credit": "Naomi Watts, Kai Schreiber — Simkhai Fall 2026 campaign",
-    "detail": "no usable cited source; never sent to paid search",
-    "source": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns"
-   },
-   {
-    "credit": "Rosé, Liu Wen — Saint Laurent Fall 2026 campaign",
-    "detail": "no usable cited source; never sent to paid search",
-    "source": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns"
-   },
-   {
-    "credit": "Park Gyuyoung, Awar Odhiang, Noor Khan — COS Fall 2026 campaign",
-    "detail": "no usable cited source; never sent to paid search",
-    "source": "https://theimpression.com/cos-fall-2026-ad-campaign-review/"
-   },
-   {
-    "credit": "Jasmine Sanders, Inka Williams, Pia Mia — bebe Fall 2017 campaign",
-    "detail": "no usable cited source; never sent to paid search",
-    "source": "https://www.wmagazine.com/story/bebe-comeback-jasmine-sanders-pia-mia"
-   },
-   {
-    "credit": "Cintia Dicker, Julia Dunstall — bebe Spring/Summer 2012 campaign",
-    "detail": "no usable cited source; never sent to paid search",
-    "source": "https://www.nylon.com/articles/it-girl-alert-cintia-dicker-6224"
    }
   ],
   "dated | no relevant search results": [
@@ -214,6 +249,11 @@
   ],
   "identified | rejected: campaign/identity not confirmed": [
    {
+    "credit": "Suki Waterhouse — Michael Kors Fall 2026 campaign",
+    "detail": "1 search image(s) rejected in visual review",
+    "source": "https://theimpression.com/michael-kors-fall-2026-ad-campaign-review/"
+   },
+   {
     "credit": "Chu Wong, Faith Johnson — Fendi Fall 2027 campaign",
     "detail": "article is about FW 2026",
     "source": "https://theimpression.com/fendi-fall-2027-ad-campaign-review/"
@@ -235,11 +275,6 @@
    },
    {
     "credit": "Malika Louback — Saint Laurent Spring/Summer 2020 runway",
-    "detail": "no season/year stated",
-    "source": "https://vogue.sg/malika-louback-djiboutian-model-interview/"
-   },
-   {
-    "credit": "Malika Louback — Chanel Spring/Summer 2020 runway",
     "detail": "no season/year stated",
     "source": "https://vogue.sg/malika-louback-djiboutian-model-interview/"
    }
@@ -415,8 +450,8 @@
   }
  },
  "rendering": {
-  "referenced": 4991,
-  "local_ok": 4988,
+  "referenced": 5385,
+  "local_ok": 5382,
   "remote_urls": 3,
   "remote_examples": [
    "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Jerry_Hall.jpg/330px-Jerry_Hall.jpg",
