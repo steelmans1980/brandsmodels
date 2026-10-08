@@ -206,17 +206,21 @@ def cmd_trial(args):
             if prov == 'serpapi_google_images' and serpapi.cached(prov, q) is None))
         acc = None
         if needed:
-            ok, acc, why = serpapi.free_allowance(needed)
+            plans = tuple(x.strip().lower() for x in args.plans.split(','))
+            ok, acc, why = serpapi.allowance(needed, plans)
             if not ok:
                 print('Google arm not run:', why)
                 report['arms']['google images (serpapi)'] = {'skipped': why, 'account': acc}
                 _write_json('trial.summary.json', report)
                 return 1
-        budget_b = Budget(0.0, dry=args.dry_run, run='trial-google', prices={'serpapi_google_images': 0.0},
-                          max_requests={'serpapi_google_images': args.max_searches})
+        plan_key = next((k for k in serpapi.PLAN_PRICE_PER_SEARCH if acc and k in (acc.get('plan_name') or '').lower()), 'free')
+        unit = serpapi.PLAN_PRICE_PER_SEARCH[plan_key]
+        budget_b = Budget(unit * args.max_searches, dry=args.dry_run, run='trial-google',
+                          prices={'serpapi_google_images': unit}, max_requests={'serpapi_google_images': args.max_searches})
         done_b = run_groups('trial-google', sel, data, ('serpapi_google_images',), budget_b, redo=args.redo)
         rows_b = [done_b[g['id']] for g in sel]
-        report['arms']['google images (serpapi)'] = {**summarize(rows_b, budget_b), 'plan': 'SerpApi Free',
+        report['arms']['google images (serpapi)'] = {**summarize(rows_b, budget_b), 'plan': f'SerpApi {plan_key}',
+                                                     'value_per_search_usd': round(unit, 4),
                                                      'account_before': acc, 'requests_sent': budget_b.attempts,
                                                      'account_after': serpapi.account() if needed else None}
         _export('trial-google', {g['id'] for g in sel})
@@ -286,7 +290,8 @@ def cmd_compare(args):
     summ = json.load(open(os.path.join(config.RESULTS, 'trial.summary.json')))
     report['cost'] = {'brave': summ.get('paid_queries_for_these_50'),
                       'google': {'requests': summ['arms'].get('google images (serpapi)', {}).get('requests_sent'),
-                                 'usd': 0.0, 'plan': 'SerpApi Free'}}
+                                 'usd': summ['arms'].get('google images (serpapi)', {}).get('spent'),
+                                 'plan': summ['arms'].get('google images (serpapi)', {}).get('plan')}}
     _write_json('trial_comparison.json', report)
     # contact sheet: what Google added
     items = [(x['label'], a) for x in only_g for a in rows['google'][x['id']]['accepted'] if a['file'] not in rejected]

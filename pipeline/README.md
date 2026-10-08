@@ -7,7 +7,7 @@ site: nothing in `pipeline/` is deployed (see `.assetsignore`), and no key reach
 python3 -m pipeline audit                       # coverage + why each dated credit lacks a photo -> results/audit.json
 python3 -m pipeline batch --run NAME [...]      # process campaign groups (cached, resumable, budgeted)
 python3 -m pipeline trial --n 50 --budget 5     # controlled comparison on 50 dated campaigns (Brave arm)
-python3 -m pipeline trial --google              # Google Images arm on the same 50: SerpApi Free plan only, <= 50 searches
+python3 -m pipeline trial --google --plans free,starter   # Google Images arm on the same 50, <= 50 searches from the plan's allowance
 python3 -m pipeline compare                     # Brave vs Google on the trial, contact sheet of Google-only finds
 python3 -m unittest discover -s pipeline/tests -t .   # regression checks for verification mistakes found in review
 python3 -m pipeline sheet --run NAME            # contact sheets of accepted photos for visual review
@@ -76,8 +76,8 @@ Keys are read from the environment only and never written to the repository or t
   `SERPAPI_API_KEY=...` in the environment. In Claude Code on the web, add it under the
   environment's secrets. The free plan has 250 searches a month; Starter is $25 a month for 1,000.
   Only successful searches are billed. Without the variable the adapter is skipped. `trial --google` reads the
-  account first (not billed) and refuses to run unless the plan is Free and enough searches are left, so it can
-  never draw on a paid plan.
+  account first (not billed) and refuses to run unless the plan is in `--plans` and this month's plan still includes
+  the searches, so it never causes overage or an early renewal.
 
 ## Access and permission
 

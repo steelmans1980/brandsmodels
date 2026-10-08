@@ -202,23 +202,23 @@ far less.
 
 ## 4. Google Images arm (SerpApi): ready, not yet run
 
-**Verified on serpapi.com/pricing (2026-10-08):**
-- The Free plan is still offered: 250 searches/month, 50/hour.
-- The page says nothing about overage on the Free plan.
-- Paid plans start at Starter, $25/month for 1,000 searches.
+**Plan:** you're on SerpApi Starter: $25/month for 1,000 searches, which you say is limited to 200 a day. This
+trial needs at most 50, all from searches the subscription already includes. No upgrade is needed.
 
-**Why it hasn't run:** this session has no `SERPAPI_API_KEY`, and SerpApi rejects unauthenticated requests ("Invalid
-API key"). A secret added to the environment reaches only a new session.
+**Why it hasn't run here:** environment variables load only when a session starts, so this session has no
+`SERPAPI_API_KEY`.
 
 **Safeguards, tested end to end with a mocked SerpApi against a throwaway cache:**
 - Before any search, `account.json` is read; SerpApi does not bill it as a search.
 - The run aborts unless:
-  - the plan is **Free**;
-  - at least the needed number of searches is left this month and this hour.
-- A paid plan is refused before any search.
+  - the plan is one you allow (`--plans free,starter`);
+  - this month's plan still includes the needed searches (`plan_searches_left`, not extra credits);
+  - this hour's limit allows them.
+- So it can't cause overage or an early renewal. A Developer plan, or 30 searches left, is refused before any search.
 - At most `--max-searches` (default 50) requests are sent, counted as attempts.
 - One Google Images query per campaign (model-first), so 50 searches cover the 50 campaigns.
-- Ledger entries are recorded at $0.
+- The ledger values each Starter search at $0.025 (the $25 ÷ 1,000 already paid), so the trial uses about $1.25
+  of the month's allowance.
 - Every page found goes through the same verification as the Brave arm, including the cross-page cast rule.
 - Results that point to Instagram, Pinterest, Getty or similar, or to sites that disallow Claude, are counted as
   "relevant but not retrievable" rather than fetched.
@@ -226,7 +226,7 @@ API key"). A secret added to the environment reaches only a new session.
 To run, in a session that has the key:
 
 ```
-python3 -m pipeline trial --google --max-searches 50     # Free plan only; aborts otherwise
+python3 -m pipeline trial --google --plans free,starter --max-searches 50   # aborts if the month's allowance can't cover it
 python3 -m pipeline compare                              # results/trial_comparison.json + cache/sheets/google-new-*.jpg
 ```
 
@@ -250,7 +250,7 @@ credits. The main losses aren't about discovery:
 
 Google Images will likely surface different pages for the uncaptioned-scan and missing-model cases.
 
-- **Recommendation:** run the Google arm (free, ≤ 50 searches) before deciding.
+- **Recommendation:** run the Google arm (≤ 50 searches from the Starter allowance, no upgrade) before deciding.
   - If Google adds 5 or more campaigns that Brave missed, use a combined workflow: free sources → Brave web → Google
     Images only for campaigns still unrecovered. That spends Google searches where Brave failed.
   - If it adds fewer, Brave alone is enough at about $0.06 per verified gallery.
