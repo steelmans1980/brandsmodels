@@ -140,3 +140,12 @@ assets/photos/67bb2b49f2b45a45.jpg
 assets/photos/96b7cbabaf05dd41.jpg
 assets/photos/e642752fdeb6964e.jpg
 assets/photos/ae0cefb85c266725.jpg
+assets/photos/9a0f12657d093a2c.jpg
+pipeline/candidates/photos/35fe4385cac06a70.jpg
+assets/photos/745800f956203b66.jpg
+pipeline/candidates/photos/21eeba2a48bda35a.jpg
+pipeline/candidates/photos/be6a9aa0413e7452.jpg
+pipeline/candidates/photos/2fc89a9b70032d71.jpg
+pipeline/candidates/photos/4831985aacfdb3fb.jpg
+assets/photos/e0f7cb6357810dcc.jpg
+assets/photos/d56eca18cf34cb38.jpg

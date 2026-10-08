@@ -3,15 +3,16 @@
  "arms": {
   "brave": {
    "metrics": {
-    "campaigns with a verified gallery": 11,
-    "credited models shown in a verified photo": 3,
-    "photos": 57,
-    "photos tagged to a named model": 5,
-    "campaign confirmed, model not named (not applied)": 1
+    "campaigns with a verified gallery": 12,
+    "credited models shown in a verified photo": 1,
+    "photos": 61,
+    "photos tagged to a named model": 1,
+    "campaign confirmed, model not named (not applied)": 3
    },
    "relevant but not retrievable": {
-    "page host never fetched (social/stock/resale)": 270,
-    "page disallows Claude (robots.txt)": 188
+    "page host never fetched (social/stock/resale)": 271,
+    "page disallows Claude (robots.txt)": 191,
+    "image host disallows Claude": 2
    },
    "examples": {
     "page host never fetched (social/stock/resale)": [
@@ -25,23 +26,27 @@
      "Victoria's Secret 1997 campaign: https://www.firstview.com/collection_images.php?id=54879",
      "Victoria's Secret 1997 campaign: https://www.vogue.co.uk/gallery/victorias-secret-show-archive-past-catwalks",
      "Victoria's Secret 1997 campaign: https://msn.com/en-us/lifestyle/lifestyle-buzz/helena-christensen-fronts-victoria-s-secret-campaign-"
+    ],
+    "image host disallows Claude": [
+     "Dior Fall 2021 campaign: https://vogue.sg/dior-fall-2021-jisoo-blackpink-k-pop-style/"
     ]
    },
    "failures": {
-    "unverified": 31,
+    "unverified": 30,
     "extraction failed": 8
    }
   },
   "google": {
    "metrics": {
-    "campaigns with a verified gallery": 14,
-    "credited models shown in a verified photo": 5,
-    "photos": 82,
-    "photos tagged to a named model": 19
+    "campaigns with a verified gallery": 13,
+    "credited models shown in a verified photo": 1,
+    "photos": 74,
+    "photos tagged to a named model": 1
    },
    "relevant but not retrievable": {
-    "page host never fetched (social/stock/resale)": 110,
-    "page disallows Claude (robots.txt)": 33
+    "page host never fetched (social/stock/resale)": 113,
+    "page disallows Claude (robots.txt)": 36,
+    "image host disallows Claude": 2
    },
    "examples": {
     "page host never fetched (social/stock/resale)": [
@@ -55,6 +60,9 @@
      "Oscar de la Renta 2007 campaign: https://www.vogue.com/fashion-shows/fall-2007-ready-to-wear/oscar-de-la-renta/slideshow/details",
      "Versace 1992 campaign: https://www.flickr.com/photos/barbiescanner/27684126014",
      "BCBG Max Azria 2007 campaign: https://www.vogue.com/fashion-shows/fall-2007-ready-to-wear/bcbg-max-azria"
+    ],
+    "image host disallows Claude": [
+     "Dior Fall 2021 campaign: https://vogue.sg/dior-fall-2021-jisoo-blackpink-k-pop-style/"
     ]
    },
    "failures": {
@@ -62,16 +70,17 @@
     "inaccessible source": 12,
     "no relevant search results": 4,
     "not searched": 3,
-    "extraction failed": 1
+    "extraction failed": 2
    }
   }
  },
  "google only": [
   "Ralph Lauren Fall/Winter 2011 campaign",
-  "Seafolly 2016 campaign",
   "Armani 2016 campaign"
  ],
- "brave only": [],
+ "brave only": [
+  "Seafolly 2016 campaign"
+ ],
  "both": [
   "Gucci Fall/Winter 2021 campaign",
   "Prada Spring 2013 campaign",
@@ -93,11 +102,9 @@
    "usd": 0.68
   },
   "google": {
-   "requests": {
-    "serpapi_google_images": 12
-   },
-   "usd": 0.3,
-   "plan": "SerpApi starter"
+   "requests": {},
+   "usd": 0.0,
+   "plan": "SerpApi free"
   }
  }
 }

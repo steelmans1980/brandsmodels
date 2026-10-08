@@ -1,0 +1,42 @@
+{
+ "brave": {
+  "galleries": 11,
+  "photos": 56,
+  "model_attributed_automated": 1,
+  "model_attributed_human": 0,
+  "credited_models_illustrated": [
+   [
+    "UGG 2024 campaign",
+    "Hanni"
+   ]
+  ]
+ },
+ "google": {
+  "galleries": 13,
+  "photos": 69,
+  "model_attributed_automated": 1,
+  "model_attributed_human": 0,
+  "credited_models_illustrated": [
+   [
+    "Armani 2016 campaign",
+    "Eva Herzigová"
+   ]
+  ]
+ },
+ "combined": {
+  "galleries": 13,
+  "photos": 89,
+  "model_attributed_automated": 2,
+  "model_attributed_human": 0,
+  "credited_models_illustrated": [
+   [
+    "Armani 2016 campaign",
+    "Eva Herzigová"
+   ],
+   [
+    "UGG 2024 campaign",
+    "Hanni"
+   ]
+  ]
+ }
+}

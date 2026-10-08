@@ -3,48 +3,48 @@
  "arms": {
   "improved pipeline": {
    "groups": 50,
-   "groups_with_photos": 11,
-   "photos": 57,
-   "photos_attributed_to_a_model": 5,
+   "groups_with_photos": 12,
+   "photos": 61,
+   "photos_attributed_to_a_model": 1,
    "failures": {
-    "unverified": 31,
+    "unverified": 30,
     "extraction failed": 8
    },
    "failure_details": {
     "unverified: none of the credited models is named": 17,
     "extraction failed: no campaign image found in the verified article": 6,
-    "unverified: no season/year stated": 4,
     "unverified: not about a campaign": 3,
     "unverified: label not named in the article": 3,
+    "unverified: no season/year stated": 3,
     "unverified: article is about HOL 2020": 1,
     "unverified: article is about FW 2008": 1,
-    "extraction failed: image http 404 (1), rejected in an earlier review (1)": 1,
     "unverified: article is about FW 1985, FW 1992": 1,
+    "extraction failed: too small (240x240) (1)": 1,
     "unverified: article is about FW 2007, FW 2008, SS 2007": 1,
     "extraction failed: too small (300x300) (1)": 1
    },
    "found_via": {
-    "brave_web": 9,
+    "brave_web": 10,
     "cited source": 1,
     "earlier search result": 1
    },
-   "campaign_level_only_groups": 1,
-   "campaign_level_only_photos": 6,
+   "campaign_level_only_groups": 3,
+   "campaign_level_only_photos": 15,
    "paid_requests": {},
    "cached_responses": 136,
    "spent": 0.0
   },
   "google images (serpapi)": {
    "groups": 50,
-   "groups_with_photos": 14,
-   "photos": 82,
-   "photos_attributed_to_a_model": 19,
+   "groups_with_photos": 13,
+   "photos": 74,
+   "photos_attributed_to_a_model": 1,
    "failures": {
     "unverified": 16,
     "inaccessible source": 12,
     "no relevant search results": 4,
     "not searched": 3,
-    "extraction failed": 1
+    "extraction failed": 2
    },
    "failure_details": {
     "inaccessible source: never": 11,
@@ -57,45 +57,22 @@
     "extraction failed: no campaign image found in the verified article": 1,
     "unverified: label not named in the article": 1,
     "unverified: article is about FW 2010": 1,
+    "extraction failed: rejected in an earlier review (1)": 1,
     "inaccessible source: blocked": 1
    },
    "found_via": {
-    "serpapi_google_images": 14
+    "serpapi_google_images": 13
    },
    "campaign_level_only_groups": 0,
    "campaign_level_only_photos": 0,
-   "paid_requests": {
-    "serpapi_google_images": 12
-   },
-   "cached_responses": 44,
-   "spent": 0.3,
-   "plan": "SerpApi starter",
-   "value_per_search_usd": 0.025,
-   "account_before": {
-    "plan_id": "starter_v4",
-    "plan_name": "Starter Plan",
-    "searches_per_month": 1000,
-    "plan_searches_left": 926,
-    "extra_credits": 0,
-    "total_searches_left": 926,
-    "account_rate_limit_per_hour": 200,
-    "this_hour_searches": 52,
-    "last_hour_searches": 0
-   },
-   "requests_sent": {
-    "serpapi_google_images": 12
-   },
-   "account_after": {
-    "plan_id": "starter_v4",
-    "plan_name": "Starter Plan",
-    "searches_per_month": 1000,
-    "plan_searches_left": 921,
-    "extra_credits": 0,
-    "total_searches_left": 921,
-    "account_rate_limit_per_hour": 200,
-    "this_hour_searches": 52,
-    "last_hour_searches": 0
-   }
+   "paid_requests": {},
+   "cached_responses": 50,
+   "spent": 0.0,
+   "plan": "SerpApi free",
+   "value_per_search_usd": 0.0,
+   "account_before": null,
+   "requests_sent": {},
+   "account_after": null
   }
  },
  "already_paid_before_this_run": 1.445,
