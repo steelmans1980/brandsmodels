@@ -1,0 +1,255 @@
+{
+ "campaigns": 100,
+ "verified_galleries": 83,
+ "galleries_by_tier": {
+  "1": 32,
+  "2": 51
+ },
+ "galleries_with_no_identified_model": 67,
+ "photos_after_review": 569,
+ "new_photos": 394,
+ "model_attributed_photos": {
+  "automated (caption/alt)": 24,
+  "human review": 0
+ },
+ "model_credits_newly_illustrated": 18,
+ "credited_models_newly_illustrated": 18,
+ "cost": {
+  "serpapi_searches_billed": 68,
+  "serpapi_http_requests": 83,
+  "serpapi_plan_value_usd": 1.7,
+  "brave_requests": 18,
+  "brave_usd": 0.09,
+  "total_usd": 1.79,
+  "per_gallery": 0.0216,
+  "per_newly_illustrated_model_credit": 0.0994
+ },
+ "attributed": [
+  {
+   "campaign": "Tom Ford Fall 2026 campaign",
+   "models": [
+    "Liu Wen",
+    "Mila Van Eeten"
+   ],
+   "caption": "Liu Wen, Paolo Grebic, Scott Barnhill, Mila Van Eeten, and Benjamin Orlando pose on a low platform in pinstripe suits, leather gloves, and sunglasses for Tom Ford's fall-winter 2026 campaign Liu Wen, Paolo Grebic, Scott Barnhill, Mila Van Eeten, and Benjamin Orlando star in the Tom Ford fall-winter ",
+   "page": "https://www.thefashionisto.com/story/tom-ford-fall-2026-campaign/",
+   "file": "pipeline/candidates/photos/961e75da79ce7660.jpg"
+  },
+  {
+   "campaign": "Kate Spade New York Fall 2026 campaign",
+   "models": [
+    "Tyla"
+   ],
+   "caption": "Tyla, Kate Spade New York, Fashion, campaigns, culture, celebrity, Fall 2026, Winter 2026 Courtesy of Kate Spade New York",
+   "page": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns",
+   "file": "pipeline/candidates/photos/54a01c35366cf33b.jpg"
+  },
+  {
+   "campaign": "Alo Fall 2026 campaign",
+   "models": [
+    "Kylie Jenner"
+   ],
+   "caption": "Kylie Jenner, Alo, Fashion, campaigns, culture, celebrity, Fall 2026, Winter 2026 Mert & Marcus/Courtesy of Alo",
+   "page": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns",
+   "file": "pipeline/candidates/photos/aaa0b0aff24a187e.jpg"
+  },
+  {
+   "campaign": "Tommy Hilfiger Spring 2024 campaign",
+   "models": [
+    "Kendall Jenner"
+   ],
+   "caption": "Kendall Jenner Tommy Hilfiger Spring 2024 Ad Campaign Kendall Jenner appears relaxed in Tommy Hilfiger’s spring 2024 advertising campaign. Photo: Renell Medrano",
+   "page": "https://www.fashiongonerogue.com/kendall-jenner-tommy-hilfiger-spring-2024/",
+   "file": "pipeline/candidates/photos/50c6d54c6541f2bc.jpg"
+  },
+  {
+   "campaign": "Tommy Hilfiger Spring 2024 campaign",
+   "models": [
+    "Kendall Jenner"
+   ],
+   "caption": "Kendall Jenner radiates chic vibes, leaning on a classic car, adorned in a beige trench coat for Tommy Hilfiger spring 2024. Kendall Jenner radiates chic vibes, leaning on a classic car adorned in a beige trench coat for Tommy Hilfiger spring 2024. Photo: Renell Medrano",
+   "page": "https://www.fashiongonerogue.com/kendall-jenner-tommy-hilfiger-spring-2024/",
+   "file": "pipeline/candidates/photos/b2f5bea55a44aa36.jpg"
+  },
+  {
+   "campaign": "Tommy Hilfiger Spring 2024 campaign",
+   "models": [
+    "Kendall Jenner"
+   ],
+   "caption": "Kendall Jenner sports a playful Tommy Hilfiger polo, embracing the fresh spirit of spring 2024. Kendall Jenner sports a playful Tommy Hilfiger polo, embracing the fresh spirit of spring 2024. Photo: Renell Medrano",
+   "page": "https://www.fashiongonerogue.com/kendall-jenner-tommy-hilfiger-spring-2024/",
+   "file": "pipeline/candidates/photos/55d0fef6a08def18.jpg"
+  },
+  {
+   "campaign": "Tommy Hilfiger Spring 2024 campaign",
+   "models": [
+    "Kendall Jenner"
+   ],
+   "caption": "Basking in sunlight, Kendall Jenner exemplifies casual elegance in a Tommy Hilfiger striped top for spring 2024. Basking in sunlight, Kendall Jenner exemplifies casual elegance in a Tommy Hilfiger striped top for spring 2024. Photo: Renell Medrano",
+   "page": "https://www.fashiongonerogue.com/kendall-jenner-tommy-hilfiger-spring-2024/",
+   "file": "pipeline/candidates/photos/df511eca5a62432b.jpg"
+  },
+  {
+   "campaign": "Tommy Hilfiger Spring 2024 campaign",
+   "models": [
+    "Kendall Jenner"
+   ],
+   "caption": "Joyful spring 2024 moments with Kendall Jenner and friends Ebony Riley, Fai Khadra, Travis Bennett, Devon Lee Carlson, and Hannah Logan in Tommy Hilfiger. Joyful spring 2024 moments with Kendall Jenner and friends Ebony Riley, Fai Khadra, Travis Bennett, Devon Lee Carlson, and Hannah Logan in Tommy ",
+   "page": "https://www.fashiongonerogue.com/kendall-jenner-tommy-hilfiger-spring-2024/",
+   "file": "pipeline/candidates/photos/fefa32a159422502.jpg"
+  },
+  {
+   "campaign": "Fendi Fall/Winter 2026 campaign",
+   "models": [
+    "Yara Shahidi"
+   ],
+   "caption": "Yara Shahidi fronts the Fendi My Peekaboo fall-winter 2026 campaign. Yara Shahidi fronts the Fendi My Peekaboo fall-winter 2026 campaign. Photo: Laura Sciacovelli / Fendi",
+   "page": "https://www.fashiongonerogue.com/story/fendi-my-peekaboo-fall-2026-campaign/",
+   "file": "pipeline/candidates/photos/f90e18911e68e5d0.jpg"
+  },
+  {
+   "campaign": "H&M Summer 2024 campaign",
+   "models": [
+    "Devyn Garcia"
+   ],
+   "caption": "Devyn Garcia and Anok Yai embrace vibrant prints for H&M's summer 2024 ad. Devyn Garcia and Anok Yai embrace vibrant prints for H&M’s summer 2024 ad. Photo: Rafael Pavarotti",
+   "page": "https://www.fashiongonerogue.com/hm-summer-2024-campaign/",
+   "file": "pipeline/candidates/photos/68ef2296696f0075.jpg"
+  },
+  {
+   "campaign": "Tommy Hilfiger Fall 2026 campaign",
+   "models": [
+    "Gigi Hadid"
+   ],
+   "caption": "Tommy Hilfiger, Travis Kelce, Gigi Hadid, campaigns, fashion, culture, celebrity, Fall 2026, Winter ... Lachlan Bailey/Courtesy of Tommy Hilfiger",
+   "page": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns",
+   "file": "pipeline/candidates/photos/e2e824290f6f044a.jpg"
+  },
+  {
+   "campaign": "Stella McCartney Fall 2008 campaign",
+   "models": [
+    "Frankie Rayder"
+   ],
+   "caption": "Kate Moss and Frankie Rayder for Stella McCartney Fall 2008 Campaign by Inez & Vinoodh Kate Moss and Frankie Rayder for Stella McCartney Fall 2008 Campaign by Inez & Vinoodh",
+   "page": "https://www.fashiongonerogue.com/kate-moss-stella-mccartney-ads-through-years/",
+   "file": "pipeline/candidates/photos/55bbe830fc1356dc.jpg"
+  },
+  {
+   "campaign": "Alo Spring 2024 campaign",
+   "models": [
+    "Jisoo"
+   ],
+   "caption": "Jisoo Models Alo Spring 2024 Collection",
+   "page": "https://www.designscene.net/2024/01/blackpink-jisoo-alo-spring-2024.html",
+   "file": "pipeline/candidates/photos/c5b88561801b8289.jpg"
+  },
+  {
+   "campaign": "Saint Laurent Fall 2026 campaign",
+   "models": [
+    "Rosé"
+   ],
+   "caption": "Rosé poses in the Saint Laurent fall 2026 campaign. Rosé poses in the Saint Laurent fall 2026 campaign. Photo: Talia Chetrit / Saint Laurent",
+   "page": "https://www.fashiongonerogue.com/story/rose-saint-laurent-fall-2026/",
+   "file": "pipeline/candidates/photos/e94896031cc89f2b.jpg"
+  },
+  {
+   "campaign": "Hunter Fall/Winter 2026 campaign",
+   "models": [
+    "Kate Moss"
+   ],
+   "caption": "Kate Moss for Hunter",
+   "page": "https://us.fashionnetwork.com/news/Kate-moss-fronts-hunter-s-aw26-anniversary-campaign,1870293.html",
+   "file": "pipeline/candidates/photos/ef6da226c139b59e.jpg"
+  },
+  {
+   "campaign": "Pinko Always Pazzesco Fall/Winter 2024 campaign",
+   "models": [
+    "Mariacarla Boscono"
+   ],
+   "caption": "Mariacarla Boscono Pinko Fall 2024 Ad Campaign Mariacarla Boscono stars in Pinko’s fall-winter 2024 campaign. Photo: Pablo Di Prima / Pinko",
+   "page": "https://www.fashiongonerogue.com/pinko-fall-2024-campaign/",
+   "file": "pipeline/candidates/photos/5630d73ed3f424ae.jpg"
+  },
+  {
+   "campaign": "Pinko Always Pazzesco Fall/Winter 2024 campaign",
+   "models": [
+    "Mariacarla Boscono"
+   ],
+   "caption": "Posing with an oversized Love bag, Mariacarla Boscono fronts Pinko's fall 2024 ad. Posing with an oversized Love bag, Mariacarla Boscono fronts Pinko’s fall 2024 ad. Photo: Pablo Di Prima / Pinko",
+   "page": "https://www.fashiongonerogue.com/pinko-fall-2024-campaign/",
+   "file": "pipeline/candidates/photos/90c86cc475c40b2a.jpg"
+  },
+  {
+   "campaign": "Pinko Always Pazzesco Fall/Winter 2024 campaign",
+   "models": [
+    "Mariacarla Boscono"
+   ],
+   "caption": "Mariacarla Boscono rocks a leather jacket for Pinko's fall-winter 2024 campaign. Mariacarla Boscono rocks a leather jacket for Pinko’s fall-winter 2024 campaign. Photo: Pablo Di Prima / Pinko",
+   "page": "https://www.fashiongonerogue.com/pinko-fall-2024-campaign/",
+   "file": "pipeline/candidates/photos/a73e12f545156999.jpg"
+  },
+  {
+   "campaign": "Mango Summer 2024 campaign",
+   "models": [
+    "Ella McCutcheon"
+   ],
+   "caption": "Ella Mccutcheon wears an orange openwork knit dress from Mango's summer arrivals. Ella Mccutcheon wears an orange openwork knit dress from Mango’s summer arrivals. Photo: Casper Kofi",
+   "page": "https://www.fashiongonerogue.com/mango-summer-colors-2024-collection/",
+   "file": "pipeline/candidates/photos/19829f24e10aa9be.jpg"
+  },
+  {
+   "campaign": "Calvin Klein Fall 2026 campaign",
+   "models": [
+    "Sadie Sink"
+   ],
+   "caption": "Calvin Klein, Sadie Sink, fashion, campaigns, Fall 2026 Aidan Zamiri/Courtesy of Calvin Klein",
+   "page": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns",
+   "file": "pipeline/candidates/photos/7e9b819561717f92.jpg"
+  },
+  {
+   "campaign": "Calvin Klein Fall 2026 campaign",
+   "models": [
+    "Sadie Sink"
+   ],
+   "caption": "Sadie Sink Calvin Klein Fall 2026 Courtesy of Calvin Klein",
+   "page": "https://www.designscene.net/2026/09/sadie-sink-calvin-klein-fall-2026.html",
+   "file": "pipeline/candidates/photos/4a7d30888f5cf65d.jpg"
+  },
+  {
+   "campaign": "Marc Jacobs Fall 2026 campaign",
+   "models": [
+    "Jemima Kirke",
+    "Rowan Blanchard"
+   ],
+   "caption": "Marc Jacobs, Jemima Kirke, Rowan Blanchard, fashion, campaigns, culture, celebrity, Fall 2026, Winte... Courtesy of Marc Jacobs",
+   "page": "https://www.thezoereport.com/fashion/fall-2026-fashion-campaigns",
+   "file": "pipeline/candidates/photos/74b0842d1159cceb.jpg"
+  },
+  {
+   "campaign": "Dolce & Gabbana Spring/Summer 2025 campaign",
+   "models": [
+    "Sora Choi"
+   ],
+   "caption": "Sora Choi, Rosalieke Fuchs, and Sacha Quenby pose in Dolce & Gabbana's spring-summer 2025 campaign. Sora Choi, Rosalieke Fuchs, and Sacha Quenby pose in Dolce & Gabbana’s spring-summer 2025 campaign. Photo: Steven Meisel / Dolce & Gabbana",
+   "page": "https://www.fashiongonerogue.com/dolce-gabbana-spring-2025-campaign/",
+   "file": "pipeline/candidates/photos/c88fb47f0732956f.jpg"
+  },
+  {
+   "campaign": "Dolce & Gabbana Spring/Summer 2025 campaign",
+   "models": [
+    "Sora Choi"
+   ],
+   "caption": "Sora Choi lounges in Dolce & Gabbana's spring-summer 2025 campaign. Sora Choi lounges in Dolce & Gabbana’s spring-summer 2025 campaign. Photo: Steven Meisel / Dolce & Gabbana",
+   "page": "https://www.fashiongonerogue.com/dolce-gabbana-spring-2025-campaign/",
+   "file": "pipeline/candidates/photos/5aa0e07948d3f3bc.jpg"
+  }
+ ],
+ "name_collision_removed": [
+  {
+   "campaign": "Alexandra Golovanoff Fall 2026 campaign",
+   "model": "Alexandra Golovanoff",
+   "caption": "Alexandra Golovanoff Fall 2026 Ad Campaign",
+   "why": "the caption names the label and campaign, not the person pictured"
+  }
+ ]
+}

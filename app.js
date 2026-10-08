@@ -79,13 +79,16 @@
   // ---------- photos ----------
   // Photos of one person in a campaign: the ones tagged with her first, then untagged group shots.
   // With no person given, every photo of the campaign.
+  // Photos of one person in a campaign: only the ones tagged with her. Campaign photos whose models are
+  // not identified individually never stand in for a particular model.
   function photosOf(c, person) {
     if (!person) return c.images;
-    const mine = c.images.filter(i => i.talent.includes(person));
-    const group = c.images.filter(i => !i.talent.length);
-    return mine.length || group.length ? [...mine, ...group] : [];
+    return c.images.filter(i => i.talent.includes(person));
   }
-  const altText = (c, img) => `${(img.talent.length ? img.talent : c.talent).join(', ')} for ${c.brand}, ${label(c)}`;
+  // The campaign's other photos on her page: photos attributed to other people, and photos whose models are not
+  // identified individually. The viewer shows each photo's own attribution.
+  const campaignOnly = (c, person) => c.images.filter(i => !i.talent.includes(person));
+  const altText = (c, img) => img.talent.length ? `${img.talent.join(', ')} for ${c.brand}, ${label(c)}` : `${c.brand}, ${label(c)}: campaign photo`;
   // On a model page only her own (or group) photos qualify, so another model's shot never stands in for her.
   const coverOf = (c, person) => person ? photosOf(c, person)[0] : c.images[0];
 
@@ -135,9 +138,13 @@
     const imgs = photosOf(c, person);
     if (!imgs.length) return '';
     const shown = imgs.slice(0, max), more = imgs.length - shown.length;
-    // On a model's page, a photo not tagged with her from a campaign with several models may show the others.
-    const group = person && c.talent.length > 1 && shown.every(i => !i.talent.includes(person));
-    return `<div class="gallery">${shown.map((img, n) => `<button class="shot" type="button" aria-label="Open photo: ${esc(altText(c, img))}">${photoTag(c, img)}${n === shown.length - 1 && more > 0 ? `<span class="more">+${more}</span>` : ''}</button>`).join('')}</div>${group ? `<p class="hint group-note">Campaign photo — it may show other models from this campaign rather than ${esc(person)}.</p>` : ''}`;
+    return `<div class="gallery">${shown.map((img, n) => `<button class="shot" type="button" aria-label="Open photo: ${esc(altText(c, img))}">${photoTag(c, img)}${n === shown.length - 1 && more > 0 ? `<span class="more">+${more}</span>` : ''}</button>`).join('')}</div>`;
+  }
+  // On a model's page: a link to the campaign's other photos (none of them identified as her).
+  function campaignLink(c, person) {
+    const rest = person ? campaignOnly(c, person) : [];
+    if (!rest.length) return '';
+    return `<p class="hint group-note"><button type="button" class="link-btn" data-campaign-gallery="${c.id}">Other campaign photos (${rest.length})</button> — not identified as ${esc(person)}; each photo shows who is identified in it.</p>`;
   }
 
   const sourceLinks = srcs => srcs.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.name)} ↗</a>`).join(' · ');
@@ -170,7 +177,7 @@
         <div class="season">${esc(seasonOf(c))}${kindBadge(c)}</div>
         <h3>${person ? brandLink(c.brand) : list(c.talent)}</h3>
         ${others.length ? `<p>With ${list(others)}</p>` : ''}
-        ${credits(c)}${sources(c)}
+        ${credits(c)}${sources(c)}${campaignLink(c, person)}
       </div>
       ${pics}
     </div>`;
@@ -197,7 +204,7 @@
         <div>
           <p class="hint">${person ? 'Labels she worked for' : 'Models who worked for this label'} where the source gives no year.</p>
           <ul class="undated-list">${rows.map(c => `
-            <li>${c.images && c.images.length ? `<span class="row-pic u-pic">${photoTag(c, (person && coverOf(c, person)) || c.images[0])}</span>` : ''}<span class="who">${person ? brandLink(c.brand) : list(c.talent)}</span>${kindBadge(c)}
+            <li>${(person ? coverOf(c, person) : c.images[0]) ? `<span class="row-pic u-pic" title="Documented photo; the source gives no date">${photoTag(c, person ? coverOf(c, person) : c.images[0])}</span>` : ''}<span class="who">${person ? brandLink(c.brand) : list(c.talent)}</span>${kindBadge(c)}
               ${c.title ? `<em>${esc(c.title)}</em>` : ''}${c.note ? `<span class="note">${esc(c.note)}</span>` : ''}
               <span class="src">${sourceLinks(c.sources)}</span></li>`).join('')}
           </ul>
@@ -486,11 +493,13 @@
       box.querySelectorAll('.lb-nav').forEach(b => { b.hidden = boxSet.length < 2; });
       return;
     }
-    const who = img.talent.length ? img.talent : c.talent;
+    // An untagged photo belongs to the campaign, not to any one of its models.
+    const who = img.talent.length ? img.talent : null;
     box.querySelector('.lb-img').innerHTML = `<img src="${esc(img.src)}" alt="${esc(altText(c, img))}">`;
     box.querySelector('.lb-caption').innerHTML = `
       <div class="eyebrow">${brandLink(c.brand)} · ${esc(label(c))}</div>
-      <h3>${list(who)}</h3>
+      ${who ? `<p class="lb-who">Identified in this photo</p><h3>${list(who)}</h3>`
+            : `<h3>Models not identified individually</h3><p>Credited for the campaign: ${list(c.talent)}</p>`}
       ${c.photographer ? `<p>Photography: ${esc(c.photographer)}</p>` : ''}
       ${img.from ? `<p class="sources">Photo: <a href="${esc(img.from)}" target="_blank" rel="noopener noreferrer">${esc(img.credit || 'source')} ↗</a> · © its owner</p>` : ''}
       ${sources(c)}
@@ -540,6 +549,17 @@
     const shot = e.target.closest('.shot, .hero-image, .entry-thumb, .row-pic, .card-img');
     const img = shot && shot.querySelector('img[data-c]');
     if (img) { e.preventDefault(); openPhoto(img); return; }
+    const cg = e.target.closest('[data-campaign-gallery]');
+    if (cg) {
+      const c = db.campaigns.find(x => x.id === Number(cg.dataset.campaignGallery));
+      const person = decodeURIComponent((location.hash.match(/^#\/model\/(.+)$/) || [])[1] || '');
+      const m = person && db.models.get(person);
+      boxSet = (m ? campaignOnly(c, m.name) : c.images).map(i => ({ c, img: i }));
+      boxAt = 0;
+      showPhoto();
+      if (!box.open) box.showModal();
+      return;
+    }
     const pimg = shot && shot.querySelector('img[data-m]');
     if (pimg) { e.preventDefault(); openPress(pimg); return; }
     const a = e.target.closest('[data-jump]');

@@ -1,0 +1,110 @@
+{
+ "campaigns": 50,
+ "arms": {
+  "brave": {
+   "metrics": {
+    "campaigns with a verified gallery": 12,
+    "credited models shown in a verified photo": 1,
+    "photos": 61,
+    "photos tagged to a named model": 1,
+    "campaign confirmed, model not named (not applied)": 3
+   },
+   "relevant but not retrievable": {
+    "page host never fetched (social/stock/resale)": 271,
+    "page disallows Claude (robots.txt)": 191,
+    "image host disallows Claude": 2
+   },
+   "examples": {
+    "page host never fetched (social/stock/resale)": [
+     "Victoria's Secret 1997 campaign: https://en.wikipedia.org/wiki/Victoria's_Secret",
+     "Victoria's Secret 1997 campaign: https://en.wikipedia.org/wiki/Victoria%27s_Secret_Fashion_Show",
+     "Victoria's Secret 1997 campaign: https://www.gettyimages.com/photos/1997-victorias-secret-fashion-show",
+     "Victoria's Secret 1997 campaign: https://gettyimages.com/photos/1997-victorias-secret-fashion-show-photos"
+    ],
+    "page disallows Claude (robots.txt)": [
+     "Victoria's Secret 1997 campaign: https://www.businessinsider.com/victorias-secret-rise-and-fall-history-2019-5",
+     "Victoria's Secret 1997 campaign: https://www.firstview.com/collection_images.php?id=54879",
+     "Victoria's Secret 1997 campaign: https://www.vogue.co.uk/gallery/victorias-secret-show-archive-past-catwalks",
+     "Victoria's Secret 1997 campaign: https://msn.com/en-us/lifestyle/lifestyle-buzz/helena-christensen-fronts-victoria-s-secret-campaign-"
+    ],
+    "image host disallows Claude": [
+     "Dior Fall 2021 campaign: https://vogue.sg/dior-fall-2021-jisoo-blackpink-k-pop-style/"
+    ]
+   },
+   "failures": {
+    "unverified": 30,
+    "extraction failed": 8
+   }
+  },
+  "google": {
+   "metrics": {
+    "campaigns with a verified gallery": 13,
+    "credited models shown in a verified photo": 1,
+    "photos": 74,
+    "photos tagged to a named model": 1
+   },
+   "relevant but not retrievable": {
+    "page host never fetched (social/stock/resale)": 113,
+    "page disallows Claude (robots.txt)": 36,
+    "image host disallows Claude": 2
+   },
+   "examples": {
+    "page host never fetched (social/stock/resale)": [
+     "Victoria's Secret 1997 campaign: https://pagesix.com/2020/12/03/helena-christensen-fronts-victorias-secret-campaign-24-years-after-ru",
+     "Victoria's Secret 1997 campaign: https://www.pinterest.com/pin/575616396118415109/",
+     "Victoria's Secret 1997 campaign: https://www.ebay.com/itm/334479344468",
+     "Victoria's Secret 1997 campaign: https://www.ebay.com/itm/365457350753"
+    ],
+    "page disallows Claude (robots.txt)": [
+     "Victoria's Secret 1997 campaign: https://www.worthpoint.com/worthopedia/1996-victorias-secret-catalog-helena-161005574",
+     "Oscar de la Renta 2007 campaign: https://www.vogue.com/fashion-shows/fall-2007-ready-to-wear/oscar-de-la-renta/slideshow/details",
+     "Versace 1992 campaign: https://www.flickr.com/photos/barbiescanner/27684126014",
+     "BCBG Max Azria 2007 campaign: https://www.vogue.com/fashion-shows/fall-2007-ready-to-wear/bcbg-max-azria"
+    ],
+    "image host disallows Claude": [
+     "Dior Fall 2021 campaign: https://vogue.sg/dior-fall-2021-jisoo-blackpink-k-pop-style/"
+    ]
+   },
+   "failures": {
+    "unverified": 16,
+    "inaccessible source": 12,
+    "no relevant search results": 4,
+    "not searched": 3,
+    "extraction failed": 2
+   }
+  }
+ },
+ "google only": [
+  "Ralph Lauren Fall/Winter 2011 campaign",
+  "Armani 2016 campaign"
+ ],
+ "brave only": [
+  "Seafolly 2016 campaign"
+ ],
+ "both": [
+  "Gucci Fall/Winter 2021 campaign",
+  "Prada Spring 2013 campaign",
+  "Zara 2020 campaign",
+  "Philipp Plein 2010 campaign",
+  "Celine Winter 2026 campaign",
+  "Dior Fall 2021 campaign",
+  "Marc Jacobs 2016 campaign",
+  "Hugo Boss 2017 campaign",
+  "UGG 2024 campaign",
+  "Coach Fall/Winter 2016 campaign",
+  "Givenchy 2025 campaign"
+ ],
+ "combined: campaigns with a verified gallery": 14,
+ "valid dated campaigns (frozen date still supported)": 48,
+ "cost": {
+  "brave": {
+   "requests": 136,
+   "usd": 0.68
+  },
+  "google": {
+   "requests": {},
+   "usd": 0.0,
+   "plan": "SerpApi free"
+  }
+ }
+}

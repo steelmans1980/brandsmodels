@@ -1,0 +1,52 @@
+{
+ "groups": 100,
+ "groups_with_photos": 84,
+ "photos": 577,
+ "photos_attributed_to_a_model": 28,
+ "failures": {
+  "extraction failed": 12,
+  "unverified": 4
+ },
+ "failure_details": {
+  "extraction failed: no campaign image found in the verified article": 4,
+  "extraction failed: rejected in an earlier review (1)": 2,
+  "unverified: none of the credited models is named": 2,
+  "extraction failed: rejected in an earlier review (4)": 1,
+  "extraction failed: too small (200x200) (1)": 1,
+  "extraction failed: rejected in an earlier review (3)": 1,
+  "extraction failed: not an image (6), image host blocks Claude (3), too small (325x400) (2)": 1,
+  "extraction failed: too small (80x120) (192), rejected in an earlier review (4), too small (300x300) (1)": 1,
+  "extraction failed: image host never used (1), not an image (1)": 1,
+  "unverified: campaign title 'Craft your own story (global ambassador)' not on the page": 1,
+  "unverified: campaign title 'Stefano Pilati for Zara' not on the page": 1
+ },
+ "found_via": {
+  "cited source": 60,
+  "serpapi_google_images": 17,
+  "brave_web": 4,
+  "earlier search result": 2,
+  "brave_web + cast page": 1
+ },
+ "campaign_level_only_groups": 0,
+ "campaign_level_only_photos": 0,
+ "paid_requests": {},
+ "cached_responses": 80,
+ "spent": 0.0,
+ "serpapi": {
+  "searches_started (cap)": 0,
+  "cap": 0,
+  "http": {
+   "http_requests": 0,
+   "possibly_billable": 0,
+   "by_status": {}
+  },
+  "account_before": 853,
+  "account_after": 853,
+  "billed (account)": 0
+ },
+ "brave": {
+  "requests": 0,
+  "cap": 0,
+  "usd": 0.0
+ }
+}

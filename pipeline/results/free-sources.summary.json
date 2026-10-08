@@ -1,0 +1,38 @@
+{
+ "groups": 2000,
+ "groups_with_photos": 125,
+ "photos": 710,
+ "photos_attributed_to_a_model": 397,
+ "failures": {
+  "not searched": 851,
+  "inaccessible source": 648,
+  "unverified": 312,
+  "extraction failed": 64
+ },
+ "failure_details": {
+  "not searched": 851,
+  "inaccessible source: blocked": 472,
+  "unverified: label not named in the article": 164,
+  "inaccessible source: http 404": 91,
+  "unverified: no season/year stated": 48,
+  "inaccessible source: error": 35,
+  "extraction failed: no campaign image found in the verified article": 32,
+  "inaccessible source: http 402": 22,
+  "unverified: not about a campaign": 20,
+  "unverified: not about a runway": 15,
+  "unverified: listing, tag or profile page, not an article about the campaign": 15,
+  "extraction failed: rejected in an earlier review (1)": 13,
+  "unverified: none of the credited models is named": 12,
+  "unverified: issue year not confirmed (no year)": 8,
+  "inaccessible source: http 503": 8
+ },
+ "found_via": {
+  "earlier search result": 95,
+  "cited source": 30
+ },
+ "campaign_level_only_groups": 1,
+ "campaign_level_only_photos": 5,
+ "paid_requests": {},
+ "cached_responses": 0,
+ "spent": 0.0
+}
