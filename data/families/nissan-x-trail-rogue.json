@@ -714,7 +714,7 @@
             {
               "id": "r2c1",
               "topic": "other",
-              "text": "The first-generation Rogue continued alongside the second generation as the Rogue Select, offered only in S trim.",
+              "text": "The first-generation Rogue continued alongside the second generation as the Rogue Select.",
               "src": "wr",
               "quote": "The Select was a continuation of the first generation Rogue sold alongside an all-new Rogue that went on sale in 2013 as a 2014 model."
             }
@@ -1589,7 +1589,7 @@
         {
           "id": "c2",
           "topic": "design",
-          "text": "The squared-off lines of the previous X-Trail were replaced by a crossover-style design.",
+          "text": "The rugged, squared-off lines of the previous X-Trail were dropped for a new design.",
           "vs": "nissan-x-trail-rogue-t31",
           "src": "gx13",
           "quote": "In place of the rugged, squared off lines of the previous generation, new X-Trail has a premium and dynamic appearance."
@@ -1597,7 +1597,7 @@
         {
           "id": "c3",
           "topic": "weight",
-          "text": "A largely plastic tailgate saves 7 kg, despite a larger surface area than the previous X-Trail.",
+          "text": "A largely plastic tailgate saves 7 kg, part of weight savings made although the vehicle has a larger surface area.",
           "vs": "nissan-x-trail-rogue-t31",
           "src": "gx13",
           "quote": "This has been achieved on all counts by reducing weight wherever possible, even though new X-Trail has a larger surface area than the previous model. The tailgate, for example, is largely plastic, saving seven kilograms."
@@ -1613,7 +1613,7 @@
         {
           "id": "c5",
           "topic": "interior",
-          "text": "Three-row, seven-seat versions were added in Japan alongside the five-seat versions.",
+          "text": "Three-row, seven-seat versions were added alongside the two-row, five-seat versions.",
           "vs": "nissan-x-trail-rogue-t31",
           "src": "gj131024",
           "quote": "In addition to two-row five-passenger grades, three-row seven-passenger grades are newly added."
@@ -1659,7 +1659,7 @@
             {
               "id": "r1c2",
               "topic": "dimensions",
-              "text": "Boot volume rose by 15 litres to 565 litres (European figure).",
+              "text": "Boot volume rose by 15 litres to 565 litres.",
               "src": "dex",
               "quote": "Der Kofferraum hat nun ein Volumen von 565 Liter (+15 Liter)."
             },
@@ -2143,7 +2143,7 @@
         {
           "id": "c3",
           "topic": "powertrain",
-          "text": "In the Rogue the QR25DE was replaced by the direct-injected PR25DD, with 181 hp (+11 hp) and 181 lb-ft (+6 lb-ft).",
+          "text": "Output rose by 11 hp to 181 hp, and torque by 6 lb-ft to 181 lb-ft.",
           "vs": "nissan-x-trail-rogue-t32",
           "src": "r21",
           "quote": "Horsepower is rated at 181, an increase of 11 hp. Torque is increased by 6 lb.-ft. to 181 lb.-ft."
@@ -2159,7 +2159,7 @@
         {
           "id": "c5",
           "topic": "powertrain",
-          "text": "The e-POWER series hybrid was introduced, using the variable-compression VC-Turbo engine as a generator.",
+          "text": "A hybrid system whose petrol engine, the world's first mass-produced variable-compression-ratio engine, acts as a generator.",
           "vs": "nissan-x-trail-rogue-t32",
           "src": "gxt22",
           "quote": "The system’s gasoline engine, the world’s first mass-produced variable compression ratio engine, serves as a generator to produce electricity."
@@ -2175,7 +2175,7 @@
         {
           "id": "c7",
           "topic": "dimensions",
-          "text": "European luggage capacity rose by 20 litres to 585 litres with the third row folded.",
+          "text": "Luggage capacity rose by 20 litres to 585 litres.",
           "vs": "nissan-x-trail-rogue-t32",
           "src": "ie22",
           "quote": "a total capacity of 585 litres, an increase of 20 litres"
@@ -2205,7 +2205,7 @@
             {
               "id": "r1c2",
               "topic": "technology",
-              "text": "First Nissan with Google built-in (SL and Platinum).",
+              "text": "First Nissan with Google built-in.",
               "src": "r24",
               "quote": "Rogue is the first Nissan with Google built-in"
             },
@@ -2422,7 +2422,7 @@
         {
           "id": "c4",
           "topic": "technology",
-          "text": "ProPILOT Assist gained a new front radar, a front camera with a 20% wider field of view and updated software compared with the 2026 Rogue.",
+          "text": "The driver-assistance system gained a new front radar, a front camera with a 20% wider field of view and updated software, compared with the 2026 Rogue.",
           "vs": "nissan-x-trail-rogue-t33",
           "src": "rh27",
           "quote": "A new front radar sensor, a new front camera with a 20% wider field of view and updated software help the system operate more naturally across a wider range of driving situations, compared to the 2026 Rogue."

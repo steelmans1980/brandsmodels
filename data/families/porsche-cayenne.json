@@ -954,7 +954,7 @@
         {
           "id": "c5",
           "topic": "powertrain",
-          "text": "A hybrid (Cayenne S Hybrid) was offered, Porsche's first series-production hybrid.",
+          "text": "A full hybrid arrived in 2010, Porsche's first series-production hybrid.",
           "src": "p20",
           "quote": "The full hybrid drive finally came onto the market in 2010 with the second -generation Cayenne – as the first series-production hybrid vehicle from Porsche."
         },
@@ -997,7 +997,7 @@
             {
               "id": "r1c2",
               "topic": "powertrain",
-              "text": "The Cayenne S changed to a 3.6-litre V6 biturbo with 420 hp (309 kW), 20 hp/15 kW more than before.",
+              "text": "The biturbo V6 produces 420 hp (309 kW), 20 hp (15 kW) more than before.",
               "src": "p14",
               "quote": "The biturbo V6 develops a maximum power of 420 hp (309 kW) at 6,000 rpm – a gain of 20 hp/15 kW."
             },
@@ -1533,7 +1533,7 @@
             {
               "id": "r1c1",
               "topic": "interior",
-              "text": "Fully digital 12.6-inch curved instrument cluster.",
+              "text": "Fully digital 12.6-inch instrument cluster, a first for the Cayenne.",
               "src": "p23",
               "quote": "For the first time, the redesigned cockpit of the Cayenne includes a fully digital 12.6-inch instrument cluster"
             },
@@ -1554,7 +1554,7 @@
             {
               "id": "r1c4",
               "topic": "powertrain",
-              "text": "The Cayenne S switched from a V6 to a 4.0-litre V8 biturbo.",
+              "text": "The 4.0-litre V8 biturbo engine was extensively refined.",
               "src": "p23",
               "quote": "An extensive refinement of the four-litre V8 biturbo engine"
             },
@@ -1822,7 +1822,7 @@
         {
           "id": "c1",
           "topic": "powertrain",
-          "text": "Battery-electric only; it is offered alongside the combustion and plug-in hybrid Cayenne models.",
+          "text": "It complements the existing combustion-engined and plug-in hybrid Cayenne models.",
           "src": "pel",
           "quote": "complements the existing offering of combustion-engined and plug-in hybrid Cayenne models"
         },

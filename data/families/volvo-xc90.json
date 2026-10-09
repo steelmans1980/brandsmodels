@@ -640,7 +640,7 @@
             {
               "id": "r1c2",
               "topic": "powertrain",
-              "text": "In the US the 3.2-litre six-cylinder replaced the 2.5-litre five-cylinder in the base model.",
+              "text": "In the US, a 175 kW 3.2-litre straight-six replaced the 155 kW straight-five in the base model.",
               "src": "wp",
               "quote": "The 175 kW (235 hp) 3.2 L SI6 straight-6 engine replaced the 155 kW (208 hp) B524T2 straight-5 in the base model for the US market."
             }
@@ -1048,14 +1048,14 @@
         {
           "id": "c2",
           "topic": "powertrain",
-          "text": "All engines are two-litre, four-cylinder Drive-E units.",
+          "text": "Offered with a range of two-litre, four-cylinder Drive-E engines.",
           "src": "vc-gen2-premiere",
           "quote": "The new XC90 offers a range of two-litre, four-cylinder Drive-E powertrains"
         },
         {
           "id": "c3",
           "topic": "powertrain",
-          "text": "A plug-in hybrid (T8 Twin Engine) was offered, with about 40 km of electric range.",
+          "text": "Can drive on electric power alone for about 40 km.",
           "src": "vc-gen2-powertrains",
           "quote": "the driver can switch to quiet and emission-free city driving on pure electric power where the range will be around 40 kilometres"
         },
@@ -1076,14 +1076,14 @@
         {
           "id": "c6",
           "topic": "interior",
-          "text": "Tablet-like touch screen control console replacing most buttons.",
+          "text": "Tablet-like touchscreen control console at the heart of a new in-car control system.",
           "src": "vc-gen2-premiere",
           "quote": "The most striking feature is a tablet-like touch screen control console, which forms the heart of an all-new in-car control system."
         },
         {
           "id": "c7",
           "topic": "design",
-          "text": "First Volvo with the new, more prominent iron mark and T-shaped 'Thor's Hammer' daytime running lights.",
+          "text": "First Volvo with the company's new, more prominent iron mark logo.",
           "src": "vc-gen2-premiere",
           "quote": "the new XC90 will be the first of its cars to carry the company’s new more prominent iron mark"
         }
@@ -1116,7 +1116,7 @@
             {
               "id": "r1c1",
               "topic": "powertrain",
-              "text": "'B' mild-hybrid powertrains with kinetic energy recovery braking were added.",
+              "text": "Kinetic energy recovery braking combined with the combustion engines, sold under a new 'B' badge.",
               "src": "vc-2019",
               "quote": "The refreshed XC90 for the first time offers customers Volvo’s advanced kinetic energy recovery braking system, which is coupled with its existing internal combustion engines to create a new integrated electrified powertrain, under its new ‘B’ badge."
             },
@@ -1181,21 +1181,21 @@
             {
               "id": "r2c2",
               "topic": "technology",
-              "text": "Larger, higher-resolution central touchscreen (11.2-inch) with the infotainment system from the EX90 and EX30.",
+              "text": "Larger, higher-resolution central touchscreen.",
               "src": "vc-2024",
               "quote": "A larger central touchscreen with higher resolution improves the user experience"
             },
             {
               "id": "r2c3",
               "topic": "interior",
-              "text": "More horizontal dashboard with new vertical air vents; extra storage in the centre console.",
+              "text": "More horizontal dashboard with new vertical air vents and recycled-material decorative panels.",
               "src": "vc-2024",
               "quote": "The dashboard has a more horizontal shape than before, incorporates decorative panels made from premium recycled materials for a more textured finish, and is split by new vertical air vents."
             },
             {
               "id": "r2c4",
               "topic": "chassis",
-              "text": "Standard dampers that adapt mechanically to road conditions; optional air suspension can lower by 20 mm or raise by 40 mm.",
+              "text": "Each damper can adapt mechanically to road conditions.",
               "src": "vc-2024",
               "quote": "Each individual damper is now able to adapt mechanically to current road conditions"
             },
@@ -1227,7 +1227,7 @@
             {
               "id": "r3c1",
               "topic": "powertrain",
-              "text": "Long-range plug-in hybrid with up to 99 miles of electric range (preliminary WLTP), from a larger floor-integrated battery and a more powerful electric motor.",
+              "text": "Electric range of up to 99 miles.",
               "src": "vc-2026-phev",
               "quote": "with the XC90 providing up to 99 miles"
             },

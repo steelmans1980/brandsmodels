@@ -628,7 +628,7 @@
         {
           "id": "c4",
           "topic": "powertrain",
-          "text": "A V6 petrol engine became available.",
+          "text": "A 173 PS V6 engine was available.",
           "src": "wp",
           "quote": "buyers of the second-generation model were likely to favor the available 173 PS (127 kW) V6"
         }
@@ -957,14 +957,14 @@
         {
           "id": "c1",
           "topic": "design",
-          "text": "Introduced Kia's Tiger Nose grille, designed under Peter Schreyer.",
+          "text": "Featured Kia's Tiger Nose grille, created under Chief Design Officer Peter Schreyer.",
           "src": "ks",
           "quote": "Under the direction of then-Chief Design Officer Peter Schreyer, the iconic Tiger Nose grille"
         },
         {
           "id": "c2",
           "topic": "other",
-          "text": "Marketed as the Sportage R in some markets, with R standing for Revolution.",
+          "text": "Redefined as the Sportage R, with R standing for Revolution.",
           "src": "ks",
           "quote": "The third generation was redefined as the Sportage R — with the “R” standing for Revolution"
         },
@@ -1372,7 +1372,7 @@
             {
               "id": "r1c2",
               "topic": "powertrain",
-              "text": "Kia's first 48V diesel mild-hybrid (EcoDynamics+, 2.0-litre, 185 PS) was added.",
+              "text": "New EcoDynamics+ 48V diesel mild-hybrid powertrain, the first launched under Kia's global electrification strategy.",
               "src": "ke1",
               "quote": "The car’s advanced new EcoDynamics+ 48V diesel mild-hybrid powertrain is the first to be launched as part of Kia’s global powertrain electrification strategy."
             },

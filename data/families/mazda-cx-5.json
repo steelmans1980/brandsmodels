@@ -481,7 +481,7 @@
       {
        "id": "r1c1",
        "topic": "technology",
-       "text": "First Mazda models (with the Mazda6) to adopt Adaptive LED Headlights.",
+       "text": "Among the first Mazda models to adopt new-generation Adaptive LED Headlights.",
        "src": "mz141120",
        "quote": "they become the first Mazda models to adopt new-generation Adaptive LED Headlights (ALH)"
       },
@@ -495,7 +495,7 @@
       {
        "id": "r1c3",
        "topic": "design",
-       "text": "New grille, upgraded interior and an electric parking brake (European models).",
+       "text": "From February 2015: new grille, upgraded interior and an electric parking brake.",
        "src": "dc",
        "quote": "Ab Februar 2015 bekam der CX-5 ein Facelift mit neuem Kühlergrill, einen aufgewerteten Innenraum, eine elektrische Parkbremse"
       },
@@ -924,7 +924,7 @@
     {
      "id": "c5",
      "topic": "interior",
-     "text": "Shift lever placed 60 mm higher; rear seatback recline increased by 2 degrees.",
+     "text": "Shift lever placed 60 mm higher.",
      "src": "mz161215",
      "quote": "The shift lever is positioned 60 mm higher than in the previous model"
     },
@@ -1245,7 +1245,7 @@
     {
      "id": "c3",
      "topic": "powertrain",
-     "text": "The 2.0 petrol, turbo petrol and diesel engines were dropped; a single 2.5-litre petrol remains.",
+     "text": "The 2.0 petrol, turbocharged and diesel engines are no longer offered.",
      "src": "wc",
      "quote": "Unlike the previous model, the third-generation CX-5 is not available with the 2.0 Skyactiv-G petrol, turbocharged engines and diesel engines."
     },

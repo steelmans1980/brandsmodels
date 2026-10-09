@@ -464,7 +464,7 @@
             {
               "id": "r1c4",
               "topic": "interior",
-              "text": "Interior detail changes including restyled steering wheel and a digital odometer.",
+              "text": "Interior detail changes including different seat colours and a restyled steering wheel.",
               "src": "wp",
               "quote": "The interior has subtle changes such as different coloured seats, restyled steering wheel"
             }
@@ -734,7 +734,7 @@
         {
           "id": "c1",
           "topic": "dimensions",
-          "text": "Wheelbases extended by 80 mm; the three- and five-door are 45 mm and 30 mm longer (Japanese figures).",
+          "text": "Wheelbases extended by 80 mm; the three- and five-door are 45 mm and 30 mm longer.",
           "src": "tg00",
           "quote": "Although the three-and five-door models are only 45mm and 30mm longer than their predecessors, respectively, their wheelbases have been extended by 80mm"
         },
@@ -748,7 +748,7 @@
         {
           "id": "c3",
           "topic": "drivetrain",
-          "text": "All-wheel drive gained a limited-slip centre differential, with an optional Torsen rear LSD (UK).",
+          "text": "All-wheel drive gained a limited-slip centre differential, with an optional Torsen limited-slip rear differential.",
           "src": "uk20",
           "quote": "The AWD system adopts a limited-slip centre differential, with a Torsen LSD provided as an option on the rear axle."
         },
@@ -762,14 +762,14 @@
         {
           "id": "c5",
           "topic": "safety-equipment",
-          "text": "ABS with EBD and brake assist standard on all Japanese models.",
+          "text": "ABS with electronic brake-force distribution and brake assist standard on all models.",
           "src": "tg00",
           "quote": "ABS, with EBD (Electronic Brake Force Distribution), and a brake assist function are standard on all models"
         },
         {
           "id": "c6",
           "topic": "drivetrain",
-          "text": "First RAV4 offered without all-wheel drive (1.8-litre, front-wheel drive).",
+          "text": "First RAV4 offered without all-wheel drive.",
           "src": "wpde",
           "quote": "Erstmals erschien auch ein RAV4-Modell ohne Allradantrieb."
         }
@@ -1201,14 +1201,14 @@
         {
           "id": "c1",
           "topic": "dimensions",
-          "text": "Japanese short-wheelbase model is 180 mm longer, 80 mm wider and has a 70 mm longer wheelbase than the previous five-door.",
+          "text": "Length 4,335 mm, 180 mm more than before.",
           "src": "tg05",
           "quote": "Length 4,335mm (+180mm)"
         },
         {
           "id": "c2",
           "topic": "dimensions",
-          "text": "Longer overall: +190 mm (short wheelbase) and +475 mm (long wheelbase), per Toyota GB.",
+          "text": "Longer overall: +190 mm (short wheelbase) and +475 mm (long wheelbase).",
           "src": "uk20",
           "quote": "The car is significantly longer: +190mm for the short wheelbase version and +475mm for the long wheelbase."
         },
@@ -1222,7 +1222,7 @@
         {
           "id": "c4",
           "topic": "design",
-          "text": "Five-door only; the three-door body was dropped.",
+          "text": "Offered only as a five-door.",
           "src": "uk20",
           "quote": "The third generation RAV4 is built on a new platform and is exclusively a five-door model"
         },
@@ -1273,14 +1273,14 @@
             {
               "id": "r1c3",
               "topic": "powertrain",
-              "text": "Europe: 2.0 Valvematic petrol engine with 116 kW.",
+              "text": "2.0-litre Valvematic petrol engine with 116 kW (158 PS).",
               "src": "wpde",
               "quote": "2,0-Liter-4-Zylinder-Ottomotor mit 116 kW (158 PS) (VVT-i Valvematic)"
             },
             {
               "id": "r1c4",
               "topic": "drivetrain",
-              "text": "Europe: a front-wheel-drive version was offered again.",
+              "text": "A front-wheel-drive-only version was offered.",
               "src": "wpde",
               "quote": "Entgegen allen Erwartungen bietet Toyota im überarbeiteten RAV4 nun doch eine Version mit reinem Frontantrieb (4x2) an."
             }
@@ -1310,7 +1310,7 @@
             {
               "id": "r2c2",
               "topic": "design",
-              "text": "New front end including bonnet, headlamps, grille, fog lamps and bumper (Europe).",
+              "text": "New front end including bonnet, headlamps, grille, fog lamps and bumper.",
               "src": "wpde",
               "quote": "Dabei wurden die gesamte Front inklusive Motorhaube, Scheinwerfer, Kühlergrill und Nebelscheinwerfer sowie Frontschürze modifiziert."
             }
@@ -1653,14 +1653,14 @@
         {
           "id": "c3",
           "topic": "powertrain",
-          "text": "Six-speed automatic replaced the four-speed automatic (US).",
+          "text": "A six-speed automatic with sequential shift replaced the four-speed automatic.",
           "src": "tp13",
           "quote": "Replacing the previous four-speed automatic will be a six-speed transmission with Sequential Shift."
         },
         {
           "id": "c4",
           "topic": "dimensions",
-          "text": "Single wheelbase worldwide, 235 mm longer than the previous short-wheelbase model (Toyota GB).",
+          "text": "235 mm longer than the previous short-wheelbase model.",
           "src": "uk20",
           "quote": "It’s longer by 235mm compared to the previous SWB model."
         },
@@ -1674,7 +1674,7 @@
         {
           "id": "c6",
           "topic": "dimensions",
-          "text": "Europe: 205 mm longer, 30 mm wider and 25 mm lower than the predecessor (German Wikipedia).",
+          "text": "205 mm longer (4,570 mm), 30 mm wider and 25 mm lower than its predecessor.",
           "src": "wpde",
           "quote": "Das neue Modell zeigt sich mit einer Länge von 4570 mm gegenüber dem Vorgänger um 205 mm gewachsen. Zudem ist die neue Generation um 30 mm breiter und um 25 mm niedriger."
         }
@@ -1703,7 +1703,7 @@
             {
               "id": "r1c1",
               "topic": "design",
-              "text": "Refreshed exterior styling with a new front fascia, rear bumper and liftgate.",
+              "text": "Refreshed exterior styling on all models.",
               "src": "tp16",
               "quote": "all 2016 RAV4 models will feature refreshed exterior styling"
             },
@@ -1717,7 +1717,7 @@
             {
               "id": "r1c3",
               "topic": "drivetrain",
-              "text": "Hybrid models use the electric AWD-i system.",
+              "text": "Both grades use an electronic on-demand all-wheel-drive system (AWD-i).",
               "src": "tp16",
               "quote": "Both grades will be equipped with an Electronic On-Demand All-Wheel-Drive System with intelligence (AWD-i)."
             },
@@ -1731,7 +1731,7 @@
             {
               "id": "r1c5",
               "topic": "powertrain",
-              "text": "Europe: new BMW-sourced diesel engine; the 91 kW and 110 kW diesels were dropped.",
+              "text": "The 91 kW and 110 kW diesel engines were dropped.",
               "src": "wpde",
               "quote": "Die 91 kW und 110 kW starken Dieselmotoren entfallen."
             }
@@ -2149,7 +2149,7 @@
         {
           "id": "c2",
           "topic": "dimensions",
-          "text": "Wheelbase 1.20 in longer than the previous model (US).",
+          "text": "Wheelbase 1.20 in longer than the previous model, at 105.9 in.",
           "src": "tp19",
           "quote": "The 2019 RAV4 105.9-inch wheelbase grows 1.20 inches over the previous model"
         },
@@ -2163,14 +2163,14 @@
         {
           "id": "c4",
           "topic": "powertrain",
-          "text": "8-speed automatic replaced the 6-speed automatic in US petrol models.",
+          "text": "A new eight-speed automatic replaced the six-speed automatic.",
           "src": "tp19",
           "quote": "The new Direct Shift-8AT transmission provides a much wider ratio spread than the 6-speed automatic it replaces"
         },
         {
           "id": "c5",
           "topic": "drivetrain",
-          "text": "Hybrid AWD sends 30 percent more torque to the rear wheels.",
+          "text": "The all-wheel-drive system sends 30 percent more total torque to the rear wheels than before.",
           "src": "tp19",
           "quote": "increases total torque to the rear wheels by 30 percent compared to the previous system"
         },
@@ -2200,7 +2200,7 @@
             {
               "id": "r1c1",
               "topic": "powertrain",
-              "text": "Plug-in hybrid added, with 83 hp more system output than the RAV4 Hybrid (US figures).",
+              "text": "The RAV4 Prime plug-in hybrid has 83 hp more total system output than the RAV4 Hybrid.",
               "src": "tpprime",
               "quote": "the 2021 RAV4 Prime yields an 83-horsepower (hp) jump in total system output over the RAV4 Hybrid"
             }
@@ -2489,21 +2489,21 @@
         {
           "id": "c1",
           "topic": "powertrain",
-          "text": "Electrified-only range: hybrid or plug-in hybrid (US, from MY2026).",
+          "text": "Hybrid and plug-in hybrid only from the 2026 model year.",
           "src": "tp26",
           "quote": "For the 2026 model year, Toyota will move to a 100% electrified lineup, with a choice of RAV4 Hybrid or Plug-in Hybrid models."
         },
         {
           "id": "c2",
           "topic": "powertrain",
-          "text": "Plug-in hybrid electric range rises to 150 km from 95 km (Japanese figure) thanks to a larger battery.",
+          "text": "Electric-only range rises to 150 km from 95 km, thanks to a higher-capacity battery.",
           "src": "tg25",
           "quote": "BEV cruising range of 150 km*1, increased from the previous 95 km, thanks to a higher capacity battery"
         },
         {
           "id": "c3",
           "topic": "powertrain",
-          "text": "US hybrid AWD output rises to 236 hp from 219 hp.",
+          "text": "Hybrid AWD output rises to 236 hp from 219 hp.",
           "src": "tp26",
           "quote": "Hybrid AWD models have a 236 net combined system horsepower (hp), up from 219 on the prior generation"
         },

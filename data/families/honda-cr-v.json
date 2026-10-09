@@ -423,7 +423,7 @@
             {
               "id": "r1c1",
               "topic": "powertrain",
-              "text": "US: higher compression ratio and revised manifolds added 20 hp (to 146 hp) for 1999.",
+              "text": "For 1999, a higher compression ratio and revised intake and exhaust manifolds added 20 hp, to 146 hp.",
               "src": "hntl",
               "quote": "1999: CR-V's 2.0-liter 4-cylinder engine received an increased compression ratio and revisions to the intake and exhaust manifold that gave it 20 additional horsepower – to 146 hp."
             },
@@ -659,14 +659,14 @@
         {
           "id": "c2",
           "topic": "powertrain",
-          "text": "Displacement rose from 2.0 to 2.4 litres with i-VTEC (US).",
+          "text": "Displacement rose from 2.0 to 2.4 litres.",
           "src": "hntl",
           "quote": "Displacement increased to 2.4 liters (from 2.0 liters)"
         },
         {
           "id": "c3",
           "topic": "safety-equipment",
-          "text": "Front side airbags available on LX and standard on EX (US).",
+          "text": "Front side airbags available on LX and standard on EX.",
           "src": "hntl",
           "quote": "Enhanced safety systems included front side airbags, which were available on LX and standard on EX."
         },
@@ -698,28 +698,28 @@
             {
               "id": "r1c1",
               "topic": "design",
-              "text": "New grille, headlights, front bumper, rear lights and rear bumper.",
+              "text": "New front grille, cylindrical headlights and a more aerodynamic front.",
               "src": "hn05",
               "quote": "newly designed front grill, cylindrical-shaped headlights and aerodynamic front"
             },
             {
               "id": "r1c2",
               "topic": "powertrain",
-              "text": "Five-speed automatic standard on all US trims.",
+              "text": "A five-speed automatic transmission became standard for the 2005 model.",
               "src": "hn05",
               "quote": "For the 2005 Honda CR-V, a five speed automatic transmission is standard for"
             },
             {
               "id": "r1c3",
               "topic": "safety-equipment",
-              "text": "Front side airbags, side curtain airbags and VSA standard (US).",
+              "text": "Front side airbags, side curtain airbags and Vehicle Stability Assist (VSA) with traction control became standard.",
               "src": "hntl",
               "quote": "all CR-Vs were now equipped with front side airbags, side curtain airbags and Vehicle Stability Assist (VSA) with Traction Control"
             },
             {
               "id": "r1c4",
               "topic": "drivetrain",
-              "text": "Cam-driven Real Time AWD mechanism replaced the pump-type system.",
+              "text": "A new cam-driven mechanism for the Real Time all-wheel-drive system replaced the previous one.",
               "src": "hn05",
               "quote": "a new Cam-driven real-time AWD mechanism replaces"
             }
@@ -1025,28 +1025,28 @@
         {
           "id": "c1",
           "topic": "design",
-          "text": "Top-hinged tailgate replaced the side-hinged door; spare tyre moved under the vehicle.",
+          "text": "An easier-to-open top-hinged tailgate replaced the side-hinged tailgate.",
           "src": "hntl",
           "quote": "An easier-to-open top-hinged tailgate replaced the side-hinged tailgate design of previous models."
         },
         {
           "id": "c2",
           "topic": "dimensions",
-          "text": "US: 1.4 in wider (71.6 in) and 3.1 in shorter, mainly because the spare tyre moved.",
+          "text": "Body length 3.1 inches shorter.",
           "src": "hn07",
           "quote": "by 1.4 inches to 71.6 inches while the body length has decreased by 3.1 inches"
         },
         {
           "id": "c3",
           "topic": "powertrain",
-          "text": "US 2.4 engine output up 10 hp to 166 hp.",
+          "text": "Engine output rose by 10 hp to 166 hp, with 161 lb-ft of torque.",
           "src": "hn07",
           "quote": "The engine produces 166 horsepower and 161 lb-ft. of torque - a 10-horsepower"
         },
         {
           "id": "c4",
           "topic": "powertrain",
-          "text": "Every US CR-V had an automatic transmission.",
+          "text": "For the first time, every CR-V had an automatic transmission.",
           "src": "hntl",
           "quote": "For the first time, every CR-V featured an automatic transmission."
         },
@@ -1092,14 +1092,14 @@
             {
               "id": "r1c2",
               "topic": "powertrain",
-              "text": "US 2.4 engine output raised by 14 hp to 180 hp.",
+              "text": "2.4-litre engine output raised by 14 hp to 180 hp.",
               "src": "hn10",
               "quote": "Upgrades to the 2.4-liter 4-cylinder engine improve power output to 180 horsepower (hp), a 14 hp increase."
             },
             {
               "id": "r1c3",
               "topic": "powertrain",
-              "text": "Europe: 2.2 i-CTDi diesel replaced by the 150 PS 2.2 i-DTEC (Euro 5).",
+              "text": "The 2.2 i-CTDi diesel was replaced by the 2.2 i-DTEC diesel.",
               "src": "wp3",
               "quote": "The 2.2 L i-CTDI N22A turbo diesel engine was discontinued and replaced by the 2.2 L i-DTEC N22B engine"
             }
@@ -1444,7 +1444,7 @@
         {
           "id": "c1",
           "topic": "powertrain",
-          "text": "US 2.4 engine up 5 hp to 185 hp.",
+          "text": "2.4-litre engine up 5 hp to 185 hp.",
           "src": "hn12",
           "quote": "Improvements to the 2012 CR-V's 185-horsepower, 2.4-liter, i-VTEC DOHC 4-cylinder engine contribute to more power (+5 horsepower)"
         },
@@ -1465,7 +1465,7 @@
         {
           "id": "c4",
           "topic": "technology",
-          "text": "Standard rearview camera, Bluetooth and two information screens (US).",
+          "text": "Two information screens, Bluetooth hands-free phone link, a multi-angle rearview camera and a 60/40 split rear seat became standard.",
           "src": "hntl",
           "quote": "New standard features included two information screens, Bluetooth® HandsFreeLink® phone interface, a multi-angle rearview camera and a 60/40 split rear seat."
         },
@@ -1495,14 +1495,14 @@
             {
               "id": "r1c1",
               "topic": "powertrain",
-              "text": "Direct-injected Earth Dreams 2.4 engine and first CR-V CVT; torque up 11 percent (US).",
+              "text": "New direct-injection Earth Dreams 2.4-litre engine with 181 lb-ft of torque, 11 percent more than before.",
               "src": "hn15",
               "quote": "The 2015 CR-V's new Earth Dreams Technology™ 2.4-liter direct-injected DOHC i-VTEC inline 4-cylinder engine produces 181 lb-ft of torque, an 11-percent increase"
             },
             {
               "id": "r1c2",
               "topic": "safety-equipment",
-              "text": "Honda Sensing (including CMBS and LKAS) standard on the new Touring trim.",
+              "text": "Honda Sensing safety and driver-assistance features became standard on the CR-V Touring.",
               "src": "hntl",
               "quote": "A new suite of Honda Sensing® safety and driver assistive features became standard on CR-V Touring"
             },
@@ -1516,7 +1516,7 @@
             {
               "id": "r1c4",
               "topic": "powertrain",
-              "text": "Europe: 1.6 i-DTEC diesels (120/160 PS) replaced the 2.2 i-DTEC.",
+              "text": "1.6 i-DTEC diesel with 120 PS (two-wheel drive) or 160 PS (four-wheel drive).",
               "src": "wp4",
               "quote": "1.6 i-DTEC (diesel) producing either 120 PS (88 kW) power and 300 Nm torque (2WD) or 160 PS (116 kW) power and 350 Nm torque (4WD)"
             }
@@ -1959,7 +1959,7 @@
         {
           "id": "c1",
           "topic": "powertrain",
-          "text": "First turbocharged CR-V engine: 1.5-litre, 190 hp (US EX and above).",
+          "text": "EX and higher trims got the first turbocharged engine in a CR-V.",
           "src": "hntl",
           "quote": "EX and higher trims were powered by CR-V's first-ever turbocharged engine"
         },
@@ -1980,14 +1980,14 @@
         {
           "id": "c4",
           "topic": "safety-equipment",
-          "text": "Honda Sensing standard on US EX and higher trims.",
+          "text": "Honda Sensing standard on EX and higher trims.",
           "src": "hn17",
           "quote": "The 2017 CR-V further expands the application of Honda Sensing as standard equipment on EX and higher trims"
         },
         {
           "id": "c5",
           "topic": "design",
-          "text": "Active Shutter Grille and Hands-Free Access Power Tailgate (Honda firsts).",
+          "text": "Active Shutter Grille that lowers aerodynamic drag, a Honda first.",
           "src": "hn17",
           "quote": "a Honda-first Active Shutter Grille that lowers aerodynamic drag"
         },
@@ -2016,7 +2016,7 @@
             {
               "id": "r1c1",
               "topic": "powertrain",
-              "text": "Hybrid powertrain offered in North America for the first time, built in Greensburg, Indiana.",
+              "text": "A new CR-V Hybrid, to be built at Honda's plant in Greensburg, Indiana.",
               "src": "hn20",
               "quote": "including a new CR-V Hybrid to be built in the company's Greensburg, Indiana plant"
             },
@@ -2030,7 +2030,7 @@
             {
               "id": "r1c3",
               "topic": "powertrain",
-              "text": "1.5 turbo became standard on all US non-hybrid trims, including LX.",
+              "text": "The 190 hp 1.5-litre turbo became standard on all non-hybrid trims, including LX.",
               "src": "hn20",
               "quote": "all non-hybrid CR-V models, including LX, are powered by the efficient 1.5-liter DOHC, direct-injected VTEC™ Turbo powerplant rated at 190 horsepower"
             }
@@ -2366,7 +2366,7 @@
         {
           "id": "c1",
           "topic": "dimensions",
-          "text": "2.7 in longer overall with a 1.6 in longer wheelbase and 0.4 in more width (US).",
+          "text": "2.7 in longer overall with a 1.6 in longer wheelbase and 0.4 in more width.",
           "src": "hn23",
           "quote": "its increased overall length (+2.7 inches longer), while a 1.6-inch longer wheelbase and 0.4 inches of additional width"
         },
@@ -2380,7 +2380,7 @@
         {
           "id": "c3",
           "topic": "powertrain",
-          "text": "Fourth-generation two-motor hybrid with direct injection; 247 lb-ft of torque, 15 lb-ft more.",
+          "text": "Torque rose by 15 lb-ft to 247 lb-ft.",
           "src": "hntl",
           "quote": "It generates 247 lb.-ft. of torque, a 15 lb.-ft. improvement."
         },
@@ -2431,7 +2431,7 @@
             {
               "id": "r1c1",
               "topic": "powertrain",
-              "text": "Hydrogen fuel cell with plug-in charging, up to 29 miles of battery range (EPA).",
+              "text": "Plug-in Level 2 charging, with up to 29 miles of battery-electric range (EPA estimate).",
               "src": "hnfc",
               "quote": "Plug-in Level II charging capability designed to provide up to 29 miles of battery electric range (EPA estimated)"
             },
@@ -2445,7 +2445,7 @@
             {
               "id": "r1c3",
               "topic": "other",
-              "text": "Launched in Japan in July 2024.",
+              "text": "The CR-V e:FCEV was launched in July 2024.",
               "src": "gh30",
               "quote": "In July 2024, the CR-V e:FCEV was launched"
             }
@@ -2471,7 +2471,7 @@
             {
               "id": "r2c1",
               "topic": "other",
-              "text": "New TrailSport Hybrid trim with all-terrain tyres and standard AWD.",
+              "text": "First CR-V TrailSport Hybrid, with more rugged styling.",
               "src": "hn26",
               "quote": "First-ever CR-V TrailSport Hybrid brings more rugged styling and improved capability"
             },

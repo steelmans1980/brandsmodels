@@ -893,14 +893,14 @@
         {
           "id": "c4",
           "topic": "powertrain",
-          "text": "The 7G-Tronic seven-speed automatic was introduced and the manual transmission was dropped.",
+          "text": "The 7G-Tronic seven-speed automatic transmission was introduced.",
           "src": "wp",
           "quote": "New features in the 2006 M-Class include the 7G-Tronic seven-speed automatic transmission"
         },
         {
           "id": "c5",
           "topic": "drivetrain",
-          "text": "The standard transfer case lost its low range, which became part of an optional Off-Road Pro package outside the US.",
+          "text": "In most markets except the US, an optional Off-Road Pro package offered centre and rear differential locks, a two-speed transfer case with low range and adjustable ground clearance.",
           "src": "wp",
           "quote": "In most countries except the U.S., an Off-Road Pro package with center and rear differential locks, 4-ETS, two-speed transfer case with reduction gearing, and adjustable ground clearance was available as an option"
         }
@@ -1568,7 +1568,7 @@
             {
               "id": "r1c1",
               "topic": "other",
-              "text": "The M-Class was renamed GLE, positioning it as the SUV counterpart of the E-Class.",
+              "text": "The GLE name marks it as the SUV equivalent of the E-Class.",
               "src": "wp",
               "quote": "This is followed by the letter \"L\" that acts as a linkage with the letter \"E\"—the GLE being the SUV equivalent to the E-Class."
             },
@@ -2111,14 +2111,14 @@
         {
           "id": "c4",
           "topic": "powertrain",
-          "text": "The six-cylinder GLE 450 uses a 48-volt system with an integrated starter-generator (EQ Boost) adding up to 21 hp.",
+          "text": "The EQ Boost integrated electric motor adds up to 21 hp to the combustion engine for short periods.",
           "src": "mb20qrg",
           "quote": "This integrated electric motor system, known as EQ Boost, assists the combustion engine by adding up to 21 hp for short periods of time."
         },
         {
           "id": "c5",
           "topic": "chassis",
-          "text": "E-ACTIVE BODY CONTROL, a 48-volt active suspension with individually controlled spring and damping forces at each wheel, became available.",
+          "text": "A suspension system whose spring and damping forces can be controlled individually at each wheel, described as the only one on the market.",
           "src": "mb20qrg",
           "quote": "As the only system on the market where the spring and damping forces can be individually controlled at each wheel"
         },
@@ -2154,7 +2154,7 @@
             {
               "id": "r1c1",
               "topic": "powertrain",
-              "text": "A GLE 450e 4MATIC plug-in hybrid was added in the US, and all powertrains are electrified (48-volt mild hybrids or plug-in hybrid).",
+              "text": "All powertrains are electrified: 48-volt mild hybrids and the new GLE 450e 4MATIC plug-in hybrid.",
               "src": "mb24",
               "quote": "Powertrains are electrified throughout the model range and include the new GLE 450e 4MATIC plug-in hybrid, in addition to mild hybrids with a 48-volt system and Integrated Starter Generator (ISG)."
             },
@@ -2175,7 +2175,7 @@
             {
               "id": "r1c4",
               "topic": "technology",
-              "text": "The second-generation MBUX infotainment system was introduced, keeping two 12.3-inch displays.",
+              "text": "The second-generation MBUX infotainment system was introduced.",
               "src": "mb24",
               "quote": "With the second generation MBUX infotainment system, the GLE interior becomes even more digital and intelligent"
             }

@@ -760,7 +760,7 @@
             {
               "id": "r1c3",
               "topic": "powertrain",
-              "text": "For the 2014 model year in North America, direct-injection Theta II engines were introduced.",
+              "text": "For the 2014 model year, direct-injection Theta II engines were introduced.",
               "src": "wp",
               "quote": "For the 2014 model year, the Tucson was upgraded with GDI direct injected Theta II engines"
             }
@@ -1343,7 +1343,7 @@
             {
               "id": "r1c3",
               "topic": "powertrain",
-              "text": "A newly developed eight-speed automatic became available with the 2.0 diesel, and all engines met Euro 6c.",
+              "text": "A newly developed eight-speed automatic became optional, and all engines met the Euro 6c emission standard.",
               "src": "hn5",
               "quotes": [
                 "optionally with the newly developed eight-speed automatic transmission (8AT)",
@@ -1360,7 +1360,7 @@
             {
               "id": "r1c5",
               "topic": "powertrain",
-              "text": "In North America the manual and dual-clutch transmissions were dropped and the 1.6 turbo was replaced by a 2.4 GDi.",
+              "text": "The manual and dual-clutch transmissions were dropped in favour of the six-speed automatic used before.",
               "src": "wp",
               "quote": "The manual and dual clutch transmission options were dropped in favor of the 6-speed Shiftronic automatic used in the previous model."
             }
@@ -1878,14 +1878,14 @@
         {
           "id": "c1",
           "topic": "dimensions",
-          "text": "In the European short-wheelbase form it is 20 mm longer and 15 mm wider than the third generation, with a 10 mm longer wheelbase.",
+          "text": "20 mm longer and 15 mm wider than the previous generation, with a 10 mm longer wheelbase.",
           "src": "hn1",
           "quote": "The all-new Tucson is 20mm longer, 15mm wider, and the wheelbase is 10mm longer than the previous generation"
         },
         {
           "id": "c2",
           "topic": "dimensions",
-          "text": "Offered for the first time in two wheelbases, 2,680 mm and 2,755 mm, depending on the market.",
+          "text": "Offered in two wheelbases, 2,680 mm and 2,755 mm, depending on the market.",
           "src": "wp",
           "quote": "the fourth-generation Tucson is offered with two wheelbase length for different markets to meet different customers needs and expectations in different regions, which are short-wheelbase (2,680 mm (105.5 in)), and long-wheelbase (2,755 mm (108.5 in))"
         },
@@ -1936,7 +1936,7 @@
             {
               "id": "r1c1",
               "topic": "design",
-              "text": "Revised radiator grille with thin angular lines and hidden daytime running lights.",
+              "text": "Revised radiator grille with thin, angular lines.",
               "src": "hn3",
               "quote": "The front fascia features a bold interplay of thin, angular lines in the radiator grille"
             },
@@ -2253,21 +2253,21 @@
         {
           "id": "c1",
           "topic": "dimensions",
-          "text": "The European version is 35 mm longer, 35 mm wider and 20 mm taller than its predecessor.",
+          "text": "35 mm longer, 35 mm wider and 20 mm taller than its predecessor.",
           "src": "hn2",
           "quote": "Compared with its predecessor, it is 35 mm longer, 35 mm wider and 20 mm taller"
         },
         {
           "id": "c2",
           "topic": "dimensions",
-          "text": "The European version's wheelbase grew by 40 mm to 2,720 mm.",
+          "text": "Wheelbase grew by 40 mm to 2,720 mm.",
           "src": "hn2",
           "quote": "Wheelbase 2,720 mm (+40 mm)"
         },
         {
           "id": "c3",
           "topic": "interior",
-          "text": "Rear doors open to 83 degrees instead of 73.",
+          "text": "Door opening angle increased from 73 to 83 degrees for easier access.",
           "src": "hn2",
           "quote": "the door opening angle has increased from 73 to 83 degrees to make access easier"
         },
@@ -2281,7 +2281,7 @@
         {
           "id": "c5",
           "topic": "design",
-          "text": "Unlike the fourth generation, the short- and long-wheelbase versions have different D-pillars, quarter panels and rear doors.",
+          "text": "Unlike the fourth generation, the different versions have differently sloped D-pillars and different quarter panels and rear doors.",
           "src": "wp",
           "quote": "Unlike its predecessor which has virtually no styling differences between models, the fifth generation models feature differently sloped D-pillars, different quarter panels and rear doors."
         }

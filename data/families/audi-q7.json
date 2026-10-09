@@ -444,7 +444,7 @@
             {
               "id": "r1c3",
               "topic": "powertrain",
-              "text": "The 4.2 TDI was revised, rising from 240 kW (326 PS) to 250 kW (340 PS).",
+              "text": "The 4.2-litre diesel was revised, rising from 240 kW (326 PS) to 250 kW (340 PS).",
               "src": "wpde4l",
               "quote": "Zudem wurde der 4,2 Liter große Diesel überarbeitet und leistete nun 250 kW (340 PS) statt 240 kW (326 PS)."
             },
@@ -458,7 +458,7 @@
             {
               "id": "r1c5",
               "topic": "powertrain",
-              "text": "In the US, the 3.6 FSI and 4.2 FSI petrol engines were replaced by two supercharged 3.0 TFSI engines for 2011.",
+              "text": "For 2011, the 3.6 FSI and 4.2 FSI engines were replaced by two supercharged 3.0 TFSI engines.",
               "src": "wp",
               "quote": "For 2011, the 3.6 FSI and 4.2 FSI engines were replaced by two 3.0 L TFSI supercharged engines."
             }
@@ -1118,7 +1118,7 @@
             {
               "id": "r2c1",
               "topic": "design",
-              "text": "New front and rear sections; the Singleframe grille gained vertical inlays.",
+              "text": "The Singleframe grille gained vertical inlays.",
               "src": "am24",
               "quote": "The unmistakably upright Audi Singleframe with an octagon design now impresses with vertical inlays."
             },
@@ -1396,7 +1396,7 @@
         {
           "id": "c2",
           "topic": "powertrain",
-          "text": "The V6 diesel uses MHEV plus technology whose powertrain generator adds up to 18 kW (24 PS).",
+          "text": "MHEV plus mild-hybrid technology, with a new powertrain generator, adds up to 18 kW (24 PS).",
           "src": "am26",
           "quote": "The MHEV plus technology, including a next-generation powertrain generator, supports the drivetrain with up to 18 kW (24 PS) of extra power."
         },

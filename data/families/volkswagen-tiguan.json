@@ -1093,7 +1093,7 @@
         {
           "id": "c2",
           "topic": "weight",
-          "text": "The short-wheelbase model is 50 kg lighter than the first generation.",
+          "text": "50 kg lighter than the outgoing Tiguan.",
           "src": "wp",
           "quote": "which is 50 kg (110 lb) lighter than the outgoing Tiguan"
         },
@@ -1129,7 +1129,7 @@
             {
               "id": "r1c1",
               "topic": "powertrain",
-              "text": "A plug-in hybrid, the Tiguan eHybrid, was added.",
+              "text": "A plug-in hybrid version was added.",
               "src": "vw6167",
               "quote": "New Tiguan now also available with plug-in hybrid"
             },
@@ -1587,14 +1587,14 @@
         {
           "id": "c5",
           "topic": "powertrain",
-          "text": "All versions use an automatic DSG gearbox; manual transmissions were dropped.",
+          "text": "Offered only with a DSG automatic gearbox.",
           "src": "vw17326",
           "quote": "In future, the Tiguan will be offered exclusively with an automatic transmission DSG."
         },
         {
           "id": "c6",
           "topic": "powertrain",
-          "text": "The plug-in hybrids have a 19.7 kWh (net) battery, 11 kW AC charging (previously 3.6 kW) and DC charging up to 50 kW.",
+          "text": "The plug-in hybrids charge at up to 11 kW AC (previously 3.6 kW) and up to 50 kW DC.",
           "src": "vw18182",
           "quote": "The battery of both models can be charged with up to 11 kW (previously 3.6 kW) at a domestic socket or wall box and with up to 50 kW) at DC quick-charging stations"
         },
