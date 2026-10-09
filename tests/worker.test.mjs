@@ -36,6 +36,13 @@ test('favourites are idempotent: repeats and retries count once; removing undoes
   assert.ok(raw.every(r => /^[0-9a-f]{64}$/.test(r.visitor_hash) && !r.visitor_hash.includes('visitor')), 'browser ids are stored hashed');
 });
 
+test('without HASH_SALT the public API stores nothing', async () => {
+  const e = env({ HASH_SALT: undefined });
+  assert.equal((await fav(e, 'visitor-0001', 'ann-model', true)).status, 503);
+  assert.equal(e.DB.raw.prepare('SELECT COUNT(*) n FROM favourites').get().n, 0);
+  assert.equal((await call(e, '/api/favourites/top?window=all')).status, 503);
+});
+
 test('favourites: validation, unknown models and cross-site requests are refused', async () => {
   const e = env();
   assert.equal((await fav(e, 'short', 'ann-model', true)).status, 400);

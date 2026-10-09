@@ -3,7 +3,7 @@
 // /admin (see wrangler.jsonc). Visitor interactions live in D1 (binding DB) and never touch the archive data.
 //
 // Secrets (wrangler secret put):  ADMIN_TOKEN  (admin API; admin is disabled while unset)
-//                                 HASH_SALT    (keys the daily network hashes; required in production)
+//                                 HASH_SALT    (keys the daily network hashes; the public API is off while unset)
 // Optional:                       TURNSTILE_SECRET (verify a Turnstile token on suggestions when set)
 import { ADMIN_HTML } from './admin.js';
 
@@ -31,7 +31,7 @@ const today = (now = Date.now()) => new Date(now).toISOString().slice(0, 10);
 /** A per-day hash of the client network: no IP is stored, and codes cannot be linked across days. */
 async function networkCode(request, env, now) {
   const ip = request.headers.get('cf-connecting-ip') || request.headers.get('x-forwarded-for') || 'local';
-  return (await sha256(`${env.HASH_SALT || 'dev-only-salt'}|${today(now)}|${ip}`)).slice(0, 32);
+  return (await sha256(`${env.HASH_SALT}|${today(now)}|${ip}`)).slice(0, 32);
 }
 
 /** Fixed-window counter. Returns true while under the limit. */
@@ -277,6 +277,8 @@ export default {
     }
     if (url.pathname.startsWith('/api/')) {
       if (!env.DB) return err(503, 'interaction service unavailable');
+      // Without the salt, network hashes would be keyed by a value anyone can read here: store nothing until it is set.
+      if (!env.HASH_SALT && !url.pathname.startsWith('/api/admin/')) return err(503, 'interaction service is not configured');
       try {
         if (url.pathname === '/api/health') return json({ ok: true });
         if (url.pathname === '/api/favourites' && request.method === 'POST') return await postFavourite(request, env, ctx, now);

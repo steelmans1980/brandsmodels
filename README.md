@@ -92,6 +92,11 @@ npx wrangler secret put ADMIN_TOKEN           # a long random string (e.g. opens
 npx wrangler secret put HASH_SALT             # another long random string
 ```
 
+The dashboard cannot hold secrets for a Worker that only serves static assets, so on the first deploy of this
+version the secrets are added afterwards (Workers & Pages → brandsmodels → Settings → Variables and Secrets, type
+Secret). Until `HASH_SALT` is set the public API answers 503 and stores nothing; until `ADMIN_TOKEN` is set the admin
+is off. The archive pages work throughout.
+
 - Workers Builds: keep the build command empty and the deploy command `npx wrangler deploy`; wrangler runs
   `node scripts/build.mjs` itself (see `wrangler.jsonc` → `build`). The build needs Node 20+.
 - The D1 database id is already in `wrangler.jsonc`; its tables must exist before the first deploy of this version.
