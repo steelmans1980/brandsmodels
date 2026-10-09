@@ -371,7 +371,13 @@
         "Wikipedia mentions facelifts (1998–2001 and 2002–2005 photo captions) but gives no dates or changes; no revision is recorded.",
         "Wikipedia states the 1997 model year Sportage was the first production vehicle with a knee airbag.",
         "The generation code: Wikipedia gives NB. No manufacturer source for the code was found."
-      ]
+      ],
+      "commons": {
+        "generation": "Category:Kia Sportage (NB-7)",
+        "bodyStyles": {
+          "b3": "Category:Kia Sportage Grand Wagon"
+        }
+      }
     },
     {
       "id": "kia-sportage-km",
@@ -664,7 +670,10 @@
         "Neither facelift's changes are described in the sources; Wikipedia only gives their timing.",
         "Width (1,820–1,840 mm) and height (1,695–1,730 mm) are given only as ranges by Wikipedia and are not recorded.",
         "No manufacturer source with specifications was found for this generation; Kia's heritage story only describes it in general terms. kianewscenter.com could not be read (TLS certificate error) and kiamedia.com returns 403."
-      ]
+      ],
+      "commons": {
+        "generation": "Category:Kia Sportage (KM)"
+      }
     },
     {
       "id": "kia-sportage-sl",
@@ -989,7 +998,10 @@
         "Lengths are given as a range (Wikipedia and Kia: 4,440–4,450 mm) and are not recorded as a single value. Height: Kia gives 1,635 mm; Wikipedia gives 1,635–1,645 mm.",
         "Wikipedia's engine table gives outputs only as 'HP' with no market; recorded as 'hp'. The 2.0 R diesel is listed at 136–184 HP.",
         "The facelift is dated only by model year (2014) in the sources."
-      ]
+      ],
+      "commons": {
+        "generation": "Category:Kia Sportage (SL)"
+      }
     },
     {
       "id": "kia-sportage-ql",
@@ -1416,7 +1428,10 @@
         "The 503-litre figure is Kia Austria's 'max. 503 Liter' for the predecessor's luggage space with seats up; the standard is not stated.",
         "On-sale in Europe for the 2018 facelift: Kia Europe gives Q3 2018. Pakistan production continued 2019–2025 (Wikipedia).",
         "Wikipedia's powertrain prose does not name markets for the international engines, so they are recorded as 'unstated'."
-      ]
+      ],
+      "commons": {
+        "generation": "Category:Kia Sportage (QL)"
+      }
     },
     {
       "id": "kia-sportage-nq5",
@@ -1967,7 +1982,10 @@
         "Wikipedia dates the facelift's release to 5 November 2024 for the 2026 model year without naming a market; it reached North America and Australia in May 2025. Kia's heritage story says the facelift came in 2024 alongside a 30th anniversary edition.",
         "Kia US press (kianewscenter.com) could not be read: the connection fails TLS certificate verification. kiamedia.com returns 403. Kia worldwide newsroom releases render no text. North American specifications therefore come from Wikipedia only.",
         "Wikipedia's powertrain table does not name markets for most engines (e.g. 2.5 GDi for North America/Mexico, L2.0 LPi for Korea), so they are recorded as 'unstated'."
-      ]
+      ],
+      "commons": {
+        "generation": "Category:Kia Sportage (NQ5)"
+      }
     }
   ]
 }

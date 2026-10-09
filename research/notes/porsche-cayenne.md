@@ -46,4 +46,5 @@ Generations:
 - These categories do not exist: Category:Porsche Cayenne (9PA), (92A), (9Y0).
 - Existing: Category:Porsche Cayenne Coupé, whose subcategories are "Porsche Cayenne Coupé (PO536)" and "Porsche Cayenne Coupé Electric".
 - Existing: Category:Porsche Cayenne Electric (8 files; subcategories Coupé Electric, Prototype, Turbo).
-- Other candidate names were checked at the end of the session; see the commons fields in the JSON.
+- Also checked and not existing: Porsche Cayenne (PO536), (9YA), (E1), (E2), (955), (957), (958), Porsche Cayenne I and II.
+- I could not list the subcategories of 'Category:Porsche Cayenne' because the Commons API was rate-limited. A reviewer should look there for the real per-generation category names.

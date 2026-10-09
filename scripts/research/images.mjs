@@ -5,7 +5,7 @@
 //       lists freely licensed photos in each category (plus closely named subcategories), scores them, downloads small
 //       previews and writes numbered contact sheets to research/cache/images/sheets/ for a person to review.
 //   node scripts/research/images.mjs apply
-//       reads the reviewer's choices in research/image-decisions.json, downloads the chosen photos (1600 px and 640 px
+//       reads the reviewer's choices in research/image-decisions.json, downloads the chosen photos (1280 px and 640 px
 //       wide) into assets/cars/, and writes data/images.json with author, licence and the category evidence.
 //
 // Only categories named in the data are searched, so a photo is tied to a generation by where Commons files it; the
@@ -18,13 +18,11 @@ import { curl, UA } from './text.mjs';
 
 const ROOT = path.join(path.dirname(new URL(import.meta.url).pathname), '..', '..');
 const CACHE = path.join(ROOT, 'research/cache/images');
-const API = 'https://commons.wikimedia.org/w/api.php?format=json&formatversion=2&action=query';
 const ALLOWED = /^(CC0|Public domain|PD|CC BY(-SA)? [1-4]\.0|CC BY(-SA)? 2\.5|CC BY(-SA)? 3\.0 [a-z]{2}|CC BY(-SA)? 2\.0 [a-z]{2})/i;
 const SKIP = /interior|innenraum|cockpit|dashboard|armaturen|\bengine\b|motorraum|\bseats?\b|\bsitze?\b|\bboot\b|\btrunk\b|kofferraum|\bcargo\b|\bwheels?\b|felge|\bbadge|\blogo|emblem|\bdetail|headl(amp|ight)|tail ?(lamp|light)|scheinwerfer|heckleuchte|\bcrash|unfall|wreck|\bpolice|polizei|ambulance|\btaxi\b|feuerwehr|fire (engine|brigade|department)|tuning|tuned|modified|\btoy\b|model car|modellauto|\blego\b|matchbox|diecast|1:\d\d|prototype|erlkönig|camouflage|\bconcept\b|\brally\b|\brac(e|ing)\b|\bkeys?\b|steering|\bmirror|\bgrille\b|exhaust|instrument|\bdisplay\b|screen|cutaway|skeleton/i;
 const SUBCAT_SKIP = /interior|engine|detail|police|taxi|ambulance|fire|military|tuning|modified|toy|model|concept|prototype|racing|rally|wreck|accident|crash|dashboard|by colou?r|logos?|badges?|in art|advert|drawing|museum/i;
 const PHOTOGRAPHERS = /Matti Blume|Alexander[- ]Migl|Dinkun Chen|Kevauto|MB-one|Vauxford|Damian B Oh|Rudolf Stricker|M 93|Charles01|Jengtingchen|Tokumeigakarinoaoshima|Mr\.choppers|Kickaffe|SsangYongBoy|JustAnotherCarDesigner|Ypy31|EurovisionNim|Mytho88|Calreyn88|TTTNIS|Bull-Doser|IFCAR|Elise240SX|Kobi-bobi|Peter Pan/i;
 const sleep = s => execFileSync('sleep', [String(s)]);
-const getJson = url => { const out = curl(url); return JSON.parse(out.slice(0, out.lastIndexOf('\n'))); };
 const plain = html => String(html || '').replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#039;/g, "'").replace(/\s+/g, ' ').trim();
 
 function families(ids) {
@@ -33,31 +31,60 @@ function families(ids) {
     .filter(f => !ids.length || ids.includes(f.id));
 }
 
+// Commons pages are read as ordinary HTML (the API is rate-limited for this machine). File pages carry the licence in
+// Commons' machine-readable "licensetpl" markup and the author in the Information template. Pages are cached locally.
+const PAGE_CACHE = path.join(CACHE, 'pages');
+function page(title) {
+  fs.mkdirSync(PAGE_CACHE, { recursive: true });
+  const file = path.join(PAGE_CACHE, crypto.createHash('sha1').update(title).digest('hex').slice(0, 16) + '.html');
+  if (fs.existsSync(file)) return fs.readFileSync(file, 'utf8');
+  const out = curl(`https://commons.wikimedia.org/wiki/${encodeURIComponent(title.replace(/ /g, '_')).replace(/%3A/g, ':').replace(/%2F/g, '/')}`);
+  const code = out.slice(out.lastIndexOf('\n') + 1);
+  if (code !== '200') throw new Error(`HTTP ${code} for ${title}`);
+  const html = out.slice(0, out.lastIndexOf('\n'));
+  fs.writeFileSync(file, html);
+  sleep(1);
+  return html;
+}
+const unescapeHtml = s => s.replace(/&#95;/g, '_').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#0?39;/g, "'").replace(/&#(\d+);/g, (m, d) => String.fromCodePoint(Number(d)));
+const titleFromHref = h => decodeURIComponent(h.replace(/^\/wiki\//, '')).replace(/_/g, ' ');
 function members(cat, type) {
-  const out = [];
-  let cont = '';
-  do {
-    const j = getJson(`${API}&list=categorymembers&cmtype=${type}&cmlimit=500&cmtitle=${encodeURIComponent(cat)}${cont}`);
-    out.push(...(j.query?.categorymembers || []).map(m => m.title));
-    cont = j.continue?.cmcontinue ? `&cmcontinue=${encodeURIComponent(j.continue.cmcontinue)}` : '';
-  } while (cont);
-  return out;
+  const html = page(cat);
+  if (type === 'file') {
+    const media = html.split('id="mw-category-media"')[1] || '';
+    return [...new Set([...media.matchAll(/href="(\/wiki\/File:[^"#?]+)"/g)].map(m => titleFromHref(unescapeHtml(m[1]))))];
+  }
+  const subs = (html.split('id="mw-subcategories"')[1] || '').split('id="mw-category-media"')[0].split('class="catlinks')[0];
+  return [...new Set([...subs.matchAll(/href="(\/wiki\/Category:[^"#?]+)"/g)].map(m => titleFromHref(unescapeHtml(m[1]))))].filter(t => t !== cat);
+}
+function between(html, id) {
+  const m = html.match(new RegExp(`id="${id}"[^>]*>[^]*?</t[dh]>\\s*<td[^>]*>([^]*?)</td>`));
+  return m ? plain(unescapeHtml(m[1])) : '';
 }
 function fileInfo(titles) {
   const out = [];
-  for (let i = 0; i < titles.length; i += 40) {
-    const j = getJson(`${API}&prop=imageinfo|categories&clshow=!hidden&cllimit=500&iiprop=url|size|mime|extmetadata&iiurlwidth=1600&iiextmetadatafilter=LicenseShortName|Artist|LicenseUrl|ImageDescription|Credit|AttributionRequired|UsageTerms&titles=${titles.slice(i, i + 40).map(encodeURIComponent).join('|')}`);
-    for (const p of j.query?.pages || []) {
-      const ii = p.imageinfo?.[0]; if (!ii) continue;
-      const m = ii.extmetadata || {};
-      out.push({ file: p.title, width: ii.width, height: ii.height, mime: ii.mime, url: ii.url, thumb1600: ii.thumburl, page: ii.descriptionurl,
-        license: plain(m.LicenseShortName?.value), licenseUrl: plain(m.LicenseUrl?.value), author: plain(m.Artist?.value), description: plain(m.ImageDescription?.value).slice(0, 300),
-        categories: (p.categories || []).map(c => c.title) });
-    }
-    sleep(1);
+  for (const title of titles) {
+    let html;
+    try { html = unescapeHtml(page(title)); } catch (e) { console.error(e.message); continue; }
+    const full = html.match(/<div class="fullMedia">[^]*?href="(https:\/\/upload\.wikimedia\.org\/[^"?]+)[^]*?\(([\d,]+) × ([\d,]+) pixels[^]*?MIME type: <span class="mime-type">([^<]+)</);
+    if (!full) continue;
+    // a file can carry several licences (e.g. GFDL and CC BY-SA): use the first Creative Commons or public-domain one
+    const lic = [...html.matchAll(/class="licensetpl_short"[^>]*>([^<]*)</g)].map(m => m[1].trim());
+    const links = [...html.matchAll(/class="licensetpl_link"[^>]*>([^<]*)</g)].map(m => m[1].trim());
+    const k = lic.findIndex(l => ALLOWED.test(l));
+    const url = full[1];
+    out.push({ file: title, width: Number(full[2].replace(/,/g, '')), height: Number(full[3].replace(/,/g, '')), mime: full[4], url,
+      thumb1600: url.replace('/wikipedia/commons/', '/wikipedia/commons/thumb/') + '/1600px-' + url.split('/').pop(),
+      page: `https://commons.wikimedia.org/wiki/${encodeURIComponent(title.replace(/ /g, '_'))}`,
+      license: k >= 0 ? lic[k] : (lic[0] || ''), licenseUrl: k >= 0 ? (links[k] || '') : '', author: between(html, 'fileinfotpl_aut').slice(0, 160),
+      description: between(html, 'fileinfotpl_desc').slice(0, 300),
+      categories: [...((html.split('id="mw-normal-catlinks"')[1] || '').split('</div>')[0]).matchAll(/title="(Category:[^"]+)"/g)].map(m => m[1]) });
   }
   return out;
 }
+// Titles worth opening first: views of the whole car rather than details.
+const titleScore = t => (/front|vorne|frontansicht|3\/4|three.quarter|\bfl\b/i.test(t) ? 3 : 0) + (/rear|heck|side|seite/i.test(t) ? 1 : 0) + (/\.jpe?g$/i.test(t) ? 1 : 0);
+const PER_CATEGORY = 14;
 
 /** Files of a category, plus subcategories whose names show they are the same car (not interiors, details or conversions). */
 function categoryFiles(cat, exclude = []) {
@@ -88,7 +115,8 @@ function candidates(ids) {
       const cats = [];
       const cm = g.commons || {};
       const revCats = Object.values(cm.revisions || {});
-      if (cm.generation) cats.push({ cat: cm.generation, revision: null, exclude: revCats });
+      if (cm.generation) cats.push({ cat: cm.generation, revision: null, exclude: [...revCats, ...(cm.original ? [cm.original] : [])] });
+      if (cm.original) cats.push({ cat: cm.original, revision: 'original' });   // a category for the version before the first facelift
       for (const [rid, cat] of Object.entries(cm.revisions || {})) cats.push({ cat, revision: rid });
       for (const [bid, cat] of Object.entries(cm.bodyStyles || {})) cats.push({ cat, bodyStyle: bid });
       const list = [];
@@ -96,7 +124,8 @@ function candidates(ids) {
       for (const c of cats) {
         let files;
         try { files = categoryFiles(c.cat, c.exclude || []); } catch (e) { console.error(`${g.id}: ${c.cat}: ${e.message}`); continue; }
-        const titles = [...files.keys()].filter(t => !seen.has(t) && /\.(jpe?g|png)$/i.test(t) && !SKIP.test(t));
+        const titles = [...files.keys()].filter(t => !seen.has(t) && /\.(jpe?g|png)$/i.test(t) && !SKIP.test(t))
+          .sort((x, y) => titleScore(y) - titleScore(x)).slice(0, PER_CATEGORY);
         titles.forEach(t => seen.add(t));
         for (const info of fileInfo(titles)) {
           if (!ALLOWED.test(info.license) || info.width < 1200 || SKIP.test(info.description)) continue;
@@ -119,8 +148,8 @@ function candidates(ids) {
     list.forEach((c, i) => {
       const p = path.join(CACHE, 'preview', `${gid}-${i}.jpg`);
       if (!fs.existsSync(p)) {
-        const small = c.thumb1600.replace(/\/1600px-/, '/400px-');
-        try { execFileSync('curl', ['-sSfL', '-A', UA, '--retry', '4', '--retry-delay', '5', '-o', p, small]); } catch { return; }
+        const small = c.thumb1600.replace(/\/1600px-/, '/500px-');   // Wikimedia serves only standard thumbnail widths
+        try { execFileSync('curl', ['-sSfL', '-A', UA, '--retry', '6', '--retry-delay', '8', '-o', p, small]); } catch { return; }
         sleep(1);
       }
       files.push({ p, label: `${i} ${c.revision ? 'R:' + c.revision : c.bodyStyle ? 'B:' + c.bodyStyle : 'G'} ${c.license.slice(0, 12)}` });
@@ -144,14 +173,14 @@ function apply() {
       if (!c) { console.error(`${gid}: ${d.file} is not a reviewed candidate`); process.exitCode = 1; continue; }
       const id = `${gid}-${crypto.createHash('sha1').update(c.file).digest('hex').slice(0, 8)}`;
       const big = `assets/cars/${id}.jpg`, small = `assets/cars/${id}-640.jpg`;
-      for (const [rel, w] of [[big, 1600], [small, 640]]) {
-        const abs = path.join(ROOT, rel);
-        if (fs.existsSync(abs)) continue;
-        const src = c.width <= w ? c.url : c.thumb1600.replace(/\/1600px-/, `/${w}px-`);
-        execFileSync('curl', ['-sSfL', '-A', UA, '--retry', '4', '--retry-delay', '5', '-o', abs, src]);
-        execFileSync('convert', [abs, '-strip', '-quality', '82', abs]);
-        sleep(1);
+      if (!fs.existsSync(path.join(ROOT, big))) {
+        // 1280 px is a standard Wikimedia thumbnail width; smaller originals are used as they are
+        const src = c.width <= 1280 ? c.url : c.thumb1600.replace(/\/1600px-/, '/1280px-');
+        execFileSync('curl', ['-sSfL', '-A', UA, '--retry', '6', '--retry-delay', '8', '-o', path.join(ROOT, big), src]);
+        execFileSync('convert', [path.join(ROOT, big), '-strip', '-quality', '82', path.join(ROOT, big)]);
+        sleep(2);
       }
+      if (!fs.existsSync(path.join(ROOT, small))) execFileSync('convert', [path.join(ROOT, big), '-resize', '640x', '-strip', '-quality', '80', path.join(ROOT, small)]);
       const dims = execFileSync('identify', ['-format', '%w %h', path.join(ROOT, big)], { encoding: 'utf8' }).split(' ').map(Number);
       const tdims = execFileSync('identify', ['-format', '%w %h', path.join(ROOT, small)], { encoding: 'utf8' }).split(' ').map(Number);
       out[gid].push({

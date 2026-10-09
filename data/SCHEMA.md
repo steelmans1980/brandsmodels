@@ -112,6 +112,7 @@ publication) or `secondary` (encyclopaedia, database).
   ],
   "commons": {                           // Wikimedia Commons categories, checked to exist and to show this car
     "generation": "Category:Audi Q7 (4L)",
+    "original": "Category:…",           // optional: the version before the first facelift
     "revisions": { "r1": "Category:Audi Q7 (4L) facelift" },
     "bodyStyles": { "b2": "Category:…" }
   },

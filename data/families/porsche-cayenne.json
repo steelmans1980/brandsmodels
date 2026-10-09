@@ -517,7 +517,14 @@
         "The first generation had a low-range transfer box and a fully locking centre differential (Porsche); it is permanent all-wheel drive and is recorded as AWD.",
         "German Wikipedia says the 9PA was built from 2002 to 2010; English Wikipedia gives August 2002 – December 2009 (used). Porsche says 276,652 cars were sold in the eight model years of the first generation.",
         "Wikimedia Commons has no 'Category:Porsche Cayenne (9PA)'; no generation-specific category could be confirmed."
-      ]
+      ],
+      "commons": {
+        "generation": "Category:Porsche 9PA",
+        "original": "Category:Porsche Cayenne (2002–2007)",
+        "revisions": {
+          "r1": "Category:Porsche Cayenne (2007–2010)"
+        }
+      }
     },
     {
       "id": "porsche-cayenne-92a",
@@ -1018,7 +1025,13 @@
         "English Wikipedia's E2 infobox also lists a '5-door coupe crossover SUV' body style. This is not supported elsewhere (the Coupé arrived in 2019 with the third generation), so it is not recorded.",
         "Model years 2011–2018 are given without a market (English Wikipedia).",
         "No Commons category 'Category:Porsche Cayenne (92A)' exists."
-      ]
+      ],
+      "commons": {
+        "generation": "Category:Porsche 92A",
+        "revisions": {
+          "r1": "Category:Porsche Cayenne (2014)"
+        }
+      }
     },
     {
       "id": "porsche-cayenne-e3",
@@ -1558,6 +1571,11 @@
       "commons": {
         "bodyStyles": {
           "b2": "Category:Porsche Cayenne Coupé (PO536)"
+        },
+        "generation": "Category:Porsche PO536",
+        "original": "Category:Porsche Cayenne (2017–2023)",
+        "revisions": {
+          "r1": "Category:Porsche Cayenne (2023–)"
         }
       },
       "notes": [

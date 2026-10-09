@@ -4,68 +4,308 @@
   "manufacturer": "hyundai",
   "name": "Hyundai Tucson",
   "lines": [
-    { "id": "tucson", "name": "Tucson" }
+    {
+      "id": "tucson",
+      "name": "Tucson"
+    }
   ],
   "sources": {
-    "wp": { "url": "https://en.wikipedia.org/w/index.php?title=Hyundai_Tucson&oldid=1379303360", "title": "Hyundai Tucson", "publisher": "Wikipedia", "type": "secondary", "accessed": "2026-10-09" },
-    "hn1": { "url": "https://www.hyundai.news/uk/models/suv/tucson/press-kit/the-all-new-hyundai-tucson.html", "title": "The all-new Hyundai Tucson (press kit)", "publisher": "Hyundai Motor UK newsroom", "type": "manufacturer", "date": "2020-12-23", "accessed": "2026-10-09" },
-    "hn2": { "url": "https://www.hyundai.news/eu/articles/press-releases/all-new-hyundai-tucson-october-2026.html", "title": "The all-new Hyundai TUCSON Blends Bold Design, Intelligent Hybrid and Next-Generation Connectivity", "publisher": "Hyundai Motor Europe newsroom", "type": "manufacturer", "date": "2026-10-01", "accessed": "2026-10-09" },
-    "hn3": { "url": "https://www.hyundai.news/eu/articles/press-releases/new-tucson-with-more-refined-and-powerful-design.html", "title": "New Tucson with more refined and powerful design", "publisher": "Hyundai Motor Europe newsroom", "type": "manufacturer", "date": "2023-11-21", "accessed": "2026-10-09" },
-    "hn4": { "url": "https://www.hyundai.news/uk/articles/press-releases/hyundai-motor-reveals-details-on-all-new-tucson-plug-in-hybrid.html", "title": "Hyundai Motor reveals details on all-new Tucson Plug-in Hybrid", "publisher": "Hyundai Motor UK newsroom", "type": "manufacturer", "date": "2020-12-10", "accessed": "2026-10-09" },
-    "hn5": { "url": "https://www.hyundai.news/uk/articles/press-releases/new-hyundai-tucson-receives-worldwide-debut-at-new-york-international-auto-show.html", "title": "New Hyundai Tucson: worldwide debut at NY International Auto Show", "publisher": "Hyundai Motor UK newsroom", "type": "manufacturer", "date": "2018-03-28", "accessed": "2026-10-09" }
+    "wp": {
+      "url": "https://en.wikipedia.org/w/index.php?title=Hyundai_Tucson&oldid=1379303360",
+      "title": "Hyundai Tucson",
+      "publisher": "Wikipedia",
+      "type": "secondary",
+      "accessed": "2026-10-09"
+    },
+    "hn1": {
+      "url": "https://www.hyundai.news/uk/models/suv/tucson/press-kit/the-all-new-hyundai-tucson.html",
+      "title": "The all-new Hyundai Tucson (press kit)",
+      "publisher": "Hyundai Motor UK newsroom",
+      "type": "manufacturer",
+      "date": "2020-12-23",
+      "accessed": "2026-10-09"
+    },
+    "hn2": {
+      "url": "https://www.hyundai.news/eu/articles/press-releases/all-new-hyundai-tucson-october-2026.html",
+      "title": "The all-new Hyundai TUCSON Blends Bold Design, Intelligent Hybrid and Next-Generation Connectivity",
+      "publisher": "Hyundai Motor Europe newsroom",
+      "type": "manufacturer",
+      "date": "2026-10-01",
+      "accessed": "2026-10-09"
+    },
+    "hn3": {
+      "url": "https://www.hyundai.news/eu/articles/press-releases/new-tucson-with-more-refined-and-powerful-design.html",
+      "title": "New Tucson with more refined and powerful design",
+      "publisher": "Hyundai Motor Europe newsroom",
+      "type": "manufacturer",
+      "date": "2023-11-21",
+      "accessed": "2026-10-09"
+    },
+    "hn4": {
+      "url": "https://www.hyundai.news/uk/articles/press-releases/hyundai-motor-reveals-details-on-all-new-tucson-plug-in-hybrid.html",
+      "title": "Hyundai Motor reveals details on all-new Tucson Plug-in Hybrid",
+      "publisher": "Hyundai Motor UK newsroom",
+      "type": "manufacturer",
+      "date": "2020-12-10",
+      "accessed": "2026-10-09"
+    },
+    "hn5": {
+      "url": "https://www.hyundai.news/uk/articles/press-releases/new-hyundai-tucson-receives-worldwide-debut-at-new-york-international-auto-show.html",
+      "title": "New Hyundai Tucson: worldwide debut at NY International Auto Show",
+      "publisher": "Hyundai Motor UK newsroom",
+      "type": "manufacturer",
+      "date": "2018-03-28",
+      "accessed": "2026-10-09"
+    }
   },
   "generations": [
     {
       "id": "hyundai-tucson-jm",
       "slug": "jm",
       "ordinal": 1,
-      "lines": ["tucson"],
+      "lines": [
+        "tucson"
+      ],
       "name": "First generation",
-      "codes": [ { "value": "JM", "kind": "model code", "src": "wp", "quote": "Model code JM" } ],
+      "codes": [
+        {
+          "value": "JM",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code JM"
+        }
+      ],
       "names": [
-        { "value": "Hyundai JM", "markets": ["JP"], "src": "wp", "quote": "In Japan, the Hyundai Tucson was sold as the Hyundai JM until November 2009." }
+        {
+          "value": "Hyundai JM",
+          "markets": [
+            "JP"
+          ],
+          "src": "wp",
+          "quote": "In Japan, the Hyundai Tucson was sold as the Hyundai JM until November 2009."
+        }
       ],
       "dates": {
-        "productionStart": { "value": "2004", "src": "wp", "quote": "Production 2004–2009" },
-        "productionEnd": { "value": "2009", "src": "wp", "quote": "Production 2004–2009" },
-        "modelYears": [ { "market": "unstated", "from": 2005, "to": 2009, "src": "wp", "quote": "Model years 2005–2009" } ]
+        "productionStart": {
+          "value": "2004",
+          "src": "wp",
+          "quote": "Production 2004–2009"
+        },
+        "productionEnd": {
+          "value": "2009",
+          "src": "wp",
+          "quote": "Production 2004–2009"
+        },
+        "modelYears": [
+          {
+            "market": "unstated",
+            "from": 2005,
+            "to": 2009,
+            "src": "wp",
+            "quote": "Model years 2005–2009"
+          }
+        ]
       },
       "ongoing": false,
-      "platform": { "value": "Hyundai Elantra-based platform (shared with the second-generation Kia Sportage)", "src": "wp", "quote": "it shared its Hyundai Elantra-based platform with the second-generation Kia Sportage" },
+      "platform": {
+        "value": "Hyundai Elantra-based platform (shared with the second-generation Kia Sportage)",
+        "src": "wp",
+        "quote": "it shared its Hyundai Elantra-based platform with the second-generation Kia Sportage"
+      },
       "assembly": [
-        { "value": "Ulsan, South Korea", "src": "wp", "quote": "Assembly South Korea: Ulsan China: Beijing (Beijing Hyundai)" },
-        { "value": "Beijing, China (Beijing Hyundai)", "src": "wp", "quote": "China: Beijing (Beijing Hyundai) India: Chennai (Hyundai India)" },
-        { "value": "Chennai, India (Hyundai India)", "src": "wp", "quote": "India: Chennai (Hyundai India)" },
-        { "value": "Anápolis, Brazil (Hyundai Caoa)", "src": "wp", "quote": "Brazil: Anápolis (Hyundai Caoa) Egypt: Cairo (Ghabbour Group)" },
-        { "value": "Cairo, Egypt (Ghabbour Group)", "src": "wp", "quote": "Egypt: Cairo (Ghabbour Group) Ukraine: Cherkasy (Bogdan)" },
-        { "value": "Cherkasy, Ukraine (Bogdan)", "src": "wp", "quote": "Ukraine: Cherkasy (Bogdan)" },
-        { "value": "Hukou, Hsinchu, Taiwan (SYM Motors)", "src": "wp", "quote": "Taiwan: Hukou, Hsinchu (SYM Motors) Body and chassis Related Kia Sportage (JE/KM)" }
+        {
+          "value": "Ulsan, South Korea",
+          "src": "wp",
+          "quote": "Assembly South Korea: Ulsan China: Beijing (Beijing Hyundai)"
+        },
+        {
+          "value": "Beijing, China (Beijing Hyundai)",
+          "src": "wp",
+          "quote": "China: Beijing (Beijing Hyundai) India: Chennai (Hyundai India)"
+        },
+        {
+          "value": "Chennai, India (Hyundai India)",
+          "src": "wp",
+          "quote": "India: Chennai (Hyundai India)"
+        },
+        {
+          "value": "Anápolis, Brazil (Hyundai Caoa)",
+          "src": "wp",
+          "quote": "Brazil: Anápolis (Hyundai Caoa) Egypt: Cairo (Ghabbour Group)"
+        },
+        {
+          "value": "Cairo, Egypt (Ghabbour Group)",
+          "src": "wp",
+          "quote": "Egypt: Cairo (Ghabbour Group) Ukraine: Cherkasy (Bogdan)"
+        },
+        {
+          "value": "Cherkasy, Ukraine (Bogdan)",
+          "src": "wp",
+          "quote": "Ukraine: Cherkasy (Bogdan)"
+        },
+        {
+          "value": "Hukou, Hsinchu, Taiwan (SYM Motors)",
+          "src": "wp",
+          "quote": "Taiwan: Hukou, Hsinchu (SYM Motors) Body and chassis Related Kia Sportage (JE/KM)"
+        }
       ],
-      "bodyStyles": [ { "id": "b1", "value": "5-door SUV", "markets": ["global"], "src": "wp", "quote": "Body style 5-door SUV" } ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Body style 5-door SUV"
+        }
+      ],
       "drivetrains": [
-        { "value": "FWD", "markets": ["unstated"], "src": "wp", "quote": "Layout Front engine, front-wheel-drive" },
-        { "value": "AWD", "markets": ["unstated"], "src": "wp", "quote": "Front engine, all-wheel-drive" }
+        {
+          "value": "FWD",
+          "markets": [
+            "unstated"
+          ],
+          "src": "wp",
+          "quote": "Layout Front engine, front-wheel-drive"
+        },
+        {
+          "value": "AWD",
+          "markets": [
+            "unstated"
+          ],
+          "src": "wp",
+          "quote": "Front engine, all-wheel-drive"
+        }
       ],
       "dimensions": [
-        { "id": "d1", "market": "unstated", "unit": "mm", "length": 4325, "width": 1795, "height": 1730, "wheelbase": 2630,
-          "src": "wp", "quotes": ["Wheelbase 2,630 mm (103.5 in) Length 4,325 mm (170.3 in) Width 1,795 mm (70.7 in) Height 1,730 mm (68.1 in)"] }
+        {
+          "id": "d1",
+          "market": "unstated",
+          "unit": "mm",
+          "length": 4325,
+          "width": 1795,
+          "height": 1730,
+          "wheelbase": 2630,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 2,630 mm (103.5 in) Length 4,325 mm (170.3 in) Width 1,795 mm (70.7 in) Height 1,730 mm (68.1 in)"
+          ]
+        }
       ],
       "powertrains": [
-        { "id": "p1", "name": "Beta II 2.0", "market": "unstated", "fuel": "petrol", "years": "2004–2009", "engine": "2.0 L Beta II DOHC CVVT I4", "cylinders": 4,
-          "power": { "value": 142, "unit": "PS" }, "torque": { "value": 184, "unit": "Nm" }, "transmission": "5-speed manual",
-          "src": "wp", "quotes": ["Beta II 2.0 2004–2009 5-speed manual 142 PS (104 kW; 140 hp) @ 6,000 rpm 18.8 kg⋅m (184 N⋅m; 136 lbf⋅ft) @ 4,500 rpm", "2.0 L Beta II DOHC CVVT I4"] },
-        { "id": "p2", "name": "Delta 2.7 V6", "market": "unstated", "fuel": "petrol", "engine": "2.7 L Delta DOHC CVVT V6", "cylinders": 6,
-          "power": { "value": 175, "unit": "PS" }, "torque": { "value": 241, "unit": "Nm" }, "transmission": "4-speed automatic",
-          "src": "wp", "quotes": ["Delta 2.7 4-speed automatic 175 PS (129 kW; 173 hp) @ 6,000 rpm 24.6 kg⋅m (241 N⋅m; 178 lbf⋅ft) @ 4,000 rpm", "2.7 L Delta DOHC CVVT V6"] },
-        { "id": "p3", "name": "D 2.0 CRDi (113 PS)", "market": "unstated", "fuel": "diesel", "years": "2004–2009", "engine": "2.0 L D CRDi-VGT I4", "cylinders": 4,
-          "power": { "value": 113, "unit": "PS" }, "torque": { "value": 245, "unit": "Nm" }, "transmission": "5-speed manual",
-          "src": "wp", "quotes": ["D 2.0 CRDi 2004–2009 5-speed manual 113 PS (83 kW; 111 hp) @ 4,000 rpm 25 kg⋅m (245 N⋅m; 181 lbf⋅ft) @ 1,800–2,500 rpm", "2.0 L D CRDi-VGT I4"] },
-        { "id": "p4", "name": "D 2.0 CRDi (140 PS)", "market": "unstated", "fuel": "diesel", "years": "2006–2009", "engine": "2.0 L D CRDi-VGT I4", "cylinders": 4,
-          "power": { "value": 140, "unit": "PS" }, "torque": { "value": 305, "unit": "Nm" }, "transmission": "6-speed manual",
-          "src": "wp", "quotes": ["2006–2009 6-speed manual 140 PS (103 kW; 138 hp) @ 4,000 rpm 150 PS (110 kW; 148 hp) @ 4,000 rpm 31.1 kg⋅m (305 N⋅m; 225 lbf⋅ft) @ 1,800–2,500 rpm"] },
-        { "id": "p5", "name": "D 2.0 CRDi (150 PS)", "market": "unstated", "fuel": "diesel", "years": "2006–2009", "engine": "2.0 L D CRDi-VGT I4", "cylinders": 4,
-          "power": { "value": 150, "unit": "PS" }, "torque": { "value": 305, "unit": "Nm" }, "transmission": "6-speed manual",
-          "src": "wp", "quotes": ["2006–2009 6-speed manual 140 PS (103 kW; 138 hp) @ 4,000 rpm 150 PS (110 kW; 148 hp) @ 4,000 rpm 31.1 kg⋅m (305 N⋅m; 225 lbf⋅ft) @ 1,800–2,500 rpm"] }
+        {
+          "id": "p1",
+          "name": "Beta II 2.0",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2004–2009",
+          "engine": "2.0 L Beta II DOHC CVVT I4",
+          "cylinders": 4,
+          "power": {
+            "value": 142,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 184,
+            "unit": "Nm"
+          },
+          "transmission": "5-speed manual",
+          "src": "wp",
+          "quotes": [
+            "Beta II 2.0 2004–2009 5-speed manual 142 PS (104 kW; 140 hp) @ 6,000 rpm 18.8 kg⋅m (184 N⋅m; 136 lbf⋅ft) @ 4,500 rpm",
+            "2.0 L Beta II DOHC CVVT I4"
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "Delta 2.7 V6",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "2.7 L Delta DOHC CVVT V6",
+          "cylinders": 6,
+          "power": {
+            "value": 175,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 241,
+            "unit": "Nm"
+          },
+          "transmission": "4-speed automatic",
+          "src": "wp",
+          "quotes": [
+            "Delta 2.7 4-speed automatic 175 PS (129 kW; 173 hp) @ 6,000 rpm 24.6 kg⋅m (241 N⋅m; 178 lbf⋅ft) @ 4,000 rpm",
+            "2.7 L Delta DOHC CVVT V6"
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "D 2.0 CRDi (113 PS)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2004–2009",
+          "engine": "2.0 L D CRDi-VGT I4",
+          "cylinders": 4,
+          "power": {
+            "value": 113,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 245,
+            "unit": "Nm"
+          },
+          "transmission": "5-speed manual",
+          "src": "wp",
+          "quotes": [
+            "D 2.0 CRDi 2004–2009 5-speed manual 113 PS (83 kW; 111 hp) @ 4,000 rpm 25 kg⋅m (245 N⋅m; 181 lbf⋅ft) @ 1,800–2,500 rpm",
+            "2.0 L D CRDi-VGT I4"
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "D 2.0 CRDi (140 PS)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2006–2009",
+          "engine": "2.0 L D CRDi-VGT I4",
+          "cylinders": 4,
+          "power": {
+            "value": 140,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 305,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual",
+          "src": "wp",
+          "quotes": [
+            "2006–2009 6-speed manual 140 PS (103 kW; 138 hp) @ 4,000 rpm 150 PS (110 kW; 148 hp) @ 4,000 rpm 31.1 kg⋅m (305 N⋅m; 225 lbf⋅ft) @ 1,800–2,500 rpm"
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "D 2.0 CRDi (150 PS)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2006–2009",
+          "engine": "2.0 L D CRDi-VGT I4",
+          "cylinders": 4,
+          "power": {
+            "value": 150,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 305,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual",
+          "src": "wp",
+          "quotes": [
+            "2006–2009 6-speed manual 140 PS (103 kW; 138 hp) @ 4,000 rpm 150 PS (110 kW; 148 hp) @ 4,000 rpm 31.1 kg⋅m (305 N⋅m; 225 lbf⋅ft) @ 1,800–2,500 rpm"
+          ]
+        }
       ],
       "notes": [
         "Wikipedia gives general production as 2004–2009, with local production continuing in Brazil (2005–2019), Taiwan (2005–2010) and Ukraine (2007–2010).",
@@ -73,96 +313,459 @@
         "A China-only facelift built by Beijing Hyundai is mentioned by Wikipedia without dates; it is not recorded as a revision.",
         "The Tucson FCEV (2005 Los Angeles Auto Show) was a fuel-cell test vehicle and is not recorded as a production powertrain.",
         "No manufacturer source could be read for this generation: hyundainews.com release pages are rendered by JavaScript and return no text."
-      ]
+      ],
+      "commons": {
+        "generation": "Category:Hyundai Tucson (JM)"
+      }
     },
     {
       "id": "hyundai-tucson-lm",
       "slug": "lm",
       "ordinal": 2,
-      "lines": ["tucson"],
+      "lines": [
+        "tucson"
+      ],
       "name": "Second generation",
-      "codes": [ { "value": "LM", "kind": "model code", "src": "wp", "quote": "Model code LM" } ],
+      "codes": [
+        {
+          "value": "LM",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code LM"
+        }
+      ],
       "names": [
-        { "value": "Hyundai ix35", "markets": ["EU", "AU", "CN"], "src": "wp", "quote": "The second-generation model was marketed as the Hyundai ix35 in several markets, including Europe, Australia and China" },
-        { "value": "Hyundai Tucson ix", "markets": ["KR"], "src": "wp", "quote": "the Hyundai Tucson name (also known as the \"Hyundai Tucson ix\" in Korea)" },
-        { "value": "Tucson", "markets": ["NA"], "src": "wp", "quote": "Vehicles sold in the North America and several other regions continued to be called Tucson." }
+        {
+          "value": "Hyundai ix35",
+          "markets": [
+            "EU",
+            "AU",
+            "CN"
+          ],
+          "src": "wp",
+          "quote": "The second-generation model was marketed as the Hyundai ix35 in several markets, including Europe, Australia and China"
+        },
+        {
+          "value": "Hyundai Tucson ix",
+          "markets": [
+            "KR"
+          ],
+          "src": "wp",
+          "quote": "the Hyundai Tucson name (also known as the \"Hyundai Tucson ix\" in Korea)"
+        },
+        {
+          "value": "Tucson",
+          "markets": [
+            "NA"
+          ],
+          "src": "wp",
+          "quote": "Vehicles sold in the North America and several other regions continued to be called Tucson."
+        }
       ],
       "dates": {
-        "revealed": { "value": "2009", "event": "Frankfurt Motor Show", "src": "wp", "quote": "The ix35 was unveiled at the 2009 Frankfurt Motor Show." },
-        "productionStart": { "value": "2009", "src": "wp", "quote": "Production 2009–2015" },
-        "productionEnd": { "value": "2015", "src": "wp", "quote": "Production 2009–2015" },
-        "modelYears": [ { "market": "unstated", "from": 2010, "to": 2015, "src": "wp", "quote": "Model years 2010–2015" } ]
+        "revealed": {
+          "value": "2009",
+          "event": "Frankfurt Motor Show",
+          "src": "wp",
+          "quote": "The ix35 was unveiled at the 2009 Frankfurt Motor Show."
+        },
+        "productionStart": {
+          "value": "2009",
+          "src": "wp",
+          "quote": "Production 2009–2015"
+        },
+        "productionEnd": {
+          "value": "2015",
+          "src": "wp",
+          "quote": "Production 2009–2015"
+        },
+        "modelYears": [
+          {
+            "market": "unstated",
+            "from": 2010,
+            "to": 2015,
+            "src": "wp",
+            "quote": "Model years 2010–2015"
+          }
+        ]
       },
       "ongoing": false,
       "assembly": [
-        { "value": "Ulsan, South Korea", "src": "wp", "quote": "South Korea: Ulsan Czech Republic: Nošovice (HMMC)" },
-        { "value": "Nošovice, Czech Republic (HMMC)", "src": "wp", "quote": "Czech Republic: Nošovice (HMMC) Slovakia: Žilina (Kia Motors Slovakia)" },
-        { "value": "Žilina, Slovakia (Kia Motors Slovakia)", "src": "wp", "quote": "Slovakia: Žilina (Kia Motors Slovakia)" },
-        { "value": "Beijing, China (Beijing Hyundai)", "src": "wp", "quote": "Slovakia: Žilina (Kia Motors Slovakia) China: Beijing (Beijing Hyundai)" },
-        { "value": "Anápolis, Brazil (Hyundai Caoa)", "src": "wp", "quote": "Brazil: Anápolis (Hyundai Caoa) Taiwan: Hukou, Hsinchu (SYM Motors) Indonesia: Bekasi (HIM)" },
-        { "value": "Hukou, Hsinchu, Taiwan (SYM Motors)", "src": "wp", "quote": "Taiwan: Hukou, Hsinchu (SYM Motors) Indonesia: Bekasi (HIM)" },
-        { "value": "Bekasi, Indonesia (HIM)", "src": "wp", "quote": "Indonesia: Bekasi (HIM)" },
-        { "value": "Kulim, Kedah, Malaysia (Inokom)", "src": "wp", "quote": "Malaysia: Kulim, Kedah (Inokom)" },
-        { "value": "Cairo, Egypt (Ghabbour Group)", "src": "wp", "quote": "Malaysia: Kulim, Kedah (Inokom) Egypt: Cairo (Ghabbour Group) Designer" }
+        {
+          "value": "Ulsan, South Korea",
+          "src": "wp",
+          "quote": "South Korea: Ulsan Czech Republic: Nošovice (HMMC)"
+        },
+        {
+          "value": "Nošovice, Czech Republic (HMMC)",
+          "src": "wp",
+          "quote": "Czech Republic: Nošovice (HMMC) Slovakia: Žilina (Kia Motors Slovakia)"
+        },
+        {
+          "value": "Žilina, Slovakia (Kia Motors Slovakia)",
+          "src": "wp",
+          "quote": "Slovakia: Žilina (Kia Motors Slovakia)"
+        },
+        {
+          "value": "Beijing, China (Beijing Hyundai)",
+          "src": "wp",
+          "quote": "Slovakia: Žilina (Kia Motors Slovakia) China: Beijing (Beijing Hyundai)"
+        },
+        {
+          "value": "Anápolis, Brazil (Hyundai Caoa)",
+          "src": "wp",
+          "quote": "Brazil: Anápolis (Hyundai Caoa) Taiwan: Hukou, Hsinchu (SYM Motors) Indonesia: Bekasi (HIM)"
+        },
+        {
+          "value": "Hukou, Hsinchu, Taiwan (SYM Motors)",
+          "src": "wp",
+          "quote": "Taiwan: Hukou, Hsinchu (SYM Motors) Indonesia: Bekasi (HIM)"
+        },
+        {
+          "value": "Bekasi, Indonesia (HIM)",
+          "src": "wp",
+          "quote": "Indonesia: Bekasi (HIM)"
+        },
+        {
+          "value": "Kulim, Kedah, Malaysia (Inokom)",
+          "src": "wp",
+          "quote": "Malaysia: Kulim, Kedah (Inokom)"
+        },
+        {
+          "value": "Cairo, Egypt (Ghabbour Group)",
+          "src": "wp",
+          "quote": "Malaysia: Kulim, Kedah (Inokom) Egypt: Cairo (Ghabbour Group) Designer"
+        }
       ],
-      "bodyStyles": [ { "id": "b1", "value": "5-door SUV", "markets": ["global"], "src": "wp", "quote": "Body style 5-door SUV" } ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Body style 5-door SUV"
+        }
+      ],
       "drivetrains": [
-        { "value": "FWD", "markets": ["KR"], "src": "wp", "quote": "In South Korea, the diesel engine is offered in both front-wheel drive and all-wheel drive configurations, while the 2.0-litre petrol engine is available only in front-wheel drive." },
-        { "value": "AWD", "markets": ["KR"], "src": "wp", "quote": "In South Korea, the diesel engine is offered in both front-wheel drive and all-wheel drive configurations" },
-        { "value": "AWD", "markets": ["US"], "src": "wp", "quote": "with all-wheel drive available for GLS and Limited trims" }
+        {
+          "value": "FWD",
+          "markets": [
+            "KR"
+          ],
+          "src": "wp",
+          "quote": "In South Korea, the diesel engine is offered in both front-wheel drive and all-wheel drive configurations, while the 2.0-litre petrol engine is available only in front-wheel drive."
+        },
+        {
+          "value": "AWD",
+          "markets": [
+            "KR"
+          ],
+          "src": "wp",
+          "quote": "In South Korea, the diesel engine is offered in both front-wheel drive and all-wheel drive configurations"
+        },
+        {
+          "value": "AWD",
+          "markets": [
+            "US"
+          ],
+          "src": "wp",
+          "quote": "with all-wheel drive available for GLS and Limited trims"
+        }
       ],
       "dimensions": [
-        { "id": "d1", "market": "unstated", "unit": "mm", "length": 4410, "width": 1820, "wheelbase": 2640,
-          "src": "wp", "quotes": ["Wheelbase 2,640 mm (103.9 in) Length 4,410 mm (173.6 in) Width 1,820 mm (71.7 in)"] }
+        {
+          "id": "d1",
+          "market": "unstated",
+          "unit": "mm",
+          "length": 4410,
+          "width": 1820,
+          "wheelbase": 2640,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 2,640 mm (103.9 in) Length 4,410 mm (173.6 in) Width 1,820 mm (71.7 in)"
+          ]
+        }
       ],
       "cargo": [
-        { "id": "k1", "market": "unstated", "behind": "2nd row", "value": 465, "unit": "L", "standard": "not stated", "src": "wp", "quote": "Rear storage space is also larger, with seats-up capacity growing from 465 to 513 litres." }
+        {
+          "id": "k1",
+          "market": "unstated",
+          "behind": "2nd row",
+          "value": 465,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "wp",
+          "quote": "Rear storage space is also larger, with seats-up capacity growing from 465 to 513 litres."
+        }
       ],
       "powertrains": [
-        { "id": "p1", "name": "Gamma II 1.6 GDi", "market": "EU", "fuel": "petrol", "years": "2009–2015", "engine": "1.6 L Gamma GDi I4", "cylinders": 4,
-          "power": { "value": 135, "unit": "PS" }, "torque": { "value": 164, "unit": "Nm" }, "transmission": "6-speed manual",
-          "src": "wp", "quotes": ["Gamma II 1.6 GDi 2009–2015 6-speed manual 135 PS (99 kW; 133 hp) @ 6,300 rpm 16.7 kg⋅m (164 N⋅m; 121 lbf⋅ft) @ 4,850 rpm", "1.7-litre UII diesel and 1.6-litre Gamma GDI petrol. The later two only in Europe."] },
-        { "id": "p2", "name": "Theta II 2.0 MPi", "market": "unstated", "fuel": "petrol", "engine": "2.0 L Theta II MPi I4", "cylinders": 4,
-          "power": { "value": 166, "unit": "PS" }, "torque": { "value": 197, "unit": "Nm" }, "transmission": "5-speed manual or 6-speed automatic",
-          "src": "wp", "quotes": ["Theta II 2.0 MPi 5-speed manual 166 PS (122 kW; 164 hp) @ 6,200 rpm 20.1 kg⋅m (197 N⋅m; 145 lbf⋅ft) @ 4,600 rpm", "6-speed automatic 10.6s (FWD)"] },
-        { "id": "p3", "name": "Nu 2.0 GDi", "market": "unstated", "fuel": "petrol", "years": "2013–2015", "engine": "2.0 L Nu GDi I4", "cylinders": 4,
-          "power": { "value": 166, "unit": "PS" }, "torque": { "value": 205, "unit": "Nm" }, "transmission": "6-speed manual or 6-speed automatic",
-          "src": "wp", "quotes": ["Nu 2.0 GDi 2013–2015 6-speed manual 166 PS (122 kW; 164 hp) @ 6,200 rpm 20.9 kg⋅m (205 N⋅m; 151 lbf⋅ft) @ 4,000 rpm"] },
-        { "id": "p4", "name": "Theta II 2.4 MPi", "market": "unstated", "fuel": "petrol", "years": "2009–2015", "engine": "2.4 L Theta II MPi I4", "cylinders": 4,
-          "power": { "value": 177, "unit": "PS" }, "torque": { "value": 227, "unit": "Nm" }, "transmission": "6-speed automatic",
-          "src": "wp", "quotes": ["Theta II 2.4 MPi 2009–2015 6-speed automatic 177 PS (130 kW; 175 hp) @ 6,000 rpm 23.1 kg⋅m (227 N⋅m; 167 lbf⋅ft) @ 4,000 rpm"] },
-        { "id": "p5", "name": "U II 1.7 CRDi", "market": "EU", "fuel": "diesel", "years": "2009–2015", "engine": "1.7 L U II CRDi-VGT I4", "cylinders": 4,
-          "power": { "value": 116, "unit": "PS" }, "torque": { "value": 260, "unit": "Nm" }, "transmission": "6-speed manual",
-          "src": "wp", "quotes": ["U II 1.7 CRDi 2009–2015 6-speed manual 116 PS (85 kW; 114 hp) @ 4,000 rpm 26.5 kg⋅m (260 N⋅m; 192 lbf⋅ft) @ 1,250–2,750 rpm", "1.7-litre UII diesel and 1.6-litre Gamma GDI petrol. The later two only in Europe."] },
-        { "id": "p6", "name": "R II 2.0 CRDi (136 PS)", "market": "unstated", "fuel": "diesel", "engine": "2.0 L R II CRDi-VGT I4", "cylinders": 4,
-          "power": { "value": 136, "unit": "PS" }, "torque": { "value": 314, "unit": "Nm" }, "transmission": "6-speed manual",
-          "src": "wp", "quotes": ["R II 2.0 CRDi 6-speed manual 136 PS (100 kW; 134 hp) @ 4,000 rpm 32 kg⋅m (314 N⋅m; 231 lbf⋅ft) @ 1,800–2,500 rpm"] },
-        { "id": "p7", "name": "R II 2.0 CRDi (184 PS, manual)", "market": "unstated", "fuel": "diesel", "engine": "2.0 L R II CRDi-VGT I4", "cylinders": 4,
-          "power": { "value": 184, "unit": "PS" }, "torque": { "value": 392, "unit": "Nm" }, "transmission": "6-speed manual",
-          "src": "wp", "quotes": ["6-speed manual 184 PS (135 kW; 181 hp) @ 4,000 rpm 40 kg⋅m (392 N⋅m; 289 lbf⋅ft) @ 1,800–2,500 rpm"] },
-        { "id": "p8", "name": "R II 2.0 CRDi (184 PS, automatic)", "market": "unstated", "fuel": "diesel", "engine": "2.0 L R II CRDi-VGT I4", "cylinders": 4,
-          "torque": { "value": 382, "unit": "Nm" }, "transmission": "6-speed automatic",
-          "src": "wp", "quotes": ["6-speed automatic 39 kg⋅m (382 N⋅m; 282 lbf⋅ft) @ 1,800–2,500 rpm"] },
-        { "id": "p9", "name": "2.0 (North America)", "market": "NA", "fuel": "petrol", "engine": "2.0-litre four-cylinder",
-          "power": { "value": 165, "unit": "hp" }, "transmission": "6-speed automatic",
-          "src": "wp", "quotes": ["The North American versions are powered by either the 2.0-litre producing 165 hp (167 PS; 123 kW) or a 2.4-litre four-cylinder petrol engine producing 176 hp (178 PS; 131 kW) mated to the six-speed automatic transmission."] },
-        { "id": "p10", "name": "2.4 (North America)", "market": "NA", "fuel": "petrol", "engine": "2.4-litre four-cylinder",
-          "power": { "value": 176, "unit": "hp" }, "transmission": "6-speed automatic",
-          "src": "wp", "quotes": ["The North American versions are powered by either the 2.0-litre producing 165 hp (167 PS; 123 kW) or a 2.4-litre four-cylinder petrol engine producing 176 hp (178 PS; 131 kW) mated to the six-speed automatic transmission."] }
+        {
+          "id": "p1",
+          "name": "Gamma II 1.6 GDi",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2009–2015",
+          "engine": "1.6 L Gamma GDi I4",
+          "cylinders": 4,
+          "power": {
+            "value": 135,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 164,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual",
+          "src": "wp",
+          "quotes": [
+            "Gamma II 1.6 GDi 2009–2015 6-speed manual 135 PS (99 kW; 133 hp) @ 6,300 rpm 16.7 kg⋅m (164 N⋅m; 121 lbf⋅ft) @ 4,850 rpm",
+            "1.7-litre UII diesel and 1.6-litre Gamma GDI petrol. The later two only in Europe."
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "Theta II 2.0 MPi",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "2.0 L Theta II MPi I4",
+          "cylinders": 4,
+          "power": {
+            "value": 166,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 197,
+            "unit": "Nm"
+          },
+          "transmission": "5-speed manual or 6-speed automatic",
+          "src": "wp",
+          "quotes": [
+            "Theta II 2.0 MPi 5-speed manual 166 PS (122 kW; 164 hp) @ 6,200 rpm 20.1 kg⋅m (197 N⋅m; 145 lbf⋅ft) @ 4,600 rpm",
+            "6-speed automatic 10.6s (FWD)"
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "Nu 2.0 GDi",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2013–2015",
+          "engine": "2.0 L Nu GDi I4",
+          "cylinders": 4,
+          "power": {
+            "value": 166,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 205,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual or 6-speed automatic",
+          "src": "wp",
+          "quotes": [
+            "Nu 2.0 GDi 2013–2015 6-speed manual 166 PS (122 kW; 164 hp) @ 6,200 rpm 20.9 kg⋅m (205 N⋅m; 151 lbf⋅ft) @ 4,000 rpm"
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "Theta II 2.4 MPi",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2009–2015",
+          "engine": "2.4 L Theta II MPi I4",
+          "cylinders": 4,
+          "power": {
+            "value": 177,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 227,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed automatic",
+          "src": "wp",
+          "quotes": [
+            "Theta II 2.4 MPi 2009–2015 6-speed automatic 177 PS (130 kW; 175 hp) @ 6,000 rpm 23.1 kg⋅m (227 N⋅m; 167 lbf⋅ft) @ 4,000 rpm"
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "U II 1.7 CRDi",
+          "market": "EU",
+          "fuel": "diesel",
+          "years": "2009–2015",
+          "engine": "1.7 L U II CRDi-VGT I4",
+          "cylinders": 4,
+          "power": {
+            "value": 116,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 260,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual",
+          "src": "wp",
+          "quotes": [
+            "U II 1.7 CRDi 2009–2015 6-speed manual 116 PS (85 kW; 114 hp) @ 4,000 rpm 26.5 kg⋅m (260 N⋅m; 192 lbf⋅ft) @ 1,250–2,750 rpm",
+            "1.7-litre UII diesel and 1.6-litre Gamma GDI petrol. The later two only in Europe."
+          ]
+        },
+        {
+          "id": "p6",
+          "name": "R II 2.0 CRDi (136 PS)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "engine": "2.0 L R II CRDi-VGT I4",
+          "cylinders": 4,
+          "power": {
+            "value": 136,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 314,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual",
+          "src": "wp",
+          "quotes": [
+            "R II 2.0 CRDi 6-speed manual 136 PS (100 kW; 134 hp) @ 4,000 rpm 32 kg⋅m (314 N⋅m; 231 lbf⋅ft) @ 1,800–2,500 rpm"
+          ]
+        },
+        {
+          "id": "p7",
+          "name": "R II 2.0 CRDi (184 PS, manual)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "engine": "2.0 L R II CRDi-VGT I4",
+          "cylinders": 4,
+          "power": {
+            "value": 184,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 392,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual",
+          "src": "wp",
+          "quotes": [
+            "6-speed manual 184 PS (135 kW; 181 hp) @ 4,000 rpm 40 kg⋅m (392 N⋅m; 289 lbf⋅ft) @ 1,800–2,500 rpm"
+          ]
+        },
+        {
+          "id": "p8",
+          "name": "R II 2.0 CRDi (184 PS, automatic)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "engine": "2.0 L R II CRDi-VGT I4",
+          "cylinders": 4,
+          "torque": {
+            "value": 382,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed automatic",
+          "src": "wp",
+          "quotes": [
+            "6-speed automatic 39 kg⋅m (382 N⋅m; 282 lbf⋅ft) @ 1,800–2,500 rpm"
+          ]
+        },
+        {
+          "id": "p9",
+          "name": "2.0 (North America)",
+          "market": "NA",
+          "fuel": "petrol",
+          "engine": "2.0-litre four-cylinder",
+          "power": {
+            "value": 165,
+            "unit": "hp"
+          },
+          "transmission": "6-speed automatic",
+          "src": "wp",
+          "quotes": [
+            "The North American versions are powered by either the 2.0-litre producing 165 hp (167 PS; 123 kW) or a 2.4-litre four-cylinder petrol engine producing 176 hp (178 PS; 131 kW) mated to the six-speed automatic transmission."
+          ]
+        },
+        {
+          "id": "p10",
+          "name": "2.4 (North America)",
+          "market": "NA",
+          "fuel": "petrol",
+          "engine": "2.4-litre four-cylinder",
+          "power": {
+            "value": 176,
+            "unit": "hp"
+          },
+          "transmission": "6-speed automatic",
+          "src": "wp",
+          "quotes": [
+            "The North American versions are powered by either the 2.0-litre producing 165 hp (167 PS; 123 kW) or a 2.4-litre four-cylinder petrol engine producing 176 hp (178 PS; 131 kW) mated to the six-speed automatic transmission."
+          ]
+        }
       ],
       "changes": [
-        { "id": "c1", "topic": "powertrain", "text": "The 2.4-litre four-cylinder made almost the same power as the previous V6, with 20% better fuel economy than the previous four-cylinder.", "src": "wp", "quote": "The 2.4-litre engine makes almost the same power as the previous generation V6 engine while managing 20% better fuel economy than the previous generation four-cylinder." },
-        { "id": "c2", "topic": "design", "text": "Styling was reported to be based on the Hyundai ix-onic concept.", "src": "wp", "quote": "The ix35's styling was reported to be based on Hyundai ix-onic concept." },
-        { "id": "c3", "topic": "other", "text": "Outside South Korea and North America the name changed to ix35 in most markets.", "src": "wp", "quote": "In most markets outside South Korea and North America, the Hyundai Tucson name (also known as the \"Hyundai Tucson ix\" in Korea) was changed to Hyundai ix35." }
+        {
+          "id": "c1",
+          "topic": "powertrain",
+          "text": "The 2.4-litre four-cylinder made almost the same power as the previous V6, with 20% better fuel economy than the previous four-cylinder.",
+          "src": "wp",
+          "quote": "The 2.4-litre engine makes almost the same power as the previous generation V6 engine while managing 20% better fuel economy than the previous generation four-cylinder."
+        },
+        {
+          "id": "c2",
+          "topic": "design",
+          "text": "Styling was reported to be based on the Hyundai ix-onic concept.",
+          "src": "wp",
+          "quote": "The ix35's styling was reported to be based on Hyundai ix-onic concept."
+        },
+        {
+          "id": "c3",
+          "topic": "other",
+          "text": "Outside South Korea and North America the name changed to ix35 in most markets.",
+          "src": "wp",
+          "quote": "In most markets outside South Korea and North America, the Hyundai Tucson name (also known as the \"Hyundai Tucson ix\" in Korea) was changed to Hyundai ix35."
+        }
       ],
       "revisions": [
-        { "id": "r1", "slug": "2013-facelift", "kind": "facelift", "name": "Facelift (2013)",
-          "dates": { "salesStart": { "value": "2013-05-02", "market": "KR", "src": "wp", "quote": "The facelifted Tucson was released in South Korea on 2 May 2013" } },
+        {
+          "id": "r1",
+          "slug": "2013-facelift",
+          "kind": "facelift",
+          "name": "Facelift (2013)",
+          "dates": {
+            "salesStart": {
+              "value": "2013-05-02",
+              "market": "KR",
+              "src": "wp",
+              "quote": "The facelifted Tucson was released in South Korea on 2 May 2013"
+            }
+          },
           "changes": [
-            { "id": "r1c1", "topic": "design", "text": "In South Korea the facelift brought a new grille, projector headlights, tail lights, round fog lights and front bumper.", "src": "wp", "quote": "The facelifted Tucson was released in South Korea on 2 May 2013, based on the European market ix35 styling with new grille, projector headlights, tail lights, rounded fog lights and front bumper." },
-            { "id": "r1c2", "topic": "design", "text": "In Europe only the headlights and tail lights were changed; North America and Australia kept the earlier styling with new headlights.", "src": "wp", "quote": "especially in Europe, where only headlights and tail lights were changed, and in North America and Australia, where it retained the pre-facelift styling with only headlights were changed" },
-            { "id": "r1c3", "topic": "powertrain", "text": "For the 2014 model year in North America, direct-injection Theta II engines were introduced.", "src": "wp", "quote": "For the 2014 model year, the Tucson was upgraded with GDI direct injected Theta II engines" }
-          ] }
+            {
+              "id": "r1c1",
+              "topic": "design",
+              "text": "In South Korea the facelift brought a new grille, projector headlights, tail lights, round fog lights and front bumper.",
+              "src": "wp",
+              "quote": "The facelifted Tucson was released in South Korea on 2 May 2013, based on the European market ix35 styling with new grille, projector headlights, tail lights, rounded fog lights and front bumper."
+            },
+            {
+              "id": "r1c2",
+              "topic": "design",
+              "text": "In Europe only the headlights and tail lights were changed; North America and Australia kept the earlier styling with new headlights.",
+              "src": "wp",
+              "quote": "especially in Europe, where only headlights and tail lights were changed, and in North America and Australia, where it retained the pre-facelift styling with only headlights were changed"
+            },
+            {
+              "id": "r1c3",
+              "topic": "powertrain",
+              "text": "For the 2014 model year in North America, direct-injection Theta II engines were introduced.",
+              "src": "wp",
+              "quote": "For the 2014 model year, the Tucson was upgraded with GDI direct injected Theta II engines"
+            }
+          ]
+        }
       ],
       "notes": [
         "Wikipedia gives a height range of 1,655–1,685 mm, so height is not recorded as a single value.",
@@ -170,117 +773,599 @@
         "The facelift was applied differently by market (full restyle in Korea and China, lights only in Europe/North America/Australia, and a separate Indonesian facelift in April 2014).",
         "Brazil continued local production until 2022 according to Wikipedia; the China-only successor 'ix35 (NU)' is a separate model not covered here.",
         "No manufacturer source could be read for this generation (hyundainews.com renders by JavaScript only)."
-      ]
+      ],
+      "commons": {
+        "generation": "Category:Hyundai Tucson (LM)"
+      }
     },
     {
       "id": "hyundai-tucson-tl",
       "slug": "tl",
       "ordinal": 3,
-      "lines": ["tucson"],
+      "lines": [
+        "tucson"
+      ],
       "name": "Third generation",
-      "codes": [ { "value": "TL", "kind": "model code", "src": "wp", "quote": "Model code TL" } ],
+      "codes": [
+        {
+          "value": "TL",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code TL"
+        }
+      ],
       "names": [
-        { "value": "Tucson", "markets": ["global"], "src": "wp", "quote": "Since this generation, Hyundai has discontinued the use of the ix35 nameplate, reverting to Tucson globally." }
+        {
+          "value": "Tucson",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Since this generation, Hyundai has discontinued the use of the ix35 nameplate, reverting to Tucson globally."
+        }
       ],
       "dates": {
-        "revealed": { "value": "2015-03-03", "event": "Geneva Motor Show", "src": "wp", "quote": "ahead of the crossover's official debut at the Geneva Motor Show on 3 March 2015" },
-        "productionStart": { "value": "2015", "src": "wp", "quote": "Production 2015–2021" },
-        "productionEnd": { "value": "2021", "src": "wp", "quote": "Production 2015–2021" },
-        "salesStart": [ { "value": "2015-07", "market": "NA", "src": "wp", "quote": "Available in July 2015, the 2016 Hyundai Tucson was available in four trim levels" } ],
-        "modelYears": [ { "market": "unstated", "from": 2016, "to": 2021, "src": "wp", "quote": "Model years 2016–2021" } ]
+        "revealed": {
+          "value": "2015-03-03",
+          "event": "Geneva Motor Show",
+          "src": "wp",
+          "quote": "ahead of the crossover's official debut at the Geneva Motor Show on 3 March 2015"
+        },
+        "productionStart": {
+          "value": "2015",
+          "src": "wp",
+          "quote": "Production 2015–2021"
+        },
+        "productionEnd": {
+          "value": "2021",
+          "src": "wp",
+          "quote": "Production 2015–2021"
+        },
+        "salesStart": [
+          {
+            "value": "2015-07",
+            "market": "NA",
+            "src": "wp",
+            "quote": "Available in July 2015, the 2016 Hyundai Tucson was available in four trim levels"
+          }
+        ],
+        "modelYears": [
+          {
+            "market": "unstated",
+            "from": 2016,
+            "to": 2021,
+            "src": "wp",
+            "quote": "Model years 2016–2021"
+          }
+        ]
       },
       "ongoing": false,
       "assembly": [
-        { "value": "Ulsan, South Korea", "src": "wp", "quote": "Model years 2016–2021 Assembly South Korea: Ulsan" },
-        { "value": "Nošovice, Czech Republic (HMMC)", "src": "wp", "quote": "Czech Republic: Nošovice (HMMC) China: Beijing (Beijing Hyundai) Taiwan: Hukou (Sanyang Motor)" },
-        { "value": "Beijing, China (Beijing Hyundai)", "src": "wp", "quote": "China: Beijing (Beijing Hyundai) Taiwan: Hukou (Sanyang Motor)" },
-        { "value": "Anápolis, Brazil (Hyundai Caoa)", "src": "wp", "quote": "Brazil: Anápolis (Hyundai Caoa) India: Chennai (HMIL)" },
-        { "value": "Chennai, India (HMIL)", "src": "wp", "quote": "India: Chennai (HMIL) Malaysia: Kulim (Inokom)" },
-        { "value": "Kaliningrad, Russia (Avtotor)", "src": "wp", "quote": "Russia: Kaliningrad (Avtotor)" },
-        { "value": "Ninh Bình, Vietnam (HTMV)", "src": "wp", "quote": "Russia: Kaliningrad (Avtotor) Vietnam: Ninh Bình (HTMV)" },
-        { "value": "Faisalabad, Pakistan (Hyundai Nishat)", "src": "wp", "quote": "Algeria: Tiaret (TMC) Pakistan: Faisalabad (Hyundai Nishat) Designer Kim Ki-Euk" }
+        {
+          "value": "Ulsan, South Korea",
+          "src": "wp",
+          "quote": "Model years 2016–2021 Assembly South Korea: Ulsan"
+        },
+        {
+          "value": "Nošovice, Czech Republic (HMMC)",
+          "src": "wp",
+          "quote": "Czech Republic: Nošovice (HMMC) China: Beijing (Beijing Hyundai) Taiwan: Hukou (Sanyang Motor)"
+        },
+        {
+          "value": "Beijing, China (Beijing Hyundai)",
+          "src": "wp",
+          "quote": "China: Beijing (Beijing Hyundai) Taiwan: Hukou (Sanyang Motor)"
+        },
+        {
+          "value": "Anápolis, Brazil (Hyundai Caoa)",
+          "src": "wp",
+          "quote": "Brazil: Anápolis (Hyundai Caoa) India: Chennai (HMIL)"
+        },
+        {
+          "value": "Chennai, India (HMIL)",
+          "src": "wp",
+          "quote": "India: Chennai (HMIL) Malaysia: Kulim (Inokom)"
+        },
+        {
+          "value": "Kaliningrad, Russia (Avtotor)",
+          "src": "wp",
+          "quote": "Russia: Kaliningrad (Avtotor)"
+        },
+        {
+          "value": "Ninh Bình, Vietnam (HTMV)",
+          "src": "wp",
+          "quote": "Russia: Kaliningrad (Avtotor) Vietnam: Ninh Bình (HTMV)"
+        },
+        {
+          "value": "Faisalabad, Pakistan (Hyundai Nishat)",
+          "src": "wp",
+          "quote": "Algeria: Tiaret (TMC) Pakistan: Faisalabad (Hyundai Nishat) Designer Kim Ki-Euk"
+        }
       ],
-      "bodyStyles": [ { "id": "b1", "value": "5-door SUV", "markets": ["global"], "src": "wp", "quote": "Body style 5-door SUV" } ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Body style 5-door SUV"
+        }
+      ],
       "drivetrains": [
-        { "value": "FWD", "markets": ["NA"], "src": "wp", "quote": "Both engines are available in front and all-wheel drive versions." },
-        { "value": "AWD", "markets": ["NA"], "src": "wp", "quote": "Both engines are available in front and all-wheel drive versions." }
+        {
+          "value": "FWD",
+          "markets": [
+            "NA"
+          ],
+          "src": "wp",
+          "quote": "Both engines are available in front and all-wheel drive versions."
+        },
+        {
+          "value": "AWD",
+          "markets": [
+            "NA"
+          ],
+          "src": "wp",
+          "quote": "Both engines are available in front and all-wheel drive versions."
+        }
       ],
       "dimensions": [
-        { "id": "d1", "market": "unstated", "unit": "mm", "length": 4475, "width": 1850, "height": 1645, "wheelbase": 2670,
-          "src": "wp", "quotes": ["Wheelbase 2,670 mm (105.1 in) Length 4,475 mm (176.2 in)", "Width 1,850 mm (72.8 in) Height 1,645 mm (64.8 in)"] },
-        { "id": "d2", "market": "CN", "unit": "mm", "length": 4545, "height": 1670,
-          "src": "wp", "quotes": ["4,545 mm (178.9 in) (China)", "1,670 mm (65.7 in) (China)"] }
+        {
+          "id": "d1",
+          "market": "unstated",
+          "unit": "mm",
+          "length": 4475,
+          "width": 1850,
+          "height": 1645,
+          "wheelbase": 2670,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 2,670 mm (105.1 in) Length 4,475 mm (176.2 in)",
+            "Width 1,850 mm (72.8 in) Height 1,645 mm (64.8 in)"
+          ]
+        },
+        {
+          "id": "d2",
+          "market": "CN",
+          "unit": "mm",
+          "length": 4545,
+          "height": 1670,
+          "src": "wp",
+          "quotes": [
+            "4,545 mm (178.9 in) (China)",
+            "1,670 mm (65.7 in) (China)"
+          ]
+        }
       ],
       "cargo": [
-        { "id": "k1", "market": "unstated", "behind": "2nd row", "value": 513, "unit": "L", "standard": "not stated", "src": "wp", "quote": "Rear storage space is also larger, with seats-up capacity growing from 465 to 513 litres." }
+        {
+          "id": "k1",
+          "market": "unstated",
+          "behind": "2nd row",
+          "value": 513,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "wp",
+          "quote": "Rear storage space is also larger, with seats-up capacity growing from 465 to 513 litres."
+        }
       ],
       "powertrains": [
-        { "id": "p1", "name": "Gamma II 1.6 GDi", "market": "unstated", "fuel": "petrol", "years": "2015–2020", "engine": "1.6 L Gamma GDi I4", "cylinders": 4,
-          "power": { "value": 132, "unit": "PS" }, "torque": { "value": 161, "unit": "Nm" }, "transmission": "6-speed manual",
-          "src": "wp", "quotes": ["Gamma II 1.6 GDi 2015–2020 6-speed manual 132 PS (97 kW; 130 hp) @ 6,300 rpm 16.4 kg⋅m (161 N⋅m; 119 lbf⋅ft) @ 4,850 rpm"] },
-        { "id": "p2", "name": "Gamma II 1.6 T-GDi", "market": "unstated", "fuel": "petrol", "engine": "1.6 L Gamma T-GDi I4", "cylinders": 4,
-          "power": { "value": 177, "unit": "PS" }, "torque": { "value": 265, "unit": "Nm" }, "transmission": "6-speed manual or 7-speed dual-clutch",
-          "src": "wp", "quotes": ["Gamma II 1.6 T-GDi 6-speed manual 177 PS (130 kW; 175 hp) @ 5,500 rpm 27 kg⋅m (265 N⋅m; 195 lbf⋅ft) @ 1,500–4,500 rpm", "7-speed dual clutch automatic 8.9s (FWD)"] },
-        { "id": "p3", "name": "Nu 2.0 MPi", "market": "unstated", "fuel": "petrol", "engine": "2.0 L Nu MPi I4", "cylinders": 4,
-          "power": { "value": 155, "unit": "PS" }, "torque": { "value": 192, "unit": "Nm" }, "transmission": "6-speed manual",
-          "src": "wp", "quotes": ["Nu 2.0 MPi 6-speed manual 155 PS (114 kW; 153 hp) @ 6,200 rpm 19.6 kg⋅m (192 N⋅m; 142 lbf⋅ft) @ 4,000 rpm"] },
-        { "id": "p4", "name": "Nu 2.0 GDi", "market": "unstated", "fuel": "petrol", "engine": "2.0 L Nu GDi I4", "cylinders": 4,
-          "power": { "value": 163, "unit": "PS" }, "torque": { "value": 204, "unit": "Nm" }, "transmission": "6-speed automatic",
-          "src": "wp", "quotes": ["Nu 2.0 GDi 6-speed automatic 163 PS (120 kW; 161 hp) @ 6,200 rpm 20.8 kg⋅m (204 N⋅m; 150 lbf⋅ft) @ 4,500 rpm"] },
-        { "id": "p5", "name": "Theta II 2.4 MPi", "market": "unstated", "fuel": "petrol", "engine": "2.4 L Theta II MPi I4", "cylinders": 4,
-          "power": { "value": 176, "unit": "PS" }, "torque": { "value": 228, "unit": "Nm" }, "transmission": "6-speed manual",
-          "src": "wp", "quotes": ["Theta II 2.4 MPi 6-speed manual 176 PS (129 kW; 174 hp) @ 6,000 rpm 23.2 kg⋅m (228 N⋅m; 168 lbf⋅ft) @ 4,000 rpm"] },
-        { "id": "p6", "name": "1.7 U II CRDi (116 PS)", "market": "unstated", "fuel": "diesel", "years": "2015–2018", "engine": "1.7 L U II CRDi I4", "cylinders": 4,
-          "power": { "value": 116, "unit": "PS" }, "torque": { "value": 280, "unit": "Nm" }, "transmission": "6-speed manual",
-          "src": "wp", "quotes": ["1.7 U II CRDi 2015–2018 6-speed manual 116 PS (85 kW; 114 hp) @ 4,000 rpm 28.6 kg⋅m (280 N⋅m; 207 lbf⋅ft) @ 1,250–2,750 rpm"] },
-        { "id": "p7", "name": "1.7 U II CRDi (141 PS)", "market": "unstated", "fuel": "diesel", "engine": "1.7 L U II CRDi I4", "cylinders": 4,
-          "power": { "value": 141, "unit": "PS" }, "torque": { "value": 340, "unit": "Nm" }, "transmission": "7-speed dual-clutch",
-          "src": "wp", "quotes": ["7-speed dual clutch automatic 141 PS (104 kW; 139 hp) @ 4,000 rpm 34.7 kg⋅m (340 N⋅m; 251 lbf⋅ft) @ 1,750–2,500 rpm"] },
-        { "id": "p8", "name": "2.0 R II CRDi (136 PS)", "market": "unstated", "fuel": "diesel", "years": "2015–2018", "engine": "2.0 L R II CRDi I4", "cylinders": 4,
-          "power": { "value": 136, "unit": "PS" }, "torque": { "value": 373, "unit": "Nm" }, "transmission": "6-speed manual",
-          "src": "wp", "quotes": ["2.0 R II CRDi 2015–2018 6-speed manual 136 PS (100 kW; 134 hp) @ 2,750–4,000 rpm 38 kg⋅m (373 N⋅m; 275 lbf⋅ft)"] },
-        { "id": "p9", "name": "2.0 GDI (North America)", "market": "NA", "fuel": "petrol", "years": "2016 model year on", "engine": "2.0-litre direct-injection four-cylinder",
-          "power": { "value": 164, "unit": "hp" }, "torque": { "value": 151, "unit": "lb-ft" }, "transmission": "6-speed automatic", "drivetrain": "FWD",
-          "src": "wp", "quotes": ["a 2.0-litre direct-injection four-cylinder delivering 164 hp (166 PS; 122 kW) and 151 lb⋅ft (205 N⋅m; 20.9 kg⋅m) of torque with a 6-speed automatic transmission"] },
-        { "id": "p10", "name": "1.6 turbo (North America)", "market": "NA", "fuel": "petrol", "years": "2016 model year on", "engine": "1.6-litre turbocharged",
-          "power": { "value": 175, "unit": "hp" }, "torque": { "value": 195, "unit": "lb-ft" }, "transmission": "7-speed dual-clutch",
-          "src": "wp", "quotes": ["a 1.6-litre turbocharged engine with 175 hp (177 PS; 130 kW) and 195 lb⋅ft (264 N⋅m; 27.0 kg⋅m) of torque paired with a 7-speed dual-clutch transmission"] },
-        { "id": "p11", "name": "2.4 GDi (North America, 2019 model year on)", "market": "NA", "fuel": "petrol", "engine": "2.4-litre I4 GDi",
-          "power": { "value": 181, "unit": "hp" }, "torque": { "value": 175, "unit": "lb-ft" },
-          "src": "wp", "quotes": ["replaced by a 2.4-litre I4 GDi naturally aspirated engine which produces 181 hp (184 PS; 135 kW) at 6,000 rpm and 175 lb⋅ft (237 N⋅m; 24.2 kg⋅m)"] },
-        { "id": "p12", "name": "2.0 diesel (186 PS, facelift)", "market": "EU", "fuel": "diesel", "years": "2018–", "engine": "2.0 diesel",
-          "power": { "value": 186, "unit": "PS" }, "transmission": "6-speed manual or 8-speed automatic", "drivetrain": "AWD",
-          "src": "hn5", "quotes": ["The most powerful powertrain in this line-up is the 2.0 diesel engine with an output of 137 kW/ 186 PS. This high-performance engine comes with four-wheel drive and can be paired with a six-speed manual transmission (6MT) or optionally with the newly developed eight-speed automatic transmission (8AT)."] },
-        { "id": "p13", "name": "1.6 diesel (115 PS, facelift)", "market": "EU", "fuel": "diesel", "years": "2018–", "engine": "1.6 diesel",
-          "power": { "value": 115, "unit": "PS" }, "transmission": "6-speed manual", "drivetrain": "FWD",
-          "src": "hn5", "quotes": ["the newly developed 1.6 diesel engines with two power outputs: the standard version is capable of 85 kW/ 115 PS and the higher power version offers 98 kW/ 133 PS. Both engines are available with a six-speed manual transmission and front-wheel-drive."] },
-        { "id": "p14", "name": "1.6 diesel (133 PS, facelift)", "market": "EU", "fuel": "diesel", "years": "2018–", "engine": "1.6 diesel",
-          "power": { "value": 133, "unit": "PS" },
-          "src": "hn5", "quotes": ["the standard version is capable of 85 kW/ 115 PS and the higher power version offers 98 kW/ 133 PS"] },
-        { "id": "p15", "name": "1.6 GDI (facelift)", "market": "EU", "fuel": "petrol", "years": "2018–", "engine": "1.6-litre GDI",
-          "power": { "value": 132, "unit": "PS" }, "transmission": "6-speed manual", "drivetrain": "FWD",
-          "src": "hn5", "quotes": ["The1.6-litre GDI with a six-speed manual transmission and front-wheel-drive generates 97 kW/ 132 PS."] },
-        { "id": "p16", "name": "1.6 T-GDI (facelift)", "market": "EU", "fuel": "petrol", "years": "2018–", "engine": "1.6-litre T-GDI",
-          "power": { "value": 177, "unit": "PS" }, "transmission": "6-speed manual or 7-speed dual-clutch",
-          "src": "hn5", "quotes": ["With delivering up to 130 kW/ 177 PS the 1.6-litre T-GDI is excellent in terms of power and performance. It can be mated to a 6MT or a 7DCT, both available with front- or four-wheel drive."] }
+        {
+          "id": "p1",
+          "name": "Gamma II 1.6 GDi",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2015–2020",
+          "engine": "1.6 L Gamma GDi I4",
+          "cylinders": 4,
+          "power": {
+            "value": 132,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 161,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual",
+          "src": "wp",
+          "quotes": [
+            "Gamma II 1.6 GDi 2015–2020 6-speed manual 132 PS (97 kW; 130 hp) @ 6,300 rpm 16.4 kg⋅m (161 N⋅m; 119 lbf⋅ft) @ 4,850 rpm"
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "Gamma II 1.6 T-GDi",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "1.6 L Gamma T-GDi I4",
+          "cylinders": 4,
+          "power": {
+            "value": 177,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 265,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual or 7-speed dual-clutch",
+          "src": "wp",
+          "quotes": [
+            "Gamma II 1.6 T-GDi 6-speed manual 177 PS (130 kW; 175 hp) @ 5,500 rpm 27 kg⋅m (265 N⋅m; 195 lbf⋅ft) @ 1,500–4,500 rpm",
+            "7-speed dual clutch automatic 8.9s (FWD)"
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "Nu 2.0 MPi",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "2.0 L Nu MPi I4",
+          "cylinders": 4,
+          "power": {
+            "value": 155,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 192,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual",
+          "src": "wp",
+          "quotes": [
+            "Nu 2.0 MPi 6-speed manual 155 PS (114 kW; 153 hp) @ 6,200 rpm 19.6 kg⋅m (192 N⋅m; 142 lbf⋅ft) @ 4,000 rpm"
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "Nu 2.0 GDi",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "2.0 L Nu GDi I4",
+          "cylinders": 4,
+          "power": {
+            "value": 163,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 204,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed automatic",
+          "src": "wp",
+          "quotes": [
+            "Nu 2.0 GDi 6-speed automatic 163 PS (120 kW; 161 hp) @ 6,200 rpm 20.8 kg⋅m (204 N⋅m; 150 lbf⋅ft) @ 4,500 rpm"
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "Theta II 2.4 MPi",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "2.4 L Theta II MPi I4",
+          "cylinders": 4,
+          "power": {
+            "value": 176,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 228,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual",
+          "src": "wp",
+          "quotes": [
+            "Theta II 2.4 MPi 6-speed manual 176 PS (129 kW; 174 hp) @ 6,000 rpm 23.2 kg⋅m (228 N⋅m; 168 lbf⋅ft) @ 4,000 rpm"
+          ]
+        },
+        {
+          "id": "p6",
+          "name": "1.7 U II CRDi (116 PS)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2015–2018",
+          "engine": "1.7 L U II CRDi I4",
+          "cylinders": 4,
+          "power": {
+            "value": 116,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 280,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual",
+          "src": "wp",
+          "quotes": [
+            "1.7 U II CRDi 2015–2018 6-speed manual 116 PS (85 kW; 114 hp) @ 4,000 rpm 28.6 kg⋅m (280 N⋅m; 207 lbf⋅ft) @ 1,250–2,750 rpm"
+          ]
+        },
+        {
+          "id": "p7",
+          "name": "1.7 U II CRDi (141 PS)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "engine": "1.7 L U II CRDi I4",
+          "cylinders": 4,
+          "power": {
+            "value": 141,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 340,
+            "unit": "Nm"
+          },
+          "transmission": "7-speed dual-clutch",
+          "src": "wp",
+          "quotes": [
+            "7-speed dual clutch automatic 141 PS (104 kW; 139 hp) @ 4,000 rpm 34.7 kg⋅m (340 N⋅m; 251 lbf⋅ft) @ 1,750–2,500 rpm"
+          ]
+        },
+        {
+          "id": "p8",
+          "name": "2.0 R II CRDi (136 PS)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2015–2018",
+          "engine": "2.0 L R II CRDi I4",
+          "cylinders": 4,
+          "power": {
+            "value": 136,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 373,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual",
+          "src": "wp",
+          "quotes": [
+            "2.0 R II CRDi 2015–2018 6-speed manual 136 PS (100 kW; 134 hp) @ 2,750–4,000 rpm 38 kg⋅m (373 N⋅m; 275 lbf⋅ft)"
+          ]
+        },
+        {
+          "id": "p9",
+          "name": "2.0 GDI (North America)",
+          "market": "NA",
+          "fuel": "petrol",
+          "years": "2016 model year on",
+          "engine": "2.0-litre direct-injection four-cylinder",
+          "power": {
+            "value": 164,
+            "unit": "hp"
+          },
+          "torque": {
+            "value": 151,
+            "unit": "lb-ft"
+          },
+          "transmission": "6-speed automatic",
+          "drivetrain": "FWD",
+          "src": "wp",
+          "quotes": [
+            "a 2.0-litre direct-injection four-cylinder delivering 164 hp (166 PS; 122 kW) and 151 lb⋅ft (205 N⋅m; 20.9 kg⋅m) of torque with a 6-speed automatic transmission"
+          ]
+        },
+        {
+          "id": "p10",
+          "name": "1.6 turbo (North America)",
+          "market": "NA",
+          "fuel": "petrol",
+          "years": "2016 model year on",
+          "engine": "1.6-litre turbocharged",
+          "power": {
+            "value": 175,
+            "unit": "hp"
+          },
+          "torque": {
+            "value": 195,
+            "unit": "lb-ft"
+          },
+          "transmission": "7-speed dual-clutch",
+          "src": "wp",
+          "quotes": [
+            "a 1.6-litre turbocharged engine with 175 hp (177 PS; 130 kW) and 195 lb⋅ft (264 N⋅m; 27.0 kg⋅m) of torque paired with a 7-speed dual-clutch transmission"
+          ]
+        },
+        {
+          "id": "p11",
+          "name": "2.4 GDi (North America, 2019 model year on)",
+          "market": "NA",
+          "fuel": "petrol",
+          "engine": "2.4-litre I4 GDi",
+          "power": {
+            "value": 181,
+            "unit": "hp"
+          },
+          "torque": {
+            "value": 175,
+            "unit": "lb-ft"
+          },
+          "src": "wp",
+          "quotes": [
+            "replaced by a 2.4-litre I4 GDi naturally aspirated engine which produces 181 hp (184 PS; 135 kW) at 6,000 rpm and 175 lb⋅ft (237 N⋅m; 24.2 kg⋅m)"
+          ]
+        },
+        {
+          "id": "p12",
+          "name": "2.0 diesel (186 PS, facelift)",
+          "market": "EU",
+          "fuel": "diesel",
+          "years": "2018–",
+          "engine": "2.0 diesel",
+          "power": {
+            "value": 186,
+            "unit": "PS"
+          },
+          "transmission": "6-speed manual or 8-speed automatic",
+          "drivetrain": "AWD",
+          "src": "hn5",
+          "quotes": [
+            "The most powerful powertrain in this line-up is the 2.0 diesel engine with an output of 137 kW/ 186 PS. This high-performance engine comes with four-wheel drive and can be paired with a six-speed manual transmission (6MT) or optionally with the newly developed eight-speed automatic transmission (8AT)."
+          ]
+        },
+        {
+          "id": "p13",
+          "name": "1.6 diesel (115 PS, facelift)",
+          "market": "EU",
+          "fuel": "diesel",
+          "years": "2018–",
+          "engine": "1.6 diesel",
+          "power": {
+            "value": 115,
+            "unit": "PS"
+          },
+          "transmission": "6-speed manual",
+          "drivetrain": "FWD",
+          "src": "hn5",
+          "quotes": [
+            "the newly developed 1.6 diesel engines with two power outputs: the standard version is capable of 85 kW/ 115 PS and the higher power version offers 98 kW/ 133 PS. Both engines are available with a six-speed manual transmission and front-wheel-drive."
+          ]
+        },
+        {
+          "id": "p14",
+          "name": "1.6 diesel (133 PS, facelift)",
+          "market": "EU",
+          "fuel": "diesel",
+          "years": "2018–",
+          "engine": "1.6 diesel",
+          "power": {
+            "value": 133,
+            "unit": "PS"
+          },
+          "src": "hn5",
+          "quotes": [
+            "the standard version is capable of 85 kW/ 115 PS and the higher power version offers 98 kW/ 133 PS"
+          ]
+        },
+        {
+          "id": "p15",
+          "name": "1.6 GDI (facelift)",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2018–",
+          "engine": "1.6-litre GDI",
+          "power": {
+            "value": 132,
+            "unit": "PS"
+          },
+          "transmission": "6-speed manual",
+          "drivetrain": "FWD",
+          "src": "hn5",
+          "quotes": [
+            "The1.6-litre GDI with a six-speed manual transmission and front-wheel-drive generates 97 kW/ 132 PS."
+          ]
+        },
+        {
+          "id": "p16",
+          "name": "1.6 T-GDI (facelift)",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2018–",
+          "engine": "1.6-litre T-GDI",
+          "power": {
+            "value": 177,
+            "unit": "PS"
+          },
+          "transmission": "6-speed manual or 7-speed dual-clutch",
+          "src": "hn5",
+          "quotes": [
+            "With delivering up to 130 kW/ 177 PS the 1.6-litre T-GDI is excellent in terms of power and performance. It can be mated to a 6MT or a 7DCT, both available with front- or four-wheel drive."
+          ]
+        }
       ],
       "changes": [
-        { "id": "c1", "topic": "dimensions", "text": "65 mm longer and 30 mm wider than the second generation, on a 30 mm longer wheelbase.", "src": "wp", "quote": "The third-generation Tucson measures 65 mm (2.6 in) longer and 30 mm (1.2 in) wider than its predecessor, while riding on a 30 mm (1.2 in) longer wheelbase." },
-        { "id": "c2", "topic": "interior", "text": "Seats-up luggage capacity grew from 465 to 513 litres.", "src": "wp", "quote": "Rear storage space is also larger, with seats-up capacity growing from 465 to 513 litres." },
-        { "id": "c3", "topic": "safety-equipment", "text": "Lane departure warning, blind spot detection and automatic braking for pedestrians and cars became available.", "src": "wp", "quote": "Starting from this generation, safety technologies such as lane departure warning, blind spot detection, and auto braking for pedestrians and cars" },
-        { "id": "c4", "topic": "powertrain", "text": "A dual-clutch automatic transmission and torque vectoring (Hyundai Active Cornering Control) were offered.", "src": "wp", "quote": "along with a dual-clutch automatic transmission and torque vectoring known as Hyundai Active Cornering Control are offered" },
-        { "id": "c5", "topic": "other", "text": "The ix35 name was dropped and the model was called Tucson in all markets.", "src": "wp", "quote": "Since this generation, Hyundai has discontinued the use of the ix35 nameplate, reverting to Tucson globally." }
+        {
+          "id": "c1",
+          "topic": "dimensions",
+          "text": "65 mm longer and 30 mm wider than the second generation, on a 30 mm longer wheelbase.",
+          "src": "wp",
+          "quote": "The third-generation Tucson measures 65 mm (2.6 in) longer and 30 mm (1.2 in) wider than its predecessor, while riding on a 30 mm (1.2 in) longer wheelbase."
+        },
+        {
+          "id": "c2",
+          "topic": "interior",
+          "text": "Seats-up luggage capacity grew from 465 to 513 litres.",
+          "src": "wp",
+          "quote": "Rear storage space is also larger, with seats-up capacity growing from 465 to 513 litres."
+        },
+        {
+          "id": "c3",
+          "topic": "safety-equipment",
+          "text": "Lane departure warning, blind spot detection and automatic braking for pedestrians and cars became available.",
+          "src": "wp",
+          "quote": "Starting from this generation, safety technologies such as lane departure warning, blind spot detection, and auto braking for pedestrians and cars"
+        },
+        {
+          "id": "c4",
+          "topic": "powertrain",
+          "text": "A dual-clutch automatic transmission and torque vectoring (Hyundai Active Cornering Control) were offered.",
+          "src": "wp",
+          "quote": "along with a dual-clutch automatic transmission and torque vectoring known as Hyundai Active Cornering Control are offered"
+        },
+        {
+          "id": "c5",
+          "topic": "other",
+          "text": "The ix35 name was dropped and the model was called Tucson in all markets.",
+          "src": "wp",
+          "quote": "Since this generation, Hyundai has discontinued the use of the ix35 nameplate, reverting to Tucson globally."
+        }
       ],
       "revisions": [
-        { "id": "r1", "slug": "2018-facelift", "kind": "facelift", "name": "Facelift (2018)",
-          "dates": { "revealed": { "value": "2018", "event": "New York International Auto Show", "src": "hn5", "quote": "At the 2018 New York International Auto Show, Hyundai Motor is celebrating the world premiere of the New Hyundai Tucson" } },
+        {
+          "id": "r1",
+          "slug": "2018-facelift",
+          "kind": "facelift",
+          "name": "Facelift (2018)",
+          "dates": {
+            "revealed": {
+              "value": "2018",
+              "event": "New York International Auto Show",
+              "src": "hn5",
+              "quote": "At the 2018 New York International Auto Show, Hyundai Motor is celebrating the world premiere of the New Hyundai Tucson"
+            }
+          },
           "changes": [
-            { "id": "r1c1", "topic": "design", "text": "New Cascading Grille, full-LED headlights, raised front bumper, skid plate and new wheel designs.", "src": "hn5", "quote": "The Tucson’s eye-catching exterior design is achieved by the Cascading Grille and a refined new light signature with full LED headlights as well as an uplifted front bumper, skid plate and a new wheel design." },
-            { "id": "r1c2", "topic": "design", "text": "New tail lights and a redesigned rear bumper and muffler.", "src": "hn5", "quote": "The car is also equipped with a new rear taillight as well as a redesigned rear bumper and muffler." },
-            { "id": "r1c3", "topic": "powertrain", "text": "A newly developed eight-speed automatic became available with the 2.0 diesel, and all engines met Euro 6c.", "src": "hn5", "quotes": ["optionally with the newly developed eight-speed automatic transmission (8AT)", "The entire engine line-up of New Tucson meets the new Euro 6c emission standards"] },
-            { "id": "r1c4", "topic": "interior", "text": "Redesigned dashboard with lower central air vents and a high-mounted display.", "src": "wp", "quote": "The interior received an update to include a newly designed dash with lower centrally placed air vents and a high-mounted head unit display." },
-            { "id": "r1c5", "topic": "powertrain", "text": "In North America the manual and dual-clutch transmissions were dropped and the 1.6 turbo was replaced by a 2.4 GDi.", "src": "wp", "quote": "The manual and dual clutch transmission options were dropped in favor of the 6-speed Shiftronic automatic used in the previous model." }
-          ] }
+            {
+              "id": "r1c1",
+              "topic": "design",
+              "text": "New Cascading Grille, full-LED headlights, raised front bumper, skid plate and new wheel designs.",
+              "src": "hn5",
+              "quote": "The Tucson’s eye-catching exterior design is achieved by the Cascading Grille and a refined new light signature with full LED headlights as well as an uplifted front bumper, skid plate and a new wheel design."
+            },
+            {
+              "id": "r1c2",
+              "topic": "design",
+              "text": "New tail lights and a redesigned rear bumper and muffler.",
+              "src": "hn5",
+              "quote": "The car is also equipped with a new rear taillight as well as a redesigned rear bumper and muffler."
+            },
+            {
+              "id": "r1c3",
+              "topic": "powertrain",
+              "text": "A newly developed eight-speed automatic became available with the 2.0 diesel, and all engines met Euro 6c.",
+              "src": "hn5",
+              "quotes": [
+                "optionally with the newly developed eight-speed automatic transmission (8AT)",
+                "The entire engine line-up of New Tucson meets the new Euro 6c emission standards"
+              ]
+            },
+            {
+              "id": "r1c4",
+              "topic": "interior",
+              "text": "Redesigned dashboard with lower central air vents and a high-mounted display.",
+              "src": "wp",
+              "quote": "The interior received an update to include a newly designed dash with lower centrally placed air vents and a high-mounted head unit display."
+            },
+            {
+              "id": "r1c5",
+              "topic": "powertrain",
+              "text": "In North America the manual and dual-clutch transmissions were dropped and the 1.6 turbo was replaced by a 2.4 GDi.",
+              "src": "wp",
+              "quote": "The manual and dual clutch transmission options were dropped in favor of the 6-speed Shiftronic automatic used in the previous model."
+            }
+          ]
+        }
       ],
       "notes": [
         "Wikipedia gives later local production in Brazil (2017–2023), India (2016–2022) and Pakistan (2020–2025).",
@@ -288,123 +1373,596 @@
         "Wikipedia's powertrain table does not give markets for most engines, so they are recorded as 'unstated'. The 2018 facelift engines are from Hyundai's European release.",
         "China received its own alternative facelifts for the 2019 model year (Wikipedia); these are not recorded as separate revisions because no dates are sourced.",
         "In 2015 Hyundai also showed hybrid and diesel plug-in hybrid concept versions at Geneva; they were concepts and are not recorded."
-      ]
+      ],
+      "commons": {
+        "generation": "Category:Hyundai Tucson (TL)"
+      }
     },
     {
       "id": "hyundai-tucson-nx4",
       "slug": "nx4",
       "ordinal": 4,
-      "lines": ["tucson"],
+      "lines": [
+        "tucson"
+      ],
       "name": "Fourth generation",
-      "codes": [ { "value": "NX4", "kind": "model code", "src": "wp", "quote": "Model code NX4" } ],
+      "codes": [
+        {
+          "value": "NX4",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code NX4"
+        }
+      ],
       "names": [
-        { "value": "Tucson L", "markets": ["CN"], "src": "wp", "quote": "In China, the long-wheelbase-only fourth-generation Tucson is marketed as the Tucson L to differentiate itself with the older model." },
-        { "value": "Tucson L", "markets": ["TW"], "src": "wp", "quote": "The fourth-generation Tucson was launched in Taiwan on 8 December 2021, marketed as the Tucson L." }
+        {
+          "value": "Tucson L",
+          "markets": [
+            "CN"
+          ],
+          "src": "wp",
+          "quote": "In China, the long-wheelbase-only fourth-generation Tucson is marketed as the Tucson L to differentiate itself with the older model."
+        },
+        {
+          "value": "Tucson L",
+          "markets": [
+            "TW"
+          ],
+          "src": "wp",
+          "quote": "The fourth-generation Tucson was launched in Taiwan on 8 December 2021, marketed as the Tucson L."
+        }
       ],
       "dates": {
-        "revealed": { "value": "2020-09-15", "src": "wp", "quote": "The fourth-generation Tucson was revealed on 15 September 2020." },
-        "productionStart": { "value": "2020", "src": "wp", "quote": "Production 2020–present" },
+        "revealed": {
+          "value": "2020-09-15",
+          "src": "wp",
+          "quote": "The fourth-generation Tucson was revealed on 15 September 2020."
+        },
+        "productionStart": {
+          "value": "2020",
+          "src": "wp",
+          "quote": "Production 2020–present"
+        },
         "salesStart": [
-          { "value": "2020-09", "market": "KR", "src": "wp", "quote": "The fourth-generation Tucson was released in South Korea in September 2020." },
-          { "value": "2021-02-10", "market": "MX", "src": "wp", "quote": "The fourth-generation Tucson was launched in Mexico on 10 February 2021" },
-          { "value": "2021-04-26", "market": "AU", "src": "wp", "quote": "The fourth generation Tucson was launched in Australia on 26 April 2021" },
-          { "value": "2021-12-08", "market": "TW", "src": "wp", "quote": "The fourth-generation Tucson was launched in Taiwan on 8 December 2021" },
-          { "value": "2022-08-10", "market": "IN", "src": "wp", "quote": "The fourth-generation Tucson was launched in India on 10 August 2022" }
+          {
+            "value": "2020-09",
+            "market": "KR",
+            "src": "wp",
+            "quote": "The fourth-generation Tucson was released in South Korea in September 2020."
+          },
+          {
+            "value": "2021-02-10",
+            "market": "MX",
+            "src": "wp",
+            "quote": "The fourth-generation Tucson was launched in Mexico on 10 February 2021"
+          },
+          {
+            "value": "2021-04-26",
+            "market": "AU",
+            "src": "wp",
+            "quote": "The fourth generation Tucson was launched in Australia on 26 April 2021"
+          },
+          {
+            "value": "2021-12-08",
+            "market": "TW",
+            "src": "wp",
+            "quote": "The fourth-generation Tucson was launched in Taiwan on 8 December 2021"
+          },
+          {
+            "value": "2022-08-10",
+            "market": "IN",
+            "src": "wp",
+            "quote": "The fourth-generation Tucson was launched in India on 10 August 2022"
+          }
         ],
         "modelYears": [
-          { "market": "NA", "from": 2022, "src": "wp", "quote": "The fourth-generation Tucson was revealed for the North American market in November 2020 for the 2022 model year." },
-          { "market": "unstated", "from": 2022, "to": 2026, "src": "wp", "quote": "Model years 2022–2026" }
+          {
+            "market": "NA",
+            "from": 2022,
+            "src": "wp",
+            "quote": "The fourth-generation Tucson was revealed for the North American market in November 2020 for the 2022 model year."
+          },
+          {
+            "market": "unstated",
+            "from": 2022,
+            "to": 2026,
+            "src": "wp",
+            "quote": "Model years 2022–2026"
+          }
         ]
       },
       "ongoing": true,
-      "platform": { "value": "Hyundai-Kia N3/N4", "src": "wp", "quote": "Platform Hyundai-Kia N3/N4 Related Hyundai Santa Cruz" },
+      "platform": {
+        "value": "Hyundai-Kia N3/N4",
+        "src": "wp",
+        "quote": "Platform Hyundai-Kia N3/N4 Related Hyundai Santa Cruz"
+      },
       "assembly": [
-        { "value": "Ulsan, South Korea (Ulsan Plant 3, 5)", "src": "wp", "quote": "South Korea: Ulsan (Ulsan Plant 3, 5)" },
-        { "value": "Nošovice, Czech Republic (HMMC)", "src": "hn1", "quote": "will become the third generation of the model to be produced in Europe at the Hyundai Motor Manufacturing Czech (HMMC) production plant in Nošovice, Czech Republic" },
-        { "value": "Montgomery, Alabama, United States (HMMA)", "src": "wp", "quote": "United States: Montgomery, Alabama (HMMA)" },
-        { "value": "Pesquería, Mexico (KMMX)", "src": "wp", "quote": "Mexico: Pesquería (KMMX)" },
-        { "value": "Beijing, China (Beijing Hyundai)", "src": "wp", "quote": "Mexico: Pesquería (KMMX) China: Beijing (Beijing Hyundai)" },
-        { "value": "Hukou, Taiwan (Sanyang Motor)", "src": "wp", "quote": "China: Beijing (Beijing Hyundai) Taiwan: Hukou (Sanyang Motor) Vietnam: Ninh Bình (HTMV)" },
-        { "value": "Ninh Bình, Vietnam (HTMV)", "src": "wp", "quote": "Vietnam: Ninh Bình (HTMV) India: Chennai (HMIL)" },
-        { "value": "Chennai, India (HMIL)", "src": "wp", "quote": "India: Chennai (HMIL) Pakistan: Faisalabad (Hyundai Nishat) Designer" },
-        { "value": "Faisalabad, Pakistan (Hyundai Nishat)", "src": "wp", "quote": "India: Chennai (HMIL) Pakistan: Faisalabad (Hyundai Nishat) Designer" }
+        {
+          "value": "Ulsan, South Korea (Ulsan Plant 3, 5)",
+          "src": "wp",
+          "quote": "South Korea: Ulsan (Ulsan Plant 3, 5)"
+        },
+        {
+          "value": "Nošovice, Czech Republic (HMMC)",
+          "src": "hn1",
+          "quote": "will become the third generation of the model to be produced in Europe at the Hyundai Motor Manufacturing Czech (HMMC) production plant in Nošovice, Czech Republic"
+        },
+        {
+          "value": "Montgomery, Alabama, United States (HMMA)",
+          "src": "wp",
+          "quote": "United States: Montgomery, Alabama (HMMA)"
+        },
+        {
+          "value": "Pesquería, Mexico (KMMX)",
+          "src": "wp",
+          "quote": "Mexico: Pesquería (KMMX)"
+        },
+        {
+          "value": "Beijing, China (Beijing Hyundai)",
+          "src": "wp",
+          "quote": "Mexico: Pesquería (KMMX) China: Beijing (Beijing Hyundai)"
+        },
+        {
+          "value": "Hukou, Taiwan (Sanyang Motor)",
+          "src": "wp",
+          "quote": "China: Beijing (Beijing Hyundai) Taiwan: Hukou (Sanyang Motor) Vietnam: Ninh Bình (HTMV)"
+        },
+        {
+          "value": "Ninh Bình, Vietnam (HTMV)",
+          "src": "wp",
+          "quote": "Vietnam: Ninh Bình (HTMV) India: Chennai (HMIL)"
+        },
+        {
+          "value": "Chennai, India (HMIL)",
+          "src": "wp",
+          "quote": "India: Chennai (HMIL) Pakistan: Faisalabad (Hyundai Nishat) Designer"
+        },
+        {
+          "value": "Faisalabad, Pakistan (Hyundai Nishat)",
+          "src": "wp",
+          "quote": "India: Chennai (HMIL) Pakistan: Faisalabad (Hyundai Nishat) Designer"
+        }
       ],
       "bodyStyles": [
-        { "id": "b1", "value": "5-door SUV, short wheelbase (2,680 mm)", "markets": ["EU", "ME", "MX"], "src": "wp", "quote": "which are short-wheelbase (2,680 mm (105.5 in)), and long-wheelbase (2,755 mm (108.5 in)). Most regions outside Europe, Middle East and Mexico receives the long-wheelbase version." },
-        { "id": "b2", "value": "5-door SUV, long wheelbase (2,755 mm)", "markets": ["NA", "CN"], "src": "wp", "quotes": ["The fourth-generation Tucson was revealed for the North American market in November 2020 for the 2022 model year. Offered with the long-wheelbase specification", "In China, the long-wheelbase-only fourth-generation Tucson is marketed as the Tucson L"] }
+        {
+          "id": "b1",
+          "value": "5-door SUV, short wheelbase (2,680 mm)",
+          "markets": [
+            "EU",
+            "ME",
+            "MX"
+          ],
+          "src": "wp",
+          "quote": "which are short-wheelbase (2,680 mm (105.5 in)), and long-wheelbase (2,755 mm (108.5 in)). Most regions outside Europe, Middle East and Mexico receives the long-wheelbase version."
+        },
+        {
+          "id": "b2",
+          "value": "5-door SUV, long wheelbase (2,755 mm)",
+          "markets": [
+            "NA",
+            "CN"
+          ],
+          "src": "wp",
+          "quotes": [
+            "The fourth-generation Tucson was revealed for the North American market in November 2020 for the 2022 model year. Offered with the long-wheelbase specification",
+            "In China, the long-wheelbase-only fourth-generation Tucson is marketed as the Tucson L"
+          ]
+        }
       ],
       "drivetrains": [
-        { "value": "FWD", "markets": ["UK"], "src": "hn1", "quote": "the 1.6-litre T-GDI 'Smartstream' gasoline engine comes with 150PS, 6MT and the option of four- or two-wheel drive" },
-        { "value": "AWD", "system": "HTRAC", "markets": ["UK"], "src": "hn1", "quote": "utilises Hyundai's signature HTRAC four-wheel drive technology" }
+        {
+          "value": "FWD",
+          "markets": [
+            "UK"
+          ],
+          "src": "hn1",
+          "quote": "the 1.6-litre T-GDI 'Smartstream' gasoline engine comes with 150PS, 6MT and the option of four- or two-wheel drive"
+        },
+        {
+          "value": "AWD",
+          "system": "HTRAC",
+          "markets": [
+            "UK"
+          ],
+          "src": "hn1",
+          "quote": "utilises Hyundai's signature HTRAC four-wheel drive technology"
+        }
       ],
       "dimensions": [
-        { "id": "d1", "market": "UK", "version": "short wheelbase, pre-facelift", "unit": "mm", "length": 4500, "width": 1865, "height": 1650, "wheelbase": 2680,
-          "src": "hn1", "quotes": ["Length: 4,500 (+20) Width: 1,865 (+15) Height: 1,650 (+5) Wheelbase: 2,680 (+10)"] },
-        { "id": "d2", "market": "unstated", "version": "long wheelbase", "unit": "mm", "wheelbase": 2755,
-          "src": "wp", "quotes": ["2,755 mm (108.5 in) (LWB)"] }
+        {
+          "id": "d1",
+          "market": "UK",
+          "version": "short wheelbase, pre-facelift",
+          "unit": "mm",
+          "length": 4500,
+          "width": 1865,
+          "height": 1650,
+          "wheelbase": 2680,
+          "src": "hn1",
+          "quotes": [
+            "Length: 4,500 (+20) Width: 1,865 (+15) Height: 1,650 (+5) Wheelbase: 2,680 (+10)"
+          ]
+        },
+        {
+          "id": "d2",
+          "market": "unstated",
+          "version": "long wheelbase",
+          "unit": "mm",
+          "wheelbase": 2755,
+          "src": "wp",
+          "quotes": [
+            "2,755 mm (108.5 in) (LWB)"
+          ]
+        }
       ],
       "cargo": [
-        { "id": "k1", "market": "UK", "version": "petrol, short wheelbase", "behind": "2nd row", "value": 620, "unit": "L", "standard": "not stated", "src": "hn1", "quote": "Volume with seats up Gasoline - 620" },
-        { "id": "k2", "market": "UK", "version": "hybrid, short wheelbase", "behind": "2nd row", "value": 616, "unit": "L", "standard": "not stated", "src": "hn1", "quote": "Diesel 48V - 546 Hybrid – 616" },
-        { "id": "k3", "market": "UK", "version": "petrol, short wheelbase", "behind": "1st row", "value": 1799, "unit": "L", "standard": "not stated", "src": "hn1", "quote": "Maximum volume, with seats folded Gasoline - 1,799" },
-        { "id": "k4", "market": "UK", "version": "plug-in hybrid, short wheelbase", "behind": "2nd row", "value": 558, "unit": "L", "standard": "not stated", "src": "hn4", "quote": "offering 558 litres (+9%) overall for luggage with the seats up and up to 1,737 litres (+15%) with the seats folded" },
-        { "id": "k5", "market": "unstated", "version": "long wheelbase", "behind": "unstated", "value": 38.7, "unit": "cu ft", "standard": "not stated", "src": "wp", "quote": "For the long-wheelbase version, Hyundai claimed the cargo volume will provide a 38.7 cu ft (1,096 L) of usable space." }
+        {
+          "id": "k1",
+          "market": "UK",
+          "version": "petrol, short wheelbase",
+          "behind": "2nd row",
+          "value": 620,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "hn1",
+          "quote": "Volume with seats up Gasoline - 620"
+        },
+        {
+          "id": "k2",
+          "market": "UK",
+          "version": "hybrid, short wheelbase",
+          "behind": "2nd row",
+          "value": 616,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "hn1",
+          "quote": "Diesel 48V - 546 Hybrid – 616"
+        },
+        {
+          "id": "k3",
+          "market": "UK",
+          "version": "petrol, short wheelbase",
+          "behind": "1st row",
+          "value": 1799,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "hn1",
+          "quote": "Maximum volume, with seats folded Gasoline - 1,799"
+        },
+        {
+          "id": "k4",
+          "market": "UK",
+          "version": "plug-in hybrid, short wheelbase",
+          "behind": "2nd row",
+          "value": 558,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "hn4",
+          "quote": "offering 558 litres (+9%) overall for luggage with the seats up and up to 1,737 litres (+15%) with the seats folded"
+        },
+        {
+          "id": "k5",
+          "market": "unstated",
+          "version": "long wheelbase",
+          "behind": "unstated",
+          "value": 38.7,
+          "unit": "cu ft",
+          "standard": "not stated",
+          "src": "wp",
+          "quote": "For the long-wheelbase version, Hyundai claimed the cargo volume will provide a 38.7 cu ft (1,096 L) of usable space."
+        }
       ],
       "powertrains": [
-        { "id": "p1", "name": "1.6 T-GDi 150 PS", "market": "UK", "fuel": "petrol", "engine": "1.6-litre T-GDi Smartstream",
-          "power": { "value": 150, "unit": "PS" }, "transmission": "6-speed manual",
-          "src": "hn1", "quotes": ["the 1.6-litre T-GDI 'Smartstream' gasoline engine comes with 150PS, 6MT and the option of four- or two-wheel drive"] },
-        { "id": "p2", "name": "1.6 T-GDi 48V mild hybrid 150 PS", "market": "UK", "fuel": "mild hybrid", "engine": "1.6-litre T-GDi Smartstream with 48-volt mild hybrid",
-          "power": { "value": 150, "unit": "PS" }, "transmission": "6-speed iMT or 7-speed dual-clutch",
-          "src": "hn1", "quotes": ["the 1.6 T-GDi comes with two different power outputs – 150PS or 180PS – and optional four-wheel drive. Both outputs can be combined with 6iMT or 7DCT."] },
-        { "id": "p3", "name": "1.6 T-GDi 48V mild hybrid 180 PS", "market": "UK", "fuel": "mild hybrid", "engine": "1.6-litre T-GDi Smartstream with 48-volt mild hybrid",
-          "power": { "value": 180, "unit": "PS" }, "transmission": "6-speed iMT or 7-speed dual-clutch",
-          "src": "hn1", "quotes": ["the 1.6 T-GDi comes with two different power outputs – 150PS or 180PS – and optional four-wheel drive. Both outputs can be combined with 6iMT or 7DCT."] },
-        { "id": "p4", "name": "1.6 T-GDi Hybrid", "market": "UK", "fuel": "hybrid", "engine": "1.6-litre T-GDi with 44.2 kW electric motor, 1.49 kWh battery",
-          "power": { "value": 230, "unit": "PS" }, "transmission": "6-speed automatic",
-          "src": "hn1", "quotes": ["customers can choose the powerful 230PS hybrid powertrain. It combines the instant torque of a 44.2kW electric motor with the power output of the 1.6 T-GDi engine. The system is paired with a 1.49kWh lithium-ion polymer battery, and available with a six-speed automatic transmission (6AT) and two-wheel or four-wheel drive."] },
-        { "id": "p5", "name": "1.6 T-GDi Plug-in Hybrid", "market": "UK", "fuel": "plug-in hybrid", "years": "2021–", "engine": "1.6-litre T-GDi with 66.9 kW electric motor, 13.8 kWh battery",
-          "power": { "value": 265, "unit": "PS" }, "torque": { "value": 350, "unit": "Nm" }, "transmission": "6-speed automatic", "drivetrain": "AWD",
-          "src": "hn4", "quotes": ["This is paired with a 66.9 kW electric motor with a maximum torque of 304 Nm and a 13.8 kWh lithium polymer battery. Combined, the petrol engine and electric motor deliver 265 PS maximum power and 350 Nm maximum torque.", "The system is paired with a six-speed automatic transmission (6AT) operated through shift by wire and standard four-wheel drive."] },
-        { "id": "p6", "name": "1.6 CRDi 115 PS", "market": "UK", "fuel": "diesel", "engine": "1.6-litre CRDi Smartstream",
-          "power": { "value": 115, "unit": "PS" }, "transmission": "6-speed manual", "drivetrain": "FWD",
-          "src": "hn1", "quotes": ["1.6-litre CRDi is also available as a standalone combustion engine with 115PS 6MT and two-wheel drive."] },
-        { "id": "p7", "name": "1.6 CRDi 48V mild hybrid 136 PS", "market": "UK", "fuel": "mild hybrid", "engine": "1.6-litre CRDi Smartstream diesel with 48-volt mild hybrid",
-          "power": { "value": 136, "unit": "PS" }, "transmission": "7-speed dual-clutch",
-          "src": "hn1", "quotes": ["The 48-volt mild hybrid variant delivers 136 PS and comes with a 7DCT and either four- or two-wheel drive."] },
-        { "id": "p8", "name": "Smartstream 2.5 (North America)", "market": "NA", "fuel": "petrol", "engine": "2.5-litre 4-cylinder Smartstream",
-          "power": { "value": 187, "unit": "hp" }, "torque": { "value": 178, "unit": "lb-ft" },
-          "src": "wp", "quotes": ["it features a new 2.5-litre 4-cylinder Smartstream petrol engine rated at 187 hp (190 PS; 139 kW) and 178 lb⋅ft (241 N⋅m; 24.6 kg⋅m) of torque"] },
-        { "id": "p9", "name": "Hybrid (North America)", "market": "NA", "fuel": "hybrid", "engine": "1.6-litre T-GDi with 44 kW electric motor",
-          "power": { "value": 226, "unit": "hp" }, "torque": { "value": 258, "unit": "lb-ft" },
-          "src": "wp", "quotes": ["The Tucson Hybrid is also sold in the region, bringing a combination of 1.6-litre T-GDi engine with a 44 kW electric motor. It is capable of 226 hp (229 PS; 169 kW), 258 lb⋅ft (350 N⋅m; 35.7 kg⋅m) of torque"] },
-        { "id": "p10", "name": "1.5 T-GDi (China)", "market": "CN", "fuel": "petrol", "engine": "1.5-litre T-GDi Smartstream",
-          "power": { "value": 197, "unit": "hp" }, "transmission": "7-speed dual-clutch",
-          "src": "wp", "quotes": ["A Smartstream turbocharged engine is offered, which is a 1.5-litre T-GDi engine that produces 197 hp (200 PS; 147 kW), paired with a 7-speed dual-clutch transmission."] },
-        { "id": "p11", "name": "Smartstream G2.0 MPi", "market": "unstated", "fuel": "petrol", "years": "2021–", "engine": "1,999 cc I4", "displacement": 1999, "cylinders": 4,
-          "power": { "value": 156, "unit": "PS" }, "torque": { "value": 192, "unit": "Nm" }, "transmission": "6-speed manual or 6-speed automatic",
-          "src": "wp", "quotes": ["Smartstream G2.0 MPi 2021–present 1,999 cc (122.0 cu in) I4 6-speed manual 156 PS (115 kW; 154 hp) @ 6,200 rpm 19.6 kg⋅m (192 N⋅m; 142 lbf⋅ft) @ 4,500 rpm"] },
-        { "id": "p12", "name": "Smartstream D2.0 CRDi", "market": "unstated", "fuel": "diesel", "engine": "1,998 cc turbocharged I4", "displacement": 1998, "cylinders": 4,
-          "power": { "value": 186, "unit": "PS" }, "torque": { "value": 417, "unit": "Nm" }, "transmission": "8-speed automatic",
-          "src": "wp", "quotes": ["Smartstream D2.0 CRDi 1,998 cc (121.9 cu in) turbocharged I4 8-speed automatic 186 PS (137 kW; 183 hp) @ 4,000 rpm 42.5 kg⋅m (417 N⋅m; 307 lbf⋅ft) @ 2,000–2,750 rpm"] }
+        {
+          "id": "p1",
+          "name": "1.6 T-GDi 150 PS",
+          "market": "UK",
+          "fuel": "petrol",
+          "engine": "1.6-litre T-GDi Smartstream",
+          "power": {
+            "value": 150,
+            "unit": "PS"
+          },
+          "transmission": "6-speed manual",
+          "src": "hn1",
+          "quotes": [
+            "the 1.6-litre T-GDI 'Smartstream' gasoline engine comes with 150PS, 6MT and the option of four- or two-wheel drive"
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "1.6 T-GDi 48V mild hybrid 150 PS",
+          "market": "UK",
+          "fuel": "mild hybrid",
+          "engine": "1.6-litre T-GDi Smartstream with 48-volt mild hybrid",
+          "power": {
+            "value": 150,
+            "unit": "PS"
+          },
+          "transmission": "6-speed iMT or 7-speed dual-clutch",
+          "src": "hn1",
+          "quotes": [
+            "the 1.6 T-GDi comes with two different power outputs – 150PS or 180PS – and optional four-wheel drive. Both outputs can be combined with 6iMT or 7DCT."
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "1.6 T-GDi 48V mild hybrid 180 PS",
+          "market": "UK",
+          "fuel": "mild hybrid",
+          "engine": "1.6-litre T-GDi Smartstream with 48-volt mild hybrid",
+          "power": {
+            "value": 180,
+            "unit": "PS"
+          },
+          "transmission": "6-speed iMT or 7-speed dual-clutch",
+          "src": "hn1",
+          "quotes": [
+            "the 1.6 T-GDi comes with two different power outputs – 150PS or 180PS – and optional four-wheel drive. Both outputs can be combined with 6iMT or 7DCT."
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "1.6 T-GDi Hybrid",
+          "market": "UK",
+          "fuel": "hybrid",
+          "engine": "1.6-litre T-GDi with 44.2 kW electric motor, 1.49 kWh battery",
+          "power": {
+            "value": 230,
+            "unit": "PS"
+          },
+          "transmission": "6-speed automatic",
+          "src": "hn1",
+          "quotes": [
+            "customers can choose the powerful 230PS hybrid powertrain. It combines the instant torque of a 44.2kW electric motor with the power output of the 1.6 T-GDi engine. The system is paired with a 1.49kWh lithium-ion polymer battery, and available with a six-speed automatic transmission (6AT) and two-wheel or four-wheel drive."
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "1.6 T-GDi Plug-in Hybrid",
+          "market": "UK",
+          "fuel": "plug-in hybrid",
+          "years": "2021–",
+          "engine": "1.6-litre T-GDi with 66.9 kW electric motor, 13.8 kWh battery",
+          "power": {
+            "value": 265,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 350,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed automatic",
+          "drivetrain": "AWD",
+          "src": "hn4",
+          "quotes": [
+            "This is paired with a 66.9 kW electric motor with a maximum torque of 304 Nm and a 13.8 kWh lithium polymer battery. Combined, the petrol engine and electric motor deliver 265 PS maximum power and 350 Nm maximum torque.",
+            "The system is paired with a six-speed automatic transmission (6AT) operated through shift by wire and standard four-wheel drive."
+          ]
+        },
+        {
+          "id": "p6",
+          "name": "1.6 CRDi 115 PS",
+          "market": "UK",
+          "fuel": "diesel",
+          "engine": "1.6-litre CRDi Smartstream",
+          "power": {
+            "value": 115,
+            "unit": "PS"
+          },
+          "transmission": "6-speed manual",
+          "drivetrain": "FWD",
+          "src": "hn1",
+          "quotes": [
+            "1.6-litre CRDi is also available as a standalone combustion engine with 115PS 6MT and two-wheel drive."
+          ]
+        },
+        {
+          "id": "p7",
+          "name": "1.6 CRDi 48V mild hybrid 136 PS",
+          "market": "UK",
+          "fuel": "mild hybrid",
+          "engine": "1.6-litre CRDi Smartstream diesel with 48-volt mild hybrid",
+          "power": {
+            "value": 136,
+            "unit": "PS"
+          },
+          "transmission": "7-speed dual-clutch",
+          "src": "hn1",
+          "quotes": [
+            "The 48-volt mild hybrid variant delivers 136 PS and comes with a 7DCT and either four- or two-wheel drive."
+          ]
+        },
+        {
+          "id": "p8",
+          "name": "Smartstream 2.5 (North America)",
+          "market": "NA",
+          "fuel": "petrol",
+          "engine": "2.5-litre 4-cylinder Smartstream",
+          "power": {
+            "value": 187,
+            "unit": "hp"
+          },
+          "torque": {
+            "value": 178,
+            "unit": "lb-ft"
+          },
+          "src": "wp",
+          "quotes": [
+            "it features a new 2.5-litre 4-cylinder Smartstream petrol engine rated at 187 hp (190 PS; 139 kW) and 178 lb⋅ft (241 N⋅m; 24.6 kg⋅m) of torque"
+          ]
+        },
+        {
+          "id": "p9",
+          "name": "Hybrid (North America)",
+          "market": "NA",
+          "fuel": "hybrid",
+          "engine": "1.6-litre T-GDi with 44 kW electric motor",
+          "power": {
+            "value": 226,
+            "unit": "hp"
+          },
+          "torque": {
+            "value": 258,
+            "unit": "lb-ft"
+          },
+          "src": "wp",
+          "quotes": [
+            "The Tucson Hybrid is also sold in the region, bringing a combination of 1.6-litre T-GDi engine with a 44 kW electric motor. It is capable of 226 hp (229 PS; 169 kW), 258 lb⋅ft (350 N⋅m; 35.7 kg⋅m) of torque"
+          ]
+        },
+        {
+          "id": "p10",
+          "name": "1.5 T-GDi (China)",
+          "market": "CN",
+          "fuel": "petrol",
+          "engine": "1.5-litre T-GDi Smartstream",
+          "power": {
+            "value": 197,
+            "unit": "hp"
+          },
+          "transmission": "7-speed dual-clutch",
+          "src": "wp",
+          "quotes": [
+            "A Smartstream turbocharged engine is offered, which is a 1.5-litre T-GDi engine that produces 197 hp (200 PS; 147 kW), paired with a 7-speed dual-clutch transmission."
+          ]
+        },
+        {
+          "id": "p11",
+          "name": "Smartstream G2.0 MPi",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2021–",
+          "engine": "1,999 cc I4",
+          "displacement": 1999,
+          "cylinders": 4,
+          "power": {
+            "value": 156,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 192,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual or 6-speed automatic",
+          "src": "wp",
+          "quotes": [
+            "Smartstream G2.0 MPi 2021–present 1,999 cc (122.0 cu in) I4 6-speed manual 156 PS (115 kW; 154 hp) @ 6,200 rpm 19.6 kg⋅m (192 N⋅m; 142 lbf⋅ft) @ 4,500 rpm"
+          ]
+        },
+        {
+          "id": "p12",
+          "name": "Smartstream D2.0 CRDi",
+          "market": "unstated",
+          "fuel": "diesel",
+          "engine": "1,998 cc turbocharged I4",
+          "displacement": 1998,
+          "cylinders": 4,
+          "power": {
+            "value": 186,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 417,
+            "unit": "Nm"
+          },
+          "transmission": "8-speed automatic",
+          "src": "wp",
+          "quotes": [
+            "Smartstream D2.0 CRDi 1,998 cc (121.9 cu in) turbocharged I4 8-speed automatic 186 PS (137 kW; 183 hp) @ 4,000 rpm 42.5 kg⋅m (417 N⋅m; 307 lbf⋅ft) @ 2,000–2,750 rpm"
+          ]
+        }
       ],
       "changes": [
-        { "id": "c1", "topic": "dimensions", "text": "In the European short-wheelbase form it is 20 mm longer and 15 mm wider than the third generation, with a 10 mm longer wheelbase.", "src": "hn1", "quote": "The all-new Tucson is 20mm longer, 15mm wider, and the wheelbase is 10mm longer than the previous generation" },
-        { "id": "c2", "topic": "dimensions", "text": "Offered for the first time in two wheelbases, 2,680 mm and 2,755 mm, depending on the market.", "src": "wp", "quote": "the fourth-generation Tucson is offered with two wheelbase length for different markets to meet different customers needs and expectations in different regions, which are short-wheelbase (2,680 mm (105.5 in)), and long-wheelbase (2,755 mm (108.5 in))" },
-        { "id": "c3", "topic": "interior", "text": "Rear legroom increased by 26 mm.", "src": "hn1", "quote": "As a result, rear passengers enjoy 26mm of additional legroom." },
-        { "id": "c4", "topic": "powertrain", "text": "Hybrid, plug-in hybrid and 48-volt mild-hybrid petrol and diesel powertrains were offered.", "src": "hn1", "quote": "By offering a highly electrified powertrain line-up, including plug-in hybrid, hybrid, and 48-volt gasoline and diesel mild hybrid options" },
-        { "id": "c5", "topic": "safety-equipment", "text": "Seven airbags including a new front centre side airbag.", "src": "hn1", "quote": "It is also equipped with an enhanced seven-airbag system, which features a new first row centre side airbag" },
-        { "id": "c6", "topic": "interior", "text": "Rear seats fold in a 40:20:40 split.", "src": "hn1", "quote": "For improved convenience, the rear seats of the all-new Tucson can now be folded in a 40:20:40 ratio." }
+        {
+          "id": "c1",
+          "topic": "dimensions",
+          "text": "In the European short-wheelbase form it is 20 mm longer and 15 mm wider than the third generation, with a 10 mm longer wheelbase.",
+          "src": "hn1",
+          "quote": "The all-new Tucson is 20mm longer, 15mm wider, and the wheelbase is 10mm longer than the previous generation"
+        },
+        {
+          "id": "c2",
+          "topic": "dimensions",
+          "text": "Offered for the first time in two wheelbases, 2,680 mm and 2,755 mm, depending on the market.",
+          "src": "wp",
+          "quote": "the fourth-generation Tucson is offered with two wheelbase length for different markets to meet different customers needs and expectations in different regions, which are short-wheelbase (2,680 mm (105.5 in)), and long-wheelbase (2,755 mm (108.5 in))"
+        },
+        {
+          "id": "c3",
+          "topic": "interior",
+          "text": "Rear legroom increased by 26 mm.",
+          "src": "hn1",
+          "quote": "As a result, rear passengers enjoy 26mm of additional legroom."
+        },
+        {
+          "id": "c4",
+          "topic": "powertrain",
+          "text": "Hybrid, plug-in hybrid and 48-volt mild-hybrid petrol and diesel powertrains were offered.",
+          "src": "hn1",
+          "quote": "By offering a highly electrified powertrain line-up, including plug-in hybrid, hybrid, and 48-volt gasoline and diesel mild hybrid options"
+        },
+        {
+          "id": "c5",
+          "topic": "safety-equipment",
+          "text": "Seven airbags including a new front centre side airbag.",
+          "src": "hn1",
+          "quote": "It is also equipped with an enhanced seven-airbag system, which features a new first row centre side airbag"
+        },
+        {
+          "id": "c6",
+          "topic": "interior",
+          "text": "Rear seats fold in a 40:20:40 split.",
+          "src": "hn1",
+          "quote": "For improved convenience, the rear seats of the all-new Tucson can now be folded in a 40:20:40 ratio."
+        }
       ],
       "revisions": [
-        { "id": "r1", "slug": "2023-facelift", "kind": "facelift", "name": "Facelift (2023)",
-          "dates": { "salesStart": { "value": "2023-12", "market": "unstated", "src": "wp", "quote": "Hyundai released the facelift version of the fourth-generation Tucson in December 2023 for the 2025 model year." } },
+        {
+          "id": "r1",
+          "slug": "2023-facelift",
+          "kind": "facelift",
+          "name": "Facelift (2023)",
+          "dates": {
+            "salesStart": {
+              "value": "2023-12",
+              "market": "unstated",
+              "src": "wp",
+              "quote": "Hyundai released the facelift version of the fourth-generation Tucson in December 2023 for the 2025 model year."
+            }
+          },
           "changes": [
-            { "id": "r1c1", "topic": "design", "text": "Revised radiator grille with thin angular lines and hidden daytime running lights.", "src": "hn3", "quote": "The front fascia features a bold interplay of thin, angular lines in the radiator grille" },
-            { "id": "r1c2", "topic": "design", "text": "Bumper and skid plates extend across the full width, front and rear.", "src": "hn3", "quote": "The bumper and skid plates extend seamlessly from side to side" },
-            { "id": "r1c3", "topic": "interior", "text": "New switchgear for climate and infotainment, gear selector moved to the steering column and a revised centre console with a larger wireless charging pad.", "src": "wp", "quote": "a new switchgear for the HVAC controls and infotainment system, the gear selector was moved to the steering wheel column and a revamped centre console with a larger wireless charging pad" },
-            { "id": "r1c4", "topic": "other", "text": "Described by Hyundai as the first partial redesign of the fourth generation, three years after its September 2020 launch.", "src": "hn3", "quote": "The new Tucson is the first partial redesign in three years to enhance the product competitiveness of the fourth-generation Tucson, which was launched in September 2020." }
-          ] }
+            {
+              "id": "r1c1",
+              "topic": "design",
+              "text": "Revised radiator grille with thin angular lines and hidden daytime running lights.",
+              "src": "hn3",
+              "quote": "The front fascia features a bold interplay of thin, angular lines in the radiator grille"
+            },
+            {
+              "id": "r1c2",
+              "topic": "design",
+              "text": "Bumper and skid plates extend across the full width, front and rear.",
+              "src": "hn3",
+              "quote": "The bumper and skid plates extend seamlessly from side to side"
+            },
+            {
+              "id": "r1c3",
+              "topic": "interior",
+              "text": "New switchgear for climate and infotainment, gear selector moved to the steering column and a revised centre console with a larger wireless charging pad.",
+              "src": "wp",
+              "quote": "a new switchgear for the HVAC controls and infotainment system, the gear selector was moved to the steering wheel column and a revamped centre console with a larger wireless charging pad"
+            },
+            {
+              "id": "r1c4",
+              "topic": "other",
+              "text": "Described by Hyundai as the first partial redesign of the fourth generation, three years after its September 2020 launch.",
+              "src": "hn3",
+              "quote": "The new Tucson is the first partial redesign in three years to enhance the product competitiveness of the fourth-generation Tucson, which was launched in September 2020."
+            }
+          ]
+        }
       ],
       "notes": [
         "Short-wheelbase (2,680 mm) versions are built in the Czech Republic for Europe; Mexico also receives the short-wheelbase car from the Czech Republic (Wikipedia). Long-wheelbase versions (2,755 mm) go to most other markets, including North America and China (Tucson L).",
@@ -412,74 +1970,330 @@
         "The Hyundai UK press kit gives luggage figures without naming the measuring standard.",
         "Hyundai's 2020 UK press kit says the plug-in hybrid would follow early in 2021; the plug-in hybrid release gives 265 PS / 350 Nm with standard four-wheel drive.",
         "The facelift's European debut was announced for early 2024 (Hyundai Europe release of 21 November 2023). Wikipedia dates the facelift's release to December 2023 for the 2025 model year without naming the market."
-      ]
+      ],
+      "commons": {
+        "generation": "Category:Hyundai Tucson (NX4)",
+        "bodyStyles": {
+          "b1": "Category:Hyundai Tucson (NX4, SWB)",
+          "b2": "Category:Hyundai Tucson (NX4, LWB)"
+        }
+      }
     },
     {
       "id": "hyundai-tucson-nx5",
       "slug": "nx5",
       "ordinal": 5,
-      "lines": ["tucson"],
+      "lines": [
+        "tucson"
+      ],
       "name": "Fifth generation",
-      "codes": [ { "value": "NX5", "kind": "model code", "src": "wp", "quote": "Model code NX5" } ],
+      "codes": [
+        {
+          "value": "NX5",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code NX5"
+        }
+      ],
       "dates": {
-        "revealed": { "value": "2026-08-19", "src": "wp", "quote": "The fifth generation Tucson was revealed on 19 August 2026." },
-        "modelYears": [ { "market": "unstated", "from": 2027, "src": "wp", "quote": "Model years 2027" } ]
+        "revealed": {
+          "value": "2026-08-19",
+          "src": "wp",
+          "quote": "The fifth generation Tucson was revealed on 19 August 2026."
+        },
+        "modelYears": [
+          {
+            "market": "unstated",
+            "from": 2027,
+            "src": "wp",
+            "quote": "Model years 2027"
+          }
+        ]
       },
       "assembly": [
-        { "value": "Hyundai Motor Manufacturing Czech, Czech Republic (European market)", "src": "hn2", "quote": "For European markets, the all-new TUCSON is produced at Hyundai Motor Manufacturing Czech in the Czech Republic." }
+        {
+          "value": "Hyundai Motor Manufacturing Czech, Czech Republic (European market)",
+          "src": "hn2",
+          "quote": "For European markets, the all-new TUCSON is produced at Hyundai Motor Manufacturing Czech in the Czech Republic."
+        }
       ],
       "bodyStyles": [
-        { "id": "b1", "value": "5-door SUV, standard wheelbase", "markets": ["EU"], "src": "wp", "quote": "a standard wheelbase variant primarily for Europe" },
-        { "id": "b2", "value": "5-door SUV, long wheelbase", "markets": ["NA", "KR", "AU", "CN"], "src": "wp", "quote": "a long wheelbase variant for North America, South Korea, Australia and China" }
+        {
+          "id": "b1",
+          "value": "5-door SUV, standard wheelbase",
+          "markets": [
+            "EU"
+          ],
+          "src": "wp",
+          "quote": "a standard wheelbase variant primarily for Europe"
+        },
+        {
+          "id": "b2",
+          "value": "5-door SUV, long wheelbase",
+          "markets": [
+            "NA",
+            "KR",
+            "AU",
+            "CN"
+          ],
+          "src": "wp",
+          "quote": "a long wheelbase variant for North America, South Korea, Australia and China"
+        }
       ],
-      "seating": { "options": [5], "src": "hn2", "quote": "Seating Capacity 5 occupants" },
+      "seating": {
+        "options": [
+          5
+        ],
+        "src": "hn2",
+        "quote": "Seating Capacity 5 occupants"
+      },
       "drivetrains": [
-        { "value": "FWD", "markets": ["unstated"], "src": "wp", "quote": "The fifth generation Tucson is available with two engines, each available in either front- or all-wheel-drive." },
-        { "value": "AWD", "markets": ["unstated"], "src": "wp", "quote": "The fifth generation Tucson is available with two engines, each available in either front- or all-wheel-drive." }
+        {
+          "value": "FWD",
+          "markets": [
+            "unstated"
+          ],
+          "src": "wp",
+          "quote": "The fifth generation Tucson is available with two engines, each available in either front- or all-wheel-drive."
+        },
+        {
+          "value": "AWD",
+          "markets": [
+            "unstated"
+          ],
+          "src": "wp",
+          "quote": "The fifth generation Tucson is available with two engines, each available in either front- or all-wheel-drive."
+        }
       ],
-      "platform": { "value": "Hyundai-Kia N3/N4", "src": "wp", "quote": "Platform Hyundai-Kia N3/N4 Dimensions Wheelbase 2,720 mm" },
+      "platform": {
+        "value": "Hyundai-Kia N3/N4",
+        "src": "wp",
+        "quote": "Platform Hyundai-Kia N3/N4 Dimensions Wheelbase 2,720 mm"
+      },
       "dimensions": [
-        { "id": "d1", "market": "EU", "version": "standard wheelbase", "unit": "mm", "length": 4560, "width": 1900, "height": 1670, "wheelbase": 2720,
-          "src": "hn2", "quotes": ["Length 4,560 mm (+35 mm) Width 1,900 mm (+35 mm) Height 1,670 mm (+20 mm) (1,685 mm with roof rack) Wheelbase 2,720 mm (+40 mm)"] },
-        { "id": "d2", "market": "unstated", "version": "long wheelbase", "unit": "mm", "length": 4700, "width": 1905, "wheelbase": 2785,
-          "src": "wp", "quotes": ["2,785 mm (109.6 in) (LWB)", "4,700 mm (185.0 in) (LWB)", "1,905 mm (75.0 in) (LWB)"] }
+        {
+          "id": "d1",
+          "market": "EU",
+          "version": "standard wheelbase",
+          "unit": "mm",
+          "length": 4560,
+          "width": 1900,
+          "height": 1670,
+          "wheelbase": 2720,
+          "src": "hn2",
+          "quotes": [
+            "Length 4,560 mm (+35 mm) Width 1,900 mm (+35 mm) Height 1,670 mm (+20 mm) (1,685 mm with roof rack) Wheelbase 2,720 mm (+40 mm)"
+          ]
+        },
+        {
+          "id": "d2",
+          "market": "unstated",
+          "version": "long wheelbase",
+          "unit": "mm",
+          "length": 4700,
+          "width": 1905,
+          "wheelbase": 2785,
+          "src": "wp",
+          "quotes": [
+            "2,785 mm (109.6 in) (LWB)",
+            "4,700 mm (185.0 in) (LWB)",
+            "1,905 mm (75.0 in) (LWB)"
+          ]
+        }
       ],
       "cargo": [
-        { "id": "k1", "market": "EU", "version": "standard wheelbase", "behind": "2nd row", "value": 695, "unit": "L", "standard": "VDA", "src": "hn2", "quote": "Cargo 695 l (Europe VDA)" },
-        { "id": "k2", "market": "unstated", "version": "long wheelbase", "behind": "unstated", "value": 41.7, "unit": "cu ft", "standard": "not stated", "src": "wp", "quote": "for the long wheelbase model, second-row headroom is increased by 29 mm (1.1 in), while cargo space is significantly increased to 41.7 cu ft (1,180 L)" }
+        {
+          "id": "k1",
+          "market": "EU",
+          "version": "standard wheelbase",
+          "behind": "2nd row",
+          "value": 695,
+          "unit": "L",
+          "standard": "VDA",
+          "src": "hn2",
+          "quote": "Cargo 695 l (Europe VDA)"
+        },
+        {
+          "id": "k2",
+          "market": "unstated",
+          "version": "long wheelbase",
+          "behind": "unstated",
+          "value": 41.7,
+          "unit": "cu ft",
+          "standard": "not stated",
+          "src": "wp",
+          "quote": "for the long wheelbase model, second-row headroom is increased by 29 mm (1.1 in), while cargo space is significantly increased to 41.7 cu ft (1,180 L)"
+        }
       ],
       "powertrains": [
-        { "id": "p1", "name": "1.6 T-GDI (manual)", "market": "EU", "fuel": "petrol", "engine": "1.6 T-GDI",
-          "power": { "value": 150, "unit": "PS" }, "torque": { "value": 250, "unit": "Nm" }, "transmission": "6-speed manual",
-          "src": "hn2", "quotes": ["The powertrain line-up includes a 150 PS 1.6 T-GDI petrol engine, offered with either a six-speed manual transmission or a 48V mild hybrid system and seven-speed dual-clutch transmission (7DCT)", "Combined Torque 250 Nm 380 Nm 380 Nm"] },
-        { "id": "p2", "name": "1.6 T-GDI 48V mild hybrid", "market": "EU", "fuel": "mild hybrid", "engine": "1.6 T-GDI with 48V mild hybrid system",
-          "power": { "value": 150, "unit": "PS" }, "torque": { "value": 250, "unit": "Nm" }, "transmission": "7-speed dual-clutch",
-          "src": "hn2", "quotes": ["The powertrain line-up includes a 150 PS 1.6 T-GDI petrol engine, offered with either a six-speed manual transmission or a 48V mild hybrid system and seven-speed dual-clutch transmission (7DCT)", "Combined Torque 250 Nm 380 Nm 380 Nm"] },
-        { "id": "p3", "name": "1.6 T-GDI Hybrid", "market": "EU", "fuel": "hybrid", "engine": "1.6 T-GDI hybrid, 1.49 kWh battery",
-          "power": { "value": 245, "unit": "PS" }, "torque": { "value": 380, "unit": "Nm" }, "transmission": "6-speed automatic",
-          "src": "hn2", "quotes": ["The hybrid delivers 245 PS and 380 Nm of torque", "Battery Capacity N/A 1.49 kWh / 270V 17.1 kWh / 351V Transmission 6MT / 7DCT 48V 6AT 6AT"] },
-        { "id": "p4", "name": "1.6 T-GDI Plug-in Hybrid", "market": "EU", "fuel": "plug-in hybrid", "engine": "1.6-litre turbocharged petrol, 17.1 kWh battery",
-          "power": { "value": 292, "unit": "PS" }, "torque": { "value": 380, "unit": "Nm" }, "transmission": "6-speed automatic",
-          "src": "hn2", "quotes": ["the plug-in hybrid TUCSON PHEV combines a 1.6-litre turbocharged petrol engine with a plug-in hybrid system producing up to 292 PS and 380 Nm of torque. Its 17.1 kWh battery", "Battery Capacity N/A 1.49 kWh / 270V 17.1 kWh / 351V Transmission 6MT / 7DCT 48V 6AT 6AT"] },
-        { "id": "p5", "name": "1.6 turbo", "market": "unstated", "fuel": "petrol", "engine": "turbocharged 1.6-litre inline-four",
-          "power": { "value": 184, "unit": "hp" }, "torque": { "value": 195, "unit": "lb-ft" },
-          "src": "wp", "quotes": ["The standard option is a turbocharged 1.6-liter inline-four engine, producing 184 hp (187 PS; 137 kW) and 195 lb⋅ft (264 N⋅m) of torque"] },
-        { "id": "p6", "name": "1.6 turbo hybrid", "market": "unstated", "fuel": "hybrid", "engine": "turbocharged 1.6-litre inline-four with two electric motors",
-          "power": { "value": 233, "unit": "hp" }, "torque": { "value": 280, "unit": "lb-ft" },
-          "src": "wp", "quotes": ["the upgraded option is a hybrid pairing the same engine with two electric motors, producing a combined 233 hp (236 PS; 174 kW) and 280 lb⋅ft (380 N⋅m)"] }
+        {
+          "id": "p1",
+          "name": "1.6 T-GDI (manual)",
+          "market": "EU",
+          "fuel": "petrol",
+          "engine": "1.6 T-GDI",
+          "power": {
+            "value": 150,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 250,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual",
+          "src": "hn2",
+          "quotes": [
+            "The powertrain line-up includes a 150 PS 1.6 T-GDI petrol engine, offered with either a six-speed manual transmission or a 48V mild hybrid system and seven-speed dual-clutch transmission (7DCT)",
+            "Combined Torque 250 Nm 380 Nm 380 Nm"
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "1.6 T-GDI 48V mild hybrid",
+          "market": "EU",
+          "fuel": "mild hybrid",
+          "engine": "1.6 T-GDI with 48V mild hybrid system",
+          "power": {
+            "value": 150,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 250,
+            "unit": "Nm"
+          },
+          "transmission": "7-speed dual-clutch",
+          "src": "hn2",
+          "quotes": [
+            "The powertrain line-up includes a 150 PS 1.6 T-GDI petrol engine, offered with either a six-speed manual transmission or a 48V mild hybrid system and seven-speed dual-clutch transmission (7DCT)",
+            "Combined Torque 250 Nm 380 Nm 380 Nm"
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "1.6 T-GDI Hybrid",
+          "market": "EU",
+          "fuel": "hybrid",
+          "engine": "1.6 T-GDI hybrid, 1.49 kWh battery",
+          "power": {
+            "value": 245,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 380,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed automatic",
+          "src": "hn2",
+          "quotes": [
+            "The hybrid delivers 245 PS and 380 Nm of torque",
+            "Battery Capacity N/A 1.49 kWh / 270V 17.1 kWh / 351V Transmission 6MT / 7DCT 48V 6AT 6AT"
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "1.6 T-GDI Plug-in Hybrid",
+          "market": "EU",
+          "fuel": "plug-in hybrid",
+          "engine": "1.6-litre turbocharged petrol, 17.1 kWh battery",
+          "power": {
+            "value": 292,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 380,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed automatic",
+          "src": "hn2",
+          "quotes": [
+            "the plug-in hybrid TUCSON PHEV combines a 1.6-litre turbocharged petrol engine with a plug-in hybrid system producing up to 292 PS and 380 Nm of torque. Its 17.1 kWh battery",
+            "Battery Capacity N/A 1.49 kWh / 270V 17.1 kWh / 351V Transmission 6MT / 7DCT 48V 6AT 6AT"
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "1.6 turbo",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "turbocharged 1.6-litre inline-four",
+          "power": {
+            "value": 184,
+            "unit": "hp"
+          },
+          "torque": {
+            "value": 195,
+            "unit": "lb-ft"
+          },
+          "src": "wp",
+          "quotes": [
+            "The standard option is a turbocharged 1.6-liter inline-four engine, producing 184 hp (187 PS; 137 kW) and 195 lb⋅ft (264 N⋅m) of torque"
+          ]
+        },
+        {
+          "id": "p6",
+          "name": "1.6 turbo hybrid",
+          "market": "unstated",
+          "fuel": "hybrid",
+          "engine": "turbocharged 1.6-litre inline-four with two electric motors",
+          "power": {
+            "value": 233,
+            "unit": "hp"
+          },
+          "torque": {
+            "value": 280,
+            "unit": "lb-ft"
+          },
+          "src": "wp",
+          "quotes": [
+            "the upgraded option is a hybrid pairing the same engine with two electric motors, producing a combined 233 hp (236 PS; 174 kW) and 280 lb⋅ft (380 N⋅m)"
+          ]
+        }
       ],
       "changes": [
-        { "id": "c1", "topic": "dimensions", "text": "The European version is 35 mm longer, 35 mm wider and 20 mm taller than its predecessor.", "src": "hn2", "quote": "Compared with its predecessor, it is 35 mm longer, 35 mm wider and 20 mm taller" },
-        { "id": "c2", "topic": "dimensions", "text": "The European version's wheelbase grew by 40 mm to 2,720 mm.", "src": "hn2", "quote": "Wheelbase 2,720 mm (+40 mm)" },
-        { "id": "c3", "topic": "interior", "text": "Rear doors open to 83 degrees instead of 73.", "src": "hn2", "quote": "the door opening angle has increased from 73 to 83 degrees to make access easier" },
-        { "id": "c4", "topic": "technology", "text": "Pleos Connect infotainment based on Android Automotive OS, with 12.9-inch or 17-inch central displays.", "src": "hn2", "quote": "Pleos Connect, based on Android Automotive OS (AAOS), combines a central infotainment display available in 12.9-inch and 17-inch sizes with the slim 9.9-inch driver display." },
-        { "id": "c5", "topic": "design", "text": "Unlike the fourth generation, the short- and long-wheelbase versions have different D-pillars, quarter panels and rear doors.", "src": "wp", "quote": "Unlike its predecessor which has virtually no styling differences between models, the fifth generation models feature differently sloped D-pillars, different quarter panels and rear doors." }
+        {
+          "id": "c1",
+          "topic": "dimensions",
+          "text": "The European version is 35 mm longer, 35 mm wider and 20 mm taller than its predecessor.",
+          "src": "hn2",
+          "quote": "Compared with its predecessor, it is 35 mm longer, 35 mm wider and 20 mm taller"
+        },
+        {
+          "id": "c2",
+          "topic": "dimensions",
+          "text": "The European version's wheelbase grew by 40 mm to 2,720 mm.",
+          "src": "hn2",
+          "quote": "Wheelbase 2,720 mm (+40 mm)"
+        },
+        {
+          "id": "c3",
+          "topic": "interior",
+          "text": "Rear doors open to 83 degrees instead of 73.",
+          "src": "hn2",
+          "quote": "the door opening angle has increased from 73 to 83 degrees to make access easier"
+        },
+        {
+          "id": "c4",
+          "topic": "technology",
+          "text": "Pleos Connect infotainment based on Android Automotive OS, with 12.9-inch or 17-inch central displays.",
+          "src": "hn2",
+          "quote": "Pleos Connect, based on Android Automotive OS (AAOS), combines a central infotainment display available in 12.9-inch and 17-inch sizes with the slim 9.9-inch driver display."
+        },
+        {
+          "id": "c5",
+          "topic": "design",
+          "text": "Unlike the fourth generation, the short- and long-wheelbase versions have different D-pillars, quarter panels and rear doors.",
+          "src": "wp",
+          "quote": "Unlike its predecessor which has virtually no styling differences between models, the fifth generation models feature differently sloped D-pillars, different quarter panels and rear doors."
+        }
       ],
       "notes": [
         "Wikipedia states production is 'to commence' in 2026; no production start date is sourced, so the generation is not marked as in production yet.",
         "European figures (standard wheelbase) are from Hyundai Motor Europe's release of 1 October 2026, which notes that energy and performance figures are subject to final homologation. Long-wheelbase dimensions and the North American-style 1.6 turbo/hybrid outputs are from Wikipedia without a named market.",
         "Hyundai announced a further, more dynamically styled version for the Paris Motor Show on 12 October 2026; not covered here."
-      ]
+      ],
+      "commons": {
+        "generation": "Category:Hyundai Tucson (NX5)"
+      }
     }
   ]
 }
