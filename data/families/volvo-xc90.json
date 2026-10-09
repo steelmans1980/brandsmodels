@@ -417,8 +417,7 @@
           "name": "V8",
           "market": "unstated",
           "fuel": "petrol",
-          "years": "2005–2011",
-          "engine": "4.4 L V8 (B8444S)",
+          "engine": "4.4 L V8",
           "cylinders": 8,
           "power": {
             "value": 232,
@@ -677,9 +676,8 @@
         "No generation code is recorded: German Wikipedia calls it 'Typ C' and Wikimedia Commons has a 'Volvo XC90 (P28)' category, but no manufacturer source confirming either was found. P2 is the platform.",
         "Swedish production ended on 11 July 2014 after 636,143 units (Volvo). Production continued in Daqing, China, as the XC Classic for the Chinese market, 2014–2016 according to Wikipedia (model years 2014–2016 there).",
         "Wheelbase: Volvo's 2003 release gives 2,859 mm; Wikipedia gives 2,857 mm (2,859 mm for 2005–2006 models). Both recorded with their source.",
-        "The V8 arrived in 2005 per Volvo's January 2005 release (Volvo's 2016 history piece says 2004); Wikipedia (de) says the V8 was dropped at the end of 2010. Years for the V8 are from Wikipedia's spec table.",
+        "The V8 arrived in 2005 per Volvo's January 2005 release (Volvo's 2016 history piece says 2004); German Wikipedia says the V8 was dropped at the end of 2010, while English Wikipedia's specification table lists it for 2005–2011.",
         "Model years 2003–2014 are from Wikipedia's infobox; the source does not name the market, but the 2003 model year refers to the North American launch.",
-        "No Commons category for the facelifts was found.",
         "UK 2010 figures (Volvo UK): 4,798 mm long, 1,898 mm wide, 2,857 mm wheelbase; load volume 249 / 615 / 1,837 L. US figures (Volvo USA): 112.6 in wheelbase (2005 MY), 93.2 cu ft maximum cargo with the front passenger seat also folded."
       ],
       "cargo": [
@@ -822,13 +820,39 @@
             "Width 1,923 mm (75.7 in)",
             "Height 1,776 mm (69.9 in)"
           ]
+        },
+        {
+          "id": "d2",
+          "market": "EU",
+          "version": "Germany, 2023 range",
+          "unit": "mm",
+          "length": 4953,
+          "height": 1771,
+          "wheelbase": 2984,
+          "src": "vc-de-2023",
+          "quotes": [
+            "4.953 mm lang, 2.140 mm breit (mit Spiegel), 1.771 mm hoch, Radstand 2.984 mm"
+          ]
+        },
+        {
+          "id": "d3",
+          "market": "EU",
+          "version": "Germany, 2024 facelift",
+          "unit": "mm",
+          "length": 4953,
+          "height": 1771,
+          "wheelbase": 2984,
+          "src": "vc-de-2024",
+          "quotes": [
+            "4.953 mm lang, 2.140 mm breit (mit Spiegel), 1.771 mm hoch, Radstand 2.984 mm"
+          ]
         }
       ],
       "powertrains": [
         {
           "id": "p1",
           "name": "T8 Twin Engine",
-          "market": "global",
+          "market": "EU",
           "fuel": "plug-in hybrid",
           "engine": "2.0 L supercharged and turbocharged Drive-E four-cylinder petrol + 60 kW rear electric motor",
           "cylinders": 4,
@@ -840,7 +864,6 @@
             "value": 640,
             "unit": "Nm"
           },
-          "transmission": "8-speed Geartronic automatic",
           "drivetrain": "AWD",
           "src": "vc-gen2-powertrains",
           "quotes": [
@@ -850,9 +873,9 @@
         {
           "id": "p2",
           "name": "T6",
-          "market": "global",
+          "market": "EU",
           "fuel": "petrol",
-          "engine": "2.0 L supercharged and turbocharged Drive-E four-cylinder",
+          "engine": "supercharged and turbocharged Drive-E four-cylinder petrol",
           "cylinders": 4,
           "power": {
             "value": 320,
@@ -862,7 +885,6 @@
             "value": 400,
             "unit": "Nm"
           },
-          "transmission": "8-speed Geartronic automatic",
           "src": "vc-gen2-powertrains",
           "quotes": [
             "The first is a T6 turbo engine with supercharger and turbo with 320 hp and a maximum torque of 400 Nm."
@@ -871,9 +893,9 @@
         {
           "id": "p3",
           "name": "T5",
-          "market": "global",
+          "market": "EU",
           "fuel": "petrol",
-          "engine": "2.0 L turbo Drive-E four-cylinder",
+          "engine": "Drive-E four-cylinder petrol",
           "cylinders": 4,
           "power": {
             "value": 254,
@@ -883,7 +905,6 @@
             "value": 350,
             "unit": "Nm"
           },
-          "transmission": "8-speed Geartronic automatic",
           "src": "vc-gen2-powertrains",
           "quotes": [
             "The second is a T5 with 254 hp and 350 Nm."
@@ -892,9 +913,9 @@
         {
           "id": "p4",
           "name": "D5",
-          "market": "global",
+          "market": "EU",
           "fuel": "diesel",
-          "engine": "2.0 L twin-turbo Drive-E four-cylinder diesel",
+          "engine": "twin-turbo Drive-E four-cylinder diesel",
           "cylinders": 4,
           "power": {
             "value": 225,
@@ -904,7 +925,6 @@
             "value": 470,
             "unit": "Nm"
           },
-          "transmission": "8-speed Geartronic automatic",
           "src": "vc-gen2-powertrains",
           "quotes": [
             "the D5 twin turbo diesel engine with 225 hp, 470 Nm"
@@ -913,9 +933,9 @@
         {
           "id": "p5",
           "name": "D4",
-          "market": "global",
+          "market": "EU",
           "fuel": "diesel",
-          "engine": "2.0 L turbo Drive-E four-cylinder diesel",
+          "engine": "turbo Drive-E four-cylinder diesel",
           "cylinders": 4,
           "power": {
             "value": 190,
@@ -925,7 +945,6 @@
             "value": 400,
             "unit": "Nm"
           },
-          "transmission": "8-speed Geartronic automatic",
           "src": "vc-gen2-powertrains",
           "quotes": [
             "the D4 turbo diesel engine with 190 hp, 400 Nm"
@@ -934,10 +953,9 @@
         {
           "id": "p6",
           "name": "B5 / B6",
-          "market": "global",
+          "market": "US",
           "fuel": "mild hybrid",
-          "years": "2019–",
-          "engine": "2.0 L four-cylinder petrol with 48V mild-hybrid system",
+          "engine": "petrol with 48 V mild-hybrid system",
           "cylinders": 4,
           "src": "vc-2024",
           "quotes": [
@@ -1256,14 +1274,14 @@
         }
       },
       "notes": [
-        "Volvo's media sites (media.volvocars.com, volvocars.com/…/media) returned 503/403; Volvo press releases were read from Volvo's Cision newsroom copies (news.cision.com).",
+        "Volvo press releases are cited from Volvo's Cision newsroom copies (news.cision.com).",
         "Reveal: Volvo's release 'World premiere: the all-new Volvo XC90' is dated 27 August 2014 and German Wikipedia says the press presentation was in Stockholm on 27 August 2014; English Wikipedia says 26 August 2014. The interior had been shown first, on 27 May 2014.",
         "Power figures in the 2014 Volvo release are 'hp' (metric); English Wikipedia gives the D5 as 235 hp. Volvo's figures are recorded.",
         "The T8 was renamed 'Recharge' for the 2021 model year and received a more powerful 107 kW electric motor and an 18.8 kWh battery in 2021 (Wikipedia). In March 2024 the XC90 was the last Volvo built with a diesel engine (Wikipedia). Not recorded as separate revisions.",
         "EX90: Wikipedia says the electric EX90 was introduced in late 2022 as the XC90's successor, but in September 2024 Volvo said both would be sold together. The EX90 is a separate model and is not included here.",
-        "No manufacturer dimensions, cargo volumes or model-year-specific outputs (B5/B6, T8 Recharge 455 hp) were readable; dimensions are from English Wikipedia (model year not stated). The 2026 long-range PHEV update's system output was not stated in the release.",
+        "US-market outputs (for example B5/B6 and the T8 Recharge in hp) are not recorded. The English Wikipedia dimensions do not state a model year; Volvo Germany figures for 2023 and 2024 are recorded separately. The 2026 long-range PHEV update's system output was not stated in the release.",
         "Seating: Volvo describes the second generation as a '7-seater'; Wikipedia and Volvo's 2019 release also describe 5-seat (dropped after the 2017 model year), 4-seat Excellence (2017–2020) and 6-seat (from the 2020 model year) layouts in words only, so only 7 is recorded in the seating field.",
-        "Volvo Germany's 2023 and 2024 releases give 4,953 mm length, 1,771 mm height and 2,984 mm wheelbase (width 2,140 mm incl. mirrors) and a maximum 1,816 L load volume; these use German thousands separators ('4.953', '1.816') which the quote checker cannot match as numbers, so they are not recorded as fields. The Wikipedia figures (4,950 mm length, 1,776 mm height) differ slightly."
+        "Volvo Germany's 2023 and 2024 releases give 4,953 mm length, 1,771 mm height and 2,984 mm wheelbase (width 2,140 mm including mirrors) and a maximum 1,816 L load volume; English Wikipedia gives slightly different figures (4,950 mm length, 1,776 mm height)."
       ],
       "seating": {
         "options": [
@@ -1294,6 +1312,17 @@
           "standard": "not stated",
           "src": "vc-de-2023-recharge",
           "quote": "Bei voller Bestuhlung als Siebensitzer bleiben 262 Liter Ladevolumen, das sich durch Umklappen der dritten Sitzreihe auf 640 Liter"
+        },
+        {
+          "id": "k3",
+          "market": "EU",
+          "version": "Germany, 2023 range, 2nd and 3rd rows folded",
+          "behind": "1st row",
+          "value": 1816,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "vc-de-2023-recharge",
+          "quote": "das sich durch Umklappen der dritten Sitzreihe auf 640 Liter und bei zusätzlich umgeklappter zweiter Sitzreihe auf 1.816 Liter erweitern lässt"
         }
       ]
     }

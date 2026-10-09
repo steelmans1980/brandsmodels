@@ -48,3 +48,10 @@ Generations:
 - Existing: Category:Porsche Cayenne Electric (8 files; subcategories Coupé Electric, Prototype, Turbo).
 - Also checked and not existing: Porsche Cayenne (PO536), (9YA), (E1), (E2), (955), (957), (958), Porsche Cayenne I and II.
 - I could not list the subcategories of 'Category:Porsche Cayenne' because the Commons API was rate-limited. A reviewer should look there for the real per-generation category names.
+
+## Moved from public notes
+- 9PA: Wikimedia Commons has no 'Category:Porsche Cayenne (9PA)'; no generation-specific category could be confirmed.
+- 92A: no Commons category 'Category:Porsche Cayenne (92A)' exists.
+- E3: Porsche's 2017 and 2023 press kits are PDFs and were not read; the HTML press kit pages give no length, width or height.
+- E3: SUV boot volume (770 L per Porsche's 2017 press kit, as seen in a search snippet) could not be read with the project tool and is not recorded.
+- E3: Wikimedia Commons: no 'Category:Porsche Cayenne (9Y0)' exists; 'Category:Porsche Cayenne Coupé (PO536)' exists as a subcategory of 'Category:Porsche Cayenne Coupé'. No generation-level category was confirmed, and none for the 2023 facelift.

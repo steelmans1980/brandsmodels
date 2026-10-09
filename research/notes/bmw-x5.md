@@ -27,3 +27,12 @@ Secondary: en.wikipedia BMW X5, BMW X5 (E53), (E70), (F15), (G05) permalinks.
 - No E53 reveal date/event found (likely 1999 Detroit, unsourced). No seating field (sources state 5/7 in words only).
 - No G65 dimensions or European data in the read releases.
 - Commons: Category:BMW E53, BMW E70, BMW F15, BMW G05, BMW G18, BMW G65 (only subcats so far). No facelift/LCI categories exist. "Category:BMW X5 (E53)" and "(E70)" exist but are empty (redirect-style); not used. Category:BMW E70 file count could not be confirmed (Commons API rate-limit) but it exists in the category listing.
+
+## Moved from public notes
+- E53: no Commons category exists for the facelift.
+- E70: the BMW US pricing release that reportedly names Shanghai was not read in full.
+- E70: no Commons category exists for the LCI or as a separate E70 X5 M category beyond 'Category:BMW X5 M (E70)'.
+- F15: the X5 M (F85) and the xDrive40e have Commons subcategories (Category:BMW X5 M (F15), Category:BMW X5 xDrive40e) inside Category:BMW F15.
+- G05: no Commons category exists for the facelift.
+- G65: the generation was not in the original assignment list.
+- G65: no dimensions or European engine data were found in the sources read; the Commons category has subcategories but no direct files yet.

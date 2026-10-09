@@ -33,3 +33,16 @@ Ordinals follow the X-Trail count for shared generations (T32 = 3, T33 = 4, T34 
 
 ## Commons
 X-Trail (T30), (T31), (T32) + "(T32, facelift)", (T33) + "(2025)", (T34); Rogue (S35); also Rogue (T32), (T33), (T34) exist. No T30/T31 facelift categories found (T30 has Axis/FCV/Rider subcats).
+
+## Moved from public notes
+- T30: no manufacturer source for the T30 was found in the Nissan newsrooms.
+- S35: width and height were not found in a readable manufacturer source.
+- T31: no separate Commons category for the T31 facelift was found.
+- T32: no manufacturer dimension sheet for T32 was readable.
+- T32: the German Wikipedia table values were matched to engines by column order and should be double-checked.
+- T32: Commons also has 'Category:Nissan Rogue (T32)' (90 files) for the North American model.
+- T33: Commons 'Category:Nissan X-Trail (2025)' is used for the facelift; reviewers should confirm it matches r3.
+- T33: the Japanese e-POWER output figures were not found in a readable Nissan source.
+- T33: Commons also has 'Category:Nissan Rogue (T33)' (63 files) for the North American model.
+- T34: X-Trail (non-US) specifications were not found in a readable source.
+- T34: Commons: 'Category:Nissan X-Trail (T34)' (subcategory 'Nissan X-Trail e-Power (T34)') and 'Category:Nissan Rogue (T34)' (subcategory 'Nissan Rogue e-Power') exist but held no direct files when checked.

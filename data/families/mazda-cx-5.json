@@ -278,7 +278,7 @@
      "name": "SKYACTIV-D 2.2 (XD)",
      "market": "JP",
      "fuel": "diesel",
-     "engine": "2.2 L SKYACTIV-D twin-turbo diesel I4",
+     "engine": "2.2 L SKYACTIV-D turbo diesel I4",
      "torque": {
       "value": 420,
       "unit": "Nm"
@@ -513,10 +513,10 @@
     "generation": "Category:Mazda CX-5 (KE)"
    },
    "notes": [
-    "Dimensions differ by source: Japanese Wikipedia (Japanese market) 4,540 × 1,840 × 1,705 mm; German Wikipedia 4,555 × 1,840 × 1,710 mm (market not stated); English Wikipedia 4,540 × 1,840 × 1,670 mm. No Mazda dimension sheet was found in a readable form.",
+    "Dimensions differ by source: Japanese Wikipedia (Japanese market) 4,540 × 1,840 × 1,705 mm; German Wikipedia 4,555 × 1,840 × 1,710 mm (market not stated); English Wikipedia 4,540 × 1,840 × 1,670 mm. No Mazda dimension sheet is cited.",
     "Cargo volumes are Mazda's Japanese figures measured by the DIN method.",
-    "The updated (facelift) model went on sale in Japan and the US in January 2015 (Mazda); in the US and Canada it was designated a 2016.5 model year (Wikipedia). No separate Commons category for the facelift exists.",
-    "European power/torque figures are from German Wikipedia's specification table (column-matched) and should be double-checked; US figures are from English Wikipedia."
+    "The updated (facelift) model went on sale in Japan and the US in January 2015 (Mazda); in the US and Canada it was designated a 2016.5 model year (Wikipedia).",
+    "European power/torque figures are from German Wikipedia's specification table; US figures are from English Wikipedia."
    ]
   },
   {
@@ -734,7 +734,6 @@
       "value": 258,
       "unit": "Nm"
      },
-     "drivetrain": "AWD",
      "src": "dc",
      "quotes": [
       "Der 2,5-Liter-Ottomotor mit Zylinderabschaltung ist seit September 2017 erhältlich.",
@@ -995,10 +994,10 @@
     }
    },
    "notes": [
-    "Dimensions differ by source: Japanese Wikipedia (Japanese market) 4,575 × 1,845 × 1,690 mm, wheelbase 2,700 mm; English Wikipedia 4,550 mm long, 1,840 mm wide (market not stated). No readable Mazda dimension sheet was found for the KF.",
+    "Dimensions differ by source: Japanese Wikipedia (Japanese market) 4,575 × 1,845 × 1,690 mm, wheelbase 2,700 mm; English Wikipedia 4,550 mm long, 1,840 mm wide (market not stated). No Mazda dimension sheet is cited for the KF.",
     "The 2021 facelift went on sale in Japan in December 2021 (Japanese Wikipedia: announced 8 November 2021) and is the 2022 model year in the US.",
     "In the US a 2.2 Skyactiv-D diesel was sold only for the 2019 model year (Signature trim); no figures are recorded for it.",
-    "European engine figures come from German Wikipedia's specification table (column-matched) and should be double-checked. In Europe both petrol engines gained 24 V mild hybrid (M Hybrid) for the 2023 model year.",
+    "European engine figures come from German Wikipedia's specification table. In Europe both petrol engines gained 24 V mild hybrid (M Hybrid) for the 2023 model year.",
     "English Wikipedia gives production as November 2016 – 2025; Japanese Wikipedia lists Japanese sales running into 2026."
    ]
   },
@@ -1147,10 +1146,10 @@
    "powertrains": [
     {
      "id": "p1",
-     "name": "e-SKYACTIV G 2.5 (M Hybrid)",
+     "name": "2.5 SKYACTIV-G 141 (mild hybrid)",
      "market": "EU",
      "fuel": "mild hybrid",
-     "engine": "2.5 L SKYACTIV-G I4 with Mazda M Hybrid",
+     "engine": "2.5 L SKYACTIV-G I4, mild hybrid",
      "displacement": 2488,
      "power": {
       "value": 104,

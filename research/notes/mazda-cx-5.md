@@ -22,3 +22,10 @@ Generations: KE (2012–2017, facelift revealed Nov 2014), KF (2016/17–2025, f
 - KM US torque 185 lb-ft (reveal) vs 186 lb-ft (pricing release); later figure recorded.
 - KE facelift has no own Commons category; KF facelift = "Category:Mazda CX-5 (KF, 2021)".
 - Cargo standard "DIN" is used only where Mazda states DIN (2012 Japan release: 500/1620 L; 2016 Japan release: 505 L with sub-trunk).
+
+## Moved from public notes
+- KE: no Mazda dimension sheet was found in a readable form.
+- KE: no separate Commons category for the facelift exists.
+- KE: the German Wikipedia table values were column-matched to engines and should be double-checked.
+- KF: no readable Mazda dimension sheet was found.
+- KF: the German Wikipedia table values were column-matched to engines and should be double-checked.

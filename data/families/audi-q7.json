@@ -470,9 +470,8 @@
         "German Wikipedia gives slightly different dimensions (length 5086–5089 mm, width 1983 mm) from English Wikipedia (5085 mm, 1984 mm).",
         "Facelift timing: German Wikipedia dates the facelift to spring 2009 and English Wikipedia says it was unveiled at Pebble Beach in 2009, but English Wikipedia's section heading reads 'Facelift (2010–2015)'.",
         "The English Wikipedia engine tables label the year column 'Model Year'; whether these are calendar or model years is not stated. Engine figures are not tied to a market by the source.",
-        "A 6-speed manual was offered only in Europe with the 3.6 FSI (English Wikipedia). Seating configurations (5, 6, 7) are described in prose but could not be quoted with numerals, so they are not recorded as structured data.",
-        "No Audi press release from 2005–2015 could be read: the old Audi MediaCenter URLs return 404 after the site moved; only Audi's 2024 retrospective covers the first generation.",
-        "Wikimedia Commons has no separate category for the 2009 facelift (only 'Category:Audi Q7 V12 TDI' as a subcategory of 'Category:Audi Q7 (4L)')."
+        "A 6-speed manual was offered only in Europe with the 3.6 FSI (English Wikipedia). The 5-, 6- and 7-seat configurations are described in words only, so no seating figures are shown.",
+        "No Audi press release from 2005–2015 is cited; Audi information on the first generation comes from its 2024 retrospective."
       ],
       "commons": {
         "generation": "Category:Audi Q7 (4L)"
@@ -954,7 +953,8 @@
           },
           "src": "am24",
           "quotes": [
-            "The range opens with the 45 TDI quattro, a three-liter diesel engine that has 170 kW (231 PS) of output and delivers an impressive 500 Nm of torque"
+            "The range opens with the 45 TDI quattro, a three-liter diesel engine that has 170 kW (231 PS) of output and delivers an impressive 500 Nm of torque",
+            "All engines work together with an eight-speed tiptronic, quattro permanent four-wheel drive, and the mild hybrid system"
           ]
         },
         {
@@ -974,7 +974,8 @@
           },
           "src": "am24",
           "quotes": [
-            "This engine is followed by the 50 TDI quattro, a more powerful version with 210 kW (286 PS) and 600 Nm of torque."
+            "This engine is followed by the 50 TDI quattro, a more powerful version with 210 kW (286 PS) and 600 Nm of torque.",
+            "All engines work together with an eight-speed tiptronic, quattro permanent four-wheel drive, and the mild hybrid system"
           ]
         },
         {
@@ -1157,11 +1158,10 @@
         "Plug-in hybrid output conflict for the 3.0 TDI e-tron: German Wikipedia gives a system output of 275 kW (374 PS) and 700 Nm (recorded); English Wikipedia's table gives 387 PS (285 kW) / 700 Nm and its prose gives 190 kW / 600 Nm.",
         "The 2.0 TFSI e-tron was developed for Asian markets (China, South Korea, Singapore and Japan) per English Wikipedia; the 2.0 TFSI was offered in Russia, the US, Canada, India, the Middle East and Southeast Asia. Because these sources name several markets at once, these powertrains are marked 'unstated'.",
         "SQ7 TFSI displacement: English Wikipedia's table lists 3,956 cc (the diesel's figure); German Wikipedia gives 3,996 cm³. Audi's 2024 release says '4.0 TFSI' only, so no displacement is recorded.",
-        "Model years 2016–2026 are given by English Wikipedia without a market; North American model years could not be confirmed separately. The first facelift was for the 2020 model year and the second for the 2025 model year (English Wikipedia).",
+        "Model years 2016–2026 are given by English Wikipedia without a market; North American model years are not documented separately. The first facelift was for the 2020 model year and the second for the 2025 model year (English Wikipedia).",
         "UK sales of the first facelift started in September 2019 (English Wikipedia). US-market SQ7 used a 4.0 V8 petrol (500 hp / 770 Nm) from 2020 rather than the diesel (English Wikipedia).",
         "Audi's 2024 release refers to 'an initial product upgrade in 2019' and 'a second comprehensive upgrade in 2023', although the release itself is dated 30 January 2024 and market launch was in the first quarter of 2024.",
-        "Dimensions are from English Wikipedia without a stated version or market; German Wikipedia gives ranges (length 5052–5072 mm, wheelbase 2994–3001 mm). No Audi dimension figures could be read (Audi spec sheets are PDF-only).",
-        "Wikimedia Commons: 'Category:Audi Q7 (4M) facelift' does not exist; subcategories of 'Category:Audi Q7 (4M)' are 'Audi Q7 e-tron' and 'Audi SQ7', with no category per facelift."
+        "Audi's published dimension figures are not recorded here yet; the figures shown are from English Wikipedia without a stated version or market. German Wikipedia gives ranges (length 5052–5072 mm, wheelbase 2994–3001 mm)."
       ],
       "commons": {
         "generation": "Category:Audi Q7 (4M)"
@@ -1362,7 +1362,8 @@
           },
           "src": "wp",
           "quotes": [
-            "It will be powered by a 2.9-litre twin-turbo V6 producing 429 hp (320 kW; 435 PS) and 599 N⋅m (442 lb⋅ft) of torque."
+            "It will be powered by a 2.9-litre twin-turbo V6 producing 429 hp (320 kW; 435 PS) and 599 N⋅m (442 lb⋅ft) of torque.",
+            "Petrol: 2.9 L TFSI V6 4.0 L TFSI V8"
           ]
         },
         {
@@ -1381,7 +1382,8 @@
           },
           "src": "wp",
           "quotes": [
-            "The SQ7 being powered by a 4.0-litre twin-turbo V8 producing 591 hp (441 kW; 599 PS) and 800 N⋅m (590 lb⋅ft) of torque."
+            "The SQ7 being powered by a 4.0-litre twin-turbo V8 producing 591 hp (441 kW; 599 PS) and 800 N⋅m (590 lb⋅ft) of torque.",
+            "Petrol: 2.9 L TFSI V6 4.0 L TFSI V8"
           ]
         }
       ],
@@ -1431,9 +1433,9 @@
       ],
       "notes": [
         "Production start is not documented: English Wikipedia says 'Production 2026 (to commence)'. Audi's release gives ordering in Germany from June 2026 and deliveries from September (recorded as the EU sales start).",
-        "Dimensions come from English Wikipedia only (they look rounded: width 2,010 mm, height 1,800 mm); Audi's release gives no dimensions, and its technical data sheets are PDF-only. Treat them as provisional.",
+        "Dimensions come from English Wikipedia only (they look rounded: width 2,010 mm, height 1,800 mm); Audi's launch release gives no dimensions. Treat them as provisional.",
         "Audi's launch release lists only the 3.0 V6 TDI (180 kW and 220 kW). The 2.9 V6 petrol and SQ7 V8 figures come from English Wikipedia, which cites US-oriented press (Motor1, Autoweek), and says Australia gets a 3.0 V6 diesel; their market is therefore marked 'unstated'.",
-        "Seating (5, 6 or 7 seats) is stated in words only, so it is recorded as a change item rather than as structured seating data."
+        "Seating (5, 6 or 7 seats) is stated in words only, so it is listed among the changes rather than as seating figures."
       ],
       "commons": {
         "generation": "Category:Audi Q7 (G8)"

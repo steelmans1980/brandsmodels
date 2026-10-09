@@ -38,3 +38,8 @@ Family file: `data/families/hyundai-tucson.json`. Generations: JM (2004), LM (20
 - NX5 production start is not yet sourced; Wikipedia says "to commence" in 2026.
 - No Commons category exists for the TL facelift. The checked categories are JM, LM, TL, NX4 (+SWB/LWB) and NX5; the coordinator added these.
 - The 2019 China-only TL facelifts and the China-only ix35 (NU) are not recorded.
+
+## Moved from public notes
+- JM: no manufacturer source could be read; hyundainews.com release pages are rendered by JavaScript and return no text.
+- LM: no manufacturer source could be read (hyundainews.com renders by JavaScript only).
+- NX4: hyundainews.com (US) pages could not be read (JavaScript only).

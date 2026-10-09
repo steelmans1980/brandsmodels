@@ -299,7 +299,7 @@
           "name": "Cayenne Turbo (4.5 V8 biturbo)",
           "market": "EU",
           "fuel": "petrol",
-          "engine": "4.5 L twin-turbo V8",
+          "engine": "4.5 L V8",
           "cylinders": 8,
           "power": {
             "value": 331,
@@ -379,8 +379,7 @@
           "market": "EU",
           "fuel": "petrol",
           "years": "from 2007",
-          "engine": "4.8 L V8",
-          "cylinders": 8,
+          "engine": "4.8 L naturally aspirated",
           "power": {
             "value": 298,
             "unit": "kW"
@@ -515,8 +514,7 @@
         "Power conflict for the first Cayenne GTS: Porsche gives 298 kW (405 PS); English Wikipedia's (unsourced) engine table gives 411 PS. Porsche's figure is recorded.",
         "English Wikipedia's engine table is tagged as unsourced; its rows are used only where no manufacturer figure was found. Porsche newsroom data 'refers to the German market' per the newsroom's terms, so Porsche-sourced figures are marked EU.",
         "The first generation had a low-range transfer box and a fully locking centre differential (Porsche); it is permanent all-wheel drive and is recorded as AWD.",
-        "German Wikipedia says the 9PA was built from 2002 to 2010; English Wikipedia gives August 2002 – December 2009 (used). Porsche says 276,652 cars were sold in the eight model years of the first generation.",
-        "Wikimedia Commons has no 'Category:Porsche Cayenne (9PA)'; no generation-specific category could be confirmed."
+        "German Wikipedia says the 9PA was built from 2002 to 2010; English Wikipedia gives August 2002 – December 2009 (used). Porsche says 276,652 cars were sold in the eight model years of the first generation."
       ],
       "commons": {
         "generation": "Category:Porsche 9PA",
@@ -668,7 +666,7 @@
           "name": "Cayenne (3.6 V6)",
           "market": "EU",
           "fuel": "petrol",
-          "years": "2010–2014",
+          "years": "from 2010",
           "engine": "3.6 L V6",
           "cylinders": 6,
           "power": {
@@ -687,7 +685,7 @@
           "name": "Cayenne S (4.8 V8)",
           "market": "EU",
           "fuel": "petrol",
-          "years": "2010–2014",
+          "years": "from 2010",
           "engine": "4.8 L V8",
           "cylinders": 8,
           "power": {
@@ -704,7 +702,7 @@
           "name": "Cayenne Turbo (4.8 V8 biturbo)",
           "market": "EU",
           "fuel": "petrol",
-          "years": "2010–2014",
+          "years": "from 2010",
           "engine": "4.8 L twin-turbo V8",
           "cylinders": 8,
           "power": {
@@ -767,7 +765,7 @@
           "name": "Cayenne S Hybrid",
           "market": "EU",
           "fuel": "hybrid",
-          "years": "2010–2014",
+          "years": "from 2010",
           "engine": "3.0 L supercharged V6 + 34 kW electric motor (parallel full hybrid)",
           "cylinders": 6,
           "power": {
@@ -781,12 +779,10 @@
         },
         {
           "id": "p7",
-          "name": "Cayenne Diesel (3.0 V6)",
+          "name": "Cayenne Diesel",
           "market": "EU",
           "fuel": "diesel",
-          "years": "2010–2014",
-          "engine": "3.0 L V6 diesel",
-          "cylinders": 6,
+          "years": "from 2010",
           "power": {
             "value": 180,
             "unit": "kW"
@@ -864,7 +860,7 @@
           "market": "EU",
           "fuel": "plug-in hybrid",
           "years": "2014–",
-          "engine": "3.0 L supercharged V6 + 70 kW electric motor, 10.8 kWh lithium-ion battery",
+          "engine": "3.0 L supercharged V6 + 70 kW electric motor, lithium-ion battery",
           "cylinders": 6,
           "power": {
             "value": 306,
@@ -1019,12 +1015,11 @@
         }
       ],
       "notes": [
-        "The code '958' (commonly used for this generation) does not appear in any source read, so it is not recorded; English Wikipedia uses 'Type 92A' and Porsche uses 'E2'.",
+        "The code '958' (commonly used for this generation) does not appear in the sources cited, so it is not recorded; English Wikipedia uses 'Type 92A' and Porsche uses 'E2'.",
         "Porsche's 24 July 2014 release calls the facelifted car 'the new generation of the Cayenne'; English Wikipedia and Porsche's later retrospectives treat it as a facelift of the second generation, which is how it is recorded.",
         "Porsche says 535,903 E2 cars were delivered between 2010 and 2017. Porsche's 2022 retrospective says E1 and E2 were built in Leipzig 'and later also in Osnabrück'; English Wikipedia limits Osnabrück to 2015–2017 for the E2.",
         "English Wikipedia's E2 infobox also lists a '5-door coupe crossover SUV' body style. This is not supported elsewhere (the Coupé arrived in 2019 with the third generation), so it is not recorded.",
-        "Model years 2011–2018 are given without a market (English Wikipedia).",
-        "No Commons category 'Category:Porsche Cayenne (92A)' exists."
+        "Model years 2011–2018 are given without a market (English Wikipedia)."
       ],
       "commons": {
         "generation": "Category:Porsche 92A",
@@ -1192,7 +1187,7 @@
           "name": "Cayenne (3.0 V6 turbo)",
           "market": "EU",
           "fuel": "petrol",
-          "years": "2017–2023",
+          "years": "from 2017",
           "engine": "3.0 L turbo V6",
           "cylinders": 6,
           "power": {
@@ -1213,7 +1208,7 @@
           "name": "Cayenne S (2.9 V6 biturbo)",
           "market": "EU",
           "fuel": "petrol",
-          "years": "2017–2023",
+          "years": "from 2017",
           "engine": "2.9 L twin-turbo V6",
           "cylinders": 6,
           "power": {
@@ -1234,7 +1229,7 @@
           "name": "Cayenne Turbo (4.0 V8 biturbo)",
           "market": "unstated",
           "fuel": "petrol",
-          "years": "2017–2023",
+          "years": "2018–2023",
           "engine": "4.0 L twin-turbo V8",
           "cylinders": 8,
           "power": {
@@ -1275,7 +1270,7 @@
           "name": "Cayenne Turbo S E-Hybrid",
           "market": "EU",
           "fuel": "plug-in hybrid",
-          "years": "2019–2023",
+          "years": "from 2019",
           "engine": "4.0 L twin-turbo V8 + electric motor",
           "power": {
             "value": 500,
@@ -1582,10 +1577,8 @@
         "Generation codes differ by source: English Wikipedia gives model codes 9YA/9YB and body codes 9Y0 (SUV) and 9Y3 (Coupé); German Wikipedia uses 'Typ PO536'; Porsche uses 'E3'. The slug 'e3' uses Porsche's own designation. All of these are recorded as codes.",
         "Cayenne Coupé: Porsche's press release presenting it is dated 21 March 2019, and it had its exhibition (Asian) premiere at Auto Shanghai in April 2019. English Wikipedia says it 'was revealed during the Shanghai Auto Show in April 2019', which is inconsistent with Porsche's earlier release.",
         "Porsche figures that differ from English Wikipedia: 2017 Cayenne S torque 550 Nm (Porsche) vs 549 Nm (WP table); 2023 Cayenne S 349 kW (474 PS) (Porsche) vs 475 PS (WP).",
-        "No complete manufacturer dimensions were readable: Porsche's 2017 and 2023 press kits are PDFs, and the HTML press kit pages give no length, width or height. English Wikipedia gives only ranges (length 4,918–4,929 mm, Coupé 4,931–4,942 mm), so only the wheelbase is recorded. Porsche says the Cayenne Electric is 55 mm longer than the combustion model.",
-        "SUV boot volume (770 L per Porsche's 2017 press kit, as seen in a search snippet) could not be read with the project tool and is not recorded.",
-        "English Wikipedia says sales began in 2019, which conflicts with the 2017 launch (Porsche held press drives in 2017). This is not recorded. Model years 2019–present are given without a market.",
-        "Wikimedia Commons: no 'Category:Porsche Cayenne (9Y0)' exists; 'Category:Porsche Cayenne Coupé (PO536)' exists as a subcategory of 'Category:Porsche Cayenne Coupé'. No generation-level category was confirmed, and none for the 2023 facelift."
+        "Porsche's dimension figures are not recorded here yet. English Wikipedia gives only ranges (length 4,918–4,929 mm, Coupé 4,931–4,942 mm), so only the wheelbase is recorded. Porsche says the Cayenne Electric is 55 mm longer than the combustion model.",
+        "English Wikipedia says sales began in 2019, which conflicts with the 2017 launch (Porsche held press drives in 2017). This is not recorded. Model years 2019–present are given without a market."
       ]
     },
     {
@@ -1764,7 +1757,7 @@
           "market": "EU",
           "fuel": "electric",
           "years": "2025–",
-          "engine": "dual permanent-magnet synchronous motors, 113 kWh battery",
+          "engine": "electric motors, 113 kWh battery",
           "drivetrain": "AWD",
           "power": {
             "value": 325,

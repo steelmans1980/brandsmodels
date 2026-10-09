@@ -517,7 +517,7 @@
         "original": "Category:Mercedes-Benz W163 (1997)"
       },
       "notes": [
-        "Mercedes-Benz press material (group-media.mercedes-benz.com, mercedes-benz.com) returns HTTP 403 to our research tool; this generation is documented from English and German Wikipedia.",
+        "This generation is documented from English and German Wikipedia; no Mercedes-Benz press material is cited.",
         "Built at the Mercedes-Benz U.S. International plant in Vance, Alabama (MBUSI, Tuscaloosa County) – the first Mercedes-Benz passenger-car plant in the US; some European-market cars were also built by Magna Steyr in Graz, Austria (1999–2002).",
         "North American model years 1998–2005. Production dates differ: English Wikipedia gives February 1997 – December 2004, German Wikipedia 1997–2005.",
         "The models were badged 'ML' (e.g. ML 320) although the series was called M-Class.",
@@ -959,7 +959,7 @@
         "original": "Category:Mercedes-Benz W164 (2005–2008)"
       },
       "notes": [
-        "Mercedes-Benz press material returns HTTP 403 to our research tool; documented from English and German Wikipedia.",
+        "This generation is documented from English and German Wikipedia; no Mercedes-Benz press material is cited.",
         "Built only at Vance (Tuscaloosa County), Alabama. North American model years 2006–2011.",
         "Dates differ between sources: English Wikipedia gives production from January 2005; German Wikipedia gives 03/2005–06/2011 in its infobox and July 2011 in the text for the end of production. German Wikipedia gives slightly different dimensions (4,780 × 1,911 × 1,815 mm, wheelbase 2,915 mm).",
         "German Wikipedia says the facelift was shown at the end of April 2008 and delivered from autumn 2008; English Wikipedia dates its debut to the New York show in March 2008.",
@@ -1087,7 +1087,7 @@
         },
         {
           "id": "b2",
-          "value": "5-door coupé SUV – GLE Coupé (C292), 2015–2019",
+          "value": "5-door coupé SUV – GLE Coupé (C292)",
           "markets": [
             "global"
           ],
@@ -1144,15 +1144,17 @@
         {
           "id": "d2",
           "market": "US",
-          "version": "2017 GLE 350 SUV",
+          "version": "2017 GLE 350 SUV (width without mirrors)",
           "unit": "in",
           "length": 189.1,
           "height": 70.7,
           "wheelbase": 114.8,
+          "width": 78,
           "src": "mb17gle350",
           "quotes": [
             "Wheelbase 114.8 Length 189.1",
-            "Height 70.7"
+            "Height 70.7",
+            "Width (w/o mirrors) 78.0"
           ]
         },
         {
@@ -1609,10 +1611,9 @@
       "notes": [
         "Name by date: sold as the M-Class (ML badges) from 2011 and as the GLE from the 2015 facelift (shown at New York in April 2015, delivered in Europe from August 2015). The rename is recorded as revision r1.",
         "GLE Coupé (C292): a coupé SUV body on the W166 platform, unveiled at the North American International Auto Show in Detroit in January 2015 and built in Alabama; German Wikipedia gives market launch July 2015 and English Wikipedia says it was discontinued in August 2019. It is recorded as body style b2 of this generation.",
-        "Mercedes-Benz global press material returns HTTP 403 to our research tool; US specifications come from the Mercedes-Benz USA media newsroom (media.mbusa.com), which is readable.",
+        "US specifications come from the Mercedes-Benz USA media newsroom (media.mbusa.com); no Mercedes-Benz global press material is cited.",
         "North American model years 2012–2019. Production end: English Wikipedia gives 2019, German Wikipedia 2018 (W166 SUV); the C292 coupé ran until 2019.",
-        "English Wikipedia also says the W166 was built in Stuttgart for Europe and Australia from 2011 to 2015; German Wikipedia says it was built in Tuscaloosa. This claim is not recorded. Pune and Bogor performed final assembly of kits shipped from Vance (English Wikipedia).",
-        "The 2017 US specification lists width without mirrors as 78.0 in; it is not recorded in the US dimension record because of a data-format limitation (the checker cannot match '78.0' to 78)."
+        "English Wikipedia also says the W166 was built in Stuttgart for Europe and Australia from 2011 to 2015; German Wikipedia says it was built in Tuscaloosa. This claim is not recorded. Pune and Bogor performed final assembly of kits shipped from Vance (English Wikipedia)."
       ]
     },
     {
@@ -1720,7 +1721,7 @@
         },
         {
           "id": "b3",
-          "value": "5-door SUV, long wheelbase – GLE L (China, from 2026)",
+          "value": "5-door SUV, long wheelbase – GLE L (China)",
           "markets": [
             "CN"
           ],
@@ -1827,7 +1828,7 @@
           "name": "GLE 450 4MATIC (2020 model year)",
           "market": "US",
           "fuel": "mild hybrid",
-          "engine": "3.0 L inline-6 turbo with EQ Boost (48 V)",
+          "engine": "3.0 L inline-6 with EQ Boost",
           "displacement": 2999,
           "cylinders": 6,
           "power": {
@@ -2236,9 +2237,8 @@
         "Series code: German Wikipedia and Mercedes-Benz media captions cited by English Wikipedia use 'V 167' for the SUV; the English Wikipedia infobox gives 'W167'. The coupé is C 167. The V 167 code is recorded.",
         "GLE Coupé (C 167): presented at the IAA in Frankfurt in September 2019 with first deliveries in spring 2020 (German Wikipedia); recorded as body style b2.",
         "Built at Vance, Alabama for most markets (North American model years 2020 onward); a locally built long-wheelbase GLE L for China (Beijing Benz) was announced from 2026 (Wikipedia).",
-        "Mercedes-Benz global press material returns HTTP 403 to our research tool; US specifications come from the Mercedes-Benz USA media newsroom (media.mbusa.com). English Wikipedia's engine table does not state markets, so those entries are recorded with market 'unstated' (European plug-in hybrids are marked EU where the text says so).",
-        "The 2023 facelift went on sale in July 2023 (German Wikipedia) for the 2024 model year in the US. A second facelift for the 2027 model year was unveiled in March 2026.",
-        "Commons files the SUV under 'Category:Mercedes-Benz W167' (no V167 category exists); no separate Commons category for the 2023 facelift was found, so none is recorded for r1."
+        "US specifications come from the Mercedes-Benz USA media newsroom (media.mbusa.com). English Wikipedia's engine table does not state markets, so those entries are marked 'unstated' (European plug-in hybrids are marked as European where the text says so).",
+        "The 2023 facelift went on sale in July 2023 (German Wikipedia) for the 2024 model year in the US. A second facelift for the 2027 model year was unveiled in March 2026."
       ]
     }
   ]

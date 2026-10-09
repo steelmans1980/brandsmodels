@@ -316,7 +316,6 @@
           "name": "X-Trail GT (SR20VET)",
           "market": "JP",
           "fuel": "petrol",
-          "years": "from 2001",
           "engine": "2.0 L SR20VET turbo I4",
           "power": {
             "value": 280,
@@ -400,7 +399,7 @@
           "market": "EU",
           "fuel": "diesel",
           "years": "to 2003",
-          "engine": "2.2 L YD22 turbo-diesel I4",
+          "engine": "2.2 L diesel I4",
           "power": {
             "value": 84,
             "unit": "kW"
@@ -416,7 +415,7 @@
           "market": "EU",
           "fuel": "diesel",
           "years": "from 2003",
-          "engine": "2.2 L YD22 turbo-diesel I4 (variable turbocharger)",
+          "engine": "2.2 L diesel I4 with variable-geometry turbocharger",
           "power": {
             "value": 100,
             "unit": "kW"
@@ -477,7 +476,7 @@
         "Production dates are for Japan; the T30 continued to be built elsewhere (e.g. Thailand to 2008, Malaysia to 2010, Philippines to 2014, Taiwan with its own facelift to 2008) according to Wikipedia.",
         "Wikipedia gives only ranges for T30 dimensions (wheelbase 2,619–2,625 mm, length 4,455–4,509 mm); the single record here is from German Wikipedia's infobox and its market is not stated.",
         "The 2003 facelift date differs by source: Wikipedia says June 2003 (Japan release 9 June 2003); German Wikipedia says December 2003 for Germany.",
-        "Not sold in the United States; sold in Canada for model years 2005–2006 only. No manufacturer source for the T30 was found in the Nissan newsrooms."
+        "Not sold in the United States; sold in Canada for model years 2005–2006 only. No Nissan source is cited for the T30."
       ]
     },
     {
@@ -727,7 +726,7 @@
       "notes": [
         "The S35 Rogue is a North American model and a different vehicle from the X-Trail T31 sold elsewhere at the same time (they share the Nissan C platform). Its specifications must not be read as X-Trail specifications.",
         "Nissan's December 2006 release announced the Rogue preview for the January 2007 Detroit show and planned sales in fall 2007 as a 2008 model; an actual sales-start date was not found in a source.",
-        "Only length and wheelbase are documented here (from the 2009 press kit); width and height were not found in a readable manufacturer source. Wikipedia gives 70.9 in width and 65.3 in height without a market.",
+        "Only length and wheelbase are documented here (from the 2009 press kit); the Nissan sources cited do not give width and height. Wikipedia gives 70.9 in width and 65.3 in height without a market.",
         "The Rogue Select (2014–2015 model years) was not offered in Canada."
       ]
     },
@@ -1144,7 +1143,7 @@
         "Production dates are for Japan. Wikipedia lists production to 2014 in Indonesia and Russia and to 2019 in China; diesel T31 models remained on sale in Japan until early 2015.",
         "Dimensions come from the English Wikipedia infobox (market not stated). German Wikipedia gives different figures (length 4630 mm, width 1785 mm, height 1680–1765 mm, wheelbase 2630 mm).",
         "Chinese assembly: Nissan's 2008 release names Dongfeng Nissan's Huadu plant; Wikipedia lists Zhengzhou (Dongfeng Nissan).",
-        "The European facelift is dated September 2010 by German Wikipedia; the Japanese facelift July 2010 by English Wikipedia. No separate Commons category for the T31 facelift was found."
+        "The European facelift is dated September 2010 by German Wikipedia; the Japanese facelift July 2010 by English Wikipedia."
       ]
     },
     {
@@ -1408,7 +1407,7 @@
           "name": "2.5 (QR25DE)",
           "market": "US",
           "fuel": "petrol",
-          "years": "2014–2020 model years",
+          "years": "2014 model year",
           "engine": "2.5 L QR25DE I4",
           "cylinders": 4,
           "power": {
@@ -1685,11 +1684,10 @@
         "Ordinal 3 is the X-Trail count; for the Rogue line this is the second generation.",
         "Production end 2022 is from Wikipedia's X-Trail infobox; the Rogue T32 ended with the 2020 model year, and Dongfeng Nissan continued building the T32 in China as the X-Trail Honor (2021–2023) and X-Trail Classic (2023–).",
         "Rogue third-row seating was dropped for the 2018 model year (Wikipedia: 'For the 2018 model year, Nissan decided to drop the third row option').",
-        "Dimensions: only Wikipedia infobox figures were found (Rogue article: 182.7 in long; X-Trail article gives ranges of 4,640–4,690 mm, so only the wheelbase is recorded for the X-Trail). No manufacturer dimension sheet for T32 was readable.",
+        "Dimensions: only Wikipedia infobox figures are available (Rogue article: 182.7 in long; the X-Trail article gives ranges of 4,640–4,690 mm, so only the wheelbase is recorded for the X-Trail). No Nissan dimension sheet is cited.",
         "Seating: 5- and 7-seat versions are documented in words by Nissan (\"two-row five-passenger grades, three-row seven-passenger grades\"), but no quotable digits were found, so the seating field is left empty.",
         "The 2017 facelift dates differ: European facelift September 2017 (German Wikipedia), 2017 model year in North America (Rogue), October 2016 per English Wikipedia's X-Trail article. English Wikipedia's X-Trail facelift paragraph appears to reuse North American Rogue text (S/SV/SL trims, Divide-N-Hide) and was not used for X-Trail facts.",
-        "The European powertrain records come from German Wikipedia's specification table, where the columns are 1.3 DIG-T, 1.6 DIG-T, 1.6 dCi, 1.7 dCi and 2.0 dCi; values were matched to engines by column order and should be double-checked.",
-        "Commons also has 'Category:Nissan Rogue (T32)' (90 files) for the North American model."
+        "The European powertrain records come from German Wikipedia's specification table (1.3 DIG-T, 1.6 DIG-T, 1.6 dCi, 1.7 dCi and 2.0 dCi)."
       ]
     },
     {
@@ -2266,9 +2264,8 @@
         "The 2027 Rogue press kit (still T33) lists overall length 184.4 in and height 67.9 in, versus 183.0 in and 66.5 in for the 2021 model year.",
         "Platform naming: Nissan Ireland says Alliance CMF-C; Wikipedia says CMF-CD.",
         "The T33 Rogue continued for the 2027 model year (2027 Nissan Rogue press kit, KR15DDT engine) alongside the T34-based 2027 Rogue Hybrid.",
-        "Facelift dating is unclear: English Wikipedia says a facelifted X-Trail was launched on 21 August 2025 (Nismo and Rock Creek added; market not stated, apparently Japan), while German Wikipedia says a revised version was presented in March 2026. Commons 'Category:Nissan X-Trail (2025)' is used for the facelift; reviewers should confirm it matches r3.",
-        "The Japanese e-POWER output figures were not found in a readable Nissan source and are omitted.",
-        "Commons also has 'Category:Nissan Rogue (T33)' (63 files) for the North American model."
+        "Facelift dating is unclear: English Wikipedia says a facelifted X-Trail was launched on 21 August 2025 (Nismo and Rock Creek added; market not stated, apparently Japan), while German Wikipedia says a revised version was presented in March 2026.",
+        "Japanese e-POWER output figures are not recorded; no Nissan figure is cited."
       ]
     },
     {
@@ -2429,12 +2426,11 @@
         }
       ],
       "notes": [
-        "Only the US Rogue Hybrid is documented here from Nissan's 2027 Rogue Hybrid press kit; X-Trail (non-US) specifications for T34 were not found in a readable source.",
+        "Only the US Rogue Hybrid is documented here, from Nissan's 2027 Rogue Hybrid press kit; X-Trail (non-US) specifications for the T34 are not recorded yet.",
         "Reveal date conflict: English Wikipedia's X-Trail article says 14 April 2026, its Rogue article says April 13, 2026; recorded only to the month.",
         "No production start date was found; Nissan says the Rogue Hybrid reaches US dealers in fall 2026 (SR AWD first, full range early 2027).",
         "Cargo behind the second row conflicts within the Nissan press kit: 31.1 cu ft in the text and 34.4 cu ft in the specification table; neither is recorded.",
-        "The T34 is sold in the US alongside the carried-over T33 Rogue (petrol, 2027 model year). A separate Rogue Plug-in Hybrid (2026) is a rebadged Mitsubishi Outlander PHEV and is not part of this generation.",
-        "Commons: 'Category:Nissan X-Trail (T34)' (subcategory 'Nissan X-Trail e-Power (T34)') and 'Category:Nissan Rogue (T34)' (subcategory 'Nissan Rogue e-Power') exist but held no direct files when checked."
+        "The T34 is sold in the US alongside the carried-over T33 Rogue (petrol, 2027 model year). A separate Rogue Plug-in Hybrid (2026) is a rebadged Mitsubishi Outlander PHEV and is not part of this generation."
       ],
       "commons": {
         "generation": "Category:Nissan X-Trail (T34)"

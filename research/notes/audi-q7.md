@@ -31,3 +31,12 @@ Generations: 4L (2005–2015, 2009 facelift), 4M (2015–2026, 2019 and 2024 fac
 - Category:Audi Q7 (4L): 302 files; its only subcategory is Audi Q7 V12 TDI, and there is no facelift category.
 - Category:Audi Q7 (4M): 392 files; subcategories are Audi Q7 e-tron and Audi SQ7. "Category:Audi Q7 (4M) facelift" does not exist.
 - Category:Audi Q7 (G8): 19 files.
+
+## Moved from public notes
+- 4L: seating configurations (5, 6, 7) could not be quoted with numerals, so they are not recorded as structured data.
+- 4L: no Audi press release from 2005–2015 could be read; the old Audi MediaCenter URLs return 404 after the site moved.
+- 4L: Wikimedia Commons has no separate category for the 2009 facelift (only 'Category:Audi Q7 V12 TDI' as a subcategory of 'Category:Audi Q7 (4L)').
+- 4M: North American model years could not be confirmed separately.
+- 4M: no Audi dimension figures could be read (Audi spec sheets are PDF-only).
+- 4M: Wikimedia Commons: 'Category:Audi Q7 (4M) facelift' does not exist; subcategories of 'Category:Audi Q7 (4M)' are 'Audi Q7 e-tron' and 'Audi SQ7', with no category per facelift.
+- G8: Audi's technical data sheets are PDF-only and were not read.

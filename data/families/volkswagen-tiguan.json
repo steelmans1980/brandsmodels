@@ -941,7 +941,7 @@
           "market": "EU",
           "fuel": "diesel",
           "years": "2016–2020",
-          "engine": "2.0 L inline-4 twin-turbo diesel",
+          "engine": "2.0 L inline-4 turbo-diesel",
           "displacement": 1968,
           "cylinders": 4,
           "power": {
@@ -1219,8 +1219,7 @@
         "Production: Wikipedia gives 2016–2024 for the generation overall; the Chinese Tiguan L continued after that and the Tiguan X was built 2020–2026.",
         "The North American model was updated for the 2022 model year (Wikipedia).",
         "The 2020 facelift of the normal-wheelbase model and the 2021 update of the Tiguan Allspace are recorded as separate revisions; German Wikipedia notes the Allspace kept the old design until 2021.",
-        "Long wheelbase: German Wikipedia says the Tiguan Allspace was first shown at the Detroit show in January 2017 and the European version at Geneva in March 2017, with sales in North America from summer 2017 and in Europe from September 2017; the Chinese Tiguan L was on sale from 18 January 2017.",
-        "Commons: no separate category for the 2021 Tiguan Allspace update was checked; the Allspace category covers both versions. Commons also has 'Category:Volkswagen Tiguan L' and 'Category:Volkswagen Tiguan II (North America)' for the long-wheelbase versions in China and North America."
+        "Long wheelbase: German Wikipedia says the Tiguan Allspace was first shown at the Detroit show in January 2017 and the European version at Geneva in March 2017, with sales in North America from summer 2017 and in Europe from September 2017; the Chinese Tiguan L was on sale from 18 January 2017."
       ]
     },
     {
@@ -1416,7 +1415,7 @@
           "name": "1.5 eTSI 130",
           "market": "EU",
           "fuel": "mild hybrid",
-          "engine": "1.5 L TSI, 48 V mild hybrid",
+          "engine": "eTSI petrol, 48 V mild hybrid",
           "power": {
             "value": 96,
             "unit": "kW"
@@ -1433,7 +1432,7 @@
           "name": "1.5 eTSI 150",
           "market": "EU",
           "fuel": "mild hybrid",
-          "engine": "1.5 L TSI, 48 V mild hybrid",
+          "engine": "eTSI petrol, 48 V mild hybrid",
           "power": {
             "value": 110,
             "unit": "kW"
@@ -1450,7 +1449,7 @@
           "name": "2.0 TDI 150",
           "market": "EU",
           "fuel": "diesel",
-          "engine": "2.0 L TDI",
+          "engine": "TDI diesel",
           "power": {
             "value": 110,
             "unit": "kW"
@@ -1467,7 +1466,7 @@
           "name": "2.0 TDI 193 4MOTION",
           "market": "EU",
           "fuel": "diesel",
-          "engine": "2.0 L TDI",
+          "engine": "TDI diesel",
           "power": {
             "value": 142,
             "unit": "kW"
@@ -1615,10 +1614,10 @@
       },
       "notes": [
         "Volkswagen said in September 2023 that the third generation would roll off the line in Wolfsburg from fall 2023 and reach the market in the first quarter of 2024; Wikipedia gives production from 2024. European pre-sales opened in November 2023 (Volkswagen).",
-        "North America: the 2025 'Tiguan' sold in the US and Canada is a long-wheelbase car that Wikipedia describes as nearly identical to the Chinese-market Tayron L rather than the European Tiguan, with two rows of seats only. It is kept in this generation with its own dimensions record; no separate model code or North American press release could be read (media.vw.com renders only with JavaScript). North American model years are not recorded because no readable source states them explicitly.",
+        "North America: the 2025 'Tiguan' sold in the US and Canada is a long-wheelbase car that Wikipedia describes as nearly identical to the Chinese-market Tayron L rather than the European Tiguan, with two rows of seats only. It is kept in this generation with its own dimensions record. No separate model code or North American press release is cited, and North American model years are not recorded.",
         "China: the third generation is sold as the long-wheelbase Tiguan L Pro, alongside the previous Tiguan L.",
         "European powertrain figures are from Volkswagen's German-market releases; market recorded as EU.",
-        "Dimensions conflict: English Wikipedia gives 4,551 mm length, 1,842 mm width, 1,640 mm height and 2,681 mm wheelbase for the European model; German Wikipedia gives 4,539 mm length, 1,842–1,859 mm width, 1,656–1,658 mm height and 2,677–2,680 mm wheelbase. Volkswagen's readable releases give no absolute figures (only 'around three centimetres' longer than before). The German figure is recorded; it should be checked against the Volkswagen press kit (PDF, not readable by our tool)."
+        "Dimensions conflict: English Wikipedia gives 4,551 mm length, 1,842 mm width, 1,640 mm height and 2,681 mm wheelbase for the European model; German Wikipedia gives 4,539 mm length, 1,842–1,859 mm width, 1,656–1,658 mm height and 2,677–2,680 mm wheelbase. Volkswagen's releases cited give no absolute figures (only 'around three centimetres' longer than before). The German Wikipedia figure is recorded; Volkswagen's published dimensions are not recorded here yet."
       ]
     }
   ]

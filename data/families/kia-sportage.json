@@ -195,7 +195,7 @@
         },
         {
           "id": "b3",
-          "value": "5-door extended-length wagon (Sportage Grand / Grand Wagon), 305 mm longer body on the same wheelbase",
+          "value": "Extended-length wagon (Sportage Grand / Grand Wagon), 305 mm longer body on the same wheelbase",
           "markets": [
             "unstated"
           ],
@@ -669,7 +669,7 @@
         "Chinese production (as a continuation model) ran 2006–2015 according to Wikipedia's model-year line.",
         "Neither facelift's changes are described in the sources; Wikipedia only gives their timing.",
         "Width (1,820–1,840 mm) and height (1,695–1,730 mm) are given only as ranges by Wikipedia and are not recorded.",
-        "No manufacturer source with specifications was found for this generation; Kia's heritage story only describes it in general terms. kianewscenter.com could not be read (TLS certificate error) and kiamedia.com returns 403."
+        "No Kia source with specifications is cited for this generation; Kia's heritage story only describes it in general terms."
       ],
       "commons": {
         "generation": "Category:Kia Sportage (KM)"
@@ -1155,6 +1155,20 @@
             "4,550 mm (179.1 in) (China)",
             "1,655 mm (65.2 in) (China)"
           ]
+        },
+        {
+          "id": "d3",
+          "market": "EU",
+          "version": "Kia Austria, as the predecessor in the 2021 Sportage press kit",
+          "unit": "mm",
+          "length": 4485,
+          "width": 1855,
+          "height": 1645,
+          "wheelbase": 2670,
+          "src": "ka",
+          "quotes": [
+            "(Vorgänger: 4.485 / 1.855 / 1.645 / 2.670 mm)"
+          ]
         }
       ],
       "cargo": [
@@ -1424,7 +1438,7 @@
         }
       ],
       "notes": [
-        "Length conflict: Wikipedia gives 4,480 mm; Kia Austria's 2021 press kit gives the predecessor of the fifth generation as 4,485 / 1,855 / 1,645 / 2,670 mm (written with dots as thousands separators, so not recorded as a structured value here).",
+        "Length conflict: Wikipedia gives 4,480 mm; Kia Austria's 2021 press kit gives this generation (as the predecessor of the fifth generation) as 4,485 mm long, 1,855 mm wide, 1,645 mm high with a 2,670 mm wheelbase. Both are recorded.",
         "The 503-litre figure is Kia Austria's 'max. 503 Liter' for the predecessor's luggage space with seats up; the standard is not stated.",
         "On-sale in Europe for the 2018 facelift: Kia Europe gives Q3 2018. Pakistan production continued 2019–2025 (Wikipedia).",
         "Wikipedia's powertrain prose does not name markets for the international engines, so they are recorded as 'unstated'."
@@ -1664,7 +1678,7 @@
           "name": "1.6 T-GDI MHEV 150 PS",
           "market": "EU",
           "fuel": "mild hybrid",
-          "engine": "1.6-litre T-GDI with 48V mild hybrid",
+          "engine": "1.6-litre T-GDI mild hybrid (MHEV)",
           "power": {
             "value": 150,
             "unit": "PS"
@@ -1681,7 +1695,7 @@
           "name": "1.6 T-GDI MHEV 180 PS",
           "market": "EU",
           "fuel": "mild hybrid",
-          "engine": "1.6-litre T-GDI with 48V mild hybrid",
+          "engine": "1.6-litre T-GDI mild hybrid (MHEV)",
           "power": {
             "value": 180,
             "unit": "PS"
@@ -1730,7 +1744,7 @@
         },
         {
           "id": "p5",
-          "name": "1.6 CRDi 115 PS",
+          "name": "1.6 diesel 115 PS",
           "market": "EU",
           "fuel": "diesel",
           "engine": "1.6-litre diesel",
@@ -1745,10 +1759,10 @@
         },
         {
           "id": "p6",
-          "name": "1.6 CRDi MHEV 136 PS",
+          "name": "1.6 diesel MHEV 136 PS",
           "market": "EU",
           "fuel": "mild hybrid",
-          "engine": "1.6-litre diesel with 48V mild hybrid",
+          "engine": "1.6-litre diesel mild hybrid (MHEV)",
           "power": {
             "value": 136,
             "unit": "PS"
@@ -1763,7 +1777,6 @@
           "name": "Smartstream G2.0 MPi",
           "market": "unstated",
           "fuel": "petrol",
-          "years": "2021–",
           "engine": "1,999 cc I4",
           "displacement": 1999,
           "cylinders": 4,
@@ -1985,7 +1998,7 @@
         "Two bodies: a short-wheelbase (2,680 mm) version for Europe and some other markets (Brazil, South Africa per Wikipedia) and a long-wheelbase (2,755 mm) version for Korea, North America and most other markets. Kia Europe gives 1,645 mm height for the European car; Kia Austria's press kit gives 1,650 mm.",
         "Kia's heritage archive lists the 'All-New Sportage' at 4,685 mm long, which differs from Wikipedia's 4,660 mm LWB length; the heritage page does not say which body or model year it describes.",
         "Wikipedia dates the facelift's release to 5 November 2024 for the 2026 model year without naming a market; it reached North America and Australia in May 2025. Kia's heritage story says the facelift came in 2024 alongside a 30th anniversary edition.",
-        "Kia US press (kianewscenter.com) could not be read: the connection fails TLS certificate verification. kiamedia.com returns 403. Kia worldwide newsroom releases render no text. North American specifications therefore come from Wikipedia only.",
+        "North American specifications come from Wikipedia only.",
         "Wikipedia's powertrain table does not name markets for most engines (e.g. 2.5 GDi for North America/Mexico, L2.0 LPi for Korea), so they are recorded as 'unstated'."
       ],
       "commons": {

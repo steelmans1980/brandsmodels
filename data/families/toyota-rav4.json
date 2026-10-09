@@ -79,13 +79,6 @@
       "type": "manufacturer",
       "accessed": "2026-10-09"
     },
-    "uk95": {
-      "url": "https://media.toyota.co.uk/vehicles/rav4-archive-1995/",
-      "title": "RAV4 (1995–1998)",
-      "publisher": "Toyota (GB) media site",
-      "type": "manufacturer",
-      "accessed": "2026-10-09"
-    },
     "uk98": {
       "url": "https://media.toyota.co.uk/vehicles/rav4-archive-1998/",
       "title": "RAV4 (1998–2000)",
@@ -263,8 +256,11 @@
           "markets": [
             "global"
           ],
-          "src": "uk95",
-          "quote": "410mm longer overall, with wheelbase extended by 210mm"
+          "src": "wp",
+          "quotes": [
+            "5-door SUV 3-door convertible SUV",
+            "Wheelbase 5-door: 2,410 mm"
+          ]
         },
         {
           "id": "b3",
@@ -581,8 +577,7 @@
           "value": "3-door SUV",
           "markets": [
             "EU",
-            "AU",
-            "JP"
+            "AU"
           ],
           "src": "wp",
           "quote": "Although the RAV4 was available as a three-door in Europe, Asia and Australia, the American model was only available in a five-door configuration."
@@ -1142,8 +1137,8 @@
         },
         {
           "id": "p8",
-          "name": "2.2 D-4D 150",
-          "market": "UK",
+          "name": "2.2 D-4D 150 (2.2 D-CAT in the UK)",
+          "market": "unstated",
           "fuel": "diesel",
           "years": "2008–2012",
           "engine": "2.2 L I4 turbo-diesel",
@@ -1319,7 +1314,7 @@
       ],
       "notes": [
         "Short wheelbase (Japan, Europe) and long wheelbase (Australia, North America; Vanguard in Japan from August 2007) were sold side by side; markets are kept distinct.",
-        "No sourced long-wheelbase dimensions were found in a readable source (Toyota USA spec sheets are PDF downloads); Wikipedia gives only ranges (wheelbase 2,560–2,660 mm).",
+        "Long-wheelbase dimensions are not recorded: Wikipedia gives only ranges (wheelbase 2,560–2,660 mm) and no Toyota specification sheet is cited.",
         "Production: November 2005 – December 2012 for export; the Japanese-market short-wheelbase car continued until May 2016 (Wikipedia).",
         "V6 output: 200 kW in Wikipedia's engine table vs 201 kW in its prose; the table value is recorded.",
         "The second-generation RAV4 EV (2012–2014, California only, Tesla powertrain) was based on this generation's long-wheelbase body."
@@ -1514,7 +1509,7 @@
           "name": "2.5 (US)",
           "market": "US",
           "fuel": "petrol",
-          "years": "2013–2018",
+          "years": "2013 model year",
           "engine": "2.5 L I4",
           "cylinders": 4,
           "power": {
@@ -1534,7 +1529,7 @@
         },
         {
           "id": "p2",
-          "name": "2.0 Valvematic",
+          "name": "2.0 FWD",
           "market": "unstated",
           "fuel": "petrol",
           "years": "2012–2018",
@@ -1549,6 +1544,7 @@
             "value": 195,
             "unit": "Nm"
           },
+          "drivetrain": "FWD",
           "src": "wp",
           "quote": "2.0 FWD 2012–2018 1,987 cc (121.3 cu in) Petrol 111 kW (151 PS; 149 hp) 195 N⋅m (144 ft⋅lb)"
         },
@@ -1594,11 +1590,11 @@
         },
         {
           "id": "p5",
-          "name": "2.0 D-4D 124",
+          "name": "120D 4x2 (2.0 diesel)",
           "market": "unstated",
           "fuel": "diesel",
           "years": "2012–2018",
-          "engine": "2.0 L I4 turbo-diesel",
+          "engine": "2.0 L I4 diesel",
           "displacement": 1998,
           "cylinders": 4,
           "power": {
@@ -1615,7 +1611,7 @@
         },
         {
           "id": "p6",
-          "name": "2.2 D-4D 150",
+          "name": "150D AWD (2.2 D-4D)",
           "market": "unstated",
           "fuel": "diesel",
           "years": "2012–2018",
@@ -1943,14 +1939,18 @@
         {
           "id": "d1",
           "market": "US",
-          "version": "LE/XLE (pre-facelift)",
+          "version": "LE/XLE (pre-facelift); height with antenna",
           "unit": "in",
           "wheelbase": 105.9,
           "length": 180.9,
+          "width": 73,
+          "height": 67,
           "src": "tp19",
           "quotes": [
             "105.9-inch wheelbase grows 1.20 inches over the previous model",
-            "Overall length comes in at 180.9 inches (181.5 inches on Adventure grade)"
+            "Overall length comes in at 180.9 inches (181.5 inches on Adventure grade)",
+            "Height is reduced to 67.0 inches (with antenna) on LE and XLE grades",
+            "Width is 73.4 inches on Adventure grade while the rest of the grades measure at 73.0 inches"
           ]
         },
         {
@@ -2011,8 +2011,8 @@
           "name": "2.5 Dynamic Force (US)",
           "market": "US",
           "fuel": "petrol",
-          "years": "2019–2025",
-          "engine": "2.5 L A25A-FKS I4",
+          "years": "2019 model year",
+          "engine": "2.5 L Dynamic Force I4",
           "cylinders": 4,
           "power": {
             "value": 203,
@@ -2030,8 +2030,7 @@
           "name": "RAV4 Hybrid (US)",
           "market": "US",
           "fuel": "hybrid",
-          "years": "2019–2025",
-          "engine": "2.5 L A25A-FXS I4 + electric motors",
+          "years": "2019 model year",
           "power": {
             "value": 219,
             "unit": "hp"
@@ -2114,7 +2113,7 @@
           "name": "RAV4 Prime",
           "market": "US",
           "fuel": "plug-in hybrid",
-          "years": "2021–2025",
+          "years": "2021 model year",
           "engine": "2.5 L I4 Atkinson + electric motors",
           "power": {
             "value": 302,
@@ -2238,7 +2237,6 @@
       ],
       "notes": [
         "US petrol output: Toyota USA states 203 hp; Wikipedia's engine table gives 151 kW (202 hp). The manufacturer figure is kept for the US record.",
-        "US width/height for LE/XLE (73.0 in, 67.0 in) are in the Toyota release but not recorded because the checker requires the number exactly as written; Adventure figures are recorded.",
         "Plug-in hybrid names: RAV4 Prime (North America until MY2025, then RAV4 Plug-in Hybrid), RAV4 PHV (Japan, later RAV4 Z), Suzuki Across (Europe). Wildlander is the GAC Toyota version in China.",
         "German Wikipedia's 2.0 litre displacement (1987 cm³) differs from English Wikipedia's 1,986 cc."
       ],
@@ -2532,7 +2530,7 @@
       "notes": [
         "Revealed on 20 May 2025 (US time, Toyota USA) / 21 May 2025 (Japan, Toyota Motor Corporation).",
         "US plug-in hybrid output: 320 hp in the May 2025 debut release, 324 hp in the later 'arrives this winter' release; the later figure is recorded.",
-        "Only the wheelbase (2,690 mm) is recorded; other dimensions are given only as ranges in the sources read.",
+        "Only the wheelbase (2,690 mm) is recorded; other dimensions are given only as ranges in the sources cited.",
         "Toyota's 749 L luggage figure does not state the market or measuring standard."
       ],
       "commons": {

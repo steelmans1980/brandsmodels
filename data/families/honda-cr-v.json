@@ -352,7 +352,7 @@
       "powertrains": [
         {
           "id": "p1",
-          "name": "2.0 (B20B, US)",
+          "name": "2.0 DOHC (US)",
           "market": "US",
           "fuel": "petrol",
           "years": "1997–1998",
@@ -448,7 +448,7 @@
         "Wikipedia gives 'Model years 1995–2001'; American Honda gives 1997–2001 for the US. The manufacturer's US range is recorded.",
         "Launched in Japan in October 1995 (sold at Honda Verno and Primo dealers); US sales began February 1997.",
         "Power differs by market and rating: 126 hp (US, American Honda) vs 128 hp (Wikipedia engine table) for the B20B; 146 hp (American Honda, 1999) vs 147 hp (Wikipedia) for the B20Z.",
-        "No Japanese or European manufacturer launch release for the first generation was found in a readable form; the facelift date is not documented precisely (US update 1999 model year; other markets 2000 model year)."
+        "No Japanese or European Honda launch release is cited for the first generation. The facelift date is not documented precisely (US update for the 1999 model year; other markets 2000 model year)."
       ],
       "commons": {
         "generation": "Category:Honda CR-V (1st generation)"
@@ -596,8 +596,8 @@
           "name": "2.4 i-VTEC (US)",
           "market": "US",
           "fuel": "petrol",
-          "years": "2002–2006",
-          "engine": "2.4 L K24A1 I4",
+          "years": "2002–2004 (model years)",
+          "engine": "2.4 L DOHC i-VTEC I4",
           "cylinders": 4,
           "power": {
             "value": 160,
@@ -630,7 +630,7 @@
         },
         {
           "id": "p3",
-          "name": "2.2 i-CTDi diesel",
+          "name": "2.2 diesel (N22A2)",
           "market": "unstated",
           "fuel": "diesel",
           "engine": "2.2 L N22A2 I4 turbo-diesel",
@@ -728,7 +728,7 @@
       ],
       "notes": [
         "Market of the 13 November 2001 sales start is not stated by Wikipedia (Japan is likely but not sourced).",
-        "Only width is recorded: Wikipedia gives ranges for length and wheelbase; no readable American Honda spec sheet for 2002–2006 was found (the 2002 launch release returns 404 on hondanews.com).",
+        "Only width is recorded: Wikipedia gives ranges for length and wheelbase, and no American Honda specification sheet for 2002–2006 is cited.",
         "2.4 output was re-rated to 156 hp under SAE J1349 rev. 8/04 for 2006 (Wikipedia; American Honda timeline notes the re-rating)."
       ],
       "commons": {
@@ -926,11 +926,11 @@
       "powertrains": [
         {
           "id": "p1",
-          "name": "2.4 i-VTEC (US, 2007–2009)",
+          "name": "2.4 i-VTEC (US, 2007)",
           "market": "US",
           "fuel": "petrol",
-          "years": "2007–2009",
-          "engine": "2.4 L K24Z I4",
+          "years": "2007 model year",
+          "engine": "2.4 L i-VTEC I4",
           "cylinders": 4,
           "power": {
             "value": 166,
@@ -946,10 +946,10 @@
         },
         {
           "id": "p2",
-          "name": "2.4 i-VTEC (US, 2010–2011)",
+          "name": "2.4 i-VTEC (US, 2011)",
           "market": "US",
           "fuel": "petrol",
-          "years": "2010–2011",
+          "years": "2011 model year",
           "engine": "2.4 L I4",
           "displacement": 2354,
           "cylinders": 4,
@@ -1109,7 +1109,7 @@
       "notes": [
         "US model years 2007–2011; US sales from late September 2006. Production in East Liberty, Ohio began with this generation.",
         "Wikipedia's 4,518 mm length (market unstated) and the US 179.3 in (MY2011) are separate records.",
-        "European engines (2.0 R20A petrol, 2.2 diesels) come from Wikipedia; no European Honda source was read."
+        "European engines (2.0 R20A petrol, 2.2 diesels) come from Wikipedia; no European Honda source is cited."
       ],
       "commons": {
         "generation": "Category:Honda CR-V (3rd generation)"
@@ -1313,11 +1313,11 @@
       "powertrains": [
         {
           "id": "p1",
-          "name": "2.4 i-VTEC (US, 2012–2014)",
+          "name": "2.4 i-VTEC (US, 2012)",
           "market": "US",
           "fuel": "petrol",
-          "years": "2012–2014",
-          "engine": "2.4 L K24Z I4",
+          "years": "2012 model year",
+          "engine": "2.4 L DOHC i-VTEC I4",
           "displacement": 2354,
           "cylinders": 4,
           "power": {
@@ -1339,11 +1339,11 @@
         },
         {
           "id": "p2",
-          "name": "2.4 direct injection (US, 2015–2016)",
+          "name": "2.4 direct injection (US, 2015)",
           "market": "US",
           "fuel": "petrol",
-          "years": "2015–2016",
-          "engine": "2.4 L K24W I4 direct injection",
+          "years": "2015 model year",
+          "engine": "2.4 L DOHC i-VTEC I4, direct injection",
           "displacement": 2356,
           "cylinders": 4,
           "power": {
@@ -1386,7 +1386,7 @@
           "name": "2.2 i-DTEC",
           "market": "unstated",
           "fuel": "diesel",
-          "engine": "2.2 L N22B I4 turbo-diesel",
+          "engine": "2.2 L N22B I4 diesel",
           "displacement": 2199,
           "cylinders": 4,
           "power": {
@@ -1402,7 +1402,7 @@
         {
           "id": "p5",
           "name": "1.6 i-DTEC 120",
-          "market": "unstated",
+          "market": "EU",
           "fuel": "diesel",
           "years": "2015–",
           "engine": "1.6 L N16 I4 turbo-diesel",
@@ -1422,10 +1422,10 @@
         {
           "id": "p6",
           "name": "1.6 i-DTEC 160",
-          "market": "unstated",
+          "market": "EU",
           "fuel": "diesel",
           "years": "2015–",
-          "engine": "1.6 L N16 I4 twin-turbo diesel",
+          "engine": "1.6 L N16 I4 turbo-diesel",
           "cylinders": 4,
           "power": {
             "value": 160,
@@ -1526,7 +1526,7 @@
       "notes": [
         "US model years 2012–2016; production ran to 2018 in some markets (Wikipedia).",
         "In Japan the fourth generation was discontinued in August 2016 and the CR-V returned there only with the fifth generation in 2018 (Wikipedia, fifth-generation article).",
-        "The 1.6 i-DTEC diesels are attributed by Wikipedia to the 2015 model in an unnamed (likely European) market; marked 'unstated'."
+        "The 1.6 i-DTEC diesels are given by Wikipedia in its section on the European 2015 model, so they are marked as European."
       ],
       "commons": {
         "generation": "Category:Honda CR-V (4th generation)"
@@ -1744,11 +1744,13 @@
           "wheelbase": 104.7,
           "length": 180.6,
           "height": 66.1,
+          "width": 73,
           "src": "hns17",
           "quotes": [
             "Wheelbase 104.7 in",
             "Length 180.6 in",
-            "Height (2WD/AWD) 66.1 in / 66.5 in"
+            "Height (2WD/AWD) 66.1 in / 66.5 in",
+            "Width 73.0 in 73.0 in 73.0 in 73.0 in"
           ]
         },
         {
@@ -1759,11 +1761,13 @@
           "wheelbase": 104.8,
           "length": 182.1,
           "height": 66.1,
+          "width": 73,
           "src": "hns20",
           "quotes": [
             "Wheelbase (2WD/AWD) 104.8 / 104.7",
             "Length 182.1 in",
-            "Height (2WD/AWD) 66.1 in / 66.5 in"
+            "Height (2WD/AWD) 66.1 in / 66.5 in",
+            "Width 73.0 in 73.0 in 73.0 in 73.0 in 73.0 in 73.0 in 73.0 in 73.0 in"
           ]
         },
         {
@@ -1820,8 +1824,8 @@
           "name": "2.4 i-VTEC (US LX)",
           "market": "US",
           "fuel": "petrol",
-          "years": "2017–2019",
-          "engine": "2.4 L K24W I4",
+          "years": "2017 model year",
+          "engine": "2.4 L in-line 4-cylinder",
           "displacement": 2356,
           "cylinders": 4,
           "power": {
@@ -1845,8 +1849,8 @@
           "name": "1.5 VTEC Turbo (US)",
           "market": "US",
           "fuel": "petrol",
-          "years": "2017–2022",
-          "engine": "1.5 L L15B turbo I4",
+          "years": "2017 model year",
+          "engine": "1.5 L turbocharged in-line 4-cylinder",
           "displacement": 1498,
           "cylinders": 4,
           "power": {
@@ -1870,8 +1874,8 @@
           "name": "CR-V Hybrid (US)",
           "market": "US",
           "fuel": "hybrid",
-          "years": "2020–2022",
-          "engine": "2.0 L Atkinson I4 + two motors",
+          "years": "2020 model year",
+          "engine": "2.0 L in-line 4-cylinder + AC synchronous permanent-magnet electric motor",
           "displacement": 1993,
           "cylinders": 4,
           "power": {
@@ -1891,7 +1895,7 @@
           "name": "CR-V Hybrid (China)",
           "market": "CN",
           "fuel": "hybrid",
-          "engine": "2.0 L I4 + two motors",
+          "engine": "2.0 L I4 hybrid",
           "power": {
             "value": 158,
             "unit": "kW"
@@ -2039,8 +2043,7 @@
       ],
       "notes": [
         "US model years 2017–2022. Japanese sales started 31 August 2018 after a two-year absence; European sales in September 2018 (imported from Japan), hybrid in early 2019.",
-        "Breeze is the GAC Honda (Guangqi Honda) version for China from October 2019, sold alongside the Dongfeng Honda CR-V.",
-        "US width (73.0 in) is in the spec sheets but not recorded because the checker requires the exact number format; the metric width comes from Wikipedia."
+        "Breeze is the GAC Honda (Guangqi Honda) version for China from October 2019, sold alongside the Dongfeng Honda CR-V."
       ],
       "commons": {
         "generation": "Category:Honda CR-V (5th generation)"
@@ -2282,7 +2285,7 @@
           "market": "US",
           "fuel": "petrol",
           "years": "2023–",
-          "engine": "1.5 L L15BE turbo I4",
+          "engine": "1.5 L turbo I4",
           "cylinders": 4,
           "power": {
             "value": 190,
@@ -2338,7 +2341,7 @@
           "name": "e:PHEV",
           "market": "unstated",
           "fuel": "plug-in hybrid",
-          "engine": "2.0 L I4 + electric motors, 17.7 kWh battery",
+          "engine": "17.7 kWh lithium-ion battery (plug-in hybrid)",
           "src": "wp6",
           "quote": "The CR-V e:PHEV debuted in China in April 2023 and has been exported to Europe. It is supplemented with a larger 17.7 kWh lithium-ion battery."
         },
@@ -2496,7 +2499,7 @@
         "US model years from 2023. Production began at Honda of Canada Mfg. in September 2022; the e:FCEV is built in Marysville, Ohio (from June 2024) and was launched in Japan in July 2024.",
         "Seven-seat versions are not offered in the Americas, Japan or Europe (Wikipedia).",
         "The MY2026 change is described by American Honda as a refresh (new trim, equipment); no styling-panel changes beyond wheels are documented, so it is recorded as an update, not a facelift.",
-        "European e:HEV/e:PHEV outputs were not found in a readable Honda Europe source."
+        "European e:HEV/e:PHEV outputs are not recorded; no Honda Europe source is cited."
       ],
       "commons": {
         "generation": "Category:Honda CR-V (6th generation)",

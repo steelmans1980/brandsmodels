@@ -27,4 +27,11 @@ sixth (RS; e:FCEV ZC8, 2022). Slugs use the chassis-code family (rd1, rd4, re, r
 - Gen 1 power 126 hp (Honda US) vs 128 hp (Wikipedia); 1999 update 146 hp (Honda) vs 147 hp (Wikipedia B20Z).
 - Gen 1 facelift has no precise date (US MY1999 engine update; other markets MY2000 restyle).
 - MY2026 refresh recorded as kind "update" (new trims/equipment, new wheels) — reviewer may wish to call it a facelift.
-- US widths written "73.0 in" are not recordable due to the checker's number matching.
+- US widths written "73.0 in" were previously not recordable due to the checker's number matching; since the checker accepts "73.0 in", the RW widths are recorded (spec-audit.md).
+
+## Moved from public notes
+- RD1: no Japanese or European manufacturer launch release was found in a readable form.
+- RD4: no readable American Honda spec sheet for 2002–2006 was found; the 2002 launch release returns 404 on hondanews.com.
+- RE: no European Honda source was read.
+- RW: the US width (73.0 in) was previously not recorded because the checker required the exact number format; it is now recorded on d1 and d2 (see spec-audit.md).
+- RS: European e:HEV/e:PHEV outputs were not found in a readable Honda Europe source.

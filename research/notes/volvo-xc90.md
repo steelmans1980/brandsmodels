@@ -22,7 +22,7 @@
 - V8 output: Volvo gives 440 Nm and Wikipedia gives 441 Nm. The V8 launch year is 2005 in Volvo's 2005 release and 2004 in Volvo's 2016 history piece.
 - Second-generation reveal date: Volvo's release and German Wikipedia give 27 Aug 2014; English Wikipedia gives 26 Aug.
 - Second-generation D5: Volvo's 2014 releases say 225 hp, Wikipedia says 235 hp. Volvo's figure is recorded.
-- The German releases use dot thousands separators ("4.953 mm", "1.816 Liter"), which the checker cannot match as numbers. Those dimensions and the maximum cargo figure are only noted, not recorded as fields. Second-generation dimensions come from English Wikipedia instead.
+- The German releases use dot thousands separators ("4.953 mm", "1.816 Liter"). The checker now accepts German grouping, so the 2023/2024 dimensions (d2, d3) and the 1,816 L maximum (k3) are recorded (spec-audit.md); English Wikipedia dimensions remain as d1.
 - Second-generation seating is recorded as 7 only, because the 4-, 5- and 6-seat layouts appear only in words. See the generation notes.
 - No generation codes are recorded. German Wikipedia's "Typ C" and Commons' "P28" are not confirmed by Volvo.
 
@@ -34,3 +34,9 @@
   - Second generation: Category:Volvo XC90 (SPA).
   - 2019 facelift: (2019). 2024 facelift: (2024).
   - None for the first-generation facelifts. Category:Volvo XC Classic has 2 files and is not used.
+
+## Moved from public notes
+- First generation: no Commons category for the facelifts was found.
+- Second generation: Volvo's media sites (media.volvocars.com, volvocars.com/…/media) returned 503/403, so Cision copies were used.
+- Second generation: no manufacturer dimensions, cargo volumes or model-year-specific outputs were readable before the number-format fix.
+- Second generation: the Volvo Germany figures use German thousands separators ('4.953', '1.816'), which the quote checker could not match before; they are now recorded as d2, d3 and k3.

@@ -40,7 +40,7 @@ Family file: `data/families/kia-sportage.json`. Generations:
 - NB width: Wikipedia gives 1,855 mm and Kia's heritage page gives 1,735 mm. The Kia figure is recorded. Wikipedia's two wheelbases are not tied to body styles, so they are not recorded.
 - KM: the code is "JE/KM" per Wikipedia (the slug uses km). The V6 is 173 PS in the prose and 175 HP in the table.
 - Wikipedia's KM/SL engine tables use "HP" without saying metric or SAE, so they are recorded as hp.
-- QL length: Wikipedia gives 4,480 mm, while Kia Austria gives the predecessor as 4.485 mm (written with dot separators, so only noted).
+- QL length: Wikipedia gives 4,480 mm, while Kia Austria gives the predecessor as 4.485 mm (written with dot separators; now recorded as QL d3, see spec-audit.md).
 - NQ5 EU height: Kia Europe gives 1,645 mm and Kia Austria gives 1,650 mm.
 
 ## Gaps
@@ -54,3 +54,8 @@ Family file: `data/families/kia-sportage.json`. Generations:
 - No quotable outputs for the NB 2.2 diesel.
 - The NB four-wheel drive type (part-time or not) is not stated, so it is recorded as AWD with a note.
 - Commons: the coordinator added NB-7 (+ Grand Wagon), KM, SL, QL and NQ5. Facelift categories were not checked or confirmed.
+
+## Moved from public notes
+- KM: kianewscenter.com could not be read (TLS certificate error) and kiamedia.com returns 403.
+- QL: the Kia Austria figures were previously only noted because they are written with dots as thousands separators; now recorded as d3.
+- NQ5: Kia US press (kianewscenter.com) could not be read (TLS certificate verification fails); kiamedia.com returns 403; Kia worldwide newsroom releases render no text.

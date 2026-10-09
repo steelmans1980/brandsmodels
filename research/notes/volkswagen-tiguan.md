@@ -30,3 +30,8 @@
 - The gen-1 length is only a range (4,426–4,457 mm, German Wikipedia), so it is not recorded.
 - Some VW powertrain entries lack torque.
 - The gen-2 European eHybrid output comes from German Wikipedia (180 kW), not from VW.
+
+## Moved from public notes
+- AD1: Commons: no separate category for the 2021 Tiguan Allspace update was checked; the Allspace category covers both versions. Commons also has 'Category:Volkswagen Tiguan L' and 'Category:Volkswagen Tiguan II (North America)'.
+- CT1: no North American press release could be read (media.vw.com renders only with JavaScript); no readable source states North American model years explicitly.
+- CT1: the dimensions should be checked against the Volkswagen press kit (PDF, not readable by the research tool).

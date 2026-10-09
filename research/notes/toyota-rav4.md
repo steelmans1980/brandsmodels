@@ -30,4 +30,8 @@ Japanese long-wheelbase XA30 sold as Vanguard is recorded as a market name plus 
 - Revision dates for XA10/XA20/XA30 facelifts are European/UK sales dates from de Wikipedia/Toyota GB; North
   American facelifts were for MY1998, MY2004, MY2009 and MY2011 respectively.
 - Several Wikipedia engine-table rows are European specs but carry no market in the source → "unstated".
-- Checker quirk: numbers written like "73.0"/"67.0" cannot be recorded as 73/67, so some US widths/heights are omitted.
+- Checker quirk (fixed): numbers written like "73.0"/"67.0" previously could not be recorded as 73/67; the XA50 LE/XLE width and height are now recorded on d1 (spec-audit.md).
+
+## Moved from public notes
+- XA30: no sourced long-wheelbase dimensions were found in a readable source (Toyota USA spec sheets are PDF downloads).
+- XA50: US LE/XLE width/height (73.0 in, 67.0 in) were previously not recorded because the checker required the number exactly as written; now recorded on d1.

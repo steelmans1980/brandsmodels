@@ -32,4 +32,12 @@
 - No numeric seating source, although a third row was optional on W163 and V167.
 - No cargo volumes except the US W166.
 - No Commons category for the V167 2023 facelift.
-- The checker cannot match "78.0" to the value 78, so the W166 US width was dropped.
+- The checker previously could not match "78.0" to the value 78, so the W166 US width was dropped; it is now recorded on W166 d2 (spec-audit.md).
+
+## Moved from public notes
+- W163: Mercedes-Benz press material (group-media.mercedes-benz.com, mercedes-benz.com) returns HTTP 403 to the research tool.
+- W164: Mercedes-Benz press material returns HTTP 403 to the research tool.
+- W166: Mercedes-Benz global press material returns HTTP 403 to the research tool; media.mbusa.com is readable.
+- W166: the 2017 US width without mirrors (78.0 in) was previously not recorded because the checker could not match '78.0' to 78; it is now recorded on d2.
+- V167: Mercedes-Benz global press material returns HTTP 403 to the research tool.
+- V167: Commons files the SUV under 'Category:Mercedes-Benz W167' (no V167 category exists); no separate Commons category for the 2023 facelift was found, so none is recorded for r1.
