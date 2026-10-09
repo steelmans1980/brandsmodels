@@ -1,0 +1,14 @@
+[
+  { "id": "audi", "slug": "audi", "name": "Audi", "website": "https://www.audi.com/", "newsroom": "https://www.audi-mediacenter.com/en" },
+  { "id": "bmw", "slug": "bmw", "name": "BMW", "website": "https://www.bmw.com/", "newsroom": "https://www.press.bmwgroup.com/global" },
+  { "id": "honda", "slug": "honda", "name": "Honda", "website": "https://global.honda/", "newsroom": "https://hondanews.com/" },
+  { "id": "hyundai", "slug": "hyundai", "name": "Hyundai", "website": "https://www.hyundai.com/", "newsroom": "https://www.hyundainews.com/" },
+  { "id": "kia", "slug": "kia", "name": "Kia", "website": "https://www.kia.com/", "newsroom": "https://www.kianewscenter.com/" },
+  { "id": "mazda", "slug": "mazda", "name": "Mazda", "website": "https://www.mazda.com/", "newsroom": "https://news.mazdausa.com/" },
+  { "id": "mercedes-benz", "slug": "mercedes-benz", "name": "Mercedes-Benz", "website": "https://www.mercedes-benz.com/", "newsroom": "https://group-media.mercedes-benz.com/" },
+  { "id": "nissan", "slug": "nissan", "name": "Nissan", "website": "https://www.nissan-global.com/", "newsroom": "https://global.nissannews.com/" },
+  { "id": "porsche", "slug": "porsche", "name": "Porsche", "website": "https://www.porsche.com/", "newsroom": "https://newsroom.porsche.com/" },
+  { "id": "toyota", "slug": "toyota", "name": "Toyota", "website": "https://global.toyota/", "newsroom": "https://pressroom.toyota.com/" },
+  { "id": "volkswagen", "slug": "volkswagen", "name": "Volkswagen", "website": "https://www.volkswagen.com/", "newsroom": "https://www.volkswagen-newsroom.com/en" },
+  { "id": "volvo", "slug": "volvo", "name": "Volvo", "website": "https://www.volvocars.com/", "newsroom": "https://www.media.volvocars.com/global/en-gb" }
+]

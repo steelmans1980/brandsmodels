@@ -1,0 +1,2442 @@
+{
+ "id": "nissan-x-trail-rogue",
+ "slug": "x-trail-rogue",
+ "manufacturer": "nissan",
+ "name": "Nissan X-Trail and Rogue",
+ "lines": [
+  {
+   "id": "x-trail",
+   "name": "X-Trail"
+  },
+  {
+   "id": "rogue",
+   "name": "Rogue"
+  }
+ ],
+ "sources": {
+  "wx": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Nissan_X-Trail&oldid=1377881112",
+   "title": "Nissan X-Trail",
+   "publisher": "Wikipedia",
+   "type": "secondary",
+   "accessed": "2026-10-09"
+  },
+  "wr": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Nissan_Rogue&oldid=1377678128",
+   "title": "Nissan Rogue",
+   "publisher": "Wikipedia",
+   "type": "secondary",
+   "accessed": "2026-10-09"
+  },
+  "dex": {
+   "url": "https://de.wikipedia.org/w/index.php?title=Nissan_X-Trail&oldid=268834048",
+   "title": "Nissan X-Trail",
+   "publisher": "Wikipedia (de)",
+   "type": "secondary",
+   "accessed": "2026-10-09"
+  },
+  "g070822": {
+   "url": "https://global.nissannews.com/en/releases/070822-01-e",
+   "title": "Nissan Announces All-New Second Generation X-TRAIL SUV",
+   "publisher": "Nissan Global Newsroom",
+   "type": "manufacturer",
+   "date": "2007-08-22",
+   "accessed": "2026-10-09"
+  },
+  "g081103": {
+   "url": "https://global.nissannews.com/en/releases/081103-01-e",
+   "title": "Nissan launches all-new X-TRAIL in China",
+   "publisher": "Nissan Global Newsroom",
+   "type": "manufacturer",
+   "date": "2008-11-03",
+   "accessed": "2026-10-09"
+  },
+  "r09": {
+   "url": "https://usa.nissannews.com/en-US/releases/release-3737eed4994c4658a3a62ff5a1d4dd8f-2009-nissan-rogue-press-kit-3",
+   "title": "2009 Nissan Rogue Press Kit",
+   "publisher": "Nissan USA Newsroom",
+   "type": "manufacturer",
+   "accessed": "2026-10-09"
+  },
+  "r09g": {
+   "url": "https://usa.nissannews.com/releases/2009-nissan-rogue-press-kit-at-a-glance",
+   "title": "2009 Nissan Rogue Press Kit: At A Glance",
+   "publisher": "Nissan USA Newsroom",
+   "type": "manufacturer",
+   "accessed": "2026-10-09"
+  },
+  "gx13": {
+   "url": "https://global.nissannews.com/en/releases/130910-02-e",
+   "title": "New Nissan X-Trail (Frankfurt Motor Show 2013)",
+   "publisher": "Nissan Global Newsroom",
+   "type": "manufacturer",
+   "date": "2013-09-09",
+   "accessed": "2026-10-09"
+  },
+  "gr13": {
+   "url": "https://global.nissannews.com/en/releases/130910-03-e",
+   "title": "All-new 2014 Nissan Rogue debuts",
+   "publisher": "Nissan Global Newsroom",
+   "type": "manufacturer",
+   "date": "2013-09-10",
+   "accessed": "2026-10-09"
+  },
+  "gj131024": {
+   "url": "https://global.nissannews.com/en/releases/131024-01-e",
+   "title": "Nissan Releases All-New X-Trail in December",
+   "publisher": "Nissan Global Newsroom",
+   "type": "manufacturer",
+   "date": "2013-10-24",
+   "accessed": "2026-10-09"
+  },
+  "gj131211": {
+   "url": "https://global.nissannews.com/en/releases/131211-01-e",
+   "title": "All-New Nissan X-Trail on Sale in Japan in December",
+   "publisher": "Nissan Global Newsroom",
+   "type": "manufacturer",
+   "date": "2013-12-11",
+   "accessed": "2026-10-09"
+  },
+  "r21": {
+   "url": "https://usa.nissannews.com/en-US/releases/2021-nissan-rogue-press-kit",
+   "title": "2021 Nissan Rogue Press Kit",
+   "publisher": "Nissan USA Newsroom",
+   "type": "manufacturer",
+   "date": "2020-07-08",
+   "accessed": "2026-10-09"
+  },
+  "r22": {
+   "url": "https://usa.nissannews.com/en-US/releases/2022-nissan-rogue-press-kit",
+   "title": "2022 Nissan Rogue Press Kit",
+   "publisher": "Nissan USA Newsroom",
+   "type": "manufacturer",
+   "accessed": "2026-10-09"
+  },
+  "r24": {
+   "url": "https://usa.nissannews.com/en-US/releases/2024-nissan-rogue-press-kit",
+   "title": "2024 Nissan Rogue Press Kit",
+   "publisher": "Nissan USA Newsroom",
+   "type": "manufacturer",
+   "accessed": "2026-10-09"
+  },
+  "r27": {
+   "url": "https://usa.nissannews.com/en-US/releases/2027-nissan-rogue-press-kit",
+   "title": "2027 Nissan Rogue Press Kit",
+   "publisher": "Nissan USA Newsroom",
+   "type": "manufacturer",
+   "date": "2026-09-21",
+   "accessed": "2026-10-09"
+  },
+  "gxt22": {
+   "url": "https://global.nissannews.com/en/releases/nissan-launches-the-all-new-x-trail-in-japan",
+   "title": "Nissan launches the all-new X-Trail in Japan",
+   "publisher": "Nissan Global Newsroom",
+   "type": "manufacturer",
+   "date": "2022-07-20",
+   "accessed": "2026-10-09"
+  },
+  "ie22": {
+   "url": "https://www.nissan.ie/experience-nissan/nissan-ireland-newsroom/All-new-Nissan-X-Trail-breaks-cover.html",
+   "title": "All-new Nissan X-Trail breaks cover",
+   "publisher": "Nissan Ireland Newsroom",
+   "type": "manufacturer",
+   "date": "2022-09-06",
+   "accessed": "2026-10-09"
+  },
+  "rh27": {
+   "url": "https://usa.nissannews.com/en-US/releases/2027-nissan-rogue-hybrid-press-kit",
+   "title": "2027 Nissan Rogue Hybrid Press Kit",
+   "publisher": "Nissan USA Newsroom",
+   "type": "manufacturer",
+   "date": "2026-09-21",
+   "accessed": "2026-10-09"
+  }
+ },
+ "generations": [
+  {
+   "id": "nissan-x-trail-rogue-t30",
+   "slug": "t30",
+   "ordinal": 1,
+   "lines": [
+    "x-trail"
+   ],
+   "name": "First generation X-Trail",
+   "codes": [
+    {
+     "value": "T30",
+     "kind": "model code",
+     "src": "wx",
+     "quote": "Model code T30"
+    }
+   ],
+   "names": [
+    {
+     "value": "X-Trail",
+     "markets": [
+      "global"
+     ],
+     "src": "wx",
+     "quote": "The T30 series X-Trail was unveiled at the September 2000 Paris Motor Show."
+    }
+   ],
+   "dates": {
+    "revealed": {
+     "value": "2000-09",
+     "event": "Paris Motor Show",
+     "src": "wx",
+     "quote": "The T30 series X-Trail was unveiled at the September 2000 Paris Motor Show."
+    },
+    "productionStart": {
+     "value": "2000-10",
+     "src": "wx",
+     "quote": "It entered production in October 2000, with sales in Japan commenced in November."
+    },
+    "productionEnd": {
+     "value": "2007",
+     "src": "wx",
+     "quote": "October 2000 – 2007 (Japan)"
+    },
+    "salesStart": [
+     {
+      "value": "2000-11",
+      "market": "JP",
+      "src": "wx",
+      "quote": "It entered production in October 2000, with sales in Japan commenced in November."
+     },
+     {
+      "value": "2001-10",
+      "market": "UK",
+      "src": "wx",
+      "quote": "In the United Kingdom and Australia, the X-Trail was launched in October 2001."
+     },
+     {
+      "value": "2001-10",
+      "market": "AU",
+      "src": "wx",
+      "quote": "In the United Kingdom and Australia, the X-Trail was launched in October 2001."
+     },
+     {
+      "value": "2001-06",
+      "market": "EU",
+      "src": "dex",
+      "quote": "Der erste X-Trail kam im Juni 2001 auf den Markt"
+     }
+    ],
+    "modelYears": [
+     {
+      "market": "CA",
+      "from": 2005,
+      "to": 2006,
+      "src": "wx",
+      "quote": "the X-Trail was sold in Canada for model years 2005 and 2006"
+     }
+    ]
+   },
+   "ongoing": false,
+   "platform": {
+    "value": "Nissan MS (M&S / FF-S) platform",
+    "src": "wx",
+    "quote": "Platform Nissan MS/M&S/FF-S platform"
+   },
+   "assembly": [
+    {
+     "value": "Kanda, Fukuoka, Japan (Nissan Motor Kyushu)",
+     "src": "wx",
+     "quote": "Assembly Japan: Kanda, Fukuoka (Nissan Motor Kyushu)"
+    },
+    {
+     "value": "Miaoli, Taiwan (Yulon)",
+     "src": "wx",
+     "quote": "Taiwan: Miaoli (Yulon)"
+    }
+   ],
+   "bodyStyles": [
+    {
+     "id": "b1",
+     "value": "5-door SUV",
+     "markets": [
+      "global"
+     ],
+     "src": "wx",
+     "quote": "Body style 5-door SUV"
+    }
+   ],
+   "drivetrains": [
+    {
+     "value": "FWD",
+     "markets": [
+      "EU"
+     ],
+     "src": "dex",
+     "quote": "wurde zu Beginn mit Vorderradantrieb und 2,0-Liter-Ottomotor mit 103 kW (140 PS)"
+    },
+    {
+     "value": "AWD",
+     "system": "All-Mode 4x4",
+     "markets": [
+      "global"
+     ],
+     "src": "wx",
+     "quote": "The X-Trail's All-Mode 4x4 transmission transfer case enables the driver to select between 2WD, 4WD or 4WD Lock"
+    }
+   ],
+   "dimensions": [
+    {
+     "id": "d1",
+     "market": "unstated",
+     "unit": "mm",
+     "length": 4455,
+     "width": 1765,
+     "height": 1675,
+     "wheelbase": 2625,
+     "src": "dex",
+     "quotes": [
+      "Länge 4455 mm Breite 1765 mm Höhe 1675 mm Radstand 2625 mm"
+     ]
+    }
+   ],
+   "powertrains": [
+    {
+     "id": "p1",
+     "name": "QR20DE 2.0",
+     "market": "JP",
+     "fuel": "petrol",
+     "engine": "2.0 L QR20DE I4",
+     "power": {
+      "value": 140,
+      "unit": "PS"
+     },
+     "src": "wx",
+     "quotes": [
+      "In Japan, the X-Trail was equipped with the QR20DE petrol engine, which produces 140 PS (103 kW)"
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "X-Trail GT (SR20VET)",
+     "market": "JP",
+     "fuel": "petrol",
+     "years": "from 2001",
+     "engine": "2.0 L SR20VET turbo I4",
+     "power": {
+      "value": 280,
+      "unit": "PS"
+     },
+     "transmission": "4-speed automatic",
+     "drivetrain": "AWD",
+     "src": "wx",
+     "quotes": [
+      "the SR20VET petrol turbocharged engine, which produces 280 PS (206 kW)",
+      "It was only offered with a 4-speed automatic transmission and four-wheel-drive"
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "QR25DE 2.5",
+     "market": "AU",
+     "fuel": "petrol",
+     "years": "to 2005",
+     "engine": "2.5 L QR25DE I4",
+     "power": {
+      "value": 132,
+      "unit": "kW"
+     },
+     "src": "wx",
+     "quotes": [
+      "The Australian model is powered by a QR25DE 2.5-litre four-cylinder engine initially producing 132 kW (177 hp)."
+     ]
+    },
+    {
+     "id": "p4",
+     "name": "QR25DE 2.5 (detuned)",
+     "market": "AU",
+     "fuel": "petrol",
+     "years": "from January 2006",
+     "engine": "2.5 L QR25DE I4",
+     "power": {
+      "value": 123,
+      "unit": "kW"
+     },
+     "src": "wx",
+     "quotes": [
+      "From January 2006, the Australian spec engine was detuned to 123 kW (165 hp)."
+     ]
+    },
+    {
+     "id": "p5",
+     "name": "2.0 petrol",
+     "market": "EU",
+     "fuel": "petrol",
+     "engine": "2.0 L I4",
+     "power": {
+      "value": 103,
+      "unit": "kW"
+     },
+     "src": "dex",
+     "quotes": [
+      "2,0-Liter-Ottomotor mit 103 kW (140 PS)"
+     ]
+    },
+    {
+     "id": "p6",
+     "name": "2.5 petrol",
+     "market": "EU",
+     "fuel": "petrol",
+     "engine": "2.5 L I4",
+     "power": {
+      "value": 121,
+      "unit": "kW"
+     },
+     "drivetrain": "AWD",
+     "src": "dex",
+     "quotes": [
+      "Die allradgetriebenen Modelle waren entweder mit",
+      "2,5 Liter mit 121 kW (165 PS)"
+     ]
+    },
+    {
+     "id": "p7",
+     "name": "2.2 Di",
+     "market": "EU",
+     "fuel": "diesel",
+     "years": "to 2003",
+     "engine": "2.2 L YD22 turbo-diesel I4",
+     "power": {
+      "value": 84,
+      "unit": "kW"
+     },
+     "src": "dex",
+     "quotes": [
+      "2,2 Liter-Dieselmotoren mit 84 kW (114 PS; 2,2 Di)"
+     ]
+    },
+    {
+     "id": "p8",
+     "name": "2.2 dCi",
+     "market": "EU",
+     "fuel": "diesel",
+     "years": "from 2003",
+     "engine": "2.2 L YD22 turbo-diesel I4 (variable turbocharger)",
+     "power": {
+      "value": 100,
+      "unit": "kW"
+     },
+     "src": "dex",
+     "quotes": [
+      "100 kW (136 PS; 2.2 dci)"
+     ]
+    },
+    {
+     "id": "p9",
+     "name": "X-Trail FCV",
+     "market": "unstated",
+     "fuel": "hydrogen",
+     "engine": "Hydrogen fuel cell",
+     "src": "wx",
+     "quotes": [
+      "Nissan offered a hydrogen fuel cell model named the X-Trail FCV on lease to businesses."
+     ]
+    }
+   ],
+   "revisions": [
+    {
+     "id": "r1",
+     "slug": "2003-facelift",
+     "kind": "facelift",
+     "name": "Facelift (2003)",
+     "dates": {
+      "salesStart": {
+       "value": "2003-06-09",
+       "market": "JP",
+       "src": "wx",
+       "quote": "The facelifted X-Trail was released in Japan on 9 June 2003."
+      }
+     },
+     "changes": [
+      {
+       "id": "r1c1",
+       "topic": "design",
+       "text": "Grille and bumpers were redesigned and the Nissan logo was updated.",
+       "src": "wx",
+       "quote": "The external differences were slight, although the grille and the bumpers were redesigned and the Nissan logo was updated to the latest design."
+      },
+      {
+       "id": "r1c2",
+       "topic": "powertrain",
+       "text": "The 2.2-litre turbo-diesel gained a variable turbocharger (2.2 dCi), raising output from 114 PS to 136 PS.",
+       "src": "wx",
+       "quote": "upgrading the 2.2-litre turbo-diesels with a variable turbocharger (2.2 DCi rather than the earlier 2.2 Di), producing 136 PS (100 kW; 134 hp) instead of the original 114 PS (84 kW; 112 hp)"
+      }
+     ]
+    }
+   ],
+   "commons": {
+    "generation": "Category:Nissan X-Trail (T30)"
+   },
+   "notes": [
+    "Production dates are for Japan; the T30 continued to be built elsewhere (e.g. Thailand to 2008, Malaysia to 2010, Philippines to 2014, Taiwan with its own facelift to 2008) according to Wikipedia.",
+    "Wikipedia gives only ranges for T30 dimensions (wheelbase 2,619–2,625 mm, length 4,455–4,509 mm); the single record here is from German Wikipedia's infobox and its market is not stated.",
+    "The 2003 facelift date differs by source: Wikipedia says June 2003 (Japan release 9 June 2003); German Wikipedia says December 2003 for Germany.",
+    "Not sold in the United States; sold in Canada for model years 2005–2006 only. No manufacturer source for the T30 was found in the Nissan newsrooms."
+   ]
+  },
+  {
+   "id": "nissan-x-trail-rogue-s35",
+   "slug": "s35",
+   "ordinal": 1,
+   "lines": [
+    "rogue"
+   ],
+   "name": "First generation Rogue",
+   "codes": [
+    {
+     "value": "S35",
+     "kind": "model code",
+     "src": "wr",
+     "quote": "Model code S35"
+    }
+   ],
+   "names": [
+    {
+     "value": "Rogue",
+     "markets": [
+      "US",
+      "CA"
+     ],
+     "src": "wr",
+     "quotes": [
+      "The first-generation Rogue was available in three trim levels in the United States",
+      "In Canada, the Rogue comes in S and SV trim"
+     ]
+    },
+    {
+     "value": "Rogue Select",
+     "markets": [
+      "US"
+     ],
+     "src": "wr",
+     "quote": "Also called Nissan Rogue Select (2014–2015)"
+    }
+   ],
+   "dates": {
+    "revealed": {
+     "value": "2007-01-07",
+     "event": "North American International Auto Show, Detroit",
+     "src": "wr",
+     "quote": "The first-generation Rogue made its debut at the North American International Auto Show in Detroit on 7 January 2007."
+    },
+    "productionStart": {
+     "value": "2007",
+     "src": "wr",
+     "quote": "Production 2007–2015"
+    },
+    "productionEnd": {
+     "value": "2015",
+     "src": "wr",
+     "quote": "Production 2007–2015"
+    },
+    "modelYears": [
+     {
+      "market": "NA",
+      "from": 2008,
+      "to": 2013,
+      "src": "wr",
+      "quote": "Model years 2008–2013 (as Rogue)"
+     },
+     {
+      "market": "US",
+      "from": 2014,
+      "to": 2015,
+      "src": "wr",
+      "quote": "2014–2015 (as Rogue Select)"
+     }
+    ]
+   },
+   "ongoing": false,
+   "platform": {
+    "value": "Nissan C platform",
+    "src": "r09",
+    "quote": "Rogue is built on Nissan’s “C” platform"
+   },
+   "assembly": [
+    {
+     "value": "Kyushu, Japan (Nissan Motor Co., Ltd.)",
+     "src": "r09g",
+     "quote": "Assembled by Nissan Motor Co., Ltd. in Kyushu, Japan"
+    }
+   ],
+   "bodyStyles": [
+    {
+     "id": "b1",
+     "value": "5-door SUV",
+     "markets": [
+      "US",
+      "CA"
+     ],
+     "src": "wr",
+     "quote": "Body style 5-door SUV"
+    }
+   ],
+   "drivetrains": [
+    {
+     "value": "FWD",
+     "markets": [
+      "US"
+     ],
+     "src": "r09g",
+     "quote": "Available intuitive All-Wheel Drive system with yaw moment control or front-wheel drive"
+    },
+    {
+     "value": "AWD",
+     "system": "Intuitive All-Wheel Drive with yaw moment control",
+     "markets": [
+      "US"
+     ],
+     "src": "r09g",
+     "quote": "Available intuitive All-Wheel Drive system with yaw moment control or front-wheel drive"
+    }
+   ],
+   "dimensions": [
+    {
+     "id": "d1",
+     "market": "US",
+     "version": "2009 model year",
+     "unit": "in",
+     "length": 182.9,
+     "wheelbase": 105.9,
+     "src": "r09",
+     "quotes": [
+      "Rogue features a 105.9-inch wheelbase and 182.9-inch overall length"
+     ]
+    }
+   ],
+   "powertrains": [
+    {
+     "id": "p1",
+     "name": "2.5 (QR25DE)",
+     "market": "US",
+     "fuel": "petrol",
+     "engine": "2.5 L QR25DE DOHC I4",
+     "cylinders": 4,
+     "power": {
+      "value": 170,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 175,
+      "unit": "lb-ft"
+     },
+     "transmission": "Xtronic CVT",
+     "src": "r09",
+     "quotes": [
+      "Rogue’s standard QR25DE 2.5-liter DOHC 16-valve inline 4-cylinder is rated at 170 horsepower and 175 lb-ft torque",
+      "Nissan’s advanced Xtronic CVT™ (Continuously Variable Transmission)"
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "2.5 (QR25DE, California emissions)",
+     "market": "US",
+     "fuel": "petrol",
+     "engine": "2.5 L QR25DE DOHC I4",
+     "cylinders": 4,
+     "power": {
+      "value": 167,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 170,
+      "unit": "lb-ft"
+     },
+     "transmission": "Xtronic CVT",
+     "src": "r09",
+     "quotes": [
+      "(167 hp, 170 lb-ft CAL emissions)",
+      "Nissan’s advanced Xtronic CVT™ (Continuously Variable Transmission)"
+     ]
+    }
+   ],
+   "revisions": [
+    {
+     "id": "r1",
+     "slug": "2011-update",
+     "kind": "facelift",
+     "name": "2011 model year update",
+     "dates": {
+      "salesStart": {
+       "value": "2010-08-13",
+       "market": "US",
+       "src": "wr",
+       "quote": "US models went on sale at Nissan dealers nationwide beginning 13 August 2010."
+      }
+     },
+     "changes": [
+      {
+       "id": "r1c1",
+       "topic": "design",
+       "text": "New front fascia and grille and new front and rear spoilers.",
+       "src": "wr",
+       "quote": "Changes to the Rogue include redesigned exterior featuring a new front fascia and grille, new front and rear spoilers"
+      },
+      {
+       "id": "r1c2",
+       "topic": "interior",
+       "text": "Redesigned gauges and centre dash to accommodate a navigation system.",
+       "src": "wr",
+       "quote": "redesigned gauges recolored from orange to black, redesigned center dash for addition of the navigation system"
+      }
+     ]
+    },
+    {
+     "id": "r2",
+     "slug": "rogue-select",
+     "kind": "rename",
+     "name": "Rogue Select (2014–2015)",
+     "dates": {
+      "salesStart": {
+       "value": "2014-01",
+       "market": "US",
+       "src": "wr",
+       "quote": "It went on sale in January 2014 as a 2014 model year vehicle and was continued through 2015."
+      }
+     },
+     "names": [
+      {
+       "value": "Rogue Select",
+       "markets": [
+        "US"
+       ],
+       "src": "wr",
+       "quote": "The Rogue Select was offered only in the S trim level, with AWD being an option."
+      }
+     ],
+     "changes": [
+      {
+       "id": "r2c1",
+       "topic": "other",
+       "text": "The first-generation Rogue continued alongside the second generation as the Rogue Select, offered only in S trim.",
+       "src": "wr",
+       "quote": "The Select was a continuation of the first generation Rogue sold alongside an all-new Rogue that went on sale in 2013 as a 2014 model."
+      }
+     ]
+    }
+   ],
+   "commons": {
+    "generation": "Category:Nissan Rogue (S35)"
+   },
+   "notes": [
+    "The S35 Rogue is a North American model and a different vehicle from the X-Trail T31 sold elsewhere at the same time (they share the Nissan C platform). Its specifications must not be read as X-Trail specifications.",
+    "Nissan's December 2006 release announced the Rogue preview for the January 2007 Detroit show and planned sales in fall 2007 as a 2008 model; an actual sales-start date was not found in a source.",
+    "Only length and wheelbase are documented here (from the 2009 press kit); width and height were not found in a readable manufacturer source. Wikipedia gives 70.9 in width and 65.3 in height without a market.",
+    "The Rogue Select (2014–2015 model years) was not offered in Canada."
+   ]
+  },
+  {
+   "id": "nissan-x-trail-rogue-t31",
+   "slug": "t31",
+   "ordinal": 2,
+   "lines": [
+    "x-trail"
+   ],
+   "name": "Second generation X-Trail",
+   "codes": [
+    {
+     "value": "T31",
+     "kind": "model code",
+     "src": "wx",
+     "quote": "Model code T31"
+    }
+   ],
+   "names": [
+    {
+     "value": "X-Trail",
+     "markets": [
+      "JP"
+     ],
+     "src": "g070822",
+     "quote": "Nissan Motor Co., Ltd. announced the release of the all-new X-TRAIL sport utility vehicle (SUV)"
+    },
+    {
+     "value": "Qijun",
+     "markets": [
+      "CN"
+     ],
+     "src": "g081103",
+     "quote": "X-TRAIL will be marketed under the Chinese name \"Qijun,\""
+    },
+    {
+     "value": "Dongfeng Fengdu MX6",
+     "markets": [
+      "CN"
+     ],
+     "src": "wx",
+     "quote": "Also called Dongfeng Fengdu MX6 (China, 2015–2019)"
+    }
+   ],
+   "dates": {
+    "revealed": {
+     "value": "2007-03",
+     "event": "Geneva International Motor Show",
+     "src": "g081103",
+     "quote": "Previewed at the Geneva International Motor Show in March 2007"
+    },
+    "productionStart": {
+     "value": "2007",
+     "src": "wx",
+     "quote": "2007–2013 (Japan)"
+    },
+    "productionEnd": {
+     "value": "2013",
+     "src": "wx",
+     "quote": "2007–2013 (Japan)"
+    },
+    "salesStart": [
+     {
+      "value": "2007-08-22",
+      "market": "JP",
+      "src": "g070822",
+      "quote": "TOKYO - (Aug. 22, 2007) - Nissan Motor Co., Ltd. announced the release of the all-new X-TRAIL sport utility vehicle (SUV), which goes on sale today at Nissan dealers nationwide."
+     },
+     {
+      "value": "2007",
+      "market": "EU",
+      "src": "wx",
+      "quote": "went on sale in Japan in August 2007, Europe in the third quarter of that year"
+     },
+     {
+      "value": "2008-11-03",
+      "market": "CN",
+      "src": "g081103",
+      "quotes": [
+       "NISSAN LAUNCHES ALL-NEW X-TRAIL IN CHINA",
+       "TOKYO (November 3, 2008) - Nissan Motor Co., Ltd. (NML) today launched the all-new X-TRAIL."
+      ]
+     }
+    ]
+   },
+   "ongoing": false,
+   "platform": {
+    "value": "Renault–Nissan C platform",
+    "src": "wx",
+    "quote": "Slightly larger than the previous model, it is based on the Renault–Nissan C platform."
+   },
+   "assembly": [
+    {
+     "value": "Huadu, China (Dongfeng Nissan)",
+     "src": "g081103",
+     "quote": "X-TRAIL is manufactured at DFL's Huadu plant, the third facility to build X-TRAIL."
+    },
+    {
+     "value": "Japan",
+     "src": "g081103",
+     "quote": "Japan and Indonesia also manufacture X-TRAIL."
+    },
+    {
+     "value": "Indonesia",
+     "src": "g081103",
+     "quote": "Japan and Indonesia also manufacture X-TRAIL."
+    }
+   ],
+   "bodyStyles": [
+    {
+     "id": "b1",
+     "value": "5-door SUV",
+     "markets": [
+      "global"
+     ],
+     "src": "wx",
+     "quote": "Body style 5-door SUV"
+    }
+   ],
+   "drivetrains": [
+    {
+     "value": "AWD",
+     "system": "ALL MODE 4x4-i with yaw moment control",
+     "markets": [
+      "JP"
+     ],
+     "src": "g070822",
+     "quote": "Nissan's latest electronically controlled four-wheel drive (4WD) system, the ALL MODE 4x4-i with yaw moment control"
+    }
+   ],
+   "dimensions": [
+    {
+     "id": "d1",
+     "market": "unstated",
+     "version": "pre-facelift, 2WD",
+     "unit": "mm",
+     "length": 4630,
+     "width": 1796,
+     "height": 1689,
+     "wheelbase": 2629,
+     "src": "wx",
+     "quotes": [
+      "Wheelbase 2,629 mm",
+      "Length 2007–2010: 4,630 mm",
+      "Width 2008–2010: 1,796 mm",
+      "2008–2010 2WD: 1,689 mm"
+     ]
+    },
+    {
+     "id": "d2",
+     "market": "unstated",
+     "version": "pre-facelift, 4WD",
+     "unit": "mm",
+     "length": 4630,
+     "width": 1796,
+     "height": 1770,
+     "wheelbase": 2629,
+     "src": "wx",
+     "quotes": [
+      "Wheelbase 2,629 mm",
+      "Length 2007–2010: 4,630 mm",
+      "Width 2008–2010: 1,796 mm",
+      "2008–2010 4WD: 1,770 mm"
+     ]
+    },
+    {
+     "id": "d3",
+     "market": "unstated",
+     "version": "facelift (2011–), 2WD",
+     "unit": "mm",
+     "length": 4640,
+     "width": 1806,
+     "height": 1699,
+     "wheelbase": 2629,
+     "src": "wx",
+     "quotes": [
+      "Wheelbase 2,629 mm",
+      "2011: 4,640 mm",
+      "2011–: 1,806 mm",
+      "2011–2013 2WD: 1,699 mm"
+     ]
+    },
+    {
+     "id": "d4",
+     "market": "unstated",
+     "version": "facelift (2011–), 4WD",
+     "unit": "mm",
+     "length": 4640,
+     "width": 1806,
+     "height": 1780,
+     "wheelbase": 2629,
+     "src": "wx",
+     "quotes": [
+      "Wheelbase 2,629 mm",
+      "2011: 4,640 mm",
+      "2011–: 1,806 mm",
+      "2011–2013 4WD: 1,780 mm"
+     ]
+    }
+   ],
+   "cargo": [
+    {
+     "id": "k1",
+     "market": "JP",
+     "behind": "2nd row",
+     "value": 603,
+     "unit": "L",
+     "standard": "VDA",
+     "src": "g070822",
+     "quote": "for a class-leading capacity of 603 liters (VDA)"
+    }
+   ],
+   "powertrains": [
+    {
+     "id": "p1",
+     "name": "MR20DE 2.0",
+     "market": "JP",
+     "fuel": "petrol",
+     "engine": "2.0 L MR20DE I4",
+     "transmission": "6-speed manual (4WD) or XTRONIC CVT",
+     "src": "g070822",
+     "quotes": [
+      "a 2.0-liter MR20DE featuring an improved exhaust system",
+      "A 6-speed manual transmission is available in the 2.0-liter 4-wheel drive model",
+      "All other X-TRAIL models feature an XTRONIC Continuously Variable Transmission (CVT)"
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "QR25DE 2.5",
+     "market": "JP",
+     "fuel": "petrol",
+     "engine": "2.5 L QR25DE I4",
+     "transmission": "XTRONIC CVT-M6",
+     "src": "g070822",
+     "quotes": [
+      "a 2.5-liter QR25DE with continuously variable valve timing control (CVTC)",
+      "On 2.5-liter equipped X-TRAILs, an XTRONIC CVT-M6 transmission is used"
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "20GT (M9R diesel)",
+     "market": "JP",
+     "fuel": "diesel",
+     "years": "from September 2008",
+     "engine": "2.0 L M9R turbo-diesel I4",
+     "src": "wx",
+     "quotes": [
+      "In September 2008, the 20GT became available in Japan, equipped with the M9R, a 2.0-litre turbocharged common rail diesel engine developed jointly with Renault."
+     ]
+    },
+    {
+     "id": "p4",
+     "name": "2.0 dCi 150",
+     "market": "unstated",
+     "fuel": "diesel",
+     "engine": "2.0 L M9R turbo-diesel I4",
+     "power": {
+      "value": 150,
+      "unit": "PS"
+     },
+     "src": "wx",
+     "quotes": [
+      "two 2.0-litre dCI (M9R) versions, offering 150 and 177 PS (110 and 130 kW; 148 and 175 hp) respectively"
+     ]
+    },
+    {
+     "id": "p5",
+     "name": "2.0 dCi 177",
+     "market": "unstated",
+     "fuel": "diesel",
+     "engine": "2.0 L M9R turbo-diesel I4",
+     "power": {
+      "value": 177,
+      "unit": "PS"
+     },
+     "src": "wx",
+     "quotes": [
+      "two 2.0-litre dCI (M9R) versions, offering 150 and 177 PS (110 and 130 kW; 148 and 175 hp) respectively"
+     ]
+    },
+    {
+     "id": "p6",
+     "name": "2.0 petrol",
+     "market": "EU",
+     "fuel": "petrol",
+     "engine": "2.0 L I4 (new development)",
+     "power": {
+      "value": 104,
+      "unit": "kW"
+     },
+     "src": "dex",
+     "quotes": [
+      "der Motor mit 104 kW (141 PS) ist eine Neuentwicklung"
+     ]
+    },
+    {
+     "id": "p7",
+     "name": "MR20DE 2.0",
+     "market": "CN",
+     "fuel": "petrol",
+     "engine": "2.0 L MR20DE I4",
+     "transmission": "6-speed manual or CVT",
+     "src": "g081103",
+     "quotes": [
+      "two with the gasoline-powered 2.0 liter engine (MR20DE)",
+      "Both engines are available with a six-speed manual transmission and CVT."
+     ]
+    },
+    {
+     "id": "p8",
+     "name": "QR25DE 2.5",
+     "market": "CN",
+     "fuel": "petrol",
+     "engine": "2.5 L QR25DE I4",
+     "transmission": "6-speed manual or CVT",
+     "src": "g081103",
+     "quotes": [
+      "three with the gasoline-powered 2.5 liter engine (QR25DE)",
+      "Both engines are available with a six-speed manual transmission and CVT."
+     ]
+    }
+   ],
+   "changes": [
+    {
+     "id": "c1",
+     "topic": "chassis",
+     "text": "Slightly larger than the T30 and based on the Renault–Nissan C platform.",
+     "src": "wx",
+     "quote": "Slightly larger than the previous model, it is based on the Renault–Nissan C platform."
+    },
+    {
+     "id": "c2",
+     "topic": "dimensions",
+     "text": "Overall length grew by 17.5 cm to 4.63 m, with a nearly unchanged wheelbase.",
+     "src": "dex",
+     "quote": "In der Gesamtlänge wuchs er um 17,5 Zentimeter auf 4,63 Meter, der Radstand ist mit 2,63 Meter nahezu gleich geblieben."
+    },
+    {
+     "id": "c3",
+     "topic": "dimensions",
+     "text": "Cargo area enlarged, thanks to relocated rear shock absorbers, to 603 litres (VDA).",
+     "src": "g070822",
+     "quote": "X-TRAIL's rear cargo area has been substantially increased over the previous model, thanks to relocated rear shock absorbers, for a class-leading capacity of 603 liters (VDA)."
+    },
+    {
+     "id": "c4",
+     "topic": "interior",
+     "text": "Front headroom increased by 6 mm and knee room by 24 mm.",
+     "src": "g070822",
+     "quote": "Front seat headroom has been increased by 6 millimeters and knee room by 24 millimeters."
+    },
+    {
+     "id": "c5",
+     "topic": "technology",
+     "text": "Hill Descent Control and Hill Start Assist were added.",
+     "src": "g070822",
+     "quote": "Also new for this generation X-TRAIL is Hill Descent Control (HDC) and Hill Start Assist (HSA)."
+    },
+    {
+     "id": "c6",
+     "topic": "design",
+     "text": "A-pillar obstruction angle reduced by 1.2 degrees.",
+     "src": "g070822",
+     "quote": "the A-pillars' obstruction angle has been reduced by 1.2 degrees in comparison to the previous generation X-TRAIL"
+    }
+   ],
+   "revisions": [
+    {
+     "id": "r1",
+     "slug": "2010-facelift",
+     "kind": "facelift",
+     "name": "Facelift (2010)",
+     "dates": {
+      "salesStart": {
+       "value": "2010-07",
+       "market": "JP",
+       "src": "wx",
+       "quote": "A facelifted second generation was released in Japan in July 2010."
+      }
+     },
+     "changes": [
+      {
+       "id": "r1c1",
+       "topic": "design",
+       "text": "Front and rear were slightly modernised and the tail lights partly switched to LED.",
+       "src": "dex",
+       "quote": "Optisch wurden außen die Frontpartie und das Heck geringfügig modernisiert. Die Rückleuchten wurden teilweise auf LED-Technik umgestellt."
+      },
+      {
+       "id": "r1c2",
+       "topic": "interior",
+       "text": "Revised instruments with a rectangular trip-computer display between the rev counter and speedometer.",
+       "src": "dex",
+       "quote": "Im Innenraum ist die Modellpflege gut an den veränderten Instrumenten mit rechteckigem Bordcomputerdisplay (schwarz/weiß) zwischen Drehzahlmesser und Tachometer zu erkennen."
+      },
+      {
+       "id": "r1c3",
+       "topic": "powertrain",
+       "text": "In Austria and Germany only two revised Euro 5 diesel engines remained available.",
+       "src": "dex",
+       "quote": "Seitdem ist das Fahrzeug in Österreich und Deutschland nur noch mit zwei überarbeiteten Dieselmotoren erhältlich, die die Schadstoffnorm Euro 5 erfüllen."
+      }
+     ]
+    }
+   ],
+   "commons": {
+    "generation": "Category:Nissan X-Trail (T31)"
+   },
+   "notes": [
+    "Not sold in the United States and Canada, where the separate Rogue (S35) was offered instead.",
+    "Production dates are for Japan. Wikipedia lists production to 2014 in Indonesia and Russia and to 2019 in China; diesel T31 models remained on sale in Japan until early 2015.",
+    "Dimensions come from the English Wikipedia infobox (market not stated). German Wikipedia gives different figures (length 4630 mm, width 1785 mm, height 1680–1765 mm, wheelbase 2630 mm).",
+    "Chinese assembly: Nissan's 2008 release names Dongfeng Nissan's Huadu plant; Wikipedia lists Zhengzhou (Dongfeng Nissan).",
+    "The European facelift is dated September 2010 by German Wikipedia; the Japanese facelift July 2010 by English Wikipedia. No separate Commons category for the T31 facelift was found."
+   ]
+  },
+  {
+   "id": "nissan-x-trail-rogue-t32",
+   "slug": "t32",
+   "ordinal": 3,
+   "lines": [
+    "x-trail",
+    "rogue"
+   ],
+   "name": "Third generation X-Trail / second generation Rogue",
+   "codes": [
+    {
+     "value": "T32",
+     "kind": "model code",
+     "src": "wx",
+     "quote": "Model code T32"
+    }
+   ],
+   "names": [
+    {
+     "value": "X-Trail",
+     "markets": [
+      "EU"
+     ],
+     "src": "gr13",
+     "quote": "The European version, called the Nissan X-TRAIL, made its world debut"
+    },
+    {
+     "value": "X-Trail",
+     "markets": [
+      "JP"
+     ],
+     "src": "gj131211",
+     "quote": "the all-new X-Trail SUV will commence sales at dealers throughout Japan"
+    },
+    {
+     "value": "Rogue",
+     "markets": [
+      "US",
+      "CA"
+     ],
+     "src": "wr",
+     "quote": "The second generation Rogue is a version of the Nissan X-Trail and inspired by the Hi-Cross Concept to adapt to the US and Canada markets."
+    },
+    {
+     "value": "X-Trail Honor",
+     "markets": [
+      "CN"
+     ],
+     "src": "wx",
+     "quote": "Nissan X-Trail Honor (China, 2021–2023)"
+    },
+    {
+     "value": "X-Trail Classic",
+     "markets": [
+      "CN"
+     ],
+     "src": "wx",
+     "quote": "Nissan X-Trail Classic (China, 2023–present)"
+    }
+   ],
+   "dates": {
+    "revealed": {
+     "value": "2013-09",
+     "event": "Frankfurt Motor Show",
+     "src": "gx13",
+     "quote": "the new Nissan X-Trail has made its world debut at the 2013 Frankfurt Motor Show"
+    },
+    "productionStart": {
+     "value": "2013",
+     "src": "wx",
+     "quote": "Production 2013–2022"
+    },
+    "productionEnd": {
+     "value": "2022",
+     "src": "wx",
+     "quote": "Production 2013–2022"
+    },
+    "salesStart": [
+     {
+      "value": "2013-11",
+      "market": "US",
+      "src": "wr",
+      "quote": "US models went on sale in November 2013 as a 2014 model year vehicle."
+     },
+     {
+      "value": "2013-12-16",
+      "market": "JP",
+      "src": "gj131211",
+      "quotes": [
+       "YOKOHAMA, Japan (December 11, 2013)",
+       "the all-new X-Trail SUV will commence sales at dealers throughout Japan starting December 16"
+      ]
+     },
+     {
+      "value": "2014-03",
+      "market": "CN",
+      "src": "wx",
+      "quote": "Chinese models went on sale in the end of March 2014."
+     },
+     {
+      "value": "2014-03",
+      "market": "AU",
+      "src": "wx",
+      "quote": "Australian models went on sale in March 2014"
+     },
+     {
+      "value": "2014-07",
+      "market": "EU",
+      "src": "wx",
+      "quote": "European models went on sale in July 2014"
+     }
+    ],
+    "modelYears": [
+     {
+      "market": "NA",
+      "from": 2014,
+      "to": 2020,
+      "src": "wr",
+      "quote": "Model years 2014–2020"
+     }
+    ]
+   },
+   "ongoing": false,
+   "platform": {
+    "value": "Renault–Nissan CMF (Common Module Family)",
+    "src": "gx13",
+    "quote": "built on the new jointly-developed Nissan/Renault Common Module Family (CMF) platform architecture"
+   },
+   "assembly": [
+    {
+     "value": "Kanda, Fukuoka, Japan (Nissan Motor Kyushu)",
+     "src": "gj131211",
+     "quote": "The all-new Nissan X-Trail for the Japanese market is being assembled by Nissan Motor Kyushu Co., Ltd."
+    },
+    {
+     "value": "Smyrna, Tennessee, United States (Rogue)",
+     "src": "gr13",
+     "quote": "The 2014 Nissan Rogue is offered in S, SV and SL models and will be assembled in Smyrna, Tennessee."
+    },
+    {
+     "value": "Busan, South Korea (Renault Samsung Motors, Rogue)",
+     "src": "wr",
+     "quote": "Production of the Rogue crossover at South Korean manufacturer Renault Samsung Motors's Busan plant started in September 2014"
+    },
+    {
+     "value": "Dalian and Zhengzhou, China (Dongfeng Nissan)",
+     "src": "wx",
+     "quote": "China: Dalian, Liaoning; Zhengzhou, Henan (Dongfeng Nissan)"
+    },
+    {
+     "value": "Saint Petersburg, Russia",
+     "src": "wx",
+     "quote": "Russia: Saint Petersburg (Nissan Manufacturing Rus)"
+    }
+   ],
+   "bodyStyles": [
+    {
+     "id": "b1",
+     "value": "5-door SUV",
+     "markets": [
+      "global"
+     ],
+     "src": "wx",
+     "quote": "Body style 5-door SUV"
+    }
+   ],
+   "drivetrains": [
+    {
+     "value": "FWD",
+     "markets": [
+      "global"
+     ],
+     "src": "gx13",
+     "quote": "Two and four-wheel drive options"
+    },
+    {
+     "value": "AWD",
+     "system": "ALL MODE 4x4i",
+     "markets": [
+      "global"
+     ],
+     "src": "gx13",
+     "quote": "new X-Trail adopts Nissan's advanced electronic four-wheel drive system, ALL MODE 4x4i"
+    },
+    {
+     "value": "FWD",
+     "markets": [
+      "US"
+     ],
+     "src": "gr13",
+     "quote": "a choice of an intuitive All-Wheel Drive system or front-wheel drive"
+    },
+    {
+     "value": "AWD",
+     "system": "Intuitive All-Wheel Drive",
+     "markets": [
+      "US"
+     ],
+     "src": "gr13",
+     "quote": "a choice of an intuitive All-Wheel Drive system or front-wheel drive"
+    }
+   ],
+   "dimensions": [
+    {
+     "id": "d1",
+     "market": "unstated",
+     "version": "Rogue (Wikipedia Rogue article)",
+     "unit": "in",
+     "length": 182.7,
+     "width": 71.7,
+     "height": 67.3,
+     "wheelbase": 106.5,
+     "src": "wr",
+     "quotes": [
+      "Wheelbase 106.5 in (2,705 mm)",
+      "Length 182.7 in (4,641 mm)",
+      "Width 71.7 in (1,821 mm)",
+      "Height 67.3 in (1,709 mm)"
+     ]
+    },
+    {
+     "id": "d2",
+     "market": "unstated",
+     "version": "X-Trail",
+     "unit": "mm",
+     "wheelbase": 2705,
+     "src": "wx",
+     "quotes": [
+      "Wheelbase 2,705 mm (106.5 in)"
+     ]
+    }
+   ],
+   "cargo": [
+    {
+     "id": "k1",
+     "market": "JP",
+     "behind": "unstated",
+     "value": 550,
+     "unit": "L",
+     "standard": "not stated",
+     "src": "gj131024",
+     "quote": "water-repellent luggage space that can carry a maximum of 550L"
+    },
+    {
+     "id": "k2",
+     "market": "EU",
+     "version": "facelift (2017)",
+     "behind": "unstated",
+     "value": 565,
+     "unit": "L",
+     "standard": "not stated",
+     "src": "dex",
+     "quote": "Der Kofferraum hat nun ein Volumen von 565 Liter (+15 Liter)."
+    }
+   ],
+   "powertrains": [
+    {
+     "id": "p1",
+     "name": "2.5 (QR25DE)",
+     "market": "US",
+     "fuel": "petrol",
+     "years": "2014–2020 model years",
+     "engine": "2.5 L QR25DE I4",
+     "cylinders": 4,
+     "power": {
+      "value": 170,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 175,
+      "unit": "lb-ft"
+     },
+     "transmission": "Xtronic CVT",
+     "src": "gr13",
+     "quotes": [
+      "Every 2014 Nissan Rogue is equipped with a responsive 2.5-liter 4-cylinder engine rated at 170-horsepower and a best-in-class*** 175 lb-ft of torque.",
+      "an advanced Xtronic CVT® (Continuously Variable Transmission)"
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "Rogue Hybrid",
+     "market": "US",
+     "fuel": "hybrid",
+     "years": "2017–2019 model years",
+     "engine": "2.0 L I4 + electric motor (40 hp), lithium-ion battery",
+     "power": {
+      "value": 176,
+      "unit": "hp"
+     },
+     "transmission": "Xtronic CVT",
+     "src": "wr",
+     "quotes": [
+      "a 2.0-liter four-cylinder gasoline engine (power: 141 hp and torque: 141 lb-ft) and Xtronic CVT combined with an electric motor (power: 40 hp) and lithium-ion battery, for a combined power of 176 hp"
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "MR20DD 2.0",
+     "market": "JP",
+     "fuel": "petrol",
+     "engine": "2.0 L MR20DD direct-injection I4",
+     "transmission": "XTRONIC CVT",
+     "src": "gj131211",
+     "quotes": [
+      "direct-injection MR20DD engine, Idling Stop, the new XTRONIC CVT"
+     ]
+    },
+    {
+     "id": "p4",
+     "name": "1.6 dCi",
+     "market": "EU",
+     "fuel": "diesel",
+     "years": "07/2014–08/2018",
+     "engine": "1.6 L turbo-diesel I4",
+     "cylinders": 4,
+     "displacement": 1598,
+     "power": {
+      "value": 96,
+      "unit": "kW"
+     },
+     "torque": {
+      "value": 320,
+      "unit": "Nm"
+     },
+     "src": "dex",
+     "quotes": [
+      "der aus dem Qashqai bekannte 1,6 Liter Turbodiesel mit 96 kW (130 PS)",
+      "1332 cm³ 1618 cm³ 1598 cm³ 1749 cm³ 1995 cm³",
+      "320 Nm/1750"
+     ]
+    },
+    {
+     "id": "p5",
+     "name": "1.6 DIG-T",
+     "market": "EU",
+     "fuel": "petrol",
+     "engine": "1.6 L turbo I4",
+     "cylinders": 4,
+     "displacement": 1618,
+     "power": {
+      "value": 120,
+      "unit": "kW"
+     },
+     "torque": {
+      "value": 240,
+      "unit": "Nm"
+     },
+     "src": "dex",
+     "quotes": [
+      "1.3 DIG-T 1.6 DIG-T 1.6 dCi 1.7 dCi 2.0 dCi",
+      "1332 cm³ 1618 cm³ 1598 cm³ 1749 cm³ 1995 cm³",
+      "120 kW (163 PS)/5600",
+      "240 Nm/2000–4000"
+     ]
+    },
+    {
+     "id": "p6",
+     "name": "1.3 DIG-T",
+     "market": "EU",
+     "fuel": "petrol",
+     "engine": "1.3 L turbo I4",
+     "cylinders": 4,
+     "displacement": 1332,
+     "power": {
+      "value": 116,
+      "unit": "kW"
+     },
+     "torque": {
+      "value": 270,
+      "unit": "Nm"
+     },
+     "transmission": "7-speed dual-clutch",
+     "src": "dex",
+     "quotes": [
+      "1.3 DIG-T 1.6 DIG-T 1.6 dCi 1.7 dCi 2.0 dCi",
+      "1332 cm³ 1618 cm³",
+      "116 kW (158 PS)/5500",
+      "270 Nm/1800",
+      "7-Stufen-Doppelkupplungsgetriebe"
+     ]
+    },
+    {
+     "id": "p7",
+     "name": "1.7 dCi",
+     "market": "EU",
+     "fuel": "diesel",
+     "engine": "1.7 L turbo-diesel I4",
+     "cylinders": 4,
+     "displacement": 1749,
+     "power": {
+      "value": 110,
+      "unit": "kW"
+     },
+     "torque": {
+      "value": 340,
+      "unit": "Nm"
+     },
+     "src": "dex",
+     "quotes": [
+      "1.3 DIG-T 1.6 DIG-T 1.6 dCi 1.7 dCi 2.0 dCi",
+      "1598 cm³ 1749 cm³ 1995 cm³",
+      "110 kW (150 PS)/3500",
+      "340 Nm/1750"
+     ]
+    },
+    {
+     "id": "p8",
+     "name": "2.0 dCi",
+     "market": "EU",
+     "fuel": "diesel",
+     "engine": "2.0 L turbo-diesel I4",
+     "cylinders": 4,
+     "displacement": 1995,
+     "power": {
+      "value": 130,
+      "unit": "kW"
+     },
+     "torque": {
+      "value": 380,
+      "unit": "Nm"
+     },
+     "src": "dex",
+     "quotes": [
+      "1.3 DIG-T 1.6 DIG-T 1.6 dCi 1.7 dCi 2.0 dCi",
+      "1598 cm³ 1749 cm³ 1995 cm³",
+      "130 kW (177 PS)/3750",
+      "380 Nm/2000"
+     ]
+    }
+   ],
+   "changes": [
+    {
+     "id": "c1",
+     "topic": "chassis",
+     "text": "Moved to the new CMF-CD platform, as a common successor to the X-Trail T31 and the Rogue S35.",
+     "src": "wx",
+     "quote": "Based on an all-new CMF-CD platform shared with the Nissan Qashqai and Renault Koleos, the vehicle is a common successor for the second generation X-Trail and the Rogue that is offered in North America."
+    },
+    {
+     "id": "c2",
+     "topic": "design",
+     "text": "The squared-off lines of the previous X-Trail were replaced by a crossover-style design.",
+     "vs": "nissan-x-trail-rogue-t31",
+     "src": "gx13",
+     "quote": "In place of the rugged, squared off lines of the previous generation, new X-Trail has a premium and dynamic appearance."
+    },
+    {
+     "id": "c3",
+     "topic": "weight",
+     "text": "A largely plastic tailgate saves 7 kg, despite a larger surface area than the previous X-Trail.",
+     "vs": "nissan-x-trail-rogue-t31",
+     "src": "gx13",
+     "quote": "This has been achieved on all counts by reducing weight wherever possible, even though new X-Trail has a larger surface area than the previous model. The tailgate, for example, is largely plastic, saving seven kilograms."
+    },
+    {
+     "id": "c4",
+     "topic": "dimensions",
+     "text": "A longer wheelbase gives more second-row knee room.",
+     "vs": "nissan-x-trail-rogue-t31",
+     "src": "gx13",
+     "quote": "Middle row seat comfort has been improved thanks to extra knee room generated by the longer wheelbase"
+    },
+    {
+     "id": "c5",
+     "topic": "interior",
+     "text": "Three-row, seven-seat versions were added in Japan alongside the five-seat versions.",
+     "vs": "nissan-x-trail-rogue-t31",
+     "src": "gj131024",
+     "quote": "In addition to two-row five-passenger grades, three-row seven-passenger grades are newly added."
+    },
+    {
+     "id": "c6",
+     "topic": "interior",
+     "text": "Optional three-row, seven-passenger seating was offered in the Rogue for the first time.",
+     "vs": "nissan-x-trail-rogue-s35",
+     "src": "gr13",
+     "quote": "For the first time, Rogue will offer optional 3-row/7-passenger seating, thanks to its improved interior packaging efficiency."
+    },
+    {
+     "id": "c7",
+     "topic": "technology",
+     "text": "Active Ride Control and Active Engine Brake were introduced.",
+     "src": "gj131211",
+     "quote": "Advanced technologies, including world's first Active Ride Control and Active Engine Brake, and Cornering Stability Assist, are adopted in all grades"
+    }
+   ],
+   "revisions": [
+    {
+     "id": "r1",
+     "slug": "2017-facelift",
+     "kind": "facelift",
+     "name": "Facelift (2017)",
+     "dates": {
+      "salesStart": {
+       "value": "2017-09",
+       "market": "EU",
+       "src": "dex",
+       "quote": "Im September 2017 wurde der X-Trail einer Modellpflege unterzogen."
+      }
+     },
+     "changes": [
+      {
+       "id": "r1c1",
+       "topic": "design",
+       "text": "Larger grille, wider chrome surround and square fog lamps; revised rear bumper and LED tail lights.",
+       "src": "dex",
+       "quote": "Die Frontpartie besitzt einen größeren Grill. Außerdem ist die Chromspange nun breiter und markanter. Die Nebelscheinwerfer sind ab sofort eckig. Im Heckbereich gibt es einen geänderten Stoßfänger und Rückleuchten in LED-Technik."
+      },
+      {
+       "id": "r1c2",
+       "topic": "dimensions",
+       "text": "Boot volume rose by 15 litres to 565 litres (European figure).",
+       "src": "dex",
+       "quote": "Der Kofferraum hat nun ein Volumen von 565 Liter (+15 Liter)."
+      },
+      {
+       "id": "r1c3",
+       "topic": "design",
+       "text": "The Rogue was facelifted for the 2017 model year with restyled headlights and tail lights and standard LED daytime running lights.",
+       "src": "wr",
+       "quote": "The Rogue was facelifted for the 2017 model year, with restyled headlights and tail lights, and LED daytime running lights standard on all trim levels."
+      }
+     ]
+    }
+   ],
+   "commons": {
+    "generation": "Category:Nissan X-Trail (T32)",
+    "revisions": {
+     "r1": "Category:Nissan X-Trail (T32, facelift)"
+    }
+   },
+   "notes": [
+    "First generation sold as both X-Trail and (in the US and Canada) Rogue. Specifications differ by market: the US Rogue used the 2.5 QR25DE (170 hp) and, for 2017–2019, a hybrid; the European X-Trail used 1.3/1.6 petrol and 1.6/1.7/2.0 diesel engines; the Japanese X-Trail used the 2.0 MR20DD (and later a hybrid). Records are kept separate by market.",
+    "Ordinal 3 is the X-Trail count; for the Rogue line this is the second generation.",
+    "Production end 2022 is from Wikipedia's X-Trail infobox; the Rogue T32 ended with the 2020 model year, and Dongfeng Nissan continued building the T32 in China as the X-Trail Honor (2021–2023) and X-Trail Classic (2023–).",
+    "Rogue third-row seating was dropped for the 2018 model year (Wikipedia: 'For the 2018 model year, Nissan decided to drop the third row option').",
+    "Dimensions: only Wikipedia infobox figures were found (Rogue article: 182.7 in long; X-Trail article gives ranges of 4,640–4,690 mm, so only the wheelbase is recorded for the X-Trail). No manufacturer dimension sheet for T32 was readable.",
+    "Seating: 5- and 7-seat versions are documented in words by Nissan (\"two-row five-passenger grades, three-row seven-passenger grades\"), but no quotable digits were found, so the seating field is left empty.",
+    "The 2017 facelift dates differ: European facelift September 2017 (German Wikipedia), 2017 model year in North America (Rogue), October 2016 per English Wikipedia's X-Trail article. English Wikipedia's X-Trail facelift paragraph appears to reuse North American Rogue text (S/SV/SL trims, Divide-N-Hide) and was not used for X-Trail facts.",
+    "The European powertrain records come from German Wikipedia's specification table, where the columns are 1.3 DIG-T, 1.6 DIG-T, 1.6 dCi, 1.7 dCi and 2.0 dCi; values were matched to engines by column order and should be double-checked.",
+    "Commons also has 'Category:Nissan Rogue (T32)' (90 files) for the North American model."
+   ]
+  },
+  {
+   "id": "nissan-x-trail-rogue-t33",
+   "slug": "t33",
+   "ordinal": 4,
+   "lines": [
+    "x-trail",
+    "rogue"
+   ],
+   "name": "Fourth generation X-Trail / third generation Rogue",
+   "codes": [
+    {
+     "value": "T33",
+     "kind": "model code",
+     "src": "wx",
+     "quote": "Model code T33"
+    }
+   ],
+   "names": [
+    {
+     "value": "Rogue",
+     "markets": [
+      "US",
+      "CA"
+     ],
+     "src": "wx",
+     "quote": "Also called Nissan Rogue (US and Canada)"
+    },
+    {
+     "value": "X-Trail",
+     "markets": [
+      "JP"
+     ],
+     "src": "gxt22",
+     "quote": "Nissan today launched the all-new X-Trail in Japan"
+    },
+    {
+     "value": "X-Trail",
+     "markets": [
+      "EU"
+     ],
+     "src": "ie22",
+     "quote": "the regional premiere of the all-new, fourth generation X-Trail"
+    }
+   ],
+   "dates": {
+    "revealed": {
+     "value": "2020-06-15",
+     "event": "Rogue reveal (North America)",
+     "src": "wr",
+     "quote": "The third generation Rogue was revealed in North America on 15 June 2020."
+    },
+    "productionStart": {
+     "value": "2020-09-22",
+     "src": "r21",
+     "quote": "September 22, 2020 U.S. production for all-new 2021 Nissan Rogue starts in Tennessee"
+    },
+    "salesStart": [
+     {
+      "value": "2020-10",
+      "market": "US",
+      "src": "wr",
+      "quote": "Production in the United States began on 22 September 2020, and the vehicle arrived at Nissan dealerships in the United States in late October."
+     },
+     {
+      "value": "2021-04-19",
+      "market": "CN",
+      "src": "wx",
+      "quote": "The fourth-generation X-Trail (Chinese: 奇骏; pinyin: qí jùn) went on sale at Auto Shanghai 2021 on 19 April 2021."
+     },
+     {
+      "value": "2022-05",
+      "market": "AU",
+      "src": "wx",
+      "quote": "The fourth-generation X-Trail was introduced in Australia in May 2022."
+     },
+     {
+      "value": "2022-07-25",
+      "market": "JP",
+      "src": "gxt22",
+      "quotes": [
+       "July 20, 2022",
+       "Nissan today launched the all-new X-Trail in Japan, with sales starting on July 25."
+      ]
+     },
+     {
+      "value": "2022",
+      "market": "EU",
+      "src": "dex",
+      "quote": "Der europäische, der japanische und der australische Markt folgten im Sommer 2022."
+     },
+     {
+      "value": "2022-12-05",
+      "market": "MX",
+      "src": "wx",
+      "quote": "The fourth-generation X-Trail went on sale in Mexico on 5 December 2022"
+     }
+    ],
+    "modelYears": [
+     {
+      "market": "NA",
+      "from": 2021,
+      "to": 2027,
+      "src": "wr",
+      "quote": "Model years 2021–2027"
+     }
+    ]
+   },
+   "ongoing": true,
+   "platform": {
+    "value": "Alliance CMF-C platform",
+    "src": "ie22",
+    "quote": "Thanks to the new Alliance CMF-C platform"
+   },
+   "assembly": [
+    {
+     "value": "Smyrna, Tennessee, United States (Rogue)",
+     "src": "wx",
+     "quote": "United States: Smyrna, Tennessee (Nissan USA, Rogue)"
+    },
+    {
+     "value": "Kanda, Fukuoka, Japan (Nissan Motor Kyushu)",
+     "src": "wx",
+     "quote": "Japan: Kanda, Fukuoka (Nissan Motor Kyushu)"
+    },
+    {
+     "value": "Dalian and Zhengzhou, China (Dongfeng Nissan, X-Trail)",
+     "src": "wx",
+     "quote": "China: Dalian, Liaoning; Zhengzhou, Henan (Dongfeng Nissan, X-Trail)"
+    }
+   ],
+   "bodyStyles": [
+    {
+     "id": "b1",
+     "value": "5-door SUV",
+     "markets": [
+      "global"
+     ],
+     "src": "wx",
+     "quote": "Body style 5-door SUV"
+    }
+   ],
+   "seating": {
+    "options": [
+     5,
+     7
+    ],
+    "src": "wx",
+    "quote": "The S 2WD variant can be configured as a 5-seater, while the S, SV, and SL 4WD variants are offered with a 7-seater option."
+   },
+   "drivetrains": [
+    {
+     "value": "FWD",
+     "markets": [
+      "US"
+     ],
+     "src": "r21",
+     "quote": "Drive configuration Front engine AWD Front engine FWD"
+    },
+    {
+     "value": "AWD",
+     "system": "Intelligent All-Wheel Drive",
+     "markets": [
+      "US"
+     ],
+     "src": "r21",
+     "quote": "Drive configuration Front engine AWD Front engine FWD"
+    },
+    {
+     "value": "AWD",
+     "system": "e-4ORCE (twin electric motors)",
+     "markets": [
+      "JP"
+     ],
+     "src": "gxt22",
+     "quote": "The 4WD X-Trail is equipped with e-4ORCE"
+    },
+    {
+     "value": "AWD",
+     "system": "e-4ORCE (twin electric motors)",
+     "markets": [
+      "EU"
+     ],
+     "src": "ie22",
+     "quote": "A new all-wheel drive system designed to work with Nissan’s electrified powertrains is introduced on the all-new X-Trail in Europe."
+    },
+    {
+     "value": "FWD",
+     "markets": [
+      "EU"
+     ],
+     "src": "ie22",
+     "quote": "it will be offered only in two-wheel drive configuration"
+    }
+   ],
+   "dimensions": [
+    {
+     "id": "d1",
+     "market": "US",
+     "version": "Rogue, 2021 model year",
+     "unit": "in",
+     "width": 72.4,
+     "height": 66.5,
+     "wheelbase": 106.5,
+     "src": "r21",
+     "quotes": [
+      "Wheelbase 106.5 Overall length 183.0 Overall width 72.4 Overall height 66.5"
+     ]
+    },
+    {
+     "id": "d2",
+     "market": "US",
+     "version": "Rogue, 2027 model year",
+     "unit": "in",
+     "length": 184.4,
+     "width": 72.4,
+     "height": 67.9,
+     "wheelbase": 106.5,
+     "src": "r27",
+     "quotes": [
+      "Wheelbase 106.5 Overall length 184.4 Overall width 72.4 Overall height 67.9"
+     ]
+    },
+    {
+     "id": "d3",
+     "market": "unstated",
+     "version": "X-Trail",
+     "unit": "mm",
+     "length": 4681,
+     "width": 1840,
+     "height": 1730,
+     "wheelbase": 2706,
+     "src": "wx",
+     "quotes": [
+      "Wheelbase 2,706 mm (106.5 in)",
+      "Length 4,681 mm (184.3 in)",
+      "Width 1,840 mm (72.4 in)",
+      "Height 1,730 mm (68.1 in)"
+     ]
+    }
+   ],
+   "cargo": [
+    {
+     "id": "k1",
+     "market": "US",
+     "version": "Rogue, 2021 model year",
+     "behind": "1st row",
+     "value": 74.1,
+     "unit": "cu ft",
+     "standard": "not stated",
+     "src": "r21",
+     "quote": "Cargo w/2nd row seat folded down w/2nd row seat upright (forward most position) 74.1"
+    },
+    {
+     "id": "k2",
+     "market": "EU",
+     "version": "7-seat, third row folded",
+     "behind": "2nd row",
+     "value": 585,
+     "unit": "L",
+     "standard": "not stated",
+     "src": "ie22",
+     "quote": "When the two rear seats are not in use, the resulting trunk space puts the X-Trail among the top-runners in its category for luggage space with a total capacity of 585 litres"
+    },
+    {
+     "id": "k3",
+     "market": "unstated",
+     "version": "X-Trail",
+     "behind": "2nd row",
+     "value": 560,
+     "unit": "L",
+     "standard": "not stated",
+     "src": "wx",
+     "quote": "The boot capacity is measured at 560 L of storage capacity with the second row seats in place"
+    }
+   ],
+   "powertrains": [
+    {
+     "id": "p1",
+     "name": "2.5 (PR25DD)",
+     "market": "US",
+     "fuel": "petrol",
+     "years": "2021 model year",
+     "engine": "2.5 L PR25DD DOHC I4, direct injection",
+     "cylinders": 4,
+     "displacement": 2488,
+     "power": {
+      "value": 181,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 181,
+      "unit": "lb-ft"
+     },
+     "transmission": "Xtronic CVT",
+     "src": "r21",
+     "quotes": [
+      "Name PR25DD",
+      "Displacement (liters) 2.5 (2488 cc) Horsepower 181 @ 6,000 rpm Torque (lb-ft) 181 @ 3,600 rpm",
+      "Transmission type Xtronic with manual shift mode with paddle shifters"
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "1.5 VC-Turbo (KR15DDT)",
+     "market": "US",
+     "fuel": "petrol",
+     "years": "from 2022 model year",
+     "engine": "1.5 L KR15DDT turbo I3, variable compression",
+     "cylinders": 3,
+     "displacement": 1498,
+     "power": {
+      "value": 201,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 225,
+      "unit": "lb-ft"
+     },
+     "transmission": "Xtronic CVT",
+     "src": "r22",
+     "quotes": [
+      "Name KR15DDT Cam design DOHC Orientation Transverse Cylinders / configuration 3-cylinder / inline",
+      "Displacement (liters) 1.5 (1498 cc) Horsepower 201 @ 5,600 rpm Torque (lb-ft) 225 @ 2,800 – 4,000 rpm",
+      "Transmission type Xtronic with manual shift mode with paddle shifters"
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "e-POWER (2WD)",
+     "market": "JP",
+     "fuel": "hybrid",
+     "engine": "1.5 L KR15DDT VC-Turbo generator engine + electric motor (series hybrid)",
+     "drivetrain": "FWD",
+     "src": "gxt22",
+     "quotes": [
+      "The system’s gasoline engine, the world’s first mass-produced variable compression ratio engine, serves as a generator to produce electricity.",
+      "2WD KR15DDT-BM46"
+     ]
+    },
+    {
+     "id": "p4",
+     "name": "e-POWER e-4ORCE",
+     "market": "JP",
+     "fuel": "hybrid",
+     "engine": "1.5 L KR15DDT VC-Turbo generator engine + front and rear electric motors (series hybrid)",
+     "drivetrain": "AWD",
+     "src": "gxt22",
+     "quotes": [
+      "The 4WD X-Trail is equipped with e-4ORCE",
+      "4WD （e-4ORCE） KR15DDT- BM46-MM48"
+     ]
+    },
+    {
+     "id": "p5",
+     "name": "e-POWER (2WD)",
+     "market": "EU",
+     "fuel": "hybrid",
+     "engine": "1.5 L variable-compression turbo petrol generator + 150 kW front electric motor (series hybrid)",
+     "power": {
+      "value": 150,
+      "unit": "kW"
+     },
+     "drivetrain": "FWD",
+     "src": "ie22",
+     "quotes": [
+      "For Europe it has been upgraded to a 1.5-litre Variable Compression Ratio turbo petrol engine, with a final system power output of 150kW (204PS)."
+     ]
+    },
+    {
+     "id": "p6",
+     "name": "e-POWER e-4ORCE",
+     "market": "EU",
+     "fuel": "hybrid",
+     "engine": "1.5 L variable-compression turbo petrol generator + front and rear (94 kW) electric motors",
+     "power": {
+      "value": 157,
+      "unit": "kW"
+     },
+     "drivetrain": "AWD",
+     "src": "ie22",
+     "quotes": [
+      "The powerful dual e-motor system has a total output of 157kW (213PS) thanks to the rear 94kW motor"
+     ]
+    },
+    {
+     "id": "p7",
+     "name": "1.5 VC-T mild hybrid",
+     "market": "EU",
+     "fuel": "mild hybrid",
+     "engine": "1.5 L variable-compression turbo petrol, 12 V mild hybrid",
+     "power": {
+      "value": 120,
+      "unit": "kW"
+     },
+     "torque": {
+      "value": 300,
+      "unit": "Nm"
+     },
+     "transmission": "Xtronic CVT",
+     "drivetrain": "FWD",
+     "src": "ie22",
+     "quotes": [
+      "Generating 120kW (163PS) and 300Nm of torque, it will be offered only in two-wheel drive configuration, with power to the wheels being transmitted via Xtronic stepped continuously variable transmission.",
+      "The powertrain is also equipped with 12v mild hybrid technology."
+     ]
+    },
+    {
+     "id": "p8",
+     "name": "1.5 VC-Turbo",
+     "market": "CN",
+     "fuel": "petrol",
+     "engine": "1.5 L turbo I3, variable compression",
+     "cylinders": 3,
+     "src": "dex",
+     "quotes": [
+      "In China wird die Baureihe von einem aufgeladenen 1,5-Liter-Ottomotor mit drei Zylindern und variabler Verdichtung angetrieben."
+     ]
+    },
+    {
+     "id": "p9",
+     "name": "2.5 petrol",
+     "market": "AU",
+     "fuel": "petrol",
+     "engine": "2.5 L I4, port injection",
+     "src": "dex",
+     "quotes": [
+      "In Australien steht ein 2,5-Liter-Ottomotor mit Saugrohreinspritzung zur Verfügung."
+     ]
+    }
+   ],
+   "changes": [
+    {
+     "id": "c1",
+     "topic": "dimensions",
+     "text": "The Rogue body is 1.5 in shorter and 0.2 in lower than the previous Rogue.",
+     "vs": "nissan-x-trail-rogue-t32",
+     "src": "r21",
+     "quote": "The body itself measures 1.5 inches shorter and 0.2 inches lower than the previous generation Rogue"
+    },
+    {
+     "id": "c2",
+     "topic": "dimensions",
+     "text": "The X-Trail is 15 mm taller, 20 mm wider and 10 mm shorter, with the wheelbase unchanged.",
+     "vs": "nissan-x-trail-rogue-t32",
+     "src": "wx",
+     "quote": "The T33 X-Trail is 15 mm (0.6 in) taller, 20 mm (0.8 in) wider, 10 mm (0.4 in) shorter in length while the wheelbase is unchanged from the previous generation."
+    },
+    {
+     "id": "c3",
+     "topic": "powertrain",
+     "text": "In the Rogue the QR25DE was replaced by the direct-injected PR25DD, with 181 hp (+11 hp) and 181 lb-ft (+6 lb-ft).",
+     "vs": "nissan-x-trail-rogue-t32",
+     "src": "r21",
+     "quote": "Horsepower is rated at 181, an increase of 11 hp. Torque is increased by 6 lb.-ft. to 181 lb.-ft."
+    },
+    {
+     "id": "c4",
+     "topic": "powertrain",
+     "text": "No diesel engine is offered in this generation.",
+     "vs": "nissan-x-trail-rogue-t32",
+     "src": "wx",
+     "quote": "No diesel engine option is offered for this generation."
+    },
+    {
+     "id": "c5",
+     "topic": "powertrain",
+     "text": "The e-POWER series hybrid was introduced, using the variable-compression VC-Turbo engine as a generator.",
+     "vs": "nissan-x-trail-rogue-t32",
+     "src": "gxt22",
+     "quote": "The system’s gasoline engine, the world’s first mass-produced variable compression ratio engine, serves as a generator to produce electricity."
+    },
+    {
+     "id": "c6",
+     "topic": "chassis",
+     "text": "Completely redesigned platform with lower body weight and higher rigidity.",
+     "vs": "nissan-x-trail-rogue-t32",
+     "src": "gxt22",
+     "quote": "The all-new X-Trail features a completely redesigned platform that reduces body weight while increasing rigidity."
+    },
+    {
+     "id": "c7",
+     "topic": "dimensions",
+     "text": "European luggage capacity rose by 20 litres to 585 litres with the third row folded.",
+     "vs": "nissan-x-trail-rogue-t32",
+     "src": "ie22",
+     "quote": "a total capacity of 585 litres, an increase of 20 litres"
+    }
+   ],
+   "revisions": [
+    {
+     "id": "r1",
+     "slug": "2024-rogue-refresh",
+     "kind": "facelift",
+     "name": "Rogue refresh (2024 model year)",
+     "dates": {
+      "revealed": {
+       "value": "2023-10-16",
+       "src": "wr",
+       "quote": "The Rogue facelift was unveiled on 16 October 2023, for the 2024 model year."
+      }
+     },
+     "changes": [
+      {
+       "id": "r1c1",
+       "topic": "design",
+       "text": "New front and rear fascia design.",
+       "src": "r24",
+       "quote": "Fresh look for Rogue includes new, bolder front and rear fascia design"
+      },
+      {
+       "id": "r1c2",
+       "topic": "technology",
+       "text": "First Nissan with Google built-in (SL and Platinum).",
+       "src": "r24",
+       "quote": "Rogue is the first Nissan with Google built-in"
+      },
+      {
+       "id": "r1c3",
+       "topic": "powertrain",
+       "text": "The 2.5-litre PR25DD was dropped in Canada in favour of the 1.5-litre KR15DDT.",
+       "src": "wr",
+       "quote": "The 2.5-liter PR25DD four-cylinder was fully dropped in Canada in favor of the 1.5-liter KR15DDT three-cylinder."
+      }
+     ]
+    },
+    {
+     "id": "r2",
+     "slug": "2025-japan-update",
+     "kind": "update",
+     "name": "X-Trail update (2025)",
+     "dates": {
+      "salesStart": {
+       "value": "2025-08-21",
+       "src": "wx",
+       "quote": "The facelifted X-Trail was launched on 21 August 2025, the Nismo and the Rock Creek variants was added."
+      }
+     },
+     "changes": [
+      {
+       "id": "r2c1",
+       "topic": "other",
+       "text": "Nismo and Rock Creek variants were added.",
+       "src": "wx",
+       "quote": "the Nismo and the Rock Creek variants was added"
+      }
+     ]
+    },
+    {
+     "id": "r3",
+     "slug": "2026-facelift",
+     "kind": "facelift",
+     "name": "X-Trail facelift (2026)",
+     "dates": {
+      "revealed": {
+       "value": "2026-03",
+       "src": "dex",
+       "quote": "Eine überarbeitete Version der Baureihe präsentierte Nissan im März 2026."
+      }
+     }
+    }
+   ],
+   "commons": {
+    "generation": "Category:Nissan X-Trail (T33)",
+    "revisions": {
+     "r3": "Category:Nissan X-Trail (2025)"
+    }
+   },
+   "notes": [
+    "The Rogue (US/Canada, built in Smyrna and Kyushu) appeared first (revealed June 2020, 2021 model year); the X-Trail followed in China in April 2021, Australia in May 2022, Japan in July 2022 and Europe in 2022. The generation-level reveal date is the Rogue's; the X-Trail was unveiled at Auto Shanghai on 19 April 2021 (Wikipedia).",
+    "Engines differ by market and must not be mixed: US Rogue 2.5 PR25DD (2021) then 1.5 KR15DDT VC-Turbo (2022–; Canada kept the 2.5 on the base model until the 2024 refresh); Japan e-POWER only; Europe e-POWER (2WD 150 kW / e-4ORCE 157 kW) and a 1.5 VC-T mild hybrid (120 kW); Australia, Middle East and Mexico a 2.5-litre petrol; China a 1.5 VC-Turbo.",
+    "The 2021 Rogue press kit lists overall length as 183.0 in; it is omitted from record d1 only because the automated checker cannot match a trailing '.0'. The 2027 Rogue press kit (still T33) lists 184.4 in and a height of 67.9 in.",
+    "Platform naming: Nissan Ireland says Alliance CMF-C; Wikipedia says CMF-CD.",
+    "The T33 Rogue continued for the 2027 model year (2027 Nissan Rogue press kit, KR15DDT engine) alongside the T34-based 2027 Rogue Hybrid.",
+    "Facelift dating is unclear: English Wikipedia says a facelifted X-Trail was launched on 21 August 2025 (Nismo and Rock Creek added; market not stated, apparently Japan), while German Wikipedia says a revised version was presented in March 2026. Commons 'Category:Nissan X-Trail (2025)' is used for the facelift; reviewers should confirm it matches r3.",
+    "The Japanese e-POWER output figures were not found in a readable Nissan source and are omitted.",
+    "Commons also has 'Category:Nissan Rogue (T33)' (63 files) for the North American model."
+   ]
+  },
+  {
+   "id": "nissan-x-trail-rogue-t34",
+   "slug": "t34",
+   "ordinal": 5,
+   "lines": [
+    "x-trail",
+    "rogue"
+   ],
+   "name": "Fifth generation X-Trail / fourth generation Rogue",
+   "codes": [
+    {
+     "value": "T34",
+     "kind": "model code",
+     "src": "wx",
+     "quote": "Model code T34"
+    }
+   ],
+   "names": [
+    {
+     "value": "Rogue Hybrid",
+     "markets": [
+      "US"
+     ],
+     "src": "rh27",
+     "quote": "The all-new 2027 Nissan Rogue Hybrid brings Nissan's globally proven hybrid e-POWER technology to the U.S. for the first time"
+    }
+   ],
+   "dates": {
+    "revealed": {
+     "value": "2026-04",
+     "src": "wx",
+     "quote": "The fifth-generation X-Trail (fourth-generation Rogue) was unveiled alongside the next-generation Juke on 14 April 2026."
+    },
+    "salesStart": [
+     {
+      "value": "2026",
+      "market": "US",
+      "src": "rh27",
+      "quote": "The 2027 Nissan Rogue Hybrid reaches dealers in fall 2026"
+     }
+    ],
+    "modelYears": [
+     {
+      "market": "US",
+      "from": 2027,
+      "src": "rh27",
+      "quote": "The all-new 2027 Nissan Rogue Hybrid"
+     }
+    ]
+   },
+   "platform": {
+    "value": "Renault–Nissan CMF-CD platform",
+    "src": "wr",
+    "quote": "Platform Renault–Nissan CMF-CD platform"
+   },
+   "assembly": [
+    {
+     "value": "Kyushu, Japan (Nissan Motor Kyushu)",
+     "src": "rh27",
+     "quote": "Rogue Hybrid will be assembled at Nissan Motor Kyushu in Japan."
+    }
+   ],
+   "drivetrains": [
+    {
+     "value": "AWD",
+     "system": "dual-motor electric AWD",
+     "markets": [
+      "US"
+     ],
+     "src": "rh27",
+     "quote": "Every Rogue Hybrid includes dual-motor electric all-wheel drive as standard"
+    }
+   ],
+   "dimensions": [
+    {
+     "id": "d1",
+     "market": "US",
+     "version": "Rogue Hybrid, 2027 model year",
+     "unit": "in",
+     "length": 183.1,
+     "width": 72.8,
+     "height": 67.7,
+     "wheelbase": 106.5,
+     "src": "rh27",
+     "quotes": [
+      "Wheelbase 106.5 Overall length 183.1 Overall width 72.8 Overall height 67.7"
+     ]
+    }
+   ],
+   "cargo": [
+    {
+     "id": "k1",
+     "market": "US",
+     "version": "Rogue Hybrid",
+     "behind": "1st row",
+     "value": 65.9,
+     "unit": "cu ft",
+     "standard": "not stated",
+     "src": "rh27",
+     "quote": "65.9 cubic feet with the seats lowered"
+    }
+   ],
+   "powertrains": [
+    {
+     "id": "p1",
+     "name": "e-POWER (Rogue Hybrid)",
+     "market": "US",
+     "fuel": "hybrid",
+     "years": "from 2027 model year",
+     "engine": "1.5 L turbo I3 generator engine (148 hp) + front (202 hp) and rear (134 hp) electric motors, series hybrid",
+     "displacement": 1498,
+     "power": {
+      "value": 225,
+      "unit": "hp"
+     },
+     "drivetrain": "AWD",
+     "src": "rh27",
+     "quotes": [
+      "Displacement (liters) 1.5 (1498 cc) Horsepower 148 @ 5,000 rpm Torque (lb-ft) 171 @ 3,600 rpm",
+      "Front electric motor Type AC synchronous permanent magnet Horsepower 202 @ 4,400-8,500 rpm Torque (lb-ft) 243 @ 0-4,300 rpm Rear electric motor Type AC synchronous permanent magnet Horsepower 134 @ 5,500-9,600 rpm Torque (lb-ft) 144 @ 0-3,000 rpm Total system output (HP) 225"
+     ]
+    }
+   ],
+   "changes": [
+    {
+     "id": "c1",
+     "topic": "powertrain",
+     "text": "First Rogue offered with the e-POWER series hybrid drivetrain.",
+     "vs": "nissan-x-trail-rogue-t33",
+     "src": "wr",
+     "quote": "It is the first Rogue to be available with Nissan's e-Power series hybrid drivetrain, as well as being the first e-Power model to go on sale in the US."
+    },
+    {
+     "id": "c2",
+     "topic": "dimensions",
+     "text": "A thinner inner liftgate trim adds about 1.75 in of cargo length compared with the outgoing Rogue.",
+     "vs": "nissan-x-trail-rogue-t33",
+     "src": "rh27",
+     "quote": "The inner liftgate trim is thinner than in the outgoing Rogue, so there's about 1.75 inches of additional length available in the trunk."
+    },
+    {
+     "id": "c3",
+     "topic": "interior",
+     "text": "Climate-controlled seats became available for the first time in a Rogue.",
+     "vs": "nissan-x-trail-rogue-t33",
+     "src": "rh27",
+     "quote": "For the first time in Rogue, climate-controlled seats are available."
+    },
+    {
+     "id": "c4",
+     "topic": "technology",
+     "text": "ProPILOT Assist gained a new front radar, a front camera with a 20% wider field of view and updated software compared with the 2026 Rogue.",
+     "vs": "nissan-x-trail-rogue-t33",
+     "src": "rh27",
+     "quote": "A new front radar sensor, a new front camera with a 20% wider field of view and updated software help the system operate more naturally across a wider range of driving situations, compared to the 2026 Rogue."
+    }
+   ],
+   "notes": [
+    "Only the US Rogue Hybrid is documented here from Nissan's 2027 Rogue Hybrid press kit; X-Trail (non-US) specifications for T34 were not found in a readable source.",
+    "Reveal date conflict: English Wikipedia's X-Trail article says 14 April 2026, its Rogue article says April 13, 2026; recorded only to the month.",
+    "No production start date was found; Nissan says the Rogue Hybrid reaches US dealers in fall 2026 (SR AWD first, full range early 2027).",
+    "Cargo behind the second row conflicts within the Nissan press kit: 31.1 cu ft in the text and 34.4 cu ft in the specification table; neither is recorded.",
+    "The T34 is sold in the US alongside the carried-over T33 Rogue (petrol, 2027 model year). A separate Rogue Plug-in Hybrid (2026) is a rebadged Mitsubishi Outlander PHEV and is not part of this generation.",
+    "Commons: 'Category:Nissan X-Trail (T34)' (subcategory 'Nissan X-Trail e-Power (T34)') and 'Category:Nissan Rogue (T34)' (subcategory 'Nissan Rogue e-Power') exist but held no direct files when checked."
+   ],
+   "commons": {
+    "generation": "Category:Nissan X-Trail (T34)"
+   }
+  }
+ ]
+}

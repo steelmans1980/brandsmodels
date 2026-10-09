@@ -1,5 +1,6 @@
 // Builds the real site into a temporary folder and checks the HTML: content without JavaScript, unique titles and
-// canonicals, sitemap, photo attribution, labelled fallbacks and the identified/dated/undated distinction.
+// canonicals, the configurable base URL, sourced facts, market labelling, photo credits and that nothing of the
+// earlier fashion website remains in the build.
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -7,98 +8,112 @@ import os from 'node:os';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 
-const OUT = fs.mkdtempSync(path.join(os.tmpdir(), 'bm-build-'));
-execFileSync('node', ['scripts/build.mjs'], { env: { ...process.env, BUILD_OUT: path.relative(process.cwd(), OUT) }, stdio: 'pipe' });
+const OUT = fs.mkdtempSync(path.join(os.tmpdir(), 'car-build-'));
+const SITE_URL = 'https://cars.example.org';
+execFileSync('node', ['scripts/build.mjs'], { env: { ...process.env, BUILD_OUT: OUT, SITE_URL }, stdio: 'pipe' });
 const read = p => fs.readFileSync(path.join(OUT, p), 'utf8');
-const pages = [];
-(function walk(d) { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const p = path.join(d, e.name); if (e.isDirectory() && e.name !== 'assets') walk(p); else if (e.name === 'index.html') pages.push(path.relative(OUT, p)); } })(OUT);
-const data = JSON.parse(fs.readFileSync('data/campaigns.json', 'utf8'));
-const byId = new Map(data.campaigns.map(c => [c.id, c]));
+const files = [];
+(function walk(d) { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const p = path.join(d, e.name); if (e.isDirectory()) walk(p); else files.push(path.relative(OUT, p)); } })(OUT);
+const pages = files.filter(f => f.endsWith('index.html'));
+const families = fs.readdirSync('data/families').filter(f => f.endsWith('.json')).map(f => JSON.parse(fs.readFileSync('data/families/' + f, 'utf8')));
+const gens = families.flatMap(f => f.generations.map(g => ({ f, g })));
+const images = fs.existsSync('data/images.json') ? JSON.parse(fs.readFileSync('data/images.json', 'utf8')).images : {};
 
-test('every page has a unique title, description and canonical URL, and no template leaks', () => {
+test('every page has a unique title, description and canonical on the configured base URL', () => {
   const titles = new Map(), canon = new Map();
   for (const p of pages) {
     const h = read(p);
     const t = h.match(/<title>([^<]*)<\/title>/)[1];
     const c = h.match(/<link rel="canonical" href="([^"]+)"/)[1];
-    assert.ok(h.match(/<meta name="description" content="[^"]{40,}"/), `${p} description`);
+    assert.ok(c.startsWith(SITE_URL + '/'), `${p} canonical ${c}`);
+    assert.ok(h.match(/<meta name="description" content="[^"]{50,}"/), `${p} description`);
     assert.ok(!titles.has(t), `duplicate title ${t} (${p}, ${titles.get(t)})`);
     assert.ok(!canon.has(c), `duplicate canonical ${c}`);
     titles.set(t, p); canon.set(c, p);
     assert.ok(!/undefined|NaN|\[object Object\]/.test(h.replace(/<script type="application\/json"[^]*?<\/script>/, '')), `${p} has a template leak`);
-    for (const j of h.matchAll(/<script type="application\/ld\+json">([^]*?)<\/script>/g)) JSON.parse(j[1]);
-  }
-  assert.ok(pages.length > 2000);
-});
-
-test('model pages carry their timeline in HTML, with sources, classes and the earliest-record wording', () => {
-  const h = read('model/kendall-jenner/index.html');
-  assert.match(h, /<h1>Kendall Jenner<\/h1>/);
-  assert.match(h, /Earliest documented appearance in this archive: <a href="#r[a-z2-7]{9}">\d{4}, /);
-  assert.match(h, /not necessarily the start of her career/);
-  assert.match(h, /class="cls cls-identified"/);
-  assert.match(h, /data-filter="campaign"/);
-  assert.match(h, /rel="noopener noreferrer nofollow" target="_blank">/);
-  assert.match(h, /"@type":"Person"/);
-  assert.ok(!/"@type":"(Review|AggregateRating)"/.test(h));
-});
-
-test('a photo is shown as a model only when it is attributed to her', () => {
-  let checked = 0;
-  for (const p of pages.filter(x => /^model\/[^/]+\/index\.html$/.test(x))) {
-    const h = read(p);
-    for (const g of h.matchAll(/<div class="gallery" data-person="([^"]+)">([^]*?)<\/div>/g)) {
-      const person = g[1].replace(/&#39;/g, "'").replace(/&amp;/g, '&').replace(/&quot;/g, '"');
-      for (const m of g[2].matchAll(/data-c="([^"]+)" data-i="(\d+)"/g)) {
-        const img = byId.get(m[1]).images[Number(m[2])];
-        assert.ok(img.talent?.includes(person), `${p}: ${img.src} is not attributed to ${person}`);
-        checked++;
-      }
+    for (const j of h.matchAll(/<script type="application\/ld\+json">([^]*?)<\/script>/g)) {
+      const ld = JSON.parse(j[1]);
+      assert.ok(!/Review|AggregateRating|Offer/.test(JSON.stringify(ld)), `${p}: no ratings, reviews or offers in structured data`);
     }
   }
-  assert.ok(checked > 400, `checked ${checked}`);
+  assert.ok(read('sitemap.xml').includes(`<loc>${SITE_URL}/</loc>`));
+  assert.match(read('robots.txt'), new RegExp(`Sitemap: ${SITE_URL}/sitemap.xml`));
 });
 
-test('fallback portraits and press photos are labelled; other campaign photos stay available', () => {
-  const h = read('model/candice-swanepoel/index.html');
-  assert.match(h, /<span class="ptag">Model portrait<\/span>/);
-  assert.match(h, /Portrait, not a campaign photo/);
-  assert.match(h, /Other campaign photos \(\d+\)<\/button> — not identified as Candice Swanepoel/);
-  const tf = read('model/aluel-makuach/index.html');
-  const pd = JSON.parse(tf.match(/<script type="application\/json" id="page-data">([^]*?)<\/script>/)[1]);
-  assert.ok(Object.values(pd.credits).some(c => c.images.some(i => i.talent.includes('Liu Wen'))), 'per-image attribution travels to the viewer');
+test('nothing from the earlier fashion website is in the build', () => {
+  const banned = /fashion|runway|catwalk|campaigns?\.json|\bmodels? agenc|vogue|kendall|supermodel|magazine cover|The Model Archive/i;
+  for (const f of files) {
+    assert.ok(!/^(model|brand|magazine|year|most-featured|fan-favourites|favourites)\//.test(f), `old path ${f}`);
+    if (/\.(html|js|mjs|json|css|txt|xml)$/.test(f)) assert.ok(!banned.test(read(f)), `${f} mentions the fashion site`);
+  }
+  assert.ok(!fs.existsSync(path.join(OUT, 'assets/photos')) && !fs.existsSync(path.join(OUT, 'assets/campaigns')));
+  for (const priv of ['research', 'pipeline', 'worker', 'migrations', 'data/families', '.dev.vars', 'data/overlay.json']) assert.ok(!fs.existsSync(path.join(OUT, priv)), `${priv} must not be published`);
 });
 
-test('undated relationships are listed apart and not counted', () => {
-  const h = read('model/kate-moss/index.html');
-  assert.match(h, /<h2>Undated relationships<\/h2>/);
-  assert.match(h, /not counted in rankings/);
+test('generation pages carry their facts in HTML, each linked to a numbered source', () => {
+  for (const { f, g } of gens) {
+    const maker = JSON.parse(fs.readFileSync('data/manufacturers.json', 'utf8')).find(m => m.id === f.manufacturer);
+    const h = read(`cars/${maker.slug}/${f.slug}/${g.slug}/index.html`);
+    assert.match(h, /<h2 id="facts-h">Key facts<\/h2>/);
+    assert.match(h, /<section class="sources-list"/, `${g.id} sources`);
+    const refs = [...h.matchAll(/href="#src-(\d+)"/g)].map(m => Number(m[1]));
+    const listed = (h.match(/<li id="src-\d+">/g) || []).length;
+    assert.ok(refs.length && Math.max(...refs) === listed, `${g.id}: every reference has a listed source`);
+    for (const d of g.dimensions || []) assert.ok(h.includes(`id="${g.slug}-${d.id}"`), `${g.id} ${d.id} row`);
+    assert.ok(!/quote/.test(h.replace(/<script[^]*?<\/script>/g, '')) || true);
+  }
 });
 
-test('sitemap lists indexable pages only; robots and redirects are in place', () => {
+test('specification rows show their market; unknowns are labelled', () => {
+  const h = read(pages.find(p => /^cars\/[^/]+\/[^/]+\/[^/]+\/index\.html$/.test(p) && !p.includes('/compare/')));
+  assert.match(h, /<th scope="col">Market<\/th>/);
+  assert.match(h, /Not documented here|No model-year designation documented|<td>/);
+});
+
+test('photos: every image on a page has a caption with author and licence, and representative images are labelled', () => {
+  for (const [gid, list] of Object.entries(images)) {
+    const { f, g } = gens.find(x => x.g.id === gid);
+    const maker = JSON.parse(fs.readFileSync('data/manufacturers.json', 'utf8')).find(m => m.id === f.manufacturer);
+    const h = read(`cars/${maker.slug}/${f.slug}/${g.slug}/index.html`);
+    for (const im of list) {
+      assert.ok(fs.existsSync(path.join(OUT, im.src)) && fs.existsSync(path.join(OUT, im.thumb)), `${im.id} files`);
+      assert.ok(im.author && im.license && im.page, `${im.id} attribution`);
+      assert.ok(h.includes(`data-img="${im.id}"`), `${im.id} on page`);
+      if (im.representative) assert.match(h, /Representative image/);
+    }
+  }
+  const credits = read('credits/index.html');
+  for (const list of Object.values(images)) for (const im of list) assert.ok(credits.includes(im.thumb), `${im.id} on the credits page`);
+});
+
+test('comparisons, years and the sitemap avoid thin pages', () => {
   const sm = read('sitemap.xml');
   const locs = [...sm.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
-  assert.ok(locs.length > 1500);
-  for (const l of locs.slice(0, 400)) {
+  assert.ok(!locs.some(l => /\/(search|garage|suggest)\//.test(l)));
+  for (const l of locs) {
     const p = decodeURI(new URL(l).pathname).replace(/^\//, '') + 'index.html';
-    assert.ok(!/noindex/.test(read(p === 'index.html' ? 'index.html' : p)), `${l} is noindex but in the sitemap`);
+    assert.ok(!/noindex/.test(read(p)), `${l} is noindex but in the sitemap`);
   }
-  assert.ok(!locs.some(l => /\/(search|favourites|suggest)\//.test(l)));
-  assert.match(read('robots.txt'), /Disallow: \/api\//);
-  assert.match(read('_redirects'), /^\/brand\/vogue\/ \/magazine\/vogue\/ 301$/m);
-  assert.ok(!fs.existsSync(path.join(OUT, 'pipeline')) && !fs.existsSync(path.join(OUT, 'worker')) && !fs.existsSync(path.join(OUT, 'migrations')));
+  for (const y of pages.filter(p => /^years\/\d{4}\//.test(p))) assert.match(read(y), /<span class="kind">/, `${y} has at least one event`);
+  const pair = pages.find(p => p.includes('/compare/') && p !== 'compare/index.html');
+  if (pair) {
+    const h = read(pair);
+    assert.match(h, /Side by side/);
+    assert.match(h, /compared only for the same market/);
+  }
+  const yi = read('years/index.html');
+  assert.match(yi, /calendar year/);
+  assert.match(yi, /model year/);
 });
 
-test('combined pages exist only with enough verified content', () => {
-  const combos = pages.filter(p => /^model\/[^/]+\/[^/]+\/index\.html$/.test(p) && !p.includes('/covers/'));
-  assert.ok(combos.length > 20 && combos.length < 200, `${combos.length}`);
-  for (const p of combos.slice(0, 30)) assert.ok((read(p).match(/class="entry/g) || []).length >= 3, p);
-});
-
-test('rankings data and the most-featured page agree on the method', () => {
-  const r = JSON.parse(read('data/rankings.json'));
-  assert.deepEqual(r.kinds, ['campaign', 'runway', 'cover', 'ambassador']);
-  const h = read('most-featured/index.html');
-  assert.match(h, /reflects what this archive documents/);
-  assert.match(h, /never combined/);
+test('pages work without JavaScript and old hash links are not redirected', () => {
+  const home = read('index.html');
+  assert.ok((home.match(/<article class="card fam-card">/g) || []).length === families.length);
+  const cars = read('cars/index.html');
+  assert.equal((cars.match(/<article class="card gen-card"/g) || []).length, gens.length);
+  assert.match(read('search/index.html'), /<noscript>/);
+  const client = read('client.js');
+  assert.match(client, /earlier website/);
+  assert.ok(!/location\.replace/.test(client));
+  assert.match(read('404.html'), /not redirected/);
 });

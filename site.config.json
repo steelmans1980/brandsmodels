@@ -1,0 +1,5 @@
+{
+  "name": "The Car Archive",
+  "url": "https://brandsmodels.com",
+  "about": "Public base URL used for canonical links, Open Graph and the sitemap. The final domain is undecided: change \"url\" here, or set SITE_URL when building (for example in the Workers Builds build variables)."
+}

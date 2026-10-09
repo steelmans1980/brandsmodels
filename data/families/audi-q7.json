@@ -1,0 +1,1432 @@
+{
+  "id": "audi-q7",
+  "slug": "q7",
+  "manufacturer": "audi",
+  "name": "Audi Q7",
+  "lines": [
+    {
+      "id": "q7",
+      "name": "Q7"
+    }
+  ],
+  "sources": {
+    "wp": {
+      "url": "https://en.wikipedia.org/w/index.php?title=Audi_Q7&oldid=1376476779",
+      "title": "Audi Q7",
+      "publisher": "Wikipedia",
+      "type": "secondary",
+      "accessed": "2026-10-09"
+    },
+    "wpde4l": {
+      "url": "https://de.wikipedia.org/w/index.php?title=Audi_Q7_4L&oldid=263191743",
+      "title": "Audi Q7 4L",
+      "publisher": "Wikipedia (German)",
+      "type": "secondary",
+      "accessed": "2026-10-09"
+    },
+    "wpde4m": {
+      "url": "https://de.wikipedia.org/w/index.php?title=Audi_Q7_4M&oldid=268908440",
+      "title": "Audi Q7 4M",
+      "publisher": "Wikipedia (German)",
+      "type": "secondary",
+      "accessed": "2026-10-09"
+    },
+    "am24": {
+      "url": "https://www.audi-mediacenter.com/en/press-releases/strong-in-design-comfort-and-technologythe-revised-audi-q7-15849",
+      "title": "Strong in design, comfort, and technology: The revised Audi Q7",
+      "publisher": "Audi MediaCenter",
+      "type": "manufacturer",
+      "date": "2024-01-30",
+      "accessed": "2026-10-09"
+    },
+    "am24e": {
+      "url": "https://www.audi-mediacenter.com/en/press-releases/maximum-efficiency-in-ample-space-the-new-audi-q7-tfsi-e-quattro-and-q8-tfsi-e-quattro-16001",
+      "title": "Maximum efficiency in ample space: the new Audi Q7 TFSI e quattro and Q8 TFSI e quattro",
+      "publisher": "Audi MediaCenter",
+      "type": "manufacturer",
+      "date": "2024-04-23",
+      "accessed": "2026-10-09"
+    },
+    "am26": {
+      "url": "https://www.audi-mediacenter.com/en/press-releases/third-generation-of-the-successful-suv-new-audi-q7-combines-versatility-and-performance-18004",
+      "title": "Third generation of the successful SUV: new Audi Q7 combines versatility and performance",
+      "publisher": "Audi MediaCenter",
+      "type": "manufacturer",
+      "date": "2026-06-09",
+      "accessed": "2026-10-09"
+    }
+  },
+  "generations": [
+    {
+      "id": "audi-q7-4l",
+      "slug": "4l",
+      "ordinal": 1,
+      "lines": [
+        "q7"
+      ],
+      "name": "First generation",
+      "codes": [
+        {
+          "value": "4L",
+          "kind": "model code (Typ)",
+          "src": "wp",
+          "quote": "The Q7 (internally designated Typ 4L) utilizes a modified version of the Volkswagen Group PL71 platform."
+        }
+      ],
+      "dates": {
+        "revealed": {
+          "value": "2005-09",
+          "event": "Frankfurt Motor Show (IAA)",
+          "src": "wp",
+          "quote": "unveiled in September 2005 at the Frankfurt Motor Show"
+        },
+        "productionStart": {
+          "value": "2005-11",
+          "src": "wp",
+          "quote": "Production of the Q7 began in November 2005 at the Volkswagen Bratislava Plant in Bratislava, Slovakia."
+        },
+        "productionEnd": {
+          "value": "2015",
+          "src": "wp",
+          "quote": "Production November 2005 – 2015"
+        },
+        "salesStart": [
+          {
+            "value": "2006",
+            "market": "unstated",
+            "src": "wp",
+            "quote": "The Q7 was the first SUV sold by Audi and went on sale in 2006."
+          },
+          {
+            "value": "2006-07",
+            "market": "US",
+            "src": "wp",
+            "quote": "The production version went on sale in July 2006."
+          }
+        ],
+        "modelYears": [
+          {
+            "market": "EU",
+            "from": 2006,
+            "to": 2015,
+            "src": "wp",
+            "quote": "Model years 2006–2015 (Europe)"
+          },
+          {
+            "market": "NA",
+            "from": 2007,
+            "to": 2015,
+            "src": "wp",
+            "quote": "2007–2015 (North America)"
+          }
+        ]
+      },
+      "ongoing": false,
+      "platform": {
+        "value": "Volkswagen Group PL71",
+        "src": "wp",
+        "quote": "Platform Volkswagen Group PL71 platform"
+      },
+      "assembly": [
+        {
+          "value": "Bratislava, Slovakia (Volkswagen Bratislava Plant)",
+          "src": "wp",
+          "quote": "Assembly Slovakia: Bratislava (Volkswagen Bratislava Plant)\nIndia: Aurangabad (Audi India, CKD)"
+        },
+        {
+          "value": "Aurangabad, India (Audi India, CKD)",
+          "src": "wp",
+          "quote": "India: Aurangabad (Audi India, CKD)"
+        },
+        {
+          "value": "Kaluga, Russia (Volkswagen Group Rus)",
+          "src": "wp",
+          "quote": "Russia: Kaluga (Volkswagen Group Rus)"
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Body style 5-door SUV"
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "AWD",
+          "system": "quattro (Torsen centre differential)",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "it has a Quattro permanent four-wheel drive system with a Torsen self-locking central differential"
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "unstated",
+          "unit": "mm",
+          "length": 5085,
+          "width": 1984,
+          "height": 1737,
+          "wheelbase": 3002,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 3,002 mm (118.2 in)",
+            "Length 5,085 mm (200.2 in)",
+            "Width 1,984 mm (78.1 in)",
+            "Height 1,737 mm (68.4 in)"
+          ]
+        }
+      ],
+      "cargo": [
+        {
+          "id": "k1",
+          "market": "unstated",
+          "behind": "1st row",
+          "value": 2035,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "am24",
+          "quote": "a luggage compartment volume of up to 2,035 liters, the first generation of the Q7"
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "3.6 FSI",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2007–2009 (model years per table)",
+          "engine": "3.6 L VR6 FSI",
+          "displacement": 3597,
+          "cylinders": 6,
+          "power": {
+            "value": 280,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 360,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "3.6 FSI 2007–2009 3,597 cc (3.597 L; 219.5 cu in) VR6 FSI 280 PS (206 kW; 276 hp) at 6,200, 360 N⋅m"
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "4.2 FSI",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2007–2010 (model years per table)",
+          "engine": "4.2 L V8 FSI",
+          "displacement": 4163,
+          "cylinders": 8,
+          "power": {
+            "value": 350,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 440,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "4.2 FSI 2007–2010 4,163 cc (4.163 L; 254.0 cu in) V8 FSI 350 PS (257 kW; 345 hp) at 6,800, 440 N⋅m"
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "3.0 TFSI",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2010–",
+          "engine": "3.0 L supercharged V6 TFSI",
+          "displacement": 2995,
+          "cylinders": 6,
+          "power": {
+            "value": 272,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 400,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "3.0 TFSI quattro 2010– 2,995 cc (2.995 L; 182.8 cu in) supercharged V6 FSI 272 PS (200 kW; 268 hp) at 4,750–6,500, 400 N⋅m"
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "3.0 TFSI (333 PS)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2010–",
+          "engine": "3.0 L supercharged V6 TFSI",
+          "displacement": 2995,
+          "cylinders": 6,
+          "power": {
+            "value": 333,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 440,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "3.0 TFSI quattro S-Line 2010– 2,995 cc (2.995 L; 182.8 cu in) supercharged V6 FSI 333 PS (245 kW; 328 hp) at 5,500–6,500, 440 N⋅m"
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "3.0 TDI (233 PS)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2006–2007",
+          "engine": "3.0 L V6 turbo-diesel",
+          "displacement": 2967,
+          "cylinders": 6,
+          "power": {
+            "value": 233,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 500,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "3.0 TDI 2006–2007 2,967 cc (2.967 L; 181.1 cu in) V6 turbo 233 PS (171 kW; 230 hp) at 4,000, 500 N⋅m"
+          ]
+        },
+        {
+          "id": "p6",
+          "name": "3.0 TDI (240 PS)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2007–2009",
+          "engine": "3.0 L V6 turbo-diesel",
+          "displacement": 2967,
+          "cylinders": 6,
+          "power": {
+            "value": 240,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 550,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "3.0 TDI 2007–2009 2,967 cc (2.967 L; 181.1 cu in) V6 turbo 240 PS (177 kW; 237 hp) at 4,000–4,400, 550 N⋅m"
+          ]
+        },
+        {
+          "id": "p7",
+          "name": "3.0 TDI (150 kW)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "from November 2010",
+          "engine": "3.0 L V6 TDI",
+          "power": {
+            "value": 150,
+            "unit": "kW"
+          },
+          "src": "wpde4l",
+          "quotes": [
+            "Ab November 2010 gab es eine Einstiegsmotorisierung; Der 3.0 TDI wurde dabei auf 150 kW (204 PS) gedrosselt."
+          ]
+        },
+        {
+          "id": "p8",
+          "name": "4.2 TDI (326 PS)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2007–2009",
+          "engine": "4.2 L V8 turbo-diesel",
+          "displacement": 4134,
+          "cylinders": 8,
+          "power": {
+            "value": 326,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 760,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "4.2 TDi BTR 2007–2009 4,134 cc (4.134 L; 252.3 cu in) V8 turbo 326 PS (240 kW; 322 hp) at 3,750, 760 N⋅m"
+          ]
+        },
+        {
+          "id": "p9",
+          "name": "4.2 TDI (340 PS)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2009–",
+          "engine": "4.2 L V8 twin-turbo diesel",
+          "displacement": 4134,
+          "cylinders": 8,
+          "power": {
+            "value": 340,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 760,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "4.2 TDI quattro 2009– 4,134 cc (4.134 L; 252.3 cu in) V8 twin turbo 340 PS (250 kW; 335 hp) at 4,000, 760 N⋅m"
+          ]
+        },
+        {
+          "id": "p10",
+          "name": "V12 TDI",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2008–2012",
+          "engine": "6.0 L V12 twin-turbo diesel",
+          "displacement": 5934,
+          "cylinders": 12,
+          "power": {
+            "value": 500,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 1000,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "5.9 TDI 2008–2012 5,934 cc (5.934 L; 362.1 cu in) V12 twin turbo 500 PS (368 kW; 493 hp) at 3,750, 1,000 N⋅m"
+          ]
+        }
+      ],
+      "revisions": [
+        {
+          "id": "r1",
+          "slug": "2009-facelift",
+          "kind": "facelift",
+          "name": "Facelift",
+          "dates": {
+            "revealed": {
+              "value": "2009",
+              "event": "Pebble Beach Concours d'Elegance",
+              "src": "wp",
+              "quote": "The vehicle was unveiled at the 2009 Pebble Beach Concours d'Elegance."
+            }
+          },
+          "changes": [
+            {
+              "id": "r1c1",
+              "topic": "design",
+              "text": "New front and rear lights with more LED lighting, new wheel designs, chrome accents and revised front and rear styling.",
+              "src": "wp",
+              "quote": "Exterior changes include new front and rear lights which better incorporate LED lighting with optional LED turn signals and daytime running lights, new wheel designs, chrome accents, four new paint colours, and updated body styling in the front and rear."
+            },
+            {
+              "id": "r1c2",
+              "topic": "interior",
+              "text": "New instrument cluster, new trim and colours, and the third-generation MMI control system.",
+              "src": "wp",
+              "quote": "A redesigned interior includes a new instrument cluster, new leather seating, ambient door lighting, new interior colour choices, new trim, and the third generation MMI control system."
+            },
+            {
+              "id": "r1c3",
+              "topic": "powertrain",
+              "text": "The 4.2 TDI was revised, rising from 240 kW (326 PS) to 250 kW (340 PS).",
+              "src": "wpde4l",
+              "quote": "Zudem wurde der 4,2 Liter große Diesel überarbeitet und leistete nun 250 kW (340 PS) statt 240 kW (326 PS)."
+            },
+            {
+              "id": "r1c4",
+              "topic": "powertrain",
+              "text": "The eight-speed automatic became standard from 2010 (2011 model year in the US).",
+              "src": "wp",
+              "quote": "From 2010 (2011 model year in the U.S.), the Aisin–Toyota 8-speed automatic transmission is standard."
+            },
+            {
+              "id": "r1c5",
+              "topic": "powertrain",
+              "text": "In the US, the 3.6 FSI and 4.2 FSI petrol engines were replaced by two supercharged 3.0 TFSI engines for 2011.",
+              "src": "wp",
+              "quote": "For 2011, the 3.6 FSI and 4.2 FSI engines were replaced by two 3.0 L TFSI supercharged engines."
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "English Wikipedia's infobox gives production from November 2005; Audi's 2024 retrospective says first-generation production ran from 2006 to 2015 (\"From the start of production in 2006 to the end of production of the first generation in 2015\"). The Wikipedia figure is used here.",
+        "German Wikipedia gives slightly different dimensions (length 5086–5089 mm, width 1983 mm) from English Wikipedia (5085 mm, 1984 mm).",
+        "Facelift timing: German Wikipedia dates the facelift to spring 2009 and English Wikipedia says it was unveiled at Pebble Beach in 2009, but English Wikipedia's section heading reads 'Facelift (2010–2015)'.",
+        "The English Wikipedia engine tables label the year column 'Model Year'; whether these are calendar or model years is not stated. Engine figures are not tied to a market by the source.",
+        "A 6-speed manual was offered only in Europe with the 3.6 FSI (English Wikipedia). Seating configurations (5, 6, 7) are described in prose but could not be quoted with numerals, so they are not recorded as structured data.",
+        "No Audi press release from 2005–2015 could be read: the old Audi MediaCenter URLs return 404 after the site moved; only Audi's 2024 retrospective covers the first generation."
+      ]
+    },
+    {
+      "id": "audi-q7-4m",
+      "slug": "4m",
+      "ordinal": 2,
+      "lines": [
+        "q7"
+      ],
+      "name": "Second generation",
+      "codes": [
+        {
+          "value": "4M",
+          "kind": "model code (Typ)",
+          "src": "wpde4m",
+          "quote": "Der Audi Q7 (interne Typbezeichnung 4M) ist die zweite Baureihe"
+        }
+      ],
+      "dates": {
+        "revealed": {
+          "value": "2015-01",
+          "event": "North American International Auto Show, Detroit",
+          "src": "wp",
+          "quote": "The second generation Audi Q7 was unveiled in January 2015 at the North American International Auto Show in Detroit."
+        },
+        "productionStart": {
+          "value": "2015-05",
+          "src": "wp",
+          "quote": "Production May 2015 – 2026"
+        },
+        "productionEnd": {
+          "value": "2026",
+          "src": "wp",
+          "quote": "Production May 2015 – 2026"
+        },
+        "salesStart": [
+          {
+            "value": "2015-06-12",
+            "market": "unstated",
+            "src": "wpde4m",
+            "quote": "die Markteinführung erfolgte am 12. Juni 2015"
+          }
+        ],
+        "modelYears": [
+          {
+            "market": "unstated",
+            "from": 2016,
+            "to": 2026,
+            "src": "wp",
+            "quote": "Model years 2016–2026"
+          }
+        ]
+      },
+      "ongoing": false,
+      "platform": {
+        "value": "Volkswagen Group MLB Evo",
+        "src": "wp",
+        "quote": "Platform Volkswagen Group MLB Evo"
+      },
+      "assembly": [
+        {
+          "value": "Bratislava, Slovakia (Volkswagen Bratislava Plant)",
+          "src": "wp",
+          "quote": "Model years 2016–2026\nAssembly Slovakia: Bratislava (Volkswagen Bratislava Plant)"
+        },
+        {
+          "value": "Aurangabad, India (Audi India)",
+          "src": "wp",
+          "quote": "India: Aurangabad (Audi India)\nRussia"
+        },
+        {
+          "value": "Kaluga, Russia (Volkswagen Group Rus)",
+          "src": "wp",
+          "quote": "Russia: Kaluga (Volkswagen Group Rus)\nMalaysia"
+        },
+        {
+          "value": "Pekan, Malaysia (HICOM)",
+          "src": "wp",
+          "quote": "Malaysia: Pekan (HICOM)"
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Body style 5-door SUV"
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "AWD",
+          "system": "quattro (self-locking centre differential, 40:60 default split)",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "a Quattro Permanent all-wheel drive system with a self-locking center differential and a default 40:60 front-to-rear torque split"
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "unstated",
+          "unit": "mm",
+          "length": 5052,
+          "width": 1968,
+          "height": 1741,
+          "wheelbase": 2994,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 2,994 mm (117.9 in)",
+            "Length 5,052 mm (198.9 in)",
+            "Width 1,968 mm (77.5 in)",
+            "Height 1,741 mm (68.5 in)"
+          ]
+        }
+      ],
+      "cargo": [
+        {
+          "id": "k1",
+          "market": "unstated",
+          "version": "2024 update, 5-seat",
+          "behind": "2nd row",
+          "value": 867,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "am24",
+          "quote": "the luggage compartment in the five-seat version offers a volume of between 867 liters (backrests up) and 1,993 liters (backrests down)"
+        },
+        {
+          "id": "k2",
+          "market": "unstated",
+          "version": "2024 update, 5-seat",
+          "behind": "1st row",
+          "value": 1993,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "am24",
+          "quote": "the luggage compartment in the five-seat version offers a volume of between 867 liters (backrests up) and 1,993 liters (backrests down)"
+        },
+        {
+          "id": "k3",
+          "market": "unstated",
+          "version": "conventionally powered (pre-facelift)",
+          "behind": "unstated",
+          "value": 890,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "wpde4m",
+          "quote": "statt der 890 Liter der konventionell angetriebenen Modelle ist er nur 650 Liter groß"
+        },
+        {
+          "id": "k4",
+          "market": "unstated",
+          "version": "Q7 e-tron (diesel plug-in hybrid)",
+          "behind": "unstated",
+          "value": 650,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "wpde4m",
+          "quote": "statt der 890 Liter der konventionell angetriebenen Modelle ist er nur 650 Liter groß"
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "2.0 TFSI (45 TFSI)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2016–",
+          "engine": "2.0 L I4 turbo (EA888)",
+          "displacement": 1984,
+          "cylinders": 4,
+          "power": {
+            "value": 252,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 370,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "2.0 TFSI (45 TFSI)",
+            "1,984 cc (121.1 cu in) I4 turbo (EA888)",
+            "252 PS (249 hp; 185 kW)",
+            "370 N⋅m (273 lbf⋅ft)"
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "3.0 TFSI (supercharged)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2016–2019",
+          "engine": "3.0 L V6 supercharged (EA837)",
+          "displacement": 2995,
+          "cylinders": 6,
+          "power": {
+            "value": 333,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 440,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "2,995 cc (182.8 cu in) V6 supercharger (EA837)",
+            "333 PS (328 hp; 245 kW)",
+            "440 N⋅m (325 lbf⋅ft)"
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "55 TFSI",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2019–",
+          "engine": "3.0 L V6 turbo (EA839)",
+          "displacement": 2995,
+          "cylinders": 6,
+          "power": {
+            "value": 340,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 450,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "3.0 TFSI (55 TFSI)",
+            "2,995 cc (182.8 cu in) V6 turbo (EA839)",
+            "340 PS (340 hp; 250 kW)",
+            "450 N⋅m (332 lbf⋅ft)"
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "55 TFSI quattro (2024 update)",
+          "market": "unstated",
+          "fuel": "mild hybrid",
+          "years": "2024–",
+          "engine": "3.0 L V6 TFSI with 48 V mild hybrid",
+          "cylinders": 6,
+          "power": {
+            "value": 250,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 500,
+            "unit": "Nm"
+          },
+          "transmission": "8-speed tiptronic",
+          "drivetrain": "AWD",
+          "src": "am24",
+          "quotes": [
+            "The Audi Q7 55 TFSI features a six-cylinder gasoline engine with three liters of displacement and direct fuel injection that delivers 250 kW (340 PS). It delivers a maximum torque of 500 Nm",
+            "All engines work together with an eight-speed tiptronic, quattro permanent four-wheel drive, and the mild hybrid system"
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "SQ7 TFSI",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2024–",
+          "engine": "4.0 L V8 TFSI",
+          "cylinders": 8,
+          "power": {
+            "value": 373,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 770,
+            "unit": "Nm"
+          },
+          "transmission": "8-speed tiptronic",
+          "drivetrain": "AWD",
+          "src": "am24",
+          "quotes": [
+            "the SQ7 TFSI now runs on the established 4.0 TFSI with 373 kW (507 PS) and 770 Nm of torque with fast-shifting eight-speed tiptronic and quattro permanent all-wheel drive"
+          ]
+        },
+        {
+          "id": "p6",
+          "name": "2.0 TFSI e-tron",
+          "market": "unstated",
+          "fuel": "plug-in hybrid",
+          "years": "2016–2018",
+          "engine": "2.0 L I4 turbo (EA888) + electric motor, 17.3 kWh battery",
+          "displacement": 1984,
+          "power": {
+            "value": 367,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 700,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "2.0 TFSI e-tron",
+            "1,984 cc (121.1 cu in) I4 turbo (EA888) + 17.3 kWh battery",
+            "367 PS (362 hp; 270 kW)",
+            "700 N⋅m (520 lbf⋅ft)"
+          ]
+        },
+        {
+          "id": "p7",
+          "name": "3.0 TDI e-tron quattro",
+          "market": "unstated",
+          "fuel": "plug-in hybrid",
+          "years": "03/2016–05/2018",
+          "engine": "3.0 L V6 TDI + electric motor (diesel plug-in hybrid)",
+          "power": {
+            "value": 275,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 700,
+            "unit": "Nm"
+          },
+          "transmission": "8-speed tiptronic",
+          "src": "wpde4m",
+          "quotes": [
+            "Beide Antriebe ergänzen sich, die Systemleistung des Q7 beträgt 275 kW (374 PS).",
+            "Das Systemdrehmoment beträgt 700 Nm."
+          ]
+        },
+        {
+          "id": "p8",
+          "name": "55 TFSI e quattro",
+          "market": "unstated",
+          "fuel": "plug-in hybrid",
+          "years": "2019–",
+          "engine": "3.0 L V6 turbo + electric motor, 17.3 kWh battery",
+          "displacement": 2995,
+          "power": {
+            "value": 381,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 600,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "55 TFSI e (PHEV system)\n2019–\n2,995 cc (182.8 cu in) V6 turbo + 17.3 kWh battery\n381 PS (376 hp; 280 kW)\n600 N⋅m (443 lbf⋅ft)"
+          ]
+        },
+        {
+          "id": "p9",
+          "name": "60 TFSI e quattro",
+          "market": "unstated",
+          "fuel": "plug-in hybrid",
+          "years": "2019–",
+          "engine": "3.0 L V6 turbo + electric motor, 17.3 kWh battery",
+          "displacement": 2995,
+          "power": {
+            "value": 456,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 700,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "60 TFSI e (PHEV system)\n2019-\n2,995 cc (182.8 cu in) V6 turbo + 17.3 kWh battery\n456 PS (450 hp; 335 kW)\n700 N⋅m (516 lbf⋅ft)"
+          ]
+        },
+        {
+          "id": "p10",
+          "name": "55 TFSI e quattro (2024 update)",
+          "market": "unstated",
+          "fuel": "plug-in hybrid",
+          "years": "2024–",
+          "engine": "3.0 L V6 TFSI + electric motor, 25.9 kWh (gross) battery",
+          "power": {
+            "value": 290,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 600,
+            "unit": "Nm"
+          },
+          "src": "am24e",
+          "quotes": [
+            "The maximum system output of both models with the 55 TFSI e quattro starts at 290 kW (394 PS) and a maximum system torque of 600 Nm"
+          ]
+        },
+        {
+          "id": "p11",
+          "name": "60 TFSI e quattro (2024 update)",
+          "market": "unstated",
+          "fuel": "plug-in hybrid",
+          "years": "2024–",
+          "engine": "3.0 L V6 TFSI + electric motor, 25.9 kWh (gross) battery",
+          "power": {
+            "value": 360,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 700,
+            "unit": "Nm"
+          },
+          "src": "am24e",
+          "quotes": [
+            "Higher in the range is the 60 TFSI e quattro, which also benefits from a newly designed electric motor with up to 360 kW (490 PS) of system output and up to 700 Nm of torque"
+          ]
+        },
+        {
+          "id": "p12",
+          "name": "3.0 TDI ultra",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2015–2018",
+          "engine": "3.0 L V6 turbo-diesel",
+          "displacement": 2967,
+          "cylinders": 6,
+          "power": {
+            "value": 218,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 500,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "3.0 TDI ultra\n2015–2018\n2,967 cc (181.1 cu in) V6 turbo\n218 PS (215 hp; 160 kW)\n500 N⋅m (369 lbf⋅ft)"
+          ]
+        },
+        {
+          "id": "p13",
+          "name": "3.0 TDI (272 PS)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2015–2018",
+          "engine": "3.0 L V6 turbo-diesel",
+          "displacement": 2967,
+          "cylinders": 6,
+          "power": {
+            "value": 272,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 600,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "3.0 TDI\n2015–2018\n2,967 cc (181.1 cu in) V6 turbo\n272 PS (268 hp; 200 kW)\n600 N⋅m (443 lbf⋅ft)"
+          ]
+        },
+        {
+          "id": "p14",
+          "name": "45 TDI quattro",
+          "market": "unstated",
+          "fuel": "mild hybrid",
+          "years": "2024–",
+          "engine": "3.0 L V6 TDI with 48 V mild hybrid",
+          "power": {
+            "value": 170,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 500,
+            "unit": "Nm"
+          },
+          "src": "am24",
+          "quotes": [
+            "The range opens with the 45 TDI quattro, a three-liter diesel engine that has 170 kW (231 PS) of output and delivers an impressive 500 Nm of torque"
+          ]
+        },
+        {
+          "id": "p15",
+          "name": "50 TDI quattro",
+          "market": "unstated",
+          "fuel": "mild hybrid",
+          "years": "2024–",
+          "engine": "3.0 L V6 TDI with 48 V mild hybrid",
+          "power": {
+            "value": 210,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 600,
+            "unit": "Nm"
+          },
+          "src": "am24",
+          "quotes": [
+            "This engine is followed by the 50 TDI quattro, a more powerful version with 210 kW (286 PS) and 600 Nm of torque."
+          ]
+        },
+        {
+          "id": "p16",
+          "name": "SQ7 TDI",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2016–2020",
+          "engine": "4.0 L V8 twin-turbo diesel",
+          "displacement": 3956,
+          "cylinders": 8,
+          "power": {
+            "value": 435,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 900,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "SQ7 TDI\n2016–2020\n3,956 cc (241.4 cu in) V8 twin-turbo\n435 PS (429 hp; 320 kW)\n900 N⋅m (664 lbf⋅ft)"
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "id": "c1",
+          "topic": "weight",
+          "text": "Up to 325 kg lighter than its predecessor according to Audi's press information.",
+          "src": "wpde4m",
+          "quote": "laut Presseinformation um bis zu 325 Kilogramm leichter als sein Vorgänger"
+        },
+        {
+          "id": "c2",
+          "topic": "dimensions",
+          "text": "Slightly smaller than the first generation.",
+          "src": "wpde4m",
+          "quote": "Der zweite Audi Q7 ist geringfügig kleiner"
+        },
+        {
+          "id": "c3",
+          "topic": "design",
+          "text": "Doors, wings, bonnet and tailgate are made of aluminium.",
+          "src": "wpde4m",
+          "quote": "Türen, Kotflügel, Motorhaube und Heckklappe sind aus Aluminium gefertigt."
+        },
+        {
+          "id": "c4",
+          "topic": "chassis",
+          "text": "All-wheel steering became available as an option for all versions, a first for Audi.",
+          "src": "wpde4m",
+          "quote": "Für alle Varianten war erstmals bei Audi auf Wunsch eine Allradlenkung erhältlich"
+        },
+        {
+          "id": "c5",
+          "topic": "other",
+          "text": "Built on the Volkswagen Group MLB Evo platform.",
+          "src": "wp",
+          "quote": "Platform Volkswagen Group MLB Evo"
+        },
+        {
+          "id": "c6",
+          "topic": "powertrain",
+          "text": "All versions use a ZF 8HP eight-speed automatic.",
+          "src": "wp",
+          "quote": "Regardless of engine, all Q7's come with a ZF 8HP 8-speed automatic transmission"
+        },
+        {
+          "id": "c7",
+          "topic": "powertrain",
+          "text": "A diesel plug-in hybrid was added, sold in Europe but not in Canada.",
+          "src": "wp",
+          "quote": "followed shortly by diesel-powered plug-in hybrid variant, which is sold in Europe, but not in Canada"
+        }
+      ],
+      "revisions": [
+        {
+          "id": "r1",
+          "slug": "2019-facelift",
+          "kind": "facelift",
+          "name": "First facelift",
+          "dates": {
+            "revealed": {
+              "value": "2019",
+              "src": "wpde4m",
+              "quote": "Im Sommer 2019 wurde sowohl beim Q7 als auch beim SQ7 ein Facelift durchgeführt."
+            }
+          },
+          "changes": [
+            {
+              "id": "r1c1",
+              "topic": "design",
+              "text": "Redesigned grille, front and rear bumpers, new side sills, chrome tailgate trim and revised exhaust tips.",
+              "src": "wp",
+              "quote": "introducing styling tweaks such as a redesigned grille, front and rear bumpers, new side sills, chrome trim for the tailgate and revised exhaust tips"
+            },
+            {
+              "id": "r1c2",
+              "topic": "technology",
+              "text": "New infotainment system with two touchscreens; dashboard and centre console updated to suit.",
+              "src": "wp",
+              "quote": "Inside, Audi installed a new infotainment system with dual touchscreens. The dashboard and centre console were also updated to accommodate the new system."
+            },
+            {
+              "id": "r1c3",
+              "topic": "powertrain",
+              "text": "Three mild-hybrid 3.0-litre V6 engines: two diesels and one petrol.",
+              "src": "wp",
+              "quote": "Three mild-hybrid 3.0-litre V6 powertrains are available, with the choice of two diesels and one petrol."
+            },
+            {
+              "id": "r1c4",
+              "topic": "chassis",
+              "text": "Active roll stabilisation added to the options list.",
+              "src": "wp",
+              "quote": "Audi has also expanded the Q7's options list to include a new active roll-stabilisation system"
+            },
+            {
+              "id": "r1c5",
+              "topic": "powertrain",
+              "text": "New 55 TFSI e and 60 TFSI e plug-in hybrids were introduced for the European market at the end of 2019.",
+              "src": "wpde4m",
+              "quote": "Ende 2019 wurden im Facelift mit dem 55 TFSI e quattro und 60 TFSI e quattro neue Plug-in-Hybrid-Varianten für den europäischen Markt vorgestellt."
+            }
+          ]
+        },
+        {
+          "id": "r2",
+          "slug": "2024-facelift",
+          "kind": "facelift",
+          "name": "Second facelift",
+          "dates": {
+            "revealed": {
+              "value": "2024-01",
+              "src": "wp",
+              "quote": "Audi announced a second facelift in January 2024 for the 2025 model year"
+            }
+          },
+          "changes": [
+            {
+              "id": "r2c1",
+              "topic": "design",
+              "text": "New front and rear sections; the Singleframe grille gained vertical inlays.",
+              "src": "am24",
+              "quote": "The unmistakably upright Audi Singleframe with an octagon design now impresses with vertical inlays."
+            },
+            {
+              "id": "r2c2",
+              "topic": "technology",
+              "text": "HD Matrix LED headlights with laser high beam gained selectable digital daytime running light signatures.",
+              "src": "am24",
+              "quote": "For the first time in a Q7, the HD Matrix LED headlights with laser as an additional high beam feature digital daytime running lights with selectable light signatures."
+            },
+            {
+              "id": "r2c3",
+              "topic": "technology",
+              "text": "Digital OLED rear lights with four selectable designs became available.",
+              "src": "am24",
+              "quote": "Digital OLED rear lights with four selectable rear light designs complete the light offering."
+            },
+            {
+              "id": "r2c4",
+              "topic": "powertrain",
+              "text": "The SQ7 TFSI uses the 4.0 TFSI V8 with 373 kW (507 PS) and 770 Nm.",
+              "src": "am24",
+              "quote": "the SQ7 TFSI now runs on the established 4.0 TFSI with 373 kW (507 PS) and 770 Nm of torque"
+            },
+            {
+              "id": "r2c5",
+              "topic": "powertrain",
+              "text": "The plug-in hybrids received a battery of 25.9 kWh gross (22 kWh net).",
+              "src": "am24e",
+              "quote": "The design achieves a maximum capacity of 25.9 kWh (gross; 22 kWh net) at 370 volts."
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Plug-in hybrid output conflict for the 3.0 TDI e-tron: German Wikipedia gives a system output of 275 kW (374 PS) and 700 Nm (recorded); English Wikipedia's table gives 387 PS (285 kW) / 700 Nm and its prose gives 190 kW / 600 Nm.",
+        "The 2.0 TFSI e-tron was developed for Asian markets (China, South Korea, Singapore and Japan) per English Wikipedia; the 2.0 TFSI was offered in Russia, the US, Canada, India, the Middle East and Southeast Asia. Because these sources name several markets at once, these powertrains are marked 'unstated'.",
+        "SQ7 TFSI displacement: English Wikipedia's table lists 3,956 cc (the diesel's figure); German Wikipedia gives 3,996 cm³. Audi's 2024 release says '4.0 TFSI' only, so no displacement is recorded.",
+        "Model years 2016–2026 are given by English Wikipedia without a market; North American model years could not be confirmed separately. The first facelift was for the 2020 model year and the second for the 2025 model year (English Wikipedia).",
+        "UK sales of the first facelift started in September 2019 (English Wikipedia). US-market SQ7 used a 4.0 V8 petrol (500 hp / 770 Nm) from 2020 rather than the diesel (English Wikipedia).",
+        "Audi's 2024 release refers to 'an initial product upgrade in 2019' and 'a second comprehensive upgrade in 2023', although the release itself is dated 30 January 2024 and market launch was in the first quarter of 2024.",
+        "Dimensions are from English Wikipedia without a stated version or market; German Wikipedia gives ranges (length 5052–5072 mm, wheelbase 2994–3001 mm). No Audi dimension figures could be read (Audi spec sheets are PDF-only)."
+      ]
+    },
+    {
+      "id": "audi-q7-g8",
+      "slug": "g8",
+      "ordinal": 3,
+      "lines": [
+        "q7"
+      ],
+      "name": "Third generation",
+      "codes": [
+        {
+          "value": "G8",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code G8"
+        }
+      ],
+      "dates": {
+        "revealed": {
+          "value": "2026-06-09",
+          "src": "wp",
+          "quote": "The third generation Q7 was revealed on 9 June 2026"
+        },
+        "salesStart": [
+          {
+            "value": "2026-09",
+            "market": "EU",
+            "src": "am26",
+            "quote": "It will be available to order in Germany from June 2026, with deliveries commencing in September."
+          }
+        ]
+      },
+      "ongoing": true,
+      "platform": {
+        "value": "Premium Platform Combustion (PPC)",
+        "src": "wp",
+        "quote": "It will be built on the Premium Platform Combustion platform."
+      },
+      "assembly": [
+        {
+          "value": "Bratislava, Slovakia",
+          "src": "am26",
+          "quote": "The new Q7 is built in Bratislava – just like the two previous generations."
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Body style 5-door SUV"
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "AWD",
+          "system": "quattro (limited-slip centre differential with preload)",
+          "markets": [
+            "global"
+          ],
+          "src": "am26",
+          "quote": "As standard, the Q7 is equipped with an eight-speed tiptronic and quattro permanent all-wheel drive with the new limited-slip center differential with preload."
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "unstated",
+          "unit": "mm",
+          "length": 5056,
+          "width": 2010,
+          "height": 1800,
+          "wheelbase": 2995,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 2,995 mm (117.9 in)",
+            "Length 5,056 mm (199.1 in)",
+            "Width 2,010 mm (79 in)",
+            "Height 1,800 mm (71 in)"
+          ]
+        }
+      ],
+      "cargo": [
+        {
+          "id": "k1",
+          "market": "unstated",
+          "version": "5-seat",
+          "behind": "2nd row",
+          "value": 806,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "am26",
+          "quote": "The five-seater has a trunk capacity of up to 806 liters."
+        },
+        {
+          "id": "k2",
+          "market": "unstated",
+          "version": "5-seat",
+          "behind": "1st row",
+          "value": 2075,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "am26",
+          "quote": "Folding down the second-row seats expands the storage space to up to 2,075 liters."
+        },
+        {
+          "id": "k3",
+          "market": "unstated",
+          "version": "7-seat",
+          "behind": "2nd row",
+          "value": 722,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "am26",
+          "quote": "The seven-seater offers up to 722 liters of luggage space behind the second row"
+        },
+        {
+          "id": "k4",
+          "market": "unstated",
+          "version": "7-seat",
+          "behind": "1st row",
+          "value": 1980,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "am26",
+          "quote": "a maximum volume of 1,980 liters behind the first row"
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "TDI quattro (220 kW)",
+          "market": "unstated",
+          "fuel": "mild hybrid",
+          "years": "2026–",
+          "engine": "3.0 L V6 TDI with MHEV plus and electric-powered compressor",
+          "cylinders": 6,
+          "power": {
+            "value": 220,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 630,
+            "unit": "Nm"
+          },
+          "transmission": "8-speed tiptronic",
+          "drivetrain": "AWD",
+          "src": "am26",
+          "quotes": [
+            "a three-liter V6 diesel engine delivering 220 kW (299 PS) and 630 Nm of torque or 180 kW (245 PS) and 500 Nm",
+            "As standard, the Q7 is equipped with an eight-speed tiptronic and quattro permanent all-wheel drive"
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "TDI quattro (180 kW)",
+          "market": "unstated",
+          "fuel": "mild hybrid",
+          "years": "2026–",
+          "engine": "3.0 L V6 TDI with MHEV plus and electric-powered compressor",
+          "cylinders": 6,
+          "power": {
+            "value": 180,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 500,
+            "unit": "Nm"
+          },
+          "transmission": "8-speed tiptronic",
+          "drivetrain": "AWD",
+          "src": "am26",
+          "quotes": [
+            "a three-liter V6 diesel engine delivering 220 kW (299 PS) and 630 Nm of torque or 180 kW (245 PS) and 500 Nm",
+            "As standard, the Q7 is equipped with an eight-speed tiptronic and quattro permanent all-wheel drive"
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "2.9 TFSI V6",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "2.9 L twin-turbo V6",
+          "power": {
+            "value": 429,
+            "unit": "hp"
+          },
+          "torque": {
+            "value": 599,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "It will be powered by a 2.9-litre twin-turbo V6 producing 429 hp (320 kW; 435 PS) and 599 N⋅m (442 lb⋅ft) of torque."
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "SQ7 4.0 TFSI V8",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "4.0 L twin-turbo V8",
+          "power": {
+            "value": 591,
+            "unit": "hp"
+          },
+          "torque": {
+            "value": 800,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "The SQ7 being powered by a 4.0-litre twin-turbo V8 producing 591 hp (441 kW; 599 PS) and 800 N⋅m (590 lb⋅ft) of torque."
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "id": "c1",
+          "topic": "other",
+          "text": "Moves to the Premium Platform Combustion.",
+          "src": "wp",
+          "quote": "It will be built on the Premium Platform Combustion platform."
+        },
+        {
+          "id": "c2",
+          "topic": "powertrain",
+          "text": "The V6 diesel uses MHEV plus technology whose powertrain generator adds up to 18 kW (24 PS).",
+          "src": "am26",
+          "quote": "The MHEV plus technology, including a next-generation powertrain generator, supports the drivetrain with up to 18 kW (24 PS) of extra power."
+        },
+        {
+          "id": "c3",
+          "topic": "drivetrain",
+          "text": "quattro all-wheel drive gains a new limited-slip centre differential with preload.",
+          "src": "am26",
+          "quote": "quattro permanent all-wheel drive with the new limited-slip center differential with preload"
+        },
+        {
+          "id": "c4",
+          "topic": "design",
+          "text": "A more upright D-pillar gives a nearly horizontal roofline and more interior headroom.",
+          "src": "am26",
+          "quote": "The D-pillar is now more upright overall, resulting in a nearly horizontal roofline and offering more headroom and space inside."
+        },
+        {
+          "id": "c5",
+          "topic": "technology",
+          "text": "Third-generation digital OLED rear lights with communication lighting.",
+          "src": "am26",
+          "quote": "At the rear, third-generation digital OLED rear lights feature communication lighting and an active digital light signature."
+        },
+        {
+          "id": "c6",
+          "topic": "interior",
+          "text": "Five seats are standard, with six- and seven-seat layouts optional.",
+          "src": "am26",
+          "quote": "The Q7 is available in three seating variants. Five seats come standard, with six or seven seats available as an option."
+        }
+      ],
+      "notes": [
+        "Production start is not documented: English Wikipedia says 'Production 2026 (to commence)'. Audi's release gives ordering in Germany from June 2026 and deliveries from September (recorded as the EU sales start).",
+        "Dimensions come from English Wikipedia only (they look rounded: width 2,010 mm, height 1,800 mm); Audi's release gives no dimensions, and its technical data sheets are PDF-only. Treat them as provisional.",
+        "Audi's launch release lists only the 3.0 V6 TDI (180 kW and 220 kW). The 2.9 V6 petrol and SQ7 V8 figures come from English Wikipedia, which cites US-oriented press (Motor1, Autoweek), and says Australia gets a 3.0 V6 diesel; their market is therefore marked 'unstated'.",
+        "Seating (5, 6 or 7 seats) is stated in words only, so it is recorded as a change item rather than as structured seating data."
+      ]
+    }
+  ]
+}

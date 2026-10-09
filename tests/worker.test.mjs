@@ -7,7 +7,8 @@ import worker, { validateSubmission, draftOverlay, validOverlayEntry } from '../
 
 function d1() {
   const db = new DatabaseSync(':memory:');
-  db.exec(fs.readFileSync(new URL('../migrations/0001_init.sql', import.meta.url), 'utf8'));
+  // Both migrations, in order, as on the real database.
+  for (const m of ['0001_init.sql', '0002_car_archive.sql']) db.exec(fs.readFileSync(new URL('../migrations/' + m, import.meta.url), 'utf8'));
   const stmt = (sql, args = []) => ({
     bind: (...a) => stmt(sql, a),
     first: async () => db.prepare(sql).get(...args) ?? null,
@@ -16,89 +17,109 @@ function d1() {
   });
   return { prepare: sql => stmt(sql), batch: async ss => Promise.all(ss.map(s => s.run())), raw: db };
 }
-const ASSETS = { fetch: async () => new Response(JSON.stringify({ models: [['Ann Model', 'ann-model', 3], ['Bea', 'bea', 2], ['Cleo', 'cleo', 1]] })) };
+const INDEX = { families: [{ id: 'acme-trek', n: 'Acme Trek' }], gens: [{ id: 'acme-trek-t1', n: 'Acme Trek (T1)' }, { id: 'acme-trek-t2', n: 'Acme Trek (T2)' }] };
+const ASSETS = { fetch: async () => new Response(JSON.stringify(INDEX)) };
 const ctx = { waitUntil() {} };
-const ORIGIN = 'https://brandsmodels.com';
-const env = (extra = {}) => ({ DB: d1(), ASSETS, HASH_SALT: 'test', ADMIN_TOKEN: 'a-long-admin-token-for-tests-123', ...extra });
+const ORIGIN = 'https://cars.example';
+const TOKEN = 'a-long-admin-token-for-tests-123';
+const env = (extra = {}) => ({ DB: d1(), ASSETS, HASH_SALT: 'test', ADMIN_TOKEN: TOKEN, ...extra });
 const call = (e, path, { method = 'GET', body, headers = {}, ip = '1.1.1.1' } = {}) => worker.fetch(new Request(ORIGIN + path, {
   method, headers: { origin: ORIGIN, 'content-type': 'application/json', 'cf-connecting-ip': ip, ...headers },
   body: body === undefined ? undefined : typeof body === 'string' ? body : JSON.stringify(body) }), e, ctx);
-const fav = (e, visitor, model, on, ip) => call(e, '/api/favourites', { method: 'POST', body: { visitor, model, on }, ip });
-
-test('favourites are idempotent: repeats and retries count once; removing undoes', async () => {
-  const e = env();
-  for (let i = 0; i < 4; i++) assert.equal((await (await fav(e, 'visitor-0001', 'ann-model', true)).json()).count, 1);
-  assert.equal((await (await fav(e, 'visitor-0002', 'ann-model', true)).json()).count, 2);
-  assert.equal((await (await fav(e, 'visitor-0001', 'ann-model', false)).json()).count, 1);
-  assert.equal((await (await fav(e, 'visitor-0001', 'ann-model', false)).json()).count, 1, 'removing twice changes nothing');
-  assert.equal((await (await call(e, '/api/favourites/count?model=ann-model')).json()).count, 1);
-  const raw = e.DB.raw.prepare('SELECT visitor_hash FROM favourites').all();
-  assert.ok(raw.every(r => /^[0-9a-f]{64}$/.test(r.visitor_hash) && !r.visitor_hash.includes('visitor')), 'browser ids are stored hashed');
-});
+const save = (e, visitor, item, on, ip) => call(e, '/api/garage', { method: 'POST', body: { visitor, item, on }, ip });
+const auth = { authorization: `Bearer ${TOKEN}` };
+const car = { type: 'car', make: 'Acme', model: 'Trek', generation: 'T3', market: 'Europe', year: '2024', yearKind: 'calendar', sourceUrl: 'https://media.acme.example/t3', note: 'The third generation was revealed in 2024.', ts: '1' };
 
 test('without HASH_SALT the public API stores nothing', async () => {
   const e = env({ HASH_SALT: undefined });
-  assert.equal((await fav(e, 'visitor-0001', 'ann-model', true)).status, 503);
-  assert.equal(e.DB.raw.prepare('SELECT COUNT(*) n FROM favourites').get().n, 0);
-  assert.equal((await call(e, '/api/favourites/top?window=all')).status, 503);
+  assert.equal((await save(e, 'visitor-0001', 'family:acme-trek', true)).status, 503);
+  assert.equal(e.DB.raw.prepare('SELECT COUNT(*) n FROM car_garage').get().n, 0);
+  assert.equal((await call(e, '/api/garage/top?window=all')).status, 503);
 });
 
-test('favourites: validation, unknown models and cross-site requests are refused', async () => {
+test('garage saves are idempotent: repeats and retries count once; removing undoes', async () => {
   const e = env();
-  assert.equal((await fav(e, 'short', 'ann-model', true)).status, 400);
-  assert.equal((await fav(e, 'visitor-0001', 'Ann Model', true)).status, 400);
-  assert.equal((await fav(e, 'visitor-0001', 'nobody', true)).status, 404);
-  const cross = await call(e, '/api/favourites', { method: 'POST', body: { visitor: 'visitor-0001', model: 'ann-model', on: true }, headers: { origin: 'https://evil.example' } });
+  for (let i = 0; i < 4; i++) assert.equal((await (await save(e, 'visitor-0001', 'generation:acme-trek-t2', true)).json()).count, 1);
+  assert.equal((await (await save(e, 'visitor-0002', 'generation:acme-trek-t2', true)).json()).count, 2);
+  assert.equal((await (await save(e, 'visitor-0001', 'generation:acme-trek-t2', false)).json()).count, 1);
+  assert.equal((await (await save(e, 'visitor-0001', 'generation:acme-trek-t2', false)).json()).count, 1, 'removing twice changes nothing');
+  assert.equal((await (await call(e, '/api/garage/count?item=generation:acme-trek-t2')).json()).count, 1);
+  const raw = e.DB.raw.prepare('SELECT visitor_hash FROM car_garage').all();
+  assert.ok(raw.every(r => /^[0-9a-f]{64}$/.test(r.visitor_hash)), 'browser ids are stored hashed');
+});
+
+test('earlier fashion tables are left untouched and never read', async () => {
+  const e = env();
+  e.DB.raw.prepare("INSERT INTO favourites (visitor_hash, model, created_at) VALUES ('x', 'acme-trek', 1)").run();
+  e.DB.raw.prepare("INSERT INTO submissions (created_at, type, model, brand, kind, source_url, note, ip_day) VALUES (1, 'missing', 'A', 'B', 'campaign', 'https://x.example', 'old fashion suggestion', 'n')").run();
+  assert.equal((await (await call(e, '/api/garage/count?item=family:acme-trek')).json()).count, 0);
+  const q = await (await call(e, '/api/admin/submissions?status=all', { headers: auth })).json();
+  assert.equal(q.submissions.length, 0, 'old suggestions are not shown in the car review queue');
+  assert.equal(e.DB.raw.prepare('SELECT COUNT(*) n FROM submissions').get().n, 1);
+});
+
+test('garage: validation, unknown items and cross-site requests are refused', async () => {
+  const e = env();
+  assert.equal((await save(e, 'short', 'family:acme-trek', true)).status, 400);
+  assert.equal((await save(e, 'visitor-0001', 'acme-trek', true)).status, 400);
+  assert.equal((await save(e, 'visitor-0001', 'model:acme-trek', true)).status, 400);
+  assert.equal((await save(e, 'visitor-0001', 'generation:acme-trek-t9', true)).status, 404);
+  const cross = await call(e, '/api/garage', { method: 'POST', body: { visitor: 'visitor-0001', item: 'family:acme-trek', on: true }, headers: { origin: 'https://evil.example' } });
   assert.equal(cross.status, 403);
 });
 
-test('favourites: only the first 20 browsers per network per day are counted; changes are rate limited', async () => {
+test('garage: only the first 20 browsers per network per day are counted; changes are rate limited', async () => {
   const e = env();
   let last;
-  for (let i = 1; i <= 22; i++) last = await (await fav(e, `visitor-net-${i}`, "bea", true, "9.9.9.9")).json();
+  for (let i = 1; i <= 22; i++) last = await (await save(e, `visitor-net-${i}`, 'family:acme-trek', true, '9.9.9.9')).json();
   assert.equal(last.count, 20);
-  assert.equal((await (await fav(e, "visitor-other-1", "bea", true, "8.8.8.8")).json()).count, 21);
+  assert.equal((await (await save(e, 'visitor-other-1', 'family:acme-trek', true, '8.8.8.8')).json()).count, 21);
   let status = 200;
-  for (let i = 0; i < 125 && status !== 429; i++) status = (await fav(e, 'visitor-spam-1', 'cleo', i % 2 === 0, '7.7.7.7')).status;
+  for (let i = 0; i < 125 && status !== 429; i++) status = (await save(e, 'visitor-spam-1', 'generation:acme-trek-t1', i % 2 === 0, '7.7.7.7')).status;
   assert.equal(status, 429);
-  assert.equal(e.DB.raw.prepare("SELECT COUNT(*) n FROM rate_limits WHERE key LIKE '%7.7.7.7%'").get().n, 0, 'no raw IPs stored');
+  assert.equal(e.DB.raw.prepare("SELECT COUNT(*) n FROM car_rate_limits WHERE key LIKE '%7.7.7.7%'").get().n, 0, 'no raw addresses stored');
 });
 
-test('fan favourites: minimum 3, all time vs last 30 days', async () => {
+test('popular: minimum 3, all time vs last 30 days, names from the published index', async () => {
   const e = env();
-  for (const [i, v] of ['a', 'b', 'c', 'd'].entries()) await fav(e, `visitor-top-${v}`, 'ann-model', true, `2.2.2.${i}`);
-  for (const [i, v] of ['a', 'b'].entries()) await fav(e, `visitor-top-${v}`, 'bea', true, `2.2.2.${i}`);
-  e.DB.raw.prepare("UPDATE favourites SET created_at = created_at - 40*86400000 WHERE model = 'ann-model' AND rowid IN (SELECT rowid FROM favourites WHERE model='ann-model' LIMIT 2)").run();
-  const all = await (await call(e, '/api/favourites/top?window=all')).json();
-  assert.deepEqual(all.models.map(m => [m.model, m.count, m.name]), [['ann-model', 4, 'Ann Model']]);
-  const recent = await (await call(e, '/api/favourites/top?window=30d')).json();
-  assert.deepEqual(recent.models, [], 'only 2 added in the last 30 days: below the minimum');
+  for (const [i, v] of ['a', 'b', 'c', 'd'].entries()) await save(e, `visitor-top-${v}`, 'generation:acme-trek-t2', true, `2.2.2.${i}`);
+  for (const [i, v] of ['a', 'b'].entries()) await save(e, `visitor-top-${v}`, 'family:acme-trek', true, `2.2.2.${i}`);
+  e.DB.raw.prepare("UPDATE car_garage SET created_at = created_at - 40*86400000 WHERE rowid IN (SELECT rowid FROM car_garage WHERE item='generation:acme-trek-t2' LIMIT 2)").run();
+  const all = await (await call(e, '/api/garage/top?window=all')).json();
+  assert.deepEqual(all.items.map(m => [m.item, m.count, m.name]), [['generation:acme-trek-t2', 4, 'Acme Trek (T2)']]);
+  const recent = await (await call(e, '/api/garage/top?window=30d')).json();
+  assert.deepEqual(recent.items, [], 'only 2 saved in the last 30 days: below the minimum');
 });
 
-test('submissions: validation never fetches and rejects unsafe or private links', () => {
-  const base = { model: 'Ann Model', brand: 'Vogue', kind: 'cover', source: 'https://www.vogue.com/x', note: 'Missing March 2016 cover.' };
-  assert.equal(validateSubmission(base).ok, true);
-  for (const source of ['javascript:alert(1)', 'ftp://x.example/a', 'http://localhost/a', 'http://192.168.1.1/x', 'https://user:pw@x.example/', 'not a url'])
-    assert.equal(validateSubmission({ ...base, source }).ok, false, source);
-  assert.equal(validateSubmission({ ...base, kind: 'photo' }).ok, false);
-  assert.equal(validateSubmission({ ...base, year: '2099' }).ok, false);
-  assert.equal(validateSubmission({ ...base, note: 'short' }).ok, false);
-  assert.equal(validateSubmission({ ...base, note: 'see https://a.example https://b.example https://c.example' }).ok, false);
-  assert.equal(validateSubmission({ ...base, model: '<b>' + 'x'.repeat(300) }).value.model.length, 120);
+test('submissions: three types; links are validated, never fetched; unsafe links refused', () => {
+  assert.equal(validateSubmission(car).ok, true);
+  assert.equal(validateSubmission({ ...car, sourceUrl: '' }).ok, true, 'a missing car may come without a link');
+  assert.equal(validateSubmission({ ...car, type: 'correction', sourceUrl: '' }).ok, false, 'a correction needs a source');
+  assert.equal(validateSubmission({ ...car, type: 'source', sourceUrl: '', photoUrl: 'https://commons.wikimedia.org/wiki/File:X.jpg' }).ok, true);
+  assert.equal(validateSubmission({ ...car, type: 'review' }).ok, false);
+  for (const u of ['javascript:alert(1)', 'ftp://x.example/a', 'http://localhost/a', 'http://192.168.1.1/x', 'http://172.20.0.1/', 'https://user:pw@x.example/', 'not a url'])
+    assert.equal(validateSubmission({ ...car, sourceUrl: u }).ok, false, u);
+  assert.equal(validateSubmission({ ...car, photoUrl: 'javascript:x' }).ok, false);
+  assert.equal(validateSubmission({ ...car, year: '2099' }).ok, false);
+  assert.equal(validateSubmission({ ...car, note: 'short' }).ok, false);
+  assert.equal(validateSubmission({ ...car, note: 'see https://a.example https://b.example https://c.example' }).ok, false);
+  assert.equal(validateSubmission({ ...car, model: 'x'.repeat(300) }).value.model.length, 80);
+  assert.equal(validateSubmission({ ...car, target: '"><script>' }).value.target, null);
+  assert.equal(validateSubmission({ ...car, yearKind: 'galactic' }).value.year_kind, null);
 });
 
 test('submissions: stored privately; honeypot and too-fast forms store nothing; rate limited', async () => {
   const e = env();
-  const body = { type: 'missing', model: 'Ann Model', brand: 'Vogue', kind: 'cover', year: '2016', source: 'https://www.vogue.com/x', note: 'Missing March 2016 cover.', ts: '1' };
-  assert.equal((await call(e, '/api/submissions', { method: 'POST', body })).status, 200);
-  assert.equal((await call(e, '/api/submissions', { method: 'POST', body: { ...body, website: 'spam' } })).status, 200);
-  assert.equal((await call(e, '/api/submissions', { method: 'POST', body: { ...body, ts: String(Date.now()) } })).status, 200);
-  assert.equal(e.DB.raw.prepare('SELECT COUNT(*) n FROM submissions').get().n, 1);
-  const form = await call(e, '/api/submissions', { method: 'POST', body: new URLSearchParams({ ...body }).toString(), headers: { 'content-type': 'application/x-www-form-urlencoded' } });
+  assert.equal((await call(e, '/api/submissions', { method: 'POST', body: car })).status, 200);
+  assert.equal((await call(e, '/api/submissions', { method: 'POST', body: { ...car, website: 'spam' } })).status, 200);
+  assert.equal((await call(e, '/api/submissions', { method: 'POST', body: { ...car, ts: String(Date.now()) } })).status, 200);
+  assert.equal(e.DB.raw.prepare('SELECT COUNT(*) n FROM car_submissions').get().n, 1);
+  assert.equal(e.DB.raw.prepare("SELECT status FROM car_submissions").get().status, 'pending');
+  const form = await call(e, '/api/submissions', { method: 'POST', body: new URLSearchParams({ ...car }).toString(), headers: { 'content-type': 'application/x-www-form-urlencoded' } });
   assert.equal(form.status, 303);
   assert.match(form.headers.get('location'), /\/suggest\/\?sent=1$/);
   let s = 200;
-  for (let i = 0; i < 6; i++) s = (await call(e, '/api/submissions', { method: 'POST', body })).status;
+  for (let i = 0; i < 6; i++) s = (await call(e, '/api/submissions', { method: 'POST', body: car })).status;
   assert.equal(s, 429);
 });
 
@@ -107,48 +128,54 @@ test('admin: disabled without a token, refuses wrong tokens, never exposes netwo
   const e = env();
   assert.equal((await call(e, '/api/admin/submissions')).status, 401);
   assert.equal((await call(e, '/api/admin/submissions', { headers: { authorization: 'Bearer wrong' } })).status, 401);
-  assert.equal((await call(e, '/api/admin/submissions', { headers: { authorization: 'Bearer a-long-admin-token-for-tests-12' } })).status, 401);
+  assert.equal((await call(e, '/api/admin/submissions', { headers: { authorization: `Bearer ${TOKEN.slice(0, -1)}` } })).status, 401);
   assert.equal((await call(e, '/api/admin/export', { headers: { authorization: 'Basic x' } })).status, 401);
   assert.equal((await call(e, '/api/admin/submissions/1/review', { method: 'POST', body: { action: 'approve' } })).status, 401);
-  await call(e, '/api/submissions', { method: 'POST', body: { model: 'Ann Model', brand: 'Vogue', kind: 'cover', source: 'https://www.vogue.com/x', note: 'Missing March 2016 cover.', ts: '1' } });
-  const j = await (await call(e, '/api/admin/submissions', { headers: { authorization: 'Bearer a-long-admin-token-for-tests-123' } })).json();
+  await call(e, '/api/submissions', { method: 'POST', body: car });
+  const j = await (await call(e, '/api/admin/submissions', { headers: auth })).json();
   assert.equal(j.submissions.length, 1);
   assert.equal(j.submissions[0].ip_day, undefined);
   const page = await call(e, '/admin');
   assert.equal(page.headers.get('x-robots-tag'), 'noindex, nofollow');
-  assert.ok(!(await page.text()).includes('Ann Model'), 'the admin page itself carries no data');
+  const html = await page.text();
+  assert.ok(!html.includes('Trek'), 'the admin page itself carries no data');
+  assert.match(html, /The Car Archive/);
 });
 
-test('admin: approve prepares a validated overlay entry; export and mark', async () => {
+test('admin: corrections need a completed overlay entry; leads approve without one; export and mark', async () => {
   const e = env();
-  const auth = { authorization: 'Bearer a-long-admin-token-for-tests-123' };
-  await call(e, '/api/submissions', { method: 'POST', body: { model: 'Ann Model', brand: 'Vogue', kind: 'cover', year: '2016', source: 'https://www.vogue.com/x', note: 'Missing March 2016 cover.', ts: '1' } });
-  await call(e, '/api/submissions', { method: 'POST', ip: '3.3.3.3', body: { type: 'correction', record: 'raaaaaaaaa', model: 'Ann Model', brand: 'Vogue', kind: 'cover', source: 'https://www.vogue.com/y', note: 'The year should be 2015, see source.', ts: '1' } });
+  await call(e, '/api/submissions', { method: 'POST', body: car });
+  await call(e, '/api/submissions', { method: 'POST', ip: '3.3.3.3', body: { ...car, type: 'correction', target: 'acme-trek-t2#d1', note: 'The length is 4,641 mm per the press kit.' } });
   const list = (await (await call(e, '/api/admin/submissions', { headers: auth })).json()).submissions;
-  assert.equal(list[0].draft.op, 'add');
-  assert.match(list[0].draft.record.id, /^u[a-z0-9]+$/);
-  assert.equal(list[1].draft.op, 'patch');
-  // a correction cannot be approved until the reviewer says what to change
-  assert.equal((await call(e, `/api/admin/submissions/${list[1].id}/review`, { method: 'POST', headers: auth, body: { action: 'approve' } })).status, 400);
-  assert.equal((await call(e, `/api/admin/submissions/${list[1].id}/review`, { method: 'POST', headers: auth, body: { action: 'approve', overlay: { ...list[1].draft, set: { year: 2015 } } } })).status, 200);
-  assert.equal((await call(e, `/api/admin/submissions/${list[0].id}/review`, { method: 'POST', headers: auth, body: { action: 'reject', note: 'source does not show it' } })).status, 200);
+  const [lead, corr] = list;
+  assert.equal(lead.draft, null);
+  assert.equal(corr.draft.op, 'set');
+  assert.equal(corr.draft.target, 'acme-trek-t2#d1');
+  // the TODO placeholders must be replaced first
+  assert.equal((await call(e, `/api/admin/submissions/${corr.id}/review`, { method: 'POST', headers: auth, body: { action: 'approve', overlay: corr.draft } })).status, 400);
+  const entry = { ...corr.draft, field: 'length', value: 4641, source: { ...corr.draft.source, title: 'Acme Trek press kit' } };
+  assert.equal((await call(e, `/api/admin/submissions/${corr.id}/review`, { method: 'POST', headers: auth, body: { action: 'approve', overlay: entry } })).status, 200);
+  assert.equal((await call(e, `/api/admin/submissions/${lead.id}/review`, { method: 'POST', headers: auth, body: { action: 'approve', overlay: null } })).status, 200);
   const exp = await (await call(e, '/api/admin/export', { headers: auth })).json();
-  assert.equal(exp.entries.length, 1);
-  assert.deepEqual(exp.entries[0].set, { year: 2015 });
+  assert.equal(exp.entries.length, 1, 'a lead has nothing to export');
+  assert.equal(exp.entries[0].value, 4641);
   await call(e, '/api/admin/export/mark', { method: 'POST', headers: auth, body: { submissions: exp.submissions } });
   assert.equal((await (await call(e, '/api/admin/export', { headers: auth })).json()).entries.length, 0);
 });
 
 test('overlay entries are validated', () => {
-  assert.equal(validOverlayEntry({ op: 'add', record: { id: 'u12345', brand: 'X', kind: 'campaign', talent: ['A'], sources: [{ url: 'https://x' }] } }), null);
-  assert.ok(validOverlayEntry({ op: 'add', record: { id: 'r123', brand: 'X', talent: ['A'], sources: [] } }));
-  assert.ok(validOverlayEntry({ op: 'add', record: { id: 'u12345', brand: 'X', talent: ['A'], sources: [{ url: 'javascript:x' }] } }));
-  assert.ok(validOverlayEntry({ op: 'patch', id: 'raaaaaaaaa', set: {} }));
-  assert.ok(validOverlayEntry({ op: 'drop', id: 'raaaaaaaaa' }));
-  assert.equal(draftOverlay({ id: 7, created_at: 1791489231999, type: 'missing', model: 'A', brand: 'B', kind: 'campaign', year: 2016, season: null, source_url: 'https://b.example/x', note: 'n' }).record.talent[0], 'A');
+  assert.equal(validOverlayEntry(null), null);
+  assert.equal(validOverlayEntry({ op: 'set', target: 'acme-trek-t2#d1', field: 'length', value: 4641 }), null);
+  assert.equal(validOverlayEntry({ op: 'add', target: 'acme-trek-t2', list: 'powertrains', item: { id: 'p9' } }), null);
+  assert.ok(validOverlayEntry({ op: 'add', target: 'acme-trek-t2', list: 'images', item: {} }));
+  assert.ok(validOverlayEntry({ op: 'remove', target: 'acme-trek-t2' }));
+  assert.ok(validOverlayEntry({ op: 'set', target: 'Acme Trek', field: 'x', value: 1 }));
+  assert.ok(validOverlayEntry({ op: 'set', target: 'acme-trek-t2', field: 'x', value: 1, source: { url: 'javascript:x' } }));
+  assert.ok(validOverlayEntry({ op: 'drop', target: 'acme-trek-t2' }));
+  assert.equal(draftOverlay({ id: 7, created_at: 1791489231999, type: 'car', source_url: null }), null);
 });
 
 test('the API reports unavailable instead of failing when the database is not configured', async () => {
-  const r = await call({ ASSETS }, '/api/favourites/count?model=ann-model');
+  const r = await call({ ASSETS }, '/api/garage/count?item=family:acme-trek');
   assert.equal(r.status, 503);
 });

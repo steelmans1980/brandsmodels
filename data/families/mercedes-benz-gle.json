@@ -1,0 +1,380 @@
+{
+  "id": "mercedes-benz-gle",
+  "slug": "gle",
+  "manufacturer": "mercedes-benz",
+  "name": "Mercedes-Benz GLE and M-Class",
+  "lines": [
+    { "id": "gle", "name": "GLE / M-Class" }
+  ],
+  "sources": {
+    "wp": { "url": "https://en.wikipedia.org/w/index.php?title=Mercedes-Benz_GLE&oldid=1378831618", "title": "Mercedes-Benz GLE", "publisher": "Wikipedia", "type": "secondary", "accessed": "2026-10-09" },
+    "de163": { "url": "https://de.wikipedia.org/w/index.php?title=Mercedes-Benz_W_163&oldid=268040373", "title": "Mercedes-Benz W 163", "publisher": "Wikipedia (de)", "type": "secondary", "accessed": "2026-10-09" },
+    "de164": { "url": "https://de.wikipedia.org/w/index.php?title=Mercedes-Benz_W_164&oldid=256729645", "title": "Mercedes-Benz W 164", "publisher": "Wikipedia (de)", "type": "secondary", "accessed": "2026-10-09" },
+    "de166": { "url": "https://de.wikipedia.org/w/index.php?title=Mercedes-Benz_W_166&oldid=256820062", "title": "Mercedes-Benz W 166", "publisher": "Wikipedia (de)", "type": "secondary", "accessed": "2026-10-09" },
+    "de292": { "url": "https://de.wikipedia.org/w/index.php?title=Mercedes-Benz_C_292&oldid=259089678", "title": "Mercedes-Benz C 292", "publisher": "Wikipedia (de)", "type": "secondary", "accessed": "2026-10-09" },
+    "de167": { "url": "https://de.wikipedia.org/w/index.php?title=Mercedes-Benz_V_167&oldid=269629033", "title": "Mercedes-Benz V 167", "publisher": "Wikipedia (de)", "type": "secondary", "accessed": "2026-10-09" },
+    "dec167": { "url": "https://de.wikipedia.org/w/index.php?title=Mercedes-Benz_C_167&oldid=269168542", "title": "Mercedes-Benz C 167", "publisher": "Wikipedia (de)", "type": "secondary", "accessed": "2026-10-09" },
+    "mb17gle350": { "url": "https://media.mbusa.com/news/2017-mercedes-benz-gle350-and-gle350-4m", "title": "2017 Mercedes-Benz GLE350 and GLE350 4M Specifications", "publisher": "Mercedes-Benz Media Newsroom USA", "type": "manufacturer", "date": "2017-02-03", "accessed": "2026-10-09" },
+    "mb17gle550e": { "url": "https://media.mbusa.com/news/2017-mercedes-benz-gle550e-4matic", "title": "2017 Mercedes-Benz GLE550e 4MATIC Specifications", "publisher": "Mercedes-Benz Media Newsroom USA", "type": "manufacturer", "date": "2017-02-03", "accessed": "2026-10-09" },
+    "mb17coupe": { "url": "https://media.mbusa.com/news/2017-gle-coupe-quick-reference-guide", "title": "2017 GLE Coupe Quick Reference Guide", "publisher": "Mercedes-Benz Media Newsroom USA", "type": "manufacturer", "date": "2016-09-23", "accessed": "2026-10-09" },
+    "mbcoupe18": { "url": "https://media.mbusa.com/news/the-gle-coupe-an-impressively-sporty-yet-practical-choice", "title": "The GLE Coupe: an impressively sporty, yet practical choice", "publisher": "Mercedes-Benz Media Newsroom USA", "type": "manufacturer", "date": "2017-08-03", "accessed": "2026-10-09" },
+    "mb20gle450": { "url": "https://media.mbusa.com/news/2020-mercedes-benz-gle-450-4matic-suv", "title": "2020 Mercedes-Benz GLE 450 4MATIC SUV", "publisher": "Mercedes-Benz Media Newsroom USA", "type": "manufacturer", "date": "2018-10-31", "accessed": "2026-10-09" },
+    "mb20qrg": { "url": "https://media.mbusa.com/news/2020-gle-suv-quick-reference-guide", "title": "2020 GLE SUV Quick Reference Guide", "publisher": "Mercedes-Benz Media Newsroom USA", "type": "manufacturer", "date": "2019-05-21", "accessed": "2026-10-09" },
+    "mb20price": { "url": "https://media.mbusa.com/news/all-new-mercedes-benz-gle-suv-to-start-at-53700", "title": "All-new Mercedes-Benz GLE SUV to start at $53,700", "publisher": "Mercedes-Benz Media Newsroom USA", "type": "manufacturer", "date": "2018-11-28", "accessed": "2026-10-09" },
+    "mb24": { "url": "https://media.mbusa.com/news/2024-mercedes-benz-gle-trendsetting-luxury-suv-now-even-better", "title": "2024 Mercedes-Benz GLE: Trendsetting luxury SUV now even better", "publisher": "Mercedes-Benz Media Newsroom USA", "type": "manufacturer", "date": "2023-01-31", "accessed": "2026-10-09" }
+  },
+  "generations": [
+    {
+      "id": "mercedes-benz-gle-w163",
+      "slug": "w163",
+      "ordinal": 1,
+      "lines": ["gle"],
+      "name": "First generation",
+      "codes": [ { "value": "W163", "kind": "model code (series)", "src": "wp", "quote": "Model code W163" } ],
+      "names": [
+        { "value": "M-Class", "markets": ["global"], "src": "wp", "quote": "Production 1997–2015 (M-Class)" }
+      ],
+      "dates": {
+        "revealed": { "value": "1997", "event": "North American International Auto Show, Detroit", "src": "de163", "quote": "Der Mercedes W 163 wurde unter der Bezeichnung M-Klasse erstmals auf der North American International Auto Show 1997 in Detroit präsentiert" },
+        "productionStart": { "value": "1997-02", "src": "wp", "quote": "Production February 1997 – December 2004" },
+        "productionEnd": { "value": "2004-12", "src": "wp", "quote": "Production February 1997 – December 2004" },
+        "salesStart": [
+          { "value": "1997-09", "market": "US", "src": "de163", "quote": "ab September 1997 in den USA und Kanada sowie ab März 1998 auf dem europäischen Markt verkauft" },
+          { "value": "1997-09", "market": "CA", "src": "de163", "quote": "ab September 1997 in den USA und Kanada sowie ab März 1998 auf dem europäischen Markt verkauft" },
+          { "value": "1998-03", "market": "EU", "src": "de163", "quote": "ab September 1997 in den USA und Kanada sowie ab März 1998 auf dem europäischen Markt verkauft" }
+        ],
+        "modelYears": [
+          { "market": "NA", "from": 1998, "to": 2005, "src": "wp", "quote": "Model years 1998–2005" }
+        ]
+      },
+      "ongoing": false,
+      "assembly": [
+        { "value": "Vance (Tuscaloosa County), Alabama, United States (MBUSI)", "src": "wp", "quote": "Assembly United States: Tuscaloosa, Alabama (MBUSI)" },
+        { "value": "Graz, Austria (Magna Steyr, 1999–2002)", "src": "wp", "quote": "Austria: Graz (Magna Steyr; 1999–2002)" }
+      ],
+      "bodyStyles": [
+        { "id": "b1", "value": "5-door SUV (body-on-frame)", "markets": ["global"], "src": "wp", "quote": "Body style 5-door SUV Chassis Body-on-frame" }
+      ],
+      "drivetrains": [
+        { "value": "AWD", "system": "4Matic (permanent, two-speed transfer case)", "markets": ["global"], "src": "wp", "quote": "The Mercedes-Benz M-Class (W163) was available with permanent 4Matic four-wheel drive" }
+      ],
+      "dimensions": [
+        { "id": "d1", "market": "unstated", "version": "1997–2002 (pre-facelift)", "unit": "mm", "length": 4587, "width": 1834, "height": 1775, "wheelbase": 2819, "src": "wp", "quotes": ["Wheelbase 2,819 mm (111.0 in)", "Length 1997–02: 4,587 mm (180.6 in)", "Width 1997–02: 1,834 mm (72.2 in)", "Height 1997–02: 1,775 mm (69.9 in)"] },
+        { "id": "d2", "market": "unstated", "version": "2002–2005 (facelift)", "unit": "mm", "length": 4638, "width": 1839, "height": 1821, "src": "wp", "quotes": ["2002–05: 4,638 mm (182.6 in)", "2002–05: 1,839 mm (72.4 in)", "2002–05: 1,821 mm (71.7 in)"] },
+        { "id": "d3", "market": "unstated", "version": "ML 55 AMG", "unit": "mm", "length": 4636, "width": 1895, "height": 1760, "src": "wp", "quotes": ["AMG: 4,636 mm (182.5 in)", "AMG: 1,895 mm (74.6 in)", "AMG: 1,760 mm (69.3 in)"] }
+      ],
+      "powertrains": [
+        { "id": "p1", "name": "ML 230", "market": "EU", "fuel": "petrol", "years": "1998–2001", "engine": "2.3 L inline-4", "displacement": 2295, "cylinders": 4, "power": { "value": 110, "unit": "kW" }, "torque": { "value": 220, "unit": "Nm" }, "transmission": "5-speed manual", "src": "wp", "quotes": ["ML 230 1998–2001 2.3 L (2,295 cc) inline-4 110 kW (150 PS; 148 hp) 220 N⋅m (162 lbf⋅ft)", "An entry-level, manual transmission-only ML 230, fitted with a 2.3-liter inline-four was available in Europe"] },
+        { "id": "p2", "name": "ML 320", "market": "unstated", "fuel": "petrol", "years": "1998–2001", "engine": "3.2 L V6 (M112)", "displacement": 3199, "cylinders": 6, "power": { "value": 160, "unit": "kW" }, "torque": { "value": 315, "unit": "Nm" }, "src": "wp", "quotes": ["ML 320 1998–2001 3.2 L (3,199 cc) V6", "160 kW (218 PS; 215 hp) 315 N⋅m (232 lbf⋅ft)"] },
+        { "id": "p3", "name": "ML 350", "market": "unstated", "fuel": "petrol", "years": "2002–2005", "engine": "3.7 L V6", "displacement": 3724, "power": { "value": 173, "unit": "kW" }, "torque": { "value": 346, "unit": "Nm" }, "src": "wp", "quotes": ["ML 350 2002–2005 3.7 L (3,724 cc) 173 kW (235 PS; 232 hp) 346 N⋅m (255 lbf⋅ft)"] },
+        { "id": "p4", "name": "ML 430", "market": "unstated", "fuel": "petrol", "years": "1999–2001", "engine": "4.3 L V8 (M113)", "displacement": 4266, "cylinders": 8, "power": { "value": 200, "unit": "kW" }, "torque": { "value": 400, "unit": "Nm" }, "src": "wp", "quotes": ["ML 430 1999–2001 4.3 L (4,266 cc) V8", "200 kW (272 PS; 268 hp) 400 N⋅m (295 lbf⋅ft)"] },
+        { "id": "p5", "name": "ML 500", "market": "unstated", "fuel": "petrol", "years": "2001–2005", "engine": "5.0 L V8", "displacement": 4966, "power": { "value": 215, "unit": "kW" }, "torque": { "value": 440, "unit": "Nm" }, "src": "wp", "quotes": ["ML 500 2001–2005 5.0 L (4,966 cc) 215 kW (292 PS; 288 hp) 440 N⋅m (325 lbf⋅ft)"] },
+        { "id": "p6", "name": "ML 55 AMG", "market": "unstated", "fuel": "petrol", "years": "2000–2001", "engine": "5.4 L V8 (AMG)", "displacement": 5439, "power": { "value": 255, "unit": "kW" }, "torque": { "value": 510, "unit": "Nm" }, "src": "wp", "quotes": ["ML 55 AMG 2000–2001 5.4 L (5,439 cc) 255 kW (347 PS; 342 hp) 510 N⋅m (376 lbf⋅ft)"] },
+        { "id": "p7", "name": "ML 270 CDI", "market": "unstated", "fuel": "diesel", "years": "1998–2001", "engine": "2.7 L inline-5 turbo-diesel (OM612)", "displacement": 2688, "cylinders": 5, "power": { "value": 120, "unit": "kW" }, "torque": { "value": 370, "unit": "Nm" }, "src": "wp", "quotes": ["ML 270 CDI 1998–2001 2.7 L (2,688 cc) inline-5 120 kW (163 PS; 161 hp) 370 N⋅m (273 lbf⋅ft)"] },
+        { "id": "p8", "name": "ML 400 CDI", "market": "unstated", "fuel": "diesel", "years": "2001–2005", "engine": "4.0 L V8 turbo-diesel (OM628)", "displacement": 3996, "cylinders": 8, "power": { "value": 184, "unit": "kW" }, "torque": { "value": 560, "unit": "Nm" }, "src": "wp", "quotes": ["ML 400 CDI 2001–2005 4.0 L (3,996 cc) V8", "184 kW (250 PS; 247 hp) 560 N⋅m (413 lbf⋅ft)"] }
+      ],
+      "revisions": [
+        {
+          "id": "r1", "slug": "2001-facelift", "kind": "facelift", "name": "Facelift (2002 model year)",
+          "dates": {
+            "revealed": { "value": "2001", "src": "wp", "quote": "Mercedes-Benz revised and updated the W163 in 2001 for the 2002 model year." }
+          },
+          "changes": [
+            { "id": "r1c1", "topic": "design", "text": "New headlamp and tail-lamp lenses and new front and rear bumpers were fitted.", "src": "wp", "quote": "Styling updates involved the fitment of new head- and tail-lamp lenses, front and rear bumpers" },
+            { "id": "r1c2", "topic": "design", "text": "The side turn signals moved from the fenders to the door mirrors.", "src": "wp", "quote": "the relocation of the side turn signals from the fenders to the side-view mirrors" },
+            { "id": "r1c3", "topic": "powertrain", "text": "The ML 430 was replaced by the 5.0-litre V8 ML 500, and the 4.0-litre V8 ML 400 CDI diesel became available in Europe.", "src": "wp", "quote": "At the same time, the ML 430 was replaced by the 5.0-liter V8-powered ML 500 and a new 4.0-liter V8 turbodiesel ML 400 CDI became available in Europe." },
+            { "id": "r1c4", "topic": "other", "text": "More than 1,100 components were renewed.", "src": "de163", "quote": "Mit der Modellpflege wurden mehr als 1100 Bauteile erneuert" }
+          ]
+        }
+      ],
+      "commons": {},
+      "notes": [
+        "Mercedes-Benz press material (group-media.mercedes-benz.com, mercedes-benz.com) returns HTTP 403 to our research tool; this generation is documented from English and German Wikipedia.",
+        "Built at the Mercedes-Benz U.S. International plant in Vance, Alabama (MBUSI, Tuscaloosa County) – the first Mercedes-Benz passenger-car plant in the US; some European-market cars were also built by Magna Steyr in Graz, Austria (1999–2002).",
+        "North American model years 1998–2005. Production dates differ: English Wikipedia gives February 1997 – December 2004, German Wikipedia 1997–2005.",
+        "The models were badged 'ML' (e.g. ML 320) although the series was called M-Class.",
+        "English Wikipedia says the W163 seated five, or seven with an optional third row; no numeric source for seating was found, so seating is not recorded."
+      ]
+    },
+    {
+      "id": "mercedes-benz-gle-w164",
+      "slug": "w164",
+      "ordinal": 2,
+      "lines": ["gle"],
+      "name": "Second generation",
+      "codes": [ { "value": "W164", "kind": "model code (series)", "src": "wp", "quote": "Model code W164" } ],
+      "names": [
+        { "value": "M-Class", "markets": ["global"], "src": "de164", "quote": "Der Mercedes-Benz W 164 wurde als Mercedes-Benz M-Klasse verkauft" }
+      ],
+      "dates": {
+        "revealed": { "value": "2005-01", "event": "North American International Auto Show, Detroit", "src": "wp", "quote": "The redesigned M-class (chassis name W164) was introduced in April 2005 as a 2006 model after a showing at the North American International Auto Show in January." },
+        "productionStart": { "value": "2005-01", "src": "wp", "quote": "Production January 2005–2011" },
+        "productionEnd": { "value": "2011-07", "src": "de164", "quote": "Im Juli 2011 wurde die Produktion des W 164 eingestellt." },
+        "modelYears": [
+          { "market": "NA", "from": 2006, "to": 2011, "src": "wp", "quote": "Model years 2006–2011" }
+        ]
+      },
+      "ongoing": false,
+      "platform": { "value": "W164/V251/W166 (shared with GL-Class X164 and R-Class)", "src": "wp", "quote": "Platform W164/V251/W166" },
+      "assembly": [
+        { "value": "Vance (Tuscaloosa County), Alabama, United States (MBUSI)", "src": "wp", "quote": "Assembly United States: Tuscaloosa, Alabama (MBUSI) Designer Andreas Deufel" }
+      ],
+      "bodyStyles": [
+        { "id": "b1", "value": "5-door SUV (unibody)", "markets": ["global"], "src": "wp", "quote": "Body style 5-door SUV Platform W164/V251/W166 Chassis Unibody" }
+      ],
+      "drivetrains": [
+        { "value": "AWD", "system": "4Matic (permanent; low range only with optional Off-Road Pro package)", "markets": ["global"], "src": "wp", "quote": "Permanent 4Matic four-wheel drive remained, with one-speed transfer case (no low range), center limited-slip differential and four-wheel electronic traction system (4-ETS)." }
+      ],
+      "dimensions": [
+        { "id": "d1", "market": "unstated", "version": "standard", "unit": "mm", "length": 4781, "width": 1910, "height": 1815, "wheelbase": 2913, "src": "wp", "quotes": ["Wheelbase 2,913 mm (114.7 in)", "Length 4,781 mm (188.23 in)", "Width 1,910 mm (75 in)", "Height 1,815 mm (71.5 in)"] },
+        { "id": "d2", "market": "unstated", "version": "ML 63 AMG", "unit": "mm", "length": 4821, "width": 1951, "height": 1862, "src": "wp", "quotes": ["AMG: 4,821 mm (189.8 in)", "AMG: 1,951 mm (76.8 in)", "AMG: 1,862 mm (73.3 in)"] },
+        { "id": "d3", "market": "US", "version": "ML 450 Hybrid", "unit": "mm", "length": 4806, "width": 1976, "src": "wp", "quotes": ["Hybrid: 4,806 mm (189.2 in)", "Hybrid: 1,976 mm (77.8 in)"] }
+      ],
+      "powertrains": [
+        { "id": "p1", "name": "ML 350 4MATIC", "market": "unstated", "fuel": "petrol", "years": "2005–2011", "engine": "3.5 L V6 (M272)", "displacement": 3498, "cylinders": 6, "power": { "value": 203, "unit": "kW" }, "torque": { "value": 350, "unit": "Nm" }, "transmission": "7-speed 7G-Tronic automatic", "drivetrain": "AWD", "src": "wp", "quotes": ["ML 350 4MATIC 2005–2011 3498 cc V6 NA 203 kW (276 PS; 272 hp) 350 N⋅m (258 lbf⋅ft)"] },
+        { "id": "p2", "name": "ML 500 4MATIC", "market": "unstated", "fuel": "petrol", "years": "2005–2007", "engine": "5.0 L V8", "displacement": 4966, "cylinders": 8, "power": { "value": 228, "unit": "kW" }, "torque": { "value": 406, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["ML 500 4MATIC (2005) 2005–2007 4966 cc V8 NA 228 kW (310 PS; 306 hp) 406 N⋅m (299 lbf⋅ft)"] },
+        { "id": "p3", "name": "ML 500 / ML 550 4MATIC", "market": "unstated", "fuel": "petrol", "years": "2007–2011", "engine": "5.5 L V8", "displacement": 5461, "cylinders": 8, "power": { "value": 290, "unit": "kW" }, "torque": { "value": 530, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["ML 500 4MATIC (2008) ML 550 4MATIC (2008) 2007–2011 5461 cc", "290 kW (394 PS; 389 hp) 530 N⋅m (391 lbf⋅ft)"] },
+        { "id": "p4", "name": "ML 63 AMG 4MATIC", "market": "unstated", "fuel": "petrol", "years": "2006–2011", "engine": "6.2 L V8 (M156)", "displacement": 6208, "cylinders": 8, "power": { "value": 380, "unit": "kW" }, "torque": { "value": 630, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["ML 63 AMG 4MATIC 2006–2011 6208 cc 380 kW (517 PS; 510 hp) 630 N⋅m (465 lbf⋅ft)"] },
+        { "id": "p5", "name": "ML 450 Hybrid 4MATIC", "market": "US", "fuel": "hybrid", "years": "2009–2011", "engine": "3.5 L V6 + two electric motors (two-mode hybrid)", "power": { "value": 254, "unit": "kW" }, "torque": { "value": 517, "unit": "Nm" }, "transmission": "two-mode hybrid CVT", "drivetrain": "AWD", "src": "wp", "quotes": ["ML 450 Hybrid 4MATIC 2009–2011 V6 NA + 2x Electric Motors 254 kW (345 PS; 341 hp) 517 N⋅m (381 lbf⋅ft)", "The ML 450 was developed under the Global Hybrid Cooperation, and will only be available in the United States under lease."] },
+        { "id": "p6", "name": "ML 280 CDI / ML 300 CDI 4MATIC", "market": "unstated", "fuel": "diesel", "years": "2005–2010", "engine": "3.0 L V6 turbo-diesel (OM642)", "displacement": 2987, "cylinders": 6, "power": { "value": 141, "unit": "kW" }, "torque": { "value": 440, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["ML 280 CDI 4MATIC / ML 300 CDI 4MATIC BLUEEFFICIENCY 2005–2010 2987 cc V6 Turbo 141 kW (192 PS; 189 hp) 440 N⋅m (325 lbf⋅ft)"] },
+        { "id": "p7", "name": "ML 320 CDI 4MATIC", "market": "unstated", "fuel": "diesel", "years": "2005–2009", "engine": "3.0 L V6 turbo-diesel (OM642)", "power": { "value": 157, "unit": "kW" }, "torque": { "value": 540, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["ML 320 CDI 4MATIC 2005–2009 157 kW (213 PS; 211 hp) 540 N⋅m (398 lbf⋅ft)"] },
+        { "id": "p8", "name": "ML 350 CDI BlueTec 4MATIC", "market": "unstated", "fuel": "diesel", "years": "2009–2011", "engine": "3.0 L V6 turbo-diesel (OM642)", "power": { "value": 167, "unit": "kW" }, "torque": { "value": 510, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["ML 350 CDI BlueTec 4MATIC 2009–2011 167 kW (227 PS; 224 hp) 510 N⋅m (376 lbf⋅ft)"] },
+        { "id": "p9", "name": "ML 420 CDI 4MATIC", "market": "unstated", "fuel": "diesel", "years": "2005–2009", "engine": "4.0 L V8 turbo-diesel (OM629)", "displacement": 3996, "cylinders": 8, "power": { "value": 228, "unit": "kW" }, "torque": { "value": 700, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["ML 420 CDI 4MATIC 2005–2009 3996 cc V8 Turbo (OM629) 228 kW (310 PS; 306 hp) 700 N⋅m (516 lbf⋅ft)"] }
+      ],
+      "changes": [
+        { "id": "c1", "topic": "chassis", "text": "The body-on-frame construction of the W163 was replaced by a unibody shared with the GL-Class.", "src": "wp", "quote": "The W164 platform used for the new M-Class is shared with the new GL-Class and is a unibody type rather than the former (W163) body-on-frame used by the M-Class vehicles produced from 1998–2005." },
+        { "id": "c2", "topic": "dimensions", "text": "The new model is 71 mm larger, 150 mm longer and 5 mm lower than the first generation.", "src": "wp", "quote": "Mercedes-Benz made the new M-Class 71 mm larger, 150 mm longer and 5 mm lower than the first model." },
+        { "id": "c3", "topic": "design", "text": "The drag coefficient was reduced to 0.34.", "src": "wp", "quote": "The coefficient of drag was reduced to 0.34." },
+        { "id": "c4", "topic": "powertrain", "text": "The 7G-Tronic seven-speed automatic was introduced and the manual transmission was dropped.", "src": "wp", "quote": "New features in the 2006 M-Class include the 7G-Tronic seven-speed automatic transmission" },
+        { "id": "c5", "topic": "drivetrain", "text": "The standard transfer case lost its low range, which became part of an optional Off-Road Pro package outside the US.", "src": "wp", "quote": "In most countries except the U.S., an Off-Road Pro package with center and rear differential locks, 4-ETS, two-speed transfer case with reduction gearing, and adjustable ground clearance was available as an option" }
+      ],
+      "revisions": [
+        {
+          "id": "r1", "slug": "2008-facelift", "kind": "facelift", "name": "Facelift (2009 model year)",
+          "dates": {
+            "revealed": { "value": "2008-03", "event": "New York International Auto Show", "src": "wp", "quote": "The 2009 Mercedes-Benz M-Class got a minor facelift as it debuted at the 2008 New York International Auto Show in March 2008." }
+          },
+          "changes": [
+            { "id": "r1c1", "topic": "design", "text": "New headlights, redesigned bumpers, new mirrors and a larger grille were introduced.", "src": "wp", "quote": "This facelift includes new front headlights, redesigned front and rear bumpers, new exterior mirrors, new rim choices, a larger front grille, restyled interior" },
+            { "id": "r1c2", "topic": "powertrain", "text": "Diesel model designations were raised (ML 280 CDI to ML 300 CDI, 320 CDI to 350 CDI, 420 CDI to 450 CDI).", "src": "wp", "quote": "The ML 280 CDI became the ML 300 CDI, the 320 CDI became the 350 CDI, and the 420 CDI became the 450 CDI." },
+            { "id": "r1c3", "topic": "powertrain", "text": "BlueTec diesels with urea injection arrived for the 2009 model year.", "src": "wp", "quote": "Models using Bluetec Diesel engine with urea injection were introduced in 2008 for the 2009 model year." },
+            { "id": "r1c4", "topic": "safety-equipment", "text": "PRE-SAFE preventive occupant protection and NECK-PRO head restraints became standard.", "src": "de164", "quote": "Ferner wurde die M-Klasse serienmäßig mit dem präventiven Insassenschutz PreSafe und NeckPro-Kopfstützen ausgestattet." }
+          ]
+        }
+      ],
+      "commons": {},
+      "notes": [
+        "Mercedes-Benz press material returns HTTP 403 to our research tool; documented from English and German Wikipedia.",
+        "Built only at Vance (Tuscaloosa County), Alabama. North American model years 2006–2011.",
+        "Dates differ between sources: English Wikipedia gives production from January 2005; German Wikipedia gives 03/2005–06/2011 in its infobox and July 2011 in the text for the end of production. German Wikipedia gives slightly different dimensions (4,780 × 1,911 × 1,815 mm, wheelbase 2,915 mm).",
+        "German Wikipedia says the facelift was shown at the end of April 2008 and delivered from autumn 2008; English Wikipedia dates its debut to the New York show in March 2008.",
+        "The ML 450 Hybrid (2009 New York show) was offered only in the United States, on lease."
+      ]
+    },
+    {
+      "id": "mercedes-benz-gle-w166",
+      "slug": "w166",
+      "ordinal": 3,
+      "lines": ["gle"],
+      "name": "Third generation",
+      "codes": [
+        { "value": "W166", "kind": "model code (series, SUV)", "src": "wp", "quote": "Model code W166 C292 (Coupé)" },
+        { "value": "C292", "kind": "model code (series, GLE Coupé)", "src": "wp", "quote": "Model code W166 C292 (Coupé)" }
+      ],
+      "names": [
+        { "value": "M-Class", "markets": ["global"], "src": "de166", "quote": "Verkaufsbezeichnung GLE (bis Frühjahr 2015 M-Klasse)" },
+        { "value": "GLE", "markets": ["global"], "src": "de166", "quote": "Verkaufsbezeichnung GLE (bis Frühjahr 2015 M-Klasse)" }
+      ],
+      "dates": {
+        "revealed": { "value": "2011", "event": "IAA Frankfurt (64th)", "src": "de166", "quote": "Der W 166 wurde erstmals auf der 64. IAA 2011 in Frankfurt gezeigt." },
+        "productionStart": { "value": "2011-07", "src": "wp", "quote": "Production July 2011–2019" },
+        "productionEnd": { "value": "2019", "src": "wp", "quote": "Production July 2011–2019" },
+        "salesStart": [
+          { "value": "2011-09", "market": "US", "src": "de166", "quote": "dessen europaweite Markteinführung am 19. November 2011 erfolgte, nachdem der ML in den USA bereits Ende September auf den Markt gekommen war" },
+          { "value": "2011-11-19", "market": "EU", "src": "de166", "quote": "dessen europaweite Markteinführung am 19. November 2011 erfolgte" }
+        ],
+        "modelYears": [
+          { "market": "NA", "from": 2012, "to": 2019, "src": "wp", "quote": "Model years 2012–2019" }
+        ]
+      },
+      "ongoing": false,
+      "platform": { "value": "W164/V251/W166 (related to Jeep Grand Cherokee WK2 and Dodge Durango)", "src": "wp", "quote": "Platform W164/V251/W166 Chassis Unibody Related Mercedes-Benz GL-Class (X166) Dodge Durango (WD)" },
+      "assembly": [
+        { "value": "Vance (Tuscaloosa County), Alabama, United States (MBUSI)", "src": "de166", "quote": "Gebaut wurde der W 166 im US-amerikanischen Mercedes-Benz Werk Tuscaloosa (Alabama)." },
+        { "value": "Pune, India (final assembly from kits)", "src": "wp", "quote": "India: Pune, Maharashtra (MBI)" },
+        { "value": "Bogor, Indonesia (final assembly from kits)", "src": "wp", "quote": "Indonesia: Bogor (MBDI)" },
+        { "value": "Samut Prakan, Thailand", "src": "wp", "quote": "Thailand: Samut Prakan (TAAP)" }
+      ],
+      "bodyStyles": [
+        { "id": "b1", "value": "5-door SUV (W166)", "markets": ["global"], "src": "wp", "quote": "Body style 5-door SUV 5-door coupe SUV" },
+        { "id": "b2", "value": "5-door coupé SUV – GLE Coupé (C292), 2015–2019", "markets": ["global"], "src": "wp", "quote": "The GLE Coupé (C292) is the coupé SUV version and is heavily related to the W166, sharing its platform, mechanicals and interior (but having a unique body with a similar design)." }
+      ],
+      "drivetrains": [
+        { "value": "AWD", "system": "4MATIC (permanent)", "markets": ["EU"], "src": "de166", "quote": "Alle Modelle haben den permanenten Allradantrieb 4MATIC" },
+        { "value": "RWD", "markets": ["US"], "src": "mb17gle350", "quote": "Drive Configuration Rear Wheel Drive / 4MATIC" },
+        { "value": "AWD", "system": "4MATIC", "markets": ["US"], "src": "mb17gle350", "quote": "Drive Configuration Rear Wheel Drive / 4MATIC" }
+      ],
+      "dimensions": [
+        { "id": "d1", "market": "unstated", "version": "SUV (W166)", "unit": "mm", "length": 4803, "width": 1926, "height": 1796, "wheelbase": 2916, "src": "wp", "quotes": ["Wheelbase 2,916 mm (114.8 in)", "Length 4,803 mm (189.1 in)", "Width 1,926 mm (75.8 in)", "Height 1,796 mm (70.7 in)"] },
+        { "id": "d2", "market": "US", "version": "2017 GLE 350 SUV", "unit": "in", "length": 189.1, "width": 78.0, "height": 70.7, "wheelbase": 114.8, "src": "mb17gle350", "quotes": ["Wheelbase 114.8 Length 189.1 Width (w/o mirrors) 78.0 Height 70.7"] },
+        { "id": "d3", "market": "US", "version": "2017 Mercedes-AMG GLE 43 Coupé (C292)", "unit": "in", "length": 192.6, "height": 67.7, "wheelbase": 114.8, "src": "mb17coupe", "quotes": ["Length 192.6 193.6", "Height 67.7 67.6 Wheelbase 114.8 114.8"] }
+      ],
+      "cargo": [
+        { "id": "k1", "market": "US", "version": "2017 GLE 350 SUV", "behind": "2nd row", "value": 38.2, "unit": "cu ft", "standard": "not stated", "src": "mb17gle350", "quote": "Cargo Volume (seats up) 38.2" },
+        { "id": "k2", "market": "US", "version": "2017 GLE 350 SUV", "behind": "1st row", "value": 80.3, "unit": "cu ft", "standard": "not stated", "src": "mb17gle350", "quote": "Cargo Volume (2nd row folded) 80.3" }
+      ],
+      "powertrains": [
+        { "id": "p1", "name": "ML 350 / GLE 350", "market": "unstated", "fuel": "petrol", "years": "2012–2018", "engine": "3.5 L V6 (M276 DE 35)", "displacement": 3498, "cylinders": 6, "power": { "value": 306, "unit": "PS" }, "torque": { "value": 370, "unit": "Nm" }, "src": "wp", "quotes": ["ML 350 / GLE 350 2012–2018 3,498 cc (3.5 L) V6 NA (Mercedes-Benz M276 DE 35 engine) 306 PS (302 hp; 225 kW) @6500, 370 N⋅m (273 lb⋅ft) @3500–5250"] },
+        { "id": "p2", "name": "GLE 350 (2017 model year)", "market": "US", "fuel": "petrol", "engine": "3.5 L V6", "displacement": 3498, "cylinders": 6, "power": { "value": 302, "unit": "hp" }, "torque": { "value": 273, "unit": "lb-ft" }, "transmission": "7G-TRONIC 7-speed automatic", "src": "mb17gle350", "quotes": ["Engine Type 3.5L V6", "Displacement (cc) 3,498", "Horsepower @ rpm 302 @ 6,500 Torque @ rpm 273 @ 3,500 – 5,250", "Transmission Type 7G-TRONIC"] },
+        { "id": "p3", "name": "ML 400 / GLE 400 4MATIC", "market": "unstated", "fuel": "petrol", "years": "2015–2019", "engine": "3.0 L V6 biturbo (M276 DELA 30)", "displacement": 2996, "cylinders": 6, "power": { "value": 333, "unit": "PS" }, "torque": { "value": 480, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["ML 400 / GLE 400 4MATIC 2015–2019 2,996 cc (3.0 L) V6 BiTurbo (Mercedes-Benz M276 DELA 30 engine) 333 PS (328 hp; 245 kW) @5250–6000, 480 N⋅m (354 lb⋅ft) @1600–4000"] },
+        { "id": "p4", "name": "GLE 450 AMG / AMG GLE 43 4MATIC", "market": "unstated", "fuel": "petrol", "years": "2015–2018", "engine": "3.0 L V6 biturbo", "power": { "value": 367, "unit": "PS" }, "torque": { "value": 520, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["GLE 450 AMG 4MATIC/AMG GLE 43 4MATIC 2015–2018 367 PS (362 hp; 270 kW) @5500–6000, 520 N⋅m (384 lb⋅ft) @2000–4000"] },
+        { "id": "p5", "name": "ML 500 / ML 550 4MATIC", "market": "unstated", "fuel": "petrol", "years": "2012–2015", "engine": "4.7 L V8 biturbo", "displacement": 4663, "cylinders": 8, "power": { "value": 408, "unit": "PS" }, "torque": { "value": 600, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["ML 500/ ML550 4MATIC 2012–2015 4,663 cc (4.7 L) V8 BiTurbo 408 PS (402 hp; 300 kW) @5000–5750, 600 N⋅m (443 lb⋅ft) @1600–4750"] },
+        { "id": "p6", "name": "GLE 500 / GLE 550 4MATIC", "market": "unstated", "fuel": "petrol", "years": "2015–2018", "engine": "4.7 L V8 biturbo", "power": { "value": 429, "unit": "PS" }, "torque": { "value": 700, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["GLE 500/ GLE550 4MATIC 2015–2018 429 PS (423 hp; 316 kW) @5250, 700 N⋅m (516 lb⋅ft) @1800–4000"] },
+        { "id": "p7", "name": "ML 63 / GLE 63 AMG", "market": "unstated", "fuel": "petrol", "years": "2012–2015", "engine": "5.5 L V8 biturbo (M157)", "displacement": 5461, "cylinders": 8, "power": { "value": 525, "unit": "PS" }, "torque": { "value": 700, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["ML 63 / GLE 63 AMG (with 4MATIC) 2012–2015 5,461 cc (5.5 L) V8 Biturbo (Mercedes-Benz M157 engine) 525 PS (518 hp; 386 kW) @5250, 700 N⋅m (516 lb⋅ft) @1750–5000"] },
+        { "id": "p8", "name": "GLE 63 S AMG 4MATIC", "market": "unstated", "fuel": "petrol", "years": "2015–2019", "engine": "5.5 L V8 biturbo", "power": { "value": 585, "unit": "PS" }, "torque": { "value": 760, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["GLE 63 S AMG 4MATIC 2015–2019 585 PS (577 hp; 430 kW) @5500, 760 N⋅m (561 lb⋅ft) @1750–5350"] },
+        { "id": "p9", "name": "ML 250 BlueTEC / GLE 250 d 4MATIC", "market": "unstated", "fuel": "diesel", "years": "2012–2019", "engine": "2.1 L inline-4 biturbo diesel (OM651)", "displacement": 2143, "cylinders": 4, "power": { "value": 204, "unit": "PS" }, "torque": { "value": 500, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["ML 250 CDI/BlueTEC 4MATIC / GLE 250d 4MATIC 2012–2019 2,143 cc (2.1 L) 16V I4 Bi-turbo Mercedes-Benz OM651 DE 22 LA engine 204 PS (201 hp; 150 kW) @4200, 500 N⋅m (369 lb⋅ft) @1600–1800"] },
+        { "id": "p10", "name": "ML 350 BlueTEC / GLE 350 d 4MATIC", "market": "unstated", "fuel": "diesel", "engine": "3.0 L V6 turbo-diesel (OM642)", "displacement": 2987, "cylinders": 6, "power": { "value": 258, "unit": "PS" }, "torque": { "value": 620, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["ML 350 BlueTEC 4MATIC / GLE 350d 4MATIC 2,987 cc (3.0 L) 24V V6 Single turbo Mercedes-Benz OM 642 LS DE 30 LA engine) 258 PS (254 hp; 190 kW) @3800, 620 N⋅m (457 lb⋅ft) @1600–2400"] },
+        { "id": "p11", "name": "GLE 500 e / GLE 550e 4MATIC", "market": "US", "fuel": "plug-in hybrid", "engine": "3.0 L V6 biturbo + electric motor", "displacement": 2996, "cylinders": 6, "power": { "value": 436, "unit": "hp" }, "torque": { "value": 479, "unit": "lb-ft" }, "transmission": "7G-TRONIC 7-speed automatic", "drivetrain": "AWD", "src": "mb17gle550e", "quotes": ["Engine Type 3.0L V6 biturbo + electric motor", "Displacement (cc) 2,996", "Horsepower @ rpm 436 @ 5,250 - 6,000 Torque @ rpm 479 @ 1,600 –4,000", "Transmission Type 7G-TRONIC 7-speed automatic"] },
+        { "id": "p12", "name": "Mercedes-AMG GLE 43 Coupé (2017)", "market": "US", "fuel": "petrol", "engine": "3.0 L V6 biturbo", "displacement": 2996, "cylinders": 6, "power": { "value": 362, "unit": "hp" }, "torque": { "value": 384, "unit": "lb-ft" }, "transmission": "AMG-enhanced 9G-TRONIC", "drivetrain": "AWD", "src": "mb17coupe", "quotes": ["Displacement 2,996 cc 5,461 cc", "362 hp @ 5,500 - 6,000 rpm 384 lb-ft @ 1,800 – 4,000 rpm", "Transmission AMG-enhanced 9G-TRONIC"] },
+        { "id": "p13", "name": "Mercedes-AMG GLE 63 S Coupé", "market": "US", "fuel": "petrol", "engine": "5.5 L V8 biturbo", "displacement": 5461, "cylinders": 8, "power": { "value": 577, "unit": "hp" }, "torque": { "value": 561, "unit": "lb-ft" }, "transmission": "AMG SPEEDSHIFT PLUS 7G-TRONIC", "drivetrain": "AWD", "src": "mbcoupe18", "quotes": ["The AMG GLE63 S Coupe continues to impress with its Handcrafted AMG 5.5L V8 Biturbo engine with 577 hp and 561 lb-ft of torque. Combined with the AMG SPEEDSHIFT PLUS 7G-TRONIC transmission"] }
+      ],
+      "changes": [
+        { "id": "c1", "topic": "interior", "text": "Rear legroom was increased and the rear backrests became adjustable.", "src": "wp", "quote": "An increase in rear seat legroom has been implemented, alongside adjustable rear backrests." },
+        { "id": "c2", "topic": "powertrain", "text": "A 7G-Tronic Plus seven-speed automatic replaced the earlier 7G-Tronic.", "src": "wp", "quote": "New features in the 2012 M-Class include an updated 7G-Tronic Plus seven-speed automatic transmission to provide improved fuel economy" },
+        { "id": "c3", "topic": "powertrain", "text": "A four-cylinder diesel was offered in the M-Class for the first time.", "src": "de166", "quote": "Außerdem stehen zwei Diesel – erstmals ein Vierzylinder –, die bereits die Euro-6-Norm erfüllen, zur Auswahl." },
+        { "id": "c4", "topic": "chassis", "text": "An Active Curve System with active anti-roll bars was introduced.", "src": "wp", "quote": "An active curve system with active anti-roll bars for body roll compensation was introduced." },
+        { "id": "c5", "topic": "technology", "text": "Adaptive cruise control (Distronic Plus) and active lane departure warning became available.", "src": "wp", "quote": "optional adaptive cruise control (Distronic Plus), active lane departure warning system" }
+      ],
+      "revisions": [
+        {
+          "id": "r1", "slug": "2015-facelift-gle", "kind": "rename", "name": "Facelift and rename to GLE (2015)",
+          "dates": {
+            "revealed": { "value": "2015-04", "event": "New York Auto Show", "src": "wp", "quote": "From 2015, with the release of the facelifted W166 third-generation model at the New York Auto Show in April, the M-Class was renamed to GLE" },
+            "salesStart": { "value": "2015-08", "market": "EU", "src": "de166", "quote": "Der GLE wurde erstmals auf der New York Auto Show gezeigt und ab August 2015 ausgeliefert." }
+          },
+          "names": [
+            { "value": "GLE", "markets": ["global"], "src": "de166", "quote": "Mit der Modellpflege im Herbst 2015 erfolgt eine Umbenennung in GLE." }
+          ],
+          "changes": [
+            { "id": "r1c1", "topic": "other", "text": "The M-Class was renamed GLE, positioning it as the SUV counterpart of the E-Class.", "src": "wp", "quote": "This is followed by the letter \"L\" that acts as a linkage with the letter \"E\"—the GLE being the SUV equivalent to the E-Class." },
+            { "id": "r1c2", "topic": "powertrain", "text": "The GLE 500 e became the first plug-in hybrid in the range, combining a V6 with an electric motor.", "src": "wp", "quote": "The GLE 500 e is the first plug-in hybrid in this model range, combining a 333 hp V6 engine with a 116 hp electric motor." },
+            { "id": "r1c3", "topic": "drivetrain", "text": "Rear-wheel drive became available for the first time.", "src": "de166", "quote": "Erstmals war er auch mit Hinterradantrieb bestellbar." },
+            { "id": "r1c4", "topic": "other", "text": "From 2015 all production moved to the Vance, Alabama plant.", "src": "wp", "quote": "before all production moved to the U.S. plant near Vance, Alabama in 2015 with the release of the facelifted W166 model" }
+          ]
+        }
+      ],
+      "commons": {},
+      "notes": [
+        "Name by date: sold as the M-Class (ML badges) from 2011 and as the GLE from the 2015 facelift (shown at New York in April 2015, delivered in Europe from August 2015). The rename is recorded as revision r1.",
+        "GLE Coupé (C292): a coupé SUV body on the W166 platform, unveiled at the North American International Auto Show in Detroit in January 2015 and built in Alabama; German Wikipedia gives market launch July 2015 and English Wikipedia says it was discontinued in August 2019. It is recorded as body style b2 of this generation.",
+        "Mercedes-Benz global press material returns HTTP 403 to our research tool; US specifications come from the Mercedes-Benz USA media newsroom (media.mbusa.com), which is readable.",
+        "North American model years 2012–2019. Production end: English Wikipedia gives 2019, German Wikipedia 2018 (W166 SUV); the C292 coupé ran until 2019.",
+        "English Wikipedia also says the W166 was built in Stuttgart for Europe and Australia from 2011 to 2015; German Wikipedia says it was built in Tuscaloosa. This claim is not recorded. Pune and Bogor performed final assembly of kits shipped from Vance (English Wikipedia)."
+      ]
+    },
+    {
+      "id": "mercedes-benz-gle-v167",
+      "slug": "v167",
+      "ordinal": 4,
+      "lines": ["gle"],
+      "name": "Fourth generation",
+      "codes": [
+        { "value": "V 167", "kind": "model code (series, SUV)", "src": "de167", "quote": "Der Mercedes-Benz V 167 bezeichnet ein SUV (Sport Utility Vehicle) von Mercedes-Benz." },
+        { "value": "C 167", "kind": "model code (series, GLE Coupé)", "src": "dec167", "quote": "Der Mercedes-Benz C 167 ist ein SUV-Coupé der deutschen Automobilmarke Mercedes-Benz, das seit 2019 auf Basis des Mercedes-Benz V 167 gebaut wird." }
+      ],
+      "names": [
+        { "value": "GLE", "markets": ["global"], "src": "de167", "quote": "Es ist das erste Modell der Baureihe 167 und die zweite Generation mit der Verkaufsbezeichnung GLE" }
+      ],
+      "dates": {
+        "revealed": { "value": "2018-10", "event": "Paris Motor Show (64th)", "src": "de167", "quote": "Der V 167 wurde erstmals auf dem 64. Pariser Autosalon im Oktober 2018 gezeigt." },
+        "productionStart": { "value": "2018-10", "src": "wp", "quote": "Production October 2018–present" },
+        "salesStart": [
+          { "value": "2019", "market": "US", "src": "mb20price", "quote": "The 2020 Mercedes-Benz GLE 350 4MATIC and GLE 450 4MATIC will be available in the U.S. starting in spring 2019, followed by the GLE 350 in summer 2019." }
+        ],
+        "modelYears": [
+          { "market": "NA", "from": 2020, "src": "wp", "quote": "Model years 2020–present" }
+        ]
+      },
+      "ongoing": true,
+      "assembly": [
+        { "value": "Vance (Tuscaloosa County), Alabama, United States (MBUSI)", "src": "de167", "quote": "Gebaut wird die Baureihe 167 im US-amerikanischen Mercedes-Benz-Werk Tuscaloosa." },
+        { "value": "Pune, India", "src": "wp", "quote": "India: Pune, Maharashtra (MBI)" },
+        { "value": "Pekan, Malaysia", "src": "wp", "quote": "Malaysia: Pekan (HICOM)" },
+        { "value": "Beijing, China (long-wheelbase GLE L, from 2026)", "src": "wp", "quote": "China: Beijing (Beijing Benz for L models, from 2026)" }
+      ],
+      "bodyStyles": [
+        { "id": "b1", "value": "5-door SUV (V 167)", "markets": ["global"], "src": "wp", "quote": "Body style 5-door SUV 5-door coupe SUV Related Mercedes-Benz GLS (X167)" },
+        { "id": "b2", "value": "5-door coupé SUV – GLE Coupé (C 167)", "markets": ["global"], "src": "dec167", "quote": "Wie das Vorgängermodell Mercedes-Benz C 292 wird das Fahrzeug wieder als GLE Coupé vermarktet." },
+        { "id": "b3", "value": "5-door SUV, long wheelbase – GLE L (China, from 2026)", "markets": ["CN"], "src": "wp", "quote": "3,115 mm (122.6 in) (GLE L, China)" }
+      ],
+      "drivetrains": [
+        { "value": "RWD", "markets": ["US"], "src": "mb20price", "quote": "Drive Config. Rear-Wheel Drive / 4MATIC All-Wheel Drive" },
+        { "value": "AWD", "system": "4MATIC", "markets": ["US"], "src": "mb20price", "quote": "Drive Config. Rear-Wheel Drive / 4MATIC All-Wheel Drive" }
+      ],
+      "dimensions": [
+        { "id": "d1", "market": "unstated", "version": "SUV", "unit": "mm", "wheelbase": 2995, "src": "wp", "quotes": ["Wheelbase 2,995 mm (117.9 in)"] },
+        { "id": "d2", "market": "US", "version": "2020 GLE 450 4MATIC SUV", "unit": "in", "length": 194, "width": 76.7, "height": 70.7, "wheelbase": 117.9, "src": "mb20gle450", "quotes": ["Wheelbase 117.9 Length 194 Width (w/ mirrors) 84.9 Width (w/o mirrors) 76.7 Height 70.7"] },
+        { "id": "d3", "market": "CN", "version": "GLE L (long wheelbase, from 2026)", "unit": "mm", "length": 5051, "wheelbase": 3115, "src": "wp", "quotes": ["5,051 mm (198.9 in) (GLE L, China)", "3,115 mm (122.6 in) (GLE L, China)"] },
+        { "id": "d4", "market": "unstated", "version": "GLE Coupé (C 167)", "unit": "mm", "width": 2010, "wheelbase": 2935, "src": "dec167", "quotes": ["Breite 2010 mm", "Radstand 2935 mm"] }
+      ],
+      "powertrains": [
+        { "id": "p1", "name": "GLE 350 / GLE 350 4MATIC (2020 model year)", "market": "US", "fuel": "petrol", "engine": "2.0 L inline-4 turbo", "power": { "value": 255, "unit": "hp" }, "torque": { "value": 273, "unit": "lb-ft" }, "transmission": "9G-TRONIC 9-speed automatic", "src": "mb20price", "quotes": ["a 2.0L Inline-4 turbo engine for the GLE 350 and GLE 350 4MATIC that produces 255 hp and 273 lb-ft of torque", "The new 9G-TRONIC 9-speed automatic transmission on all GLE models"] },
+        { "id": "p2", "name": "GLE 450 4MATIC (2020 model year)", "market": "US", "fuel": "mild hybrid", "engine": "3.0 L inline-6 turbo with EQ Boost (48 V)", "displacement": 2999, "cylinders": 6, "power": { "value": 362, "unit": "hp" }, "torque": { "value": 369, "unit": "lb-ft" }, "transmission": "9G-TRONIC", "drivetrain": "AWD", "src": "mb20gle450", "quotes": ["Engine Type 3.0L Inline-6 with EQ Boost", "Displacement (cc) 2,999", "Horsepower @ rpm 362 @ 5,500 – 6,100 (Internal Combustion Engine) EQ Boost Starter Generator Up to 21 hp Torque @ rpm 369 @ 1,600 – 4,000", "Transmission Type 9G-TRONIC"] },
+        { "id": "p3", "name": "GLE 300 d 4MATIC", "market": "unstated", "fuel": "diesel", "years": "09/2019–01/2023", "engine": "2.0 L inline-4 turbo-diesel", "displacement": 1950, "cylinders": 4, "power": { "value": 180, "unit": "kW" }, "torque": { "value": 500, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["GLE 300d 4MATIC (2019) 09/2019–01/2023 1,950 cc (119 cu in) Inline-4 Turbo 180 kW (245 PS; 241 hp) 500 N⋅m (369 lbf⋅ft)"] },
+        { "id": "p4", "name": "GLE 350 d 4MATIC", "market": "unstated", "fuel": "diesel", "years": "09/2019–01/2023", "engine": "2.9 L inline-6 turbo-diesel", "displacement": 2927, "cylinders": 6, "power": { "value": 200, "unit": "kW" }, "torque": { "value": 600, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["GLE 350d 4MATIC 09/2019–01/2023 2,927 cc (178.6 cu in) Inline-6 Turbo 200 kW (272 PS; 268 hp) 600 N⋅m (443 lbf⋅ft)"] },
+        { "id": "p5", "name": "GLE 400 d 4MATIC", "market": "unstated", "fuel": "diesel", "engine": "2.9 L inline-6 turbo-diesel", "power": { "value": 243, "unit": "kW" }, "torque": { "value": 700, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["GLE 400d 4MATIC 243 kW (330 PS; 326 hp) 700 N⋅m (516 lbf⋅ft)"] },
+        { "id": "p6", "name": "GLE 350 de 4MATIC", "market": "EU", "fuel": "plug-in hybrid", "years": "09/2019–01/2023", "engine": "2.0 L inline-4 turbo-diesel plug-in hybrid, 31.2 kWh battery", "power": { "value": 235, "unit": "kW" }, "torque": { "value": 700, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["GLE 350de 4MATIC (2019) 09/2019–01/2023 Inline-4 Turbo + Plug-in hybrid 235 kW (320 PS; 315 hp) 700 N⋅m (516 lbf⋅ft)", "In the European market, two plug-in hybrid versions are available: the GLE 350e, using a gasoline engine, and the GLE 350de, using a diesel engine. Both use a 31.2-kWh battery."] },
+        { "id": "p7", "name": "GLE 350 e 4MATIC", "market": "EU", "fuel": "plug-in hybrid", "engine": "2.0 L inline-4 turbo petrol plug-in hybrid, 31.2 kWh battery", "power": { "value": 245, "unit": "kW" }, "torque": { "value": 700, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["GLE 350e 4MATIC Inline-4 Turbo + Plug-in hybrid 245 kW (333 PS; 329 hp) 700 N⋅m (516 lbf⋅ft)", "In the European market, two plug-in hybrid versions are available: the GLE 350e, using a gasoline engine, and the GLE 350de, using a diesel engine. Both use a 31.2-kWh battery."] },
+        { "id": "p8", "name": "GLE 580 4MATIC (2019)", "market": "unstated", "fuel": "mild hybrid", "years": "09/2019–2023", "engine": "4.0 L V8 biturbo with EQ Boost", "displacement": 3982, "cylinders": 8, "power": { "value": 360, "unit": "kW" }, "torque": { "value": 700, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["GLE 580 4MATIC (2019) 09/2019– 2023 3,982 cc (243.0 cu in) V8 Biturbo + EQ Boost 360 kW (489 PS; 483 hp) 700 N⋅m (516 lbf⋅ft)"] },
+        { "id": "p9", "name": "Mercedes-AMG GLE 53 4MATIC+ (2020)", "market": "unstated", "fuel": "mild hybrid", "years": "2020–23", "engine": "3.0 L inline-6 turbo with EQ Boost", "power": { "value": 320, "unit": "kW" }, "torque": { "value": 520, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["AMG GLE 53 4MATIC+ (2020) 2020–23 320 kW (435 PS; 429 hp) 520 N⋅m (384 lbf⋅ft)"] },
+        { "id": "p10", "name": "Mercedes-AMG GLE 63 S 4MATIC+", "market": "unstated", "fuel": "mild hybrid", "years": "2020–", "engine": "4.0 L V8 biturbo (M177) with EQ Boost", "power": { "value": 450, "unit": "kW" }, "torque": { "value": 850, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["AMG GLE 63 S 4MATIC+ 450 kW (612 PS; 603 hp) @ 5750 – 6500 rpm 850 N⋅m (627 lbf⋅ft) @ 2500 – 4500 rpm"] },
+        { "id": "p11", "name": "GLE 400 e 4MATIC (2023)", "market": "unstated", "fuel": "plug-in hybrid", "years": "02/2023–", "engine": "2.0 L inline-4 turbo plug-in hybrid", "power": { "value": 280, "unit": "kW" }, "torque": { "value": 650, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["GLE 400e 4MATIC 02/2023– 280 kW (381 PS; 375 hp) 650 N⋅m (479 lbf⋅ft)"] },
+        { "id": "p12", "name": "GLE 450 d 4MATIC (2023)", "market": "unstated", "fuel": "mild hybrid", "years": "02/2023–", "engine": "inline-6 turbo-diesel with EQ Boost", "power": { "value": 273, "unit": "kW" }, "torque": { "value": 750, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["GLE 450d 4MATIC 02/2023– Inline-6 Turbo + EQ Boost 273 kW (371 PS; 366 hp) 750 N⋅m (553 lbf⋅ft)"] },
+        { "id": "p13", "name": "Mercedes-AMG GLE 53 Hybrid 4MATIC+ (2023)", "market": "unstated", "fuel": "plug-in hybrid", "engine": "3.0 L inline-6 turbo plug-in hybrid", "power": { "value": 400, "unit": "kW" }, "torque": { "value": 750, "unit": "Nm" }, "drivetrain": "AWD", "src": "wp", "quotes": ["AMG GLE 53 Hybrid 4MATIC+ (2023) Inline-6 Turbo + Plug-in hybrid 400 kW (544 PS; 536 hp) 750 N⋅m (553 lbf⋅ft)"] }
+      ],
+      "changes": [
+        { "id": "c1", "topic": "dimensions", "text": "Length, width, wheelbase and track width all increased.", "src": "mb20qrg", "quote": "Revised dimensional concept (Increased length, width, wheelbase, track width)" },
+        { "id": "c2", "topic": "design", "text": "The drag coefficient improved from 0.33 to 0.29, according to Mercedes.", "src": "de167", "quote": "der cw-Wert wurde laut Mercedes von 0,33 auf 0,29 verbessert" },
+        { "id": "c3", "topic": "powertrain", "text": "A 9-speed 9G-TRONIC automatic is used on all models.", "src": "mb20price", "quote": "The new 9G-TRONIC 9-speed automatic transmission on all GLE models allows for faster, smoother and more efficient driving." },
+        { "id": "c4", "topic": "powertrain", "text": "The six-cylinder GLE 450 uses a 48-volt system with an integrated starter-generator (EQ Boost) adding up to 21 hp.", "src": "mb20qrg", "quote": "This integrated electric motor system, known as EQ Boost, assists the combustion engine by adding up to 21 hp for short periods of time." },
+        { "id": "c5", "topic": "chassis", "text": "E-ACTIVE BODY CONTROL, a 48-volt active suspension with individually controlled spring and damping forces at each wheel, became available.", "src": "mb20qrg", "quote": "As the only system on the market where the spring and damping forces can be individually controlled at each wheel" },
+        { "id": "c6", "topic": "interior", "text": "A third seat row became available.", "src": "mb20price", "quote": "The interior is even more spacious and comfortable, with a newly available third row seat." },
+        { "id": "c7", "topic": "technology", "text": "The MBUX infotainment system with voice control and twin 12.3-inch displays was introduced.", "src": "mb20price", "quote": "MBUX with Voice Control, dual-12.3\" digital instrument cluster and 12.3\" touchscreen multimedia displays" }
+      ],
+      "revisions": [
+        {
+          "id": "r1", "slug": "2023-facelift", "kind": "facelift", "name": "Facelift (2024 model year)",
+          "dates": {
+            "revealed": { "value": "2023-01", "src": "de167", "quote": "Eine überarbeitete Version der Baureihe wurde im Januar 2023 vorgestellt. Deren Marktstart erfolgte im Juli 2023." }
+          },
+          "changes": [
+            { "id": "r1c1", "topic": "powertrain", "text": "A GLE 450e 4MATIC plug-in hybrid was added in the US, and all powertrains are electrified (48-volt mild hybrids or plug-in hybrid).", "src": "mb24", "quote": "Powertrains are electrified throughout the model range and include the new GLE 450e 4MATIC plug-in hybrid, in addition to mild hybrids with a 48-volt system and Integrated Starter Generator (ISG)." },
+            { "id": "r1c2", "topic": "design", "text": "A new front bumper was fitted and the grille gained two horizontal louvres with chrome inserts.", "src": "mb24", "quote": "The new front bumper provides more visual presence. Two horizontal louvres with chrome inserts run through the radiator grille of the GLE." },
+            { "id": "r1c3", "topic": "interior", "text": "A new steering wheel with touch-sensitive surfaces on the horizontal spokes was introduced.", "src": "mb24", "quote": "Inside, the GLE features a new steering wheel with sensor surfaces on the horizontal spokes." },
+            { "id": "r1c4", "topic": "technology", "text": "The second-generation MBUX infotainment system was introduced, keeping two 12.3-inch displays.", "src": "mb24", "quote": "With the second generation MBUX infotainment system, the GLE interior becomes even more digital and intelligent" }
+          ]
+        },
+        {
+          "id": "r2", "slug": "2026-facelift", "kind": "facelift", "name": "Second facelift (2027 model year)",
+          "dates": {
+            "revealed": { "value": "2026-03", "src": "wp", "quote": "In March 2026, a facelift for the 2027 model year GLE was unveiled before it entered production in August 2026" },
+            "productionStart": { "value": "2026-08", "src": "wp", "quote": "In March 2026, a facelift for the 2027 model year GLE was unveiled before it entered production in August 2026" }
+          },
+          "changes": [
+            { "id": "r2c1", "topic": "design", "text": "Headlights, tail lights and bumpers were restyled and a new steering wheel was fitted.", "src": "wp", "quote": "adding completely restyled headlights and taillights, a new steering wheel, and a restyled bumper" },
+            { "id": "r2c2", "topic": "powertrain", "text": "The diesel plug-in hybrid GLE 350 de was dropped.", "src": "de167", "quote": "Dabei fiel der Diesel-PHEV GLE 350 de aus dem Programm." },
+            { "id": "r2c3", "topic": "interior", "text": "Three displays became standard, two of them touch-sensitive.", "src": "de167", "quote": "Seit 2026 gibt es serienmäßig drei Bildschirme, von denen die beiden rechten berührungsempfindlich sind." }
+          ]
+        }
+      ],
+      "commons": {},
+      "notes": [
+        "Series code: German Wikipedia and Mercedes-Benz media captions cited by English Wikipedia use 'V 167' for the SUV; the English Wikipedia infobox gives 'W167'. The coupé is C 167. The V 167 code is recorded.",
+        "GLE Coupé (C 167): presented at the IAA in Frankfurt in September 2019 with first deliveries in spring 2020 (German Wikipedia); recorded as body style b2.",
+        "Built at Vance, Alabama for most markets (North American model years 2020 onward); a locally built long-wheelbase GLE L for China (Beijing Benz) was announced from 2026 (Wikipedia).",
+        "Mercedes-Benz global press material returns HTTP 403 to our research tool; US specifications come from the Mercedes-Benz USA media newsroom (media.mbusa.com). English Wikipedia's engine table does not state markets, so those entries are recorded with market 'unstated' (European plug-in hybrids are marked EU where the text says so).",
+        "The 2023 facelift went on sale in July 2023 (German Wikipedia) for the 2024 model year in the US. A second facelift for the 2027 model year was unveiled in March 2026."
+      ]
+    }
+  ]
+}

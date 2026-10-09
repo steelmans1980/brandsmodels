@@ -2,10 +2,11 @@
   "name": "brandsmodels",
   "private": true,
   "type": "module",
-  "description": "The Model Archive (brandsmodels.com): static site built from data/campaigns.json, plus a small Worker API for favourites and suggestions.",
+  "description": "The Car Archive: static site built from sourced car data in data/, plus a small Worker API for Dream garage counts and suggestions.",
   "scripts": {
     "build": "node scripts/build.mjs",
     "test": "node --test --no-warnings tests/*.test.mjs",
+    "check-data": "node scripts/check-data.mjs",
     "db:migrate:local": "wrangler d1 migrations apply brandsmodels --local",
     "dev": "node scripts/build.mjs && wrangler d1 migrations apply brandsmodels --local && wrangler dev --local --port 8787"
   },

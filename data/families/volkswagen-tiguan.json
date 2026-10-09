@@ -1,0 +1,1600 @@
+{
+  "id": "volkswagen-tiguan",
+  "slug": "tiguan",
+  "manufacturer": "volkswagen",
+  "name": "Volkswagen Tiguan",
+  "lines": [
+    {
+      "id": "tiguan",
+      "name": "Tiguan"
+    }
+  ],
+  "sources": {
+    "wp": {
+      "url": "https://en.wikipedia.org/w/index.php?title=Volkswagen_Tiguan&oldid=1376988162",
+      "title": "Volkswagen Tiguan",
+      "publisher": "Wikipedia",
+      "type": "secondary",
+      "accessed": "2026-10-09"
+    },
+    "vw5963": {
+      "url": "https://www.volkswagen-newsroom.com/en/press-releases/tiguan-global-bestseller-breaks-the-six-million-mark-and-has-been-the-best-selling-volkswagen-in-2019-5963",
+      "title": "Tiguan: Global bestseller breaks the six million mark and has been the best-selling Volkswagen in 2019",
+      "publisher": "Volkswagen Newsroom",
+      "type": "manufacturer",
+      "date": "2020-04-17",
+      "accessed": "2026-10-09"
+    },
+    "vw6167": {
+      "url": "https://www.volkswagen-newsroom.com/en/press-releases/electrified-and-energised-world-premiere-of-the-new-tiguan-6167",
+      "title": "Electrified and energised: world premiere of the new Tiguan",
+      "publisher": "Volkswagen Newsroom",
+      "type": "manufacturer",
+      "date": "2020-07-01",
+      "accessed": "2026-10-09"
+    },
+    "vw6638": {
+      "url": "https://www.volkswagen-newsroom.com/en/press-releases/powerful-320-ps-performance-version-of-the-successful-suv-new-tiguan-r-now-available-to-order-6638",
+      "title": "Powerful 320 PS performance version of the successful SUV: new Tiguan R now available to order",
+      "publisher": "Volkswagen Newsroom",
+      "type": "manufacturer",
+      "date": "2020-11-25",
+      "accessed": "2026-10-09"
+    },
+    "vw7146": {
+      "url": "https://www.volkswagen-newsroom.com/en/press-releases/the-new-tiguan-allspace-new-control-and-assist-systems-for-the-bestseller-7146",
+      "title": "The new Tiguan Allspace: new control and assist systems for the bestseller",
+      "publisher": "Volkswagen Newsroom",
+      "type": "manufacturer",
+      "date": "2021-05-12",
+      "accessed": "2026-10-09"
+    },
+    "vw7597": {
+      "url": "https://www.volkswagen-newsroom.com/en/press-releases/new-tiguan-allspace-now-available-from-dealerships-7597",
+      "title": "New Tiguan Allspace now available from dealerships",
+      "publisher": "Volkswagen Newsroom",
+      "type": "manufacturer",
+      "date": "2021-11-11",
+      "accessed": "2026-10-09"
+    },
+    "vw17326": {
+      "url": "https://www.volkswagen-newsroom.com/en/press-releases/final-set-up-drives-new-tiguan-with-premium-class-technologies-and-a-long-electric-range-17326",
+      "title": "Final set-up drives: new Tiguan with premium-class technologies and a long electric range",
+      "publisher": "Volkswagen Newsroom",
+      "type": "manufacturer",
+      "date": "2023-06-15",
+      "accessed": "2026-10-09"
+    },
+    "vw17655": {
+      "url": "https://www.volkswagen-newsroom.com/en/press-releases/new-tiguan-generation-volkswagens-bestseller-celebrates-world-premiere-in-front-of-10000-employees-17655",
+      "title": "New Tiguan generation: Volkswagen's bestseller celebrates world premiere in front of 10,000 employees",
+      "publisher": "Volkswagen Newsroom",
+      "type": "manufacturer",
+      "date": "2023-09-19",
+      "accessed": "2026-10-09"
+    },
+    "vw17886": {
+      "url": "https://www.volkswagen-newsroom.com/en/press-releases/the-new-tiguan-is-now-available-to-order-in-europe-17886",
+      "title": "The new Tiguan is now available to order in Europe",
+      "publisher": "Volkswagen Newsroom",
+      "type": "manufacturer",
+      "date": "2023-11-06",
+      "accessed": "2026-10-09"
+    },
+    "vw18182": {
+      "url": "https://www.volkswagen-newsroom.com/en/press-releases/now-available-to-order-long-range-plug-in-hybrid-drives-for-the-tiguan-from-48655-euro-18182",
+      "title": "Now available to order: long-range plug-in hybrid drives for the Tiguan",
+      "publisher": "Volkswagen Newsroom",
+      "type": "manufacturer",
+      "date": "2024-02-22",
+      "accessed": "2026-10-09"
+    },
+    "vw19001": {
+      "url": "https://www.volkswagen-newsroom.com/en/press-releases/superior-towing-vehicles-tiguan-tayron-and-passat-with-all-wheel-drive-and-new-powerful-turbocharged-petrol-engines-19001",
+      "title": "Superior towing vehicles – Tiguan, Tayron and Passat with all-wheel drive and new powerful turbocharged petrol engines",
+      "publisher": "Volkswagen Newsroom",
+      "type": "manufacturer",
+      "date": "2025-02-11",
+      "accessed": "2026-10-09"
+    },
+    "vw20508": {
+      "url": "https://www.volkswagen-newsroom.com/en/press-releases/the-new-tiguan-edition-20-volkswagen-celebrates-two-decades-of-a-success-story-20508",
+      "title": "The new Tiguan EDITION 20: Volkswagen celebrates two decades of a success story",
+      "publisher": "Volkswagen Newsroom",
+      "type": "manufacturer",
+      "date": "2026-07-09",
+      "accessed": "2026-10-09"
+    },
+    "vw7170": {
+      "url": "https://www.volkswagen-newsroom.com/en/press-releases/the-new-tiguan-allspace-available-to-order-now-7170",
+      "title": "The new Tiguan Allspace available to order now",
+      "publisher": "Volkswagen Newsroom",
+      "type": "manufacturer",
+      "date": "2021-05-27",
+      "accessed": "2026-10-09"
+    },
+    "de1": {
+      "url": "https://de.wikipedia.org/w/index.php?title=VW_Tiguan_I&oldid=270859398",
+      "title": "VW Tiguan I",
+      "publisher": "Wikipedia (de)",
+      "type": "secondary",
+      "accessed": "2026-10-09"
+    },
+    "de2": {
+      "url": "https://de.wikipedia.org/w/index.php?title=VW_Tiguan_II&oldid=270219042",
+      "title": "VW Tiguan II",
+      "publisher": "Wikipedia (de)",
+      "type": "secondary",
+      "accessed": "2026-10-09"
+    },
+    "de3": {
+      "url": "https://de.wikipedia.org/w/index.php?title=VW_Tiguan_III&oldid=265471519",
+      "title": "VW Tiguan III",
+      "publisher": "Wikipedia (de)",
+      "type": "secondary",
+      "accessed": "2026-10-09"
+    }
+  },
+  "generations": [
+    {
+      "id": "volkswagen-tiguan-5n",
+      "slug": "5n",
+      "ordinal": 1,
+      "lines": [
+        "tiguan"
+      ],
+      "name": "First generation",
+      "codes": [
+        {
+          "value": "5N",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "First generation (5N; 2007)"
+        }
+      ],
+      "names": [
+        {
+          "value": "Tiguan",
+          "markets": [
+            "global"
+          ],
+          "src": "vw20508",
+          "quote": "Volkswagen presented the first-generation Tiguan at the International Motor Show in Frankfurt in 2007"
+        },
+        {
+          "value": "Tiguan Limited",
+          "markets": [
+            "US"
+          ],
+          "src": "wp",
+          "quote": "In April 2017, Volkswagen of America announced that it would continue to sell its outgoing Tiguan alongside the second generation model, rebranding it as the Volkswagen Tiguan Limited."
+        },
+        {
+          "value": "Tiguan Silk Road",
+          "markets": [
+            "CN"
+          ],
+          "src": "wp",
+          "quote": "the first generation Tiguan continued to be sold in China as the Tiguan Silk Road until it was discontinued in 2020"
+        }
+      ],
+      "dates": {
+        "revealed": {
+          "value": "2007-09",
+          "event": "Frankfurt International Motor Show (IAA)",
+          "src": "wp",
+          "quote": "before being officially launched at the Frankfurt International Motor Show in September 2007"
+        },
+        "productionStart": {
+          "value": "2007",
+          "src": "wp",
+          "quote": "Production 2007–2018 2009–2020 (China)"
+        },
+        "productionEnd": {
+          "value": "2018",
+          "src": "wp",
+          "quote": "Production 2007–2018 2009–2020 (China)"
+        },
+        "salesStart": [
+          {
+            "value": "2007",
+            "market": "unstated",
+            "src": "vw20508",
+            "quote": "Volkswagen presented the first-generation Tiguan at the International Motor Show in Frankfurt in 2007, followed by the market launch in the same year."
+          },
+          {
+            "value": "2008-05",
+            "market": "US",
+            "src": "wp",
+            "quote": "The Tiguan was launched in United States and Canada in May 2008 for the 2009 model year."
+          },
+          {
+            "value": "2008-05",
+            "market": "CA",
+            "src": "wp",
+            "quote": "The Tiguan was launched in United States and Canada in May 2008 for the 2009 model year."
+          }
+        ],
+        "modelYears": [
+          {
+            "market": "NA",
+            "from": 2009,
+            "to": 2016,
+            "src": "wp",
+            "quote": "Model years 2009–2016 (North America)"
+          },
+          {
+            "market": "NA",
+            "from": 2017,
+            "to": 2018,
+            "src": "wp",
+            "quote": "2017–2018 (North America, Tiguan Limited)"
+          }
+        ]
+      },
+      "ongoing": false,
+      "platform": {
+        "value": "Volkswagen Group A6 (PQ46)",
+        "src": "wp",
+        "quote": "Platform Volkswagen Group A6 (PQ46)"
+      },
+      "assembly": [
+        {
+          "value": "Wolfsburg, Germany",
+          "src": "wp",
+          "quote": "Germany: Wolfsburg (Wolfsburg Volkswagen Plant); Osnabrück (2016–2018)"
+        },
+        {
+          "value": "Osnabrück, Germany (2016–2018)",
+          "src": "wp",
+          "quote": "Germany: Wolfsburg (Wolfsburg Volkswagen Plant); Osnabrück (2016–2018)"
+        },
+        {
+          "value": "Anting, China (SAIC-VW)",
+          "src": "wp",
+          "quote": "China: Anting (SAIC-VW)"
+        },
+        {
+          "value": "Kaluga, Russia",
+          "src": "wp",
+          "quote": "Russia: Kaluga (Volkswagen Group Rus)"
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Class Compact crossover SUV (C) Body style 5-door SUV Platform Volkswagen Group A6 (PQ46)"
+        },
+        {
+          "id": "b2",
+          "value": "5-door SUV, long wheelbase (locally built in China)",
+          "markets": [
+            "CN"
+          ],
+          "src": "wp",
+          "quote": "The Chinese built Tiguan is LWB（2684mm）"
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "FWD",
+          "markets": [
+            "global"
+          ],
+          "src": "vw5963",
+          "quote": "which was available with all-wheel drive or front-wheel drive"
+        },
+        {
+          "value": "AWD",
+          "system": "4MOTION",
+          "markets": [
+            "global"
+          ],
+          "src": "vw20508",
+          "quote": "optional 4MOTION all-wheel drive"
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "unstated",
+          "version": "standard wheelbase",
+          "unit": "mm",
+          "width": 1809,
+          "wheelbase": 2604,
+          "src": "de1",
+          "quotes": [
+            "Breite 1809 mm",
+            "Radstand 2604 mm"
+          ]
+        },
+        {
+          "id": "d2",
+          "market": "CN",
+          "version": "long wheelbase (SAIC-VW)",
+          "unit": "mm",
+          "wheelbase": 2684,
+          "src": "wp",
+          "quotes": [
+            "The Chinese built Tiguan is LWB（2684mm）"
+          ]
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "2.0 TDI",
+          "market": "EU",
+          "fuel": "diesel",
+          "engine": "2.0 L turbo-diesel",
+          "power": {
+            "value": 140,
+            "unit": "PS"
+          },
+          "src": "wp",
+          "quotes": [
+            "a 2.0-litre 140 PS (138 hp; 103 kW) TDI"
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "1.4 TSI",
+          "market": "EU",
+          "fuel": "petrol",
+          "engine": "1.4 L turbo petrol",
+          "power": {
+            "value": 150,
+            "unit": "PS"
+          },
+          "src": "wp",
+          "quotes": [
+            "a 1.4-litre 150 PS (148 hp; 110 kW) TSI petrol unit"
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "2.0 TSI",
+          "market": "US",
+          "fuel": "petrol",
+          "engine": "2.0 L turbo petrol",
+          "power": {
+            "value": 200,
+            "unit": "PS"
+          },
+          "src": "wp",
+          "quotes": [
+            "It was powered by a direct-injected and turbocharged 200 PS (197 hp; 147 kW) 2.0-litre petrol engine."
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "1.8 TSI",
+          "market": "CN",
+          "fuel": "petrol",
+          "engine": "1.8 L turbo petrol",
+          "power": {
+            "value": 160,
+            "unit": "PS"
+          },
+          "src": "wp",
+          "quotes": [
+            "uses 1.8-litre TSI 160 PS (158 hp; 118 kW)"
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "2.0 TSI",
+          "market": "CN",
+          "fuel": "petrol",
+          "engine": "2.0 L turbo petrol",
+          "power": {
+            "value": 200,
+            "unit": "PS"
+          },
+          "src": "wp",
+          "quotes": [
+            "2.0-litre TSI 200 PS (197 hp; 147 kW), and has a revised front fascia"
+          ]
+        },
+        {
+          "id": "p6",
+          "name": "2.0 TSI (Tiguan Limited)",
+          "market": "US",
+          "years": "2017–2018",
+          "fuel": "petrol",
+          "engine": "2.0 L TSI",
+          "power": {
+            "value": 147,
+            "unit": "kW"
+          },
+          "src": "de1",
+          "quotes": [
+            "Angetrieben wurde das Auslaufmodell einheitlich von einem 2,0-Liter-TSI-Motor mit 147 kW (200 PS)"
+          ]
+        }
+      ],
+      "revisions": [
+        {
+          "id": "r1",
+          "slug": "2011-facelift",
+          "kind": "facelift",
+          "name": "Facelift",
+          "dates": {
+            "revealed": {
+              "value": "2011",
+              "event": "Geneva Motor Show",
+              "src": "vw6638",
+              "quote": "In 2011, Volkswagen unveiled a major update at the Geneva Motor Show."
+            }
+          },
+          "changes": [
+            {
+              "id": "r1c1",
+              "topic": "design",
+              "text": "The headlights became more angular and the grille took on the horizontal bars of the Golf and Passat.",
+              "src": "wp",
+              "quote": "The headlights were made bolder and more angular, and the prominent horizontal grille bars of the Golf and new Passat were incorporated"
+            },
+            {
+              "id": "r1c2",
+              "topic": "design",
+              "text": "Two-part tail lights with angular graphics were adopted.",
+              "src": "wp",
+              "quote": "as were the angular line design in the two-part taillight clusters"
+            },
+            {
+              "id": "r1c3",
+              "topic": "interior",
+              "text": "The interior trim was revised, with a new three-spoke steering wheel and gear selector.",
+              "src": "wp",
+              "quote": "The interior trim was revised with an updated three spoke steering wheel and gear selector."
+            },
+            {
+              "id": "r1c4",
+              "topic": "powertrain",
+              "text": "The 110 kW 1.4 TSI was replaced by a 118 kW engine at the facelift.",
+              "src": "de1",
+              "quote": "Der Anfang 2011 eingestellte 1,4 TSI mit 110 kW (150 PS) wurde zum Facelift durch einen Motor mit 118 kW (160 PS) abgelöst."
+            }
+          ]
+        }
+      ],
+      "commons": {},
+      "notes": [
+        "Production in Europe ended in 2018; in China the first generation was built until 2020 and sold as the Tiguan Silk Road alongside the second generation (Wikipedia).",
+        "In North America the first generation covered model years 2009–2016, and was sold on for 2017–2018 as the Tiguan Limited alongside the second generation.",
+        "Wikipedia dates the facelift to 2011 (Geneva) but heads the section 'Facelift (2012)' because it applied to 2012 models; Volkswagen dates the unveiling to 2011.",
+        "Sales start: Volkswagen says the market launch followed the 2007 IAA premiere in the same year; English Wikipedia says the Tiguan went on sale in Europe in early 2008, and German Wikipedia gives sales from August 2007. The manufacturer statement is recorded.",
+        "The facelift was presented at the 2011 Geneva show; German Wikipedia dates the revised model to July 2011. Wikipedia (de) gives a body length range of 4,426–4,457 mm; no single length is recorded. The Chinese long-wheelbase version (2010–2017 per de.wikipedia) has a 2,684 mm wheelbase."
+      ],
+      "cargo": [
+        {
+          "id": "k1",
+          "market": "unstated",
+          "version": "without spare wheel",
+          "behind": "1st row",
+          "value": 1510,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "de1",
+          "quote": "Das Kofferraumvolumen beträgt zwischen 360 (mit Zwischenboden und Notlaufrad) bzw. 470 und 1510 Liter (ohne Reserverad mit umgeklappten Rücksitzen)."
+        }
+      ]
+    },
+    {
+      "id": "volkswagen-tiguan-ad1",
+      "slug": "ad1",
+      "ordinal": 2,
+      "lines": [
+        "tiguan"
+      ],
+      "name": "Second generation",
+      "codes": [
+        {
+          "value": "AD1",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code AD1/AX1"
+        },
+        {
+          "value": "BW2",
+          "kind": "model code (long wheelbase)",
+          "src": "wp",
+          "quote": "BW2/BJ2 (Allspace)"
+        },
+        {
+          "value": "BJ2",
+          "kind": "model code (long wheelbase)",
+          "src": "wp",
+          "quote": "BW2/BJ2 (Allspace)"
+        }
+      ],
+      "names": [
+        {
+          "value": "Tiguan",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "In some markets where the Tiguan is sold in both SWB and LWB variants, the LWB Tiguan is sold as the Tiguan Allspace or Tiguan L (in China)."
+        },
+        {
+          "value": "Tiguan Allspace",
+          "markets": [
+            "EU"
+          ],
+          "src": "vw5963",
+          "quote": "On the European markets and in many other countries, the long wheelbase model was launched as the Tiguan Allspace."
+        },
+        {
+          "value": "Tiguan",
+          "markets": [
+            "NA"
+          ],
+          "src": "vw5963",
+          "quote": "In America, Volkswagen sells the second-generation Tiguan exclusively in its long version."
+        },
+        {
+          "value": "Tiguan L",
+          "markets": [
+            "CN"
+          ],
+          "src": "vw5963",
+          "quote": "The XL version sold as the Tiguan L in China is a best-seller."
+        },
+        {
+          "value": "Tiguan X",
+          "markets": [
+            "CN"
+          ],
+          "src": "wp",
+          "quote": "A coupé SUV version of the Tiguan was revealed in China as the Tiguan X in September 2020."
+        }
+      ],
+      "dates": {
+        "revealed": {
+          "value": "2015-09",
+          "event": "Frankfurt International Motor Show (IAA)",
+          "src": "vw6638",
+          "quote": "The IAA in Frankfurt in September 2015 provided the stage for the world premiere of the second Tiguan generation; the sales launch followed in April 2016."
+        },
+        "productionStart": {
+          "value": "2016",
+          "src": "wp",
+          "quote": "Production 2016–2024 2017–present (China)"
+        },
+        "productionEnd": {
+          "value": "2024",
+          "src": "wp",
+          "quote": "Production 2016–2024 2017–present (China)"
+        },
+        "salesStart": [
+          {
+            "value": "2016-04",
+            "market": "unstated",
+            "src": "vw6638",
+            "quote": "The IAA in Frankfurt in September 2015 provided the stage for the world premiere of the second Tiguan generation; the sales launch followed in April 2016."
+          },
+          {
+            "value": "2017",
+            "market": "US",
+            "src": "wp",
+            "quote": "with sales starting in summer 2017 for the 2018 model year"
+          },
+          {
+            "value": "2017-01",
+            "market": "CN",
+            "src": "wp",
+            "quote": "The second generation Tiguan was launched in China by SAIC-Volkswagen in January 2017"
+          }
+        ],
+        "modelYears": [
+          {
+            "market": "NA",
+            "from": 2018,
+            "to": 2024,
+            "src": "wp",
+            "quote": "Model years 2018–2024 (North America)"
+          }
+        ]
+      },
+      "ongoing": false,
+      "platform": {
+        "value": "Volkswagen Group MQB A2",
+        "src": "wp",
+        "quote": "Platform Volkswagen Group MQB A2"
+      },
+      "assembly": [
+        {
+          "value": "Wolfsburg, Germany (normal wheelbase)",
+          "src": "vw5963",
+          "quote": "The version with a normal wheelbase (NWB) is manufactured at Volkswagen’s main plant in Wolfsburg, Germany"
+        },
+        {
+          "value": "Kaluga, Russia (normal wheelbase)",
+          "src": "vw5963",
+          "quote": "The Kaluga plant, situated 170 kilometres south-west of Moscow, produces the NWB vehicles for the Russian market"
+        },
+        {
+          "value": "Shanghai (Anting), China (Tiguan L)",
+          "src": "vw5963",
+          "quote": "In Shanghai, Volkswagen manufactures the Tiguan L with a long wheelbase (LWB) for the Chinese market."
+        },
+        {
+          "value": "Puebla, Mexico (long wheelbase)",
+          "src": "vw5963",
+          "quote": "In the Mexican city of Puebla, the LWB versions of the Tiguan are produced for North and South America and for countries in Europe, Africa, Asia and Oceania."
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV, normal wheelbase",
+          "markets": [
+            "EU",
+            "RU",
+            "AU",
+            "IN",
+            "ASEAN"
+          ],
+          "src": "wp",
+          "quote": "a short-wheelbase (SWB) version (referred to as \"normal wheelbase\" (NWB) by Volkswagen) seating up to five passengers"
+        },
+        {
+          "id": "b2",
+          "value": "5-door SUV, long wheelbase (Tiguan Allspace in Europe, Tiguan in North America, Tiguan L in China), optional third row",
+          "markets": [
+            "EU",
+            "NA",
+            "MX",
+            "CN"
+          ],
+          "src": "wp",
+          "quote": "a long-wheelbase (LWB) version with standard (or optional in some market) third-row seats, seating up to seven passengers. The latter was revealed in March 2017"
+        },
+        {
+          "id": "b3",
+          "value": "5-door coupé SUV (Tiguan X)",
+          "markets": [
+            "CN"
+          ],
+          "src": "wp",
+          "quote": "5-door coupé SUV (Tiguan X)"
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "FWD",
+          "markets": [
+            "EU"
+          ],
+          "src": "vw7597",
+          "quote": "Customers can choose between five engines, front-wheel or all-wheel drive"
+        },
+        {
+          "value": "AWD",
+          "system": "4MOTION",
+          "markets": [
+            "EU"
+          ],
+          "src": "vw7597",
+          "quote": "Their power is transferred to the road thanks to the standard 7-speed DSG dual clutch gearbox and 4MOTION all-wheel drive."
+        },
+        {
+          "value": "FWD",
+          "markets": [
+            "US"
+          ],
+          "src": "wp",
+          "quote": "In the US market, it was available in front-wheel drive or Volkswagen's 4Motion all-wheel drive system"
+        },
+        {
+          "value": "AWD",
+          "system": "4Motion",
+          "markets": [
+            "US"
+          ],
+          "src": "wp",
+          "quote": "In the US market, it was available in front-wheel drive or Volkswagen's 4Motion all-wheel drive system"
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "unstated",
+          "version": "normal (short) wheelbase",
+          "unit": "mm",
+          "wheelbase": 2681,
+          "height": 1673,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 2,681 mm (105.6 in) (SWB)",
+            "Height 1,673 mm (65.9 in)"
+          ]
+        },
+        {
+          "id": "d2",
+          "market": "unstated",
+          "version": "long wheelbase",
+          "unit": "mm",
+          "wheelbase": 2791,
+          "src": "wp",
+          "quotes": [
+            "2,791 mm (109.9 in) (LWB/Tiguan X)"
+          ]
+        },
+        {
+          "id": "d3",
+          "market": "EU",
+          "version": "Tiguan Allspace, 2021 update",
+          "unit": "mm",
+          "length": 4723,
+          "src": "vw7146",
+          "quotes": [
+            "4,723 mm (22 mm longer); all the generous interior measurements are unchanged."
+          ]
+        },
+        {
+          "id": "d4",
+          "market": "CN",
+          "version": "Tiguan X",
+          "unit": "mm",
+          "length": 4764,
+          "height": 1628,
+          "wheelbase": 2791,
+          "src": "wp",
+          "quotes": [
+            "4,764 mm (187.6 in) (Tiguan X)",
+            "1,628 mm (64.1 in) (Tiguan X)",
+            "2,791 mm (109.9 in) (LWB/Tiguan X)"
+          ]
+        }
+      ],
+      "cargo": [
+        {
+          "id": "k1",
+          "market": "EU",
+          "version": "Tiguan Allspace, 5 seats",
+          "behind": "2nd row",
+          "value": 760,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "vw7146",
+          "quote": "with a five-seat configuration, it offers a luggage compartment volume of 760 to 1,920 litres"
+        },
+        {
+          "id": "k2",
+          "market": "EU",
+          "version": "Tiguan Allspace, 5 seats",
+          "behind": "1st row",
+          "value": 1920,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "vw7146",
+          "quote": "with a five-seat configuration, it offers a luggage compartment volume of 760 to 1,920 litres"
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "1.4 TSI 125",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2016–2018",
+          "engine": "1.4 L inline-4 turbo petrol (EA211)",
+          "displacement": 1395,
+          "cylinders": 4,
+          "power": {
+            "value": 125,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 200,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual",
+          "src": "wp",
+          "quotes": [
+            "1.4 TSI 125 EA211 1,395 cc I4",
+            "125 PS (92 kW; 123 hp) 200 N⋅m (148 lb⋅ft) 6-speed manual 2016–2018"
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "1.5 TSI 150",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2018–",
+          "engine": "1.5 L inline-4 turbo petrol",
+          "displacement": 1498,
+          "cylinders": 4,
+          "power": {
+            "value": 150,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 250,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual or 7-speed DSG",
+          "src": "wp",
+          "quotes": [
+            "1.5 TSI 150 1,498 cc I4",
+            "150 PS (110 kW; 148 hp) 250 N⋅m (184 lb⋅ft) 6-speed manual or 7-speed DSG 2018–present"
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "2.0 TSI 180 4Motion",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2016–2018",
+          "engine": "2.0 L inline-4 turbo petrol (EA888)",
+          "displacement": 1984,
+          "cylinders": 4,
+          "power": {
+            "value": 180,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 320,
+            "unit": "Nm"
+          },
+          "transmission": "7-speed DSG",
+          "drivetrain": "AWD",
+          "src": "wp",
+          "quotes": [
+            "2.0 TSI 180 4Motion EA888 1,984 cc I4",
+            "180 PS (132 kW; 178 hp) 320 N⋅m (236 lb⋅ft) 7-speed DSG 2016–2018"
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "2.0 TSI 220 4Motion",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2016–2018",
+          "engine": "2.0 L inline-4 turbo petrol",
+          "displacement": 1984,
+          "cylinders": 4,
+          "power": {
+            "value": 220,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 350,
+            "unit": "Nm"
+          },
+          "transmission": "7-speed DSG",
+          "drivetrain": "AWD",
+          "src": "wp",
+          "quotes": [
+            "2.0 TSI 220 4Motion 1,984 cc I4",
+            "220 PS (162 kW; 217 hp) 350 N⋅m (258 lb⋅ft) 7-speed DSG 2016–2018"
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "1.6 TDI 115",
+          "market": "EU",
+          "fuel": "diesel",
+          "years": "2016–2020",
+          "engine": "1.6 L inline-4 turbo-diesel (EA288)",
+          "displacement": 1598,
+          "cylinders": 4,
+          "power": {
+            "value": 115,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 320,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual",
+          "src": "wp",
+          "quotes": [
+            "1.6 TDI 115 EA288 1,598 cc I4",
+            "115 PS (85 kW; 113 hp) 320 N⋅m (236 lb⋅ft) 6-speed manual 2016–2020"
+          ]
+        },
+        {
+          "id": "p6",
+          "name": "2.0 TDI 150",
+          "market": "EU",
+          "fuel": "diesel",
+          "years": "2016–2024",
+          "engine": "2.0 L inline-4 turbo-diesel",
+          "displacement": 1968,
+          "cylinders": 4,
+          "power": {
+            "value": 150,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 340,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual or 7-speed DSG",
+          "src": "wp",
+          "quotes": [
+            "2.0 TDI 150 1,968 cc I4",
+            "150 PS (110 kW; 148 hp) 340 N⋅m (251 lb⋅ft) 6-speed manual or 7-speed DSG 2016–2024"
+          ]
+        },
+        {
+          "id": "p7",
+          "name": "2.0 TDI 240 4Motion",
+          "market": "EU",
+          "fuel": "diesel",
+          "years": "2016–2020",
+          "engine": "2.0 L inline-4 twin-turbo diesel",
+          "displacement": 1968,
+          "cylinders": 4,
+          "power": {
+            "value": 240,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 500,
+            "unit": "Nm"
+          },
+          "transmission": "7-speed DSG",
+          "drivetrain": "AWD",
+          "src": "wp",
+          "quotes": [
+            "2.0 TDI 240 4Motion 1,968 cc I4",
+            "240 PS (177 kW; 237 hp) 500 N⋅m (369 lb⋅ft) 7-speed DSG 2016–2020"
+          ]
+        },
+        {
+          "id": "p8",
+          "name": "Tiguan R",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2020–",
+          "engine": "2.0 L TSI (EA888 evo4)",
+          "power": {
+            "value": 235,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 420,
+            "unit": "Nm"
+          },
+          "transmission": "7-speed DSG (DQ500)",
+          "drivetrain": "AWD",
+          "src": "vw6638",
+          "quotes": [
+            "With a power output of 235 kW (320 PS), the SUV accelerates to 100 km/h in just 4.9 seconds.",
+            "The four-cylinder engine already provides its maximum torque of 420 Nm as low as 2,100 rpm",
+            "7-speed DSG dual clutch gearbox (DQ500)"
+          ]
+        },
+        {
+          "id": "p9",
+          "name": "Tiguan Allspace 2.0 TDI 200",
+          "market": "EU",
+          "fuel": "diesel",
+          "years": "2021–",
+          "engine": "2.0 L TDI",
+          "power": {
+            "value": 147,
+            "unit": "kW"
+          },
+          "src": "vw7597",
+          "quotes": [
+            "The 2.0-litre TDI drive systems with 110 kW (150 PS) and 147 kW (200 PS)"
+          ]
+        },
+        {
+          "id": "p10",
+          "name": "Tiguan Allspace 2.0 TSI 245 4MOTION",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2021–",
+          "engine": "2.0 L TSI",
+          "power": {
+            "value": 180,
+            "unit": "kW"
+          },
+          "transmission": "7-speed DSG",
+          "drivetrain": "AWD",
+          "src": "vw7597",
+          "quotes": [
+            "Two further 2.0-litre TSI engines are also available, delivering 140 kW (190 PS) and 180 kW (245 PS). Their power is transferred to the road thanks to the standard 7-speed DSG dual clutch gearbox and 4MOTION all-wheel drive."
+          ]
+        },
+        {
+          "id": "p11",
+          "name": "2.0 TSI",
+          "market": "NA",
+          "fuel": "petrol",
+          "engine": "2.0 L inline-4 turbo petrol (EA888)",
+          "displacement": 1984,
+          "cylinders": 4,
+          "power": {
+            "value": 184,
+            "unit": "hp"
+          },
+          "torque": {
+            "value": 300,
+            "unit": "Nm"
+          },
+          "transmission": "8-speed automatic",
+          "src": "wp",
+          "quotes": [
+            "2.0 TSI 1,984 cc I4 EA888",
+            "184 hp (187 PS; 137 kW) 300 N⋅m (221 lb⋅ft) 8-speed automatic"
+          ]
+        },
+        {
+          "id": "p12",
+          "name": "Tiguan L 430 PHEV",
+          "market": "CN",
+          "fuel": "plug-in hybrid",
+          "engine": "1.4 L TSI (EA211) plug-in hybrid",
+          "displacement": 1395,
+          "cylinders": 4,
+          "power": {
+            "value": 211,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 400,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed DSG (DQ400e)",
+          "src": "wp",
+          "quotes": [
+            "1.4 '430' PHEV 1,395 cc I4 EA211",
+            "211 PS (155 kW; 208 hp) (combined output)",
+            "400 N⋅m (295 lb⋅ft) (combined output) 6-speed DSG (DQ400e)"
+          ]
+        },
+        {
+          "id": "p13",
+          "name": "1.4 eHybrid",
+          "market": "unstated",
+          "years": "2020–",
+          "fuel": "plug-in hybrid",
+          "engine": "1.4 L TSI plug-in hybrid",
+          "power": {
+            "value": 180,
+            "unit": "kW"
+          },
+          "src": "de2",
+          "quotes": [
+            "der Tiguan eHybrid mit 180 kW (245 PS) Systemleistung"
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "id": "c1",
+          "topic": "chassis",
+          "text": "The Tiguan moved to Volkswagen's Modular Transverse Toolkit (MQB).",
+          "src": "vw5963",
+          "quote": "The SUV was now constructed using the Modular Transverse Toolkit (MQB) for the first time."
+        },
+        {
+          "id": "c2",
+          "topic": "weight",
+          "text": "The short-wheelbase model is 50 kg lighter than the first generation.",
+          "src": "wp",
+          "quote": "which is 50 kg (110 lb) lighter than the outgoing Tiguan"
+        },
+        {
+          "id": "c3",
+          "topic": "dimensions",
+          "text": "It is 60 mm longer and 30 mm wider, with a wheelbase 77 mm longer.",
+          "src": "wp",
+          "quote": "while also 60 mm (2.4 in) longer, 30 mm (1.2 in) wider, and its wheelbase is extended by 77 mm (3.0 in)"
+        },
+        {
+          "id": "c4",
+          "topic": "other",
+          "text": "A long-wheelbase version with up to seven seats was added in 2017, with a wheelbase extended by 110 mm.",
+          "src": "vw5963",
+          "quote": "The product line was revamped again in 2017 with the debut of a second Tiguan Model– an XL version with a wheelbase extended by 110 mm, up to seven seats, and a bespoke design."
+        }
+      ],
+      "revisions": [
+        {
+          "id": "r1",
+          "slug": "2020-facelift",
+          "kind": "facelift",
+          "name": "Facelift (normal wheelbase)",
+          "dates": {
+            "revealed": {
+              "value": "2020-06-30",
+              "src": "wp",
+              "quote": "The updated Tiguan was released on 30 June 2020, along with the introduction of the Tiguan R and Tiguan eHybrid."
+            }
+          },
+          "changes": [
+            {
+              "id": "r1c1",
+              "topic": "powertrain",
+              "text": "A plug-in hybrid, the Tiguan eHybrid, was added.",
+              "src": "vw6167",
+              "quote": "New Tiguan now also available with plug-in hybrid"
+            },
+            {
+              "id": "r1c2",
+              "topic": "powertrain",
+              "text": "A separate Tiguan R model was offered for the first time.",
+              "src": "vw6167",
+              "quote": "The SUV will now also be available as a separate Tiguan R model for the very first time."
+            },
+            {
+              "id": "r1c3",
+              "topic": "technology",
+              "text": "The third-generation modular infotainment matrix (MIB3) was introduced.",
+              "src": "vw6167",
+              "quote": "New infotainment systems: third-generation modular infotainment matrix (MIB3) offers the best possible online connectivity for the Tiguan"
+            },
+            {
+              "id": "r1c4",
+              "topic": "design",
+              "text": "The front end was redesigned with a wider grille and LED headlights, and the badge placed centrally.",
+              "src": "vw6167",
+              "quote": "The bonnet is more concise in its appearance and the new radiator grille with LED headlights is wider, with the new Volkswagen badge positioned centrally at the front."
+            },
+            {
+              "id": "r1c5",
+              "topic": "design",
+              "text": "At the rear, the Tiguan lettering moved to a central position below the badge.",
+              "src": "vw6167",
+              "quote": "At the rear, the Tiguan lettering is now in a prominent central position below the VW badge."
+            }
+          ]
+        },
+        {
+          "id": "r2",
+          "slug": "2021-allspace-update",
+          "kind": "facelift",
+          "name": "Facelift (long wheelbase / Tiguan Allspace)",
+          "dates": {
+            "revealed": {
+              "value": "2021-05",
+              "src": "de2",
+              "quote": "Eine überarbeitete Version des Allspace wurde im Mai 2021 präsentiert."
+            }
+          },
+          "changes": [
+            {
+              "id": "r2c1",
+              "topic": "dimensions",
+              "text": "A redesigned front lengthened the Tiguan Allspace to 4,723 mm, 22 mm more; interior dimensions are unchanged.",
+              "src": "vw7170",
+              "quote": "Visually, it features a modified front, which has been extended to 4,723 mm (an extra 22 mm) for design purposes. The generous interior dimensions remain unchanged."
+            },
+            {
+              "id": "r2c2",
+              "topic": "technology",
+              "text": "IQ.LIGHT LED matrix headlights became available on the Tiguan Allspace for the first time.",
+              "src": "vw7146",
+              "quote": "For the first time, the Tiguan Allspace can now be ordered with IQ.LIGHT LED matrix headlights."
+            },
+            {
+              "id": "r2c3",
+              "topic": "technology",
+              "text": "IQ.DRIVE Travel Assist was offered in the Tiguan Allspace for the first time.",
+              "src": "vw7146",
+              "quote": "Partly automated driving is made possible by IQ.DRIVE Travel Assist that is used for the first time in the Tiguan Allspace."
+            }
+          ]
+        }
+      ],
+      "commons": {},
+      "notes": [
+        "Market distinction: in Europe the long-wheelbase version (codes BW2/BJ2 per Wikipedia) is sold as the Tiguan Allspace beside the normal-wheelbase Tiguan; in North America only the long-wheelbase body was offered and it was called simply 'Tiguan'; in China it was the Tiguan L (built by SAIC-VW), with the Tiguan X coupé SUV derived from it.",
+        "Wikipedia also lists a model code 'AX1' next to AD1 without explaining it; it is not recorded here.",
+        "Volkswagen states the long-wheelbase version has a wheelbase 110 mm longer; Wikipedia gives 109 mm (2,681 vs 2,791 mm).",
+        "Sales start: Volkswagen gives April 2016 for the sales launch; German Wikipedia gives January 2016 for the start of sales of the second generation. The manufacturer date is recorded.",
+        "Production: Wikipedia gives 2016–2024 for the generation overall; the Chinese Tiguan L continued after that and the Tiguan X was built 2020–2026.",
+        "The North American model was updated for the 2022 model year (Wikipedia).",
+        "The 2020 facelift of the normal-wheelbase model and the 2021 update of the Tiguan Allspace are recorded as separate revisions; German Wikipedia notes the Allspace kept the old design until 2021.",
+        "Long wheelbase: German Wikipedia says the Tiguan Allspace was first shown at the Detroit show in January 2017 and the European version at Geneva in March 2017, with sales in North America from summer 2017 and in Europe from September 2017; the Chinese Tiguan L was on sale from 18 January 2017."
+      ]
+    },
+    {
+      "id": "volkswagen-tiguan-ct1",
+      "slug": "ct1",
+      "ordinal": 3,
+      "lines": [
+        "tiguan"
+      ],
+      "name": "Third generation",
+      "codes": [
+        {
+          "value": "CT1",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code CT1"
+        },
+        {
+          "value": "CT",
+          "kind": "internal vehicle type",
+          "src": "de3",
+          "quote": "Der VW Tiguan III (interner Fahrzeugtyp CT)"
+        }
+      ],
+      "names": [
+        {
+          "value": "Tiguan",
+          "markets": [
+            "EU"
+          ],
+          "src": "vw17886",
+          "quote": "Pre-sales for the all-new Tiguan start in Europe today."
+        },
+        {
+          "value": "Tiguan L Pro",
+          "markets": [
+            "CN"
+          ],
+          "src": "wp",
+          "quote": "The third-generation Tiguan is marketed as the Tiguan L Pro in China."
+        },
+        {
+          "value": "Tiguan",
+          "markets": [
+            "NA"
+          ],
+          "src": "wp",
+          "quote": "In North America, the third-generation Tiguan is nearly identical to the Chinese market Volkswagen Tayron L, rather than the European-market Tiguan."
+        }
+      ],
+      "dates": {
+        "revealed": {
+          "value": "2023-09-19",
+          "src": "wp",
+          "quote": "The production version was officially presented on 19 September 2023."
+        },
+        "productionStart": {
+          "value": "2024",
+          "src": "wp",
+          "quote": "Production 2024–present"
+        },
+        "salesStart": [
+          {
+            "value": "2023-11",
+            "market": "unstated",
+            "src": "de3",
+            "quote": "das seit November 2023 als Nachfolger des Tiguan II verkauft wird. Die Auslieferungen erfolgen seit Februar 2024."
+          }
+        ]
+      },
+      "ongoing": true,
+      "platform": {
+        "value": "Volkswagen Group MQB evo",
+        "src": "vw17655",
+        "quote": "The Tiguan is based on the latest evolutionary stage of the Modular Transverse Toolkit: the MQB evo."
+      },
+      "assembly": [
+        {
+          "value": "Wolfsburg, Germany",
+          "src": "vw20508",
+          "quote": "The model is currently produced at three locations – in Germany (Wolfsburg), Mexico (Puebla) and China (Anting)"
+        },
+        {
+          "value": "Puebla, Mexico",
+          "src": "vw20508",
+          "quote": "The model is currently produced at three locations – in Germany (Wolfsburg), Mexico (Puebla) and China (Anting)"
+        },
+        {
+          "value": "Anting, China",
+          "src": "vw20508",
+          "quote": "The model is currently produced at three locations – in Germany (Wolfsburg), Mexico (Puebla) and China (Anting)"
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV",
+          "markets": [
+            "EU"
+          ],
+          "src": "wp",
+          "quote": "Body style 5-door SUV Layout Front-engine, front-wheel-drive Front-engine, all-wheel-drive (4motion) Platform Volkswagen Group MQB Evo"
+        },
+        {
+          "id": "b2",
+          "value": "5-door SUV, long wheelbase (Tiguan in North America, Tiguan L Pro in China)",
+          "markets": [
+            "NA",
+            "CN"
+          ],
+          "src": "wp",
+          "quote": "2,791 mm (109.9 in) (China and USA)"
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "FWD",
+          "markets": [
+            "unstated"
+          ],
+          "src": "wp",
+          "quote": "Layout Front-engine, front-wheel-drive Front-engine, all-wheel-drive (4motion) Platform Volkswagen Group MQB Evo"
+        },
+        {
+          "value": "AWD",
+          "system": "4MOTION",
+          "markets": [
+            "EU"
+          ],
+          "src": "vw19001",
+          "quote": "The Tiguan and Tayron SUVs can be configured as 2.0 TSI 4MOTION with 150 kW (204 PS) or 195 kW (265 PS)."
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "unstated",
+          "version": "standard wheelbase (European model)",
+          "unit": "mm",
+          "length": 4539,
+          "src": "de3",
+          "quotes": [
+            "Länge 4539 mm"
+          ]
+        },
+        {
+          "id": "d2",
+          "market": "US",
+          "version": "long wheelbase (North American model)",
+          "unit": "mm",
+          "length": 4683,
+          "width": 1859,
+          "wheelbase": 2791,
+          "src": "wp",
+          "quotes": [
+            "4,683 mm (184.4 in) (USA)",
+            "1,859 mm (73.2 in) (China and USA)",
+            "2,791 mm (109.9 in) (China and USA)"
+          ]
+        },
+        {
+          "id": "d3",
+          "market": "CN",
+          "version": "Tiguan L Pro",
+          "unit": "mm",
+          "length": 4735,
+          "width": 1859,
+          "wheelbase": 2791,
+          "src": "wp",
+          "quotes": [
+            "4,735 mm (186.4 in) (China)",
+            "1,859 mm (73.2 in) (China and USA)",
+            "2,791 mm (109.9 in) (China and USA)"
+          ]
+        }
+      ],
+      "cargo": [
+        {
+          "id": "k1",
+          "market": "unstated",
+          "version": "standard wheelbase",
+          "behind": "2nd row",
+          "value": 652,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "vw17326",
+          "quote": "its luggage compartment capacity has increased by 37 litres to 652 litres (when loaded up to the height of the rear seat backrests)"
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "1.5 eTSI 130",
+          "market": "EU",
+          "fuel": "mild hybrid",
+          "engine": "1.5 L TSI, 48 V mild hybrid",
+          "power": {
+            "value": 96,
+            "unit": "kW"
+          },
+          "transmission": "DSG (automatic dual-clutch)",
+          "src": "vw17886",
+          "quotes": [
+            "the eTSI drives deliver an output of 96 kW (130 PS) and 110 kW (150 PS) and have automatic Active Cylinder Management (ACT)",
+            "All Tiguan models are equipped with an automatic direct shift gearbox (DSG) as standard."
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "1.5 eTSI 150",
+          "market": "EU",
+          "fuel": "mild hybrid",
+          "engine": "1.5 L TSI, 48 V mild hybrid",
+          "power": {
+            "value": 110,
+            "unit": "kW"
+          },
+          "transmission": "DSG (automatic dual-clutch)",
+          "src": "vw17886",
+          "quotes": [
+            "the eTSI drives deliver an output of 96 kW (130 PS) and 110 kW (150 PS) and have automatic Active Cylinder Management (ACT)",
+            "All Tiguan models are equipped with an automatic direct shift gearbox (DSG) as standard."
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "2.0 TDI 150",
+          "market": "EU",
+          "fuel": "diesel",
+          "engine": "2.0 L TDI",
+          "power": {
+            "value": 110,
+            "unit": "kW"
+          },
+          "transmission": "DSG (automatic dual-clutch)",
+          "src": "vw17886",
+          "quotes": [
+            "The new Tiguan can also be configured with a TDI engine delivering 110 kW (150 PS) directly from the launch.",
+            "All Tiguan models are equipped with an automatic direct shift gearbox (DSG) as standard."
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "2.0 TDI 193 4MOTION",
+          "market": "EU",
+          "fuel": "diesel",
+          "engine": "2.0 L TDI",
+          "power": {
+            "value": 142,
+            "unit": "kW"
+          },
+          "drivetrain": "AWD",
+          "src": "vw18182",
+          "quotes": [
+            "The most powerful towing vehicle is the 142 kW Tiguan TDI 4Motion."
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "eHybrid 204",
+          "market": "EU",
+          "fuel": "plug-in hybrid",
+          "engine": "1.5 L TSI (110 kW) + 85 kW electric motor, 19.7 kWh (net) battery",
+          "power": {
+            "value": 150,
+            "unit": "kW"
+          },
+          "src": "vw18182",
+          "quotes": [
+            "deliver a system power of 150 kW (204 PS) and 200 kW (272 PS)",
+            "With the combination of an 85 kW electric drive motor and the new 1.5-litre TSI engine (110 kW or 130 kW)"
+          ]
+        },
+        {
+          "id": "p6",
+          "name": "eHybrid 272",
+          "market": "EU",
+          "fuel": "plug-in hybrid",
+          "engine": "1.5 L TSI (130 kW) + 85 kW electric motor, 19.7 kWh (net) battery",
+          "power": {
+            "value": 200,
+            "unit": "kW"
+          },
+          "src": "vw18182",
+          "quotes": [
+            "deliver a system power of 150 kW (204 PS) and 200 kW (272 PS)",
+            "With the combination of an 85 kW electric drive motor and the new 1.5-litre TSI engine (110 kW or 130 kW)"
+          ]
+        },
+        {
+          "id": "p7",
+          "name": "2.0 TSI 204 4MOTION",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2025–",
+          "engine": "2.0 L TSI",
+          "power": {
+            "value": 150,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 320,
+            "unit": "Nm"
+          },
+          "transmission": "7-speed DSG",
+          "drivetrain": "AWD",
+          "src": "vw19001",
+          "quotes": [
+            "The Tiguan and Tayron are available in the first TSI output level with 150 kW (204 PS). In combination with a seven-speed direct shift gearbox (DSG), the TSI already transfers its maximum torque of 320 Nm towards the all-wheel drive"
+          ]
+        },
+        {
+          "id": "p8",
+          "name": "2.0 TSI 265 4MOTION",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2025–",
+          "engine": "2.0 L TSI",
+          "power": {
+            "value": 195,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 400,
+            "unit": "Nm"
+          },
+          "drivetrain": "AWD",
+          "src": "vw19001",
+          "quotes": [
+            "It is the most powerful TSI engine in the Tiguan, Tayron and Passat: the TSI with 195 kW (265 PS).",
+            "the engine in the all-wheel drive Tiguan, Tayron and Passat produces a maximum torque of 400 Nm from 1,650 rpm"
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "id": "c1",
+          "topic": "chassis",
+          "text": "The third generation moved to the MQB evo version of the Modular Transverse Toolkit.",
+          "src": "vw17655",
+          "quote": "The Tiguan is based on the latest evolutionary stage of the Modular Transverse Toolkit: the MQB evo."
+        },
+        {
+          "id": "c2",
+          "topic": "dimensions",
+          "text": "It is about 3 cm longer, with height, width and wheelbase almost unchanged.",
+          "src": "vw17326",
+          "quote": "The new Tiguan grows in length by around three centimetres. Height, width and wheelbase remain almost identical to the predecessor."
+        },
+        {
+          "id": "c3",
+          "topic": "dimensions",
+          "text": "Luggage capacity rose by 37 litres to 652 litres.",
+          "src": "vw17326",
+          "quote": "its luggage compartment capacity has increased by 37 litres to 652 litres"
+        },
+        {
+          "id": "c4",
+          "topic": "design",
+          "text": "The drag coefficient fell from 0.33 to 0.28.",
+          "src": "vw17886",
+          "quote": "the drag coefficient has improved from 0.33 to 0.28"
+        },
+        {
+          "id": "c5",
+          "topic": "powertrain",
+          "text": "All versions use an automatic DSG gearbox; manual transmissions were dropped.",
+          "src": "vw17326",
+          "quote": "In future, the Tiguan will be offered exclusively with an automatic transmission DSG."
+        },
+        {
+          "id": "c6",
+          "topic": "powertrain",
+          "text": "The plug-in hybrids have a 19.7 kWh (net) battery, 11 kW AC charging (previously 3.6 kW) and DC charging up to 50 kW.",
+          "src": "vw18182",
+          "quote": "The battery of both models can be charged with up to 11 kW (previously 3.6 kW) at a domestic socket or wall box and with up to 50 kW) at DC quick-charging stations"
+        },
+        {
+          "id": "c7",
+          "topic": "technology",
+          "text": "The cockpit uses the fourth-generation modular infotainment matrix (MIB4).",
+          "src": "vw17886",
+          "quote": "the components of the latest modular infotainment matrix (MIB4) are merged on board"
+        }
+      ],
+      "revisions": [],
+      "commons": {},
+      "notes": [
+        "Volkswagen said in September 2023 that the third generation would roll off the line in Wolfsburg from fall 2023 and reach the market in the first quarter of 2024; Wikipedia gives production from 2024. European pre-sales opened in November 2023 (Volkswagen).",
+        "North America: the 2025 'Tiguan' sold in the US and Canada is a long-wheelbase car that Wikipedia describes as nearly identical to the Chinese-market Tayron L rather than the European Tiguan, with two rows of seats only. It is kept in this generation with its own dimensions record; no separate model code or North American press release could be read (media.vw.com renders only with JavaScript). North American model years are not recorded because no readable source states them explicitly.",
+        "China: the third generation is sold as the long-wheelbase Tiguan L Pro, alongside the previous Tiguan L.",
+        "European powertrain figures are from Volkswagen's German-market releases; market recorded as EU.",
+        "Dimensions conflict: English Wikipedia gives 4,551 mm length, 1,842 mm width, 1,640 mm height and 2,681 mm wheelbase for the European model; German Wikipedia gives 4,539 mm length, 1,842–1,859 mm width, 1,656–1,658 mm height and 2,677–2,680 mm wheelbase. Volkswagen's readable releases give no absolute figures (only 'around three centimetres' longer than before). The German figure is recorded; it should be checked against the Volkswagen press kit (PDF, not readable by our tool)."
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 // reviewer types in and which is kept in sessionStorage for this tab only. Submitted text is always escaped.
 export const ADMIN_HTML = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow"><title>Review queue · The Model Archive</title>
+<meta name="robots" content="noindex,nofollow"><title>Review queue · The Car Archive</title>
 <style>
 :root{--bg:#f6f4ef;--ink:#20231f;--muted:#646a5e;--line:#cecec4;--accent:#293829;--bad:#8a2f1f}
 @media (prefers-color-scheme:dark){:root{--bg:#151714;--ink:#ecebe5;--muted:#a3a99b;--line:#3a3f37;--accent:#b9d3b5;--bad:#e7967f}}
@@ -24,7 +24,7 @@ pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.4 ui-monospace,monos
 </style></head>
 <body><main>
 <h1>Review queue</h1>
-<p class="muted">Suggestions are private until approved. Approving prepares an overlay entry; it reaches the site only after it is exported into data/overlay.json, committed and deployed. Source links open in a new tab: check them before approving. This page never fetches them.</p>
+<p class="muted">Suggestions are private until approved. Approving with an overlay entry prepares a data change (see data/SCHEMA.md, Overlay); it reaches the site only after it is exported into data/overlay.json, checked with <code>node scripts/check-data.mjs</code>, committed and deployed. “Approve as a lead” accepts a suggestion that needs research (a missing car, a photo) without changing data. Links open in a new tab: check them before approving. This page never fetches them.</p>
 <form id="login" class="row" autocomplete="off"><label for="tok" class="muted">Admin token</label><input id="tok" type="password" style="max-width:360px" required><button class="primary">Unlock</button></form>
 <div id="app" hidden>
   <div class="row" role="group" aria-label="Status">
@@ -43,7 +43,7 @@ pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.4 ui-monospace,monos
   const $ = s => document.querySelector(s);
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const safeUrl = u => /^https?:\\/\\//i.test(u || '') ? esc(u) : '#';
-  let token = sessionStorage.getItem('bm-admin') || '';
+  let token = sessionStorage.getItem('ca-admin') || '';
   let status = 'pending', exported = [];
   const api = async (path, opts = {}) => {
     const r = await fetch(path, { ...opts, headers: { 'content-type': 'application/json', authorization: 'Bearer ' + token } });
@@ -53,7 +53,7 @@ pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.4 ui-monospace,monos
     return j;
   };
   const say = (t, bad) => { $('#msg').textContent = t; $('#msg').className = 'msg' + (bad ? ' err' : ''); };
-  function lock() { token = ''; sessionStorage.removeItem('bm-admin'); $('#app').hidden = true; $('#login').hidden = false; }
+  function lock() { token = ''; sessionStorage.removeItem('ca-admin'); $('#app').hidden = true; $('#login').hidden = false; }
   async function load() {
     say('Loading…');
     try {
@@ -61,26 +61,27 @@ pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.4 ui-monospace,monos
       say(j.submissions.length + ' ' + status);
       $('#list').innerHTML = j.submissions.map(s => \`
         <article class="card" data-id="\${s.id}">
-          <div class="row"><b>#\${s.id} · \${s.type === 'correction' ? 'Correction' : 'Missing appearance'}</b><span class="muted">\${new Date(s.created_at).toLocaleString()}</span></div>
+          <div class="row"><b>#\${s.id} · \${({ car: 'Suggest a car', source: 'Source or photo', correction: 'Correction' })[s.type] || esc(s.type)}</b><span class="muted">\${new Date(s.created_at).toLocaleString()}</span></div>
           <dl>
-            <dt>Model</dt><dd>\${esc(s.model)}</dd><dt>Brand / magazine</dt><dd>\${esc(s.brand)}</dd>
-            <dt>Type</dt><dd>\${esc(s.kind)}</dd><dt>Year / season</dt><dd>\${esc(s.year || '–')} \${esc(s.season || '')}</dd>
-            <dt>Source</dt><dd><a href="\${safeUrl(s.source_url)}" target="_blank" rel="noopener noreferrer nofollow">\${esc(s.source_url)}</a></dd>
+            <dt>Car</dt><dd>\${esc(s.make)} \${esc(s.model)} \${esc(s.generation || '')}</dd>
+            <dt>Market</dt><dd>\${esc(s.market || '–')}</dd><dt>Year</dt><dd>\${esc(s.year || '–')} \${s.year_kind ? '(' + esc(s.year_kind) + ' year)' : ''}</dd>
+            <dt>Source</dt><dd>\${s.source_url ? \`<a href="\${safeUrl(s.source_url)}" target="_blank" rel="noopener noreferrer nofollow">\${esc(s.source_url)}</a>\` : '–'}</dd>
+            <dt>Photo page</dt><dd>\${s.photo_url ? \`<a href="\${safeUrl(s.photo_url)}" target="_blank" rel="noopener noreferrer nofollow">\${esc(s.photo_url)}</a>\` : '–'}</dd>
             <dt>Explanation</dt><dd>\${esc(s.note)}</dd>
-            \${s.record_id ? \`<dt>Record</dt><dd>\${esc(s.record_id)}</dd>\` : ''}
+            \${s.target ? \`<dt>Target</dt><dd>\${esc(s.target)}</dd>\` : ''}
             \${s.page ? \`<dt>Sent from</dt><dd><a href="\${esc(s.page)}" target="_blank" rel="noopener">\${esc(s.page)}</a></dd>\` : ''}
             \${s.review_note ? \`<dt>Review note</dt><dd>\${esc(s.review_note)}</dd>\` : ''}
           </dl>
           \${s.status === 'pending' ? \`
-          <label class="muted" for="ov\${s.id}">Overlay entry (edit before approving; a correction needs the fields to set)</label>
+          <label class="muted" for="ov\${s.id}">Overlay entry (replace every TODO; use null to approve as a lead)</label>
           <textarea class="json" id="ov\${s.id}">\${esc(JSON.stringify(s.draft, null, 2))}</textarea>
           <label class="muted" for="note\${s.id}">Review note (private)</label><input id="note\${s.id}">
-          <div class="row" style="margin-top:8px"><button class="primary" data-act="approve">Approve</button><button class="bad" data-act="reject">Reject</button></div>\`
+          <div class="row" style="margin-top:8px"><button class="primary" data-act="approve">Approve with this entry</button><button data-act="lead">Approve as a lead (no data change)</button><button class="bad" data-act="reject">Reject</button></div>\`
           : \`<pre>\${esc(JSON.stringify(s.draft, null, 2))}</pre>\`}
         </article>\`).join('') || '<p class="muted">Nothing here.</p>';
     } catch (e) { say(e.message, true); }
   }
-  $('#login').addEventListener('submit', e => { e.preventDefault(); token = $('#tok').value; sessionStorage.setItem('bm-admin', token); $('#login').hidden = true; $('#app').hidden = false; load(); });
+  $('#login').addEventListener('submit', e => { e.preventDefault(); token = $('#tok').value; sessionStorage.setItem('ca-admin', token); $('#login').hidden = true; $('#app').hidden = false; load(); });
   $('#lock').addEventListener('click', lock);
   document.querySelectorAll('[data-st]').forEach(b => b.addEventListener('click', () => {
     status = b.dataset.st; document.querySelectorAll('[data-st]').forEach(x => x.classList.toggle('primary', x === b)); load();
@@ -88,13 +89,14 @@ pre{white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.4 ui-monospace,monos
   $('#list').addEventListener('click', async e => {
     const b = e.target.closest('[data-act]'); if (!b) return;
     const card = b.closest('[data-id]'), id = card.dataset.id;
-    let overlay;
+    let overlay = null;
     if (b.dataset.act === 'approve') {
       try { overlay = JSON.parse(card.querySelector('textarea').value); } catch { say('The overlay entry is not valid JSON.', true); return; }
     }
+    const action = b.dataset.act === 'reject' ? 'reject' : 'approve';
     try {
-      await api('/api/admin/submissions/' + id + '/review', { method: 'POST', body: JSON.stringify({ action: b.dataset.act, note: card.querySelector('input').value, overlay }) });
-      say('#' + id + ' ' + (b.dataset.act === 'approve' ? 'approved' : 'rejected') + '.'); load();
+      await api('/api/admin/submissions/' + id + '/review', { method: 'POST', body: JSON.stringify({ action, note: card.querySelector('input').value, overlay }) });
+      say('#' + id + ' ' + (action === 'approve' ? 'approved' : 'rejected') + '.'); load();
     } catch (e2) { say(e2.message, true); }
   });
   $('#exp').addEventListener('click', async () => {

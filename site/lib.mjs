@@ -1,289 +1,277 @@
-// Data logic shared by the build (Node), the browser and the tests. Plain ES module, no dependencies.
+// Car data logic shared by the build (Node), the browser and the tests. Plain ES module, no dependencies.
 //
-// Terms used throughout:
-//   credit      one record of data/campaigns.json: a brand or magazine, a kind of work, a year (or none), and the
-//               models credited for it. Every credit has a persistent `id`.
-//   appearance  one model's part in one credit.
-//   identified appearance   the campaign, show or issue is pinned down: a season, a named campaign or issue, a source
-//               that states the year, or a photo verified for this campaign that names her.
-//   dated relationship      a year only: she worked with the label that year, but which campaign or show is not known.
-//   undated relationship    the source names no year.
+// Terms (see data/SCHEMA.md):
+//   family      a model family, e.g. Audi Q7. A family has one or more lines (Nissan sells the X-Trail and the Rogue).
+//   generation  one generation of a family, e.g. the Q7 Typ 4L. Generations are ordered per line.
+//   revision    a facelift, update or rename within a generation.
+//   fact        a value with its source key (`src`) and the quote that states it.
+// Specifications are never merged across markets: every dimension, capacity and powertrain record keeps its market.
 
-export const SITE = 'The Model Archive';
-export const ORIGIN = 'https://brandsmodels.com';
-export const KINDS = ['campaign', 'runway', 'cover', 'ambassador'];
-export const KIND_LABEL = { campaign: 'Campaign', runway: 'Runway show', cover: 'Magazine cover', ambassador: 'Ambassador' };
-export const KIND_PLURAL = { campaign: 'Campaigns', runway: 'Runway', cover: 'Magazine covers', ambassador: 'Ambassadorships' };
-export const TYPE_LABEL = { designer: 'Fashion house / designer', brand: 'Brand / retailer', magazine: 'Magazine' };
+export const SITE = 'The Car Archive';
 
-const SEASON_ORDER = {
-  'Full year': 0, Resort: 1, Cruise: 1, Spring: 2, 'Spring/Summer': 2, Summer: 3,
-  'Pre-Fall': 4, Fall: 5, 'Fall/Winter': 5, Winter: 6, Holiday: 7
+export const MARKET_LABEL = {
+  global: 'All markets', EU: 'Europe', UK: 'United Kingdom', US: 'United States', CA: 'Canada', NA: 'North America',
+  MX: 'Mexico', BR: 'Brazil', CN: 'China', JP: 'Japan', KR: 'South Korea', IN: 'India', AU: 'Australia', NZ: 'New Zealand',
+  RU: 'Russia', ZA: 'South Africa', ME: 'Middle East', ASEAN: 'Southeast Asia', TW: 'Taiwan', unstated: 'Market not stated by source'
 };
-// Season families, so "Fall" and "Fall/Winter" of one year are the same appearance.
-const FAMILY = { Spring: 'SS', 'Spring/Summer': 'SS', Summer: 'SS', Fall: 'FW', 'Fall/Winter': 'FW', Winter: 'FW',
-  Resort: 'RES', Cruise: 'RES', 'Pre-Fall': 'PF', Holiday: 'HOL' };
+export const FUELS = ['petrol', 'diesel', 'mild hybrid', 'hybrid', 'plug-in hybrid', 'electric', 'hydrogen', 'LPG', 'flex-fuel'];
+export const FUEL_LABEL = { petrol: 'Petrol', diesel: 'Diesel', 'mild hybrid': 'Mild hybrid', hybrid: 'Hybrid', 'plug-in hybrid': 'Plug-in hybrid',
+  electric: 'Electric', hydrogen: 'Hydrogen fuel cell', LPG: 'LPG', 'flex-fuel': 'Flex-fuel' };
+export const DRIVE_LABEL = { FWD: 'Front-wheel drive', RWD: 'Rear-wheel drive', AWD: 'All-wheel drive', '4WD': 'Four-wheel drive (low range)' };
+export const BODY_GROUPS = ['SUV', 'Long wheelbase', 'Coupé SUV', '3-door', 'Other'];
+export const REV_LABEL = { facelift: 'Facelift', update: 'Update', rename: 'Renamed', special: 'Special version' };
+export const TOPIC_LABEL = { design: 'Design', dimensions: 'Dimensions', weight: 'Weight', powertrain: 'Powertrain', drivetrain: 'Drivetrain',
+  chassis: 'Chassis', interior: 'Interior', technology: 'Technology', 'safety-equipment': 'Safety equipment', other: 'Other' };
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 export const norm = s => String(s ?? '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
-  .replace(/[øØ]/g, 'o').replace(/[æÆ]/g, 'ae').replace(/ß/g, 'ss').replace(/[łŁ]/g, 'l')
-  .replace(/[^a-z0-9]+/g, ' ').trim();
+  .replace(/ß/g, 'ss').replace(/[^a-z0-9]+/g, ' ').trim();
 export const slug = s => norm(s).replace(/ /g, '-');
-export const seasonRank = s => SEASON_ORDER[s] ?? 0;
-export const seasonOf = c => (c.season && c.season !== 'Full year' ? c.season : '');
-export const family = s => FAMILY[s] || '';
-export const dated = c => c.year != null;
-export const kindOf = c => c.kind || 'campaign';
-export const label = c => dated(c) ? (seasonOf(c) ? seasonOf(c) + ' ' : '') + c.year : 'Year not recorded';
 export const plural = (n, w, ws) => `${Number(n).toLocaleString('en')} ${n === 1 ? w : (ws || w + 's')}`;
-export const range = (a, b) => a == null ? 'year not recorded' : a === b ? String(a) : `${a}–${b}`;
+export const num = (n, d = 0) => Number(n).toLocaleString('en', { minimumFractionDigits: d, maximumFractionDigits: d });
 
-const MONTH = /\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b|\bissue\b|\bno\.? ?\d/i;
-
-export const byNewest = (a, b) => (dated(b) - dated(a)) || ((b.year || 0) - (a.year || 0)) ||
-  seasonRank(b.season) - seasonRank(a.season) || a.brand.localeCompare(b.brand) || a.id.localeCompare(b.id);
-
-/** Photos of a credit that show a particular model: only those attributed to her (caption, alt or human review). */
-export const photosOf = (c, person) => person ? c.images.filter(i => i.talent.includes(person)) : c.images;
-/** The credit's other photos on her page: attributed to other people, or models not identified individually. */
-export const otherPhotos = (c, person) => c.images.filter(i => !i.talent.includes(person));
-
-/**
- * How specifically a credit identifies one model's appearance: 'identified' | 'dated' | 'undated'.
- * A year alone never makes an appearance identified.
- */
-export function appearanceClass(c, person) {
-  if (!dated(c)) return 'undated';
-  const kind = kindOf(c);
-  if (kind === 'cover' && MONTH.test(c.title || '')) return 'identified';
-  if (kind !== 'cover' && (seasonOf(c) || c.title)) return 'identified';
-  if (c.yearFrom === 'source states the year') return 'identified';
-  if (person && c.images.some(i => i.match === 'exact' && i.talent.includes(person))) return 'identified';
-  return 'dated';
+// ---------- dates ----------
+export const yearOf = f => f?.value ? Number(String(f.value).slice(0, 4)) : null;
+export function fmtDate(v) {
+  if (!v) return '';
+  const [y, m, d] = String(v).split('-').map(Number);
+  if (d) return `${d} ${MONTHS[m - 1]} ${y}`;
+  if (m) return `${MONTHS[m - 1]} ${y}`;
+  return String(y);
 }
-export const CLASS_LABEL = { identified: 'Identified appearance', dated: 'Dated relationship', undated: 'Undated relationship' };
-export const CLASS_HELP = {
-  identified: 'The campaign, show or issue is pinned down by its season, title or a verified source.',
-  dated: 'The source gives a year only: she worked with this label that year, but which campaign or show is not recorded.',
-  undated: 'The source names a working relationship but no year.'
+export const startYear = g => yearOf(g.dates?.productionStart) ?? yearOf(g.dates?.salesStart?.[0]) ?? yearOf(g.dates?.revealed);
+export const endYear = g => g.ongoing ? null : yearOf(g.dates?.productionEnd);
+/** "2005–2015", "2018–present", or a statement that the dates are not documented. Production years, not model years. */
+export function period(g) {
+  const s = yearOf(g.dates?.productionStart), e = endYear(g);
+  if (s == null) return g.ongoing ? 'In production' : 'Production dates not documented';
+  if (g.ongoing) return `${s}–present`;
+  if (e == null) return `${s}–(end not documented)`;
+  return s === e ? String(s) : `${s}–${e}`;
+}
+
+// ---------- names ----------
+export const codesOf = g => (g.codes || []).map(c => c.value);
+export const shortName = g => codesOf(g)[0] || g.name;
+/** "Audi Q7 (4L)" or "Audi Q7, first generation" when no code is documented. */
+export const genTitle = (fam, g) => codesOf(g).length ? `${fam.name} (${codesOf(g)[0]})` : `${fam.name}, ${g.name.toLowerCase()}`;
+export const marketList = ms => (ms || []).map(m => MARKET_LABEL[m] || m).join(', ');
+
+// ---------- classification for filters ----------
+export function bodyGroup(value) {
+  const v = String(value).toLowerCase();
+  if (/coup/.test(v)) return 'Coupé SUV';
+  if (/3-door|three-door|3 door/.test(v)) return '3-door';
+  if (/long|lwb|allspace|extended/.test(v)) return 'Long wheelbase';
+  if (/suv|crossover|5-door|five-door|wagon|estate/.test(v)) return 'SUV';
+  return 'Other';
+}
+export const bodyGroupsOf = g => [...new Set((g.bodyStyles || []).map(b => bodyGroup(b.value)))];
+export const fuelsOf = g => FUELS.filter(f => (g.powertrains || []).some(p => p.fuel === f));
+export const seatsOf = g => [...new Set(g.seating?.options || [])].sort((a, b) => a - b);
+export const drivesOf = g => [...new Set([...(g.drivetrains || []).map(d => d.value), ...(g.powertrains || []).map(p => p.drivetrain).filter(Boolean)])];
+
+// ---------- units: always show the source unit first, conversions in brackets ----------
+export const MM_PER_IN = 25.4, KW_PER_PS = 0.73549875, KW_PER_HP = 0.745699872, NM_PER_LBFT = 1.3558179483, L_PER_CUFT = 28.316846592;
+export const toMm = (v, unit) => unit === 'in' ? v * MM_PER_IN : v;
+export const fmtLength = (v, unit) => unit === 'in' ? `${num(v, 1)} in (${num(v * MM_PER_IN)} mm)` : `${num(v)} mm (${num(v / MM_PER_IN, 1)} in)`;
+export function fmtPower(p) {
+  if (!p) return '';
+  if (p.unit === 'kW') return `${num(p.value)} kW (${num(p.value / KW_PER_PS)} PS)`;
+  if (p.unit === 'PS') return `${num(p.value)} PS (${num(p.value * KW_PER_PS)} kW)`;
+  return `${num(p.value)} hp (${num(p.value * KW_PER_HP)} kW)`;
+}
+export const powerKw = p => !p ? null : p.unit === 'kW' ? p.value : p.unit === 'PS' ? p.value * KW_PER_PS : p.value * KW_PER_HP;
+export const fmtTorque = t => !t ? '' : t.unit === 'Nm' ? `${num(t.value)} Nm (${num(t.value / NM_PER_LBFT)} lb-ft)` : `${num(t.value)} lb-ft (${num(t.value * NM_PER_LBFT)} Nm)`;
+export const fmtCargo = k => k.unit === 'L' ? `${num(k.value)} L` : `${num(k.value, 1)} cu ft (${num(k.value * L_PER_CUFT)} L converted)`;
+export const STANDARD_HELP = {
+  VDA: 'VDA (ISO 3832) fills the space with 1-litre blocks; it usually gives smaller figures than SAE.',
+  'ISO 3832': 'ISO 3832 (VDA) fills the space with 1-litre blocks; it usually gives smaller figures than SAE.',
+  SAE: 'SAE J1100 is the North American method; its figures are usually larger than VDA figures for the same car.',
+  'not stated': 'The source does not say how the volume was measured.'
 };
 
-/**
- * The key that makes two credits the same appearance for one model. Identified appearances: label, kind, year,
- * season family and title. Dated relationships: label, kind and year (several year-only records of one label are one).
- */
-export function appearanceKey(c, person, cls = appearanceClass(c, person)) {
-  const base = [slug(person), slug(c.brand), kindOf(c), c.year ?? ''];
-  if (cls === 'identified') return [...base, family(c.season), norm(c.title || '')].join('|');
-  return base.join('|');
-}
-
-// ---------- overlay: curated additions and corrections that survive quarterly imports ----------
-
-/**
- * Apply data/overlay.json entries in order. Entry ops:
- *   {op:'add', record:{id, brand, ...}}          a new credit (its id must be new)
- *   {op:'patch', id, set:{...}, unset:[...]}     change fields of an existing credit
- *   {op:'remove', id}                            hide a credit
- *   {op:'rename-model', from, to}                a model's name changed; old pages redirect
- * Throws on an unknown id so a refresh that lost ids is caught at build time.
- */
-export function applyOverlay(raw, overlay) {
-  const campaigns = raw.campaigns.map(c => ({ ...c }));
-  const at = new Map(campaigns.map((c, i) => [c.id, i]));
-  const removed = new Set();
-  const renames = [];
-  for (const [n, e] of (overlay?.entries || []).entries()) {
-    const where = `overlay entry ${n + 1} (${e.op}${e.id ? ' ' + e.id : ''})`;
-    if (e.op === 'add') {
-      if (!e.record?.id || at.has(e.record.id)) throw new Error(`${where}: an added record needs a new unique id`);
-      at.set(e.record.id, campaigns.length);
-      campaigns.push({ ...e.record, curated: true });
-    } else if (e.op === 'patch' || e.op === 'remove') {
-      if (!at.has(e.id)) throw new Error(`${where}: no credit with this id in the data`);
-      const c = campaigns[at.get(e.id)];
-      if (e.op === 'remove') { removed.add(e.id); continue; }
-      Object.assign(c, e.set || {});
-      for (const k of e.unset || []) delete c[k];
-      c.curated = true;
-    } else if (e.op === 'rename-model') {
-      renames.push({ from: e.from, to: e.to });
-      for (const c of campaigns) {
-        c.talent = (c.talent || []).map(t => t === e.from ? e.to : t);
-        c.images = (c.images || []).map(i => ({ ...i, talent: (i.talent || []).map(t => t === e.from ? e.to : t) }));
-      }
-    } else throw new Error(`${where}: unknown op`);
+// ---------- overlay: reviewed corrections applied on top of the family files, kept across imports ----------
+function findItem(gen, itemId) {
+  const lists = ['bodyStyles', 'dimensions', 'cargo', 'powertrains', 'changes', 'revisions'];
+  for (const l of lists) {
+    const arr = gen[l] || [];
+    const i = arr.findIndex(x => x.id === itemId);
+    if (i >= 0) return { list: arr, index: i, item: arr[i] };
   }
-  return { ...raw, campaigns: campaigns.filter(c => !removed.has(c.id)), renames };
+  for (const r of gen.revisions || []) {
+    const i = (r.changes || []).findIndex(x => x.id === itemId);
+    if (i >= 0) return { list: r.changes, index: i, item: r.changes[i] };
+  }
+  return null;
+}
+function setPath(obj, field, value) {
+  const keys = String(field).split('.');
+  let o = obj;
+  for (const k of keys.slice(0, -1)) o = (o[k] ??= {});
+  o[keys.at(-1)] = value;
+}
+/** Applies data/overlay.json entries in order. Throws on a target that does not exist, so a broken correction stops the build. */
+export function applyOverlay(families, overlay) {
+  const fams = structuredClone(families);
+  const byFam = new Map(fams.map(f => [f.id, f]));
+  const byGen = new Map();
+  for (const f of fams) for (const g of f.generations) byGen.set(g.id, { f, g });
+  (overlay?.entries || []).forEach((e, n) => {
+    const [base, itemId] = String(e.target || '').split('#');
+    const fam = byFam.get(base), gen = byGen.get(base);
+    const f = fam || gen?.f;
+    if (!f) throw new Error(`overlay entry ${n + 1}: unknown target ${e.target}`);
+    const key = `ov${n + 1}`;
+    if (e.source) f.sources[key] = { ...e.source, overlay: true };
+    const fix = v => JSON.parse(JSON.stringify(v ?? null).replaceAll('"$source"', JSON.stringify(key)));
+    const host = itemId ? (gen && findItem(gen.g, itemId)) : { item: fam || gen.g };
+    if (!host) throw new Error(`overlay entry ${n + 1}: unknown item ${e.target}`);
+    if (e.op === 'set') setPath(host.item, e.field, fix(e.value));
+    else if (e.op === 'add') {
+      const list = (host.item[e.list] ??= []);
+      if (list.some(x => x.id && x.id === e.item?.id)) throw new Error(`overlay entry ${n + 1}: ${e.item.id} already exists in ${e.list}`);
+      list.push(fix(e.item));
+    } else if (e.op === 'remove') {
+      if (!itemId) throw new Error(`overlay entry ${n + 1}: remove needs an item id`);
+      host.list.splice(host.index, 1);
+    } else throw new Error(`overlay entry ${n + 1}: unknown op ${e.op}`);
+  });
+  return fams;
 }
 
 // ---------- index ----------
+export function buildIndex(manufacturers, families, { updated, currentYear } = {}) {
+  const makers = new Map(manufacturers.map(m => [m.id, { ...m, families: [] }]));
+  const fams = new Map(), gens = new Map();
+  for (const f of [...families].sort((a, b) => a.name.localeCompare(b.name))) {
+    const maker = makers.get(f.manufacturer);
+    if (!maker) throw new Error(`${f.id}: unknown manufacturer ${f.manufacturer}`);
+    const fam = { ...f, maker, path: `/cars/${maker.slug}/${f.slug}/` };
+    fam.generations = [...f.generations].sort((a, b) => (startYear(a) ?? 9999) - (startYear(b) ?? 9999) || a.ordinal - b.ordinal)
+      .map(g => ({ ...g, family: fam, path: `${fam.path}${g.slug}/` }));
+    for (const g of fam.generations) gens.set(g.id, g);
+    maker.families.push(fam);
+    fams.set(f.id, fam);
+  }
+  const db = { makers, families: fams, gens, updated, currentYear: currentYear ?? new Date().getUTCFullYear() };
+  for (const fam of fams.values()) fam.pairs = adjacentPairs(fam);
+  return db;
+}
+export const makerPath = m => `/manufacturers/${m.slug}/`;
+export const comparePath = (a, b) => `${a.family.path}compare/${a.slug}-vs-${b.slug}/`;
+export const revisionAnchor = r => `rev-${r.slug}`;
 
-export function buildIndex(raw) {
-  const campaigns = raw.campaigns.map(c => ({
-    ...c, year: c.year ?? null, kind: kindOf(c), talent: c.talent || [], sources: c.sources || [],
-    images: (c.images || []).map(i => ({ ...i, talent: i.talent || [] }))
-  }));
-  campaigns.sort(byNewest);
-  const byId = new Map(campaigns.map(c => [c.id, c]));
-  const brands = new Map();
-  for (const [name, info] of Object.entries(raw.brands || {})) brands.set(slug(name), { name, slug: slug(name), ...info, campaigns: [] });
-  const people = raw.models || {};
-  const models = new Map();
-  for (const c of campaigns) {
-    const bs = slug(c.brand);
-    if (!brands.has(bs)) brands.set(bs, { name: c.brand, slug: bs, campaigns: [] });
-    brands.get(bs).campaigns.push(c);
-    for (const t of c.talent) {
-      const ms = slug(t);
-      if (!models.has(ms)) models.set(ms, { name: t, slug: ms, ...(people[t] || {}), campaigns: [] });
-      models.get(ms).campaigns.push(c);
+/** Generations in order within each line, and the predecessor → successor pairs (shared generations counted once). */
+export function lineGens(fam, lineId) {
+  return fam.generations.filter(g => g.lines.includes(lineId)).sort((a, b) => a.ordinal - b.ordinal || (startYear(a) ?? 0) - (startYear(b) ?? 0));
+}
+export function adjacentPairs(fam) {
+  const seen = new Set(), pairs = [];
+  for (const line of fam.lines) {
+    const gs = lineGens(fam, line.id);
+    for (let i = 1; i < gs.length; i++) {
+      const k = gs[i - 1].id + '>' + gs[i].id;
+      if (!seen.has(k)) { seen.add(k); pairs.push({ prev: gs[i - 1], next: gs[i], line }); }
     }
   }
-  for (const [k, b] of brands) if (!b.campaigns.length) brands.delete(k);
-  for (const x of [...brands.values(), ...models.values()]) {
-    const ys = x.campaigns.filter(dated).map(c => c.year);
-    x.first = ys.length ? Math.min(...ys) : null;
-    x.last = ys.length ? Math.max(...ys) : null;
-  }
-  for (const b of brands.values()) b.isMagazine = b.type === 'magazine';
-  return { updated: raw.updated, campaigns, byId, brands, models, renames: raw.renames || [] };
+  return pairs;
 }
+export const predecessors = g => g.family.pairs.filter(p => p.next === g).map(p => p.prev);
+export const successors = g => g.family.pairs.filter(p => p.prev === g).map(p => p.next);
 
-export const brandPath = b => `/${b.isMagazine ? 'magazine' : 'brand'}/${b.slug}/`;
-export const modelPath = m => `/model/${typeof m === 'string' ? slug(m) : m.slug}/`;
-
-/** One model's appearances, each with its class, deduplicated by appearance key (records and photos merged). */
-export function appearancesOf(m) {
-  const out = new Map();
-  for (const c of m.campaigns) {
-    const cls = appearanceClass(c, m.name);
-    const key = appearanceKey(c, m.name, cls);
-    if (!out.has(key)) out.set(key, { key, cls, kind: c.kind, brand: c.brand, year: c.year, credits: [] });
-    out.get(key).credits.push(c);
-  }
-  // a dated relationship adds nothing when an identified appearance of the same label, kind and year exists
-  const identifiedLKY = new Set([...out.values()].filter(a => a.cls === 'identified').map(a => [slug(a.brand), a.kind, a.year].join('|')));
-  for (const [k, a] of out) if (a.cls === 'dated' && identifiedLKY.has([slug(a.brand), a.kind, a.year].join('|'))) a.coveredBy = true;
-  return [...out.values()];
-}
-
-/** The earliest dated appearance of a model in this archive (not necessarily the start of her career). */
-export function earliest(m) {
-  const ds = m.campaigns.filter(dated);
-  if (!ds.length) return null;
-  const y = Math.min(...ds.map(c => c.year));
-  const cs = ds.filter(c => c.year === y).sort((a, b) => seasonRank(a.season) - seasonRank(b.season));
-  return { year: y, credit: cs[0], count: cs.length };
-}
-
-// ---------- rankings: archive visibility, not popularity ----------
-
+// ---------- comparison: like-for-like only ----------
+const VARIANT = /coup|long|lwb|allspace|extended|3-door|three-door|short/i;
+const isBase = d => !VARIANT.test(d.version || '');
 /**
- * Distinct documented appearances per model and year, by kind. Undated relationships are excluded; a dated
- * relationship counts only when no identified appearance covers the same label, kind and year. Several records
- * or photos of one appearance count once.
- * Returns {years: {Y: {modelSlug: [campaign, runway, cover, ambassador]}}, names: {slug: name}}.
+ * Dimension records that can fairly be compared across generations: the same market (or all "not stated") and the
+ * standard body for every generation, with at least one measurement present in all of them. Returns null otherwise —
+ * pages then say so instead of comparing figures from different markets or bodies.
  */
-export function rankingTable(db) {
-  const years = {};
-  const names = {};
-  for (const m of db.models.values()) {
-    for (const a of appearancesOf(m)) {
-      if (a.cls === 'undated' || a.coveredBy) continue;
-      const y = (years[a.year] ||= {});
-      const row = (y[m.slug] ||= [0, 0, 0, 0]);
-      row[KINDS.indexOf(a.kind)] += 1;
-      names[m.slug] = m.name;
-    }
+export function commonDims(gens) {
+  const markets = new Set(gens.flatMap(g => (g.dimensions || []).filter(isBase).map(d => d.market)));
+  let best = null;
+  for (const m of markets) {
+    const picks = gens.map(g => {
+      const rs = (g.dimensions || []).filter(d => d.market === m && isBase(d));
+      // the launch version of each generation: prefer records not labelled as facelift/update
+      return rs.sort((x, y) => Number(/facelift|update|lci|late|revis/i.test(x.version || '')) - Number(/facelift|update|lci|late|revis/i.test(y.version || '')))[0];
+    });
+    if (picks.some(p => !p)) continue;
+    const shared = ['length', 'width', 'height', 'wheelbase'].filter(k => picks.every(p => p[k] != null));
+    if (!shared.length) continue;
+    const score = shared.length * 10 + (m !== 'unstated' ? 5 : 0) + (m === 'EU' || m === 'US' ? 1 : 0);
+    if (!best || score > best.score) best = { market: m, records: picks, shared, score };
   }
-  return { years, names, kinds: KINDS };
+  if (!best) return null;
+  best.values = best.shared.map(k => ({ key: k, mm: best.records.map(r => toMm(r[k], r.unit)) }));
+  return best;
 }
-
-/** Rank models over a set of years from a ranking table. Ties are broken by name. */
-export function rankModels(table, yearsWanted, { kind = null, limit = 50 } = {}) {
-  const tot = new Map();
-  for (const y of yearsWanted) {
-    for (const [s, row] of Object.entries(table.years[y] || {})) {
-      const t = tot.get(s) || [0, 0, 0, 0];
-      row.forEach((n, i) => { t[i] += n; });
-      tot.set(s, t);
-    }
-  }
-  const ki = kind ? table.kinds.indexOf(kind) : -1;
-  return [...tot].map(([s, row]) => ({ slug: s, name: table.names[s], byKind: row, total: ki >= 0 ? row[ki] : row.reduce((a, b) => a + b, 0) }))
-    .filter(r => r.total > 0)
-    .sort((a, b) => b.total - a.total || a.name.localeCompare(b.name))
-    .slice(0, limit);
-}
-
-/** Periods offered by the ranking selector, newest first. */
-export function periods(table, now = new Date().getFullYear()) {
-  const ys = Object.keys(table.years).map(Number).sort((a, b) => b - a);
-  const last = ys[0] ?? now;
-  const out = [{ id: 'all', label: 'All years', years: ys },
-    { id: `last5`, label: `${last - 4}–${last}`, years: ys.filter(y => y > last - 5) }];
-  const decades = [...new Set(ys.map(y => Math.floor(y / 10) * 10))];
-  for (const d of decades) out.push({ id: `${d}s`, label: `${d}s`, years: ys.filter(y => y >= d && y < d + 10) });
-  for (const y of ys) out.push({ id: String(y), label: String(y), years: [y] });
-  return out;
-}
-
-// ---------- combined pages: only with enough verified content ----------
-
-/** Model × label pages: at least 3 dated appearances with the label, at least one identified. */
-export function comboPages(db) {
+export const comparableDims = (a, b) => commonDims([a, b]);
+/** Differences derived from the sourced lists (body styles, seating, drivetrains, fuels). Each states what it compares. */
+export function derivedChanges(a, b) {
   const out = [];
-  for (const m of db.models.values()) {
-    const byBrand = new Map();
-    for (const a of appearancesOf(m)) {
-      if (a.cls === 'undated' || a.coveredBy) continue;
-      const k = slug(a.brand);
-      if (!byBrand.has(k)) byBrand.set(k, []);
-      byBrand.get(k).push(a);
-    }
-    for (const [bs, as] of byBrand) {
-      if (as.length >= 3 && as.some(a => a.cls === 'identified')) out.push({ model: m, brand: db.brands.get(bs), appearances: as });
-    }
+  const add = (topic, text) => out.push({ topic, text });
+  const fa = fuelsOf(a), fb = fuelsOf(b);
+  const newF = fb.filter(f => !fa.includes(f)), goneF = fa.filter(f => !fb.includes(f));
+  if (a.powertrains?.length && b.powertrains?.length) {
+    if (newF.length) add('powertrain', `Powertrain types documented for the ${shortName(b)} but not the ${shortName(a)}: ${newF.map(f => FUEL_LABEL[f].toLowerCase()).join(', ')}.`);
+    if (goneF.length) add('powertrain', `Documented for the ${shortName(a)} but not the ${shortName(b)}: ${goneF.map(f => FUEL_LABEL[f].toLowerCase()).join(', ')}.`);
   }
+  const sa = seatsOf(a), sb = seatsOf(b);
+  if (sa.length && sb.length && sa.join() !== sb.join()) add('interior', `Seating configurations: ${sa.join(' or ')} seats (${shortName(a)}) → ${sb.join(' or ')} seats (${shortName(b)}).`);
+  const ba = bodyGroupsOf(a), bb = bodyGroupsOf(b);
+  const newB = bb.filter(x => !ba.includes(x));
+  if (ba.length && newB.length) add('design', `Body styles documented for the ${shortName(b)} only: ${newB.join(', ')}.`);
   return out;
 }
-/** A model's covers page: at least 3 dated cover appearances. */
-export function coverPages(db) {
+/** Fields shown side by side on the comparison page, in order. */
+export const COMPARE_FIELDS = ['production', 'revealed', 'modelYears', 'codes', 'platform', 'bodyStyles', 'seating', 'drivetrains', 'fuels', 'dimensions', 'cargo', 'power'];
+
+/** The documented version with the highest output, labelled with its market — never a universal figure. */
+export function topPower(g) {
+  return [...(g.powertrains || [])].filter(p => p.power).sort((x, y) => powerKw(y.power) - powerKw(x.power))[0] || null;
+}
+
+// ---------- years ----------
+/** Calendar-year events (reveals, production starts and ends, revisions), keyed by year. Model years are separate. */
+export function yearEvents(db) {
+  const ev = new Map();
+  const add = (y, e) => { if (y == null) return; if (!ev.has(y)) ev.set(y, []); ev.get(y).push(e); };
+  for (const g of db.gens.values()) {
+    const d = g.dates || {};
+    add(yearOf(d.revealed), { type: 'revealed', g, fact: d.revealed });
+    add(yearOf(d.productionStart), { type: 'production-start', g, fact: d.productionStart });
+    if (!g.ongoing) add(yearOf(d.productionEnd), { type: 'production-end', g, fact: d.productionEnd });
+    for (const r of g.revisions || []) {
+      const f = r.dates?.revealed || r.dates?.productionStart;
+      add(yearOf(f), { type: 'revision', g, r, fact: f });
+    }
+  }
+  return ev;
+}
+export function inProduction(db, y) {
+  return [...db.gens.values()].filter(g => {
+    const s = yearOf(g.dates?.productionStart); if (s == null || s > y) return false;
+    const e = g.ongoing ? db.currentYear : yearOf(g.dates?.productionEnd);
+    return e != null && e >= y;
+  });
+}
+/** Generations sold as model year y in a market that uses model years. */
+export function modelYearGens(db, y) {
   const out = [];
-  for (const m of db.models.values()) {
-    const as = appearancesOf(m).filter(a => a.kind === 'cover' && a.cls !== 'undated' && !a.coveredBy);
-    if (as.length >= 3) out.push({ model: m, appearances: as });
-  }
+  for (const g of db.gens.values()) for (const m of g.dates?.modelYears || []) if (m.from <= y && (m.to ?? db.currentYear + 1) >= y) out.push({ g, m });
   return out;
 }
 
-/** Whether a page has enough substance to be indexed and listed in the sitemap. */
-export function modelIndexable(m) {
-  return m.campaigns.some(dated) || m.campaigns.some(c => photosOf(c, m.name).length);
-}
-export function brandIndexable(b) {
-  return b.campaigns.length >= 2 || b.campaigns.some(dated);
+// ---------- facts ----------
+export function countFacts(o) {
+  if (Array.isArray(o)) return o.reduce((a, x) => a + countFacts(x), 0);
+  if (!o || typeof o !== 'object') return 0;
+  let n = o.src ? 1 : 0;
+  for (const [k, v] of Object.entries(o)) if (k !== 'family' && k !== 'maker' && v && typeof v === 'object') n += countFacts(v);
+  return n;
 }
 
-/** A saved appearance's id: credit id and model slug. Survives data refreshes because credit ids are persistent. */
-export const savedId = (c, person) => `${c.id}:${slug(person)}`;
-
-/** For every label, the models with the most distinct counted appearances with it: {brandSlug: [{slug,name,total}]}. */
-export function topByBrand(db, limit = 12) {
-  const per = new Map();
-  for (const m of db.models.values()) {
-    const n = new Map();
-    for (const a of appearancesOf(m)) {
-      if (a.cls === 'undated' || a.coveredBy) continue;
-      const b = slug(a.brand);
-      n.set(b, (n.get(b) || 0) + 1);
-    }
-    for (const [b, total] of n) {
-      if (!per.has(b)) per.set(b, []);
-      per.get(b).push({ slug: m.slug, name: m.name, total });
-    }
-  }
-  const out = {};
-  for (const [b, rows] of per) out[b] = rows.sort((x, y) => y.total - x.total || x.name.localeCompare(y.name)).slice(0, limit);
-  return out;
-}
+// ---------- browser store keys ----------
+export const garageId = (type, id) => `${type}:${id}`;

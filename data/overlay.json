@@ -1,4 +1,4 @@
 {
-  "about": "Curated additions and corrections applied on top of data/campaigns.json at build time. Quarterly imports replace campaigns.json; this file is kept. Entries are added only through the reviewed process in README (Community contributions).",
+  "about": "Reviewed corrections applied on top of data/families/*.json at build time (see data/SCHEMA.md, Overlay). Family files may be regenerated or re-imported; these entries are kept and re-applied. Add approved suggestions with scripts/apply-overlay-export.mjs.",
   "entries": []
 }
