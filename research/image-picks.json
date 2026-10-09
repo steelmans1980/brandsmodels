@@ -1,20 +1,399 @@
 {
-  "_about": "Reviewer's photo choices, by index on the contact sheets made by scripts/research/images.mjs candidates. Converted to research/image-decisions.json (by file name) with scripts/research/picks-to-decisions.mjs. Revisions come only from Commons categories; photos from a generation-level category stay 'version not identified'.",
-  "audi-q7-4l": [[0, {"lead": true, "view": "front three-quarter"}], [6, {"view": "rear"}]],
-  "audi-q7-4m": [[2, {"lead": true, "view": "front three-quarter"}], [0, {"view": "front three-quarter"}], [5, {"view": "rear three-quarter"}]],
-  "audi-q7-g8": [[0, {"lead": true, "view": "front three-quarter"}], [3, {"view": "rear three-quarter"}]],
-  "bmw-x5-e53": [[2, {"lead": true, "view": "front three-quarter"}], [7, {"view": "rear three-quarter"}]],
-  "bmw-x5-e70": [[1, {"lead": true, "view": "front three-quarter"}], [3, {"view": "front three-quarter"}]],
-  "bmw-x5-f15": [[0, {"lead": true, "view": "front three-quarter"}], [3, {"view": "front three-quarter"}]],
-  "bmw-x5-g05": [[0, {"lead": true, "view": "front three-quarter"}], [9, {"view": "rear three-quarter"}], [12, {"view": "front three-quarter"}]],
-  "bmw-x5-g65": [[2, {"lead": true, "view": "front three-quarter"}], [7, {"view": "side"}]],
-  "honda-cr-v-rd1": [[7, {"lead": true, "view": "front three-quarter"}], [6, {"view": "rear three-quarter"}]],
-  "honda-cr-v-rd4": [[0, {"lead": true, "view": "front three-quarter"}], [4, {"view": "rear three-quarter"}]],
-  "honda-cr-v-re": [[1, {"lead": true, "view": "front three-quarter"}], [4, {"view": "front three-quarter"}]],
-  "honda-cr-v-rm": [[0, {"lead": true, "view": "front three-quarter"}], [9, {"view": "front three-quarter"}]],
-  "honda-cr-v-rw": [[0, {"lead": true, "view": "front three-quarter"}], [6, {"view": "front three-quarter"}]],
-  "honda-cr-v-rs": [[1, {"lead": true, "view": "front three-quarter"}], [0, {"view": "front three-quarter"}], [11, {"view": "front three-quarter"}], [13, {"view": "rear three-quarter"}]],
-  "hyundai-tucson-jm": [[2, {"lead": true, "view": "front three-quarter"}], [8, {"view": "rear three-quarter"}]],
-  "hyundai-tucson-lm": [[1, {"lead": true, "view": "front three-quarter"}], [4, {"view": "rear three-quarter"}]],
-  "hyundai-tucson-tl": [[0, {"lead": true, "view": "front three-quarter"}], [9, {"view": "rear three-quarter"}]]
+ "_about": "Reviewer's photo choices, by index on the contact sheets made by scripts/research/images.mjs candidates. Converted to research/image-decisions.json (by file name) with scripts/research/picks-to-decisions.mjs. Revisions come only from Commons categories; photos from a generation-level category stay 'version not identified'.",
+ "audi-q7-4l": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   6,
+   {
+    "view": "rear"
+   }
+  ]
+ ],
+ "audi-q7-4m": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   0,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   5,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "audi-q7-g8": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   3,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "bmw-x5-e53": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   7,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "bmw-x5-e70": [
+  [
+   1,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   3,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "bmw-x5-f15": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   3,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "bmw-x5-g05": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   9,
+   {
+    "view": "rear three-quarter"
+   }
+  ],
+  [
+   12,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "bmw-x5-g65": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   7,
+   {
+    "view": "side"
+   }
+  ]
+ ],
+ "honda-cr-v-rd1": [
+  [
+   7,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   6,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "honda-cr-v-rd4": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   4,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "honda-cr-v-re": [
+  [
+   1,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   4,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "honda-cr-v-rm": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   9,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "honda-cr-v-rw": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   6,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "honda-cr-v-rs": [
+  [
+   1,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   0,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   11,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "hyundai-tucson-jm": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   8,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "hyundai-tucson-lm": [
+  [
+   1,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   4,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "hyundai-tucson-tl": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   9,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "hyundai-tucson-nx4": [
+  [
+   12,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "rear three-quarter"
+   }
+  ],
+  [
+   24,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   0,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "hyundai-tucson-nx5": [
+  [
+   3,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "kia-sportage-nb": [
+  [
+   1,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   5,
+   {
+    "view": "rear three-quarter"
+   }
+  ],
+  [
+   15,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "kia-sportage-km": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   9,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "kia-sportage-sl": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   8,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "kia-sportage-ql": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   4,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "kia-sportage-nq5": [
+  [
+   4,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   0,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ]
 }
