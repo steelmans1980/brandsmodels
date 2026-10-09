@@ -150,7 +150,7 @@ button.chip[aria-pressed="true"] { background: var(--accent); color: #fff; borde
 .ref { font-size: 10px; margin-left: 1px; }
 .ref a { text-decoration: none; color: var(--accent-soft); }
 .ref a:hover { text-decoration: underline; }
-.table-wrap { overflow-x: auto; margin: 10px 0 6px; }
+.table-wrap { overflow-x: auto; margin: 10px 0 6px; position: relative; }   /* keeps visually hidden labels inside the scroller */
 .spec, .compare { border-collapse: collapse; width: 100%; font-size: 13px; font-variant-numeric: tabular-nums; }
 .spec th, .spec td, .compare th, .compare td { text-align: left; padding: 9px 12px 9px 0; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
 .spec thead th, .compare thead th { font-size: 10px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--muted); font-weight: normal; white-space: nowrap; }
@@ -197,8 +197,8 @@ button.chip[aria-pressed="true"] { background: var(--accent); color: #fff; borde
 
 /* Compare page */
 .compare-pick { display: flex; flex-wrap: wrap; gap: 12px 18px; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--line); }
-.compare-pick label { display: flex; gap: 10px; align-items: center; font-size: 13px; }
-.compare-pick select { padding: 8px; border: 1px solid var(--line); background: #fff; color: var(--ink); max-width: 80vw; }
+.compare-pick label { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; font-size: 13px; max-width: 100%; }
+.compare-pick select { padding: 8px; border: 1px solid var(--line); background: #fff; color: var(--ink); max-width: 100%; min-width: 0; }
 .compare-pick .chosen { display: flex; flex-wrap: wrap; gap: 8px; }
 
 /* Lists */

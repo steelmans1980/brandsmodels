@@ -95,6 +95,62 @@
       "type": "manufacturer",
       "date": "2026-09-15",
       "accessed": "2026-10-09"
+    },
+    "vc-uk-2010": {
+      "url": "https://news.cision.com/volvo-car-uk/r/volvo-xc90,c4198443",
+      "title": "VOLVO XC90",
+      "publisher": "Volvo Car UK (Cision newsroom)",
+      "type": "manufacturer",
+      "date": "2010-09-03",
+      "accessed": "2026-10-09"
+    },
+    "vc-us-2005": {
+      "url": "https://news.cision.com/volvo-car-usa/r/model-overview--2005-volvo-xc90,c4199735",
+      "title": "Model Overview: 2005 Volvo XC90",
+      "publisher": "Volvo Car USA (Cision newsroom)",
+      "type": "manufacturer",
+      "date": "2004-08-25",
+      "accessed": "2026-10-09"
+    },
+    "vc-us-2010": {
+      "url": "https://news.cision.com/volvo-car-usa/r/model-overview--2010-volvo-xc90,c4198562",
+      "title": "Model Overview: 2010 Volvo XC90",
+      "publisher": "Volvo Car USA (Cision newsroom)",
+      "type": "manufacturer",
+      "date": "2009-07-13",
+      "accessed": "2026-10-09"
+    },
+    "vc-uk-2014": {
+      "url": "https://news.cision.com/volvo-car-uk/r/the-all-new-volvo-xc90,c4196908",
+      "title": "The all-new Volvo XC90",
+      "publisher": "Volvo Car UK (Cision newsroom)",
+      "type": "manufacturer",
+      "date": "2014-10-21",
+      "accessed": "2026-10-09"
+    },
+    "vc-de-2023": {
+      "url": "https://news.cision.com/de/volvo-car-germany-presse/r/der-volvo-xc90-auf-einen-blick,c4184795",
+      "title": "Der Volvo XC90 auf einen Blick",
+      "publisher": "Volvo Car Germany (Cision newsroom)",
+      "type": "manufacturer",
+      "date": "2023-06-01",
+      "accessed": "2026-10-09"
+    },
+    "vc-de-2023-recharge": {
+      "url": "https://news.cision.com/de/volvo-car-germany-presse/r/der-volvo-xc90-recharge--das-premium-suv-flaggschiff,c4184793",
+      "title": "Der Volvo XC90 Recharge: Das Premium-SUV-Flaggschiff",
+      "publisher": "Volvo Car Germany (Cision newsroom)",
+      "type": "manufacturer",
+      "date": "2023-06-01",
+      "accessed": "2026-10-09"
+    },
+    "vc-de-2024": {
+      "url": "https://news.cision.com/de/volvo-car-germany/r/der-neue-volvo-xc90-auf-einen-blick,c4184477",
+      "title": "Der neue Volvo XC90 auf einen Blick",
+      "publisher": "Volvo Car Germany (Cision newsroom)",
+      "type": "manufacturer",
+      "date": "2024-10-30",
+      "accessed": "2026-10-09"
     }
   },
   "generations": [
@@ -262,6 +318,31 @@
             "Wheelbase 2003–2004 & 2007–2016: 2,857 mm (112.5 in)",
             "2007–2016: 4,807 mm (189.3 in)",
             "2013–2016: 1,935 mm (76.2 in)"
+          ]
+        },
+        {
+          "id": "d5",
+          "market": "UK",
+          "version": "2010 model range",
+          "unit": "mm",
+          "length": 4798,
+          "width": 1898,
+          "height": 1784,
+          "wheelbase": 2857,
+          "src": "vc-uk-2010",
+          "quotes": [
+            "Dimensions, mm Length Width (excluding mirrors) Unladen height Wheelbase Front track width Rear track width 4798 1898 1784 2857"
+          ]
+        },
+        {
+          "id": "d6",
+          "market": "US",
+          "version": "2005 model year",
+          "unit": "in",
+          "wheelbase": 112.6,
+          "src": "vc-us-2005",
+          "quotes": [
+            "With a wheelbase of 112.6 inches"
           ]
         }
       ],
@@ -437,6 +518,101 @@
           "quotes": [
             "only one engine, a 2.5L turbo petrol 5-cylinder engine with 220 hp, was available. All XC Classic models came with AWD as standard and either a 5-speed manual or 5-speed automatic transmission."
           ]
+        },
+        {
+          "id": "p9",
+          "name": "3.2",
+          "market": "UK",
+          "fuel": "petrol",
+          "years": "2010",
+          "engine": "3.2 L SI6 inline-6",
+          "displacement": 3192,
+          "cylinders": 6,
+          "power": {
+            "value": 243,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 320,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed Geartronic automatic",
+          "drivetrain": "AWD",
+          "src": "vc-uk-2010",
+          "quotes": [
+            "The six-cylinder 3.2-litre (3192cc) engine develops 243PS and 320Nm of torque",
+            "It also comes as standard with Volvo's six-speed Geartronic transmission and the latest All Wheel Drive (AWD) system with Instant TractionTM."
+          ]
+        },
+        {
+          "id": "p10",
+          "name": "D5",
+          "market": "UK",
+          "fuel": "diesel",
+          "years": "2010",
+          "engine": "2.4 L D5 turbodiesel inline-5",
+          "displacement": 2400,
+          "cylinders": 5,
+          "power": {
+            "value": 185,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 400,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual or 6-speed Geartronic automatic",
+          "src": "vc-uk-2010",
+          "quotes": [
+            "Volvo's 2400cc, D5 turbodiesel, which develops 185PS and 400Nm of torque",
+            "a six-speed manual transmission or (optionally) Volvo's six-speed Geartronic"
+          ]
+        },
+        {
+          "id": "p11",
+          "name": "3.2",
+          "market": "US",
+          "fuel": "petrol",
+          "years": "2010 model year",
+          "engine": "3.2 L inline-6",
+          "cylinders": 6,
+          "power": {
+            "value": 235,
+            "unit": "hp"
+          },
+          "torque": {
+            "value": 236,
+            "unit": "lb-ft"
+          },
+          "transmission": "6-speed Geartronic automatic",
+          "src": "vc-us-2010",
+          "quotes": [
+            "This engine delivers 235 horsepower and 236 lb.-ft. of torque.",
+            "A six-speed \"Geartronic\" automatic transmission is standard on all XC90s."
+          ]
+        },
+        {
+          "id": "p12",
+          "name": "V8",
+          "market": "US",
+          "fuel": "petrol",
+          "years": "2010 model year",
+          "engine": "4.4 L V8",
+          "cylinders": 8,
+          "power": {
+            "value": 311,
+            "unit": "hp"
+          },
+          "torque": {
+            "value": 325,
+            "unit": "lb-ft"
+          },
+          "transmission": "6-speed Geartronic automatic",
+          "drivetrain": "AWD",
+          "src": "vc-us-2010",
+          "quotes": [
+            "it develops 311 horsepower and 325 lb.-ft. of torque. All-wheel drive with Instant TractionTM is standard."
+          ]
         }
       ],
       "revisions": [
@@ -503,7 +679,57 @@
         "Wheelbase: Volvo's 2003 release gives 2,859 mm; Wikipedia gives 2,857 mm (2,859 mm for 2005–2006 models). Both recorded with their source.",
         "The V8 arrived in 2005 per Volvo's January 2005 release (Volvo's 2016 history piece says 2004); Wikipedia (de) says the V8 was dropped at the end of 2010. Years for the V8 are from Wikipedia's spec table.",
         "Model years 2003–2014 are from Wikipedia's infobox; the source does not name the market, but the 2003 model year refers to the North American launch.",
-        "No Commons category for the facelifts was found."
+        "No Commons category for the facelifts was found.",
+        "UK 2010 figures (Volvo UK): 4,798 mm long, 1,898 mm wide, 2,857 mm wheelbase; load volume 249 / 615 / 1,837 L. US figures (Volvo USA): 112.6 in wheelbase (2005 MY), 93.2 cu ft maximum cargo with the front passenger seat also folded."
+      ],
+      "cargo": [
+        {
+          "id": "k1",
+          "market": "UK",
+          "version": "7-seat, all seats up (2010)",
+          "behind": "3rd row",
+          "value": 249,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "vc-uk-2010",
+          "quote": "Even with all seven seats in use, there is still a useful amount of load space for the family - 249 litres, to be precise."
+        },
+        {
+          "id": "k2",
+          "market": "UK",
+          "version": "3rd row folded (2010)",
+          "behind": "2nd row",
+          "value": 615,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "vc-uk-2010",
+          "quotes": [
+            "Load capacity, litres 2nd/3rd row up 2nd row up/3rd row down 2nd/3rd row down",
+            "615 1837 1830mm"
+          ]
+        },
+        {
+          "id": "k3",
+          "market": "UK",
+          "version": "2nd and 3rd rows folded (2010)",
+          "behind": "1st row",
+          "value": 1837,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "vc-uk-2010",
+          "quote": "Both the second and third rows of seats can be folded down to create an entirely flat luggage compartment floor no less than 3845mm long and 1127mm wide, with a volume of 1837 litres."
+        },
+        {
+          "id": "k4",
+          "market": "US",
+          "version": "2005 model year, 2nd/3rd rows and front passenger seat folded",
+          "behind": "1st row",
+          "value": 93.2,
+          "unit": "cu ft",
+          "standard": "not stated",
+          "src": "vc-us-2005",
+          "quote": "A full 93.2 cubic feet of cargo capacity and over 9.5 feet of cargo length are available when the second and third rows and the front passenger seat are folded flat."
+        }
       ]
     },
     {
@@ -716,6 +942,98 @@
           "src": "vc-2024",
           "quotes": [
             "we also offer a choice of two mild-hybrid petrol variants. Both the B5 and B6 are assisted by a 48v lithium-ion battery and an integrated starter/generator"
+          ]
+        },
+        {
+          "id": "p7",
+          "name": "T8 AWD Recharge",
+          "market": "EU",
+          "fuel": "plug-in hybrid",
+          "years": "2023",
+          "engine": "2.0 L supercharged and turbocharged four-cylinder petrol (228 kW) + 107 kW rear electric motor",
+          "cylinders": 4,
+          "power": {
+            "value": 335,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 709,
+            "unit": "Nm"
+          },
+          "transmission": "8-speed automatic",
+          "drivetrain": "AWD",
+          "src": "vc-de-2023-recharge",
+          "quotes": [
+            "Zusammen mit dem 107 kW (145 PS) starken Elektromotor erreicht der T8 AWD eine Systemleistung von 335 kW (455 PS) und ein maximales Drehmoment von 709 Nm."
+          ]
+        },
+        {
+          "id": "p8",
+          "name": "B5 AWD (petrol)",
+          "market": "EU",
+          "fuel": "mild hybrid",
+          "years": "2023",
+          "engine": "2.0 L turbo four-cylinder petrol, mild hybrid",
+          "cylinders": 4,
+          "power": {
+            "value": 184,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 350,
+            "unit": "Nm"
+          },
+          "transmission": "8-speed automatic",
+          "drivetrain": "AWD",
+          "src": "vc-de-2023",
+          "quotes": [
+            "Volvo XC90 B5 Mild-Hybrid Benzin AWD: Vierzylinder-Turbomotor mit Mild-Hybrid-System, Benzin-Direkteinspritzung und Benzinpartikelfilter, 1.969 ccm, 184 kW (250 PS), max. Drehmoment 350 Nm"
+          ]
+        },
+        {
+          "id": "p9",
+          "name": "B5 AWD (diesel)",
+          "market": "EU",
+          "fuel": "mild hybrid",
+          "years": "2023",
+          "engine": "2.0 L common-rail turbodiesel four-cylinder, mild hybrid",
+          "cylinders": 4,
+          "power": {
+            "value": 173,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 480,
+            "unit": "Nm"
+          },
+          "transmission": "8-speed automatic",
+          "drivetrain": "AWD",
+          "src": "vc-de-2023",
+          "quotes": [
+            "Volvo XC90 B5 Mild-Hybrid Diesel AWD: Vierzylinder-Common-Rail-Turbodiesel mit Mild-Hybrid-System, i-ART Einspritzkontrollsystem und SCR-Abgasreinigung, 1.969 ccm, 173 kW (235 PS), max. Drehmoment 480 Nm"
+          ]
+        },
+        {
+          "id": "p10",
+          "name": "B5 AWD (2024 facelift)",
+          "market": "EU",
+          "fuel": "mild hybrid",
+          "years": "2024–",
+          "engine": "2.0 L turbo four-cylinder petrol, mild hybrid",
+          "cylinders": 4,
+          "power": {
+            "value": 184,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 360,
+            "unit": "Nm"
+          },
+          "transmission": "8-speed automatic",
+          "drivetrain": "AWD",
+          "src": "vc-de-2024",
+          "quotes": [
+            "1.969 ccm, 184 kW (250 PS), max. Drehmoment 360 Nm bei 2.000 bis 4.500 U/min"
           ]
         }
       ],
@@ -941,10 +1259,42 @@
         "Volvo's media sites (media.volvocars.com, volvocars.com/…/media) returned 503/403; Volvo press releases were read from Volvo's Cision newsroom copies (news.cision.com).",
         "Reveal: Volvo's release 'World premiere: the all-new Volvo XC90' is dated 27 August 2014 and German Wikipedia says the press presentation was in Stockholm on 27 August 2014; English Wikipedia says 26 August 2014. The interior had been shown first, on 27 May 2014.",
         "Power figures in the 2014 Volvo release are 'hp' (metric); English Wikipedia gives the D5 as 235 hp. Volvo's figures are recorded.",
-        "Seating is 5 or 7 (5-seat dropped after the 2017 model year per Wikipedia), 4-seat Excellence (2017–2020) and 6-seat from the 2020 model year; sources state these in words, so the seating field is left empty.",
         "The T8 was renamed 'Recharge' for the 2021 model year and received a more powerful 107 kW electric motor and an 18.8 kWh battery in 2021 (Wikipedia). In March 2024 the XC90 was the last Volvo built with a diesel engine (Wikipedia). Not recorded as separate revisions.",
         "EX90: Wikipedia says the electric EX90 was introduced in late 2022 as the XC90's successor, but in September 2024 Volvo said both would be sold together. The EX90 is a separate model and is not included here.",
-        "No manufacturer dimensions, cargo volumes or model-year-specific outputs (B5/B6, T8 Recharge 455 hp) were readable; dimensions are from English Wikipedia (model year not stated). The 2026 long-range PHEV update's system output was not stated in the release."
+        "No manufacturer dimensions, cargo volumes or model-year-specific outputs (B5/B6, T8 Recharge 455 hp) were readable; dimensions are from English Wikipedia (model year not stated). The 2026 long-range PHEV update's system output was not stated in the release.",
+        "Seating: Volvo describes the second generation as a '7-seater'; Wikipedia and Volvo's 2019 release also describe 5-seat (dropped after the 2017 model year), 4-seat Excellence (2017–2020) and 6-seat (from the 2020 model year) layouts in words only, so only 7 is recorded in the seating field.",
+        "Volvo Germany's 2023 and 2024 releases give 4,953 mm length, 1,771 mm height and 2,984 mm wheelbase (width 2,140 mm incl. mirrors) and a maximum 1,816 L load volume; these use German thousands separators ('4.953', '1.816') which the quote checker cannot match as numbers, so they are not recorded as fields. The Wikipedia figures (4,950 mm length, 1,776 mm height) differ slightly."
+      ],
+      "seating": {
+        "options": [
+          7
+        ],
+        "src": "vc-uk-2014",
+        "quote": "helping to make the new XC90 a genuine 7-seater"
+      },
+      "cargo": [
+        {
+          "id": "k1",
+          "market": "EU",
+          "version": "Germany, 2023 range, 7 seats up",
+          "behind": "3rd row",
+          "value": 262,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "vc-de-2023-recharge",
+          "quote": "Bei voller Bestuhlung als Siebensitzer bleiben 262 Liter Ladevolumen, das sich durch Umklappen der dritten Sitzreihe auf 640 Liter"
+        },
+        {
+          "id": "k2",
+          "market": "EU",
+          "version": "Germany, 2023 range, 3rd row folded",
+          "behind": "2nd row",
+          "value": 640,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "vc-de-2023-recharge",
+          "quote": "Bei voller Bestuhlung als Siebensitzer bleiben 262 Liter Ladevolumen, das sich durch Umklappen der dritten Sitzreihe auf 640 Liter"
+        }
       ]
     }
   ]
