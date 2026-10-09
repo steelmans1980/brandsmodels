@@ -395,5 +395,140 @@
     "view": "front three-quarter"
    }
   ]
+ ],
+ "mazda-cx-5-ke": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   1,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "mazda-cx-5-kf": [
+  [
+   4,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   10,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "mazda-cx-5-km": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   1,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "mercedes-benz-gle-w163": [
+  [
+   8,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   12,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   19,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "mercedes-benz-gle-w164": [
+  [
+   6,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   18,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "mercedes-benz-gle-w166": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   11,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   24,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "mercedes-benz-gle-v167": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   4,
+   {
+    "view": "rear three-quarter"
+   }
+  ],
+  [
+   15,
+   {
+    "view": "front three-quarter"
+   }
+  ]
  ]
 }
