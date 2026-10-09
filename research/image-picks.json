@@ -530,5 +530,176 @@
     "view": "front three-quarter"
    }
   ]
+ ],
+ "nissan-x-trail-rogue-t30": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   8,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "nissan-x-trail-rogue-s35": [
+  [
+   4,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   2,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "nissan-x-trail-rogue-t31": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   2,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "nissan-x-trail-rogue-t32": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "nissan-x-trail-rogue-t33": [
+  [
+   3,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   9,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   19,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "porsche-cayenne-9pa": [
+  [
+   10,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "rear three-quarter"
+   }
+  ],
+  [
+   27,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "porsche-cayenne-92a": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   5,
+   {
+    "view": "rear three-quarter"
+   }
+  ],
+  [
+   11,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "porsche-cayenne-e3": [
+  [
+   13,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   22,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   33,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "porsche-cayenne-e4": [
+  [
+   9,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   0,
+   {
+    "view": "rear three-quarter"
+   }
+  ],
+  [
+   11,
+   {
+    "view": "front three-quarter"
+   }
+  ]
  ]
 }
