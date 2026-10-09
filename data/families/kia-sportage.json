@@ -1937,6 +1937,11 @@
           "kind": "facelift",
           "name": "Facelift (2024)",
           "dates": {
+            "revealed": {
+              "value": "2024",
+              "src": "ks",
+              "quote": "In 2024, Kia introduced a facelift model alongside"
+            },
             "salesStart": {
               "value": "2024-11-05",
               "market": "unstated",

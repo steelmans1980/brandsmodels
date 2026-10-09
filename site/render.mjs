@@ -6,7 +6,7 @@ import {
   yearOf, fmtDate, startYear, endYear, period, codesOf, shortName, genTitle, marketList,
   bodyGroupsOf, fuelsOf, seatsOf, drivesOf, fmtLength, fmtPower, fmtTorque, fmtCargo, num, plural,
   makerPath, comparePath, revisionAnchor, lineGens, predecessors, successors, commonDims, derivedChanges, topPower,
-  yearEvents, inProduction, modelYearGens, garageId
+  yearEvents, inProduction, modelYearGens, garageId, myRange
 } from './lib.mjs';
 
 export const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -146,6 +146,8 @@ const saveBtn = (type, id, name, url) => `<button type="button" class="save-btn"
 const compareBtn = g => `<button type="button" class="compare-btn" data-compare="${esc(g.id)}" data-name="${esc(genTitle(g.family, g))}" aria-pressed="false">+ Compare</button>`;
 const fixLink = (target, label = 'Report a correction') => `<a class="fix-link" href="/suggest/?type=correction&amp;target=${encodeURIComponent(target)}" rel="nofollow">${label}</a>`;
 const notDoc = '<span class="nd">Not documented here</span>';
+/** A revision's name with its year, unless the name already says it. */
+const revLabel = r => { const y = yearOf(r.dates?.revealed || r.dates?.productionStart || r.dates?.salesStart?.[0]); return y && !String(r.name).includes(String(y)) ? `${r.name} (${y})` : r.name; };
 const mk = m => { const s = MARKET_LABEL[m] || m || ''; return s.charAt(0).toUpperCase() + s.slice(1); };
 
 // ---------- family timeline ----------
@@ -181,7 +183,7 @@ function factRows(refs, g) {
   row('Production', prod);
   row('First shown', d.revealed ? `${esc(fmtDate(d.revealed.value))}${d.revealed.event ? ', ' + esc(d.revealed.event) : ''}${refs.ref(f, d.revealed)}` : '');
   if (d.salesStart?.length) row('Sales start', d.salesStart.map(s => `${esc(fmtDate(s.value))} (${esc(MARKET_LABEL[s.market] || s.market || 'market not stated')})${refs.ref(f, s)}`).join('<br>'));
-  row('Model years', (d.modelYears || []).map(m => `${m.from}–${m.to ?? 'present'} (${esc(MARKET_LABEL[m.market] || m.market)})${refs.ref(f, m)}`).join('<br>') || '<span class="nd">No model-year designation documented</span>');
+  row('Model years', (d.modelYears || []).map(m => `${myRange(g, m)} (${esc(MARKET_LABEL[m.market] || m.market)})${refs.ref(f, m)}`).join('<br>') || '<span class="nd">No model-year designation documented</span>');
   row('Codes', (g.codes || []).map(c => `${esc(c.value)} <span class="muted">${esc(c.kind || '')}</span>${refs.ref(f, c)}`).join(', '));
   row('Names by market', (g.names || []).map(n => `${esc(n.value)} <span class="muted">(${esc(marketList(n.markets))})</span>${refs.ref(f, n)}`).join('<br>'));
   row('Platform', g.platform ? esc(g.platform.value) + refs.ref(f, g.platform) : '');
@@ -245,7 +247,7 @@ export function compareTable(refs, gens) {
   const rows = [
     row('Production', g => g.dates?.productionStart ? esc(period(g)) + refs.ref(f(g), g.dates.productionStart) : ''),
     row('First shown', g => g.dates?.revealed ? esc(fmtDate(g.dates.revealed.value)) + refs.ref(f(g), g.dates.revealed) : ''),
-    row('Model years', g => (g.dates?.modelYears || []).map(m => `${m.from}–${m.to ?? 'present'} (${esc(m.market)})${refs.ref(f(g), m)}`).join('<br>')),
+    row('Model years', g => (g.dates?.modelYears || []).map(m => `${myRange(g, m)} (${esc(m.market)})${refs.ref(f(g), m)}`).join('<br>')),
     row('Codes', g => (g.codes || []).map(c => esc(c.value) + refs.ref(f(g), c)).join(', ')),
     row('Platform', g => g.platform ? esc(g.platform.value) + refs.ref(f(g), g.platform) : ''),
     row('Body styles', g => (g.bodyStyles || []).map(b => esc(b.value) + refs.ref(f(g), b)).join('<br>')),
@@ -355,7 +357,7 @@ ${timeline(db, fam)}
 <div><div class="eyebrow">${esc(g.name)}${g.lines.length < fam.lines.length && fam.lines.length > 1 ? ' · ' + esc(g.lines.map(l => fam.lines.find(x => x.id === l)?.name).join(', ')) + ' line' : ''}</div>
 <h3><a href="${g.path}">${esc(genTitle(fam, g))}</a></h3>
 <p><b>Production:</b> ${g.dates?.productionStart ? esc(period(g)) + refs.ref(fam, g.dates.productionStart) : notDoc}${namesBrief(g)}</p>
-${(g.revisions || []).length ? `<p><b>Revisions:</b> ${g.revisions.map(r => `<a href="${g.path}#${revisionAnchor(r)}">${esc(r.name)}${yearOf(r.dates?.revealed || r.dates?.productionStart) ? ' (' + yearOf(r.dates?.revealed || r.dates?.productionStart) + ')' : ''}</a>`).join(', ')}</p>` : ''}
+${(g.revisions || []).length ? `<p><b>Revisions:</b> ${g.revisions.map(r => `<a href="${g.path}#${revisionAnchor(r)}">${esc(revLabel(r))}</a>`).join(', ')}</p>` : ''}
 <p class="tags">${[...bodyGroupsOf(g), ...fuelsOf(g).map(x => FUEL_LABEL[x]), ...(seatsOf(g).length ? [seatsOf(g).join('/') + ' seats'] : [])].map(t => `<span>${esc(t)}</span>`).join('')}</p>
 <p>${predecessors(g).map(p => `<a class="line-link" href="${comparePath(p, g)}">What changed from the ${esc(shortName(p))}</a>`).join(' ')}</p></div></article>`;
 }).join('')}</div></section>
@@ -484,7 +486,7 @@ export function yearPage(db, y, events, years) {
 <section class="page-head"><div class="eyebrow">Calendar year</div><h1>${y}</h1><p class="lede">${plural(evs.length, 'documented event')} in calendar year ${y}, ${plural(prod.length, 'generation')} in production, ${my.length ? plural(new Set(my.map(x => x.g.id)).size, 'generation') + ` sold as model year ${y}` : `no model-year ${y} data`}.</p></section>
 <section aria-labelledby="ev-h"><h2 id="ev-h">Events in calendar year ${y}</h2><ul class="events">${evs.map(e => `<li><span class="kind">${label[e.type]}</span> <a href="${e.g.path}${e.r ? '#' + revisionAnchor(e.r) : ''}">${esc(genTitle(e.g.family, e.g))}${e.r ? ' — ' + esc(e.r.name) : ''}</a> <span class="muted">${esc(fmtDate(e.fact?.value))}${e.fact?.event ? ', ' + esc(e.fact.event) : ''}</span>${refs.ref(e.g.family, e.fact)}</li>`).join('')}</ul></section>
 <section aria-labelledby="pr-h"><h2 id="pr-h">In production during ${y}</h2><p class="hint">Production years from the sources; a generation counts if ${y} falls within its first and last production year.</p><div class="grid">${prod.map(g => card(ctx, g)).join('')}</div></section>
-<section aria-labelledby="my-h"><h2 id="my-h">Sold as model year ${y}</h2>${my.length ? `<ul class="events">${my.map(({ g, m }) => `<li><a href="${g.path}">${esc(genTitle(g.family, g))}</a> <span class="muted">model years ${m.from}–${m.to ?? 'present'}, ${esc(MARKET_LABEL[m.market] || m.market)}</span>${refs.ref(g.family, m)}</li>`).join('')}</ul>` : `<p class="nd-block">No generation in the archive has documented model-year ${y} data.</p>`}</section>
+<section aria-labelledby="my-h"><h2 id="my-h">Sold as model year ${y}</h2>${my.length ? `<ul class="events">${my.map(({ g, m }) => `<li><a href="${g.path}">${esc(genTitle(g.family, g))}</a> <span class="muted">model years ${myRange(g, m)}, ${esc(MARKET_LABEL[m.market] || m.market)}</span>${refs.ref(g.family, m)}</li>`).join('')}</ul>` : `<p class="nd-block">No generation in the archive has documented model-year ${y} data.</p>`}</section>
 <nav class="gen-nav" aria-label="Other years">${i > 0 ? `<a href="/years/${years[i - 1]}/">‹ ${years[i - 1]}</a>` : ''}<a href="/years/">All years</a>${i < years.length - 1 ? `<a href="/years/${years[i + 1]}/">${years[i + 1]} ›</a>` : ''}</nav>
 ${refs.html()}`;
   return { path, html: layout({ title: `${y}: car reveals, launches and facelifts — ${SITE}`, description: `${y} in ${SITE}: ${evs.slice(0, 4).map(e => `${genTitle(e.g.family, e.g)} ${label[e.type].toLowerCase()}`).join('; ')}${evs.length > 4 ? '…' : ''}. Calendar-year events and model year ${y} listed separately.`, path, body, ctx, active: 'years', jsonld: [crumbsLd(cr)] }) };

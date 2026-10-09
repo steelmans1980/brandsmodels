@@ -53,8 +53,23 @@ export function period(g) {
 // ---------- names ----------
 export const codesOf = g => (g.codes || []).map(c => c.value);
 export const shortName = g => codesOf(g)[0] || g.name;
-/** "Audi Q7 (4L)" or "Audi Q7, first generation" when no code is documented. */
-export const genTitle = (fam, g) => codesOf(g).length ? `${fam.name} (${codesOf(g)[0]})` : `${fam.name}, ${g.name.toLowerCase()}`;
+/**
+ * The name a generation was sold under: its model line(s) when a family has several (Nissan X-Trail / Rogue), else its
+ * worldwide name when documented (Mercedes-Benz M-Class / GLE), else the family's model name.
+ */
+export function carName(fam, g) {
+  const make = fam.maker?.name || '';
+  const model = make && fam.name.startsWith(make + ' ') ? fam.name.slice(make.length + 1) : fam.name;
+  let name = model;
+  if ((fam.lines || []).length > 1) name = g.lines.map(l => fam.lines.find(x => x.id === l)?.name || l).join(' / ');
+  else {
+    const global = [...new Set((g.names || []).filter(n => (n.markets || []).includes('global')).map(n => n.value))];
+    if (global.length) name = global.join(' / ');
+  }
+  return make ? `${make} ${name}` : name;
+}
+/** "Audi Q7 (4L)" or "Volvo XC90, first generation" when no code is documented. */
+export const genTitle = (fam, g) => codesOf(g).length ? `${carName(fam, g)} (${codesOf(g)[0]})` : `${carName(fam, g)}, ${g.name.toLowerCase()}`;
 export const marketList = ms => (ms || []).map(m => MARKET_LABEL[m] || m).join(', ');
 
 // ---------- classification for filters ----------
@@ -261,9 +276,16 @@ export function inProduction(db, y) {
 /** Generations sold as model year y in a market that uses model years. */
 export function modelYearGens(db, y) {
   const out = [];
-  for (const g of db.gens.values()) for (const m of g.dates?.modelYears || []) if (m.from <= y && (m.to ?? db.currentYear + 1) >= y) out.push({ g, m });
+  for (const g of db.gens.values()) for (const m of g.dates?.modelYears || []) {
+    // an open-ended range runs to the present only while the generation is in production
+    const to = m.to ?? (g.ongoing ? db.currentYear + 1 : (endYear(g) ?? m.from) + 1);
+    if (m.from <= y && to >= y && (m.to != null || g.ongoing || endYear(g) != null)) out.push({ g, m });
+  }
   return out;
 }
+
+/** "2016–2021", "2020–present", or "2007–(end not documented)" for a generation that has ended. */
+export const myRange = (g, m) => `${m.from}–${m.to ?? (g.ongoing ? 'present' : '(end not documented)')}`;
 
 // ---------- facts ----------
 export function countFacts(o) {

@@ -132,7 +132,7 @@ write('data/search-index.json', JSON.stringify({
   families: [...db.families.values()].map(f => ({ id: f.id, n: f.name, m: f.maker.name, u: f.path, alt: [...new Set(f.generations.flatMap(g => (g.names || []).map(x => x.value)))] })),
   gens: [...db.gens.values()].map(g => ({ id: g.id, n: L.genTitle(g.family, g), f: g.family.name, m: g.family.maker.name, u: g.path, name: g.name,
     codes: L.codesOf(g), alt: (g.names || []).map(x => x.value), p: L.period(g), y0: L.yearOf(g.dates?.productionStart), y1: g.ongoing ? db.currentYear : L.yearOf(g.dates?.productionEnd),
-    my: (g.dates?.modelYears || []).map(m => [m.market, m.from, m.to ?? null]), img: (g.images || [])[0]?.thumb || (g.images || [])[0]?.src || null }))
+    my: (g.dates?.modelYears || []).map(m => [m.market, m.from, m.to ?? (g.ongoing ? null : (L.endYear(g) ?? m.from))]), img: (g.images || [])[0]?.thumb || (g.images || [])[0]?.src || null }))
 }));
 
 // ---- headers, robots, sitemap. Pages of the earlier site at this address are not redirected (they 404).
