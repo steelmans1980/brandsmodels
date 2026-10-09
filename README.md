@@ -94,7 +94,7 @@ npx wrangler secret put HASH_SALT             # another long random string
 
 - Workers Builds: keep the build command empty and the deploy command `npx wrangler deploy`; wrangler runs
   `node scripts/build.mjs` itself (see `wrangler.jsonc` → `build`). The build needs Node 20+.
-- Until the D1 id is set, a deploy fails rather than shipping a broken API (the placeholder id is intentional).
+- The D1 database id is already in `wrangler.jsonc`; its tables must exist before the first deploy of this version.
 - Recommended: put `/admin*` and `/api/admin/*` behind Cloudflare Access (free for small teams) in addition to the token.
 - Optional: Turnstile on suggestions — set `TURNSTILE_SECRET` and add the widget to `/suggest/`.
 

@@ -13,10 +13,10 @@
     "not_found_handling": "404-page",
     "html_handling": "auto-trailing-slash"
   },
-  // Create once with `npx wrangler d1 create brandsmodels`, put its id here, then
-  // `npx wrangler d1 migrations apply brandsmodels --remote`. Until then a deploy fails instead of shipping a broken API.
+  // Created in the Cloudflare dashboard. Apply the schema with
+  // `npx wrangler d1 migrations apply brandsmodels --remote` (or run migrations/*.sql in the D1 console).
   "d1_databases": [
-    { "binding": "DB", "database_name": "brandsmodels", "database_id": "REPLACE_WITH_D1_DATABASE_ID", "migrations_dir": "migrations" }
+    { "binding": "DB", "database_name": "brandsmodels", "database_id": "5be31ace-c6ee-4c01-936c-72af74be2180", "migrations_dir": "migrations" }
   ],
   "observability": { "enabled": true }
 }
