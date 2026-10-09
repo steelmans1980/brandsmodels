@@ -19,7 +19,7 @@ Ordinals follow the X-Trail count for shared generations (T32 = 3, T33 = 4, T34 
 ## Market distinctions / caveats
 - S35 Rogue (North America, built in Kyushu) is a different car from the T31 X-Trail; kept as separate generations.
 - T32/T33 engines differ completely by market; every powertrain/dimension record carries its market. US Rogue figures come from Nissan USA press kits; European X-Trail figures from Nissan Ireland and German Wikipedia; Japanese X-Trail from Nissan Global.
-- T33 2021 Rogue length (183.0 in) is omitted from record d1 because the checker cannot match a trailing ".0"; value is in the note.
+- T33 record d1 (2021 Rogue, US) now includes length 183.0 in from the 2021 press kit.
 - T34: documented as a new generation by both English Wikipedia articles (model code T34, reveal April 2026) and Nissan's "all-new 2027 Rogue Hybrid" press kit (sales fall 2026). Only US Rogue Hybrid specs are available; no production start date.
 
 ## Conflicts / to double-check

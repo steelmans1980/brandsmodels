@@ -15,10 +15,10 @@ Generations: KE (2012–2017, facelift revealed Nov 2014), KF (2016/17–2025, f
 - Third-party spec databases not used.
 
 ## Gaps / caveats
-- No readable Mazda dimension sheet for KE/KF; KE dimensions from ja (JP) and de (unstated) Wikipedia. KF JP and KM Mazda EU/AU dimension figures are written "4,575mm" (no space) which the checker cannot match; KF has only the en Wikipedia record, KM only the ja record (identical to Mazda's EU/AU figures, noted).
+- No Mazda dimension figures found for KE or KF (Mazda's 2012/2016 releases give none; spec decks are PDFs). KE dimensions: ja (JP) and de (unstated) Wikipedia. KF: ja (JP, 4,575 × 1,845 × 1,690, wb 2,700) and en (unstated). KM: Mazda EU (newsroom 250710a) and Mazda AU records, 4,690/1,860/1,695 mm (no wheelbase from Mazda), plus ja (JP) with wheelbase 2,815 mm.
 - European engine data from German Wikipedia tables (column-matched) — double-check.
 - KM model code: KM (en, ja; JP type KMYSDP) vs KI (de).
 - KM wheelbase increase: 115 mm (Mazda Australia) vs 75 mm (en Wikipedia).
 - KM US torque 185 lb-ft (reveal) vs 186 lb-ft (pricing release); later figure recorded.
 - KE facelift has no own Commons category; KF facelift = "Category:Mazda CX-5 (KF, 2021)".
-- Cargo standard recorded as "DIN" (Mazda's stated method), not one of the schema's listed standards — reviewer may prefer "not stated".
+- Cargo standard "DIN" is used only where Mazda states DIN (2012 Japan release: 500/1620 L; 2016 Japan release: 505 L with sub-trunk).
