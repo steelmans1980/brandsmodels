@@ -1897,7 +1897,8 @@
      "src": "r21",
      "quotes": [
       "Wheelbase 106.5 Overall length 183.0 Overall width 72.4 Overall height 66.5"
-     ]
+     ],
+     "length": 183
     },
     {
      "id": "d2",
@@ -2261,7 +2262,7 @@
    "notes": [
     "The Rogue (US/Canada, built in Smyrna and Kyushu) appeared first (revealed June 2020, 2021 model year); the X-Trail followed in China in April 2021, Australia in May 2022, Japan in July 2022 and Europe in 2022. The generation-level reveal date is the Rogue's; the X-Trail was unveiled at Auto Shanghai on 19 April 2021 (Wikipedia).",
     "Engines differ by market and must not be mixed: US Rogue 2.5 PR25DD (2021) then 1.5 KR15DDT VC-Turbo (2022–; Canada kept the 2.5 on the base model until the 2024 refresh); Japan e-POWER only; Europe e-POWER (2WD 150 kW / e-4ORCE 157 kW) and a 1.5 VC-T mild hybrid (120 kW); Australia, Middle East and Mexico a 2.5-litre petrol; China a 1.5 VC-Turbo.",
-    "The 2021 Rogue press kit lists overall length as 183.0 in; it is omitted from record d1 only because the automated checker cannot match a trailing '.0'. The 2027 Rogue press kit (still T33) lists 184.4 in and a height of 67.9 in.",
+    "The 2027 Rogue press kit (still T33) lists overall length 184.4 in and height 67.9 in, versus 183.0 in and 66.5 in for the 2021 model year.",
     "Platform naming: Nissan Ireland says Alliance CMF-C; Wikipedia says CMF-CD.",
     "The T33 Rogue continued for the 2027 model year (2027 Nissan Rogue press kit, KR15DDT engine) alongside the T34-based 2027 Rogue Hybrid.",
     "Facelift dating is unclear: English Wikipedia says a facelifted X-Trail was launched on 21 August 2025 (Nismo and Rock Creek added; market not stated, apparently Japan), while German Wikipedia says a revised version was presented in March 2026. Commons 'Category:Nissan X-Trail (2025)' is used for the facelift; reviewers should confirm it matches r3.",

@@ -29,7 +29,8 @@ const makerIds = new Set(manufacturers.map(m => m.id));
 const report = { files: [], errors: 0, warnings: 0, facts: 0, quotesChecked: 0, sources: new Map() };
 
 // A number appears in the (normalised) quote as a whole number: 5085 matches "5,085 mm" but not "50851".
-const hasNumber = (q, n) => new RegExp(`(^|[^0-9.])${String(n).replace('.', '\\.')}(?![0-9]|\\.[0-9])`).test(q);
+// Integers also match a written ".0" (183 matches "183.0 in").
+const hasNumber = (q, n) => new RegExp(`(^|[^0-9.])${String(n).replace('.', '\\.')}${Number.isInteger(n) ? '(\\.0+)?' : ''}(?![0-9]|\\.[0-9])`).test(q);
 
 function checkFamily(file) {
   const out = { file: path.relative(ROOT, file), errors: [], warnings: [], facts: 0 };

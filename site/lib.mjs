@@ -88,6 +88,7 @@ export const STANDARD_HELP = {
   VDA: 'VDA (ISO 3832) fills the space with 1-litre blocks; it usually gives smaller figures than SAE.',
   'ISO 3832': 'ISO 3832 (VDA) fills the space with 1-litre blocks; it usually gives smaller figures than SAE.',
   SAE: 'SAE J1100 is the North American method; its figures are usually larger than VDA figures for the same car.',
+  DIN: 'Measured to a DIN method as stated by the manufacturer; European methods usually give smaller figures than SAE.',
   'not stated': 'The source does not say how the volume was measured.'
 };
 

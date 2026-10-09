@@ -1,0 +1,403 @@
+{
+  "id": "bmw-x5",
+  "slug": "x5",
+  "manufacturer": "bmw",
+  "name": "BMW X5",
+  "lines": [ { "id": "x5", "name": "X5" } ],
+  "sources": {
+    "wpx5": { "url": "https://en.wikipedia.org/w/index.php?title=BMW_X5&oldid=1372485787", "title": "BMW X5", "publisher": "Wikipedia", "type": "secondary", "accessed": "2026-10-09" },
+    "wpe53": { "url": "https://en.wikipedia.org/w/index.php?title=BMW_X5_(E53)&oldid=1372642707", "title": "BMW X5 (E53)", "publisher": "Wikipedia", "type": "secondary", "accessed": "2026-10-09" },
+    "wpe70": { "url": "https://en.wikipedia.org/w/index.php?title=BMW_X5_(E70)&oldid=1373603719", "title": "BMW X5 (E70)", "publisher": "Wikipedia", "type": "secondary", "accessed": "2026-10-09" },
+    "wpf15": { "url": "https://en.wikipedia.org/w/index.php?title=BMW_X5_(F15)&oldid=1376320711", "title": "BMW X5 (F15)", "publisher": "Wikipedia", "type": "secondary", "accessed": "2026-10-09" },
+    "wpg05": { "url": "https://en.wikipedia.org/w/index.php?title=BMW_X5_(G05)&oldid=1377727650", "title": "BMW X5 (G05)", "publisher": "Wikipedia", "type": "secondary", "accessed": "2026-10-09" },
+    "bmw-e53-last": { "url": "https://www.press.bmwgroup.com/usa/article/detail/T0017703EN_US/making-way-for-the-new-x5-the-last-of-the-first-generation-x5-manufactured?language=en_US", "title": "Making way for the new X5 - the last of the first generation X5 manufactured", "publisher": "BMW Group PressClub USA", "type": "manufacturer", "date": "2006-09-22", "accessed": "2026-10-09" },
+    "bmw-x15": { "url": "https://www.press.bmwgroup.com/global/article/detail/T0194923EN/15-years-of-bmw-x-models", "title": "15 years of BMW X models", "publisher": "BMW Group PressClub Global", "type": "manufacturer", "accessed": "2026-10-09" },
+    "bmw-e70-uk": { "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0019230EN_GB/uk-presskit:-the-new-bmw-x5?language=en_GB", "title": "UK Presskit: The new BMW X5", "publisher": "BMW Group PressClub UK", "type": "manufacturer", "date": "2007-02-19", "accessed": "2026-10-09" },
+    "bmw-e70-la": { "url": "https://www.press.bmwgroup.com/usa/article/detail/T0017741EN_US/two-world-premieres-for-bmw-at-the-los-angeles-international-auto-show:-bmw-launches-the-hydrogen-7-and-new-x5-sports-activity-vehicle", "title": "Two world premieres for BMW at the Los Angeles International Auto Show", "publisher": "BMW Group PressClub USA", "type": "manufacturer", "date": "2006-11-29", "accessed": "2026-10-09" },
+    "bmw-e70-lci": { "url": "https://www.press.bmwgroup.com/global/article/detail/T0077373EN", "title": "The new BMW X5", "publisher": "BMW Group PressClub Global", "type": "manufacturer", "date": "2010-02-06", "accessed": "2026-10-09" },
+    "bmw-f15": { "url": "https://www.press.bmwgroup.com/global/article/detail/T0142129EN", "title": "The new BMW X5.", "publisher": "BMW Group PressClub Global", "type": "manufacturer", "date": "2013-05-30", "accessed": "2026-10-09" },
+    "bmw-f15-us": { "url": "https://www.press.bmwgroup.com/usa/article/detail/T0142293EN_US/all-new-bmw-x5-sports-activity-vehicle", "title": "All-New BMW X5 Sports Activity Vehicle", "publisher": "BMW Group PressClub USA", "type": "manufacturer", "date": "2013-05-29", "accessed": "2026-10-09" },
+    "bmw-f15-40e-uk": { "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0208152EN_GB/the-new-bmw-x5-xdrive40e?language=en_GB", "title": "The new BMW X5 xDrive40e", "publisher": "BMW Group PressClub UK", "type": "manufacturer", "date": "2016-01-16", "accessed": "2026-10-09" },
+    "bmw-f15-40e-us": { "url": "https://www.press.bmwgroup.com/usa/article/detail/T0208453EN_US/the-bmw-x5-xdrive40e-launches-the-next-chapter-of-efficientdynamics-with-its-first-ever-plug-in-hybrid-sports-activity-vehicle?language=en_US", "title": "The BMW X5 xDrive40e Launches the Next Chapter of EfficientDynamics with its First Ever Plug-in Hybrid Sports Activity Vehicle", "publisher": "BMW Group PressClub USA", "type": "manufacturer", "date": "2015-03-17", "accessed": "2026-10-09" },
+    "bmw-g05": { "url": "https://www.press.bmwgroup.com/global/article/detail/T0281455EN", "title": "The all-new BMW X5: The Prestige SAV with the most innovative technologies.", "publisher": "BMW Group PressClub Global", "type": "manufacturer", "date": "2018-06-06", "accessed": "2026-10-09" },
+    "bmw-g05-us": { "url": "https://www.press.bmwgroup.com/usa/article/detail/T0281821EN_US/the-all-new-2019-bmw-x5-sports-activity-vehicle?language=en_US", "title": "The All-New 2019 BMW X5 Sports Activity Vehicle", "publisher": "BMW Group PressClub USA", "type": "manufacturer", "date": "2018-06", "accessed": "2026-10-09" },
+    "bmw-g05-us-pricing": { "url": "https://www.press.bmwgroup.com/usa/article/detail/T0282750EN_US/the-all-new-2019-bmw-x5-sports-activity-vehicle-pricing?language=en_US", "title": "The All-New 2019 BMW X5 Sports Activity Vehicle Pricing", "publisher": "BMW Group PressClub USA", "type": "manufacturer", "accessed": "2026-10-09" },
+    "bmw-g05-45e": { "url": "https://www.press.bmwgroup.com/usa/article/detail/T0284663EN_US/electrifying-power-for-supreme-driving-pleasure:-the-new-bmw-x5-xdrive45e-iperformance?language=en_US", "title": "Electrifying power for supreme driving pleasure: the new BMW X5 xDrive45e iPerformance.", "publisher": "BMW Group PressClub USA", "type": "manufacturer", "date": "2018-09", "accessed": "2026-10-09" },
+    "bmw-g05-45e-us": { "url": "https://www.press.bmwgroup.com/usa/article/detail/T0309345EN_US/the-2021-bmw-x5-xdrive45e-phev-sports-activity-vehicle", "title": "The 2021 BMW X5 xDrive45e PHEV Sports Activity Vehicle", "publisher": "BMW Group PressClub USA", "type": "manufacturer", "accessed": "2026-10-09" },
+    "bmw-f95": { "url": "https://www.press.bmwgroup.com/global/article/detail/T0301292EN/the-new-bmw-x5-m-and-bmw-x5-m-competition-the-new-bmw-x6-m-and-bmw-x6-m-competition?language=en", "title": "The new BMW X5 M and BMW X5 M Competition. The new BMW X6 M and BMW X6 M Competition.", "publisher": "BMW Group PressClub Global", "type": "manufacturer", "date": "2019-10-02", "accessed": "2026-10-09" },
+    "bmw-g05-lci": { "url": "https://www.press.bmwgroup.com/global/article/detail/T0408159EN/the-new-bmw-x5-and-the-new-bmw-x6?language=en", "title": "The new BMW X5 and the new BMW X6.", "publisher": "BMW Group PressClub Global", "type": "manufacturer", "date": "2023-02-08", "accessed": "2026-10-09" },
+    "bmw-g05-lci-uk": { "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0408483EN_GB/the-new-bmw-x5-and-x6?language=en_GB", "title": "The new BMW X5 and X6", "publisher": "BMW Group PressClub UK", "type": "manufacturer", "date": "2023-02-08", "accessed": "2026-10-09" },
+    "bmw-g05-lci-us": { "url": "https://www.press.bmwgroup.com/usa/article/detail/T0408460EN_US/the-2024-bmw-x5-and-x6?language=en_US", "title": "The 2024 BMW X5 and X6", "publisher": "BMW Group PressClub USA", "type": "manufacturer", "date": "2023-02-07", "accessed": "2026-10-09" },
+    "bmw-g05-lci-ca": { "url": "https://www.press.bmwgroup.com/canada/article/detail/T0408519EN/the-new-2024-bmw-x5-and-x6?language=en", "title": "The new 2024 BMW X5 and X6", "publisher": "BMW Group PressClub Canada", "type": "manufacturer", "date": "2023-02", "accessed": "2026-10-09" },
+    "bmw-g65": { "url": "https://www.press.bmwgroup.com/global/article/detail/T0458636EN/the-new-bmw-x5?language=en", "title": "The new BMW X5.", "publisher": "BMW Group PressClub Global", "type": "manufacturer", "date": "2026-06-30", "accessed": "2026-10-09" },
+    "bmw-g65-us": { "url": "https://www.press.bmwgroup.com/usa/article/detail/T0458814EN_US/the-new-bmw-x5-and-ix5?language=en_US", "title": "The New BMW X5 and iX5.", "publisher": "BMW Group PressClub USA", "type": "manufacturer", "date": "2026-06-30", "accessed": "2026-10-09" }
+  },
+  "generations": [
+    {
+      "id": "bmw-x5-e53",
+      "slug": "e53",
+      "ordinal": 1,
+      "lines": ["x5"],
+      "name": "First generation",
+      "codes": [ { "value": "E53", "kind": "model code", "src": "wpe53", "quote": "Model code E53" } ],
+      "dates": {
+        "productionStart": { "value": "1999-09-01", "src": "bmw-e53-last", "quote": "The first X5 sports activity vehicle rolled off the production line on September 1, 1999." },
+        "productionEnd": { "value": "2006-09-22", "src": "wpe53", "quote": "Production of the E53 X5 began on 1 September 1999 and ceased on 22 September 2006." }
+      },
+      "ongoing": false,
+      "assembly": [
+        { "value": "Spartanburg (Greer), South Carolina, USA", "src": "wpe53", "quote": "United States: Greer, South Carolina (Plant Spartanburg)" }
+      ],
+      "bodyStyles": [ { "id": "b1", "value": "5-door SUV (Sports Activity Vehicle)", "markets": ["global"], "src": "wpx5", "quote": "Body style 5-door crossover SUV" } ],
+      "drivetrains": [
+        { "value": "AWD", "system": "permanent four-wheel drive, 38:62 front:rear split (xDrive from the 2003 facelift)", "markets": ["global"], "src": "bmw-x15", "quote": "The four-wheel drive system distributed drive torque to the front and rear wheels at a ratio of 38 : 62 percent." }
+      ],
+      "dimensions": [
+        { "id": "d1", "market": "unstated", "unit": "mm", "length": 4666, "width": 1872, "wheelbase": 2819, "src": "wpe53", "quotes": ["Wheelbase 111.0 in (2,819 mm)", "Length 183.7 in (4,666 mm)", "Width 73.7 in (1,872 mm)"] }
+      ],
+      "powertrains": [
+        { "id": "p1", "name": "3.0i", "market": "unstated", "fuel": "petrol", "years": "2000–2006", "engine": "3.0 L M54 straight-6", "cylinders": 6, "power": { "value": 170, "unit": "kW" }, "drivetrain": "AWD", "src": "wpe53", "quotes": ["3.0i 2000–2006 3.0 L M54 straight-6 228 hp (231 PS; 170 kW)"] },
+        { "id": "p2", "name": "4.4i (M62)", "market": "unstated", "fuel": "petrol", "years": "2000–2003", "engine": "4.4 L M62 V8", "cylinders": 8, "power": { "value": 210, "unit": "kW" }, "drivetrain": "AWD", "src": "wpe53", "quotes": ["4.4i 2000–2003 4.4 L M62 V8 282 hp (286 PS; 210 kW)"] },
+        { "id": "p3", "name": "4.4i (N62)", "market": "unstated", "fuel": "petrol", "years": "2003–2006", "engine": "4.4 L N62 V8", "cylinders": 8, "power": { "value": 235, "unit": "kW" }, "drivetrain": "AWD", "src": "wpe53", "quotes": ["2003–2006 4.4 L N62 V8 315 hp (319 PS; 235 kW)"] },
+        { "id": "p4", "name": "4.6is", "market": "unstated", "fuel": "petrol", "years": "2001–2003", "engine": "4.6 L M62 V8", "cylinders": 8, "power": { "value": 255, "unit": "kW" }, "drivetrain": "AWD", "src": "wpe53", "quotes": ["4.6is 2001–2003 4.6 L M62 V8 342 hp (347 PS; 255 kW)"] },
+        { "id": "p5", "name": "4.8is", "market": "unstated", "fuel": "petrol", "years": "2004–2006", "engine": "4.8 L N62 V8", "cylinders": 8, "power": { "value": 265, "unit": "kW" }, "drivetrain": "AWD", "src": "wpe53", "quotes": ["4.8is 2004–2006 4.8 L N62 V8 355 hp (360 PS; 265 kW)"] },
+        { "id": "p6", "name": "3.0d (M57)", "market": "unstated", "fuel": "diesel", "years": "2001–2003", "engine": "2.9 L M57D30 straight-6 diesel", "cylinders": 6, "power": { "value": 135, "unit": "kW" }, "drivetrain": "AWD", "src": "wpe53", "quotes": ["3.0d 2001–2003 2.9 L M57D30 straight-6 181 hp (184 PS; 135 kW)"] },
+        { "id": "p7", "name": "3.0d (M57TÜ)", "market": "unstated", "fuel": "diesel", "years": "2003–2006", "engine": "3.0 L M57TÜD30 straight-6 diesel", "cylinders": 6, "power": { "value": 160, "unit": "kW" }, "drivetrain": "AWD", "src": "wpe53", "quotes": ["2003–2006 3.0 L M57TÜD30 straight-6 215 hp (218 PS; 160 kW)"] }
+      ],
+      "revisions": [
+        {
+          "id": "r1", "slug": "2003-facelift", "kind": "facelift", "name": "2003 facelift (2004 model year)",
+          "dates": {
+            "revealed": { "value": "2003-09", "event": "IAA Frankfurt Motor Show", "src": "wpe53", "quote": "In July 2003, the facelifted X5 was presented for the 2004 model year at the IAA 2003 in September" },
+            "productionStart": { "value": "2003-09-26", "src": "wpe53", "quotes": ["In July 2003, the facelifted X5 was presented for the 2004 model year at the IAA 2003 in September", "Production started at BMW's Spartanburg plant on 26 September."] }
+          },
+          "changes": [
+            { "id": "r1c1", "topic": "drivetrain", "text": "The range was revised in 2003, with upgraded engines, refreshed styling and the introduction of xDrive all-wheel drive.", "src": "bmw-e70-uk", "quote": "The entire range was revised in 2003 and, while all engines were upgraded and the car's styling subtly refreshed, the big news was the introduction of xDrive." },
+            { "id": "r1c2", "topic": "drivetrain", "text": "xDrive could vary the torque split between the axles, sending up to 100% to either axle, instead of the fixed 38:62 split.", "src": "wpe53", "quote": "Instead of using the previous X5 system which consisted of power being split 38:62 (front:rear) and DSC to brake wheels without losing traction, xDrive could vary power to the front or rear axles in milliseconds, transferring up to 100% of engine power to either axle" },
+            { "id": "r1c3", "topic": "design", "text": "New headlights with corona rings and enlarged kidney grilles.", "src": "wpe53", "quote": "The grilles were enlarged, as well as their actual slats being modified in a 'flame surfaced' style. In keeping with the E39 facelift of 2001, the 2004 X5's headlights got corona rings around all four headlamp projectors." },
+            { "id": "r1c4", "topic": "powertrain", "text": "The 4.6is was replaced by the 4.8is with a new N62 V8.", "src": "wpe53", "quote": "In 2004, the 4.6is was replaced by a 4.8is model" },
+            { "id": "r1c5", "topic": "technology", "text": "Adaptive headlights were added as an option.", "src": "wpe53", "quote": "Adaptive Headlights (available only with xenon HID headlamps" }
+          ]
+        }
+      ],
+      "commons": { "generation": "Category:BMW E53" },
+      "notes": [
+        "Wikipedia also lists BMW de México (Toluca) as an assembly site, but BMW's 2006 release says the first-generation X5 was 'built exclusively at BMW Manufacturing' in South Carolina; only Spartanburg is recorded.",
+        "Wikipedia's infobox gives US model years 2000–2007, which overlaps the E70's 2007 model year; model years are therefore not recorded here.",
+        "Engine years in the table are as given by Wikipedia ('Years' column); it is not stated whether they are calendar or model years. The 4.4i was the launch engine; BMW UK says six-cylinder petrol and diesel variants followed in 2001.",
+        "No Commons category exists for the facelift."
+      ]
+    },
+    {
+      "id": "bmw-x5-e70",
+      "slug": "e70",
+      "ordinal": 2,
+      "lines": ["x5"],
+      "name": "Second generation",
+      "codes": [
+        { "value": "E70", "kind": "model code", "src": "wpe70", "quote": "Model code E70" }
+      ],
+      "dates": {
+        "productionStart": { "value": "2006-07-07", "src": "wpe70", "quote": "Production 7 July 2006 – 28 July 2013" },
+        "productionEnd": { "value": "2013-07-28", "src": "wpe70", "quote": "Production 7 July 2006 – 28 July 2013" },
+        "salesStart": [
+          { "value": "2007-04-28", "market": "UK", "src": "bmw-e70-uk", "quote": "The new BMW X5 will go on sale in the UK on 28 April, 2007." }
+        ],
+        "modelYears": [
+          { "market": "NA", "from": 2007, "src": "wpx5", "quote": "It debuted in July 2006 for the 2007 model year." }
+        ]
+      },
+      "ongoing": false,
+      "platform": { "value": "BMW L4", "src": "wpe70", "quote": "Platform BMW L4" },
+      "assembly": [
+        { "value": "Spartanburg (Greer), South Carolina, USA", "src": "wpe70", "quote": "United States: Greer, South Carolina (BMW America)" },
+        { "value": "Toluca, Mexico", "src": "wpe70", "quote": "Mexico: Toluca (BMW Mexico)" },
+        { "value": "Kaliningrad, Russia (Avtotor)", "src": "wpe70", "quote": "Russia: Kaliningrad (Avtotor)" }
+      ],
+      "bodyStyles": [ { "id": "b1", "value": "5-door SUV", "markets": ["global"], "src": "wpe70", "quote": "Body style 5-door SUV" } ],
+      "drivetrains": [
+        { "value": "AWD", "system": "xDrive", "markets": ["global"], "src": "bmw-e70-lci", "quote": "Thanks to the BMW xDrive intelligent four-wheel drive technology, it also offers supreme off-road qualities. This permanent four-wheel drive system, which comes as standard" }
+      ],
+      "dimensions": [
+        { "id": "d1", "market": "unstated", "version": "2007–2008 models", "unit": "mm", "length": 4854, "width": 1933, "height": 1766, "wheelbase": 2933, "src": "wpe70", "quotes": ["Wheelbase 2,933 mm (115.5 in)", "Length 4,854 mm (191.1 in)", "Width 1,933 mm (76.1 in)", "2007–2008: 1,766 mm (69.5 in)"] },
+        { "id": "d2", "market": "unstated", "version": "X5 M", "unit": "mm", "length": 4851, "width": 1994, "height": 1764, "src": "wpe70", "quotes": ["M: 4,851 mm (191.0 in)", "M: 1,994 mm (78.5 in)", "M: 1,764 mm (69.4 in)"] }
+      ],
+      "cargo": [
+        { "id": "k1", "market": "UK", "version": "7-seat", "behind": "3rd row", "value": 200, "unit": "L", "standard": "not stated", "src": "bmw-e70-uk", "quote": "With all seven seats in place a 200-litre luggage area is still available" },
+        { "id": "k2", "market": "UK", "behind": "2nd row", "value": 620, "unit": "L", "standard": "not stated", "src": "bmw-e70-uk", "quote": "while with five seats in use and the two rear seats folded away this increases to 620 litres" },
+        { "id": "k3", "market": "UK", "behind": "1st row", "value": 1750, "unit": "L", "standard": "not stated", "src": "bmw-e70-uk", "quote": "1,750 litres with all rear seats folded flat in a five-seat configured X5" }
+      ],
+      "powertrains": [
+        { "id": "p1", "name": "3.0si", "market": "UK", "fuel": "petrol", "years": "2007–2010", "engine": "3.0 L straight-6", "cylinders": 6, "power": { "value": 272, "unit": "hp" }, "transmission": "6-speed automatic", "drivetrain": "AWD", "src": "bmw-e70-uk", "quotes": ["Developing an output of 272hp the X5 3.0si accelerates from zero to 62mph in 8.1 seconds", "All new BMW X5 models now feature as standard an all-new, faster-shifting six-speed automatic transmission"] },
+        { "id": "p2", "name": "4.8i", "market": "UK", "fuel": "petrol", "engine": "4.8 L V8", "cylinders": 8, "power": { "value": 355, "unit": "hp" }, "transmission": "6-speed automatic", "drivetrain": "AWD", "src": "bmw-e70-uk", "quotes": ["the BMW X5 4.8i comes with an engine that produces 355hp", "All new BMW X5 models now feature as standard an all-new, faster-shifting six-speed automatic transmission"] },
+        { "id": "p3", "name": "3.0d", "market": "UK", "fuel": "diesel", "engine": "3.0 L straight-6 diesel", "cylinders": 6, "power": { "value": 235, "unit": "hp" }, "torque": { "value": 520, "unit": "Nm" }, "transmission": "6-speed automatic", "drivetrain": "AWD", "src": "bmw-e70-uk", "quotes": ["Output from the 3.0d engine is 235hp, up eight per cent compared to the previous model, with maximum torque of 520 Nm"] },
+        { "id": "p4", "name": "3.0si", "market": "US", "fuel": "petrol", "engine": "3.0 L inline-6", "cylinders": 6, "power": { "value": 260, "unit": "hp" }, "transmission": "6-speed automatic", "drivetrain": "AWD", "src": "bmw-e70-la", "quotes": ["The 3.0si features BMW's new 260-horsepower aluminum/magnesium inline-6. Standard equipment on both models is a new 6-speed STEPTRONIC automatic."] },
+        { "id": "p5", "name": "4.8i", "market": "US", "fuel": "petrol", "engine": "4.8 L V8", "cylinders": 8, "power": { "value": 350, "unit": "hp" }, "transmission": "6-speed automatic", "drivetrain": "AWD", "src": "bmw-e70-la", "quotes": ["The flagship 4.8i boasts BMW's all-aluminum Valvetronic V-8, boosted to 4.8 liters and 350 horsepower."] },
+        { "id": "p6", "name": "xDrive35d", "market": "US", "fuel": "diesel", "years": "2009–2013", "engine": "3.0 L M57 twin-turbo straight-6 diesel", "cylinders": 6, "power": { "value": 198, "unit": "kW" }, "torque": { "value": 576, "unit": "Nm" }, "transmission": "6-speed automatic", "drivetrain": "AWD", "src": "wpe70", "quotes": ["US Market 2009–2013 M57Y Twin Turbo 269 PS (198 kW; 265 hp) at 4,200", "576 N⋅m (425 lb⋅ft) at 1,750", "The xDrive 35d turbodiesel carries over in the NA market with the six-speed transmission unchanged from the previous model year."] },
+        { "id": "p7", "name": "X5 M", "market": "unstated", "fuel": "petrol", "years": "2009–2013", "engine": "4.4 L S63 twin-turbo V8", "cylinders": 8, "power": { "value": 408, "unit": "kW" }, "transmission": "6-speed M Sport automatic", "drivetrain": "AWD", "src": "bmw-x15", "quotes": ["A V8 power unit specially developed for the two exceptional athletes and featuring M TwinPower Turbo technology and an output of 408 kW/555 hp"] },
+        { "id": "p8", "name": "xDrive50i (LCI)", "market": "EU", "fuel": "petrol", "years": "2010–2013", "engine": "4.4 L twin-turbo V8", "displacement": 4395, "cylinders": 8, "power": { "value": 300, "unit": "kW" }, "torque": { "value": 600, "unit": "Nm" }, "transmission": "8-speed automatic", "drivetrain": "AWD", "src": "bmw-e70-lci", "quotes": ["displacement 4,395 cc, power output: 300 kW/407 bhp at 5,500 – 6,400 rpm, max. torque: 600 Nm"] },
+        { "id": "p9", "name": "xDrive35i (LCI)", "market": "EU", "fuel": "petrol", "years": "2010–2013", "engine": "3.0 L turbo straight-6", "displacement": 2979, "cylinders": 6, "power": { "value": 225, "unit": "kW" }, "torque": { "value": 400, "unit": "Nm" }, "transmission": "8-speed automatic", "drivetrain": "AWD", "src": "bmw-e70-lci", "quotes": ["2,979 cc, power output: 225 kW/306 bhp at 5,800 rpm, max. torque: 400 Nm"] },
+        { "id": "p10", "name": "xDrive40d (LCI)", "market": "EU", "fuel": "diesel", "years": "2010–2013", "engine": "3.0 L twin-turbo straight-6 diesel", "displacement": 2993, "cylinders": 6, "power": { "value": 225, "unit": "kW" }, "torque": { "value": 600, "unit": "Nm" }, "transmission": "8-speed automatic", "drivetrain": "AWD", "src": "bmw-e70-lci", "quotes": ["displacement: 2,993 cc, power output: 225 kW/306 bhp at 4,400 rpm, max. torque: 600 Nm"] },
+        { "id": "p11", "name": "xDrive30d (LCI)", "market": "EU", "fuel": "diesel", "years": "2010–2013", "engine": "3.0 L turbo straight-6 diesel", "displacement": 2993, "cylinders": 6, "power": { "value": 180, "unit": "kW" }, "torque": { "value": 540, "unit": "Nm" }, "transmission": "8-speed automatic", "drivetrain": "AWD", "src": "bmw-e70-lci", "quotes": ["displacement: 2,993 cc, power output: 180 kW/245 bhp at 4,000 rpm, max. torque: 540 Nm"] },
+        { "id": "p12", "name": "M50d", "market": "unstated", "fuel": "diesel", "years": "2012–2013", "engine": "3.0 L N57S tri-turbo straight-6 diesel", "cylinders": 6, "power": { "value": 280, "unit": "kW" }, "torque": { "value": 740, "unit": "Nm" }, "drivetrain": "AWD", "src": "wpe70", "quotes": ["M50d 2012-2013 N57S tri Turbo 381 PS (280 kW; 376 hp) at 4,400", "740 N⋅m (546 lbf⋅ft) at 2,000–3,000"] }
+      ],
+      "changes": [
+        { "id": "c1", "topic": "dimensions", "text": "Wheelbase of 2,933 mm, 113 mm longer than the previous X5.", "src": "bmw-e70-uk", "quote": "The new BMW X5 has a wheelbase measuring 2,933mm, up 113mm compared to the previous X5" },
+        { "id": "c2", "topic": "dimensions", "text": "187 mm longer and 17 mm wider (including mirrors) than the previous X5.", "src": "bmw-e70-uk", "quote": "Compared to the previous X5 this model is 187mm longer and 17mm wider (including mirrors)." },
+        { "id": "c3", "topic": "interior", "text": "First BMW available with an optional third row of seats, for up to seven occupants.", "src": "bmw-e70-uk", "quote": "The BMW X5 is the first BMW capable of being specified with a third row of seats. A total of seven occupants can now be transported." },
+        { "id": "c4", "topic": "chassis", "text": "First BMW with double-wishbone front suspension.", "src": "bmw-e70-uk", "quote": "the car is the first BMW product to come with a double wishbone front suspension" },
+        { "id": "c5", "topic": "technology", "text": "iDrive control system fitted to the X5 for the first time.", "src": "bmw-e70-uk", "quote": "Inside, a new design of dashboard houses BMW's iDrive control system fitted to the X5 for the first time." },
+        { "id": "c6", "topic": "powertrain", "text": "A six-speed automatic became standard on all models; the manual gearbox was dropped.", "src": "wpe70", "quote": "The manual transmission is entirely dropped, leaving only the automatic transmission." },
+        { "id": "c7", "topic": "technology", "text": "Head-up display and run-flat tyres as standard were offered for the first time in an SAV.", "src": "bmw-e70-uk", "quote": "It is now the first SAV in the world to be offered with Head-up Display and also the first to come with Run-flat tyres as standard." }
+      ],
+      "revisions": [
+        {
+          "id": "r1", "slug": "2010-lci", "kind": "facelift", "name": "2010 LCI (Life Cycle Impulse)",
+          "dates": {
+            "revealed": { "value": "2010-04", "event": "New York International Auto Show", "src": "wpe70", "quote": "In 2010 the X5 underwent a \"Life Cycle Impulse\" (LCI) update, debuted at the New York Auto Show in April 2010 and introduced as 2011 models in BMW North America markets." }
+          },
+          "changes": [
+            { "id": "r1c1", "topic": "powertrain", "text": "A new range of turbocharged direct-injection engines was introduced.", "src": "wpe70", "quote": "More significantly, a new range of engines, all turbocharged and with direct injection was introduced." },
+            { "id": "r1c2", "topic": "powertrain", "text": "An eight-speed automatic became standard on all versions (per BMW's European data; the US xDrive35d kept the six-speed).", "src": "bmw-e70-lci", "quote": "All versions of the new BMW X5 are equipped with an eight-speed automatic transmission as standard." },
+            { "id": "r1c3", "topic": "powertrain", "text": "BMW states fuel consumption and emissions up to 10 percent lower than before.", "src": "bmw-e70-lci", "quote": "In spite of significantly improved performance, fuel consumption and emission levels are up to 10 percent lower compared to its predecessor." },
+            { "id": "r1c4", "topic": "design", "text": "Larger front air intakes and more body-coloured surfaces on the front and rear aprons.", "src": "bmw-e70-lci", "quote": "Larger side air intakes at the front and an increased proportion of surfaces painted in body colour within the area of the front and rear end aprons" },
+            { "id": "r1c5", "topic": "design", "text": "Redesigned L-shaped tail lights with two LED light banks each.", "src": "bmw-e70-lci", "quote": "The L-shaped, redesigned taillights, each with two homogeneously illuminated LED light banks" }
+          ]
+        }
+      ],
+      "commons": { "generation": "Category:BMW E70" },
+      "notes": [
+        "BMW UK gives the wheelbase gain over the E53 as 113 mm; Wikipedia says 110 mm longer wheelbase and 165 mm longer body. The manufacturer figures are recorded.",
+        "Wikipedia's infobox gives North American model years 2007–2014, which overlaps the F15's 2014 model year; only the start (2007) is recorded.",
+        "The X5 M (E70) was introduced in 2009 for the 2010 model year; Wikipedia says it was introduced at the New York Auto Show in April 2009, while a BMW US pricing release (not read in full) reportedly says the X5 M made its world debut in Shanghai. Not resolved.",
+        "UK 'hp' figures in BMW UK releases are metric horsepower (PS); recorded as stated.",
+        "Seating (5 standard, optional 7) is described in sources only in words, so it is recorded via changes rather than the seating field.",
+        "No Commons category exists for the LCI or as a separate E70 X5 M category beyond 'Category:BMW X5 M (E70)'."
+      ]
+    },
+    {
+      "id": "bmw-x5-f15",
+      "slug": "f15",
+      "ordinal": 3,
+      "lines": ["x5"],
+      "name": "Third generation",
+      "codes": [
+        { "value": "F15", "kind": "model code", "src": "wpf15", "quote": "Model code F15" },
+        { "value": "F85", "kind": "model code (X5 M)", "src": "wpf15", "quote": "The BMW M performance derivative of the F15 X5 is designated F85" }
+      ],
+      "dates": {
+        "revealed": { "value": "2013-05-30", "src": "wpx5", "quote": "first unveiled to the public on 30 May 2013" },
+        "productionStart": { "value": "2013-04", "src": "wpf15", "quote": "Production April 2013–July 2018" },
+        "productionEnd": { "value": "2018-07", "src": "wpf15", "quote": "Production April 2013–July 2018" },
+        "salesStart": [
+          { "value": "2013", "market": "US", "src": "bmw-f15-us", "quote": "These models will arrive in US showrooms in the fourth quarter of 2013." }
+        ],
+        "modelYears": [
+          { "market": "NA", "from": 2014, "to": 2018, "src": "wpf15", "quote": "Model years 2014–2018" }
+        ]
+      },
+      "ongoing": false,
+      "platform": { "value": "BMW L4", "src": "wpf15", "quote": "Platform BMW L4" },
+      "assembly": [
+        { "value": "Spartanburg, South Carolina, USA", "src": "bmw-f15-us", "quote": "the all-new BMW X5 will be produced exclusively at BMW’s production facility in Spartanburg, SC." },
+        { "value": "Kaliningrad, Russia (Avtotor)", "src": "wpf15", "quote": "Russia: Kaliningrad (Avtotor)" },
+        { "value": "Cairo, Egypt", "src": "wpf15", "quote": "Egypt: Cairo" },
+        { "value": "Jakarta, Indonesia (Gaya Motor)", "src": "wpf15", "quote": "Indonesia: Jakarta (Gaya Motor)" },
+        { "value": "Kulim, Malaysia (Inokom)", "src": "wpf15", "quote": "Malaysia: Kulim (Inokom)" }
+      ],
+      "bodyStyles": [ { "id": "b1", "value": "5-door SUV", "markets": ["global"], "src": "wpf15", "quote": "Body style 5-door SUV" } ],
+      "drivetrains": [
+        { "value": "AWD", "system": "xDrive", "markets": ["global"], "src": "bmw-f15", "quote": "Standard BMW xDrive all-wheel-drive system (excl. BMW X5 sDrive25d)" },
+        { "value": "RWD", "system": "sDrive (sDrive35i)", "markets": ["US"], "src": "bmw-f15-us", "quote": "the X5 sDrive35i, which marks the first time that an X5 model has been offered with rear-wheel drive" },
+        { "value": "RWD", "system": "sDrive (sDrive25d)", "markets": ["EU"], "src": "bmw-f15", "quote": "BMW X5 sDrive25d (with CO2 emissions of just 149 g/km) will be added to the range" }
+      ],
+      "dimensions": [
+        { "id": "d1", "market": "unstated", "unit": "mm", "length": 4886, "width": 1938, "height": 1762, "wheelbase": 2933, "src": "wpf15", "quotes": ["Wheelbase 2,933 mm (115.5 in)", "Length 4,886 mm (192.4 in)", "Width 1,938 mm (76.3 in)", "Height 1,762 mm (69.4 in)"] },
+        { "id": "d2", "market": "US", "version": "xDrive40e", "unit": "in", "length": 193.2, "width": 76.3, "height": 69.4, "wheelbase": 115.5, "src": "bmw-f15-40e-us", "quotes": ["Veh. Length inch 193.2", "Veh. Width inch 76.3", "Veh. Height inch 69.4", "Wheelbase inch 115.5"] }
+      ],
+      "cargo": [
+        { "id": "k1", "market": "unstated", "version": "5-seat", "behind": "2nd row", "value": 650, "unit": "L", "standard": "not stated", "src": "bmw-f15", "quote": "boot capacity: 650 – 1,870 litres" },
+        { "id": "k2", "market": "unstated", "version": "5-seat", "behind": "1st row", "value": 1870, "unit": "L", "standard": "not stated", "src": "bmw-f15", "quote": "boot capacity: 650 – 1,870 litres" },
+        { "id": "k3", "market": "UK", "version": "xDrive40e", "behind": "2nd row", "value": 500, "unit": "L", "standard": "not stated", "src": "bmw-f15-40e-uk", "quote": "With a capacity of 500 – 1,720-litres, the luggage area is barely compromised compared with other X5s." },
+        { "id": "k4", "market": "US", "version": "xDrive40e", "behind": "2nd row", "value": 34.2, "unit": "cu ft", "standard": "SAE", "src": "bmw-f15-40e-us", "quote": "Trunk volume (SAE) ft³ 34.2-72.5" }
+      ],
+      "powertrains": [
+        { "id": "p1", "name": "xDrive50i", "market": "EU", "fuel": "petrol", "years": "2013–2018", "engine": "4.4 L twin-turbo V8", "displacement": 4395, "cylinders": 8, "power": { "value": 330, "unit": "kW" }, "torque": { "value": 650, "unit": "Nm" }, "transmission": "8-speed automatic", "drivetrain": "AWD", "src": "bmw-f15", "quotes": ["Capacity: 4,395 cc, output: 330 kW/450 hp at 5,500 rpm, max. torque: 650 Nm (479 lb-ft)"] },
+        { "id": "p2", "name": "xDrive30d", "market": "EU", "fuel": "diesel", "years": "2013–2018", "engine": "3.0 L turbo straight-6 diesel", "displacement": 2993, "cylinders": 6, "power": { "value": 190, "unit": "kW" }, "torque": { "value": 560, "unit": "Nm" }, "transmission": "8-speed automatic", "drivetrain": "AWD", "src": "bmw-f15", "quotes": ["Capacity: 2,993 cc, output: 190 kW/258 hp at 4,000 rpm, max. torque: 560 Nm (413 lb-ft)"] },
+        { "id": "p3", "name": "M50d", "market": "EU", "fuel": "diesel", "years": "2013–2018", "engine": "3.0 L tri-turbo straight-6 diesel", "displacement": 2993, "cylinders": 6, "power": { "value": 280, "unit": "kW" }, "torque": { "value": 740, "unit": "Nm" }, "transmission": "8-speed automatic", "drivetrain": "AWD", "src": "bmw-f15", "quotes": ["Capacity: 2,993 cc, output: 280 kW/381 hp at 4,000 – 4,400 rpm, max. torque: 740 Nm (546 lb-ft)"] },
+        { "id": "p4", "name": "xDrive40d", "market": "unstated", "fuel": "diesel", "years": "2013–2018", "engine": "3.0 L N57 straight-6 diesel", "cylinders": 6, "power": { "value": 230, "unit": "kW" }, "torque": { "value": 630, "unit": "Nm" }, "transmission": "8-speed automatic", "drivetrain": "AWD", "src": "wpf15", "quotes": ["xDrive40d 2013–2018 3.0 L N57 straight-6", "230 kW (309 hp) at 4,400 rpm 630 N⋅m (465 lb⋅ft)"] },
+        { "id": "p5", "name": "sDrive25d / xDrive25d (N47)", "market": "unstated", "fuel": "diesel", "years": "2013–07/2015", "engine": "2.0 L N47 straight-4 diesel", "cylinders": 4, "power": { "value": 160, "unit": "kW" }, "torque": { "value": 450, "unit": "Nm" }, "transmission": "8-speed automatic", "src": "wpf15", "quotes": ["160 kW (215 hp) at 4,400 rpm 450 N⋅m (332 lb⋅ft)"] },
+        { "id": "p6", "name": "sDrive25d / xDrive25d (B47)", "market": "unstated", "fuel": "diesel", "years": "08/2015–2018", "engine": "2.0 L B47 straight-4 diesel", "cylinders": 4, "power": { "value": 170, "unit": "kW" }, "torque": { "value": 500, "unit": "Nm" }, "transmission": "8-speed automatic", "src": "wpf15", "quotes": ["08/2015-2018 2.0 L B47 straight-4", "170 kW (228 hp) at 4,400 rpm 500 N⋅m (369 lb⋅ft)"] },
+        { "id": "p7", "name": "sDrive35i / xDrive35i", "market": "US", "fuel": "petrol", "engine": "3.0 L N55 turbo inline-6", "cylinders": 6, "power": { "value": 300, "unit": "hp" }, "torque": { "value": 300, "unit": "lb-ft" }, "transmission": "8-speed automatic", "src": "bmw-f15-us", "quotes": ["It develops maximum output of 300 hp at 5,800 rpm, with peak torque of 300 lb-ft"] },
+        { "id": "p8", "name": "xDrive50i", "market": "US", "fuel": "petrol", "engine": "4.4 L N63TÜ twin-turbo V8", "cylinders": 8, "power": { "value": 445, "unit": "hp" }, "torque": { "value": 480, "unit": "lb-ft" }, "transmission": "8-speed automatic", "drivetrain": "AWD", "src": "bmw-f15-us", "quotes": ["the new version of the engine (N63TÜ) develops a maximum 445 hp between 5,500 and 6,000 rpm (a 45 hp increase), and makes peak torque of 480 lb-ft"] },
+        { "id": "p9", "name": "xDrive35d", "market": "US", "fuel": "diesel", "engine": "3.0 L turbo inline-6 diesel", "cylinders": 6, "power": { "value": 255, "unit": "hp" }, "torque": { "value": 413, "unit": "lb-ft" }, "transmission": "8-speed automatic", "drivetrain": "AWD", "src": "bmw-f15-us", "quotes": ["now develops maximum power of 255 hp and maximum torque of 413 lb-ft"] },
+        { "id": "p10", "name": "xDrive40e", "market": "UK", "fuel": "plug-in hybrid", "years": "2015–2018", "engine": "2.0 L turbo petrol 4-cylinder + electric motor", "cylinders": 4, "power": { "value": 313, "unit": "hp" }, "torque": { "value": 450, "unit": "Nm" }, "transmission": "8-speed Steptronic", "drivetrain": "AWD", "src": "bmw-f15-40e-uk", "quotes": ["Total system output: 313hp Total system output: 450Nm"] },
+        { "id": "p11", "name": "xDrive40e", "market": "US", "fuel": "plug-in hybrid", "engine": "2.0 L N20 turbo 4-cylinder + electric motor", "displacement": 1997, "cylinders": 4, "power": { "value": 308, "unit": "hp" }, "torque": { "value": 332, "unit": "lb-ft" }, "transmission": "8-speed automatic", "drivetrain": "AWD", "src": "bmw-f15-40e-us", "quotes": ["the gasoline engine and electric motor puts out 308 horsepower and produces 332 lb-ft", "Displacement cm³ 1997"] },
+        { "id": "p12", "name": "X5 M (F85)", "market": "unstated", "fuel": "petrol", "years": "2015–2018", "engine": "4.4 L S63B44T2 twin-turbo V8", "cylinders": 8, "power": { "value": 423, "unit": "kW" }, "torque": { "value": 750, "unit": "Nm" }, "transmission": "8-speed M Steptronic", "drivetrain": "AWD", "src": "wpf15", "quotes": ["Its S63B44T2 4.4-liter V8 engine has 423 kW (567 hp) and 553 lb⋅ft (750 N⋅m) of torque"] }
+      ],
+      "changes": [
+        { "id": "c1", "topic": "dimensions", "text": "26 mm longer, 5 mm wider and 14 mm lower than the E70, with the same 2,933 mm wheelbase.", "src": "wpf15", "quote": "The new generation BMW X5 is 5 mm (0.2 in) wider, 26 mm (1.0 in) longer and 14 mm (0.6 in) lower than E70, but wheelbase remains at 2,933 mm (115.5 in)." },
+        { "id": "c2", "topic": "weight", "text": "US curb weights of the xDrive35i and xDrive50i reduced by about 170 and 230 lb.", "src": "bmw-f15-us", "quote": "The curb weights for the new X5 xDrive35i and X5 xDrive50i are reduced by approximately 170 and 230 lbs respectively." },
+        { "id": "c3", "topic": "drivetrain", "text": "First X5 offered with rear-wheel drive (sDrive).", "src": "bmw-f15-us", "quote": "the X5 sDrive35i, which marks the first time that an X5 model has been offered with rear-wheel drive" },
+        { "id": "c4", "topic": "powertrain", "text": "Eight-speed automatic on all models.", "src": "bmw-f15-us", "quote": "All models will be equipped with BMW’s latest 8-speed automatic transmission." },
+        { "id": "c5", "topic": "powertrain", "text": "The xDrive40e was the first plug-in hybrid production car from the BMW core brand.", "src": "bmw-f15-40e-uk", "quote": "The BMW X5 xDrive40e is the first plug-in hybrid production car from the BMW core brand." },
+        { "id": "c6", "topic": "interior", "text": "Rear seat backrest split 40:20:40 and an automatic tailgate as standard.", "src": "bmw-f15", "quote": "40 : 20 : 40 split/folding rear seat backrest; boot capacity: 650 – 1,870 litres; automatic tailgate operation as standard" },
+        { "id": "c7", "topic": "chassis", "text": "Electric power steering on all variants.", "src": "bmw-f15", "quote": "Electric Power Steering for all model variants" }
+      ],
+      "commons": { "generation": "Category:BMW F15" },
+      "notes": [
+        "BMW's 2013 US release says the F15 was produced exclusively at Spartanburg; Wikipedia additionally lists kit assembly in Russia, Egypt, Indonesia and Malaysia. Both are recorded.",
+        "No mid-cycle facelift is documented; for the 2017–2018 model years the iDrive system was updated (Wikipedia).",
+        "European 'hp' figures in BMW global/UK releases are metric horsepower; US figures are SAE horsepower. Recorded as stated.",
+        "The X5 M (F85) and the xDrive40e have Commons subcategories (Category:BMW X5 M (F15), Category:BMW X5 xDrive40e) inside Category:BMW F15."
+      ]
+    },
+    {
+      "id": "bmw-x5-g05",
+      "slug": "g05",
+      "ordinal": 4,
+      "lines": ["x5"],
+      "name": "Fourth generation",
+      "codes": [
+        { "value": "G05", "kind": "model code", "src": "wpg05", "quote": "Model code G05" },
+        { "value": "G18", "kind": "model code (long wheelbase, China)", "src": "wpg05", "quote": "G18 (LWB)" },
+        { "value": "F95", "kind": "model code (X5 M)", "src": "wpg05", "quote": "F95 (X5 M)" }
+      ],
+      "dates": {
+        "revealed": { "value": "2018-06-06", "event": "online", "src": "wpx5", "quote": "It was unveiled to the public online, on 6 June 2018." },
+        "productionStart": { "value": "2018-08", "src": "wpg05", "quote": "Production August 2018 – 2026" },
+        "productionEnd": { "value": "2026", "src": "wpg05", "quote": "Production August 2018 – 2026" },
+        "salesStart": [
+          { "value": "2018-11", "market": "global", "src": "bmw-g05", "quote": "Production at BMW Plant Spartanburg (USA). Market launch in November 2018." },
+          { "value": "2018-11-10", "market": "US", "src": "bmw-g05-us-pricing", "quote": "arriving in U.S. showrooms on November 10th, 2018" }
+        ],
+        "modelYears": [
+          { "market": "NA", "from": 2019, "to": 2026, "src": "wpg05", "quote": "Model years 2019–2026" }
+        ]
+      },
+      "ongoing": false,
+      "platform": { "value": "Cluster Architecture (CLAR)", "src": "wpg05", "quote": "Platform Cluster Architecture (CLAR)" },
+      "assembly": [
+        { "value": "Spartanburg, South Carolina, USA", "src": "bmw-g05", "quote": "Production at BMW Plant Spartanburg (USA)." },
+        { "value": "Shenyang (Dadong), China – long-wheelbase G18", "src": "wpg05", "quote": "China: Dadong, Shenyang (BBA, LWB)" },
+        { "value": "Rayong, Thailand", "src": "wpg05", "quote": "Thailand: Rayong (BMW Manufacturing (Thailand))" },
+        { "value": "Chennai, India", "src": "wpg05", "quote": "India: Chennai (BMW India)" },
+        { "value": "Jakarta, Indonesia (Gaya Motor)", "src": "wpg05", "quote": "Indonesia: Jakarta (Gaya Motor)" },
+        { "value": "Kulim, Malaysia (Inokom)", "src": "wpg05", "quote": "Malaysia: Kulim (Inokom)" }
+      ],
+      "bodyStyles": [
+        { "id": "b1", "value": "5-door SUV", "markets": ["global"], "src": "wpg05", "quote": "Body style 5-door SUV" },
+        { "id": "b2", "value": "5-door SUV, long wheelbase (G18; xDrive30Li, xDrive40Li)", "markets": ["CN"], "src": "wpg05", "quote": "BMW released the long-wheelbase version of the X5 in China, under the model code G18. It is marketed as the X5 xDrive30Li and xDrive40Li" }
+      ],
+      "drivetrains": [
+        { "value": "AWD", "system": "xDrive", "markets": ["global"], "src": "bmw-g05", "quote": "BMW xDrive intelligent all-wheel drive with new, more efficient control system and rear-wheel bias as standard." },
+        { "value": "RWD", "system": "sDrive (sDrive40i)", "markets": ["US"], "src": "wpx5", "quote": "An sDrive (rear-wheel drive) variant was added to the US model lineup for 2020." }
+      ],
+      "dimensions": [
+        { "id": "d1", "market": "unstated", "version": "pre-facelift", "unit": "mm", "length": 4922, "width": 2004, "height": 1745, "wheelbase": 2975, "src": "bmw-g05", "quotes": ["Length increased by 36 millimetres to 4,922 mm, width by 66 mm to 2,004 mm and height by 19 mm to 1,745 mm. Wheelbase extended by 42 mm to 2,975 millimetres."] },
+        { "id": "d2", "market": "US", "version": "2019 model year, xDrive40i / xDrive50i", "unit": "in", "length": 194.3, "width": 78.9, "wheelbase": 117.1, "src": "bmw-g05-us", "quotes": ["Length inches 194.3", "Width inches 78.9 78.9", "Wheelbase inches 117.1"] },
+        { "id": "d3", "market": "US", "version": "2024 model year (facelift), sDrive40i", "unit": "in", "length": 194.2, "width": 78.9, "height": 69.1, "wheelbase": 117.1, "src": "bmw-g05-lci-us", "quotes": ["Length / Width / Height (in) 194.2/78.9/69.1", "Wheelbase (in) 117.1"] },
+        { "id": "d4", "market": "CN", "version": "long wheelbase (G18)", "unit": "mm", "length": 5060, "wheelbase": 3105, "src": "wpg05", "quotes": ["3,105 mm (122.2 in) (LWB)", "5,060 mm (199.2 in) (LWB)"] }
+      ],
+      "cargo": [
+        { "id": "k1", "market": "unstated", "version": "pre-facelift, 5-seat", "behind": "2nd row", "value": 650, "unit": "L", "standard": "not stated", "src": "bmw-g05", "quote": "Boot capacity can be increased from 650 litres to a maximum 1,860 litres." },
+        { "id": "k2", "market": "unstated", "version": "pre-facelift, 5-seat", "behind": "1st row", "value": 1860, "unit": "L", "standard": "not stated", "src": "bmw-g05", "quote": "Boot capacity can be increased from 650 litres to a maximum 1,860 litres." },
+        { "id": "k3", "market": "UK", "version": "facelift", "behind": "1st row", "value": 1870, "unit": "L", "standard": "not stated", "src": "bmw-g05-lci-uk", "quote": "The capacity of the load area can be expanded from 650 litres to a maximum 1,870 litres (BMW X5 xDrive50e: 500 – 1,720 litres)." },
+        { "id": "k4", "market": "UK", "version": "facelift, xDrive50e", "behind": "2nd row", "value": 500, "unit": "L", "standard": "not stated", "src": "bmw-g05-lci-uk", "quote": "(BMW X5 xDrive50e: 500 – 1,720 litres)" },
+        { "id": "k5", "market": "US", "version": "2019 model year", "behind": "2nd row", "value": 33.9, "unit": "cu ft", "standard": "EPA", "src": "bmw-g05-us", "quote": "Cargo volume (EPA) ft³ 33.9-72.3" }
+      ],
+      "powertrains": [
+        { "id": "p1", "name": "xDrive40i", "market": "EU", "fuel": "petrol", "years": "2018–2023", "engine": "3.0 L B58 straight-6", "cylinders": 6, "power": { "value": 250, "unit": "kW" }, "transmission": "8-speed Steptronic", "drivetrain": "AWD", "src": "bmw-g05", "quotes": ["six-cylinder in-line petrol engine with 250 kW/340 hp in the BMW X5 xDrive40i"] },
+        { "id": "p2", "name": "xDrive30d", "market": "EU", "fuel": "diesel", "years": "2018–2023", "engine": "3.0 L B57 straight-6 diesel", "cylinders": 6, "power": { "value": 195, "unit": "kW" }, "transmission": "8-speed Steptronic", "drivetrain": "AWD", "src": "bmw-g05", "quotes": ["195 kW/265 hp in the BMW X5 xDrive30d"] },
+        { "id": "p3", "name": "M50d", "market": "EU", "fuel": "diesel", "years": "2018–2020", "engine": "3.0 L B57 quad-turbo straight-6 diesel", "cylinders": 6, "power": { "value": 294, "unit": "kW" }, "transmission": "8-speed Steptronic", "drivetrain": "AWD", "src": "bmw-g05", "quotes": ["six-cylinder in-line diesel engines with 294 kW/400 hp in the BMW X5 M50d"] },
+        { "id": "p4", "name": "xDrive50i", "market": "unstated", "fuel": "petrol", "engine": "4.4 L V8", "cylinders": 8, "power": { "value": 340, "unit": "kW" }, "transmission": "8-speed Steptronic", "drivetrain": "AWD", "src": "bmw-g05", "quotes": ["Newly developed V8 petrol engine with 340 kW/462 hp in the BMW X5 xDrive50i (not available in Europe)"] },
+        { "id": "p5", "name": "xDrive40i", "market": "US", "fuel": "petrol", "years": "2019 model year", "engine": "3.0 L B58 inline-6", "displacement": 2998, "cylinders": 6, "power": { "value": 335, "unit": "hp" }, "torque": { "value": 330, "unit": "lb-ft" }, "transmission": "8-speed Steptronic", "drivetrain": "AWD", "src": "bmw-g05-us", "quotes": ["The straight-six generates its maximum output of 335 hp between 5,500 and 6,500 rpm, while the peak torque 330 lb-ft", "Displacement cm³ 2,998 4,395"] },
+        { "id": "p6", "name": "xDrive50i", "market": "US", "fuel": "petrol", "years": "2019 model year", "engine": "4.4 L N63 twin-turbo V8", "displacement": 4395, "cylinders": 8, "power": { "value": 456, "unit": "hp" }, "torque": { "value": 479, "unit": "lb-ft" }, "transmission": "8-speed Steptronic", "drivetrain": "AWD", "src": "bmw-g05-us", "quotes": ["The new engine’s peak torque of 479 lb-ft is available over a broad rev range from 1,500 to 4,750 rpm, while its maximum output of 456 hp", "Displacement cm³ 2,998 4,395"] },
+        { "id": "p7", "name": "M50i", "market": "unstated", "fuel": "petrol", "years": "2020–2023", "engine": "4.4 L N63 V8", "cylinders": 8, "power": { "value": 390, "unit": "kW" }, "torque": { "value": 750, "unit": "Nm" }, "drivetrain": "AWD", "src": "wpg05", "quotes": ["X5 M50i 2020–2023 4.4 L N63 V8", "390 kW (523 hp) at 5,500–6,000 rpm 750 N⋅m (553 lb⋅ft)"] },
+        { "id": "p8", "name": "xDrive45e", "market": "EU", "fuel": "plug-in hybrid", "years": "2019–2023", "engine": "3.0 L straight-6 petrol + electric motor", "cylinders": 6, "power": { "value": 290, "unit": "kW" }, "torque": { "value": 600, "unit": "Nm" }, "transmission": "8-speed Steptronic", "drivetrain": "AWD", "src": "bmw-g05-45e", "quotes": ["the two drive units generate a system output of 290 kW/394 hp along with a maximum system torque of 600 Nm."] },
+        { "id": "p9", "name": "xDrive45e", "market": "US", "fuel": "plug-in hybrid", "years": "2021 model year", "engine": "3.0 L inline-6 petrol + electric motor, 24 kWh battery", "cylinders": 6, "power": { "value": 389, "unit": "hp" }, "torque": { "value": 443, "unit": "lb-ft" }, "drivetrain": "AWD", "src": "bmw-g05-45e-us", "quotes": ["The combined power of the new PHEV drivetrain is 389 hp, a bump of 81 hp over the previous generation. Torque is now 443 ft-lb"] },
+        { "id": "p10", "name": "X5 M (F95)", "market": "EU", "fuel": "petrol", "years": "2020–2023", "engine": "4.4 L S63 twin-turbo V8", "cylinders": 8, "power": { "value": 441, "unit": "kW" }, "torque": { "value": 750, "unit": "Nm" }, "transmission": "8-speed M Steptronic", "drivetrain": "AWD", "src": "bmw-f95", "quotes": ["BMW X5 M Output: 441 kW/600 hp, max. torque: 750 Nm"] },
+        { "id": "p11", "name": "X5 M Competition (F95)", "market": "EU", "fuel": "petrol", "years": "2020–", "engine": "4.4 L S63 twin-turbo V8", "cylinders": 8, "power": { "value": 460, "unit": "kW" }, "torque": { "value": 750, "unit": "Nm" }, "transmission": "8-speed M Steptronic", "drivetrain": "AWD", "src": "bmw-f95", "quotes": ["BMW X5 M Competition Output: 460 kW/625 hp, max. torque: 750 Nm"] },
+        { "id": "p12", "name": "xDrive50e (facelift)", "market": "US", "fuel": "plug-in hybrid", "years": "2024 model year–", "engine": "3.0 L inline-6 petrol + electric motor", "cylinders": 6, "power": { "value": 483, "unit": "hp" }, "torque": { "value": 516, "unit": "lb-ft" }, "transmission": "8-speed Steptronic Sport", "drivetrain": "AWD", "src": "bmw-g05-lci-us", "quotes": ["The new powertrain produces a maximum system output of up to 483 hp and 516 lb-ft of torque"] },
+        { "id": "p13", "name": "xDrive50e (facelift)", "market": "UK", "fuel": "plug-in hybrid", "years": "2023–", "power": { "value": 490, "unit": "hp" }, "torque": { "value": 700, "unit": "Nm" }, "drivetrain": "AWD", "src": "bmw-g05-lci-uk", "quotes": ["BMW X5 xDrive50e 490", "700 4.8"] },
+        { "id": "p14", "name": "xDrive40i (facelift)", "market": "US", "fuel": "mild hybrid", "years": "2024 model year–", "engine": "3.0 L inline-6 petrol, 48V mild hybrid", "displacement": 2998, "cylinders": 6, "power": { "value": 375, "unit": "hp" }, "torque": { "value": 398, "unit": "lb-ft" }, "transmission": "8-speed Steptronic Sport", "src": "bmw-g05-lci-us", "quotes": ["Capacity (cc) 2,998", "Max output (hp @ rpm) 375 @ 5,200-6,250 Max torque (lb-ft @ rpm) 398 @ 1,850-5,000"] },
+        { "id": "p15", "name": "M60i xDrive (facelift)", "market": "US", "fuel": "mild hybrid", "years": "2024 model year–", "engine": "4.4 L S68 twin-turbo V8, 48V mild hybrid", "displacement": 4395, "cylinders": 8, "power": { "value": 523, "unit": "hp" }, "torque": { "value": 553, "unit": "lb-ft" }, "drivetrain": "AWD", "src": "bmw-g05-lci-us", "quotes": ["In both models, the S68 engine produces 523 hp and peak torque of 553 lb-ft.", "Capacity (cc) 4,395"] },
+        { "id": "p16", "name": "M60i xDrive (facelift)", "market": "UK", "fuel": "mild hybrid", "years": "2023–", "power": { "value": 530, "unit": "hp" }, "torque": { "value": 750, "unit": "Nm" }, "drivetrain": "AWD", "src": "bmw-g05-lci-uk", "quotes": ["BMW X5 M60i 530", "750 4.3"] },
+        { "id": "p17", "name": "xDrive30d (facelift)", "market": "UK", "fuel": "mild hybrid", "years": "2023–", "engine": "3.0 L straight-6 diesel, 48V mild hybrid", "power": { "value": 298, "unit": "hp" }, "torque": { "value": 670, "unit": "Nm" }, "drivetrain": "AWD", "src": "bmw-g05-lci-uk", "quotes": ["BMW X5 xDrive30d 298", "670 6.1"] }
+      ],
+      "changes": [
+        { "id": "c1", "topic": "dimensions", "text": "36 mm longer, 66 mm wider and 19 mm taller than the F15, on a wheelbase 42 mm longer.", "src": "bmw-g05", "quote": "Length increased by 36 millimetres to 4,922 mm, width by 66 mm to 2,004 mm and height by 19 mm to 1,745 mm. Wheelbase extended by 42 mm to 2,975 millimetres." },
+        { "id": "c2", "topic": "chassis", "text": "Moved to BMW's Cluster Architecture (CLAR) platform.", "src": "wpg05", "quote": "The G05 X5 uses BMW's Cluster Architecture (CLAR) platform also found in the G11 7 Series and G30 5 Series." },
+        { "id": "c3", "topic": "chassis", "text": "Two-axle air suspension with up to 80 mm ride-height adjustment offered for the first time in an X model.", "src": "bmw-g05", "quote": "New chassis systems available for the first time in a BMW X model: two-axle air suspension offering ride height adjustment of up to 80 millimetres." },
+        { "id": "c4", "topic": "other", "text": "First BMW X model with an optional Off-Road package.", "src": "bmw-g05", "quote": "First BMW X model with optional Off-Road package." },
+        { "id": "c5", "topic": "technology", "text": "BMW Live Cockpit Professional with a fully digital instrument cluster and 12.3-inch Control Display fitted as standard.", "src": "bmw-g05", "quote": "Debut appearance of the BMW Live Cockpit Professional display and control concept (fitted as standard)." },
+        { "id": "c6", "topic": "powertrain", "text": "The plug-in hybrid gained a six-cylinder engine and an electric range of about 80 km, almost three times that of its predecessor.", "src": "bmw-g05-45e", "quote": "Its electrically powered range is now approximately 80 kilometres*, almost three times that of its predecessor." }
+      ],
+      "revisions": [
+        {
+          "id": "r1", "slug": "2023-lci", "kind": "facelift", "name": "2023 LCI (2024 model year)",
+          "dates": {
+            "productionStart": { "value": "2023-04", "src": "bmw-g05-lci-ca", "quote": "Production will begin in Spartanburg, South Carolina in April 2023." }
+          },
+          "changes": [
+            { "id": "r1c1", "topic": "design", "text": "Headlight units with a 35 mm slimmer outline and arrow-shaped daytime running lights.", "src": "bmw-g05-lci", "quote": "The new headlight units now have a 35-millimetre slimmer outline." },
+            { "id": "r1c2", "topic": "technology", "text": "BMW Curved Display (12.3-inch information display and 14.9-inch control display) with BMW Operating System 8.", "src": "bmw-g05-lci", "quote": "It is made up of a 12.3-inch information display behind the steering wheel and a control display with a screen diagonal of 14.9 inches" },
+            { "id": "r1c3", "topic": "powertrain", "text": "48V mild-hybrid technology for all petrol and diesel models; the xDrive50e plug-in hybrid replaced the xDrive45e.", "src": "bmw-g05-lci", "quote": "a latest-generation plug-in hybrid system for the BMW X5 xDrive50e" },
+            { "id": "r1c4", "topic": "powertrain", "text": "The xDrive50e's electric motor produces 194 hp, 83 hp more than before (US figures).", "src": "bmw-g05-lci-us", "quote": "The new synchronous motor produces a nominal output of 194 hp – 83 more than the previous version." },
+            { "id": "r1c5", "topic": "powertrain", "text": "The base X5 M was dropped; the X5 M Competition moved to the S68 V8 with 48V mild hybrid.", "src": "wpg05", "quote": "the base X5 M was discontinued while the X5 M Competition was updated to the 4.4L BMW S68 twin-turbo V8 MHEV" }
+          ]
+        }
+      ],
+      "commons": { "generation": "Category:BMW G05", "bodyStyles": { "b2": "Category:BMW G18" } },
+      "notes": [
+        "European launch engines carried EU names (xDrive40i 250 kW/340 hp, M50d); the V8 xDrive50i was not sold in Europe, and for the 2020 model year the US got the M50i in its place. US figures are SAE hp (xDrive40i 335 hp).",
+        "BMW announced in Feb 2023 that facelift production would begin in April 2023; Wikipedia says the LCI entered production in March 2023. The manufacturer date is recorded. The facelift press kit is dated 8 Feb 2023 and the US debut was at The Amelia in March 2023.",
+        "Wikipedia lists production ending in 2026 (succeeded by the G65). Avtotor (Russia) assembled some X5s from leftover kits in 2025 without BMW's involvement (Wikipedia); not recorded as an assembly site.",
+        "The iX5 Hydrogen (G05-based fuel-cell demonstration fleet of fewer than 100 vehicles, 2023) is not recorded as a powertrain.",
+        "UK release lists xDrive50e as 490hp 'including temporary boost effect'; US release lists 483 hp. Both recorded with their market.",
+        "Cargo standard 'EPA' is as printed in the US spec table. No Commons category exists for the facelift."
+      ]
+    },
+    {
+      "id": "bmw-x5-g65",
+      "slug": "g65",
+      "ordinal": 5,
+      "lines": ["x5"],
+      "name": "Fifth generation",
+      "codes": [ { "value": "G65", "kind": "model code", "src": "wpx5", "quote": "Fifth generation (G65/G78; 2026)" } ],
+      "dates": {
+        "revealed": { "value": "2026-06-30", "event": "World premiere at BMW Plant Spartanburg", "src": "bmw-g65-us", "quotes": ["Woodcliff Lake, NJ – June 30, 2026…The new BMW X5 opens the next chapter", "World premiere at the Home of X: BMW Plant Spartanburg in South Carolina."] },
+        "productionStart": { "value": "2026-08", "src": "bmw-g65", "quote": "BMW Group Plant Spartanburg (USA) initiating series production of the fifth-generation BMW X5 in August 2026." },
+        "salesStart": [
+          { "value": "2026-10", "market": "US", "src": "bmw-g65-us", "quotes": ["Woodcliff Lake, NJ – June 30, 2026", "The 2027 BMW X5 rollout begins in October with the market launch of the X5 40 xDrive."] },
+          { "value": "2026-11", "market": "global", "src": "bmw-g65", "quote": "The market launch of the first variants of the new BMW X5 is scheduled for late November 2026" }
+        ],
+        "modelYears": [ { "market": "US", "from": 2027, "src": "bmw-g65-us", "quote": "The 2027 BMW X5 lineup will include internal combustion engines with 48V mild hybrid technology" } ]
+      },
+      "ongoing": true,
+      "assembly": [ { "value": "Spartanburg, South Carolina, USA", "src": "bmw-g65", "quote": "BMW Group Plant Spartanburg (USA) initiating series production of the fifth-generation BMW X5 in August 2026." } ],
+      "drivetrains": [
+        { "value": "AWD", "system": "xDrive", "markets": ["US"], "src": "bmw-g65-us", "quote": "The 2027 BMW X5 rollout begins in October with the market launch of the X5 40 xDrive." },
+        { "value": "RWD", "markets": ["US"], "src": "bmw-g65-us", "quote": "The rear-wheel-drive X5 40, plug-in hybrid X5 50e xDrive, and first battery-electric variant, the iX5 60 xDrive, will follow in the first quarter of 2027." }
+      ],
+      "powertrains": [
+        { "id": "p1", "name": "X5 40 / X5 40 xDrive", "market": "US", "fuel": "mild hybrid", "years": "2027 model year–", "engine": "3.0 L B58 inline-6 petrol, 48V mild hybrid", "cylinders": 6, "power": { "value": 394, "unit": "hp" }, "torque": { "value": 428, "unit": "lb-ft" }, "transmission": "8-speed Steptronic Sport", "src": "bmw-g65-us", "quotes": ["A new turbocharger raises output by 19 hp to 394 hp, while maximum torque increases from 383 to 428 lb-ft."] },
+        { "id": "p2", "name": "X5 50e xDrive", "market": "US", "fuel": "plug-in hybrid", "years": "2027 model year–", "engine": "3.0 L inline-6 petrol + 194 hp electric motor, 26.5 kWh usable battery", "cylinders": 6, "power": { "value": 483, "unit": "hp" }, "torque": { "value": 516, "unit": "lb-ft" }, "transmission": "8-speed Steptronic", "drivetrain": "AWD", "src": "bmw-g65-us", "quotes": ["Together, the combustion engine and electric drive produce 483 hp and 516 lb-ft of system torque"] },
+        { "id": "p3", "name": "iX5 60 xDrive", "market": "US", "fuel": "electric", "years": "2027 model year–", "engine": "two electric motors (EESM rear, ASM front), 144 kWh net battery", "power": { "value": 570, "unit": "hp" }, "torque": { "value": 593, "unit": "lb-ft" }, "drivetrain": "AWD", "src": "bmw-g65-us", "quotes": ["The BMW iX5 60 xDrive uses one electric motor at each axle, producing a combined 570 hp and 593 lb-ft of torque."] }
+      ],
+      "changes": [
+        { "id": "c1", "topic": "powertrain", "text": "First BMW model offered with five drive-system types, including the first battery-electric iX5 and a later hydrogen fuel-cell iX5.", "src": "bmw-g65", "quote": "the new BMW X5 is the first model from the brand to come to market with a choice of five different drive system types" },
+        { "id": "c2", "topic": "dimensions", "text": "Wheelbase 2.4 inches longer than before.", "src": "bmw-g65-us", "quote": "increased knee room made possible in part by the 2.4-inch longer wheelbase" },
+        { "id": "c3", "topic": "technology", "text": "Adopts Neue Klasse technology including BMW Panoramic iDrive and BMW Operating System X.", "src": "bmw-g65", "quote": "The BMW X5 incorporates core technologies from the Neue Klasse in the form of the new BMW Panoramic iDrive display and operating system, underpinned by BMW Operating System X." },
+        { "id": "c4", "topic": "powertrain", "text": "The X5 50e's estimated US electric range is up to 44 miles, about 15 percent more than the previous generation.", "src": "bmw-g65-us", "quote": "The estimated all-electric range is up to a very practical 44 miles (preliminary estimate based on BMW AG testing using EPA test procedures), an improvement of about 15 percent from the previous generation." },
+        { "id": "c5", "topic": "other", "text": "The iX5 is the first all-electric vehicle built at Plant Spartanburg.", "src": "bmw-g65", "quote": "the new BMW iX5 will be the first all-electric vehicle to be manufactured there" }
+      ],
+      "commons": { "generation": "Category:BMW G65" },
+      "notes": [
+        "Not in the original assignment list: BMW revealed the fifth-generation X5 on 30 June 2026 and started production in August 2026, so it is recorded as the current generation. Launch dates are BMW's announced plans at reveal time.",
+        "BMW presents the battery-electric iX5 and the forthcoming iX5 Hydrogen as part of the fifth-generation X5; Wikipedia gives the codes as 'G65/G78' without saying which variant G78 is, so only G65 is recorded.",
+        "No dimensions or European engine data were found in the sources read; the Commons category has subcategories but no direct files yet."
+      ]
+    }
+  ]
+}

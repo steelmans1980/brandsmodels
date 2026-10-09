@@ -30,7 +30,7 @@ export function norm(s) {
   return String(s).normalize('NFKC').toLowerCase()
     .replace(/[‐-―−]/g, '-').replace(/[‘’‛′]/g, "'").replace(/[“”„″]/g, '"')
     .replace(/\[\d+\]|\[[a-z]\]|\[note \d+\]/g, '')
-    .replace(/(\d)[,   ](?=\d{3}\b)/g, '$1')
+    .replace(/(\d)[,   ](?=\d{3}(?!\d))/g, '$1')
     .replace(/\s+/g, ' ').trim();
 }
 

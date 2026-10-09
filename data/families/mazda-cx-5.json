@@ -1,0 +1,1286 @@
+{
+ "id": "mazda-cx-5",
+ "slug": "cx-5",
+ "manufacturer": "mazda",
+ "name": "Mazda CX-5",
+ "lines": [
+  {
+   "id": "cx-5",
+   "name": "CX-5"
+  }
+ ],
+ "sources": {
+  "wc": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Mazda_CX-5&oldid=1379166699",
+   "title": "Mazda CX-5",
+   "publisher": "Wikipedia",
+   "type": "secondary",
+   "accessed": "2026-10-09"
+  },
+  "dc": {
+   "url": "https://de.wikipedia.org/w/index.php?title=Mazda_CX-5&oldid=267693403",
+   "title": "Mazda CX-5",
+   "publisher": "Wikipedia (de)",
+   "type": "secondary",
+   "accessed": "2026-10-09"
+  },
+  "jc": {
+   "url": "https://ja.wikipedia.org/w/index.php?title=%E3%83%9E%E3%83%84%E3%83%80%E3%83%BBCX-5&oldid=111250643",
+   "title": "マツダ・CX-5",
+   "publisher": "Wikipedia (ja)",
+   "type": "secondary",
+   "accessed": "2026-10-09"
+  },
+  "mz110802": {
+   "url": "https://newsroom.mazda.com/en/publicity/release/2011/201108/110802a.html",
+   "title": "All-New Mazda CX-5 Crossover SUV World Premiere at 2011 Frankfurt Motor Show",
+   "publisher": "Mazda Newsroom",
+   "type": "manufacturer",
+   "date": "2011-08-02",
+   "accessed": "2026-10-09"
+  },
+  "mz120216": {
+   "url": "https://newsroom.mazda.com/en/publicity/release/2012/201202/120216a.html",
+   "title": "Mazda to Launch All-New Mazda CX-5 Crossover SUV",
+   "publisher": "Mazda Newsroom",
+   "type": "manufacturer",
+   "date": "2012-02-16",
+   "accessed": "2026-10-09"
+  },
+  "mz141120": {
+   "url": "https://newsroom.mazda.com/en/publicity/release/2014/201411/141120a.html",
+   "title": "Mazda Reveals Updated Mazda6 and Mazda CX-5",
+   "publisher": "Mazda Newsroom",
+   "type": "manufacturer",
+   "date": "2014-11-20",
+   "accessed": "2026-10-09"
+  },
+  "mus161115": {
+   "url": "https://news.mazdausa.com/2016-11-15-mazda-unveils-new-cx5",
+   "title": "Mazda Unveils The All New CX-5",
+   "publisher": "Mazda USA News",
+   "type": "manufacturer",
+   "date": "2016-11-15",
+   "accessed": "2026-10-09"
+  },
+  "mz161215": {
+   "url": "https://newsroom.mazda.com/en/publicity/release/2016/201612/161215a.html",
+   "title": "Mazda Taking Orders for All-New Mazda CX-5 in Japan",
+   "publisher": "Mazda Newsroom",
+   "type": "manufacturer",
+   "date": "2016-12-15",
+   "accessed": "2026-10-09"
+  },
+  "mus210914": {
+   "url": "https://news.mazdausa.com/2021-09-14-2022-Mazda-CX-5-Receives-Elegant-Enhancements",
+   "title": "2022 Mazda CX-5 Receives Elegant Enhancements",
+   "publisher": "Mazda USA News",
+   "type": "manufacturer",
+   "date": "2021-09-14",
+   "accessed": "2026-10-09"
+  },
+  "mz250710": {
+   "url": "https://newsroom.mazda.com/en/publicity/release/2025/202507/250710a.html",
+   "title": "All-New MAZDA CX-5 Debuts in Europe",
+   "publisher": "Mazda Newsroom",
+   "type": "manufacturer",
+   "date": "2025-07-10",
+   "accessed": "2026-10-09"
+  },
+  "mus250710": {
+   "url": "https://news.mazdausa.com/2025-07-10-Mazda-Reveals-All-New-2026-CX-5",
+   "title": "Mazda Reveals All-New 2026 CX-5",
+   "publisher": "Mazda USA News",
+   "type": "manufacturer",
+   "date": "2025-07-10",
+   "accessed": "2026-10-09"
+  },
+  "mus260113": {
+   "url": "https://news.mazdausa.com/2026-01-13-Mazda-Announces-Pricing-and-Packaging-for-All-New-2026-Mazda-CX-5",
+   "title": "Mazda Announces Pricing and Packaging for All-New 2026 Mazda CX-5",
+   "publisher": "Mazda USA News",
+   "type": "manufacturer",
+   "date": "2026-01-13",
+   "accessed": "2026-10-09"
+  },
+  "mau250710": {
+   "url": "https://koala.mazda.com.au/mazda-news/all-new-mazda-cx-5-global-reveal",
+   "title": "All-New Mazda CX-5 Global Reveal",
+   "publisher": "Mazda Australia",
+   "type": "manufacturer",
+   "date": "2025-07-10",
+   "accessed": "2026-10-09"
+  }
+ },
+ "generations": [
+  {
+   "id": "mazda-cx-5-ke",
+   "slug": "ke",
+   "ordinal": 1,
+   "lines": [
+    "cx-5"
+   ],
+   "name": "First generation",
+   "codes": [
+    {
+     "value": "KE",
+     "kind": "model code",
+     "src": "wc",
+     "quote": "Model code KE"
+    }
+   ],
+   "dates": {
+    "revealed": {
+     "value": "2011-09",
+     "event": "Frankfurt Motor Show",
+     "src": "mz110802",
+     "quote": "Mazda Motor Corporation will hold the world premiere of the all-new Mazda CX-5 compact crossover SUV at the 2011 Frankfurt Motor Show (September 13 through 25, 2011)."
+    },
+    "productionStart": {
+     "value": "2012-01",
+     "src": "wc",
+     "quote": "Production January 2012 – 2017"
+    },
+    "productionEnd": {
+     "value": "2017",
+     "src": "wc",
+     "quote": "Production January 2012 – 2017"
+    },
+    "salesStart": [
+     {
+      "value": "2012-02-16",
+      "market": "JP",
+      "src": "mz120216",
+      "quotes": [
+       "Feb. 16, 2012",
+       "today announced the launch of the all-new Mazda CX-5 crossover SUV through all Mazda, Mazda Anfini and Mazda Autozam dealers throughout Japan"
+      ]
+     },
+     {
+      "value": "2012-04-28",
+      "market": "EU",
+      "src": "dc",
+      "quote": "wurde die erste Generation des CX-5 am 28. April 2012 in Deutschland offiziell eingeführt"
+     }
+    ],
+    "modelYears": [
+     {
+      "market": "NA",
+      "from": 2013,
+      "to": 2016,
+      "src": "wc",
+      "quote": "Model years 2013–2016"
+     }
+    ]
+   },
+   "ongoing": false,
+   "assembly": [
+    {
+     "value": "Hiroshima, Japan (Ujina Plants No. 1 and No. 2)",
+     "src": "wc",
+     "quote": "Assembly Japan: Hiroshima (Ujina Plant No. 1, Ujina Plant No. 2)"
+    },
+    {
+     "value": "Nanjing, China (Changan Mazda)",
+     "src": "wc",
+     "quote": "China: Nanjing (Changan Mazda)"
+    }
+   ],
+   "bodyStyles": [
+    {
+     "id": "b1",
+     "value": "5-door SUV",
+     "markets": [
+      "global"
+     ],
+     "src": "wc",
+     "quote": "Body style 5-door SUV"
+    }
+   ],
+   "seating": {
+    "options": [
+     5
+    ],
+    "src": "jc",
+    "quote": "乗車定員 5名"
+   },
+   "drivetrains": [
+    {
+     "value": "FWD",
+     "markets": [
+      "JP"
+     ],
+     "src": "jc",
+     "quote": "駆動方式 FF / 4WD"
+    },
+    {
+     "value": "AWD",
+     "markets": [
+      "JP"
+     ],
+     "src": "jc",
+     "quote": "駆動方式 FF / 4WD"
+    }
+   ],
+   "dimensions": [
+    {
+     "id": "d1",
+     "market": "JP",
+     "unit": "mm",
+     "length": 4540,
+     "width": 1840,
+     "height": 1705,
+     "wheelbase": 2700,
+     "src": "jc",
+     "quotes": [
+      "ホイールベース 2,700 mm 全長 4,540 mm 全幅 1,840 mm 全高 1,705 mm"
+     ]
+    },
+    {
+     "id": "d2",
+     "market": "unstated",
+     "unit": "mm",
+     "length": 4555,
+     "width": 1840,
+     "height": 1710,
+     "wheelbase": 2700,
+     "src": "dc",
+     "quotes": [
+      "Länge 4555 mm Breite 1840 mm Höhe 1710 mm Radstand 2700 mm"
+     ]
+    }
+   ],
+   "cargo": [
+    {
+     "id": "k1",
+     "market": "JP",
+     "behind": "2nd row",
+     "value": 500,
+     "unit": "L",
+     "standard": "DIN",
+     "src": "mz120216",
+     "quote": "When the rear seat is in use, the luggage space is 500 liters (DIN method)"
+    },
+    {
+     "id": "k2",
+     "market": "JP",
+     "behind": "1st row",
+     "value": 1620,
+     "unit": "L",
+     "standard": "DIN",
+     "src": "mz120216",
+     "quote": "when the rear seat is folded down, 1620 liters (DIN method) of luggage space is secured"
+    }
+   ],
+   "powertrains": [
+    {
+     "id": "p1",
+     "name": "SKYACTIV-D 2.2 (XD)",
+     "market": "JP",
+     "fuel": "diesel",
+     "engine": "2.2 L SKYACTIV-D twin-turbo diesel I4",
+     "torque": {
+      "value": 420,
+      "unit": "Nm"
+     },
+     "transmission": "6-speed automatic (SKYACTIV-DRIVE)",
+     "src": "mz120216",
+     "quotes": [
+      "and maximum torque of 420Nm",
+      "SKYACTIV-D 2.2 SKYACTIV-DRIVE 6-speed EC-AT"
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "SKYACTIV-G 2.0 (20C/20S)",
+     "market": "JP",
+     "fuel": "petrol",
+     "engine": "2.0 L SKYACTIV-G direct-injection I4",
+     "transmission": "6-speed automatic (SKYACTIV-DRIVE)",
+     "src": "mz120216",
+     "quotes": [
+      "The 20C and 20S model grades are equipped with the new-generation SKYACTIV-G 2.0 gasoline engine",
+      "All CX-5 models are equipped with the new-generation six-speed SKYACTIV-DRIVE automatic transmission."
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "2.0 SKYACTIV-G (FWD)",
+     "market": "EU",
+     "fuel": "petrol",
+     "engine": "2.0 L SKYACTIV-G I4",
+     "displacement": 1998,
+     "power": {
+      "value": 121,
+      "unit": "kW"
+     },
+     "torque": {
+      "value": 210,
+      "unit": "Nm"
+     },
+     "drivetrain": "FWD",
+     "src": "dc",
+     "quotes": [
+      "Zum Verkaufsstart standen ein Ottomotor mit 165 PS (160 PS bei Allradantrieb)",
+      "1998 cm³",
+      "121 kW (165 PS)",
+      "210 Nm"
+     ]
+    },
+    {
+     "id": "p4",
+     "name": "2.0 SKYACTIV-G (AWD)",
+     "market": "EU",
+     "fuel": "petrol",
+     "engine": "2.0 L SKYACTIV-G I4",
+     "displacement": 1998,
+     "power": {
+      "value": 118,
+      "unit": "kW"
+     },
+     "torque": {
+      "value": 208,
+      "unit": "Nm"
+     },
+     "drivetrain": "AWD",
+     "src": "dc",
+     "quotes": [
+      "Zum Verkaufsstart standen ein Ottomotor mit 165 PS (160 PS bei Allradantrieb)",
+      "1998 cm³",
+      "118 kW (160 PS)",
+      "208 Nm"
+     ]
+    },
+    {
+     "id": "p5",
+     "name": "2.5 SKYACTIV-G",
+     "market": "EU",
+     "fuel": "petrol",
+     "years": "02/2015–03/2017",
+     "engine": "2.5 L SKYACTIV-G I4",
+     "displacement": 2488,
+     "power": {
+      "value": 141,
+      "unit": "kW"
+     },
+     "torque": {
+      "value": 256,
+      "unit": "Nm"
+     },
+     "src": "dc",
+     "quotes": [
+      "Des Weiteren wurde der 2,5-l-Otto-Motor mit 141 kW (192 PS) aus dem Ende 2012 erneuerten Mazda6 eingeführt.",
+      "2488 cm³",
+      "256 Nm"
+     ]
+    },
+    {
+     "id": "p6",
+     "name": "2.2 SKYACTIV-D 150",
+     "market": "EU",
+     "fuel": "diesel",
+     "engine": "2.2 L SKYACTIV-D twin-turbo diesel I4",
+     "displacement": 2191,
+     "power": {
+      "value": 110,
+      "unit": "kW"
+     },
+     "torque": {
+      "value": 380,
+      "unit": "Nm"
+     },
+     "src": "dc",
+     "quotes": [
+      "zwei Dieselmotoren mit 150 und 175 PS",
+      "2191 cm³",
+      "110 kW (150 PS)",
+      "380 Nm"
+     ]
+    },
+    {
+     "id": "p7",
+     "name": "2.2 SKYACTIV-D 175",
+     "market": "EU",
+     "fuel": "diesel",
+     "engine": "2.2 L SKYACTIV-D twin-turbo diesel I4",
+     "displacement": 2191,
+     "power": {
+      "value": 129,
+      "unit": "kW"
+     },
+     "torque": {
+      "value": 420,
+      "unit": "Nm"
+     },
+     "drivetrain": "AWD",
+     "src": "dc",
+     "quotes": [
+      "zwei Dieselmotoren mit 150 und 175 PS",
+      "2191 cm³",
+      "129 kW (175 PS)",
+      "420 Nm"
+     ]
+    },
+    {
+     "id": "p8",
+     "name": "Skyactiv-G 2.0",
+     "market": "US",
+     "fuel": "petrol",
+     "engine": "2.0 L Skyactiv-G direct-injection I4",
+     "power": {
+      "value": 155,
+      "unit": "hp"
+     },
+     "src": "wc",
+     "quotes": [
+      "Initially, the only engine available was a direct-injected Skyactiv-G 2.0-litre inline-four petrol engine with 155 bhp (116 kW; 157 PS)."
+     ]
+    },
+    {
+     "id": "p9",
+     "name": "Skyactiv-G 2.5",
+     "market": "US",
+     "fuel": "petrol",
+     "years": "from 2014 model year",
+     "engine": "2.5 L Skyactiv-G I4",
+     "power": {
+      "value": 184,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 185,
+      "unit": "lb-ft"
+     },
+     "transmission": "6-speed automatic",
+     "src": "wc",
+     "quotes": [
+      "For the 2014 model year, an optional 2.5-litre four-cylinder Skyactiv petrol engine was introduced",
+      "It is rated at 184 hp (137 kW; 187 PS) and 185 lb⋅ft (251 N⋅m)",
+      "Only the six-speed automatic transmission is available for this engine"
+     ]
+    }
+   ],
+   "revisions": [
+    {
+     "id": "r1",
+     "slug": "2015-facelift",
+     "kind": "facelift",
+     "name": "Facelift (2015)",
+     "dates": {
+      "revealed": {
+       "value": "2014-11-20",
+       "event": "Los Angeles Auto Show",
+       "src": "mz141120",
+       "quotes": [
+        "Nov. 20, 2014",
+        "Mazda Motor Corporation today revealed updated versions of the Mazda6 (known as Mazda Atenza in Japan) and Mazda CX-5 at the Los Angeles Auto Show."
+       ]
+      }
+     },
+     "changes": [
+      {
+       "id": "r1c1",
+       "topic": "technology",
+       "text": "First Mazda models (with the Mazda6) to adopt Adaptive LED Headlights.",
+       "src": "mz141120",
+       "quote": "they become the first Mazda models to adopt new-generation Adaptive LED Headlights (ALH)"
+      },
+      {
+       "id": "r1c2",
+       "topic": "technology",
+       "text": "Mazda Connect connectivity system and i-ACTIVSENSE safety technologies added.",
+       "src": "mz141120",
+       "quote": "the Mazda Connect car connectivity system,*2 and Mazda's i-ACTIVSENSE advanced safety technologies"
+      },
+      {
+       "id": "r1c3",
+       "topic": "design",
+       "text": "New grille, upgraded interior and an electric parking brake (European models).",
+       "src": "dc",
+       "quote": "Ab Februar 2015 bekam der CX-5 ein Facelift mit neuem Kühlergrill, einen aufgewerteten Innenraum, eine elektrische Parkbremse"
+      },
+      {
+       "id": "r1c4",
+       "topic": "powertrain",
+       "text": "In the US the 2.5-litre engine became standard except on the manual FWD Sport.",
+       "src": "wc",
+       "quote": "The Skyactiv-G 2.5 engine was made standard on all United States trim levels, except the base-level Sport equipped with the six-speed manual transmission and front wheel drive, which retained the 2.0-litre powerplant."
+      }
+     ]
+    }
+   ],
+   "commons": {
+    "generation": "Category:Mazda CX-5 (KE)"
+   },
+   "notes": [
+    "Dimensions differ by source: Japanese Wikipedia (Japanese market) 4,540 × 1,840 × 1,705 mm; German Wikipedia 4,555 × 1,840 × 1,710 mm (market not stated); English Wikipedia 4,540 × 1,840 × 1,670 mm. No Mazda dimension sheet was found in a readable form.",
+    "Cargo volumes are Mazda's Japanese figures measured by the DIN method.",
+    "The updated (facelift) model went on sale in Japan and the US in January 2015 (Mazda); in the US and Canada it was designated a 2016.5 model year (Wikipedia). No separate Commons category for the facelift exists.",
+    "European power/torque figures are from German Wikipedia's specification table (column-matched) and should be double-checked; US figures are from English Wikipedia."
+   ]
+  },
+  {
+   "id": "mazda-cx-5-kf",
+   "slug": "kf",
+   "ordinal": 2,
+   "lines": [
+    "cx-5"
+   ],
+   "name": "Second generation",
+   "codes": [
+    {
+     "value": "KF",
+     "kind": "model code",
+     "src": "wc",
+     "quote": "Model code KF"
+    }
+   ],
+   "dates": {
+    "revealed": {
+     "value": "2016-11-15",
+     "event": "Los Angeles Auto Show",
+     "src": "mus161115",
+     "quotes": [
+      "Mazda Unveils The All New CX-5- November 15, 2016",
+      "The all-new CX-5 will be on display at the Los Angeles Auto Show"
+     ]
+    },
+    "productionStart": {
+     "value": "2016-11",
+     "src": "wc",
+     "quote": "Production November 2016 – 2025"
+    },
+    "productionEnd": {
+     "value": "2025",
+     "src": "wc",
+     "quote": "Production November 2016 – 2025"
+    },
+    "salesStart": [
+     {
+      "value": "2017-02-02",
+      "market": "JP",
+      "src": "wc",
+      "quote": "The second-generation CX-5 was released in Japan on 2 February 2017"
+     },
+     {
+      "value": "2017-03-31",
+      "market": "AU",
+      "src": "wc",
+      "quote": "The second-generation CX-5 was launched in Australia on 31 March 2017"
+     },
+     {
+      "value": "2017-05-20",
+      "market": "EU",
+      "src": "dc",
+      "quote": "in Deutschland offiziell am 20. Mai 2017 zu Preisen ab 24.990 Euro bei den Händlern präsentiert"
+     }
+    ],
+    "modelYears": [
+     {
+      "market": "NA",
+      "from": 2017,
+      "to": 2025,
+      "src": "wc",
+      "quote": "Model years 2017–2025"
+     }
+    ]
+   },
+   "ongoing": false,
+   "platform": {
+    "value": "Skyactiv-C/D",
+    "src": "wc",
+    "quote": "Platform Skyactiv-C/D"
+   },
+   "assembly": [
+    {
+     "value": "Hiroshima (Ujina) and Hōfu, Japan",
+     "src": "wc",
+     "quote": "Assembly Japan: Hiroshima (Ujina Plant No. 1, Ujina Plant No. 2); Hōfu (Hōfu Plant No. 2)"
+    },
+    {
+     "value": "Nanjing, China (Changan Mazda)",
+     "src": "wc",
+     "quote": "China: Nanjing (Changan Mazda)"
+    },
+    {
+     "value": "Kulim, Malaysia (Inokom)",
+     "src": "wc",
+     "quote": "Malaysia: Kulim (Inokom)"
+    }
+   ],
+   "bodyStyles": [
+    {
+     "id": "b1",
+     "value": "5-door SUV",
+     "markets": [
+      "global"
+     ],
+     "src": "wc",
+     "quote": "Body style 5-door SUV"
+    }
+   ],
+   "seating": {
+    "options": [
+     5
+    ],
+    "src": "jc",
+    "quote": "乗車定員 5名"
+   },
+   "drivetrains": [
+    {
+     "value": "FWD",
+     "markets": [
+      "JP"
+     ],
+     "src": "jc",
+     "quote": "駆動方式 前輪駆動 四輪駆動（i-ACTIV AWD）"
+    },
+    {
+     "value": "AWD",
+     "system": "i-ACTIV AWD",
+     "markets": [
+      "JP"
+     ],
+     "src": "jc",
+     "quote": "駆動方式 前輪駆動 四輪駆動（i-ACTIV AWD）"
+    },
+    {
+     "value": "AWD",
+     "system": "i-Activ AWD (standard from 2022 model year)",
+     "markets": [
+      "US"
+     ],
+     "src": "mus210914",
+     "quote": "Mazda will make i-Activ all-wheel drive (AWD) standard across the entire CX lineup in the U.S. market, starting with the 2022 model year."
+    }
+   ],
+   "dimensions": [
+    {
+     "id": "d3",
+     "market": "JP",
+     "unit": "mm",
+     "length": 4575,
+     "width": 1845,
+     "height": 1690,
+     "wheelbase": 2700,
+     "src": "jc",
+     "quotes": [
+      "ホイールベース 2,700mm 全長 4,575mm 全幅 1,845mm 全高 1,690mm"
+     ]
+    },
+    {
+     "id": "d2",
+     "market": "unstated",
+     "unit": "mm",
+     "length": 4550,
+     "width": 1840,
+     "wheelbase": 2700,
+     "src": "wc",
+     "quotes": [
+      "Wheelbase 2,700 mm (106.3 in) Length 4,550 mm (179.1 in) Width 1,840 mm (72.4 in)"
+     ]
+    }
+   ],
+   "cargo": [
+    {
+     "id": "k1",
+     "market": "JP",
+     "version": "with sub-trunk",
+     "behind": "2nd row",
+     "value": 505,
+     "unit": "L",
+     "standard": "DIN",
+     "src": "mz161215",
+     "quote": "The 505-liter (DIN, with subtrunk) cargo area"
+    }
+   ],
+   "powertrains": [
+    {
+     "id": "p1",
+     "name": "2.0 SKYACTIV-G",
+     "market": "EU",
+     "fuel": "petrol",
+     "engine": "2.0 L SKYACTIV-G I4",
+     "displacement": 1998,
+     "power": {
+      "value": 121,
+      "unit": "kW"
+     },
+     "torque": {
+      "value": 210,
+      "unit": "Nm"
+     },
+     "drivetrain": "FWD",
+     "src": "dc",
+     "quotes": [
+      "2.0 SKYACTIV-G",
+      "1998 cm³",
+      "121 kW (165 PS)",
+      "210 Nm"
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "2.5 SKYACTIV-G",
+     "market": "EU",
+     "fuel": "petrol",
+     "engine": "2.5 L SKYACTIV-G I4, cylinder deactivation",
+     "displacement": 2488,
+     "power": {
+      "value": 143,
+      "unit": "kW"
+     },
+     "torque": {
+      "value": 258,
+      "unit": "Nm"
+     },
+     "drivetrain": "AWD",
+     "src": "dc",
+     "quotes": [
+      "Der 2,5-Liter-Ottomotor mit Zylinderabschaltung ist seit September 2017 erhältlich.",
+      "2488 cm³",
+      "143 kW (194 PS)",
+      "258 Nm"
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "2.0 e-SKYACTIV-G (M Hybrid)",
+     "market": "EU",
+     "fuel": "mild hybrid",
+     "years": "from 2023 model year",
+     "engine": "2.0 L SKYACTIV-G I4, 24 V mild hybrid, cylinder deactivation",
+     "power": {
+      "value": 121,
+      "unit": "kW"
+     },
+     "src": "dc",
+     "quotes": [
+      "Die beiden Vierzylinder-Ottomotoren haben seitdem eine 24-Volt-Mildhybridisierung.",
+      "Der Zweiliter-Ottomotor mit 121 kW (165 PS) hat nun eine Zylinderabschaltung"
+     ]
+    },
+    {
+     "id": "p4",
+     "name": "2.2 SKYACTIV-D 150",
+     "market": "EU",
+     "fuel": "diesel",
+     "engine": "2.2 L SKYACTIV-D twin-turbo diesel I4",
+     "displacement": 2191,
+     "power": {
+      "value": 110,
+      "unit": "kW"
+     },
+     "torque": {
+      "value": 380,
+      "unit": "Nm"
+     },
+     "src": "dc",
+     "quotes": [
+      "2.2 SKYACTIV-D",
+      "2191 cm³",
+      "110 kW (150 PS)",
+      "380 Nm"
+     ]
+    },
+    {
+     "id": "p5",
+     "name": "2.2 SKYACTIV-D 175",
+     "market": "EU",
+     "fuel": "diesel",
+     "engine": "2.2 L SKYACTIV-D twin-turbo diesel I4",
+     "displacement": 2191,
+     "power": {
+      "value": 129,
+      "unit": "kW"
+     },
+     "torque": {
+      "value": 420,
+      "unit": "Nm"
+     },
+     "src": "dc",
+     "quotes": [
+      "2.2 SKYACTIV-D AWD",
+      "2191 cm³",
+      "129 kW (175 PS)",
+      "420 Nm"
+     ]
+    },
+    {
+     "id": "p6",
+     "name": "2.2 SKYACTIV-D 184",
+     "market": "EU",
+     "fuel": "diesel",
+     "engine": "2.2 L SKYACTIV-D twin-turbo diesel I4",
+     "displacement": 2191,
+     "power": {
+      "value": 135,
+      "unit": "kW"
+     },
+     "torque": {
+      "value": 445,
+      "unit": "Nm"
+     },
+     "src": "dc",
+     "quotes": [
+      "2.2 SKYACTIV-D AWD",
+      "2191 cm³",
+      "135 kW (184 PS)",
+      "445 Nm"
+     ]
+    },
+    {
+     "id": "p7",
+     "name": "25T (SKYACTIV-G 2.5T)",
+     "market": "JP",
+     "fuel": "petrol",
+     "years": "from October 2018",
+     "engine": "2.5 L SKYACTIV-G 2.5T (PY-VPTS) turbo I4",
+     "power": {
+      "value": 169,
+      "unit": "kW"
+     },
+     "src": "jc",
+     "quotes": [
+      "2.5L直列4気筒直噴ガソリンターボエンジン「SKYACTIV-G 2.5T」（PY-VPTS型）を日本向けに初採用した「25T L Package」を追加。",
+      "最高出力は+29kW（+40PS）の169kW（230PS）"
+     ]
+    },
+    {
+     "id": "p8",
+     "name": "Skyactiv-G 2.5 Turbo",
+     "market": "US",
+     "fuel": "petrol",
+     "years": "2019–2021 model years",
+     "engine": "2.5 L Skyactiv-G turbo I4",
+     "power": {
+      "value": 250,
+      "unit": "hp"
+     },
+     "src": "wc",
+     "quotes": [
+      "In November 2018, Mazda added a new turbocharged petrol engine option from the CX-9 for the 2019 model year CX-5. It is a 2.5-litre Skyactiv-G turbocharged four-cylinder unit which produces 250 horsepower (190 kW; 250 PS) at 5,000 rpm on 93 AKI octane fuel"
+     ]
+    },
+    {
+     "id": "p9",
+     "name": "Skyactiv-G 2.5 Turbo",
+     "market": "US",
+     "fuel": "petrol",
+     "years": "from 2022 model year",
+     "engine": "2.5 L Skyactiv-G turbo I4",
+     "power": {
+      "value": 256,
+      "unit": "hp"
+     },
+     "drivetrain": "AWD",
+     "src": "wc",
+     "quotes": [
+      "All models became equipped with standard all-wheel drive and horsepower for the turbo engine was increased from 250 to 256 horsepower (186 to 191 kW; 253 to 260 PS) while using 93 octane fuel."
+     ]
+    },
+    {
+     "id": "p10",
+     "name": "Skyactiv-G 2.5",
+     "market": "US",
+     "fuel": "petrol",
+     "years": "2017 model year (only engine)",
+     "engine": "2.5 L Skyactiv-G DOHC I4",
+     "src": "wc",
+     "quotes": [
+      "The 2.5-litre Skyactiv-G 16-valve DOHC 4-cylinder engine with VVT was the only choice offered for the 2017 model year."
+     ]
+    }
+   ],
+   "changes": [
+    {
+     "id": "c1",
+     "topic": "dimensions",
+     "text": "Front and rear track widened by 10 mm.",
+     "src": "mz161215",
+     "quote": "increasing both the front and rear track width by 10 mm over the previous model"
+    },
+    {
+     "id": "c2",
+     "topic": "chassis",
+     "text": "Torsional rigidity improved by 15.5 percent.",
+     "src": "mz161215",
+     "quote": "Torsional rigidity is improved 15.5 percent over previous model"
+    },
+    {
+     "id": "c3",
+     "topic": "other",
+     "text": "Cabin noise at a given speed matches the previous model at about 20 km/h slower.",
+     "src": "mz161215",
+     "quote": "At any given speed, noise levels in the cabin of the all-new CX-5 are equivalent to those at about 20 km/h slower in the previous model."
+    },
+    {
+     "id": "c4",
+     "topic": "technology",
+     "text": "G-Vectoring Control fitted as standard across grades.",
+     "src": "mz161215",
+     "quote": "G-Vectoring Control, the first technology in the SKYACTIV-VEHICLE DYNAMICS series, is standard equipment across model grades."
+    },
+    {
+     "id": "c5",
+     "topic": "interior",
+     "text": "Shift lever placed 60 mm higher; rear seatback recline increased by 2 degrees.",
+     "src": "mz161215",
+     "quote": "The shift lever is positioned 60 mm higher than in the previous model"
+    },
+    {
+     "id": "c6",
+     "topic": "design",
+     "text": "Aerodynamic drag reduced by 6 percent.",
+     "src": "dc",
+     "quote": "Ihr Luftwiderstand wurde um 6 % reduziert"
+    }
+   ],
+   "revisions": [
+    {
+     "id": "r1",
+     "slug": "2021-facelift",
+     "kind": "facelift",
+     "name": "Facelift (2022 model year)",
+     "dates": {
+      "revealed": {
+       "value": "2021-09-14",
+       "src": "mus210914",
+       "quote": "IRVINE, Calif., Sept. 14, 2021 /PRNewswire/ -- Mazda North America Operations announces major updates to the brand's best-selling vehicle in the U.S., Mazda CX-5."
+      }
+     },
+     "changes": [
+      {
+       "id": "r1c1",
+       "topic": "design",
+       "text": "New signature wing extending from the grille, with a three-dimensional grille texture replacing the mesh.",
+       "src": "mus210914",
+       "quote": "The front fascia adopts a new signature wing that extends outward from the front grille, which is also updated with a three-dimensional texture that replaces the outgoing mesh surface."
+      },
+      {
+       "id": "r1c2",
+       "topic": "design",
+       "text": "Redesigned headlights and tail lights, each with a pair of horizontally spaced rectangular LED lights.",
+       "src": "mus210914",
+       "quote": "The headlights and taillights receive significant design changes with each lamp featuring a pair of horizontally spaced, rectangular LED lights"
+      },
+      {
+       "id": "r1c3",
+       "topic": "technology",
+       "text": "Mazda intelligent Drive Select (Mi-Drive) drive modes introduced.",
+       "src": "mus210914",
+       "quote": "The 2022 CX-5 introduces Mazda intelligent Drive Select (Mi-Drive)"
+      },
+      {
+       "id": "r1c4",
+       "topic": "chassis",
+       "text": "Suspension damping structure and frame rigidity improved.",
+       "src": "mus210914",
+       "quote": "Updates to the suspension include improvements to the dampening control structure and increased frame rigidity"
+      },
+      {
+       "id": "r1c5",
+       "topic": "drivetrain",
+       "text": "All-wheel drive made standard in the US.",
+       "src": "mus210914",
+       "quote": "Mazda will make i-Activ all-wheel drive (AWD) standard across the entire CX lineup in the U.S. market, starting with the 2022 model year."
+      }
+     ]
+    }
+   ],
+   "commons": {
+    "generation": "Category:Mazda CX-5 (KF)",
+    "revisions": {
+     "r1": "Category:Mazda CX-5 (KF, 2021)"
+    }
+   },
+   "notes": [
+    "Dimensions differ by source: Japanese Wikipedia (Japanese market) 4,575 × 1,845 × 1,690 mm, wheelbase 2,700 mm; English Wikipedia 4,550 mm long, 1,840 mm wide (market not stated). No readable Mazda dimension sheet was found for the KF.",
+    "The 2021 facelift went on sale in Japan in December 2021 (Japanese Wikipedia: announced 8 November 2021) and is the 2022 model year in the US.",
+    "In the US a 2.2 Skyactiv-D diesel was sold only for the 2019 model year (Signature trim); no figures are recorded for it.",
+    "European engine figures come from German Wikipedia's specification table (column-matched) and should be double-checked. In Europe both petrol engines gained 24 V mild hybrid (M Hybrid) for the 2023 model year.",
+    "English Wikipedia gives production as November 2016 – 2025; Japanese Wikipedia lists Japanese sales running into 2026."
+   ]
+  },
+  {
+   "id": "mazda-cx-5-km",
+   "slug": "km",
+   "ordinal": 3,
+   "lines": [
+    "cx-5"
+   ],
+   "name": "Third generation",
+   "codes": [
+    {
+     "value": "KM",
+     "kind": "model code",
+     "src": "wc",
+     "quote": "Model code KM"
+    },
+    {
+     "value": "KMYSDP",
+     "kind": "Japanese type designation",
+     "src": "jc",
+     "quote": "KMYSDP型"
+    }
+   ],
+   "dates": {
+    "revealed": {
+     "value": "2025-07-10",
+     "event": "European debut",
+     "src": "mz250710",
+     "quote": "unveiled the all-new MAZDA CX-5 crossover SUV on July 10, 2025"
+    },
+    "productionStart": {
+     "value": "2025-10",
+     "src": "dc",
+     "quote": "Die Produktion begann im Oktober 2025, seit Dezember 2025 wird der Wagen verkauft."
+    },
+    "salesStart": [
+     {
+      "value": "2025-12",
+      "market": "EU",
+      "src": "dc",
+      "quote": "Die Produktion begann im Oktober 2025, seit Dezember 2025 wird der Wagen verkauft."
+     },
+     {
+      "value": "2026-05-21",
+      "market": "JP",
+      "src": "jc",
+      "quote": "販売期間 2026年5月21日 -"
+     }
+    ],
+    "modelYears": [
+     {
+      "market": "US",
+      "from": 2026,
+      "src": "mus250710",
+      "quote": "Mazda North American Operations today debuts the all-new 2026 CX-5."
+     }
+    ]
+   },
+   "ongoing": true,
+   "bodyStyles": [
+    {
+     "id": "b1",
+     "value": "5-door SUV",
+     "markets": [
+      "global"
+     ],
+     "src": "jc",
+     "quote": "5ドア クロスオーバーSUV"
+    }
+   ],
+   "seating": {
+    "options": [
+     5
+    ],
+    "src": "mz250710",
+    "quote": "Seating capacity 5"
+   },
+   "drivetrains": [
+    {
+     "value": "AWD",
+     "system": "i-Activ AWD",
+     "markets": [
+      "US"
+     ],
+     "src": "mus260113",
+     "quote": "paired to a 6-speed automatic transmission and standard i-Activ all-wheel drive (AWD)"
+    },
+    {
+     "value": "FWD",
+     "markets": [
+      "EU"
+     ],
+     "src": "dc",
+     "quote": "Zunächst wird es den neuen CX-5 ausschließlich mit einem 2,5-Liter-Mildhybrid und Vorder- oder Allradantrieb geben."
+    },
+    {
+     "value": "AWD",
+     "markets": [
+      "EU"
+     ],
+     "src": "dc",
+     "quote": "Zunächst wird es den neuen CX-5 ausschließlich mit einem 2,5-Liter-Mildhybrid und Vorder- oder Allradantrieb geben."
+    }
+   ],
+   "dimensions": [
+    {
+     "id": "d1",
+     "market": "EU",
+     "unit": "mm",
+     "length": 4690,
+     "width": 1860,
+     "height": 1695,
+     "src": "mz250710",
+     "quotes": [
+      "Overall dimensions (length/width/height) 4,690mm/1,860mm/1,695mm"
+     ]
+    },
+    {
+     "id": "d2",
+     "market": "AU",
+     "unit": "mm",
+     "length": 4690,
+     "width": 1860,
+     "height": 1695,
+     "src": "mau250710",
+     "quotes": [
+      "External dimensions (overall length/width/height): 4,690mm/1,860mm/1,695mm"
+     ]
+    },
+    {
+     "id": "d3",
+     "market": "JP",
+     "unit": "mm",
+     "length": 4690,
+     "width": 1860,
+     "height": 1695,
+     "wheelbase": 2815,
+     "src": "jc",
+     "quotes": [
+      "ホイールベース 2,815 mm 全長 4,690 mm 全幅 1,860 mm 全高 1,695 mm"
+     ]
+    }
+   ],
+   "powertrains": [
+    {
+     "id": "p1",
+     "name": "e-SKYACTIV G 2.5 (M Hybrid)",
+     "market": "EU",
+     "fuel": "mild hybrid",
+     "engine": "2.5 L SKYACTIV-G I4 with Mazda M Hybrid",
+     "displacement": 2488,
+     "power": {
+      "value": 104,
+      "unit": "kW"
+     },
+     "torque": {
+      "value": 238,
+      "unit": "Nm"
+     },
+     "transmission": "6-speed automatic",
+     "src": "dc",
+     "quotes": [
+      "2.5 SKYACTIV-G 141",
+      "2488 cm³",
+      "104 kW (141 PS)",
+      "238 Nm",
+      "ausschließlich mit einem 2,5-Liter-Mildhybrid"
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "SkyActiv-G 2.5",
+     "market": "US",
+     "fuel": "petrol",
+     "engine": "2.5 L SkyActiv-G I4",
+     "cylinders": 4,
+     "power": {
+      "value": 187,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 186,
+      "unit": "lb-ft"
+     },
+     "transmission": "6-speed automatic",
+     "drivetrain": "AWD",
+     "src": "mus260113",
+     "quotes": [
+      "SkyActiv-G 2.5L inline four-cylinder engine, which produces 187 horsepower and 186 lb-ft of torque, and is paired to a 6-speed automatic transmission and standard i-Activ all-wheel drive (AWD)"
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "SkyActiv-G 2.5",
+     "market": "AU",
+     "fuel": "petrol",
+     "engine": "2.5 L SkyActiv-G I4 (development target figures)",
+     "power": {
+      "value": 132,
+      "unit": "kW"
+     },
+     "torque": {
+      "value": 242,
+      "unit": "Nm"
+     },
+     "transmission": "6-speed automatic",
+     "drivetrain": "AWD",
+     "src": "mau250710",
+     "quotes": [
+      "The all-new Mazda CX-5 will launch with a 2.5-litre SkyActiv-G four-cylinder engine which produces 132kW and 242Nm of torque*. This engine is paired with a 6-speed automatic transmission and standard i-Activ AWD.",
+      "*These specifications are vehicle development targets and are subject to change."
+     ]
+    },
+    {
+     "id": "p4",
+     "name": "e-SKYACTIV G 2.5 (PY-VPH)",
+     "market": "JP",
+     "fuel": "mild hybrid",
+     "engine": "2.5 L PY-VPH direct-injection I4 with M Hybrid",
+     "src": "jc",
+     "quotes": [
+      "新開発の2.5L直噴ガソリンエンジン「PY-VPH型」に一本化",
+      "「e-SKYACTIV G 2.5」として日本仕様のマツダ車で初導入された"
+     ]
+    }
+   ],
+   "changes": [
+    {
+     "id": "c1",
+     "topic": "dimensions",
+     "text": "115 mm longer, with a 115 mm longer wheelbase, and 15 mm wider.",
+     "src": "mau250710",
+     "quote": "The all-new CX-5 is 115mm longer with a 115mm longer wheelbase, while also being 15mm wider than the previous model."
+    },
+    {
+     "id": "c2",
+     "topic": "dimensions",
+     "text": "Cargo area almost 50 mm longer with an 18 mm lower lift-in height.",
+     "src": "mau250710",
+     "quote": "rear cargo area, which is now almost 50mm longer, with a lower lift-in height that drops 18mm compared to its predecessor"
+    },
+    {
+     "id": "c3",
+     "topic": "powertrain",
+     "text": "The 2.0 petrol, turbo petrol and diesel engines were dropped; a single 2.5-litre petrol remains.",
+     "src": "wc",
+     "quote": "Unlike the previous model, the third-generation CX-5 is not available with the 2.0 Skyactiv-G petrol, turbocharged engines and diesel engines."
+    },
+    {
+     "id": "c4",
+     "topic": "technology",
+     "text": "Available 15.6-inch touchscreen, the largest offered in a Mazda.",
+     "src": "mau250710",
+     "quote": "The all-new Mazda CX-5 features a new available 15.6-inch integrated touchscreen display, the largest ever offered on a Mazda vehicle."
+    },
+    {
+     "id": "c5",
+     "topic": "technology",
+     "text": "Infotainment with Google built-in.",
+     "src": "mus250710",
+     "quote": "This system comes with Google built-in"
+    },
+    {
+     "id": "c6",
+     "topic": "design",
+     "text": "\"MAZDA\" lettering replaces the Mazda badge at the rear.",
+     "src": "mau250710",
+     "quote": "bold “MAZDA” lettering replaces the traditional Mazda badge for an even greater visual impact"
+    }
+   ],
+   "commons": {
+    "generation": "Category:Mazda CX-5 (KM)"
+   },
+   "notes": [
+    "Model code: English and Japanese Wikipedia give KM (Japanese type KMYSDP); German Wikipedia gives KI.",
+    "Wheelbase increase: Mazda Australia states 115 mm (consistent with 2,815 mm vs 2,700 mm); English Wikipedia says 75 mm. Mazda's figure is used.",
+    "US torque: the July 2025 US reveal release says 185 lb-ft, the January 2026 US pricing release 186 lb-ft; the later figure is recorded. Mazda Australia's 132 kW / 242 Nm are labelled development targets. Outputs differ by market (Mazda: 'Performance values vary by market').",
+    "A Skyactiv-Z hybrid is announced for 2027 (Mazda) and is not recorded yet. US sales were announced for early 2026 but no exact US sales date was found.",
+    "Mazda gives length/width/height only (EU and AU records); the 2,815 mm wheelbase is from Japanese Wikipedia (record d3)."
+   ]
+  }
+ ]
+}
