@@ -146,6 +146,7 @@ const saveBtn = (type, id, name, url) => `<button type="button" class="save-btn"
 const compareBtn = g => `<button type="button" class="compare-btn" data-compare="${esc(g.id)}" data-name="${esc(genTitle(g.family, g))}" aria-pressed="false">+ Compare</button>`;
 const fixLink = (target, label = 'Report a correction') => `<a class="fix-link" href="/suggest/?type=correction&amp;target=${encodeURIComponent(target)}" rel="nofollow">${label}</a>`;
 const notDoc = '<span class="nd">Not documented here</span>';
+const mk = m => { const s = MARKET_LABEL[m] || m || ''; return s.charAt(0).toUpperCase() + s.slice(1); };
 
 // ---------- family timeline ----------
 function timeline(db, fam) {
@@ -195,7 +196,7 @@ function dimsTable(refs, g) {
   const f = g.family;
   const cell = (d, k) => d[k] != null ? esc(fmtLength(d[k], d.unit)) : '<span class="nd">—</span>';
   return `<div class="table-wrap"><table class="spec"><thead><tr><th scope="col">Market</th><th scope="col">Version</th><th scope="col">Length</th><th scope="col">Width</th><th scope="col">Height</th><th scope="col">Wheelbase</th><th scope="col"><span class="sr">Source</span></th></tr></thead><tbody>
-${g.dimensions.map(d => `<tr id="${g.slug}-${d.id}"><td>${esc(MARKET_LABEL[d.market] || d.market)}</td><td>${esc(d.version || '—')}</td><td>${cell(d, 'length')}</td><td>${cell(d, 'width')}</td><td>${cell(d, 'height')}</td><td>${cell(d, 'wheelbase')}</td><td>${refs.ref(f, d)}</td></tr>`).join('')}
+${g.dimensions.map(d => `<tr id="${g.slug}-${d.id}"><td>${esc(mk(d.market))}</td><td>${esc(d.version || '—')}</td><td>${cell(d, 'length')}</td><td>${cell(d, 'width')}</td><td>${cell(d, 'height')}</td><td>${cell(d, 'wheelbase')}</td><td>${refs.ref(f, d)}</td></tr>`).join('')}
 </tbody></table></div><p class="hint">Figures are as published by the source for that market and version; widths usually exclude mirrors. Conversions in brackets are ours.</p>`;
 }
 function cargoTable(refs, g) {
@@ -203,14 +204,14 @@ function cargoTable(refs, g) {
   const f = g.family;
   const stds = [...new Set(g.cargo.map(k => k.standard))];
   return `<h3>Luggage capacity</h3><div class="table-wrap"><table class="spec"><thead><tr><th scope="col">Market</th><th scope="col">Version</th><th scope="col">Measured behind</th><th scope="col">Volume</th><th scope="col">Method</th><th scope="col"><span class="sr">Source</span></th></tr></thead><tbody>
-${g.cargo.map(k => `<tr><td>${esc(MARKET_LABEL[k.market] || k.market)}</td><td>${esc(k.version || '—')}</td><td>${esc(k.behind === '1st row' ? '1st row (rear seats folded)' : k.behind)}</td><td>${esc(fmtCargo(k))}</td><td>${esc(k.standard)}</td><td>${refs.ref(f, k)}</td></tr>`).join('')}
+${g.cargo.map(k => `<tr><td>${esc(mk(k.market))}</td><td>${esc(k.version || '—')}</td><td>${esc(k.behind === '1st row' ? '1st row (rear seats folded)' : k.behind)}</td><td>${esc(fmtCargo(k))}</td><td>${esc(k.standard)}</td><td>${refs.ref(f, k)}</td></tr>`).join('')}
 </tbody></table></div><p class="hint">${stds.map(s => esc(STANDARD_HELP[s] || '')).join(' ')} Volumes measured by different methods are not comparable.</p>`;
 }
 function powertrainTable(refs, g) {
   if (!g.powertrains?.length) return `<p class="nd-block">No powertrain details documented here yet.</p>`;
   const f = g.family;
   return `<div class="table-wrap"><table class="spec pt"><thead><tr><th scope="col">Version</th><th scope="col">Market</th><th scope="col">Type</th><th scope="col">Engine / motor</th><th scope="col">Power</th><th scope="col">Torque</th><th scope="col">Transmission</th><th scope="col">Drive</th><th scope="col">Years</th><th scope="col"><span class="sr">Source</span></th></tr></thead><tbody>
-${g.powertrains.map(p => `<tr data-fuel="${esc(p.fuel)}"><td>${esc(p.name || '—')}</td><td>${esc(MARKET_LABEL[p.market] || p.market)}</td><td>${esc(FUEL_LABEL[p.fuel] || p.fuel)}</td><td>${esc(p.engine || (p.displacement ? num(p.displacement) + ' cc' : '—'))}</td><td>${esc(fmtPower(p.power) || '—')}</td><td>${esc(fmtTorque(p.torque) || '—')}</td><td>${esc(p.transmission || '—')}</td><td>${esc(p.drivetrain || '—')}</td><td>${esc(p.years || '—')}</td><td>${refs.ref(f, p)}</td></tr>`).join('')}
+${g.powertrains.map(p => `<tr data-fuel="${esc(p.fuel)}"><td>${esc(p.name || '—')}</td><td>${esc(mk(p.market))}</td><td>${esc(FUEL_LABEL[p.fuel] || p.fuel)}</td><td>${esc(p.engine || (p.displacement ? num(p.displacement) + ' cc' : '—'))}</td><td>${esc(fmtPower(p.power) || '—')}</td><td>${esc(fmtTorque(p.torque) || '—')}</td><td>${esc(p.transmission || '—')}</td><td>${esc(p.drivetrain || '—')}</td><td>${esc(p.years || '—')}</td><td>${refs.ref(f, p)}</td></tr>`).join('')}
 </tbody></table></div><p class="hint">Power is shown in the unit the source uses first (kW, metric PS or SAE hp), with our conversion in brackets. A blank cell means the source does not state it.</p>`;
 }
 /** Sourced changes of a generation relative to one predecessor (items with "vs" name the predecessor they compare with). */

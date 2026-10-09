@@ -464,7 +464,15 @@
           ]
         }
       ],
-      "commons": {},
+      "commons": {
+        "generation": "Category:Volkswagen Tiguan I",
+        "revisions": {
+          "r1": "Category:Volkswagen Tiguan (2011)"
+        },
+        "bodyStyles": {
+          "b2": "Category:Volkswagen Tiguan (I, China)"
+        }
+      },
       "notes": [
         "Production in Europe ended in 2018; in China the first generation was built until 2020 and sold as the Tiguan Silk Road alongside the second generation (Wikipedia).",
         "In North America the first generation covered model years 2009–2016, and was sold on for 2017–2018 as the Tiguan Limited alongside the second generation.",
@@ -1191,7 +1199,16 @@
           ]
         }
       ],
-      "commons": {},
+      "commons": {
+        "generation": "Category:Volkswagen Tiguan II",
+        "revisions": {
+          "r1": "Category:Volkswagen Tiguan (2020–2024)"
+        },
+        "bodyStyles": {
+          "b2": "Category:Volkswagen Tiguan Allspace",
+          "b3": "Category:Volkswagen Tiguan X"
+        }
+      },
       "notes": [
         "Market distinction: in Europe the long-wheelbase version (codes BW2/BJ2 per Wikipedia) is sold as the Tiguan Allspace beside the normal-wheelbase Tiguan; in North America only the long-wheelbase body was offered and it was called simply 'Tiguan'; in China it was the Tiguan L (built by SAIC-VW), with the Tiguan X coupé SUV derived from it.",
         "Wikipedia also lists a model code 'AX1' next to AD1 without explaining it; it is not recorded here.",
@@ -1200,7 +1217,8 @@
         "Production: Wikipedia gives 2016–2024 for the generation overall; the Chinese Tiguan L continued after that and the Tiguan X was built 2020–2026.",
         "The North American model was updated for the 2022 model year (Wikipedia).",
         "The 2020 facelift of the normal-wheelbase model and the 2021 update of the Tiguan Allspace are recorded as separate revisions; German Wikipedia notes the Allspace kept the old design until 2021.",
-        "Long wheelbase: German Wikipedia says the Tiguan Allspace was first shown at the Detroit show in January 2017 and the European version at Geneva in March 2017, with sales in North America from summer 2017 and in Europe from September 2017; the Chinese Tiguan L was on sale from 18 January 2017."
+        "Long wheelbase: German Wikipedia says the Tiguan Allspace was first shown at the Detroit show in January 2017 and the European version at Geneva in March 2017, with sales in North America from summer 2017 and in Europe from September 2017; the Chinese Tiguan L was on sale from 18 January 2017.",
+        "Commons: no separate category for the 2021 Tiguan Allspace update was checked; the Allspace category covers both versions. Commons also has 'Category:Volkswagen Tiguan L' and 'Category:Volkswagen Tiguan II (North America)' for the long-wheelbase versions in China and North America."
       ]
     },
     {
@@ -1587,7 +1605,12 @@
         }
       ],
       "revisions": [],
-      "commons": {},
+      "commons": {
+        "generation": "Category:Volkswagen Tiguan III",
+        "bodyStyles": {
+          "b2": "Category:Volkswagen Tiguan III (North America)"
+        }
+      },
       "notes": [
         "Volkswagen said in September 2023 that the third generation would roll off the line in Wolfsburg from fall 2023 and reach the market in the first quarter of 2024; Wikipedia gives production from 2024. European pre-sales opened in November 2023 (Volkswagen).",
         "North America: the 2025 'Tiguan' sold in the US and Canada is a long-wheelbase car that Wikipedia describes as nearly identical to the Chinese-market Tayron L rather than the European Tiguan, with two rows of seats only. It is kept in this generation with its own dimensions record; no separate model code or North American press release could be read (media.vw.com renders only with JavaScript). North American model years are not recorded because no readable source states them explicitly.",

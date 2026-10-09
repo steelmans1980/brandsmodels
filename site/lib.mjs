@@ -12,7 +12,7 @@ export const SITE = 'The Car Archive';
 export const MARKET_LABEL = {
   global: 'All markets', EU: 'Europe', UK: 'United Kingdom', US: 'United States', CA: 'Canada', NA: 'North America',
   MX: 'Mexico', BR: 'Brazil', CN: 'China', JP: 'Japan', KR: 'South Korea', IN: 'India', AU: 'Australia', NZ: 'New Zealand',
-  RU: 'Russia', ZA: 'South Africa', ME: 'Middle East', ASEAN: 'Southeast Asia', TW: 'Taiwan', unstated: 'Market not stated by source'
+  RU: 'Russia', ZA: 'South Africa', ME: 'Middle East', ASEAN: 'Southeast Asia', TW: 'Taiwan', unstated: 'market not stated'
 };
 export const FUELS = ['petrol', 'diesel', 'mild hybrid', 'hybrid', 'plug-in hybrid', 'electric', 'hydrogen', 'LPG', 'flex-fuel'];
 export const FUEL_LABEL = { petrol: 'Petrol', diesel: 'Diesel', 'mild hybrid': 'Mild hybrid', hybrid: 'Hybrid', 'plug-in hybrid': 'Plug-in hybrid',
