@@ -471,8 +471,12 @@
         "Facelift timing: German Wikipedia dates the facelift to spring 2009 and English Wikipedia says it was unveiled at Pebble Beach in 2009, but English Wikipedia's section heading reads 'Facelift (2010–2015)'.",
         "The English Wikipedia engine tables label the year column 'Model Year'; whether these are calendar or model years is not stated. Engine figures are not tied to a market by the source.",
         "A 6-speed manual was offered only in Europe with the 3.6 FSI (English Wikipedia). Seating configurations (5, 6, 7) are described in prose but could not be quoted with numerals, so they are not recorded as structured data.",
-        "No Audi press release from 2005–2015 could be read: the old Audi MediaCenter URLs return 404 after the site moved; only Audi's 2024 retrospective covers the first generation."
-      ]
+        "No Audi press release from 2005–2015 could be read: the old Audi MediaCenter URLs return 404 after the site moved; only Audi's 2024 retrospective covers the first generation.",
+        "Wikimedia Commons has no separate category for the 2009 facelift (only 'Category:Audi Q7 V12 TDI' as a subcategory of 'Category:Audi Q7 (4L)')."
+      ],
+      "commons": {
+        "generation": "Category:Audi Q7 (4L)"
+      }
     },
     {
       "id": "audi-q7-4m",
@@ -1156,8 +1160,12 @@
         "Model years 2016–2026 are given by English Wikipedia without a market; North American model years could not be confirmed separately. The first facelift was for the 2020 model year and the second for the 2025 model year (English Wikipedia).",
         "UK sales of the first facelift started in September 2019 (English Wikipedia). US-market SQ7 used a 4.0 V8 petrol (500 hp / 770 Nm) from 2020 rather than the diesel (English Wikipedia).",
         "Audi's 2024 release refers to 'an initial product upgrade in 2019' and 'a second comprehensive upgrade in 2023', although the release itself is dated 30 January 2024 and market launch was in the first quarter of 2024.",
-        "Dimensions are from English Wikipedia without a stated version or market; German Wikipedia gives ranges (length 5052–5072 mm, wheelbase 2994–3001 mm). No Audi dimension figures could be read (Audi spec sheets are PDF-only)."
-      ]
+        "Dimensions are from English Wikipedia without a stated version or market; German Wikipedia gives ranges (length 5052–5072 mm, wheelbase 2994–3001 mm). No Audi dimension figures could be read (Audi spec sheets are PDF-only).",
+        "Wikimedia Commons: 'Category:Audi Q7 (4M) facelift' does not exist; subcategories of 'Category:Audi Q7 (4M)' are 'Audi Q7 e-tron' and 'Audi SQ7', with no category per facelift."
+      ],
+      "commons": {
+        "generation": "Category:Audi Q7 (4M)"
+      }
     },
     {
       "id": "audi-q7-g8",
@@ -1426,7 +1434,10 @@
         "Dimensions come from English Wikipedia only (they look rounded: width 2,010 mm, height 1,800 mm); Audi's release gives no dimensions, and its technical data sheets are PDF-only. Treat them as provisional.",
         "Audi's launch release lists only the 3.0 V6 TDI (180 kW and 220 kW). The 2.9 V6 petrol and SQ7 V8 figures come from English Wikipedia, which cites US-oriented press (Motor1, Autoweek), and says Australia gets a 3.0 V6 diesel; their market is therefore marked 'unstated'.",
         "Seating (5, 6 or 7 seats) is stated in words only, so it is recorded as a change item rather than as structured seating data."
-      ]
+      ],
+      "commons": {
+        "generation": "Category:Audi Q7 (G8)"
+      }
     }
   ]
 }

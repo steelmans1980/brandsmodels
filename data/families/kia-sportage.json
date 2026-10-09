@@ -1,0 +1,1973 @@
+{
+  "id": "kia-sportage",
+  "slug": "sportage",
+  "manufacturer": "kia",
+  "name": "Kia Sportage",
+  "lines": [
+    {
+      "id": "sportage",
+      "name": "Sportage"
+    }
+  ],
+  "sources": {
+    "wp": {
+      "url": "https://en.wikipedia.org/w/index.php?title=Kia_Sportage&oldid=1378656280",
+      "title": "Kia Sportage",
+      "publisher": "Wikipedia",
+      "type": "secondary",
+      "accessed": "2026-10-09"
+    },
+    "kh1": {
+      "url": "https://worldwide.kia.com/en/brand/our-brand/heritage/vehicles/sportage",
+      "title": "Sportage | The World's First Urban SUV, 1993 | Kia Heritage Archive",
+      "publisher": "Kia Corporation",
+      "type": "manufacturer",
+      "accessed": "2026-10-09"
+    },
+    "kh2": {
+      "url": "https://worldwide.kia.com/en/brand/our-brand/heritage/vehicles/sportage-r",
+      "title": "Sportage R | Urban SUV with Kia's Family Look, 2010 | Kia Heritage Archive",
+      "publisher": "Kia Corporation",
+      "type": "manufacturer",
+      "accessed": "2026-10-09"
+    },
+    "kh3": {
+      "url": "https://worldwide.kia.com/en/brand/our-brand/heritage/vehicles/the-all-new-sportage",
+      "title": "The All-New Sportage | Kia Heritage Archive",
+      "publisher": "Kia Corporation",
+      "type": "manufacturer",
+      "accessed": "2026-10-09"
+    },
+    "kh4": {
+      "url": "https://worldwide.kia.com/en/brand/our-brand/heritage/history/chapter-2",
+      "title": "A Renaissance Forged by Challenge and Grit | Kia Heritage Archive",
+      "publisher": "Kia Corporation",
+      "type": "manufacturer",
+      "accessed": "2026-10-09"
+    },
+    "ks": {
+      "url": "https://worldwide.kia.com/en/vehicle/vehicle-stories/shaping-the-sportage",
+      "title": "Shaping the Sportage | The Evolution of an Urban SUV",
+      "publisher": "Kia Corporation",
+      "type": "manufacturer",
+      "accessed": "2026-10-09"
+    },
+    "ke1": {
+      "url": "https://prod2-press.kia.com/eu/en/home/models/sportage/sportage-2018.html",
+      "title": "Sportage (2018 upgrade)",
+      "publisher": "Kia Europe press",
+      "type": "manufacturer",
+      "date": "2018-07",
+      "accessed": "2026-10-09"
+    },
+    "ke2": {
+      "url": "https://prod2-press.kia.com/eu/en/home/media-resouces/press-kits/products/2021/All-new-Kia-Sportage.html",
+      "title": "All-new Kia Sportage – a compelling SUV tailor made for Europe",
+      "publisher": "Kia Europe press",
+      "type": "manufacturer",
+      "date": "2021-12-06",
+      "accessed": "2026-10-09"
+    },
+    "ka": {
+      "url": "https://press.kia.com/at/at/home/press-kits/pressemappe-kia-sportage.html",
+      "title": "Pressemappe Kia Sportage",
+      "publisher": "Kia Austria press",
+      "type": "manufacturer",
+      "accessed": "2026-10-09"
+    }
+  },
+  "generations": [
+    {
+      "id": "kia-sportage-nb",
+      "slug": "nb",
+      "ordinal": 1,
+      "lines": [
+        "sportage"
+      ],
+      "name": "First generation",
+      "codes": [
+        {
+          "value": "NB",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code NB"
+        }
+      ],
+      "names": [
+        {
+          "value": "Wanli Sportage",
+          "markets": [
+            "CN"
+          ],
+          "src": "wp",
+          "quote": "Also called Wanli Sportage (China)"
+        },
+        {
+          "value": "Sportage Grand",
+          "markets": [
+            "unstated"
+          ],
+          "src": "wp",
+          "quote": "This stretched model—mainly sold in Asian markets under the name \"Sportage Grand\", but also as the \"Grand Wagon\""
+        }
+      ],
+      "dates": {
+        "revealed": {
+          "value": "1991-10",
+          "event": "Tokyo Motor Show",
+          "src": "kh4",
+          "quote": "It was unveiled at the Tokyo Motor Show in October 1991"
+        },
+        "productionStart": {
+          "value": "1993-07",
+          "src": "wp",
+          "quote": "Production July 1993–2005"
+        },
+        "productionEnd": {
+          "value": "2005",
+          "src": "wp",
+          "quote": "Production July 1993–2005"
+        },
+        "modelYears": [
+          {
+            "market": "NA",
+            "from": 1995,
+            "to": 2002,
+            "src": "wp",
+            "quote": "1995–2002 (North America)"
+          }
+        ]
+      },
+      "ongoing": false,
+      "platform": {
+        "value": "Mazda Bongo-based, body-on-frame",
+        "src": "wp",
+        "quotes": [
+          "The first-generation Kia Sportage was developed with a Mazda Bongo engineering base platform.",
+          "Chassis Body-on-frame (1993–2004)"
+        ]
+      },
+      "assembly": [
+        {
+          "value": "Hwaseong, South Korea",
+          "src": "wp",
+          "quote": "Assembly South Korea: Hwaseong (Hwaseong Plant)"
+        },
+        {
+          "value": "Osnabrück, Germany (Karmann, 1995–1998)",
+          "src": "wp",
+          "quote": "Germany: Osnabrück (Karmann: 1995–1998)"
+        },
+        {
+          "value": "Kaliningrad, Russia (Avtotor)",
+          "src": "wp",
+          "quote": "Russia: Kaliningrad (Avtotor) Pakistan: Karachi"
+        },
+        {
+          "value": "Karachi, Pakistan",
+          "src": "wp",
+          "quote": "Pakistan: Karachi China: Zhanjiang, Guangdong"
+        },
+        {
+          "value": "Zhanjiang, Guangdong, China",
+          "src": "wp",
+          "quote": "China: Zhanjiang, Guangdong"
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "The Sportage was sold in either a five-door SUV or a three-door soft-top convertible."
+        },
+        {
+          "id": "b2",
+          "value": "3-door soft-top convertible",
+          "markets": [
+            "unstated"
+          ],
+          "src": "wp",
+          "quote": "The Sportage was sold in either a five-door SUV or a three-door soft-top convertible."
+        },
+        {
+          "id": "b3",
+          "value": "5-door extended-length wagon (Sportage Grand / Grand Wagon), 305 mm longer body on the same wheelbase",
+          "markets": [
+            "unstated"
+          ],
+          "src": "wp",
+          "quote": "featured a 305 mm (12.0 in) longer body utilizing the same wheelbase"
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "RWD",
+          "markets": [
+            "unstated"
+          ],
+          "src": "wp",
+          "quote": "Layout Front-engine, rear-wheel drive"
+        },
+        {
+          "value": "AWD",
+          "system": "four-wheel drive",
+          "markets": [
+            "unstated"
+          ],
+          "src": "wp",
+          "quote": "Front-engine, four-wheel drive"
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "unstated",
+          "version": "3-door",
+          "unit": "mm",
+          "length": 4030,
+          "src": "wp",
+          "quotes": [
+            "Length 4,030 mm (158.7 in) (3-door)"
+          ]
+        },
+        {
+          "id": "d2",
+          "market": "unstated",
+          "version": "5-door",
+          "unit": "mm",
+          "length": 4245,
+          "src": "wp",
+          "quotes": [
+            "4,245 mm (167.1 in) (5-door)"
+          ]
+        },
+        {
+          "id": "d3",
+          "market": "unstated",
+          "version": "Grand Wagon (extended)",
+          "unit": "mm",
+          "length": 4440,
+          "src": "wp",
+          "quotes": [
+            "4,440 mm (174.8 in) (Grand Wagon)"
+          ]
+        },
+        {
+          "id": "d4",
+          "market": "unstated",
+          "version": "all versions (Kia figures)",
+          "unit": "mm",
+          "width": 1735,
+          "height": 1655,
+          "src": "kh1",
+          "quotes": [
+            "Width: 1,735 mm Height: 1,655 mm"
+          ]
+        }
+      ],
+      "cargo": [
+        {
+          "id": "k1",
+          "market": "unstated",
+          "version": "standard 5-door",
+          "behind": "unstated",
+          "value": 1570,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "wp",
+          "quote": "an increase in luggage capacity from 1,570 to 2,220 liters"
+        },
+        {
+          "id": "k2",
+          "market": "unstated",
+          "version": "Grand Wagon (extended)",
+          "behind": "unstated",
+          "value": 2220,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "wp",
+          "quote": "an increase in luggage capacity from 1,570 to 2,220 liters"
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "2.0 FE DOHC",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "2.0-litre FE DOHC inline-four",
+          "cylinders": 4,
+          "power": {
+            "value": 95,
+            "unit": "kW"
+          },
+          "src": "wp",
+          "quotes": [
+            "beginning with the 2.0-litre FE DOHC inline-four petrol unit producing 95 kW (128 hp)"
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "2.0 FE DOHC (North America)",
+          "market": "NA",
+          "fuel": "petrol",
+          "engine": "2.0-litre FE DOHC inline-four",
+          "cylinders": 4,
+          "power": {
+            "value": 130,
+            "unit": "hp"
+          },
+          "src": "wp",
+          "quotes": [
+            "In North America, the 2.0-litre FE DOHC engine produced 130 hp (97 kW) and had optional four-wheel drive."
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "2.0 FE SOHC",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2000–",
+          "engine": "2.0-litre FE SOHC inline-four",
+          "cylinders": 4,
+          "power": {
+            "value": 87,
+            "unit": "kW"
+          },
+          "src": "wp",
+          "quotes": [
+            "Diesel-engined models were mostly restricted to European markets, as was the more basic single overhead camshaft (SOHC) version of the 2.0-litre FE petrol inline-four. Delivering 87 kW (117 hp), this petrol engine was available from 2000 onwards."
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "2.0 RF diesel",
+          "market": "EU",
+          "fuel": "diesel",
+          "engine": "2.0-litre RF inline-four diesel",
+          "cylinders": 4,
+          "power": {
+            "value": 61,
+            "unit": "kW"
+          },
+          "src": "wp",
+          "quotes": [
+            "the 2.0-litre RF inline-four diesel rated at 61 kW (82 hp)",
+            "Diesel-engined models were mostly restricted to European markets"
+          ]
+        }
+      ],
+      "notes": [
+        "Kia's heritage archive says the Sportage was unveiled at the Tokyo Motor Show in October 1991; production began in July 1993 (Wikipedia). Kia's heritage pages give the first generation's era as 1993–2004.",
+        "From 1995 to 1998 European-market cars were built by Karmann in Osnabrück, Germany (Wikipedia).",
+        "Width conflict: Wikipedia's infobox gives 1,855 mm, Kia's heritage archive 1,735 mm; the manufacturer figure is recorded. Kia gives overall lengths as a range of 3,760–4,350 mm, which differs from Wikipedia's per-body lengths.",
+        "Wikipedia lists two wheelbases (2,360 mm and 2,650 mm) without saying which body each belongs to, so they are not recorded. The extended 'Grand' version used the same wheelbase as the standard wagon.",
+        "The four-wheel-drive system's type (part-time with low range or not) is not stated in the sources, so it is recorded generically as AWD.",
+        "Wikipedia's engine table also lists a 2.2 diesel (2,184 cc) with figures given only as 'HP'; Kia's heritage page confirms displacements of 1,998–2,184 cc. It is not recorded as a powertrain because its output and market are not reliably sourced.",
+        "Wikipedia mentions facelifts (1998–2001 and 2002–2005 photo captions) but gives no dates or changes; no revision is recorded.",
+        "Wikipedia states the 1997 model year Sportage was the first production vehicle with a knee airbag.",
+        "The generation code: Wikipedia gives NB. No manufacturer source for the code was found."
+      ]
+    },
+    {
+      "id": "kia-sportage-km",
+      "slug": "km",
+      "ordinal": 2,
+      "lines": [
+        "sportage"
+      ],
+      "name": "Second generation",
+      "codes": [
+        {
+          "value": "JE/KM",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code JE/KM"
+        }
+      ],
+      "dates": {
+        "productionStart": {
+          "value": "2004",
+          "src": "wp",
+          "quote": "Production 2004 – February 2010"
+        },
+        "productionEnd": {
+          "value": "2010-02",
+          "src": "wp",
+          "quote": "Production 2004 – February 2010"
+        },
+        "modelYears": [
+          {
+            "market": "unstated",
+            "from": 2005,
+            "to": 2010,
+            "src": "wp",
+            "quote": "Model years 2005–2010"
+          }
+        ]
+      },
+      "ongoing": false,
+      "platform": {
+        "value": "Unibody J platform, shared with the first-generation Hyundai Tucson (Elantra-based)",
+        "src": "wp",
+        "quotes": [
+          "the second-generation Sportage was released as a crossover SUV based on the unibody J platform",
+          "sharing a Hyundai Elantra-based platform with the first-generation Hyundai Tucson"
+        ]
+      },
+      "assembly": [
+        {
+          "value": "Gwangju, South Korea",
+          "src": "wp",
+          "quote": "Assembly South Korea: Gwangju (Gwangju Plant) Slovakia: Žilina (Kia Motors Slovakia) China: Yancheng (DYK)"
+        },
+        {
+          "value": "Žilina, Slovakia (from 2006)",
+          "src": "wp",
+          "quote": "From 2006, it was manufactured at the Žilina Plant in Slovakia."
+        },
+        {
+          "value": "Yancheng, China (DYK)",
+          "src": "wp",
+          "quote": "China: Yancheng (DYK) Malaysia: Gurun (NAM)"
+        },
+        {
+          "value": "Gurun, Malaysia (NAM)",
+          "src": "wp",
+          "quote": "Malaysia: Gurun (NAM) Russia: Kaliningrad (Avtotor) Ukraine: Zaporizhzhia (AvtoZAZ)"
+        },
+        {
+          "value": "Kaliningrad, Russia (Avtotor)",
+          "src": "wp",
+          "quote": "Russia: Kaliningrad (Avtotor) Ukraine: Zaporizhzhia (AvtoZAZ)"
+        },
+        {
+          "value": "Zaporizhzhia, Ukraine (AvtoZAZ)",
+          "src": "wp",
+          "quote": "Ukraine: Zaporizhzhia (AvtoZAZ) Ecuador: Quito (AYMESA)"
+        },
+        {
+          "value": "Quito, Ecuador (AYMESA)",
+          "src": "wp",
+          "quote": "Ecuador: Quito (AYMESA)"
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Body style 5-door SUV"
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "FWD",
+          "markets": [
+            "unstated"
+          ],
+          "src": "wp",
+          "quote": "Layout Front-engine, front-wheel-drive Front-engine, all-wheel drive Related Hyundai Tucson (JM)"
+        },
+        {
+          "value": "AWD",
+          "markets": [
+            "unstated"
+          ],
+          "src": "wp",
+          "quote": "Front-engine, all-wheel drive Related Hyundai Tucson (JM)"
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "unstated",
+          "unit": "mm",
+          "length": 4350,
+          "wheelbase": 2630,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 2,630 mm (103.5 in) Length 4,350 millimetres (171.3 in)"
+          ]
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "2.0 (G4GC)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2004–2010",
+          "engine": "2.0 L Beta II CVVT I4",
+          "displacement": 1975,
+          "cylinders": 4,
+          "power": {
+            "value": 141,
+            "unit": "hp"
+          },
+          "src": "wp",
+          "quotes": [
+            "2.0 ( G4GC ) Archived 2024-01-19 at the Wayback Machine 141 HP 1,975 cc Petrol 2004–2010",
+            "2.0 L Beta II CVVT I4"
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "2.7 V6 (G6BA)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "2.7 L Delta V6",
+          "displacement": 2656,
+          "cylinders": 6,
+          "power": {
+            "value": 173,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 241,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "the available 173 PS (127 kW) V6, with 241 N⋅m (178 lb⋅ft)",
+            "2.7 ( G6BA ) Archived 2024-01-19 at the Wayback Machine 175 HP 2,656 cc Petrol 2004–2010"
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "2.0 CRDi (D4EA, 113 HP)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2005–2010",
+          "engine": "2.0 L D CRDi-VGT I4",
+          "displacement": 1991,
+          "cylinders": 4,
+          "power": {
+            "value": 113,
+            "unit": "hp"
+          },
+          "src": "wp",
+          "quotes": [
+            "2.0 ( D4EA ) Archived 2024-01-19 at the Wayback Machine 113 HP 1,991 cc Diesel 2005–2010",
+            "2.0 L D CRDi-VGT I4"
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "2.0 CRDi 4WD (140 HP)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2006–2010",
+          "engine": "2.0 L D CRDi-VGT I4",
+          "displacement": 1991,
+          "cylinders": 4,
+          "power": {
+            "value": 140,
+            "unit": "hp"
+          },
+          "drivetrain": "AWD",
+          "src": "wp",
+          "quotes": [
+            "2.0 CRDi 4WD 140 HP 1,991 cc Diesel 2006–2010"
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "2.0 CRDi (150 HP)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2008–2010",
+          "engine": "2.0 L D CRDi-VGT I4",
+          "displacement": 1991,
+          "cylinders": 4,
+          "power": {
+            "value": 150,
+            "unit": "hp"
+          },
+          "src": "wp",
+          "quotes": [
+            "2.0 CRDi 150 HP 1,991 cc Diesel 2008–2010"
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "id": "c1",
+          "topic": "chassis",
+          "text": "Moved from a body-on-frame chassis to a unibody crossover platform.",
+          "src": "wp",
+          "quote": "In 2004, the second-generation Sportage was released as a crossover SUV based on the unibody J platform, moving away from the body-on-frame chassis format."
+        },
+        {
+          "id": "c2",
+          "topic": "chassis",
+          "text": "Shared its Elantra-based platform with the first-generation Hyundai Tucson.",
+          "src": "wp",
+          "quote": "sharing a Hyundai Elantra-based platform with the first-generation Hyundai Tucson"
+        },
+        {
+          "id": "c3",
+          "topic": "design",
+          "text": "The boxy body gave way to rounded edges and smoother surfaces.",
+          "src": "ks",
+          "quote": "Shedding its boxy image, the second-generation Sportage embraced rounded edges and smoother surfaces."
+        },
+        {
+          "id": "c4",
+          "topic": "powertrain",
+          "text": "A V6 petrol engine became available.",
+          "src": "wp",
+          "quote": "buyers of the second-generation model were likely to favor the available 173 PS (127 kW) V6"
+        }
+      ],
+      "revisions": [
+        {
+          "id": "r1",
+          "slug": "2008-facelift",
+          "kind": "facelift",
+          "name": "First facelift (2008)",
+          "dates": {
+            "salesStart": {
+              "value": "2008-05",
+              "market": "unstated",
+              "src": "wp",
+              "quote": "A facelift model of the second generation was introduced in May 2008."
+            }
+          }
+        },
+        {
+          "id": "r2",
+          "slug": "2009-facelift",
+          "kind": "facelift",
+          "name": "Second facelift (2009)",
+          "dates": {
+            "salesStart": {
+              "value": "2009",
+              "market": "UK",
+              "src": "wp",
+              "quote": "A second facelift was introduced in the UK in early 2009, only a few months after its first facelift."
+            }
+          }
+        }
+      ],
+      "notes": [
+        "Wikipedia gives the model code as JE/KM; the generation is commonly referred to as KM, which is used for the page slug.",
+        "Wikipedia's engine table gives outputs only as 'HP' without saying whether metric or SAE horsepower; they are recorded as 'hp'. For the V6 the prose gives 173 PS / 241 Nm, while the table gives 175 HP.",
+        "Chinese production (as a continuation model) ran 2006–2015 according to Wikipedia's model-year line.",
+        "Neither facelift's changes are described in the sources; Wikipedia only gives their timing.",
+        "Width (1,820–1,840 mm) and height (1,695–1,730 mm) are given only as ranges by Wikipedia and are not recorded.",
+        "No manufacturer source with specifications was found for this generation; Kia's heritage story only describes it in general terms. kianewscenter.com could not be read (TLS certificate error) and kiamedia.com returns 403."
+      ]
+    },
+    {
+      "id": "kia-sportage-sl",
+      "slug": "sl",
+      "ordinal": 3,
+      "lines": [
+        "sportage"
+      ],
+      "name": "Third generation",
+      "codes": [
+        {
+          "value": "SL",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code SL"
+        }
+      ],
+      "names": [
+        {
+          "value": "Sportage R",
+          "markets": [
+            "CN"
+          ],
+          "src": "wp",
+          "quote": "In China, it was released by Dongfeng Yueda Kia in October 2010 and called the Sportage R"
+        },
+        {
+          "value": "Sportage R",
+          "markets": [
+            "unstated"
+          ],
+          "src": "ks",
+          "quote": "The third generation was redefined as the Sportage R"
+        }
+      ],
+      "dates": {
+        "productionStart": {
+          "value": "2010-03",
+          "src": "wp",
+          "quote": "Production March 2010 – August 2015"
+        },
+        "productionEnd": {
+          "value": "2015-08",
+          "src": "wp",
+          "quote": "Production March 2010 – August 2015"
+        },
+        "salesStart": [
+          {
+            "value": "2010-04",
+            "market": "EU",
+            "src": "wp",
+            "quote": "The SL series Sportage was released to Asian and European markets in April 2010"
+          },
+          {
+            "value": "2010-08",
+            "market": "NA",
+            "src": "wp",
+            "quote": "The SL series Sportage was released to Asian and European markets in April 2010, the North and Central American markets in August 2010"
+          },
+          {
+            "value": "2010-10",
+            "market": "AU",
+            "src": "wp",
+            "quote": "the Australian market in October 2010, for the 2011 model year"
+          },
+          {
+            "value": "2010-10",
+            "market": "CN",
+            "src": "wp",
+            "quote": "In China, it was released by Dongfeng Yueda Kia in October 2010 and called the Sportage R"
+          }
+        ],
+        "modelYears": [
+          {
+            "market": "unstated",
+            "from": 2011,
+            "to": 2016,
+            "src": "wp",
+            "quote": "Model years 2011–2016"
+          }
+        ]
+      },
+      "ongoing": false,
+      "assembly": [
+        {
+          "value": "Gwangju, South Korea",
+          "src": "wp",
+          "quote": "Model years 2011–2016 Assembly South Korea: Gwangju (Gwangju Plant)"
+        },
+        {
+          "value": "Žilina, Slovakia (Kia Motors Slovakia)",
+          "src": "wp",
+          "quote": "Slovakia: Žilina (Kia Motors Slovakia) China: Yancheng (DYK) Malaysia: Gurun (NAM) Russia: Kaliningrad (Avtotor) Designer Peter Schreyer"
+        },
+        {
+          "value": "Yancheng, China (DYK)",
+          "src": "wp",
+          "quote": "China: Yancheng (DYK) Malaysia: Gurun (NAM) Russia: Kaliningrad (Avtotor) Designer Peter Schreyer"
+        },
+        {
+          "value": "Gurun, Malaysia (NAM)",
+          "src": "wp",
+          "quote": "Malaysia: Gurun (NAM) Russia: Kaliningrad (Avtotor) Designer Peter Schreyer"
+        },
+        {
+          "value": "Kaliningrad, Russia (Avtotor)",
+          "src": "wp",
+          "quote": "Russia: Kaliningrad (Avtotor) Designer Peter Schreyer"
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Body style 5-door SUV"
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "FWD",
+          "markets": [
+            "unstated"
+          ],
+          "src": "kh2",
+          "quote": "Drive type: Front-wheel drive All-wheel drive"
+        },
+        {
+          "value": "AWD",
+          "markets": [
+            "unstated"
+          ],
+          "src": "kh2",
+          "quote": "Drive type: Front-wheel drive All-wheel drive"
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "unstated",
+          "version": "Kia figures",
+          "unit": "mm",
+          "width": 1855,
+          "height": 1635,
+          "src": "kh2",
+          "quotes": [
+            "Width: 1,855 mm Height: 1,635 mm"
+          ]
+        },
+        {
+          "id": "d2",
+          "market": "unstated",
+          "unit": "mm",
+          "wheelbase": 2640,
+          "width": 1855,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 2,640 mm (103.9 in) Length 4,440–4,450 mm (174.8–175.2 in) Width 1,855 mm (73.0 in)"
+          ]
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "1.6 GDi (G4FD)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "1.6 L Gamma GDi I4",
+          "displacement": 1591,
+          "cylinders": 4,
+          "power": {
+            "value": 135,
+            "unit": "hp"
+          },
+          "src": "wp",
+          "quotes": [
+            "1.6 ( G4FD ) Archived 2024-01-19 at the Wayback Machine 135 HP 1,591 cc Petrol"
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "2.0 (G4KD)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "2.0 L Theta II MPi I4",
+          "displacement": 1998,
+          "cylinders": 4,
+          "power": {
+            "value": 163,
+            "unit": "hp"
+          },
+          "src": "wp",
+          "quotes": [
+            "2.0 ( G4KD ) Archived 2024-01-19 at the Wayback Machine 163 HP 1,998 cc Petrol"
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "2.0 (G4NC)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2014–",
+          "engine": "2.0 L I4",
+          "displacement": 1998,
+          "cylinders": 4,
+          "power": {
+            "value": 166,
+            "unit": "hp"
+          },
+          "src": "wp",
+          "quotes": [
+            "2.0 ( G4NC ) Archived 2024-01-19 at the Wayback Machine 166 HP 1,998 cc Petrol 2014–present"
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "2.4 (G4KE)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "2.4 L Theta II I4",
+          "displacement": 2359,
+          "cylinders": 4,
+          "power": {
+            "value": 177,
+            "unit": "hp"
+          },
+          "src": "wp",
+          "quotes": [
+            "2.4 ( G4KE ) Archived 2024-01-19 at the Wayback Machine 177 HP 2,359 cc Petrol"
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "2.0 Theta T-GDi",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "2.0-litre Theta T-GDi",
+          "src": "wp",
+          "quotes": [
+            "Two engines were available, a 2.0-litre Hyundai R diesel engine with 184 hp (137 kW), and a 2.0-litre Theta T-GDi petrol engine."
+          ]
+        },
+        {
+          "id": "p6",
+          "name": "2.0 R diesel (184 hp)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "engine": "2.0-litre Hyundai R diesel",
+          "displacement": 1995,
+          "power": {
+            "value": 184,
+            "unit": "hp"
+          },
+          "src": "wp",
+          "quotes": [
+            "Two engines were available, a 2.0-litre Hyundai R diesel engine with 184 hp (137 kW)",
+            "2.0 ( D4HA ) Archived 2024-01-19 at the Wayback Machine 136–184 HP 1,995 cc Diesel"
+          ]
+        },
+        {
+          "id": "p7",
+          "name": "2.0 R diesel (136 HP)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "engine": "2.0-litre R diesel (D4HA)",
+          "displacement": 1995,
+          "power": {
+            "value": 136,
+            "unit": "hp"
+          },
+          "src": "wp",
+          "quotes": [
+            "2.0 ( D4HA ) Archived 2024-01-19 at the Wayback Machine 136–184 HP 1,995 cc Diesel"
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "id": "c1",
+          "topic": "design",
+          "text": "Introduced Kia's Tiger Nose grille, designed under Peter Schreyer.",
+          "src": "ks",
+          "quote": "Under the direction of then-Chief Design Officer Peter Schreyer, the iconic Tiger Nose grille"
+        },
+        {
+          "id": "c2",
+          "topic": "other",
+          "text": "Marketed as the Sportage R in some markets, with R standing for Revolution.",
+          "src": "ks",
+          "quote": "The third generation was redefined as the Sportage R — with the “R” standing for Revolution"
+        },
+        {
+          "id": "c3",
+          "topic": "chassis",
+          "text": "Related to the second-generation Hyundai Tucson (LM).",
+          "src": "wp",
+          "quote": "Related Hyundai Tucson (LM)"
+        }
+      ],
+      "revisions": [
+        {
+          "id": "r1",
+          "slug": "2014-facelift",
+          "kind": "facelift",
+          "name": "Facelift (2014 model year)",
+          "changes": [
+            {
+              "id": "r1c1",
+              "topic": "design",
+              "text": "New grille with a redesigned Kia logo, LED tail lights and new alloy wheels.",
+              "src": "wp",
+              "quote": "The third generation received a facelift for the 2014 model year that included a new grille with a redesigned Kia logo, LED tail lights and redesigned alloy wheels."
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "In China the SL was sold as the Sportage R alongside the previous generation, and was built there until 2018 (Wikipedia).",
+        "Lengths are given as a range (Wikipedia and Kia: 4,440–4,450 mm) and are not recorded as a single value. Height: Kia gives 1,635 mm; Wikipedia gives 1,635–1,645 mm.",
+        "Wikipedia's engine table gives outputs only as 'HP' with no market; recorded as 'hp'. The 2.0 R diesel is listed at 136–184 HP.",
+        "The facelift is dated only by model year (2014) in the sources."
+      ]
+    },
+    {
+      "id": "kia-sportage-ql",
+      "slug": "ql",
+      "ordinal": 4,
+      "lines": [
+        "sportage"
+      ],
+      "name": "Fourth generation",
+      "codes": [
+        {
+          "value": "QL",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code QL"
+        }
+      ],
+      "names": [
+        {
+          "value": "Kia KX5",
+          "markets": [
+            "CN"
+          ],
+          "src": "wp",
+          "quote": "Also called Kia KX5 (China)"
+        }
+      ],
+      "dates": {
+        "revealed": {
+          "value": "2015-09",
+          "event": "Frankfurt Motor Show",
+          "src": "wp",
+          "quote": "Kia unveiled its newly redesigned Sportage at the Frankfurt Motor Show in September 2015"
+        },
+        "productionStart": {
+          "value": "2015-09",
+          "src": "wp",
+          "quote": "Production September 2015 – 2021"
+        },
+        "productionEnd": {
+          "value": "2021",
+          "src": "wp",
+          "quote": "Production September 2015 – 2021"
+        },
+        "modelYears": [
+          {
+            "market": "NA",
+            "from": 2017,
+            "src": "wp",
+            "quote": "brought it to market in 2016 (as a 2017 model in North America)"
+          },
+          {
+            "market": "unstated",
+            "from": 2017,
+            "to": 2022,
+            "src": "wp",
+            "quote": "Model years 2017–2022"
+          }
+        ]
+      },
+      "ongoing": false,
+      "assembly": [
+        {
+          "value": "Gwangju, South Korea",
+          "src": "wp",
+          "quote": "Model years 2017–2022 Assembly South Korea: Gwangju (Gwangju Plant)"
+        },
+        {
+          "value": "Žilina, Slovakia",
+          "src": "ke1",
+          "quote": "The Sportage for Europe is produced at Kia’s manufacturing facility in Žilina, Slovakia."
+        },
+        {
+          "value": "Yancheng, China (DYK)",
+          "src": "wp",
+          "quote": "China: Yancheng (DYK) Malaysia: Gurun (NAM) Russia: Kaliningrad (Avtotor) Pakistan: Karachi (Kia Lucky Motors)"
+        },
+        {
+          "value": "Gurun, Malaysia (NAM)",
+          "src": "wp",
+          "quote": "Malaysia: Gurun (NAM) Russia: Kaliningrad (Avtotor) Pakistan: Karachi (Kia Lucky Motors)"
+        },
+        {
+          "value": "Kaliningrad, Russia (Avtotor)",
+          "src": "wp",
+          "quote": "Russia: Kaliningrad (Avtotor) Pakistan: Karachi (Kia Lucky Motors)"
+        },
+        {
+          "value": "Karachi, Pakistan (Kia Lucky Motors)",
+          "src": "wp",
+          "quote": "Pakistan: Karachi (Kia Lucky Motors) Algeria: Batna (GLOVIZ)"
+        },
+        {
+          "value": "Batna, Algeria (GLOVIZ)",
+          "src": "wp",
+          "quote": "Algeria: Batna (GLOVIZ)"
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Body style 5-door SUV"
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "FWD",
+          "markets": [
+            "unstated"
+          ],
+          "src": "wp",
+          "quote": "Front- (FWD) and all-wheel drive (AWD) configurations are available."
+        },
+        {
+          "value": "AWD",
+          "markets": [
+            "unstated"
+          ],
+          "src": "wp",
+          "quote": "Front- (FWD) and all-wheel drive (AWD) configurations are available."
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "unstated",
+          "unit": "mm",
+          "length": 4480,
+          "width": 1855,
+          "wheelbase": 2670,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 2,670 mm (105.1 in) Length 4,480 mm (176.4 in)",
+            "Width 1,855 mm (73.0 in) Height 1,635–1,645 mm"
+          ]
+        },
+        {
+          "id": "d2",
+          "market": "CN",
+          "version": "Kia KX5",
+          "unit": "mm",
+          "length": 4550,
+          "height": 1655,
+          "src": "wp",
+          "quotes": [
+            "4,550 mm (179.1 in) (China)",
+            "1,655 mm (65.2 in) (China)"
+          ]
+        }
+      ],
+      "cargo": [
+        {
+          "id": "k1",
+          "market": "EU",
+          "behind": "2nd row",
+          "value": 503,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "ka",
+          "quote": "erheblich mehr als beim Vorgänger (max. 503 Liter)"
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "1.6 GDi",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "1.6-litre petrol",
+          "power": {
+            "value": 97,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 161,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "The petrol options are a 1.6-litre, 2.0-litre or 2.4-litre, offering 97 kW (132 PS) and 161 N⋅m (119 lb⋅ft), 120 kW (163 PS) and 200 N⋅m (148 lb⋅ft), and 138 kW (188 PS) and 241 N⋅m (178 lb⋅ft) respectively"
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "2.0 petrol",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "2.0-litre petrol",
+          "power": {
+            "value": 120,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 200,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "The petrol options are a 1.6-litre, 2.0-litre or 2.4-litre, offering 97 kW (132 PS) and 161 N⋅m (119 lb⋅ft), 120 kW (163 PS) and 200 N⋅m (148 lb⋅ft), and 138 kW (188 PS) and 241 N⋅m (178 lb⋅ft) respectively"
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "2.4 petrol",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "2.4-litre petrol",
+          "power": {
+            "value": 138,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 241,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "The petrol options are a 1.6-litre, 2.0-litre or 2.4-litre, offering 97 kW (132 PS) and 161 N⋅m (119 lb⋅ft), 120 kW (163 PS) and 200 N⋅m (148 lb⋅ft), and 138 kW (188 PS) and 241 N⋅m (178 lb⋅ft) respectively"
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "1.6 T-GDi",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "1.6 T-GDi turbo-petrol",
+          "power": {
+            "value": 130,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 265,
+            "unit": "Nm"
+          },
+          "transmission": "optional 7-speed dual-clutch",
+          "src": "wp",
+          "quotes": [
+            "A 130 kW (177 PS) and 265 N⋅m (195 lb⋅ft) 1.6 T-GDi turbo-petrol with an optional seven-speed dual-clutch automatic is also available."
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "2.0 R diesel",
+          "market": "unstated",
+          "fuel": "diesel",
+          "engine": "2.0-litre R-series turbo-diesel",
+          "power": {
+            "value": 135,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 400,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "the diesel is a 2.0-litre, R-series turbo producing 135 kW (184 PS) and 400 N⋅m (295 lb⋅ft)"
+          ]
+        },
+        {
+          "id": "p6",
+          "name": "2.4 (North America)",
+          "market": "NA",
+          "fuel": "petrol",
+          "engine": "naturally aspirated 2.4-litre inline-four",
+          "power": {
+            "value": 181,
+            "unit": "hp"
+          },
+          "torque": {
+            "value": 175,
+            "unit": "lb-ft"
+          },
+          "transmission": "6-speed automatic",
+          "src": "wp",
+          "quotes": [
+            "The 2.4-litre produces 181 hp (135 kW) and 175 lb⋅ft (237 N⋅m)",
+            "Both engines are mated to a six-speed automatic transmission."
+          ]
+        },
+        {
+          "id": "p7",
+          "name": "2.0 turbo (North America)",
+          "market": "NA",
+          "fuel": "petrol",
+          "engine": "turbocharged 2.0-litre inline-four",
+          "power": {
+            "value": 240,
+            "unit": "hp"
+          },
+          "torque": {
+            "value": 260,
+            "unit": "lb-ft"
+          },
+          "transmission": "6-speed automatic",
+          "src": "wp",
+          "quotes": [
+            "the turbocharged engine makes 240 hp (179 kW) and 260 lb⋅ft (353 N⋅m)",
+            "Both engines are mated to a six-speed automatic transmission."
+          ]
+        },
+        {
+          "id": "p8",
+          "name": "2.0 EcoDynamics+ diesel mild hybrid (facelift)",
+          "market": "EU",
+          "fuel": "mild hybrid",
+          "years": "2018–",
+          "engine": "2.0-litre diesel with 48V mild-hybrid",
+          "power": {
+            "value": 185,
+            "unit": "PS"
+          },
+          "src": "ke1",
+          "quotes": [
+            "Revised powertrain line-up includes 185 ps EcoDynamics+ 2.0-litre diesel mild-hybrid"
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "id": "c1",
+          "topic": "design",
+          "text": "Kia said the styling's sharp edges and smooth surfaces were inspired by fighter jets.",
+          "src": "wp",
+          "quote": "The company said the contrasting sharp edges and smooth surfaces were inspired by modern fighter jets."
+        },
+        {
+          "id": "c2",
+          "topic": "design",
+          "text": "A larger-looking body with a bolder grille.",
+          "src": "ks",
+          "quote": "With stronger volume and a bolder grille, it projected an even greater presence."
+        },
+        {
+          "id": "c3",
+          "topic": "powertrain",
+          "text": "A 1.6 T-GDi turbo-petrol with an optional seven-speed dual-clutch automatic was offered.",
+          "src": "wp",
+          "quote": "A 130 kW (177 PS) and 265 N⋅m (195 lb⋅ft) 1.6 T-GDi turbo-petrol with an optional seven-speed dual-clutch automatic is also available."
+        }
+      ],
+      "revisions": [
+        {
+          "id": "r1",
+          "slug": "2018-facelift",
+          "kind": "facelift",
+          "name": "Facelift (2018)",
+          "dates": {
+            "revealed": {
+              "value": "2018-07",
+              "src": "ke1",
+              "quote": "July 2018 – The upgraded 2018 Kia Sportage features a range of enhancements"
+            }
+          },
+          "changes": [
+            {
+              "id": "r1c1",
+              "topic": "design",
+              "text": "Updated exterior and interior design.",
+              "src": "ke1",
+              "quote": "Updated design, inside and out, for Kia’s global and European best-seller"
+            },
+            {
+              "id": "r1c2",
+              "topic": "powertrain",
+              "text": "Kia's first 48V diesel mild-hybrid (EcoDynamics+, 2.0-litre, 185 PS) was added.",
+              "src": "ke1",
+              "quote": "The car’s advanced new EcoDynamics+ 48V diesel mild-hybrid powertrain is the first to be launched as part of Kia’s global powertrain electrification strategy."
+            },
+            {
+              "id": "r1c3",
+              "topic": "powertrain",
+              "text": "A new 1.6-litre U3 diesel was introduced.",
+              "src": "ke1",
+              "quote": "Efficient new 1.6-litre ‘U3’ diesel"
+            },
+            {
+              "id": "r1c4",
+              "topic": "powertrain",
+              "text": "Idle Stop & Go became standard and all petrol engines received particulate filters.",
+              "src": "ke1",
+              "quote": "Idle Stop & Go now standard; all gasoline engines feature particulate filters"
+            },
+            {
+              "id": "r1c5",
+              "topic": "design",
+              "text": "In North America the facelift arrived mid-2019 as an early 2020 model, with new headlights and bumpers.",
+              "src": "wp",
+              "quote": "In North America, the facelift model was introduced mid-2019 as an early 2020 model year. The changes included redesigned headlights and bumpers"
+            }
+          ]
+        },
+        {
+          "id": "r2",
+          "slug": "2019-kx5-facelift-china",
+          "kind": "facelift",
+          "name": "Kia KX5 facelift (China, 2019)",
+          "dates": {
+            "salesStart": {
+              "value": "2019-03",
+              "market": "CN",
+              "src": "wp",
+              "quote": "Available from March 2019, the front fascia was completely restyled with headlamps integrated with the grille"
+            }
+          },
+          "changes": [
+            {
+              "id": "r2c1",
+              "topic": "design",
+              "text": "China-only restyle with headlamps integrated into the grille and a slightly revised rear.",
+              "src": "wp",
+              "quote": "the front fascia was completely restyled with headlamps integrated with the grille and the rear end of the KX5 was also slightly redesigned for the Chinese market"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Length conflict: Wikipedia gives 4,480 mm; Kia Austria's 2021 press kit gives the predecessor of the fifth generation as 4,485 / 1,855 / 1,645 / 2,670 mm (written with dots as thousands separators, so not recorded as a structured value here).",
+        "The 503-litre figure is Kia Austria's 'max. 503 Liter' for the predecessor's luggage space with seats up; the standard is not stated.",
+        "On-sale in Europe for the 2018 facelift: Kia Europe gives Q3 2018. Pakistan production continued 2019–2025 (Wikipedia).",
+        "Wikipedia's powertrain prose does not name markets for the international engines, so they are recorded as 'unstated'."
+      ]
+    },
+    {
+      "id": "kia-sportage-nq5",
+      "slug": "nq5",
+      "ordinal": 5,
+      "lines": [
+        "sportage"
+      ],
+      "name": "Fifth generation",
+      "codes": [
+        {
+          "value": "NQ5",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code NQ5"
+        }
+      ],
+      "dates": {
+        "revealed": {
+          "value": "2021-06-08",
+          "src": "wp",
+          "quote": "The fifth-generation Sportage was unveiled on 8 June 2021, with specifications revealed in July 2021."
+        },
+        "productionStart": {
+          "value": "2021",
+          "src": "wp",
+          "quote": "Production 2021–present"
+        },
+        "salesStart": [
+          {
+            "value": "2021-11-04",
+            "market": "AU",
+            "src": "wp",
+            "quote": "The fifth-generation Sportage was launched in Australia on 4 November 2021"
+          },
+          {
+            "value": "2022-06-08",
+            "market": "TW",
+            "src": "wp",
+            "quote": "The fifth-generation Sportage was launched in Taiwan on 8 June 2022"
+          },
+          {
+            "value": "2022-07-01",
+            "market": "BR",
+            "src": "wp",
+            "quote": "The fifth-generation Sportage in the short-wheelbase version was launched in Brazil on 1 July 2022"
+          },
+          {
+            "value": "2023-03-14",
+            "market": "MX",
+            "src": "wp",
+            "quote": "The fifth-generation Sportage was launched in Mexico on 14 March 2023"
+          }
+        ],
+        "modelYears": [
+          {
+            "market": "NA",
+            "from": 2023,
+            "src": "wp",
+            "quote": "The long-wheelbase, fifth-generation Sportage for United States and Canada was revealed in October 2021 as a 2023 model year."
+          }
+        ]
+      },
+      "ongoing": true,
+      "platform": {
+        "value": "Hyundai-Kia N3",
+        "src": "ke2",
+        "quote": "Developed on a new 'N3' architecture"
+      },
+      "assembly": [
+        {
+          "value": "Gwangju, South Korea",
+          "src": "wp",
+          "quote": "Model years 2023–present Assembly South Korea: Gwangju (Gwangju Plant)"
+        },
+        {
+          "value": "Žilina, Slovakia (Kia Slovakia)",
+          "src": "wp",
+          "quote": "Slovakia: Žilina (Kia Slovakia)"
+        },
+        {
+          "value": "West Point, Georgia, United States (KMMG)",
+          "src": "wp",
+          "quote": "United States: West Point, Georgia (KMMG, 2021–present)"
+        },
+        {
+          "value": "Bryan County, Georgia, United States (HMG Metaplant America, from 2026)",
+          "src": "wp",
+          "quote": "Bryan County, Georgia (HMG Metaplant America, 2026–present)"
+        },
+        {
+          "value": "Yancheng, China (Yueda Kia)",
+          "src": "wp",
+          "quote": "China: Yancheng (Yueda Kia)"
+        },
+        {
+          "value": "Karachi, Pakistan (Kia Lucky Motors)",
+          "src": "wp",
+          "quote": "Pakistan: Karachi (Kia Lucky Motors) Malaysia: Kulim, Kedah"
+        },
+        {
+          "value": "Kulim, Kedah, Malaysia (Inokom)",
+          "src": "wp",
+          "quote": "Locally assembled at the Inokom plant in Kulim, Kedah"
+        },
+        {
+          "value": "Kaliningrad, Russia (Avtotor)",
+          "src": "wp",
+          "quote": "Russia: Kaliningrad (Avtotor) Vietnam: Chu Lai (THACO Kia)"
+        },
+        {
+          "value": "Chu Lai, Vietnam (THACO Kia)",
+          "src": "wp",
+          "quote": "Vietnam: Chu Lai (THACO Kia)"
+        },
+        {
+          "value": "Sreepur Upazila, Gazipur, Bangladesh (Meghna Group)",
+          "src": "wp",
+          "quote": "Bangladesh: Sreepur Upazila, Gazipur (Meghna Group)"
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV, short wheelbase (SWB)",
+          "markets": [
+            "EU"
+          ],
+          "src": "ks",
+          "quote": "Europe and South America received the compact-proportioned SWB, while Korea and North America were offered the more spacious LWB"
+        },
+        {
+          "id": "b2",
+          "value": "5-door SUV, long wheelbase (LWB)",
+          "markets": [
+            "KR",
+            "NA"
+          ],
+          "src": "ks",
+          "quote": "Europe and South America received the compact-proportioned SWB, while Korea and North America were offered the more spacious LWB"
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "FWD",
+          "markets": [
+            "EU"
+          ],
+          "src": "ke2",
+          "quote": "new Sportage is available in either all-wheel drive (AWD) or front-wheel drive (FWD) spec"
+        },
+        {
+          "value": "AWD",
+          "markets": [
+            "EU"
+          ],
+          "src": "ke2",
+          "quote": "new Sportage is available in either all-wheel drive (AWD) or front-wheel drive (FWD) spec"
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "EU",
+          "version": "short wheelbase, pre-facelift",
+          "unit": "mm",
+          "length": 4515,
+          "width": 1865,
+          "height": 1645,
+          "wheelbase": 2680,
+          "src": "ke2",
+          "quotes": [
+            "is underpinned by a compact wheelbase of 2,680mm, a width of 1,865mm, length of 4,515mm and height of 1,645mm"
+          ]
+        },
+        {
+          "id": "d2",
+          "market": "unstated",
+          "version": "long wheelbase",
+          "unit": "mm",
+          "length": 4660,
+          "width": 1865,
+          "wheelbase": 2755,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 2,680 mm (105.5 in) (SWB) 2,755 mm (108.5 in) (LWB) Length 4,515 mm (177.8 in) (SWB) 4,660 mm (183.5 in) (LWB) Width 1,865 mm (73.4 in)"
+          ]
+        },
+        {
+          "id": "d3",
+          "market": "unstated",
+          "version": "Kia heritage archive figures (body not stated)",
+          "unit": "mm",
+          "length": 4685,
+          "width": 1865,
+          "height": 1660,
+          "src": "kh3",
+          "quotes": [
+            "Length: 4,685 mm Width: 1,865 mm Height: 1,660 mm"
+          ]
+        }
+      ],
+      "cargo": [
+        {
+          "id": "k1",
+          "market": "EU",
+          "version": "petrol and diesel, short wheelbase",
+          "behind": "2nd row",
+          "value": 591,
+          "unit": "L",
+          "standard": "VDA",
+          "src": "ke2",
+          "quote": "Luggage capacity is 591 litres (VDA) for the ICE models."
+        },
+        {
+          "id": "k2",
+          "market": "EU",
+          "version": "short wheelbase",
+          "behind": "1st row",
+          "value": 1780,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "ke2",
+          "quote": "the rear seats can fold down in a 40:20:40 split allowing for 1,780 litres of total cargo space"
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "1.6 T-GDI MHEV 150 PS",
+          "market": "EU",
+          "fuel": "mild hybrid",
+          "engine": "1.6-litre T-GDI with 48V mild hybrid",
+          "power": {
+            "value": 150,
+            "unit": "PS"
+          },
+          "transmission": "6-speed iMT or 7-speed dual-clutch",
+          "src": "ke2",
+          "quotes": [
+            "Two power options of the Sportage Gasoline MHEV are available – 150PS and 180PS.",
+            "a 6-speed intelligent manual transmission (iMT) is exclusive to the MHEV models"
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "1.6 T-GDI MHEV 180 PS",
+          "market": "EU",
+          "fuel": "mild hybrid",
+          "engine": "1.6-litre T-GDI with 48V mild hybrid",
+          "power": {
+            "value": 180,
+            "unit": "PS"
+          },
+          "transmission": "6-speed iMT or 7-speed dual-clutch",
+          "src": "ke2",
+          "quotes": [
+            "Two power options of the Sportage Gasoline MHEV are available – 150PS and 180PS.",
+            "a 6-speed intelligent manual transmission (iMT) is exclusive to the MHEV models"
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "1.6 T-GDI Hybrid",
+          "market": "EU",
+          "fuel": "hybrid",
+          "engine": "1.6 T-GDI with 44.2 kW motor and 1.49 kWh battery",
+          "power": {
+            "value": 230,
+            "unit": "PS"
+          },
+          "transmission": "6-speed automatic",
+          "src": "ke2",
+          "quotes": [
+            "For the Sportage Hybrid model, the acclaimed 1.6 T-GDI engine combines with a 44.2kW permanent magnet traction electric motor and a 1.49kWh lithium-ion polymer battery to deliver an efficient and responsive powertrain. Total system power is 230PS.",
+            "Both the Sportage Hybrid and Sportage Plug-in Hybrid models are equipped with the latest-generation six-speed automatic transmission (6AT)."
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "1.6 T-GDI Plug-in Hybrid",
+          "market": "EU",
+          "fuel": "plug-in hybrid",
+          "engine": "1.6 T-GDI with 66.9 kW motor and 13.8 kWh battery",
+          "power": {
+            "value": 265,
+            "unit": "PS"
+          },
+          "transmission": "6-speed automatic",
+          "drivetrain": "AWD",
+          "src": "ke2",
+          "quotes": [
+            "a 66.9kW permanent magnet traction electric motor and a 13.8kWh lithium-ion polymer battery pack. This powertrain combination delivers a total system power output of 265PS, with 180PS originating from the T-GDI engine.",
+            "The Sportage Plug-in Hybrid benefits from AWD technology."
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "1.6 CRDi 115 PS",
+          "market": "EU",
+          "fuel": "diesel",
+          "engine": "1.6-litre diesel",
+          "power": {
+            "value": 115,
+            "unit": "PS"
+          },
+          "src": "ke2",
+          "quotes": [
+            "a highly efficient 1.6-litre clean diesel engine that is available with 115PS or 136PS power outputs"
+          ]
+        },
+        {
+          "id": "p6",
+          "name": "1.6 CRDi MHEV 136 PS",
+          "market": "EU",
+          "fuel": "mild hybrid",
+          "engine": "1.6-litre diesel with 48V mild hybrid",
+          "power": {
+            "value": 136,
+            "unit": "PS"
+          },
+          "src": "ke2",
+          "quotes": [
+            "The 136PS clean diesel model is the second MHEV powertrain available in the Sportage"
+          ]
+        },
+        {
+          "id": "p7",
+          "name": "Smartstream G2.0 MPi",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2021–",
+          "engine": "1,999 cc I4",
+          "displacement": 1999,
+          "cylinders": 4,
+          "power": {
+            "value": 156,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 192,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed manual or 6-speed automatic",
+          "src": "wp",
+          "quotes": [
+            "Smartstream G2.0 MPi 1,999 cc (122.0 cu in) I4 6-speed manual 152 PS (112 kW; 150 hp) @ 6,200 rpm 156 PS (115 kW; 154 hp) @ 6,200 rpm 19.6 kg⋅m (192 N⋅m; 142 lbf⋅ft) @ 4,500 rpm"
+          ]
+        },
+        {
+          "id": "p8",
+          "name": "Smartstream G2.0 T-GDi",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "1,975 cc I4",
+          "displacement": 1975,
+          "cylinders": 4,
+          "power": {
+            "value": 236,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 353,
+            "unit": "Nm"
+          },
+          "transmission": "8-speed automatic",
+          "src": "wp",
+          "quotes": [
+            "Smartstream G2.0 T-GDi 1,975 cc (120.5 cu in) I4 8-speed automatic 236 PS (174 kW; 233 hp) @ 6,000 rpm 36.0 kg⋅m (353 N⋅m; 260 lbf⋅ft)"
+          ]
+        },
+        {
+          "id": "p9",
+          "name": "Smartstream G2.5 GDi",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "2,497 cc I4",
+          "displacement": 2497,
+          "cylinders": 4,
+          "power": {
+            "value": 190,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 245,
+            "unit": "Nm"
+          },
+          "transmission": "8-speed automatic",
+          "src": "wp",
+          "quotes": [
+            "Smartstream G2.5 GDi 2,497 cc (152.4 cu in) I4 8-speed automatic 190 PS (140 kW; 187 hp) @ 6,100 rpm 25 kg⋅m (245 N⋅m; 181 lbf⋅ft) @ 4,000 rpm"
+          ]
+        },
+        {
+          "id": "p10",
+          "name": "Smartstream L2.0 LPi",
+          "market": "unstated",
+          "fuel": "LPG",
+          "years": "2022–",
+          "engine": "1,999 cc I4",
+          "displacement": 1999,
+          "cylinders": 4,
+          "power": {
+            "value": 146,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 191,
+            "unit": "Nm"
+          },
+          "transmission": "6-speed automatic",
+          "src": "wp",
+          "quotes": [
+            "Smartstream L2.0 LPi 2022–present 1,999 cc (122.0 cu in) I4 6-speed automatic 146 PS (107 kW; 144 hp) @ 6,000 rpm 19.5 kg⋅m (191 N⋅m; 141 lbf⋅ft) @ 4,200 rpm"
+          ]
+        },
+        {
+          "id": "p11",
+          "name": "Smartstream D2.0 CRDi",
+          "market": "unstated",
+          "fuel": "diesel",
+          "engine": "1,998 cc turbocharged I4",
+          "displacement": 1998,
+          "cylinders": 4,
+          "power": {
+            "value": 186,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 417,
+            "unit": "Nm"
+          },
+          "transmission": "8-speed automatic",
+          "src": "wp",
+          "quotes": [
+            "Smartstream D2.0 CRDi 1,998 cc (121.9 cu in) turbocharged I4 8-speed automatic 186 PS (137 kW; 183 hp) @ 4,000 rpm 42.5 kg⋅m (417 N⋅m; 307 lbf⋅ft) @ 2,000–2,750 rpm"
+          ]
+        },
+        {
+          "id": "p12",
+          "name": "Hybrid (North America)",
+          "market": "NA",
+          "fuel": "hybrid",
+          "engine": "1.6 T-GDi with 44.2 kW electric motor and 1.49 kWh battery",
+          "power": {
+            "value": 226,
+            "unit": "hp"
+          },
+          "src": "wp",
+          "quotes": [
+            "The hybrid version is equipped with the T-GDi engine and a 44.2 kW electric motor combined with a 1.49 kWh battery that also delivers 226 hp (229 PS; 169 kW)."
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "id": "c1",
+          "topic": "dimensions",
+          "text": "Developed in two versions with different body length and wheelbase depending on the market.",
+          "src": "wp",
+          "quote": "Kia developed two versions of the Sportage with different body length and wheelbase depending on the market."
+        },
+        {
+          "id": "c2",
+          "topic": "chassis",
+          "text": "Built on the new N3 platform.",
+          "src": "ke2",
+          "quote": "Developed on a new 'N3' architecture"
+        },
+        {
+          "id": "c3",
+          "topic": "powertrain",
+          "text": "The first hybrid in the Sportage series.",
+          "src": "ks",
+          "quote": "With the series’ first hybrid model, it completed a driving experience where electrification integrates naturally."
+        },
+        {
+          "id": "c4",
+          "topic": "powertrain",
+          "text": "A plug-in hybrid was offered in Europe for the first time.",
+          "src": "ke2",
+          "quote": "An advanced plug-in hybrid (PHEV) model represents another first for the European Sportage"
+        },
+        {
+          "id": "c5",
+          "topic": "technology",
+          "text": "A Terrain Mode was introduced.",
+          "src": "ke2",
+          "quote": "Representing a first for Sportage is the creation of an all-new Terrain Mode that debuts on the fifth-generation model."
+        },
+        {
+          "id": "c6",
+          "topic": "interior",
+          "text": "In Europe, luggage space grew to up to 591 litres from a maximum of 503 litres in the predecessor.",
+          "src": "ka",
+          "quote": "der Gepäckraum fasst bis zu 591 Liter (Mildhybrid-Benziner 562 Liter, Diesel 526 Liter, Plug-in Hybrid 540 Liter) und damit erheblich mehr als beim Vorgänger (max. 503 Liter)"
+        }
+      ],
+      "revisions": [
+        {
+          "id": "r1",
+          "slug": "2024-facelift",
+          "kind": "facelift",
+          "name": "Facelift (2024)",
+          "dates": {
+            "salesStart": {
+              "value": "2024-11-05",
+              "market": "unstated",
+              "src": "wp",
+              "quote": "Kia released the facelift model of the fifth-generation Sportage on 5 November 2024 for the 2026 model year."
+            }
+          },
+          "changes": [
+            {
+              "id": "r1c1",
+              "topic": "design",
+              "text": "New headlights replacing the boomerang-shaped units, a revised front bumper and new tail-light graphics.",
+              "src": "wp",
+              "quote": "Changes includes an updated front fascia with new headlights (replacing the prior boomerang headlights) and updated front bumper design, new LED graphics for the taillights"
+            },
+            {
+              "id": "r1c2",
+              "topic": "interior",
+              "text": "New two-spoke steering wheel and a new curved display housing the instrument cluster and 12.3-inch touchscreen.",
+              "src": "wp",
+              "quote": "Inside, there is a new 2-spoke design steering wheel, a new curved digital cockpit houses the digital instrument cluster and 12.3-inch touchscreen infotainment system"
+            },
+            {
+              "id": "r1c3",
+              "topic": "powertrain",
+              "text": "The 7-speed dual-clutch on the 1.6 T-GDi was replaced by an 8-speed automatic.",
+              "src": "wp",
+              "quote": "the 7-speed dual-clutch automatic used for 1.6 T-GDi turbocharged petrol engine was replaced with the 8-speed automatic"
+            },
+            {
+              "id": "r1c4",
+              "topic": "chassis",
+              "text": "Revised front-axle damping and additional sound-absorbing material.",
+              "src": "wp",
+              "quote": "Other changes are an improved dampening system on the front axle, additional sound-absorbing materials"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Two bodies: a short-wheelbase (2,680 mm) version for Europe and some other markets (Brazil, South Africa per Wikipedia) and a long-wheelbase (2,755 mm) version for Korea, North America and most other markets. Kia Europe gives 1,645 mm height for the European car; Kia Austria's press kit gives 1,650 mm.",
+        "Kia's heritage archive lists the 'All-New Sportage' at 4,685 mm long, which differs from Wikipedia's 4,660 mm LWB length; the heritage page does not say which body or model year it describes.",
+        "Wikipedia dates the facelift's release to 5 November 2024 for the 2026 model year without naming a market; it reached North America and Australia in May 2025. Kia's heritage story says the facelift came in 2024 alongside a 30th anniversary edition.",
+        "Kia US press (kianewscenter.com) could not be read: the connection fails TLS certificate verification. kiamedia.com returns 403. Kia worldwide newsroom releases render no text. North American specifications therefore come from Wikipedia only.",
+        "Wikipedia's powertrain table does not name markets for most engines (e.g. 2.5 GDi for North America/Mexico, L2.0 LPi for Korea), so they are recorded as 'unstated'."
+      ]
+    }
+  ]
+}

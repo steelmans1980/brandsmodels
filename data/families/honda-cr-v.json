@@ -1,0 +1,2488 @@
+{
+ "id": "honda-cr-v",
+ "slug": "cr-v",
+ "manufacturer": "honda",
+ "name": "Honda CR-V",
+ "lines": [
+  {
+   "id": "cr-v",
+   "name": "CR-V"
+  }
+ ],
+ "sources": {
+  "wp": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Honda_CR-V&oldid=1377742495",
+   "title": "Honda CR-V",
+   "publisher": "Wikipedia",
+   "type": "secondary",
+   "accessed": "2026-10-09"
+  },
+  "wp3": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Honda_CR-V_(third_generation)&oldid=1369066588",
+   "title": "Honda CR-V (third generation)",
+   "publisher": "Wikipedia",
+   "type": "secondary",
+   "accessed": "2026-10-09"
+  },
+  "wp4": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Honda_CR-V_(fourth_generation)&oldid=1364099391",
+   "title": "Honda CR-V (fourth generation)",
+   "publisher": "Wikipedia",
+   "type": "secondary",
+   "accessed": "2026-10-09"
+  },
+  "wp5": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Honda_CR-V_(fifth_generation)&oldid=1377659469",
+   "title": "Honda CR-V (fifth generation)",
+   "publisher": "Wikipedia",
+   "type": "secondary",
+   "accessed": "2026-10-09"
+  },
+  "wp6": {
+   "url": "https://en.wikipedia.org/w/index.php?title=Honda_CR-V_(sixth_generation)&oldid=1379222350",
+   "title": "Honda CR-V (sixth generation)",
+   "publisher": "Wikipedia",
+   "type": "secondary",
+   "accessed": "2026-10-09"
+  },
+  "gh30": {
+   "url": "https://global.honda/en/newsroom/news/2025/4251009eng.html",
+   "title": "Honda Celebrates 30th Anniversary of CR-V",
+   "publisher": "Honda Motor Co., Ltd.",
+   "type": "manufacturer",
+   "date": "2025-10-09",
+   "accessed": "2026-10-09"
+  },
+  "hntl": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-13f25e90cfe47cd58453f1f710057d45-honda-cr-v-timeline-and-milestones",
+   "title": "Honda CR-V Timeline and Milestones",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "accessed": "2026-10-09"
+  },
+  "hn05": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-98fc1b52a53b415474ccf5004c34c331-the-honda-cr-v-returns-for-2005-updated-styling-new-special-edition-model-and-an-expanded-list-of-standard-safety-features",
+   "title": "The Honda CR-V Returns for 2005",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2004-09-02",
+   "accessed": "2026-10-09"
+  },
+  "hn07": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-4d28bed194d5aa1b2f1b88004c34bf9a-all-new-for-2007-honda-cr-v-delivers-upscale-style-refined-dynamics-and-advanced-safety-in-a-versatile-entry-crossover-suv-package",
+   "title": "All-New for 2007 Honda CR-V",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2006-09-02",
+   "accessed": "2026-10-09"
+  },
+  "hn10": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-af6b2390da4a7d67a9cbe5004c34badf-2010-honda-cr-v-offers-more-sophistication-and-refinement-with-upgrades-to-style-features-and-power",
+   "title": "2010 Honda CR-V Offers More Sophistication and Refinement",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2009-09-10",
+   "accessed": "2026-10-09"
+  },
+  "hns11": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-859fb8d22cd04aec91254c04b06ffac3-2011-honda-cr-v-specifications",
+   "title": "2011 Honda CR-V Specifications",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2010-10-02",
+   "accessed": "2026-10-09"
+  },
+  "hn12": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-6103539c6e7546a1bd7dc9975f414856-all-new-completely-redesigned-2012-honda-cr-v-becomes-sleeker-more-efficient-and-technologically-savvy",
+   "title": "All-New, Completely Redesigned 2012 Honda CR-V",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2011-11-16",
+   "accessed": "2026-10-09"
+  },
+  "hn12la": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-2909052ddc0a479b84ec83bc4c6ce363-all-new-completely-redesigned-2012-honda-cr-v-debuts-at-la-auto-show",
+   "title": "All-New, Completely Redesigned 2012 Honda CR-V Debuts at LA Auto Show",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2011-11-16",
+   "accessed": "2026-10-09"
+  },
+  "hns12": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-9009ab8525424169981cae7ff8d848db-2012-honda-cr-v-specifications-and-features",
+   "title": "2012 Honda CR-V Specifications and Features",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2011-11-16",
+   "accessed": "2026-10-09"
+  },
+  "hn15": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-0d98017858404bbeab2c18b0b4fcc701-boldly-restyled-and-significantly-enhanced-2015-honda-cr-v-gets-new-powertrain-advanced-features-and-new-premium-touring-trim",
+   "title": "Boldly Restyled and Significantly Enhanced 2015 Honda CR-V",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2014-09-30",
+   "accessed": "2026-10-09"
+  },
+  "hns15": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-d45ae5802b7845b0bae05db35bc0cc45-2015-cr-v-specifications-features",
+   "title": "2015 CR-V Specifications & Features",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2014-09-30",
+   "accessed": "2026-10-09"
+  },
+  "hn17": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-3e0e8d061ea94ded87263e0c5a882235-bold-and-sophisticated-styling-and-turbo-engine-power-restate-the-all-new-2017-honda-cr-v-as-the-outright-benchmark-compact-suv",
+   "title": "All-New 2017 Honda CR-V",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2016-10-13",
+   "accessed": "2026-10-09"
+  },
+  "hns17": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-d636454c74ac4accb7a1f4dfc6c9bec4-2017-honda-cr-v-press-kit-specifications-features",
+   "title": "2017 Honda CR-V Specifications & Features",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2016-11-30",
+   "accessed": "2026-10-09"
+  },
+  "hn20": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-f14e4d95353ee177f9926a59c700267f-2020-honda-cr-v-americas-most-popular-cuv-gets-new-us-built-hybrid-electric-version-standard-honda-sensing-and-freshened-styling",
+   "title": "2020 Honda CR-V: America's Most Popular CUV Gets New U.S.-Built Hybrid-Electric Version",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2019-09-18",
+   "accessed": "2026-10-09"
+  },
+  "hns20": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-168a00342ac55d54baad38f03e0073e2-2020-cr-v-specifications-features",
+   "title": "2020 CR-V & CR-V Hybrid Specifications & Features",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2020-03-17",
+   "accessed": "2026-10-09"
+  },
+  "hn23": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-db2492147c55da663fd32edfea17c772-americas-favorite-suv-gets-even-better-all-new-honda-cr-v-gets-a-sophisticated-and-rugged-design-and-more-advanced-sporty-hybrid-system",
+   "title": "America's Favorite SUV Gets Even Better: All-New Honda CR-V",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2022-07-12",
+   "accessed": "2026-10-09"
+  },
+  "hnp23": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-1503019bd8a757ea08267d7944243f4e-production-of-all-new-2023-honda-cr-v-begins-in-north-america",
+   "title": "Production of All-New 2023 Honda CR-V Begins in North America",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2022-09-22",
+   "accessed": "2026-10-09"
+  },
+  "hns23": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-74895511bca6e7abc42504d7581990ac-2023-honda-cr-v-specifications-features",
+   "title": "2023 Honda CR-V Specifications & Features",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2023-05-17",
+   "accessed": "2026-10-09"
+  },
+  "hnfc": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-2cfa72bd4b4cd3f113d33f001f02fd90-honda-reveals-2025-honda-cr-v-efcev-americas-first-production-plug-in-hydrogen-fuel-cell-electric-vehicle",
+   "title": "Honda Reveals 2025 Honda CR-V e:FCEV",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2024-02-27",
+   "accessed": "2026-10-09"
+  },
+  "hnsfc": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-5f60982dadd5edbf5cfac0899102b603-2025-honda-cr-v-efcev-specifications-features",
+   "title": "2025 Honda CR-V e:FCEV Specifications & Features",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2024-04-19",
+   "accessed": "2026-10-09"
+  },
+  "hn26": {
+   "url": "https://hondanews.com/en-US/honda-automobiles/releases/release-0d29cf91ab5515b985a1c286910cc6fb-rugged-electrified-and-refreshed-best-selling-honda-cr-v-gains-new-trailsport-hybrid-trim-and-more-standard-tech-as-2026-lineup-arriving-in-dealers-now",
+   "title": "Rugged, Electrified and Refreshed: 2026 Honda CR-V",
+   "publisher": "Honda News (American Honda)",
+   "type": "manufacturer",
+   "date": "2025-05-20",
+   "accessed": "2026-10-09"
+  }
+ },
+ "generations": [
+  {
+   "id": "honda-cr-v-rd1",
+   "slug": "rd1",
+   "ordinal": 1,
+   "lines": [
+    "cr-v"
+   ],
+   "name": "First generation",
+   "codes": [
+    {
+     "value": "RD1",
+     "kind": "model code",
+     "src": "wp",
+     "quote": "Model code RD1 RD2 RD3"
+    },
+    {
+     "value": "RD2",
+     "kind": "model code",
+     "src": "wp",
+     "quote": "Model code RD1 RD2 RD3"
+    },
+    {
+     "value": "RD3",
+     "kind": "model code",
+     "src": "wp",
+     "quote": "Model code RD1 RD2 RD3"
+    }
+   ],
+   "dates": {
+    "productionStart": {
+     "value": "1995",
+     "src": "wp",
+     "quote": "Production 1995–2001"
+    },
+    "productionEnd": {
+     "value": "2001",
+     "src": "wp",
+     "quote": "Production 1995–2001"
+    },
+    "salesStart": [
+     {
+      "value": "1995-10",
+      "market": "JP",
+      "src": "wp",
+      "quote": "When the CR-V was introduced in Japan in October 1995"
+     },
+     {
+      "value": "1997-02",
+      "market": "US",
+      "src": "wp",
+      "quote": "For the North American market, it was displayed at the 1996 Chicago Auto Show and went on sale in February 1997."
+     }
+    ],
+    "modelYears": [
+     {
+      "market": "US",
+      "from": 1997,
+      "to": 2001,
+      "src": "hntl",
+      "quote": "First-Generation CR-V: 1997 – 2001"
+     }
+    ]
+   },
+   "ongoing": false,
+   "assembly": [
+    {
+     "value": "Sayama, Saitama, Japan",
+     "src": "wp",
+     "quote": "Japan: Sayama"
+    },
+    {
+     "value": "Honda of the UK Manufacturing, Swindon, UK",
+     "src": "wp",
+     "quote": "United Kingdom: Swindon (HUKM)"
+    }
+   ],
+   "bodyStyles": [
+    {
+     "id": "b1",
+     "value": "5-door SUV",
+     "markets": [
+      "global"
+     ],
+     "src": "wp",
+     "quote": "Body style 5-door SUV"
+    }
+   ],
+   "drivetrains": [
+    {
+     "value": "AWD",
+     "system": "Real Time 4WD/AWD",
+     "markets": [
+      "unstated"
+     ],
+     "src": "wp",
+     "quote": "Drivetrain options were front-wheel drive or Honda's Real Time AWD."
+    },
+    {
+     "value": "FWD",
+     "markets": [
+      "US"
+     ],
+     "src": "hntl",
+     "quote": "1998: The CR-V lineup expanded with the addition of a two-wheel drive version and a 5-speed manual transmission for the first time."
+    }
+   ],
+   "dimensions": [
+    {
+     "id": "d1",
+     "market": "unstated",
+     "version": "pre-facelift",
+     "unit": "mm",
+     "wheelbase": 2620,
+     "length": 4510,
+     "width": 1780,
+     "src": "wp",
+     "quotes": [
+      "Wheelbase 2,620 mm (103.1 in) 2,625 mm (103.3 in) (post-facelift)",
+      "Length 4,510 mm (177.6 in)",
+      "Width 1,780 mm (70.1 in)"
+     ]
+    }
+   ],
+   "cargo": [
+    {
+     "id": "k1",
+     "market": "US",
+     "behind": "unstated",
+     "value": 67.2,
+     "unit": "cu ft",
+     "standard": "not stated",
+     "src": "hntl",
+     "quote": "provided access to a massive 67.2 cubic feet of cargo space"
+    }
+   ],
+   "powertrains": [
+    {
+     "id": "p1",
+     "name": "2.0 (B20B, US)",
+     "market": "US",
+     "fuel": "petrol",
+     "years": "1997–1998",
+     "engine": "2.0 L DOHC I4",
+     "cylinders": 4,
+     "power": {
+      "value": 126,
+      "unit": "hp"
+     },
+     "src": "hntl",
+     "quote": "The original CR-V was powered by a fuel-efficient 2.0-liter 16-valve dual overhead camshaft (DOHC) 4-cylinder engine that developed 126 horsepower."
+    },
+    {
+     "id": "p2",
+     "name": "2.0 (B20B)",
+     "market": "unstated",
+     "fuel": "petrol",
+     "years": "1995–2001",
+     "engine": "2.0 L B20B I4",
+     "displacement": 1973,
+     "cylinders": 4,
+     "power": {
+      "value": 128,
+      "unit": "hp"
+     },
+     "src": "wp",
+     "quotes": [
+      "B20B",
+      "128 HP 1,973 cc Petrol 1995–2001"
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "2.0 (B20Z)",
+     "market": "unstated",
+     "fuel": "petrol",
+     "engine": "2.0 L B20Z I4",
+     "cylinders": 4,
+     "power": {
+      "value": 147,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 133,
+      "unit": "lb-ft"
+     },
+     "src": "wp",
+     "quote": "The engine was changed to the 2.0 L B20Z engine, producing 147 hp (110 kW) at 6,200 rpm and 133 lb⋅ft (180 N⋅m) of torque at 4,500 rpm."
+    },
+    {
+     "id": "p4",
+     "name": "Transmissions (US)",
+     "market": "US",
+     "fuel": "petrol",
+     "transmission": "4-speed automatic / 5-speed manual",
+     "src": "hntl",
+     "quote": "4-speed automatic, 5-speed manual"
+    }
+   ],
+   "revisions": [
+    {
+     "id": "r1",
+     "slug": "1999-facelift",
+     "kind": "facelift",
+     "name": "Update and facelift (1999–2001)",
+     "dates": {},
+     "changes": [
+      {
+       "id": "r1c1",
+       "topic": "powertrain",
+       "text": "US: higher compression ratio and revised manifolds added 20 hp (to 146 hp) for 1999.",
+       "src": "hntl",
+       "quote": "1999: CR-V's 2.0-liter 4-cylinder engine received an increased compression ratio and revisions to the intake and exhaust manifold that gave it 20 additional horsepower – to 146 hp."
+      },
+      {
+       "id": "r1c2",
+       "topic": "design",
+       "text": "European, Australian and Asian models got a new front bumper and smoothed rear bumper for model year 2000.",
+       "src": "wp",
+       "quote": "For the 2000 model year, the European, Australian and Asian CR-V models featured more drastic changes. Exterior alterations included a new front bumper, smoothed off rear bumper"
+      },
+      {
+       "id": "r1c3",
+       "topic": "powertrain",
+       "text": "B20Z engine replaced the B20B.",
+       "src": "wp",
+       "quote": "The engine was changed to the 2.0 L B20Z engine"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Wikipedia gives 'Model years 1995–2001'; American Honda gives 1997–2001 for the US. The manufacturer's US range is recorded.",
+    "Launched in Japan in October 1995 (sold at Honda Verno and Primo dealers); US sales began February 1997.",
+    "Power differs by market and rating: 126 hp (US, American Honda) vs 128 hp (Wikipedia engine table) for the B20B; 146 hp (American Honda, 1999) vs 147 hp (Wikipedia) for the B20Z.",
+    "No Japanese or European manufacturer launch release for the first generation was found in a readable form; the facelift date is not documented precisely (US update 1999 model year; other markets 2000 model year)."
+   ]
+  },
+  {
+   "id": "honda-cr-v-rd4",
+   "slug": "rd4",
+   "ordinal": 2,
+   "lines": [
+    "cr-v"
+   ],
+   "name": "Second generation",
+   "codes": [
+    {
+     "value": "RD4",
+     "kind": "model code",
+     "src": "wp",
+     "quote": "Model code RD4 RD5 RD6 RD7 RD8 RD9"
+    },
+    {
+     "value": "RD5",
+     "kind": "model code",
+     "src": "wp",
+     "quote": "Model code RD4 RD5 RD6 RD7 RD8 RD9"
+    },
+    {
+     "value": "RD6",
+     "kind": "model code",
+     "src": "wp",
+     "quote": "Model code RD4 RD5 RD6 RD7 RD8 RD9"
+    },
+    {
+     "value": "RD7",
+     "kind": "model code",
+     "src": "wp",
+     "quote": "Model code RD4 RD5 RD6 RD7 RD8 RD9"
+    },
+    {
+     "value": "RD8",
+     "kind": "model code",
+     "src": "wp",
+     "quote": "Model code RD4 RD5 RD6 RD7 RD8 RD9"
+    },
+    {
+     "value": "RD9",
+     "kind": "model code",
+     "src": "wp",
+     "quote": "Model code RD4 RD5 RD6 RD7 RD8 RD9"
+    }
+   ],
+   "dates": {
+    "productionStart": {
+     "value": "2001",
+     "src": "wp",
+     "quote": "Production 2001–2006"
+    },
+    "productionEnd": {
+     "value": "2006",
+     "src": "wp",
+     "quote": "Production 2001–2006"
+    },
+    "salesStart": [
+     {
+      "value": "2001-11-13",
+      "src": "wp",
+      "quote": "The second generation CR-V, which went on sale on 13 November 2001, was a full redesign"
+     },
+     {
+      "value": "2002-01-01",
+      "market": "AU",
+      "src": "wp",
+      "quote": "This iteration of CR-V arrived in Australia on 1 January 2002"
+     }
+    ],
+    "modelYears": [
+     {
+      "market": "US",
+      "from": 2002,
+      "to": 2006,
+      "src": "hntl",
+      "quote": "Second-Generation CR-V: 2002 – 2006"
+     }
+    ]
+   },
+   "ongoing": false,
+   "platform": {
+    "value": "Honda Global Compact Platform",
+    "src": "hntl",
+    "quote": "Built on Honda's new Global Compact Platform"
+   },
+   "assembly": [
+    {
+     "value": "Sayama, Saitama, Japan",
+     "src": "wp",
+     "quote": "Japan: Sayama, Saitama United Kingdom: Swindon (HUKM) China: Wuhan (Dongfeng Honda)"
+    },
+    {
+     "value": "Swindon, UK",
+     "src": "wp",
+     "quote": "Japan: Sayama, Saitama United Kingdom: Swindon (HUKM) China: Wuhan (Dongfeng Honda)"
+    },
+    {
+     "value": "Dongfeng Honda, Wuhan, China",
+     "src": "wp",
+     "quote": "Japan: Sayama, Saitama United Kingdom: Swindon (HUKM) China: Wuhan (Dongfeng Honda)"
+    }
+   ],
+   "bodyStyles": [
+    {
+     "id": "b1",
+     "value": "5-door SUV",
+     "markets": [
+      "global"
+     ],
+     "src": "wp",
+     "quote": "Body style 5-door SUV"
+    }
+   ],
+   "dimensions": [
+    {
+     "id": "d1",
+     "market": "unstated",
+     "unit": "mm",
+     "width": 1785,
+     "src": "wp",
+     "quote": "Width 1,785 mm (70.3 in)"
+    }
+   ],
+   "cargo": [
+    {
+     "id": "k1",
+     "market": "unstated",
+     "behind": "unstated",
+     "value": 72,
+     "unit": "cu ft",
+     "standard": "not stated",
+     "src": "wp",
+     "quote": "the compact rear suspension increased cargo space to 72 cu ft (2,000 L)"
+    }
+   ],
+   "powertrains": [
+    {
+     "id": "p1",
+     "name": "2.4 i-VTEC (US)",
+     "market": "US",
+     "fuel": "petrol",
+     "years": "2002–2006",
+     "engine": "2.4 L K24A1 I4",
+     "cylinders": 4,
+     "power": {
+      "value": 160,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 162,
+      "unit": "lb-ft"
+     },
+     "src": "hntl",
+     "quote": "Output increased to 160 horsepower and a 162 lb.-ft. of torque."
+    },
+    {
+     "id": "p2",
+     "name": "2.0 (K20A4)",
+     "market": "unstated",
+     "fuel": "petrol",
+     "engine": "2.0 L K20A4 I4",
+     "cylinders": 4,
+     "power": {
+      "value": 150,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 140,
+      "unit": "lb-ft"
+     },
+     "src": "wp",
+     "quote": "RD5 (AWD) RD8 (AWD, Europe) 150 hp (112 kW) at 6,500 rpm 140 lb⋅ft (190 N⋅m) at 4,000 rpm"
+    },
+    {
+     "id": "p3",
+     "name": "2.2 i-CTDi diesel",
+     "market": "unstated",
+     "fuel": "diesel",
+     "engine": "2.2 L N22A2 I4 turbo-diesel",
+     "cylinders": 4,
+     "power": {
+      "value": 138,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 250,
+      "unit": "lb-ft"
+     },
+     "drivetrain": "AWD",
+     "src": "wp",
+     "quote": "2.2 L N22A2 I4 RD9 (AWD) 138 hp (103 kW) at 4,000 rpm 250 lb⋅ft (339 N⋅m) at 2,000 rpm"
+    }
+   ],
+   "changes": [
+    {
+     "id": "c1",
+     "topic": "chassis",
+     "text": "Built on Honda's new Global Compact Platform; larger inside and out.",
+     "src": "hntl",
+     "quote": "Built on Honda's new Global Compact Platform, the second-generation CR-V became a bit larger inside and out"
+    },
+    {
+     "id": "c2",
+     "topic": "powertrain",
+     "text": "Displacement rose from 2.0 to 2.4 litres with i-VTEC (US).",
+     "src": "hntl",
+     "quote": "Displacement increased to 2.4 liters (from 2.0 liters)"
+    },
+    {
+     "id": "c3",
+     "topic": "safety-equipment",
+     "text": "Front side airbags available on LX and standard on EX (US).",
+     "src": "hntl",
+     "quote": "Enhanced safety systems included front side airbags, which were available on LX and standard on EX."
+    },
+    {
+     "id": "c4",
+     "topic": "interior",
+     "text": "New packaging increased cabin size and usability.",
+     "src": "gh30",
+     "quote": "The second-generation Honda CR-V featured new packaging that further increased the size and usability of the cabin space."
+    }
+   ],
+   "revisions": [
+    {
+     "id": "r1",
+     "slug": "2004-facelift",
+     "kind": "facelift",
+     "name": "Facelift (2004, model year 2005)",
+     "dates": {
+      "revealed": {
+       "value": "2004-09-02",
+       "src": "hn05",
+       "quotes": [
+        "September 2, 2004",
+        "For the 2005 model year, the CR-V receives a substantial"
+       ]
+      }
+     },
+     "changes": [
+      {
+       "id": "r1c1",
+       "topic": "design",
+       "text": "New grille, headlights, front bumper, rear lights and rear bumper.",
+       "src": "hn05",
+       "quote": "newly designed front grill, cylindrical-shaped headlights and aerodynamic front"
+      },
+      {
+       "id": "r1c2",
+       "topic": "powertrain",
+       "text": "Five-speed automatic standard on all US trims.",
+       "src": "hn05",
+       "quote": "For the 2005 Honda CR-V, a five speed automatic transmission is standard for"
+      },
+      {
+       "id": "r1c3",
+       "topic": "safety-equipment",
+       "text": "Front side airbags, side curtain airbags and VSA standard (US).",
+       "src": "hntl",
+       "quote": "all CR-Vs were now equipped with front side airbags, side curtain airbags and Vehicle Stability Assist (VSA) with Traction Control"
+      },
+      {
+       "id": "r1c4",
+       "topic": "drivetrain",
+       "text": "Cam-driven Real Time AWD mechanism replaced the pump-type system.",
+       "src": "hn05",
+       "quote": "a new Cam-driven real-time AWD mechanism replaces"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "Market of the 13 November 2001 sales start is not stated by Wikipedia (Japan is likely but not sourced).",
+    "Only width is recorded: Wikipedia gives ranges for length and wheelbase; no readable American Honda spec sheet for 2002–2006 was found (the 2002 launch release returns 404 on hondanews.com).",
+    "2.4 output was re-rated to 156 hp under SAE J1349 rev. 8/04 for 2006 (Wikipedia; American Honda timeline notes the re-rating)."
+   ]
+  },
+  {
+   "id": "honda-cr-v-re",
+   "slug": "re",
+   "ordinal": 3,
+   "lines": [
+    "cr-v"
+   ],
+   "name": "Third generation",
+   "codes": [
+    {
+     "value": "RE1",
+     "kind": "chassis code",
+     "src": "wp3",
+     "quote": "Chassis code: RE1 (2WD), RE2 (4WD), RE3 (2WD), RE4 (4WD), RE5 (4WD), RE6 (4WD), RE7 (4WD)"
+    },
+    {
+     "value": "RE2",
+     "kind": "chassis code",
+     "src": "wp3",
+     "quote": "Chassis code: RE1 (2WD), RE2 (4WD), RE3 (2WD), RE4 (4WD), RE5 (4WD), RE6 (4WD), RE7 (4WD)"
+    },
+    {
+     "value": "RE3",
+     "kind": "chassis code",
+     "src": "wp3",
+     "quote": "Chassis code: RE1 (2WD), RE2 (4WD), RE3 (2WD), RE4 (4WD), RE5 (4WD), RE6 (4WD), RE7 (4WD)"
+    },
+    {
+     "value": "RE4",
+     "kind": "chassis code",
+     "src": "wp3",
+     "quote": "Chassis code: RE1 (2WD), RE2 (4WD), RE3 (2WD), RE4 (4WD), RE5 (4WD), RE6 (4WD), RE7 (4WD)"
+    },
+    {
+     "value": "RE5",
+     "kind": "chassis code",
+     "src": "wp3",
+     "quote": "Chassis code: RE1 (2WD), RE2 (4WD), RE3 (2WD), RE4 (4WD), RE5 (4WD), RE6 (4WD), RE7 (4WD)"
+    },
+    {
+     "value": "RE6",
+     "kind": "chassis code",
+     "src": "wp3",
+     "quote": "Chassis code: RE1 (2WD), RE2 (4WD), RE3 (2WD), RE4 (4WD), RE5 (4WD), RE6 (4WD), RE7 (4WD)"
+    },
+    {
+     "value": "RE7",
+     "kind": "chassis code",
+     "src": "wp3",
+     "quote": "Chassis code: RE1 (2WD), RE2 (4WD), RE3 (2WD), RE4 (4WD), RE5 (4WD), RE6 (4WD), RE7 (4WD)"
+    }
+   ],
+   "dates": {
+    "productionStart": {
+     "value": "2006",
+     "src": "wp3",
+     "quote": "Production 2006–2012"
+    },
+    "productionEnd": {
+     "value": "2012",
+     "src": "wp3",
+     "quote": "Production 2006–2012"
+    },
+    "salesStart": [
+     {
+      "value": "2006-09",
+      "market": "US",
+      "src": "wp3",
+      "quote": "It went on sale in the U.S. during late September 2006."
+     }
+    ],
+    "modelYears": [
+     {
+      "market": "US",
+      "from": 2007,
+      "to": 2011,
+      "src": "wp3",
+      "quote": "Model years 2007–2011 (US)"
+     }
+    ]
+   },
+   "ongoing": false,
+   "assembly": [
+    {
+     "value": "Sayama, Saitama, Japan",
+     "src": "wp3",
+     "quote": "Assembly Japan: Sayama, Saitama"
+    },
+    {
+     "value": "East Liberty, Ohio, US",
+     "src": "hn07",
+     "quote": "at Honda of America Manufacturing in the East Liberty Plant"
+    },
+    {
+     "value": "El Salto, Jalisco, Mexico",
+     "src": "wp3",
+     "quote": "Mexico: El Salto, Jalisco"
+    },
+    {
+     "value": "Swindon, UK",
+     "src": "wp3",
+     "quote": "United Kingdom: Swindon (HUKM)"
+    },
+    {
+     "value": "Dongfeng Honda, Wuhan, China",
+     "src": "wp3",
+     "quote": "China: Wuhan (Dongfeng Honda)"
+    }
+   ],
+   "bodyStyles": [
+    {
+     "id": "b1",
+     "value": "5-door SUV",
+     "markets": [
+      "global"
+     ],
+     "src": "wp3",
+     "quote": "Body style 5-door SUV"
+    }
+   ],
+   "drivetrains": [
+    {
+     "value": "AWD",
+     "system": "Real Time 4WD",
+     "markets": [
+      "US"
+     ],
+     "src": "hns11",
+     "quote": "Real Time™ 4-Wheel Drive Available"
+    }
+   ],
+   "dimensions": [
+    {
+     "id": "d1",
+     "market": "unstated",
+     "unit": "mm",
+     "wheelbase": 2620,
+     "length": 4518,
+     "height": 1704,
+     "src": "wp3",
+     "quotes": [
+      "Wheelbase 2,620 mm (103.1 in)",
+      "Length 4,518 mm (177.9 in)",
+      "Height 1,704 mm (67.1 in)"
+     ]
+    },
+    {
+     "id": "d2",
+     "market": "US",
+     "version": "2011 model year (post-facelift)",
+     "unit": "in",
+     "wheelbase": 103.1,
+     "length": 179.3,
+     "height": 66.1,
+     "width": 71.6,
+     "src": "hns11",
+     "quotes": [
+      "Wheelbase (in) 103.1",
+      "Length (in) 179.3",
+      "Height (in) 66.1",
+      "Width (in) 71.6"
+     ]
+    }
+   ],
+   "cargo": [
+    {
+     "id": "k1",
+     "market": "US",
+     "version": "2011 model year",
+     "behind": "2nd row",
+     "value": 35.7,
+     "unit": "cu ft",
+     "standard": "not stated",
+     "src": "hns11",
+     "quote": "Cargo Volume (cu ft, rear seat up/down) 35.7 / 72.9"
+    },
+    {
+     "id": "k2",
+     "market": "US",
+     "version": "2011 model year",
+     "behind": "1st row",
+     "value": 72.9,
+     "unit": "cu ft",
+     "standard": "not stated",
+     "src": "hns11",
+     "quote": "Cargo Volume (cu ft, rear seat up/down) 35.7 / 72.9"
+    }
+   ],
+   "powertrains": [
+    {
+     "id": "p1",
+     "name": "2.4 i-VTEC (US, 2007–2009)",
+     "market": "US",
+     "fuel": "petrol",
+     "years": "2007–2009",
+     "engine": "2.4 L K24Z I4",
+     "cylinders": 4,
+     "power": {
+      "value": 166,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 161,
+      "unit": "lb-ft"
+     },
+     "transmission": "5-speed automatic",
+     "src": "hn07",
+     "quote": "The engine produces 166 horsepower and 161 lb-ft. of torque"
+    },
+    {
+     "id": "p2",
+     "name": "2.4 i-VTEC (US, 2010–2011)",
+     "market": "US",
+     "fuel": "petrol",
+     "years": "2010–2011",
+     "engine": "2.4 L I4",
+     "displacement": 2354,
+     "cylinders": 4,
+     "power": {
+      "value": 180,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 161,
+      "unit": "lb-ft"
+     },
+     "transmission": "5-speed automatic",
+     "src": "hns11",
+     "quotes": [
+      "Displacement (L / cc) 2.4 / 2354",
+      "Horsepower @ rpm (SAE net) 180 @ 6800",
+      "Torque (lb-ft @ rpm) 161 @ 4400",
+      "5-Speed Automatic Transmission"
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "2.0 i-VTEC (R20A)",
+     "market": "unstated",
+     "fuel": "petrol",
+     "engine": "2.0 L R20A I4",
+     "displacement": 1997,
+     "cylinders": 4,
+     "power": {
+      "value": 149,
+      "unit": "hp"
+     },
+     "src": "wp",
+     "quotes": [
+      "R20A2",
+      "149 HP 1,997 cc Petrol 2009–present"
+     ]
+    },
+    {
+     "id": "p4",
+     "name": "2.2 i-CTDi",
+     "market": "unstated",
+     "fuel": "diesel",
+     "engine": "2.2 L N22A I4 turbo-diesel",
+     "displacement": 2204,
+     "cylinders": 4,
+     "power": {
+      "value": 140,
+      "unit": "hp"
+     },
+     "src": "wp",
+     "quotes": [
+      "N22A2",
+      "140 HP 2,204 cc Diesel 2007–present"
+     ]
+    },
+    {
+     "id": "p5",
+     "name": "2.2 i-DTEC",
+     "market": "EU",
+     "fuel": "diesel",
+     "engine": "2.2 L N22B I4 turbo-diesel",
+     "cylinders": 4,
+     "power": {
+      "value": 150,
+      "unit": "PS"
+     },
+     "src": "wp3",
+     "quote": "The 2.2 L i-CTDI N22A turbo diesel engine was discontinued and replaced by the 2.2 L i-DTEC N22B engine, increasing power output to 150 PS and meeting Euro 5 emission standards."
+    }
+   ],
+   "changes": [
+    {
+     "id": "c1",
+     "topic": "design",
+     "text": "Top-hinged tailgate replaced the side-hinged door; spare tyre moved under the vehicle.",
+     "src": "hntl",
+     "quote": "An easier-to-open top-hinged tailgate replaced the side-hinged tailgate design of previous models."
+    },
+    {
+     "id": "c2",
+     "topic": "dimensions",
+     "text": "US: 1.4 in wider (71.6 in) and 3.1 in shorter, mainly because the spare tyre moved.",
+     "src": "hn07",
+     "quote": "by 1.4 inches to 71.6 inches while the body length has decreased by 3.1 inches"
+    },
+    {
+     "id": "c3",
+     "topic": "powertrain",
+     "text": "US 2.4 engine output up 10 hp to 166 hp.",
+     "src": "hn07",
+     "quote": "The engine produces 166 horsepower and 161 lb-ft. of torque - a 10-horsepower"
+    },
+    {
+     "id": "c4",
+     "topic": "powertrain",
+     "text": "Every US CR-V had an automatic transmission.",
+     "src": "hntl",
+     "quote": "For the first time, every CR-V featured an automatic transmission."
+    },
+    {
+     "id": "c5",
+     "topic": "drivetrain",
+     "text": "Real Time AWD sends 20 percent more torque to the rear wheels.",
+     "src": "hntl",
+     "quote": "Enhancements to the Real Time™ all-wheel-drive system improved performance by sending 20 percent more torque to the rear wheels"
+    },
+    {
+     "id": "c6",
+     "topic": "safety-equipment",
+     "text": "Advanced Compatibility Engineering (ACE) body structure.",
+     "src": "hntl",
+     "quote": "Body construction included Honda's Advanced Compatibility Engineering™ (ACE™) Body Structure"
+    }
+   ],
+   "revisions": [
+    {
+     "id": "r1",
+     "slug": "2009-facelift",
+     "kind": "facelift",
+     "name": "Facelift (2009, model year 2010)",
+     "dates": {
+      "revealed": {
+       "value": "2009-09-10",
+       "src": "hn10",
+       "quotes": [
+        "September 10, 2009",
+        "Exterior styling enhancements include a freshened front fascia with a new grille and bumper design"
+       ]
+      }
+     },
+     "changes": [
+      {
+       "id": "r1c1",
+       "topic": "design",
+       "text": "Freshened front fascia with new grille and bumper, re-sculpted bonnet and new rear bumper.",
+       "src": "hn10",
+       "quote": "Exterior styling enhancements include a freshened front fascia with a new grille and bumper design, a re-sculpted hood, and a new rear bumper shape."
+      },
+      {
+       "id": "r1c2",
+       "topic": "powertrain",
+       "text": "US 2.4 engine output raised by 14 hp to 180 hp.",
+       "src": "hn10",
+       "quote": "Upgrades to the 2.4-liter 4-cylinder engine improve power output to 180 horsepower (hp), a 14 hp increase."
+      },
+      {
+       "id": "r1c3",
+       "topic": "powertrain",
+       "text": "Europe: 2.2 i-CTDi diesel replaced by the 150 PS 2.2 i-DTEC (Euro 5).",
+       "src": "wp3",
+       "quote": "The 2.2 L i-CTDI N22A turbo diesel engine was discontinued and replaced by the 2.2 L i-DTEC N22B engine"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "US model years 2007–2011; US sales from late September 2006. Production in East Liberty, Ohio began with this generation.",
+    "Wikipedia's 4,518 mm length (market unstated) and the US 179.3 in (MY2011) are separate records.",
+    "European engines (2.0 R20A petrol, 2.2 diesels) come from Wikipedia; no European Honda source was read."
+   ]
+  },
+  {
+   "id": "honda-cr-v-rm",
+   "slug": "rm",
+   "ordinal": 4,
+   "lines": [
+    "cr-v"
+   ],
+   "name": "Fourth generation",
+   "codes": [
+    {
+     "value": "RM1/2/3/4",
+     "kind": "model code",
+     "src": "wp4",
+     "quote": "Model code RM1/2/3/4"
+    }
+   ],
+   "dates": {
+    "revealed": {
+     "value": "2011-11-16",
+     "event": "Los Angeles Auto Show",
+     "src": "hn12la",
+     "quotes": [
+      "November 16, 2011",
+      "The all-new, the fourth-generation Honda CR-V debuted today at the Los Angeles Auto Show."
+     ]
+    },
+    "productionStart": {
+     "value": "2011-11",
+     "src": "wp4",
+     "quote": "Production November 2011 – 2018"
+    },
+    "productionEnd": {
+     "value": "2018",
+     "src": "wp4",
+     "quote": "Production November 2011 – 2018"
+    },
+    "salesStart": [
+     {
+      "value": "2011-12-15",
+      "market": "US",
+      "src": "hn12la",
+      "quotes": [
+       "November 16, 2011",
+       "The CR-V will go on-sale at Honda dealerships nationwide on December 15th."
+      ]
+     },
+     {
+      "value": "2011-12-02",
+      "market": "JP",
+      "src": "wp4",
+      "quote": "In Japan, the fourth-generation CR-V was launched on November 28, 2011 and has been on sale since December 2, 2011."
+     },
+     {
+      "value": "2012-02",
+      "market": "CN",
+      "src": "wp4",
+      "quote": "The fourth-generation CR-V was launched in China in February 2012."
+     }
+    ],
+    "modelYears": [
+     {
+      "market": "US",
+      "from": 2012,
+      "to": 2016,
+      "src": "hntl",
+      "quote": "Fourth-Generation CR-V: 2012 – 2016"
+     }
+    ]
+   },
+   "ongoing": false,
+   "platform": {
+    "value": "Honda C-5",
+    "src": "wp4",
+    "quote": "Platform Honda C-5"
+   },
+   "assembly": [
+    {
+     "value": "East Liberty, Ohio, US",
+     "src": "hn12",
+     "quote": "CR-Vs are manufactured at the Honda of America Manufacturing, Inc., East Liberty Auto Plant in Ohio"
+    },
+    {
+     "value": "Honda of Canada Mfg., Alliston, Ontario, Canada",
+     "src": "wp4",
+     "quote": "Canada: Alliston, Ontario (HCM)"
+    },
+    {
+     "value": "El Salto, Jalisco, Mexico",
+     "src": "wp4",
+     "quote": "Mexico: El Salto, Jalisco (Honda de México)"
+    },
+    {
+     "value": "Swindon, UK",
+     "src": "wp4",
+     "quote": "United Kingdom: Swindon (HUM)"
+    },
+    {
+     "value": "Dongfeng Honda, Wuhan, China",
+     "src": "wp4",
+     "quote": "China: Wuhan (Dongfeng Honda)"
+    }
+   ],
+   "bodyStyles": [
+    {
+     "id": "b1",
+     "value": "5-door SUV",
+     "markets": [
+      "global"
+     ],
+     "src": "wp4",
+     "quote": "Body style 5-door SUV"
+    }
+   ],
+   "drivetrains": [
+    {
+     "value": "AWD",
+     "system": "Real Time AWD with Intelligent Control System",
+     "markets": [
+      "US"
+     ],
+     "src": "hntl",
+     "quote": "An all-new Real Time™ AWD with Intelligent Control System™ operated at all speeds"
+    }
+   ],
+   "dimensions": [
+    {
+     "id": "d1",
+     "market": "US",
+     "version": "2012 model year, FWD height",
+     "unit": "in",
+     "wheelbase": 103.1,
+     "length": 178.3,
+     "height": 64.7,
+     "width": 71.6,
+     "src": "hns12",
+     "quotes": [
+      "Wheelbase (in) 103.1",
+      "Length (in) 178.3",
+      "Height FWD / 4WD (in) 64.7 / 65.1",
+      "Width (in) 71.6"
+     ]
+    },
+    {
+     "id": "d2",
+     "market": "US",
+     "version": "2015 model year (facelift), 2WD height",
+     "unit": "in",
+     "wheelbase": 103.1,
+     "length": 179.4,
+     "height": 64.7,
+     "width": 71.6,
+     "src": "hns15",
+     "quotes": [
+      "Wheelbase (in) 103.1",
+      "Length (in) 179.4",
+      "Height (in, 2WD/AWD) 64.7 / 65.1",
+      "Width (in) 71.6"
+     ]
+    }
+   ],
+   "cargo": [
+    {
+     "id": "k1",
+     "market": "US",
+     "version": "2012 model year",
+     "behind": "2nd row",
+     "value": 37.2,
+     "unit": "cu ft",
+     "standard": "not stated",
+     "src": "hns12",
+     "quote": "Cargo Volume (cu ft, rear seat up/down) 37.2 / 70.9"
+    },
+    {
+     "id": "k2",
+     "market": "US",
+     "version": "2012 model year",
+     "behind": "1st row",
+     "value": 70.9,
+     "unit": "cu ft",
+     "standard": "not stated",
+     "src": "hns12",
+     "quote": "Cargo Volume (cu ft, rear seat up/down) 37.2 / 70.9"
+    },
+    {
+     "id": "k3",
+     "market": "US",
+     "version": "2015 model year",
+     "behind": "2nd row",
+     "value": 35.2,
+     "unit": "cu ft",
+     "standard": "not stated",
+     "src": "hns15",
+     "quote": "Cargo Volume (cu ft, rear seat up/down) 35.2 / 70.9"
+    }
+   ],
+   "powertrains": [
+    {
+     "id": "p1",
+     "name": "2.4 i-VTEC (US, 2012–2014)",
+     "market": "US",
+     "fuel": "petrol",
+     "years": "2012–2014",
+     "engine": "2.4 L K24Z I4",
+     "displacement": 2354,
+     "cylinders": 4,
+     "power": {
+      "value": 185,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 163,
+      "unit": "lb-ft"
+     },
+     "transmission": "5-speed automatic",
+     "src": "hns12",
+     "quotes": [
+      "Displacement (L / cc) 2.4 / 2354",
+      "Horsepower @ rpm (SAE net) 185 @ 7000",
+      "Torque (lb-ft @ rpm) 163 @ 4400",
+      "5-Speed Automatic Transmission"
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "2.4 direct injection (US, 2015–2016)",
+     "market": "US",
+     "fuel": "petrol",
+     "years": "2015–2016",
+     "engine": "2.4 L K24W I4 direct injection",
+     "displacement": 2356,
+     "cylinders": 4,
+     "power": {
+      "value": 185,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 181,
+      "unit": "lb-ft"
+     },
+     "transmission": "CVT",
+     "src": "hns15",
+     "quotes": [
+      "Displacement (cc) 2356",
+      "Horsepower @ rpm (SAE net) 185 @ 6400",
+      "Torque (lb-ft @ rpm, SAE net) 181 @ 3900",
+      "Continuously Variable Transmission (CVT) with Sport Mode"
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "2.0 i-VTEC",
+     "market": "unstated",
+     "fuel": "petrol",
+     "engine": "2.0 L R20A I4",
+     "displacement": 1997,
+     "cylinders": 4,
+     "power": {
+      "value": 150,
+      "unit": "hp"
+     },
+     "src": "wp",
+     "quotes": [
+      "R20A",
+      "150 HP 1,997 cc Petrol 2012–present"
+     ]
+    },
+    {
+     "id": "p4",
+     "name": "2.2 i-DTEC",
+     "market": "unstated",
+     "fuel": "diesel",
+     "engine": "2.2 L N22B I4 turbo-diesel",
+     "displacement": 2199,
+     "cylinders": 4,
+     "power": {
+      "value": 150,
+      "unit": "hp"
+     },
+     "src": "wp",
+     "quotes": [
+      "N22B4",
+      "150 HP 2,199 cc Diesel 2012–present"
+     ]
+    },
+    {
+     "id": "p5",
+     "name": "1.6 i-DTEC 120",
+     "market": "unstated",
+     "fuel": "diesel",
+     "years": "2015–",
+     "engine": "1.6 L N16 I4 turbo-diesel",
+     "cylinders": 4,
+     "power": {
+      "value": 120,
+      "unit": "PS"
+     },
+     "torque": {
+      "value": 300,
+      "unit": "Nm"
+     },
+     "drivetrain": "FWD",
+     "src": "wp4",
+     "quote": "1.6 i-DTEC (diesel) producing either 120 PS (88 kW) power and 300 Nm torque (2WD) or 160 PS (116 kW) power and 350 Nm torque (4WD)"
+    },
+    {
+     "id": "p6",
+     "name": "1.6 i-DTEC 160",
+     "market": "unstated",
+     "fuel": "diesel",
+     "years": "2015–",
+     "engine": "1.6 L N16 I4 twin-turbo diesel",
+     "cylinders": 4,
+     "power": {
+      "value": 160,
+      "unit": "PS"
+     },
+     "torque": {
+      "value": 350,
+      "unit": "Nm"
+     },
+     "drivetrain": "AWD",
+     "src": "wp4",
+     "quote": "1.6 i-DTEC (diesel) producing either 120 PS (88 kW) power and 300 Nm torque (2WD) or 160 PS (116 kW) power and 350 Nm torque (4WD)"
+    }
+   ],
+   "changes": [
+    {
+     "id": "c1",
+     "topic": "powertrain",
+     "text": "US 2.4 engine up 5 hp to 185 hp.",
+     "src": "hn12",
+     "quote": "Improvements to the 2012 CR-V's 185-horsepower, 2.4-liter, i-VTEC DOHC 4-cylinder engine contribute to more power (+5 horsepower)"
+    },
+    {
+     "id": "c2",
+     "topic": "dimensions",
+     "text": "Roofline 1.0 in lower than the 2011 model.",
+     "src": "hn12",
+     "quote": "Compared to the 2011 model, the 2012 body design is more aerodynamically efficient with a 1.0-inch lower roofline"
+    },
+    {
+     "id": "c3",
+     "topic": "drivetrain",
+     "text": "All-new Real Time AWD with Intelligent Control System.",
+     "src": "hn12la",
+     "quote": "along with an all-new Real Time All-Wheel-Drive (AWD) with Intelligent Control System"
+    },
+    {
+     "id": "c4",
+     "topic": "technology",
+     "text": "Standard rearview camera, Bluetooth and two information screens (US).",
+     "src": "hntl",
+     "quote": "New standard features included two information screens, Bluetooth® HandsFreeLink® phone interface, a multi-angle rearview camera and a 60/40 split rear seat."
+    },
+    {
+     "id": "c5",
+     "topic": "interior",
+     "text": "Larger cabin and cargo space with a more aerodynamic body.",
+     "src": "gh30",
+     "quote": "featuring a sleek, highly efficient aerodynamic body, excellent fuel economy and occupant comfort, as well as a larger cabin and cargo space"
+    }
+   ],
+   "revisions": [
+    {
+     "id": "r1",
+     "slug": "2014-facelift",
+     "kind": "facelift",
+     "name": "Facelift (2014, model year 2015)",
+     "dates": {
+      "salesStart": {
+       "value": "2014-10-01",
+       "market": "US",
+       "src": "hn15",
+       "quote": "Launching at Honda dealerships nationwide on October 1, 2014"
+      }
+     },
+     "changes": [
+      {
+       "id": "r1c1",
+       "topic": "powertrain",
+       "text": "Direct-injected Earth Dreams 2.4 engine and first CR-V CVT; torque up 11 percent (US).",
+       "src": "hn15",
+       "quote": "The 2015 CR-V's new Earth Dreams Technology™ 2.4-liter direct-injected DOHC i-VTEC inline 4-cylinder engine produces 181 lb-ft of torque, an 11-percent increase"
+      },
+      {
+       "id": "r1c2",
+       "topic": "safety-equipment",
+       "text": "Honda Sensing (including CMBS and LKAS) standard on the new Touring trim.",
+       "src": "hntl",
+       "quote": "A new suite of Honda Sensing® safety and driver assistive features became standard on CR-V Touring"
+      },
+      {
+       "id": "r1c3",
+       "topic": "technology",
+       "text": "7-inch touchscreen Display Audio introduced.",
+       "src": "hn15",
+       "quote": "for the first time on CR-V, Honda's new 7-inch touchscreen Display Audio telematics interface"
+      },
+      {
+       "id": "r1c4",
+       "topic": "powertrain",
+       "text": "Europe: 1.6 i-DTEC diesels (120/160 PS) replaced the 2.2 i-DTEC.",
+       "src": "wp4",
+       "quote": "1.6 i-DTEC (diesel) producing either 120 PS (88 kW) power and 300 Nm torque (2WD) or 160 PS (116 kW) power and 350 Nm torque (4WD)"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "US model years 2012–2016; production ran to 2018 in some markets (Wikipedia).",
+    "In Japan the fourth generation was discontinued in August 2016 and the CR-V returned there only with the fifth generation in 2018 (Wikipedia, fifth-generation article).",
+    "The 1.6 i-DTEC diesels are attributed by Wikipedia to the 2015 model in an unnamed (likely European) market; marked 'unstated'."
+   ]
+  },
+  {
+   "id": "honda-cr-v-rw",
+   "slug": "rw",
+   "ordinal": 5,
+   "lines": [
+    "cr-v"
+   ],
+   "name": "Fifth generation",
+   "codes": [
+    {
+     "value": "RW1",
+     "kind": "model code",
+     "src": "wp5",
+     "quote": "Model code RW1 RW2 RW3 RW4 RW5 RW6 RW7 RW8 RT5 RT6"
+    },
+    {
+     "value": "RW2",
+     "kind": "model code",
+     "src": "wp5",
+     "quote": "Model code RW1 RW2 RW3 RW4 RW5 RW6 RW7 RW8 RT5 RT6"
+    },
+    {
+     "value": "RW3",
+     "kind": "model code",
+     "src": "wp5",
+     "quote": "Model code RW1 RW2 RW3 RW4 RW5 RW6 RW7 RW8 RT5 RT6"
+    },
+    {
+     "value": "RW4",
+     "kind": "model code",
+     "src": "wp5",
+     "quote": "Model code RW1 RW2 RW3 RW4 RW5 RW6 RW7 RW8 RT5 RT6"
+    },
+    {
+     "value": "RW5",
+     "kind": "model code",
+     "src": "wp5",
+     "quote": "Model code RW1 RW2 RW3 RW4 RW5 RW6 RW7 RW8 RT5 RT6"
+    },
+    {
+     "value": "RW6",
+     "kind": "model code",
+     "src": "wp5",
+     "quote": "Model code RW1 RW2 RW3 RW4 RW5 RW6 RW7 RW8 RT5 RT6"
+    },
+    {
+     "value": "RW7",
+     "kind": "model code",
+     "src": "wp5",
+     "quote": "Model code RW1 RW2 RW3 RW4 RW5 RW6 RW7 RW8 RT5 RT6"
+    },
+    {
+     "value": "RW8",
+     "kind": "model code",
+     "src": "wp5",
+     "quote": "Model code RW1 RW2 RW3 RW4 RW5 RW6 RW7 RW8 RT5 RT6"
+    },
+    {
+     "value": "RT5",
+     "kind": "model code",
+     "src": "wp5",
+     "quote": "Model code RW1 RW2 RW3 RW4 RW5 RW6 RW7 RW8 RT5 RT6"
+    },
+    {
+     "value": "RT6",
+     "kind": "model code",
+     "src": "wp5",
+     "quote": "Model code RW1 RW2 RW3 RW4 RW5 RW6 RW7 RW8 RT5 RT6"
+    }
+   ],
+   "names": [
+    {
+     "value": "Breeze",
+     "markets": [
+      "CN"
+     ],
+     "src": "wp5",
+     "quote": "Also called Honda Breeze (China, GAC Honda)"
+    }
+   ],
+   "dates": {
+    "revealed": {
+     "value": "2016-10-13",
+     "event": "Detroit",
+     "src": "wp5",
+     "quote": "It was first unveiled on 13 October 2016 in Detroit, United States."
+    },
+    "productionStart": {
+     "value": "2016-11",
+     "src": "wp5",
+     "quote": "Honda began producing the CR-V at East Liberty, Ohio at the East Liberty Auto Plant (ELAP) in November 2016"
+    },
+    "productionEnd": {
+     "value": "2023",
+     "src": "wp5",
+     "quote": "Production 2016–2023"
+    },
+    "salesStart": [
+     {
+      "value": "2016-12-21",
+      "market": "US",
+      "src": "wp5",
+      "quote": "Sales began in the U.S. on 21 December 2016 for the 2017 model year."
+     },
+     {
+      "value": "2018-09",
+      "market": "EU",
+      "src": "wp5",
+      "quote": "The European market CR-V was shown at Geneva Motor Show in March 2018 and went on sale in September"
+     },
+     {
+      "value": "2018-08-31",
+      "market": "JP",
+      "src": "wp5",
+      "quote": "The fifth generation CR-V was also launched in Japan on 30 August 2018 and went on sale on the following day"
+     }
+    ],
+    "modelYears": [
+     {
+      "market": "US",
+      "from": 2017,
+      "to": 2022,
+      "src": "wp5",
+      "quote": "Model years 2017–2022"
+     }
+    ]
+   },
+   "ongoing": false,
+   "platform": {
+    "value": "Honda Compact Car Architecture (CCA)",
+    "src": "wp5",
+    "quote": "The fifth-generation CR-V is based on the Compact Car Architecture (CCA) platform shared with the tenth-generation Civic and the Accord."
+   },
+   "assembly": [
+    {
+     "value": "East Liberty, Ohio, US",
+     "src": "hn17",
+     "quote": "The 2017 Honda CR-V will be produced at three plants in North America – in East Liberty, Ohio; Alliston, Ontario, Canada; and, for the first time, in Greensburg, Indiana"
+    },
+    {
+     "value": "Alliston, Ontario, Canada",
+     "src": "hn17",
+     "quote": "The 2017 Honda CR-V will be produced at three plants in North America – in East Liberty, Ohio; Alliston, Ontario, Canada; and, for the first time, in Greensburg, Indiana"
+    },
+    {
+     "value": "Greensburg, Indiana, US",
+     "src": "hn17",
+     "quote": "The 2017 Honda CR-V will be produced at three plants in North America – in East Liberty, Ohio; Alliston, Ontario, Canada; and, for the first time, in Greensburg, Indiana"
+    },
+    {
+     "value": "Marysville, Ohio, US",
+     "src": "hntl",
+     "quote": "2018: Production expanded to Marysville, Ohio, the fourth plant in North America to build CR-V."
+    },
+    {
+     "value": "Japan (European-market cars)",
+     "src": "wp5",
+     "quote": "The European market fifth-generation CR-V was imported from Japan."
+    },
+    {
+     "value": "Dongfeng Honda (Wuhan) and GAC Honda (Guangzhou, Breeze), China",
+     "src": "wp5",
+     "quote": "China: Wuhan (Dongfeng Honda); Guangzhou (Guangqi Honda, Breeze)"
+    }
+   ],
+   "bodyStyles": [
+    {
+     "id": "b1",
+     "value": "5-door SUV",
+     "markets": [
+      "global"
+     ],
+     "src": "wp5",
+     "quote": "Body style 5-door SUV"
+    }
+   ],
+   "seating": {
+    "options": [
+     5,
+     7
+    ],
+    "src": "wp5",
+    "quote": "The fifth-generation of CR-V was available in 5-seater and 7-seater variants in markets other than North America."
+   },
+   "drivetrains": [
+    {
+     "value": "FWD",
+     "markets": [
+      "global"
+     ],
+     "src": "wp5",
+     "quote": "Layout Front-engine, front-wheel-drive Front-engine, all-wheel-drive"
+    },
+    {
+     "value": "AWD",
+     "system": "Real Time AWD with Intelligent Control System",
+     "markets": [
+      "US"
+     ],
+     "src": "hntl",
+     "quote": "All-wheel-drive models featured an upgraded Real Time™ AWD with Intelligent Control System™"
+    }
+   ],
+   "dimensions": [
+    {
+     "id": "d1",
+     "market": "US",
+     "version": "2017 model year, 2WD height",
+     "unit": "in",
+     "wheelbase": 104.7,
+     "length": 180.6,
+     "height": 66.1,
+     "src": "hns17",
+     "quotes": [
+      "Wheelbase 104.7 in",
+      "Length 180.6 in",
+      "Height (2WD/AWD) 66.1 in / 66.5 in"
+     ]
+    },
+    {
+     "id": "d2",
+     "market": "US",
+     "version": "2020 model year (facelift), 2WD",
+     "unit": "in",
+     "wheelbase": 104.8,
+     "length": 182.1,
+     "height": 66.1,
+     "src": "hns20",
+     "quotes": [
+      "Wheelbase (2WD/AWD) 104.8 / 104.7",
+      "Length 182.1 in",
+      "Height (2WD/AWD) 66.1 in / 66.5 in"
+     ]
+    },
+    {
+     "id": "d3",
+     "market": "unstated",
+     "unit": "mm",
+     "wheelbase": 2660,
+     "width": 1855,
+     "src": "wp5",
+     "quotes": [
+      "Wheelbase 2,660 mm (104.7 in)",
+      "Width 1,855 mm (73.0 in)"
+     ]
+    }
+   ],
+   "cargo": [
+    {
+     "id": "k1",
+     "market": "US",
+     "version": "LX/EX/EX-L",
+     "behind": "2nd row",
+     "value": 39.2,
+     "unit": "cu ft",
+     "standard": "not stated",
+     "src": "hns17",
+     "quote": "Cargo Volume (rear seat up/down) 39.2 cu ft / 75.8 cu ft"
+    },
+    {
+     "id": "k2",
+     "market": "US",
+     "version": "LX/EX/EX-L",
+     "behind": "1st row",
+     "value": 75.8,
+     "unit": "cu ft",
+     "standard": "not stated",
+     "src": "hns17",
+     "quote": "Cargo Volume (rear seat up/down) 39.2 cu ft / 75.8 cu ft"
+    },
+    {
+     "id": "k3",
+     "market": "US",
+     "version": "CR-V Hybrid",
+     "behind": "2nd row",
+     "value": 33.2,
+     "unit": "cu ft",
+     "standard": "not stated",
+     "src": "hns20",
+     "quote": "33.2 cu ft / 68.7 cu ft"
+    }
+   ],
+   "powertrains": [
+    {
+     "id": "p1",
+     "name": "2.4 i-VTEC (US LX)",
+     "market": "US",
+     "fuel": "petrol",
+     "years": "2017–2019",
+     "engine": "2.4 L K24W I4",
+     "displacement": 2356,
+     "cylinders": 4,
+     "power": {
+      "value": 184,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 180,
+      "unit": "lb-ft"
+     },
+     "transmission": "CVT",
+     "src": "hns17",
+     "quotes": [
+      "Displacement 2356 cc 1498 cc",
+      "Horsepower (SAE net) 184 @ 6400 rpm 190 @ 5600 rpm",
+      "Torque (SAE net) 180 lb-ft @ 3900 rpm 179 lb-ft @ 2000-5000 rpm"
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "1.5 VTEC Turbo (US)",
+     "market": "US",
+     "fuel": "petrol",
+     "years": "2017–2022",
+     "engine": "1.5 L L15B turbo I4",
+     "displacement": 1498,
+     "cylinders": 4,
+     "power": {
+      "value": 190,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 179,
+      "unit": "lb-ft"
+     },
+     "transmission": "CVT",
+     "src": "hns17",
+     "quotes": [
+      "Displacement 2356 cc 1498 cc",
+      "Horsepower (SAE net) 184 @ 6400 rpm 190 @ 5600 rpm",
+      "Torque (SAE net) 180 lb-ft @ 3900 rpm 179 lb-ft @ 2000-5000 rpm"
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "CR-V Hybrid (US)",
+     "market": "US",
+     "fuel": "hybrid",
+     "years": "2020–2022",
+     "engine": "2.0 L Atkinson I4 + two motors",
+     "displacement": 1993,
+     "cylinders": 4,
+     "power": {
+      "value": 212,
+      "unit": "hp"
+     },
+     "drivetrain": "AWD",
+     "src": "hns20",
+     "quotes": [
+      "Total System Horsepower3",
+      "212 @ 6200 rpm",
+      "1993 cc"
+     ]
+    },
+    {
+     "id": "p4",
+     "name": "CR-V Hybrid (China)",
+     "market": "CN",
+     "fuel": "hybrid",
+     "engine": "2.0 L I4 + two motors",
+     "power": {
+      "value": 158,
+      "unit": "kW"
+     },
+     "src": "wp5",
+     "quote": "The 158 kW (212 hp; 215 PS) CR-V Hybrid was unveiled at the 2017 Auto Shanghai in China in April 2017."
+    },
+    {
+     "id": "p5",
+     "name": "2.0 i-VTEC (R20Z1)",
+     "market": "unstated",
+     "fuel": "petrol",
+     "engine": "2.0 L R20Z1 I4",
+     "cylinders": 4,
+     "power": {
+      "value": 151,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 139,
+      "unit": "lb-ft"
+     },
+     "src": "wp5",
+     "quote": "RW4 (AWD) 151 hp (113 kW) at 6,500 rpm 139 lb⋅ft (188 N⋅m) at 4,300 rpm"
+    },
+    {
+     "id": "p6",
+     "name": "1.6 i-DTEC twin-turbo",
+     "market": "unstated",
+     "fuel": "diesel",
+     "engine": "1.6 L N16A4 I4 twin-turbo diesel",
+     "cylinders": 4,
+     "power": {
+      "value": 160,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 258,
+      "unit": "lb-ft"
+     },
+     "transmission": "9-speed automatic",
+     "src": "wp5",
+     "quote": "RW8 (AWD) 160 hp (119 kW) at 4,000 rpm 258 lb⋅ft (350 N⋅m) at 2,000 rpm"
+    },
+    {
+     "id": "p7",
+     "name": "1.6 i-DTEC",
+     "market": "unstated",
+     "fuel": "diesel",
+     "engine": "1.6 L N16A5 I4 turbo-diesel",
+     "cylinders": 4,
+     "power": {
+      "value": 120,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 221,
+      "unit": "lb-ft"
+     },
+     "src": "wp5",
+     "quote": "RW8 (AWD) 120 hp (89 kW) at 4,000 rpm 221 lb⋅ft (300 N⋅m) at 2,000 rpm"
+    }
+   ],
+   "changes": [
+    {
+     "id": "c1",
+     "topic": "powertrain",
+     "text": "First turbocharged CR-V engine: 1.5-litre, 190 hp (US EX and above).",
+     "src": "hntl",
+     "quote": "EX and higher trims were powered by CR-V's first-ever turbocharged engine"
+    },
+    {
+     "id": "c2",
+     "topic": "chassis",
+     "text": "Moved to the Compact Car Architecture shared with the tenth-generation Civic.",
+     "src": "wp5",
+     "quote": "The fifth-generation CR-V is based on the Compact Car Architecture (CCA) platform shared with the tenth-generation Civic and the Accord."
+    },
+    {
+     "id": "c3",
+     "topic": "powertrain",
+     "text": "First CR-V with a hybrid variant.",
+     "src": "gh30",
+     "quote": "The fifth-generation Honda CR-V lineup included a hybrid variant for the first time."
+    },
+    {
+     "id": "c4",
+     "topic": "safety-equipment",
+     "text": "Honda Sensing standard on US EX and higher trims.",
+     "src": "hn17",
+     "quote": "The 2017 CR-V further expands the application of Honda Sensing as standard equipment on EX and higher trims"
+    },
+    {
+     "id": "c5",
+     "topic": "design",
+     "text": "Active Shutter Grille and Hands-Free Access Power Tailgate (Honda firsts).",
+     "src": "hn17",
+     "quote": "a Honda-first Active Shutter Grille that lowers aerodynamic drag"
+    },
+    {
+     "id": "c6",
+     "topic": "other",
+     "text": "Seven-seat version offered outside North America.",
+     "src": "wp5",
+     "quote": "The fifth-generation of CR-V was available in 5-seater and 7-seater variants in markets other than North America."
+    }
+   ],
+   "revisions": [
+    {
+     "id": "r1",
+     "slug": "2019-facelift",
+     "kind": "facelift",
+     "name": "Facelift (2019, model year 2020)",
+     "dates": {
+      "revealed": {
+       "value": "2019-09-18",
+       "src": "wp5",
+       "quote": "Honda unveiled a refreshed CR-V on 18 September 2019, initially for the North American market."
+      }
+     },
+     "changes": [
+      {
+       "id": "r1c1",
+       "topic": "powertrain",
+       "text": "Hybrid powertrain offered in North America for the first time, built in Greensburg, Indiana.",
+       "src": "hn20",
+       "quote": "including a new CR-V Hybrid to be built in the company's Greensburg, Indiana plant"
+      },
+      {
+       "id": "r1c2",
+       "topic": "design",
+       "text": "Bolder front and rear styling and redesigned wheels.",
+       "src": "hn20",
+       "quote": "major upgrades to the 2020 CR-V include bolder front and rear styling, re-designed wheels and standard Honda Sensing® safety and driver-assistive technology"
+      },
+      {
+       "id": "r1c3",
+       "topic": "powertrain",
+       "text": "1.5 turbo became standard on all US non-hybrid trims, including LX.",
+       "src": "hn20",
+       "quote": "all non-hybrid CR-V models, including LX, are powered by the efficient 1.5-liter DOHC, direct-injected VTEC™ Turbo powerplant rated at 190 horsepower"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "US model years 2017–2022. Japanese sales started 31 August 2018 after a two-year absence; European sales in September 2018 (imported from Japan), hybrid in early 2019.",
+    "Breeze is the GAC Honda (Guangqi Honda) version for China from October 2019, sold alongside the Dongfeng Honda CR-V.",
+    "US width (73.0 in) is in the spec sheets but not recorded because the checker requires the exact number format; the metric width comes from Wikipedia."
+   ]
+  },
+  {
+   "id": "honda-cr-v-rs",
+   "slug": "rs",
+   "ordinal": 6,
+   "lines": [
+    "cr-v"
+   ],
+   "name": "Sixth generation",
+   "codes": [
+    {
+     "value": "RS",
+     "kind": "model code",
+     "src": "wp6",
+     "quote": "Model code RS ZC8 (e:FCEV)"
+    },
+    {
+     "value": "ZC8",
+     "kind": "model code (e:FCEV)",
+     "src": "wp6",
+     "quote": "Model code RS ZC8 (e:FCEV)"
+    }
+   ],
+   "names": [
+    {
+     "value": "Breeze",
+     "markets": [
+      "CN"
+     ],
+     "src": "wp6",
+     "quote": "Also called Honda Breeze (China, GAC Honda)"
+    }
+   ],
+   "dates": {
+    "revealed": {
+     "value": "2022-07-12",
+     "src": "hn23",
+     "quotes": [
+      "July 12, 2022",
+      "the all-new 2023 Honda CR-V debuts with a rugged and sophisticated design"
+     ]
+    },
+    "productionStart": {
+     "value": "2022-09",
+     "src": "wp6",
+     "quote": "Mass production of the sixth-generation CR-V started off at Honda's Canadian plant in Ontario in September 2022"
+    },
+    "salesStart": [
+     {
+      "value": "2022-09",
+      "market": "US",
+      "src": "wp",
+      "quote": "with sales commencing in the U.S. in September 2022 as a 2023 model year"
+     },
+     {
+      "value": "2023-08-10",
+      "market": "UK",
+      "src": "wp6",
+      "quote": "It went on sale later in the UK on 10 August 2023"
+     },
+     {
+      "value": "2026-02-26",
+      "market": "JP",
+      "src": "wp6",
+      "quote": "The sixth-generation CR-V was launched in Japan on 26 February 2026"
+     }
+    ],
+    "modelYears": [
+     {
+      "market": "US",
+      "from": 2023,
+      "src": "wp6",
+      "quote": "Model years 2023–present"
+     }
+    ]
+   },
+   "ongoing": true,
+   "platform": {
+    "value": "Honda Architecture (HA)",
+    "src": "wp6",
+    "quote": "Platform Honda HA"
+   },
+   "assembly": [
+    {
+     "value": "Honda of Canada Mfg., Alliston, Ontario, Canada",
+     "src": "hnp23",
+     "quote": "HCM is the global lead plant for CR-V production"
+    },
+    {
+     "value": "East Liberty, Ohio, US",
+     "src": "hn23",
+     "quote": "including the East Liberty Auto Plant in Ohio, the Indiana Auto Plant, and Honda of Canada Mfg."
+    },
+    {
+     "value": "Greensburg, Indiana, US",
+     "src": "hn23",
+     "quote": "including the East Liberty Auto Plant in Ohio, the Indiana Auto Plant, and Honda of Canada Mfg."
+    },
+    {
+     "value": "Performance Manufacturing Center, Marysville, Ohio, US (e:FCEV)",
+     "src": "hnfc",
+     "quote": "The CR-V e:FCEV is built* at Honda’s Performance Manufacturing Center in Marysville, Ohio"
+    },
+    {
+     "value": "Dongfeng Honda (Wuhan) and GAC Honda (Guangzhou, Breeze), China",
+     "src": "wp6",
+     "quote": "China: Wuhan, Hubei (Dongfeng Honda); Guangzhou, Guangdong (GAC Honda, Breeze)"
+    }
+   ],
+   "bodyStyles": [
+    {
+     "id": "b1",
+     "value": "5-door SUV",
+     "markets": [
+      "global"
+     ],
+     "src": "wp6",
+     "quote": "Body style 5-door SUV"
+    }
+   ],
+   "seating": {
+    "options": [
+     5,
+     7
+    ],
+    "src": "wp",
+    "quote": "The CR-V was available with 5- and 7-seater configurations, which varied by market."
+   },
+   "drivetrains": [
+    {
+     "value": "FWD",
+     "markets": [
+      "US"
+     ],
+     "src": "hnsfc",
+     "quote": "Front-Wheel Drive"
+    },
+    {
+     "value": "AWD",
+     "system": "Real Time AWD with Intelligent Control System",
+     "markets": [
+      "US"
+     ],
+     "src": "hn23",
+     "quote": "Available on all grades, and standard on Sport Touring, the system can now send up to 50 percent of engine torque to the rear wheels."
+    }
+   ],
+   "dimensions": [
+    {
+     "id": "d1",
+     "market": "US",
+     "version": "AWD",
+     "unit": "in",
+     "length": 184.8,
+     "width": 73.5,
+     "height": 66.5,
+     "wheelbase": 106.3,
+     "src": "hns23",
+     "quotes": [
+      "Length (in.) 184.8",
+      "Width (in.) 73.5",
+      "Height (in.) (AWD) 66.5",
+      "Wheelbase (in.) 106.3"
+     ]
+    },
+    {
+     "id": "d2",
+     "market": "US",
+     "version": "CR-V e:FCEV",
+     "unit": "in",
+     "length": 187.6,
+     "width": 73.5,
+     "height": 66.6,
+     "wheelbase": 106.3,
+     "src": "hnsfc",
+     "quotes": [
+      "Length (in.) 187.6",
+      "Width (in.) 73.5",
+      "Height (in.) 66.6",
+      "Wheelbase (in.) 106.3"
+     ]
+    },
+    {
+     "id": "d3",
+     "market": "unstated",
+     "unit": "mm",
+     "wheelbase": 2700,
+     "width": 1866,
+     "src": "wp6",
+     "quotes": [
+      "Wheelbase 2,700 mm (106.3 in)",
+      "Width 1,866 mm (73.5 in)"
+     ]
+    }
+   ],
+   "cargo": [
+    {
+     "id": "k1",
+     "market": "US",
+     "version": "2023 model year",
+     "behind": "2nd row",
+     "value": 39.3,
+     "unit": "cu ft",
+     "standard": "not stated",
+     "src": "hns23",
+     "quote": "Cargo Volume (cu ft.) - Behind Second Row6 39.3"
+    },
+    {
+     "id": "k2",
+     "market": "US",
+     "version": "2023 model year",
+     "behind": "1st row",
+     "value": 76.5,
+     "unit": "cu ft",
+     "standard": "not stated",
+     "src": "hns23",
+     "quote": "Cargo Volume (cu ft.) - Behind First Row, Standard/Max6 39.3 / 76.5"
+    },
+    {
+     "id": "k3",
+     "market": "US",
+     "version": "CR-V e:FCEV",
+     "behind": "2nd row",
+     "value": 25.2,
+     "unit": "cu ft",
+     "standard": "not stated",
+     "src": "hnsfc",
+     "quote": "Cargo Volume (cu ft.) - Behind Second Row3 25.2"
+    }
+   ],
+   "powertrains": [
+    {
+     "id": "p1",
+     "name": "1.5 VTEC Turbo (US)",
+     "market": "US",
+     "fuel": "petrol",
+     "years": "2023–",
+     "engine": "1.5 L L15BE turbo I4",
+     "cylinders": 4,
+     "power": {
+      "value": 190,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 179,
+      "unit": "lb-ft"
+     },
+     "transmission": "CVT",
+     "src": "hn23",
+     "quotes": [
+      "Under the hood of the CR-V EX and EX-L is an updated 1.5-liter turbo engine with additional refinement, improved emissions performance and 190 horsepower (SAE net at 6,000 rpm).",
+      "Its torque peak of 179 lb.-ft."
+     ]
+    },
+    {
+     "id": "p2",
+     "name": "CR-V Hybrid (US)",
+     "market": "US",
+     "fuel": "hybrid",
+     "years": "2023–",
+     "engine": "2.0 L Atkinson I4 + two motors",
+     "power": {
+      "value": 204,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 247,
+      "unit": "lb-ft"
+     },
+     "src": "hns23",
+     "quotes": [
+      "Total System Horsepower3 - - - 204",
+      "Torque (lb.-ft. @ rpm) - - - 247 @ 0-2,000"
+     ]
+    },
+    {
+     "id": "p3",
+     "name": "e:HEV",
+     "market": "unstated",
+     "fuel": "hybrid",
+     "engine": "2.0 L Atkinson I4 + electric motors",
+     "power": {
+      "value": 152,
+      "unit": "kW"
+     },
+     "src": "wp6",
+     "quote": "a 1.06 kWh lithium-ion battery for a total system output of 152 kW (204 hp; 207 PS)"
+    },
+    {
+     "id": "p4",
+     "name": "e:PHEV",
+     "market": "unstated",
+     "fuel": "plug-in hybrid",
+     "engine": "2.0 L I4 + electric motors, 17.7 kWh battery",
+     "src": "wp6",
+     "quote": "The CR-V e:PHEV debuted in China in April 2023 and has been exported to Europe. It is supplemented with a larger 17.7 kWh lithium-ion battery."
+    },
+    {
+     "id": "p5",
+     "name": "CR-V e:FCEV",
+     "market": "US",
+     "fuel": "hydrogen",
+     "years": "2024–",
+     "engine": "fuel cell + plug-in battery (17.7 kWh), single front motor",
+     "power": {
+      "value": 174,
+      "unit": "hp"
+     },
+     "torque": {
+      "value": 229,
+      "unit": "lb-ft"
+     },
+     "drivetrain": "FWD",
+     "src": "hnfc",
+     "quote": "a front-mounted single-motor producing 174 horsepower and 229 lb.-ft. of torque"
+    }
+   ],
+   "changes": [
+    {
+     "id": "c1",
+     "topic": "dimensions",
+     "text": "2.7 in longer overall with a 1.6 in longer wheelbase and 0.4 in more width (US).",
+     "src": "hn23",
+     "quote": "its increased overall length (+2.7 inches longer), while a 1.6-inch longer wheelbase and 0.4 inches of additional width"
+    },
+    {
+     "id": "c2",
+     "topic": "chassis",
+     "text": "Body 15 percent stiffer torsionally.",
+     "src": "hn23",
+     "quote": "A 15 percent torsionally-stiffer body further supports improvements in ride, handling and overall refinement."
+    },
+    {
+     "id": "c3",
+     "topic": "powertrain",
+     "text": "Fourth-generation two-motor hybrid with direct injection; 247 lb-ft of torque, 15 lb-ft more.",
+     "src": "hntl",
+     "quote": "It generates 247 lb.-ft. of torque, a 15 lb.-ft. improvement."
+    },
+    {
+     "id": "c4",
+     "topic": "drivetrain",
+     "text": "AWD can send up to 50 percent of torque to the rear wheels.",
+     "src": "hn23",
+     "quote": "the system can now send up to 50 percent of engine torque to the rear wheels"
+    },
+    {
+     "id": "c5",
+     "topic": "chassis",
+     "text": "Based on the Honda Architecture platform of the eleventh-generation Civic.",
+     "src": "wp6",
+     "quote": "The sixth-generation CR-V is based on the Honda Architecture (HA) platform shared with the eleventh-generation Civic."
+    },
+    {
+     "id": "c6",
+     "topic": "powertrain",
+     "text": "Diesel option no longer offered.",
+     "src": "wp6",
+     "quote": "A diesel engine option, previously available for the outgoing CR-V in some markets such as Europe, Thailand and the Philippines is no longer available."
+    }
+   ],
+   "revisions": [
+    {
+     "id": "r1",
+     "slug": "e-fcev",
+     "kind": "special",
+     "name": "CR-V e:FCEV (fuel cell)",
+     "dates": {
+      "revealed": {
+       "value": "2024-02-27",
+       "src": "hnfc",
+       "quotes": [
+        "February 27, 2024",
+        "Honda today revealed America’s first production plug-in hydrogen fuel cell electric vehicle, the 2025 Honda CR-V e:FCEV."
+       ]
+      },
+      "productionStart": {
+       "value": "2024-06-05",
+       "src": "wp6",
+       "quote": "The CR-V e:FCEV commenced production at the Performance Manufacturing Center (PMC) plant in Marysville, Ohio on 5 June 2024."
+      }
+     },
+     "changes": [
+      {
+       "id": "r1c1",
+       "topic": "powertrain",
+       "text": "Hydrogen fuel cell with plug-in charging, up to 29 miles of battery range (EPA).",
+       "src": "hnfc",
+       "quote": "Plug-in Level II charging capability designed to provide up to 29 miles of battery electric range (EPA estimated)"
+      },
+      {
+       "id": "r1c2",
+       "topic": "design",
+       "text": "Distinct body panels forward of the A-pillar, unique liftgate and rear fascia.",
+       "src": "hnfc",
+       "quote": "new body panels forward of the A-pillar, unique designs for the liftgate, rear fascia"
+      },
+      {
+       "id": "r1c3",
+       "topic": "other",
+       "text": "Launched in Japan in July 2024.",
+       "src": "gh30",
+       "quote": "In July 2024, the CR-V e:FCEV was launched"
+      }
+     ]
+    },
+    {
+     "id": "r2",
+     "slug": "2025-refresh",
+     "kind": "update",
+     "name": "Refresh (model year 2026)",
+     "dates": {
+      "salesStart": {
+       "value": "2025-05",
+       "market": "US",
+       "src": "hn26",
+       "quotes": [
+        "May 20, 2025",
+        "The refreshed 2026 Honda CR-V is arriving in Honda dealerships now"
+       ]
+      }
+     },
+     "changes": [
+      {
+       "id": "r2c1",
+       "topic": "other",
+       "text": "New TrailSport Hybrid trim with all-terrain tyres and standard AWD.",
+       "src": "hn26",
+       "quote": "First-ever CR-V TrailSport Hybrid brings more rugged styling and improved capability"
+      },
+      {
+       "id": "r2c2",
+       "topic": "technology",
+       "text": "9-inch touchscreen and wireless smartphone integration standard.",
+       "src": "hn26",
+       "quote": "A larger and easy-to-use 9-inch color touchscreen, wireless Apple CarPlay and Android Auto™ compatibility, and a wireless phone charger are now standard across the lineup."
+      },
+      {
+       "id": "r2c3",
+       "topic": "design",
+       "text": "New 18-inch wheel designs.",
+       "src": "hn26",
+       "quote": "The rugged exterior design of CR-V is updated with more aggressive 18-inch wheel designs"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "US model years from 2023. Production began at Honda of Canada Mfg. in September 2022; the e:FCEV is built in Marysville, Ohio (from June 2024) and was launched in Japan in July 2024.",
+    "Seven-seat versions are not offered in the Americas, Japan or Europe (Wikipedia).",
+    "The MY2026 change is described by American Honda as a refresh (new trim, equipment); no styling-panel changes beyond wheels are documented, so it is recorded as an update, not a facelift.",
+    "European e:HEV/e:PHEV outputs were not found in a readable Honda Europe source."
+   ]
+  }
+ ]
+}

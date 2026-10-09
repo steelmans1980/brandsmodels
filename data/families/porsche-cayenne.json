@@ -1,0 +1,1856 @@
+{
+  "id": "porsche-cayenne",
+  "slug": "cayenne",
+  "manufacturer": "porsche",
+  "name": "Porsche Cayenne",
+  "lines": [
+    {
+      "id": "cayenne",
+      "name": "Cayenne"
+    }
+  ],
+  "sources": {
+    "wp": {
+      "url": "https://en.wikipedia.org/w/index.php?title=Porsche_Cayenne&oldid=1378837350",
+      "title": "Porsche Cayenne",
+      "publisher": "Wikipedia",
+      "type": "secondary",
+      "accessed": "2026-10-09"
+    },
+    "wpde": {
+      "url": "https://de.wikipedia.org/w/index.php?title=Porsche_Cayenne&oldid=269779622",
+      "title": "Porsche Cayenne",
+      "publisher": "Wikipedia (German)",
+      "type": "secondary",
+      "accessed": "2026-10-09"
+    },
+    "p20": {
+      "url": "https://newsroom.porsche.com/en/2022/products/porsche-cayenne-anniversary-20-years-success-story-28443.html",
+      "title": "The ‘third Porsche’ – an extraordinary success story",
+      "publisher": "Porsche Newsroom",
+      "type": "manufacturer",
+      "date": "2022",
+      "accessed": "2026-10-09"
+    },
+    "pe2": {
+      "url": "https://newsroom.porsche.com/en/2022/products/porsche-cayenne-anniversary-20-years-second-generation-e2-29587.html",
+      "title": "A new generation: how the Porsche Cayenne became even sportier",
+      "publisher": "Porsche Newsroom",
+      "type": "manufacturer",
+      "date": "2022",
+      "accessed": "2026-10-09"
+    },
+    "pj": {
+      "url": "https://newsroom.porsche.com/en/2020/products/porsche-cayenne-jubilee-one-million-vehicles-review-history-23048.html",
+      "title": "The Cayenne journey – courage, secrets and world records",
+      "publisher": "Porsche Newsroom",
+      "type": "manufacturer",
+      "date": "2020",
+      "accessed": "2026-10-09"
+    },
+    "p14": {
+      "url": "https://newsroom.porsche.com/en/products/the-new-cayenne-10704.html",
+      "title": "The new Cayenne",
+      "publisher": "Porsche Newsroom",
+      "type": "manufacturer",
+      "date": "2014-07-24",
+      "accessed": "2026-10-09"
+    },
+    "p17": {
+      "url": "https://newsroom.porsche.com/en/products/porsche-cayenne-world-premiere-livestream-suv-third-generation-14073.html",
+      "title": "World premiere of the new Cayenne in Zuffenhausen",
+      "publisher": "Porsche Newsroom",
+      "type": "manufacturer",
+      "date": "2017-08-29",
+      "accessed": "2026-10-09"
+    },
+    "pcc": {
+      "url": "https://newsroom.porsche.com/en/2019/products/porsche-cayenne-turbo-coupe-suv-rear-section-spoiler-roof-concepts-17277.html",
+      "title": "Porsche presents the Cayenne Coupé",
+      "publisher": "Porsche Newsroom",
+      "type": "manufacturer",
+      "date": "2019-03-21",
+      "accessed": "2026-10-09"
+    },
+    "p23": {
+      "url": "https://newsroom.porsche.com/en/2023/products/porsche-cayenne-world-premiere-auto-shanghai-31953.html",
+      "title": "More luxury, more performance: Porsche presents the new Cayenne",
+      "publisher": "Porsche Newsroom",
+      "type": "manufacturer",
+      "date": "2023-04-18",
+      "accessed": "2026-10-09"
+    },
+    "pel": {
+      "url": "https://newsroom.porsche.com/en/2025/products/porsche-cayenne-electric-technological-milestone-41128.html",
+      "title": "A technological milestone for Porsche as the Cayenne goes electric",
+      "publisher": "Porsche Newsroom",
+      "type": "manufacturer",
+      "date": "2025-11-19",
+      "accessed": "2026-10-09"
+    },
+    "pse": {
+      "url": "https://newsroom.porsche.com/en/2026/products/porsche-the-new-cayenne-s-electric-41864.html",
+      "title": "Porsche expands all-electric SUV model lineup with the Cayenne S",
+      "publisher": "Porsche Newsroom",
+      "type": "manufacturer",
+      "date": "2026-03-10",
+      "accessed": "2026-10-09"
+    },
+    "pcel": {
+      "url": "https://newsroom.porsche.com/en/2026/products/porsche-the-new-cayenne-coupe-electric-42213.html",
+      "title": "Inspired by an icon: the new Cayenne Coupé Electric",
+      "publisher": "Porsche Newsroom",
+      "type": "manufacturer",
+      "date": "2026-04-24",
+      "accessed": "2026-10-09"
+    }
+  },
+  "generations": [
+    {
+      "id": "porsche-cayenne-9pa",
+      "slug": "9pa",
+      "ordinal": 1,
+      "lines": [
+        "cayenne"
+      ],
+      "name": "First generation",
+      "codes": [
+        {
+          "value": "9PA",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code 9PA"
+        },
+        {
+          "value": "955",
+          "kind": "type number (original version)",
+          "src": "wp",
+          "quote": "The first generation was known within Porsche as the Type 9PA (955/957) or E1."
+        },
+        {
+          "value": "957",
+          "kind": "type number (model update)",
+          "src": "wp",
+          "quote": "The first generation was known within Porsche as the Type 9PA (955/957) or E1."
+        },
+        {
+          "value": "E1",
+          "kind": "internal generation code",
+          "src": "p20",
+          "quote": "Both the first and second model generations of the Cayenne – known internally as E1 and E2"
+        }
+      ],
+      "dates": {
+        "revealed": {
+          "value": "2002-09",
+          "event": "Paris Motor Show",
+          "src": "p20",
+          "quote": "Shortly after its world premiere at the Paris Motor Show in September 2002"
+        },
+        "productionStart": {
+          "value": "2002-08",
+          "src": "wp",
+          "quote": "Production August 2002 – December 2009"
+        },
+        "productionEnd": {
+          "value": "2009-12",
+          "src": "wp",
+          "quote": "Production August 2002 – December 2009"
+        },
+        "modelYears": [
+          {
+            "market": "unstated",
+            "from": 2003,
+            "to": 2010,
+            "src": "wp",
+            "quote": "Model years 2003–2010"
+          }
+        ]
+      },
+      "ongoing": false,
+      "platform": {
+        "value": "Volkswagen Group PL71",
+        "src": "wp",
+        "quote": "Platform Volkswagen Group PL71 platform"
+      },
+      "assembly": [
+        {
+          "value": "Bratislava, Slovakia (Volkswagen Bratislava Plant: body assembly, paint, engine, gearbox, drivetrain, under chassis, wheels)",
+          "src": "wp",
+          "quote": "Slovakia: Bratislava (Volkswagen Bratislava Plant: body assembly, paint, engine, gearbox, drivetrain, under chassis, wheels)"
+        },
+        {
+          "value": "Leipzig, Germany (Porsche Leipzig GmbH: interior, finishing, inspection)",
+          "src": "wp",
+          "quote": "Germany: Leipzig (Porsche Leipzig GmbH: interior, finishing, inspection)"
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Body style 5-door crossover SUV"
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "AWD",
+          "system": "Porsche Traction Management (PTM) with low-range transfer box",
+          "markets": [
+            "global"
+          ],
+          "src": "p20",
+          "quote": "Porsche Traction Management (PTM) distributed drive power between the rear and front axles in a ratio of 62:38 as standard."
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "unstated",
+          "version": "955 (original) Cayenne",
+          "unit": "mm",
+          "length": 4782,
+          "width": 1928,
+          "height": 1699,
+          "wheelbase": 2855,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 2,855 mm (112.4 in)",
+            "Length 955 Cayenne: 4,782 mm (188.3 in)",
+            "Width 1,928 mm (75.9 in)",
+            "Height 1,699 mm (66.9 in)"
+          ]
+        },
+        {
+          "id": "d2",
+          "market": "unstated",
+          "version": "957 (model update) Cayenne",
+          "unit": "mm",
+          "length": 4798,
+          "wheelbase": 2855,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 2,855 mm (112.4 in)",
+            "957 Cayenne: 4,798 mm (188.9 in)"
+          ]
+        },
+        {
+          "id": "d3",
+          "market": "unstated",
+          "version": "957 (model update) Cayenne GTS",
+          "unit": "mm",
+          "length": 4795,
+          "width": 1957,
+          "height": 1675,
+          "src": "wp",
+          "quotes": [
+            "957 GTS/Turbo: 4,795 mm (188.8 in)",
+            "957 GTS/Turbo S: 1,957 mm (77.0 in)",
+            "957 GTS: 1,675 mm (65.9 in)"
+          ]
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "Cayenne (3.2 VR6)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2004–2007",
+          "engine": "3.2 L VR6",
+          "displacement": 3189,
+          "cylinders": 6,
+          "power": {
+            "value": 250,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 310,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "Cayenne 2004–2007 3,189 cc (3.2 L; 194.6 cu in) VR6 250 PS (184 kW; 247 hp) at 6,000, 310 N⋅m",
+            "250 PS (184 kW; 247 hp) at 6,000, 310 N⋅m"
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "Cayenne S (4.5 V8)",
+          "market": "EU",
+          "fuel": "petrol",
+          "engine": "4.5 L V8",
+          "cylinders": 8,
+          "power": {
+            "value": 250,
+            "unit": "kW"
+          },
+          "src": "p20",
+          "quotes": [
+            "In the Cayenne S, the newly developed 4.5-litre engine generated 250 kW (340 PS)"
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "Cayenne Turbo (4.5 V8 biturbo)",
+          "market": "EU",
+          "fuel": "petrol",
+          "engine": "4.5 L twin-turbo V8",
+          "cylinders": 8,
+          "power": {
+            "value": 331,
+            "unit": "kW"
+          },
+          "src": "p20",
+          "quotes": [
+            "the Cayenne Turbo managed an even more impressive 331 kW (450 PS) from the same displacement"
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "Cayenne Turbo S (4.5 V8 biturbo)",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "from 2006",
+          "engine": "4.5 L twin-turbo V8",
+          "cylinders": 8,
+          "power": {
+            "value": 383,
+            "unit": "kW"
+          },
+          "src": "p20",
+          "quotes": [
+            "at the beginning of 2006 with the introduction of the first Cayenne Turbo S, which attracted attention with its engine output of 383 kW (521 PS) from its 4.5-litre V8 biturbo engine"
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "Cayenne (3.6 VR6)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2007–2010",
+          "engine": "3.6 L VR6",
+          "displacement": 3598,
+          "cylinders": 6,
+          "power": {
+            "value": 290,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 385,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "Cayenne 2007–2010 3,598 cc (3.6 L; 219.6 cu in) VR6 290 PS (213 kW; 286 hp) at 6,200, 385 N⋅m",
+            "290 PS (213 kW; 286 hp) at 6,200"
+          ]
+        },
+        {
+          "id": "p6",
+          "name": "Cayenne S (4.8 V8)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2007–2010",
+          "engine": "4.8 L V8 direct injection",
+          "displacement": 4806,
+          "cylinders": 8,
+          "power": {
+            "value": 385,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 500,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "Cayenne S 2007–2010 4,806 cc (4.8 L; 293.3 cu in) V8 385 PS (283 kW; 380 hp) at 6,200, 500 N⋅m",
+            "385 PS (283 kW; 380 hp) at 6,200, 500 N⋅m"
+          ]
+        },
+        {
+          "id": "p7",
+          "name": "Cayenne GTS (4.8 V8)",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "from 2007",
+          "engine": "4.8 L V8",
+          "cylinders": 8,
+          "power": {
+            "value": 298,
+            "unit": "kW"
+          },
+          "src": "p20",
+          "quotes": [
+            "The first Cayenne GTS was launched in 2007 with the model update of the E1 generation. Its 298 kW (405 PS) output from 4.8 litres of displacement"
+          ]
+        },
+        {
+          "id": "p8",
+          "name": "Cayenne Turbo (4.8 V8 biturbo)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2008–2010",
+          "engine": "4.8 L twin-turbo V8",
+          "displacement": 4806,
+          "cylinders": 8,
+          "power": {
+            "value": 500,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 700,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "Cayenne Turbo 2008–2010 4,806 cc (4.8 L; 293.3 cu in) twin-turbo V8 500 PS (368 kW; 493 hp) at 6,000, 700 N⋅m",
+            "500 PS (368 kW; 493 hp) at 6,000, 700 N⋅m"
+          ]
+        },
+        {
+          "id": "p9",
+          "name": "Cayenne Turbo S (4.8 V8 biturbo)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2008–2010",
+          "engine": "4.8 L twin-turbo V8",
+          "displacement": 4806,
+          "cylinders": 8,
+          "power": {
+            "value": 550,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 750,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "Cayenne Turbo S 2008–2010 4,806 cc (4.8 L; 293.3 cu in) twin-turbo V8 550 PS (405 kW; 542 hp) at 6,000, 750 N⋅m",
+            "550 PS (405 kW; 542 hp) at 6,000, 750 N⋅m"
+          ]
+        },
+        {
+          "id": "p10",
+          "name": "Cayenne Diesel (3.0 V6 TDI)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "from February 2009",
+          "engine": "3.0 L V6 TDI",
+          "cylinders": 6,
+          "power": {
+            "value": 240,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 550,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "powered by a 3.0-litre V6 VW TDI engine, from February 2009. The engine is rated at 240 PS (177 kW; 237 hp) and 550 N⋅m (410 lb⋅ft) of torque."
+          ]
+        }
+      ],
+      "revisions": [
+        {
+          "id": "r1",
+          "slug": "957-model-update",
+          "kind": "facelift",
+          "name": "Model update (Type 957, E1 II)",
+          "dates": {
+            "productionStart": {
+              "value": "2007",
+              "src": "wpde",
+              "quote": "Der Cayenne Typ 9PA wurde von 2002 bis 2010 gebaut, seit 2007 mit Direkteinspritzer-Motoren und einer Modellpflege."
+            }
+          },
+          "changes": [
+            {
+              "id": "r1c1",
+              "topic": "powertrain",
+              "text": "New engines with direct fuel injection used up to 15 per cent less fuel.",
+              "src": "p20",
+              "quote": "the new engines with direct fuel injection consumed up to 15 per cent less fuel"
+            },
+            {
+              "id": "r1c2",
+              "topic": "chassis",
+              "text": "Porsche Dynamic Chassis Control (PDCC) with active anti-roll bars was introduced.",
+              "src": "p20",
+              "quote": "the new Porsche Dynamic Chassis Control (PDCC) – in combination with active anti-roll bars – largely eliminated body roll in corners"
+            },
+            {
+              "id": "r1c3",
+              "topic": "powertrain",
+              "text": "The Cayenne S received a 4.8-litre direct-injection V8 with 385 PS.",
+              "src": "wp",
+              "quote": "In the updated 9PA chassis (957) Cayenne S introduced between 2008 and 2010, a direct fuel injection (DFI) 4.8-litre V8 producing 385 PS"
+            },
+            {
+              "id": "r1c4",
+              "topic": "powertrain",
+              "text": "The base engine became a 3.6-litre VR6.",
+              "src": "wp",
+              "quote": "The base engine was updated to the 3.6 Litre VR6 (290hp)."
+            },
+            {
+              "id": "r1c5",
+              "topic": "other",
+              "text": "GTS and Turbo S variants were added with the model update, followed by the Diesel.",
+              "src": "pj",
+              "quote": "The derivative GTS and Turbo S models were added with the model update, followed by the Diesel."
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Type 957 is treated as a revision of the first generation, not a new generation: Porsche describes it as 'the model update of the first-generation Cayenne' and 'the model update of the E1 generation', and labels it 'E1 II'; English Wikipedia calls it the 'facelifted 9PA chassis Cayenne (957)' and German Wikipedia a 'Modellpflege' of the Typ 9PA.",
+        "Power conflict for the first Cayenne GTS: Porsche gives 298 kW (405 PS); English Wikipedia's (unsourced) engine table gives 411 PS. Porsche's figure is recorded.",
+        "English Wikipedia's engine table is tagged as unsourced; its rows are used only where no manufacturer figure was found. Porsche newsroom data 'refers to the German market' per the newsroom's terms, so Porsche-sourced figures are marked EU.",
+        "The first generation had a low-range transfer box and a fully locking centre differential (Porsche); it is permanent all-wheel drive and is recorded as AWD.",
+        "German Wikipedia says the 9PA was built from 2002 to 2010; English Wikipedia gives August 2002 – December 2009 (used). Porsche says 276,652 cars were sold in the eight model years of the first generation.",
+        "Wikimedia Commons has no 'Category:Porsche Cayenne (9PA)'; no generation-specific category could be confirmed."
+      ]
+    },
+    {
+      "id": "porsche-cayenne-92a",
+      "slug": "92a",
+      "ordinal": 2,
+      "lines": [
+        "cayenne"
+      ],
+      "name": "Second generation",
+      "codes": [
+        {
+          "value": "92A",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code 92A"
+        },
+        {
+          "value": "E2",
+          "kind": "internal generation code",
+          "src": "p20",
+          "quote": "Both the first and second model generations of the Cayenne – known internally as E1 and E2"
+        }
+      ],
+      "dates": {
+        "revealed": {
+          "value": "2010-03",
+          "event": "Geneva Motor Show",
+          "src": "wp",
+          "quote": "The second-generation Cayenne (Type 92A or E2) was unveiled at the 2010 Geneva Motor Show in March."
+        },
+        "productionStart": {
+          "value": "2010-04",
+          "src": "wp",
+          "quote": "Production April 2010 – August 2017"
+        },
+        "productionEnd": {
+          "value": "2017-08",
+          "src": "wp",
+          "quote": "Production April 2010 – August 2017"
+        },
+        "salesStart": [
+          {
+            "value": "2010",
+            "market": "unstated",
+            "src": "wp",
+            "quote": "The second-generation Porsche Cayenne 92A went on sale in April–May 2010 as a 2011 model"
+          }
+        ],
+        "modelYears": [
+          {
+            "market": "unstated",
+            "from": 2011,
+            "to": 2018,
+            "src": "wp",
+            "quote": "Model years 2011–2018"
+          }
+        ]
+      },
+      "ongoing": false,
+      "platform": {
+        "value": "Volkswagen Group PL72",
+        "src": "wp",
+        "quote": "Platform Volkswagen Group PL72 platform"
+      },
+      "assembly": [
+        {
+          "value": "Bratislava, Slovakia (Volkswagen Bratislava Plant: body assembly, paint, engine, gearbox, drivetrain, under chassis, wheels)",
+          "src": "wp",
+          "quote": "Slovakia: Bratislava (Volkswagen Bratislava Plant: body assembly, paint, engine, gearbox, drivetrain, under chassis, wheels)"
+        },
+        {
+          "value": "Leipzig, Germany (Porsche Leipzig GmbH: interior, finishing, inspection)",
+          "src": "wp",
+          "quote": "Germany: Leipzig (Porsche Leipzig GmbH: interior, finishing, inspection)"
+        },
+        {
+          "value": "Osnabrück, Germany (Volkswagen Osnabrück Plant, 2015–2017)",
+          "src": "wp",
+          "quote": "Germany: Osnabrück (Volkswagen Osnabrück Plant: interior, finishing, inspection; 2015–2017)"
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Body style 5-door crossover SUV"
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "AWD",
+          "system": "Porsche Traction Management (PTM), hang-on all-wheel drive",
+          "markets": [
+            "global"
+          ],
+          "src": "pe2",
+          "quote": "the new controlled hang-on all-wheel drive with Porsche Traction Management (PTM)"
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "unstated",
+          "version": "2010–2014 (pre-facelift)",
+          "unit": "mm",
+          "length": 4846,
+          "width": 1938,
+          "height": 1705,
+          "wheelbase": 2895,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 2,895 mm (114.0 in)\nLength 4,846 mm (190.8 in) (2010–2014)",
+            "Width 1,938 mm (76.3 in) (2010–2014)",
+            "Height 1,705 mm (67.1 in)"
+          ]
+        },
+        {
+          "id": "d2",
+          "market": "unstated",
+          "version": "2014–2017 (facelift)",
+          "unit": "mm",
+          "length": 4855,
+          "width": 1939,
+          "height": 1705,
+          "wheelbase": 2895,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 2,895 mm (114.0 in)\nLength 4,846 mm (190.8 in) (2010–2014)\n4,855 mm (191.1 in) (2014–2017)",
+            "1,939 mm (76.3 in) (2014–2017)",
+            "Height 1,705 mm (67.1 in)"
+          ]
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "Cayenne (3.6 V6)",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2010–2014",
+          "engine": "3.6 L V6",
+          "cylinders": 6,
+          "power": {
+            "value": 220,
+            "unit": "kW"
+          },
+          "transmission": "6-speed manual (8-speed Tiptronic optional)",
+          "src": "pe2",
+          "quotes": [
+            "Only the entry-model Cayenne with its new 3.6-litre V6 engine and 220 kW (300 PS) was delivered with the six-speed manual gearbox as standard.",
+            "If the customer ordered the optional eight-speed Tiptronic"
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "Cayenne S (4.8 V8)",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2010–2014",
+          "engine": "4.8 L V8",
+          "cylinders": 8,
+          "power": {
+            "value": 294,
+            "unit": "kW"
+          },
+          "src": "pe2",
+          "quotes": [
+            "The new Cayenne S with its 294 kW (400 PS) 4.8-litre V8"
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "Cayenne Turbo (4.8 V8 biturbo)",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2010–2014",
+          "engine": "4.8 L twin-turbo V8",
+          "cylinders": 8,
+          "power": {
+            "value": 368,
+            "unit": "kW"
+          },
+          "src": "pe2",
+          "quotes": [
+            "The new Cayenne Turbo also benefited from the same V8 petrol engine but offered 368 kW (500 PS) of power."
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "Cayenne GTS (4.8 V8)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2010–2014",
+          "engine": "4.8 L V8",
+          "displacement": 4806,
+          "cylinders": 8,
+          "power": {
+            "value": 420,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 515,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "Cayenne GTS 2010–2014 4,806 cc (4.8 L; 293.3 cu in) V8 420 PS (309 kW; 414 hp) at 6,500, 515 N⋅m",
+            "420 PS (309 kW; 414 hp) at 6,500, 515 N⋅m"
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "Cayenne Turbo S (4.8 V8 biturbo)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2010–2014",
+          "engine": "4.8 L twin-turbo V8",
+          "displacement": 4806,
+          "cylinders": 8,
+          "power": {
+            "value": 550,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 750,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "Cayenne Turbo S 2010–2014 4,806 cc (4.8 L; 293.3 cu in) twin-turbo V8 550 PS (405 kW; 542 hp) at 6,000, 750 N⋅m",
+            "550 PS (405 kW; 542 hp) at 6,000, 750 N⋅m"
+          ]
+        },
+        {
+          "id": "p6",
+          "name": "Cayenne S Hybrid",
+          "market": "EU",
+          "fuel": "hybrid",
+          "years": "2010–2014",
+          "engine": "3.0 L supercharged V6 + 34 kW electric motor (parallel full hybrid)",
+          "cylinders": 6,
+          "power": {
+            "value": 279,
+            "unit": "kW"
+          },
+          "src": "p20",
+          "quotes": [
+            "The combination of a 333 PS three-litre V6 supercharged engine and a 34 kW (47 PS) synchronous electric motor generated a system output of 279 kW (380 PS)."
+          ]
+        },
+        {
+          "id": "p7",
+          "name": "Cayenne Diesel (3.0 V6)",
+          "market": "EU",
+          "fuel": "diesel",
+          "years": "2010–2014",
+          "engine": "3.0 L V6 diesel",
+          "cylinders": 6,
+          "power": {
+            "value": 180,
+            "unit": "kW"
+          },
+          "src": "pe2",
+          "quotes": [
+            "Alongside the Cayenne Diesel (180 kW/245 PS)"
+          ]
+        },
+        {
+          "id": "p8",
+          "name": "Cayenne S Diesel (4.2 V8)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2014–2018 (per table; announced September 2012)",
+          "engine": "4.2 L V8 twin-turbo diesel",
+          "displacement": 4134,
+          "cylinders": 8,
+          "power": {
+            "value": 385,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 850,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "Cayenne S Diesel 2014–2018 4,134 cc (4.1 L; 252.3 cu in) twin-turbo V8 385 PS (283 kW; 380 hp) at 3,750, 850 N⋅m",
+            "385 PS (283 kW; 380 hp) at 3,750, 850 N⋅m"
+          ]
+        },
+        {
+          "id": "p9",
+          "name": "Cayenne S (3.6 V6 biturbo)",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2014–",
+          "engine": "3.6 L twin-turbo V6",
+          "cylinders": 6,
+          "power": {
+            "value": 309,
+            "unit": "kW"
+          },
+          "transmission": "8-speed Tiptronic S",
+          "src": "p14",
+          "quotes": [
+            "The biturbo V6 develops a maximum power of 420 hp (309 kW) at 6,000 rpm – a gain of 20 hp/15 kW. With its standard eight-speed Tiptronic S transmission"
+          ]
+        },
+        {
+          "id": "p10",
+          "name": "Cayenne Turbo (4.8 V8 biturbo, 2014)",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2014–",
+          "engine": "4.8 L twin-turbo V8",
+          "cylinders": 8,
+          "power": {
+            "value": 382,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 750,
+            "unit": "Nm"
+          },
+          "src": "p14",
+          "quotes": [
+            "4.8-litre engine displacement, eight-cylinders and biturbo boost result in engine power of 520 hp (382 kW) at 6,000 rpm, its torque is 750 Newton metres"
+          ]
+        },
+        {
+          "id": "p11",
+          "name": "Cayenne S E-Hybrid",
+          "market": "EU",
+          "fuel": "plug-in hybrid",
+          "years": "2014–",
+          "engine": "3.0 L supercharged V6 + 70 kW electric motor, 10.8 kWh lithium-ion battery",
+          "cylinders": 6,
+          "power": {
+            "value": 306,
+            "unit": "kW"
+          },
+          "src": "p20",
+          "quotes": [
+            "The combustion engine remained the same, while the e-motor output increased to 95 PS (70 kW), resulting in a system output of 306 kW (416 PS)."
+          ]
+        },
+        {
+          "id": "p12",
+          "name": "Cayenne GTS (3.6 V6 biturbo)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2015–2018",
+          "engine": "3.6 L twin-turbo V6",
+          "displacement": 3604,
+          "cylinders": 6,
+          "power": {
+            "value": 440,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 600,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "Cayenne GTS 2015–2018 3,604 cc (3.6 L; 219.9 cu in) twin-turbo V6 440 PS (324 kW; 434 hp) at 6,000, 600 N⋅m",
+            "440 PS (324 kW; 434 hp) at 6,000, 600 N⋅m"
+          ]
+        },
+        {
+          "id": "p13",
+          "name": "Cayenne Diesel (3.0 V6, 2014)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2014–2018",
+          "engine": "3.0 L turbo V6 diesel",
+          "displacement": 2967,
+          "cylinders": 6,
+          "power": {
+            "value": 262,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 580,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "Cayenne Diesel 2014–2018 2,967 cc (3.0 L; 181.1 cu in) turbo V6 262 PS (193 kW; 258 hp) at 4,000, 580 N⋅m",
+            "262 PS (193 kW; 258 hp) at 4,000, 580 N⋅m"
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "id": "c1",
+          "topic": "weight",
+          "text": "Almost 250 kg lighter than the previous model, largely because the low-range transfer case was removed.",
+          "src": "wp",
+          "quote": "The 2011 Cayenne is almost 250 kg (551 lb) lighter than the previous model, largely due to removal of the low-range transfer case"
+        },
+        {
+          "id": "c2",
+          "topic": "drivetrain",
+          "text": "The low-range transfer box was replaced by on-demand all-wheel drive with an actively controlled multi-plate clutch.",
+          "src": "p20",
+          "quote": "the second generation (E2) saw the replacement of the low-range transfer box by an on-demand all-wheel-drive system with an actively controlled multi-plate clutch"
+        },
+        {
+          "id": "c3",
+          "topic": "powertrain",
+          "text": "First use of an eight-speed Tiptronic.",
+          "src": "pe2",
+          "quote": "The first use of an eight-speed Tiptronic in combination with the new controlled hang-on all-wheel drive"
+        },
+        {
+          "id": "c4",
+          "topic": "weight",
+          "text": "The body was 111 kg lighter, 39 kg of it in the flaps and doors.",
+          "src": "pe2",
+          "quote": "The body lost 111 kg, with 39 kg being saved in the flaps and doors alone."
+        },
+        {
+          "id": "c5",
+          "topic": "powertrain",
+          "text": "A hybrid (Cayenne S Hybrid) was offered, Porsche's first series-production hybrid.",
+          "src": "p20",
+          "quote": "The full hybrid drive finally came onto the market in 2010 with the second -generation Cayenne – as the first series-production hybrid vehicle from Porsche."
+        },
+        {
+          "id": "c6",
+          "topic": "interior",
+          "text": "Redesigned interior with a rising centre console.",
+          "src": "p20",
+          "quote": "The attention-grabber in the redesigned interior was the now rising centre console."
+        },
+        {
+          "id": "c7",
+          "topic": "design",
+          "text": "Exterior mirrors moved from the window corner to the door shoulder, with extra quarter lights at the A-pillars.",
+          "src": "pe2",
+          "quote": "At the front, the exterior mirrors moved from the window corner to the shoulder of the door, creating a more dynamic look and making space for additional quarter lights at the A-pillars."
+        }
+      ],
+      "revisions": [
+        {
+          "id": "r1",
+          "slug": "2014-facelift",
+          "kind": "facelift",
+          "name": "Facelift",
+          "dates": {
+            "revealed": {
+              "value": "2014-07",
+              "src": "wp",
+              "quote": "In July 2014, Porsche launched a facelifted Cayenne range, with minor exterior alterations and new powertrain options"
+            }
+          },
+          "changes": [
+            {
+              "id": "r1c1",
+              "topic": "design",
+              "text": "New front body, front wings and bonnet.",
+              "src": "p14",
+              "quote": "Entirely new are the design of the front body, the front wings and the bonnet."
+            },
+            {
+              "id": "r1c2",
+              "topic": "powertrain",
+              "text": "The Cayenne S changed to a 3.6-litre V6 biturbo with 420 hp (309 kW), 20 hp/15 kW more than before.",
+              "src": "p14",
+              "quote": "The biturbo V6 develops a maximum power of 420 hp (309 kW) at 6,000 rpm – a gain of 20 hp/15 kW."
+            },
+            {
+              "id": "r1c3",
+              "topic": "powertrain",
+              "text": "The Cayenne S E-Hybrid plug-in hybrid was introduced.",
+              "src": "p14",
+              "quote": "The Cayenne S E-Hybrid is the first plug-in hybrid in the premium SUV segment."
+            },
+            {
+              "id": "r1c4",
+              "topic": "powertrain",
+              "text": "Its 10.8 kWh lithium-ion battery gives 18 to 36 km of electric range.",
+              "src": "p14",
+              "quote": "The new model has a lithium-ion traction battery with an energy capacity of 10.8 kWh, which enables an all-electric driving range of 18 to 36 km"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "The code '958' (commonly used for this generation) does not appear in any source read, so it is not recorded; English Wikipedia uses 'Type 92A' and Porsche uses 'E2'.",
+        "Porsche's 24 July 2014 release calls the facelifted car 'the new generation of the Cayenne'; English Wikipedia and Porsche's later retrospectives treat it as a facelift of the second generation, which is how it is recorded.",
+        "Porsche says 535,903 E2 cars were delivered between 2010 and 2017. Porsche's 2022 retrospective says E1 and E2 were built in Leipzig 'and later also in Osnabrück'; English Wikipedia limits Osnabrück to 2015–2017 for the E2.",
+        "English Wikipedia's E2 infobox also lists a '5-door coupe crossover SUV' body style. This is not supported elsewhere (the Coupé arrived in 2019 with the third generation), so it is not recorded.",
+        "Model years 2011–2018 are given without a market (English Wikipedia).",
+        "No Commons category 'Category:Porsche Cayenne (92A)' exists."
+      ]
+    },
+    {
+      "id": "porsche-cayenne-e3",
+      "slug": "e3",
+      "ordinal": 3,
+      "lines": [
+        "cayenne"
+      ],
+      "name": "Third generation",
+      "codes": [
+        {
+          "value": "E3",
+          "kind": "internal generation code",
+          "src": "p20",
+          "quote": "With the launch of the third generation (E3) in 2017, Porsche moved all Cayenne production to Bratislava"
+        },
+        {
+          "value": "9YA",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "The third generation (Type 9YA or E3) was unveiled in August 2017 in Stuttgart, Germany"
+        },
+        {
+          "value": "9YB",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code\n9YA\n9YB"
+        },
+        {
+          "value": "9Y0",
+          "kind": "body code (SUV)",
+          "src": "wp",
+          "quote": "Body style 5-door crossover SUV (9Y0)"
+        },
+        {
+          "value": "9Y3",
+          "kind": "body code (Coupé)",
+          "src": "wp",
+          "quote": "5-door coupe crossover SUV (9Y3 Coupé)"
+        },
+        {
+          "value": "PO536",
+          "kind": "type designation",
+          "src": "wpde",
+          "quote": "Am 29. August 2017 fand die Premiere der dritten Generation des Cayenne Typ PO536 statt"
+        }
+      ],
+      "dates": {
+        "revealed": {
+          "value": "2017-08-29",
+          "event": "Porsche Museum, Stuttgart-Zuffenhausen",
+          "src": "wp",
+          "quote": "The third-generation Porsche Cayenne was revealed on 29 August 2017"
+        },
+        "productionStart": {
+          "value": "2017-08",
+          "src": "wp",
+          "quote": "Production August 2017 – present"
+        },
+        "modelYears": [
+          {
+            "market": "unstated",
+            "from": 2019,
+            "src": "wp",
+            "quote": "Model years 2019–present"
+          }
+        ]
+      },
+      "ongoing": true,
+      "platform": {
+        "value": "Volkswagen Group MLB Evo",
+        "src": "wp",
+        "quote": "Platform Volkswagen Group MLB Evo"
+      },
+      "assembly": [
+        {
+          "value": "Bratislava, Slovakia",
+          "src": "p20",
+          "quote": "With the launch of the third generation (E3) in 2017, Porsche moved all Cayenne production to Bratislava"
+        },
+        {
+          "value": "Kulim, Kedah, Malaysia (Sime Darby; 2022–, 3.0-litre only)",
+          "src": "wp",
+          "quote": "Malaysia: Kulim, Kedah (Sime Darby: 2022–present, 3.0-litre only)"
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV (9Y0)",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Body style 5-door crossover SUV (9Y0)"
+        },
+        {
+          "id": "b2",
+          "value": "5-door coupé SUV (Cayenne Coupé, 9Y3), from 2019",
+          "markets": [
+            "global"
+          ],
+          "src": "pj",
+          "quote": "Porsche offered an additional body variant with the Cayenne Coupé from 2019."
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "AWD",
+          "system": "active all-wheel drive (Porsche Traction Management)",
+          "markets": [
+            "global"
+          ],
+          "src": "p17",
+          "quote": "active all-wheel drive as standard"
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "unstated",
+          "version": "SUV and Coupé",
+          "unit": "mm",
+          "wheelbase": 2895,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 2,895 mm (114.0 in)\nLength 4,918–4,929 mm"
+          ]
+        }
+      ],
+      "cargo": [
+        {
+          "id": "k1",
+          "market": "EU",
+          "version": "Cayenne Coupé",
+          "behind": "2nd row",
+          "value": 625,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "pcc",
+          "quote": "The boot capacity is 625 litres"
+        },
+        {
+          "id": "k2",
+          "market": "EU",
+          "version": "Cayenne Coupé",
+          "behind": "1st row",
+          "value": 1540,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "pcc",
+          "quote": "rises to 1,540 litres when the rear s"
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "Cayenne (3.0 V6 turbo)",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2017–2023",
+          "engine": "3.0 L turbo V6",
+          "cylinders": 6,
+          "power": {
+            "value": 250,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 450,
+            "unit": "Nm"
+          },
+          "src": "p17",
+          "quotes": [
+            "The Cayenne with a six-cylinder turbo engine and displacement of three litres delivers 250 kW (340 hp), developing a torque of 450 Nm."
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "Cayenne S (2.9 V6 biturbo)",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2017–2023",
+          "engine": "2.9 L twin-turbo V6",
+          "cylinders": 6,
+          "power": {
+            "value": 324,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 550,
+            "unit": "Nm"
+          },
+          "src": "p17",
+          "quotes": [
+            "It is driven by a 2.9-litre V6 engine with twin turbocharging. This engine, which has also been newly developed, delivers 324 kW (440 hp), achieving a torque of 550 Nm"
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "Cayenne Turbo (4.0 V8 biturbo)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2017–2023",
+          "engine": "4.0 L twin-turbo V8",
+          "cylinders": 8,
+          "power": {
+            "value": 549,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 770,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "the Cayenne Turbo is powered by a twin-turbocharged 4.0-litre V8 rated at 549 PS (404 kW; 541 hp) and 770 N⋅m"
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "Cayenne E-Hybrid",
+          "market": "unstated",
+          "fuel": "plug-in hybrid",
+          "years": "2018–2023",
+          "engine": "3.0 L V6 turbo + electric motor, 14.1 kWh battery",
+          "power": {
+            "value": 462,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 700,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "uses a 3.0-litre V6 petrol engine with an eight-speed Tiptronic S automatic gearbox rated at 462 PS (340 kW; 456 hp) and 700 N⋅m"
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "Cayenne Turbo S E-Hybrid",
+          "market": "EU",
+          "fuel": "plug-in hybrid",
+          "years": "2019–2023",
+          "engine": "4.0 L twin-turbo V8 + electric motor",
+          "power": {
+            "value": 500,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 900,
+            "unit": "Nm"
+          },
+          "src": "p20",
+          "quotes": [
+            "The most powerful Cayenne model is the Turbo S E-Hybrid, which has been available since 2019 and has a system output of 500 kW (680 PS",
+            "the Cayenne Turbo S E-Hybrid has a system torque of 900 Newton metres"
+          ]
+        },
+        {
+          "id": "p6",
+          "name": "Cayenne GTS (4.0 V8 biturbo)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2020–2023",
+          "engine": "4.0 L twin-turbo V8",
+          "cylinders": 8,
+          "power": {
+            "value": 460,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 620,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "It is powered by a twin-turbocharged 4.0-litre V8 shared with the Panamera GTS, rated at 460 PS (338 kW; 454 hp) and 620 N⋅m"
+          ]
+        },
+        {
+          "id": "p7",
+          "name": "Cayenne Turbo GT (Coupé only)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2021–2023",
+          "engine": "4.0 L twin-turbo V8",
+          "cylinders": 8,
+          "power": {
+            "value": 640,
+            "unit": "PS"
+          },
+          "src": "wp",
+          "quotes": [
+            "Based on the Cayenne Coupé, it uses a 4.0-litre twin-turbo V8 engine producing 640 PS (471 kW; 631 hp)"
+          ]
+        },
+        {
+          "id": "p8",
+          "name": "Cayenne (3.0 V6 turbo, 2023)",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2023–",
+          "engine": "3.0 L turbo V6",
+          "cylinders": 6,
+          "power": {
+            "value": 260,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 500,
+            "unit": "Nm"
+          },
+          "src": "p23",
+          "quotes": [
+            "The entry into the world of the Cayenne comes with an optimised three-litre V6 turbo engine",
+            "It now generates 260 kW (353 PS) and 500 Nm, which is 10 kW (13 PS) and 50 Nm more than before."
+          ]
+        },
+        {
+          "id": "p9",
+          "name": "Cayenne S (4.0 V8 biturbo, 2023)",
+          "market": "EU",
+          "fuel": "petrol",
+          "years": "2023–",
+          "engine": "4.0 L twin-turbo V8",
+          "cylinders": 8,
+          "power": {
+            "value": 349,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 600,
+            "unit": "Nm"
+          },
+          "src": "p23",
+          "quotes": [
+            "With a maximum output of 349 KW (474 PS) and a torque of 600 Nm – 25 kW (34 PS) and 50 Nm more than its predecessor"
+          ]
+        },
+        {
+          "id": "p10",
+          "name": "Cayenne E-Hybrid (2023)",
+          "market": "EU",
+          "fuel": "plug-in hybrid",
+          "years": "2023–",
+          "engine": "3.0 L V6 turbo + 130 kW electric motor, 25.9 kWh battery",
+          "power": {
+            "value": 346,
+            "unit": "kW"
+          },
+          "src": "p23",
+          "quotes": [
+            "In combination with a new electric motor that has been improved by 30 kW to 130 kW (176 PS), the combined output increases to 346 kW (470 PS)."
+          ]
+        },
+        {
+          "id": "p11",
+          "name": "Cayenne S E-Hybrid (2023)",
+          "market": "unstated",
+          "fuel": "plug-in hybrid",
+          "years": "2023–",
+          "engine": "3.0 L V6 turbo + electric motor",
+          "displacement": 2995,
+          "power": {
+            "value": 519,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 750,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "Cayenne S E-Hybrid (facelift) 2023–present Volkswagen-Audi EA839T 2,995 cc (3.0 L; 182.8 cu in) turbo V6 PHEV 519 PS (382 kW; 512 hp) at 5,000–6,500, 750 N⋅m"
+          ]
+        },
+        {
+          "id": "p12",
+          "name": "Cayenne Turbo E-Hybrid (2023)",
+          "market": "unstated",
+          "fuel": "plug-in hybrid",
+          "years": "2023–",
+          "engine": "4.0 L twin-turbo V8 + electric motor",
+          "displacement": 3996,
+          "power": {
+            "value": 739,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 950,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "Cayenne Turbo E-Hybrid (facelift) 2023–present Volkswagen-Porsche EA825TT 3,996 cc (4.0 L; 243.9 cu in) twin-turbo V8 PHEV 739 PS (544 kW; 729 bhp) at 5,750–6,000, 950 N⋅m"
+          ]
+        },
+        {
+          "id": "p13",
+          "name": "Cayenne GTS (2024)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2024–",
+          "engine": "4.0 L twin-turbo V8",
+          "displacement": 3996,
+          "cylinders": 8,
+          "power": {
+            "value": 500,
+            "unit": "PS"
+          },
+          "torque": {
+            "value": 660,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "Cayenne GTS (facelift) 2024–present Volkswagen-Porsche EA825TT 3,996 cc (4.0 L; 243.9 cu in) twin-turbo V8 500 PS (368 kW; 493 hp), 660 N⋅m",
+            "500 PS (368 kW; 493 hp), 660 N⋅m"
+          ]
+        },
+        {
+          "id": "p14",
+          "name": "Cayenne Turbo GT (2023, outside the EU)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2023–",
+          "engine": "4.0 L twin-turbo V8",
+          "cylinders": 8,
+          "power": {
+            "value": 485,
+            "unit": "kW"
+          },
+          "src": "p23",
+          "quotes": [
+            "Outside the EU, the Turbo GT designed for maximum on-road performance is still the top model in the Cayenne range in most Porsche markets.",
+            "the output of the four-litre V8 biturbo engine of the Turbo GT has been increased by 14 kW (19 PS) to 485 kW (659 PS)"
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "id": "c1",
+          "topic": "weight",
+          "text": "Up to 65 kg lighter than its predecessor despite more standard equipment.",
+          "src": "p17",
+          "quote": "Despite its significantly extended standard equipment, the Cayenne weighs up to 65 kilograms less than its predecessor"
+        },
+        {
+          "id": "c2",
+          "topic": "chassis",
+          "text": "Mixed tyre sizes and rear-axle steering for the first time.",
+          "src": "p17",
+          "quote": "now has mixed tyres and rear-axle steering for the first time"
+        },
+        {
+          "id": "c3",
+          "topic": "design",
+          "text": "The exterior body panels are made entirely of aluminium.",
+          "src": "p17",
+          "quote": "The exterior is made entirely of aluminium."
+        },
+        {
+          "id": "c4",
+          "topic": "powertrain",
+          "text": "Diesel engines were dropped.",
+          "src": "p20",
+          "quote": "With the introduction of the third Cayenne in 2017, Porsche also bade farewell to the diesel engine"
+        },
+        {
+          "id": "c5",
+          "topic": "dimensions",
+          "text": "Same wheelbase; overall length up by about 63 mm.",
+          "src": "wp",
+          "quote": "The wheelbase remains unchanged from the previous generation, but Porsche increased the Cayenne's overall length by approximately 63 mm (2.5 in)."
+        },
+        {
+          "id": "c6",
+          "topic": "other",
+          "text": "All Cayenne production moved to Bratislava.",
+          "src": "p20",
+          "quote": "Porsche moved all Cayenne production to Bratislava"
+        }
+      ],
+      "revisions": [
+        {
+          "id": "r1",
+          "slug": "2023-facelift",
+          "kind": "facelift",
+          "name": "Facelift",
+          "dates": {
+            "revealed": {
+              "value": "2023-04",
+              "src": "wp",
+              "quote": "In April 2023, the Cayenne received a mid-cycle refresh for the 2024 model year."
+            }
+          },
+          "changes": [
+            {
+              "id": "r1c1",
+              "topic": "interior",
+              "text": "Fully digital 12.6-inch curved instrument cluster.",
+              "src": "p23",
+              "quote": "For the first time, the redesigned cockpit of the Cayenne includes a fully digital 12.6-inch instrument cluster"
+            },
+            {
+              "id": "r1c2",
+              "topic": "interior",
+              "text": "Optional 10.9-inch passenger display.",
+              "src": "p23",
+              "quote": "A 10.9-inch display is now available for the first time for the passenger side."
+            },
+            {
+              "id": "r1c3",
+              "topic": "design",
+              "text": "New front end, more arched wings, new bonnet and headlights.",
+              "src": "p23",
+              "quote": "A new front end combined with more strongly arched wings, a new bonnet and technically appealing headlights emphasises the vehicle’s width."
+            },
+            {
+              "id": "r1c4",
+              "topic": "powertrain",
+              "text": "The Cayenne S switched from a V6 to a 4.0-litre V8 biturbo.",
+              "src": "p23",
+              "quote": "An extensive refinement of the four-litre V8 biturbo engine"
+            },
+            {
+              "id": "r1c5",
+              "topic": "powertrain",
+              "text": "E-Hybrid battery capacity rose from 17.9 kWh to 25.9 kWh, for up to 90 km WLTP electric range.",
+              "src": "p23",
+              "quote": "Equipped with a high-voltage battery with a capacity increased from 17.9 kWh to 25.9 kWh, depending on the equipment level, a purely electric range according to the WLTP of up to 90 kilometres is now possible."
+            }
+          ]
+        }
+      ],
+      "commons": {
+        "bodyStyles": {
+          "b2": "Category:Porsche Cayenne Coupé (PO536)"
+        }
+      },
+      "notes": [
+        "Generation codes differ by source: English Wikipedia gives model codes 9YA/9YB and body codes 9Y0 (SUV) and 9Y3 (Coupé); German Wikipedia uses 'Typ PO536'; Porsche uses 'E3'. The slug 'e3' uses Porsche's own designation. All of these are recorded as codes.",
+        "Cayenne Coupé: Porsche's press release presenting it is dated 21 March 2019, and it had its exhibition (Asian) premiere at Auto Shanghai in April 2019. English Wikipedia says it 'was revealed during the Shanghai Auto Show in April 2019', which is inconsistent with Porsche's earlier release.",
+        "Porsche figures that differ from English Wikipedia: 2017 Cayenne S torque 550 Nm (Porsche) vs 549 Nm (WP table); 2023 Cayenne S 349 kW (474 PS) (Porsche) vs 475 PS (WP).",
+        "No complete manufacturer dimensions were readable: Porsche's 2017 and 2023 press kits are PDFs, and the HTML press kit pages give no length, width or height. English Wikipedia gives only ranges (length 4,918–4,929 mm, Coupé 4,931–4,942 mm), so only the wheelbase is recorded. Porsche says the Cayenne Electric is 55 mm longer than the combustion model.",
+        "SUV boot volume (770 L per Porsche's 2017 press kit, as seen in a search snippet) could not be read with the project tool and is not recorded.",
+        "English Wikipedia says sales began in 2019, which conflicts with the 2017 launch (Porsche held press drives in 2017). This is not recorded. Model years 2019–present are given without a market.",
+        "Wikimedia Commons: no 'Category:Porsche Cayenne (9Y0)' exists; 'Category:Porsche Cayenne Coupé (PO536)' exists as a subcategory of 'Category:Porsche Cayenne Coupé'. No generation-level category was confirmed, and none for the 2023 facelift."
+      ]
+    },
+    {
+      "id": "porsche-cayenne-e4",
+      "slug": "e4",
+      "ordinal": 4,
+      "lines": [
+        "cayenne"
+      ],
+      "name": "Fourth generation (Cayenne Electric)",
+      "codes": [
+        {
+          "value": "E4",
+          "kind": "internal generation code",
+          "src": "wp",
+          "quote": "The fourth generation (Type X1A/X1B or E4), unveiled in November 2025"
+        },
+        {
+          "value": "X1A",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "The fourth generation (Type X1A/X1B or E4), unveiled in November 2025"
+        },
+        {
+          "value": "X1B",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "The fourth generation (Type X1A/X1B or E4), unveiled in November 2025"
+        }
+      ],
+      "names": [
+        {
+          "value": "Cayenne Electric",
+          "markets": [
+            "global"
+          ],
+          "src": "pel",
+          "quote": "The Cayenne Electric marks the beginning of a new era for Porsche."
+        }
+      ],
+      "dates": {
+        "revealed": {
+          "value": "2025-11-19",
+          "src": "wp",
+          "quote": "The fourth-generation Cayenne was officially unveiled on 19 November 2025 and entered series production in February 2026"
+        },
+        "productionStart": {
+          "value": "2026-02",
+          "src": "wp",
+          "quote": "The fourth-generation Cayenne was officially unveiled on 19 November 2025 and entered series production in February 2026"
+        }
+      },
+      "ongoing": true,
+      "platform": {
+        "value": "Premium Platform Electric (PPE)",
+        "src": "wp",
+        "quote": "Platform Premium Platform Electric (PPE)"
+      },
+      "assembly": [
+        {
+          "value": "Bratislava, Slovakia",
+          "src": "p23",
+          "quote": "Porsche AG has decided to manufacture the future all-electric Cayenne in Bratislava."
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Body style 5-door crossover SUV\n5-door coupe crossover SUV\nPlatform Premium Platform Electric"
+        },
+        {
+          "id": "b2",
+          "value": "5-door coupé SUV (Cayenne Coupé Electric), from 2026",
+          "markets": [
+            "global"
+          ],
+          "src": "pcel",
+          "quote": "The Coupé is celebrating its world premiere at Auto China 2026 in Beijing."
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "AWD",
+          "system": "electronic Porsche Traction Management (ePTM), dual motor",
+          "markets": [
+            "global"
+          ],
+          "src": "pel",
+          "quote": "both with all-wheel drive and therefore equipped with electronic Porsche Traction Management (ePTM)"
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "EU",
+          "version": "SUV",
+          "unit": "mm",
+          "length": 4985,
+          "width": 1980,
+          "height": 1674,
+          "wheelbase": 3023,
+          "src": "pel",
+          "quotes": [
+            "The new SUV is 4,985 mm long, 1,980 mm wide and 1,674 mm high. The difference is greatest in the wheelbase (3,023 mm)"
+          ]
+        },
+        {
+          "id": "d2",
+          "market": "EU",
+          "version": "Coupé",
+          "unit": "mm",
+          "length": 4985,
+          "width": 1980,
+          "height": 1650,
+          "src": "pcel",
+          "quotes": [
+            "At 4,985 millimetres long and 1,980 mm wide (excluding mirrors), the all-electric Cayenne Coupé is the same length and width as the SUV model. However, the highest point of the car is 24 mm lower, at 1,650 mm."
+          ]
+        }
+      ],
+      "cargo": [
+        {
+          "id": "k1",
+          "market": "EU",
+          "version": "SUV, rear boot (minimum of stated range)",
+          "behind": "unstated",
+          "value": 781,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "pel",
+          "quote": "Luggage capacity is 781 to 1,588 litres, plus the 90-litre front luggage compartment."
+        },
+        {
+          "id": "k2",
+          "market": "EU",
+          "version": "SUV, rear boot (maximum of stated range)",
+          "behind": "unstated",
+          "value": 1588,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "pel",
+          "quote": "Luggage capacity is 781 to 1,588 litres, plus the 90-litre front luggage compartment."
+        },
+        {
+          "id": "k3",
+          "market": "EU",
+          "version": "SUV, front luggage compartment",
+          "behind": "unstated",
+          "value": 90,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "pel",
+          "quote": "Luggage capacity is 781 to 1,588 litres, plus the 90-litre front luggage compartment."
+        },
+        {
+          "id": "k4",
+          "market": "EU",
+          "version": "Coupé, rear seats in 'cargo' position (minimum of range)",
+          "behind": "unstated",
+          "value": 534,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "pcel",
+          "quote": "with a load volume of 534"
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "Cayenne Electric",
+          "market": "EU",
+          "fuel": "electric",
+          "years": "2025–",
+          "engine": "dual permanent-magnet synchronous motors, 113 kWh battery",
+          "drivetrain": "AWD",
+          "power": {
+            "value": 325,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 835,
+            "unit": "Nm"
+          },
+          "src": "pel",
+          "quotes": [
+            "The entry-level Cayenne model has 300 kW (408 PS) in normal operation and 325 kW (442 PS) and 835 Nm of torque with Launch Control."
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "Cayenne S Electric",
+          "market": "EU",
+          "fuel": "electric",
+          "years": "2026–",
+          "engine": "dual permanent-magnet synchronous motors, 113 kWh battery",
+          "drivetrain": "AWD",
+          "power": {
+            "value": 400,
+            "unit": "kW"
+          },
+          "src": "pse",
+          "quotes": [
+            "The drive system, which features one permanent magnet synchronous motor on both the front and rear axles, delivers a system output of 400 kW (544 PS), or up to 490 kW (666 PS) with Launch Control."
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "Cayenne Turbo Electric",
+          "market": "EU",
+          "fuel": "electric",
+          "years": "2025–",
+          "engine": "dual electric motors (oil-cooled rear motor), 113 kWh battery",
+          "drivetrain": "AWD",
+          "power": {
+            "value": 850,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 1500,
+            "unit": "Nm"
+          },
+          "src": "pel",
+          "quotes": [
+            "This powerful e-performance is made possible by a newly developed drive system that develops up to 850 kW (1,156 PS) and up to 1,500 Nm of torque when Launch Control is activated."
+          ]
+        }
+      ],
+      "changes": [
+        {
+          "id": "c1",
+          "topic": "powertrain",
+          "text": "Battery-electric only; it is offered alongside the combustion and plug-in hybrid Cayenne models.",
+          "src": "pel",
+          "quote": "complements the existing offering of combustion-engined and plug-in hybrid Cayenne models"
+        },
+        {
+          "id": "c2",
+          "topic": "dimensions",
+          "text": "55 mm longer than the combustion-engined Cayenne.",
+          "src": "pel",
+          "quote": "The new Cayenne Electric is 55 millimetres longer than the combustion-engined model."
+        },
+        {
+          "id": "c3",
+          "topic": "dimensions",
+          "text": "Wheelbase almost 13 cm longer, giving more rear legroom.",
+          "src": "pel",
+          "quote": "The difference is greatest in the wheelbase (3,023 mm), where an increase of almost 13 cm means more rear legroom"
+        },
+        {
+          "id": "c4",
+          "topic": "other",
+          "text": "Built on the Premium Platform Electric (PPE), shared with the second-generation Macan.",
+          "src": "wp",
+          "quote": "It is built on the Premium Platform Electric (PPE) architecture shared with the second-generation Macan."
+        },
+        {
+          "id": "c5",
+          "topic": "technology",
+          "text": "First Porsche available with optional inductive charging (up to 11 kW).",
+          "src": "pel",
+          "quote": "The Cayenne Electric is also the first Porsche to optionally support inductive charging, with a system that charges at up to 11 kW."
+        }
+      ],
+      "commons": {
+        "generation": "Category:Porsche Cayenne Electric",
+        "bodyStyles": {
+          "b2": "Category:Porsche Cayenne Coupé Electric"
+        }
+      },
+      "notes": [
+        "Recorded as a separate (fourth) generation because Porsche itself describes it so ('The fourth generation of the Porsche Cayenne will be all-electric', Porsche Newsroom, 2022), as do English Wikipedia ('The fourth generation (Type X1A/X1B or E4)') and German Wikipedia ('Cayenne Typ E4').",
+        "It is sold alongside the third-generation combustion and plug-in hybrid Cayenne: Porsche says the Cayenne Electric 'complements the existing offering of combustion-engined and plug-in hybrid Cayenne models', and German Wikipedia says 'Sie wird parallel zum PO536 angeboten'. English Wikipedia notes that a fourth-generation combustion Cayenne has not been confirmed.",
+        "Wheelbase: Porsche gives 3,023 mm; English Wikipedia's infobox gives 3,024 mm. Porsche's figure is recorded. Porsche newsroom data refers to the German market (newsroom terms), so it is recorded as EU.",
+        "Power figures: the entry model and Turbo are recorded with their Launch Control figures, the S at its normal system output. Normal-mode outputs are 300 kW (Cayenne) and 630 kW (Turbo); the S makes 490 kW with Launch Control.",
+        "The 781–1,588 L boot range is stated without the seat positions; the Coupé range is 534 (rear seats in 'cargo' position) to 1,347 L.",
+        "Cayenne Electric orders opened at reveal (Porsche: 'available to order now'). The Coupé Electric premiered at Auto China 2026 in Beijing (Porsche release of 24 April 2026)."
+      ]
+    }
+  ]
+}
