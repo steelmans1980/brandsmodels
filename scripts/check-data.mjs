@@ -28,9 +28,14 @@ const manufacturers = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/manufactu
 const makerIds = new Set(manufacturers.map(m => m.id));
 const report = { files: [], errors: 0, warnings: 0, facts: 0, quotesChecked: 0, sources: new Map() };
 
-// A number appears in the (normalised) quote as a whole number: 5085 matches "5,085 mm" but not "50851".
-// Integers also match a written ".0" (183 matches "183.0 in").
-const hasNumber = (q, n) => new RegExp(`(^|[^0-9.])${String(n).replace('.', '\\.')}${Number.isInteger(n) ? '(\\.0+)?' : ''}(?![0-9]|\\.[0-9])`).test(q);
+// A number appears in the (normalised) quote as a whole number: 5085 matches "5,085 mm" but not "50851". Integers also
+// match a written ".0" (183 matches "183.0 in"), and integers of 1,000 or more match German-style grouping ("4.953 mm").
+const hasNumber = (q, n) => {
+  const plain = new RegExp(`(^|[^0-9.])${String(n).replace('.', '\\.')}${Number.isInteger(n) ? '(\\.0+)?' : ''}(?![0-9]|\\.[0-9])`).test(q);
+  if (plain || !Number.isInteger(n) || n < 1000) return plain;
+  const grouped = String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.').replace(/\./g, '\\.');
+  return new RegExp(`(^|[^0-9.,])${grouped}(?![0-9]|[.,][0-9])`).test(q);
+};
 
 function checkFamily(file) {
   const out = { file: path.relative(ROOT, file), errors: [], warnings: [], facts: 0 };
