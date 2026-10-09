@@ -27,6 +27,10 @@ const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 export const norm = s => String(s ?? '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
   .replace(/ß/g, 'ss').replace(/[^a-z0-9]+/g, ' ').trim();
 export const slug = s => norm(s).replace(/ /g, '-');
+/** "a, b and c" */
+export const andList = xs => xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs.at(-1)}`;
+/** Fuel name inside a sentence: lower case except acronyms (LPG). */
+export const fuelWord = f => /^[A-Z]+$/.test(FUEL_LABEL[f]) ? FUEL_LABEL[f] : FUEL_LABEL[f].toLowerCase();
 export const plural = (n, w, ws) => `${Number(n).toLocaleString('en')} ${n === 1 ? w : (ws || w + 's')}`;
 export const num = (n, d = 0) => Number(n).toLocaleString('en', { minimumFractionDigits: d, maximumFractionDigits: d });
 
@@ -231,8 +235,8 @@ export function derivedChanges(a, b) {
   const fa = fuelsOf(a), fb = fuelsOf(b);
   const newF = fb.filter(f => !fa.includes(f)), goneF = fa.filter(f => !fb.includes(f));
   if (a.powertrains?.length && b.powertrains?.length) {
-    if (newF.length) add('powertrain', `Powertrain types documented for the ${shortName(b)} but not the ${shortName(a)}: ${newF.map(f => FUEL_LABEL[f].toLowerCase()).join(', ')}.`);
-    if (goneF.length) add('powertrain', `Documented for the ${shortName(a)} but not the ${shortName(b)}: ${goneF.map(f => FUEL_LABEL[f].toLowerCase()).join(', ')}.`);
+    if (newF.length) add('powertrain', `Powertrain types documented for the ${shortName(b)} but not the ${shortName(a)}: ${andList(newF.map(fuelWord))}.`);
+    if (goneF.length) add('powertrain', `Documented for the ${shortName(a)} but not the ${shortName(b)}: ${andList(goneF.map(fuelWord))}.`);
   }
   const sa = seatsOf(a), sb = seatsOf(b);
   if (sa.length && sb.length && sa.join() !== sb.join()) add('interior', `Seating configurations: ${sa.join(' or ')} seats (${shortName(a)}) → ${sb.join(' or ')} seats (${shortName(b)}).`);

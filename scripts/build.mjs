@@ -62,7 +62,7 @@ for (const p of pairs) {
   const len = cd?.values.find(v => v.key === 'length');
   if (len) bits.push(`${len.mm[1] >= len.mm[0] ? '+' : '−'}${L.num(Math.abs(len.mm[1] - len.mm[0]))} mm in length (${cd.market === 'unstated' ? 'market not stated' : L.MARKET_LABEL[cd.market]})`);
   const newFuels = L.fuelsOf(p.next).filter(x => !L.fuelsOf(p.prev).includes(x) && p.prev.powertrains?.length);
-  if (newFuels.length) bits.push(`adds ${newFuels.map(x => L.FUEL_LABEL[x].toLowerCase()).join(' and ')}`);
+  if (newFuels.length) bits.push(`adds ${L.andList(newFuels.map(L.fuelWord))}`);
   if (n) bits.push(L.plural(n, 'sourced change'));
   p.summary = bits.length ? bits.join(' · ') : 'Side-by-side comparison of the documented specifications';
   p.weight = n + (len ? 2 : 0) + newFuels.length + ((p.next.images || []).length ? 3 : 0);

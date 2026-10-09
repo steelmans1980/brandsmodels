@@ -54,7 +54,7 @@ export function versionLabel(g, im) {
   if (im.revision === 'original') return (g.revisions || []).length ? 'original version (before the first facelift)' : '';
   const r = im.revision && revOf(g, im.revision);
   if (r) return `${(REV_LABEL[r.kind] || 'revision').toLowerCase()}${yearOf(r.dates?.revealed || r.dates?.productionStart) ? ' of ' + yearOf(r.dates?.revealed || r.dates?.productionStart) : ''}`;
-  return (g.revisions || []).length ? 'version (before/after facelift) not identified' : '';
+  return (g.revisions || []).length ? 'pre- or post-facelift not identified' : '';
 }
 export function imageCaption(g, im) {
   const b = im.bodyStyle && bodyOf(g, im.bodyStyle);
