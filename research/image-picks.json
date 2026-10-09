@@ -701,5 +701,232 @@
     "view": "front three-quarter"
    }
   ]
+ ],
+ "toyota-rav4-xa10": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter",
+    "bodyStyle": "b1"
+   }
+  ],
+  [
+   16,
+   {
+    "view": "front three-quarter",
+    "bodyStyle": "b2"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "rear three-quarter",
+    "bodyStyle": "b1"
+   }
+  ]
+ ],
+ "toyota-rav4-xa20": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   12,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   19,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "toyota-rav4-xa30": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   10,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   21,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "toyota-rav4-xa40": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   10,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "toyota-rav4-xa50": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   0,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   5,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "volkswagen-tiguan-5n": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   11,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   22,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "volkswagen-tiguan-ad1": [
+  [
+   13,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   22,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   33,
+   {
+    "view": "rear three-quarter"
+   }
+  ],
+  [
+   43,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "volkswagen-tiguan-ct1": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter",
+    "bodyStyle": "b1"
+   }
+  ],
+  [
+   3,
+   {
+    "view": "rear three-quarter",
+    "bodyStyle": "b1"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "volvo-xc90-first-generation": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   3,
+   {
+    "view": "rear three-quarter"
+   }
+  ],
+  [
+   7,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "volvo-xc90-second-generation": [
+  [
+   1,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   11,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   21,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   3,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
  ]
 }

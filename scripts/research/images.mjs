@@ -160,7 +160,16 @@ function candidates(ids) {
   }
 }
 
+// Wikimedia's upload servers answer 429 in bursts: wait longer after each refusal.
+function download(url, file) {
+  for (let i = 0; i < 8; i++) {
+    try { execFileSync('curl', ['-sSfL', '-A', UA, '-o', file, url], { stdio: 'pipe' }); sleep(3); return true; }
+    catch { fs.rmSync(file, { force: true }); sleep(20 * (i + 1)); }
+  }
+  return false;
+}
 function apply() {
+  const failed = [];
   const cand = JSON.parse(fs.readFileSync(path.join(CACHE, 'candidates.json'), 'utf8'));
   const decisions = JSON.parse(fs.readFileSync(path.join(ROOT, 'research/image-decisions.json'), 'utf8'));
   const out = {};
@@ -176,9 +185,8 @@ function apply() {
       if (!fs.existsSync(path.join(ROOT, big))) {
         // 1280 px is a standard Wikimedia thumbnail width; smaller originals are used as they are
         const src = c.width <= 1280 ? c.url : c.thumb1600.replace(/\/1600px-/, '/1280px-');
-        execFileSync('curl', ['-sSfL', '-A', UA, '--retry', '6', '--retry-delay', '8', '-o', path.join(ROOT, big), src]);
+        if (!download(src, path.join(ROOT, big))) { console.error(`${gid}: could not download ${c.file}; skipped`); failed.push(c.file); continue; }
         execFileSync('convert', [path.join(ROOT, big), '-strip', '-quality', '82', path.join(ROOT, big)]);
-        sleep(2);
       }
       if (!fs.existsSync(path.join(ROOT, small))) execFileSync('convert', [path.join(ROOT, big), '-resize', '640x', '-strip', '-quality', '80', path.join(ROOT, small)]);
       const dims = execFileSync('identify', ['-format', '%w %h', path.join(ROOT, big)], { encoding: 'utf8' }).split(' ').map(Number);
@@ -193,7 +201,7 @@ function apply() {
     }
   }
   fs.writeFileSync(path.join(ROOT, 'data/images.json'), JSON.stringify({ about: 'Photos chosen from Wikimedia Commons by scripts/research/images.mjs and reviewed by eye. Keyed by generation id.', images: out }, null, 1) + '\n');
-  console.log(`${Object.values(out).flat().length} photos for ${Object.keys(out).length} generations`);
+  console.log(`${Object.values(out).flat().length} photos for ${Object.keys(out).length} generations; ${failed.length} not downloaded${failed.length ? ' (run apply again)' : ''}`);
 }
 
 const [cmd, ...rest] = process.argv.slice(2);
