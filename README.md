@@ -10,9 +10,6 @@ generations, compared like for like, with every figure linked to its source and 
 - **Visitor features** (Dream garage, comparison tool, search, suggestions) are small additions in plain JavaScript and
   a Cloudflare Worker with a D1 database. The archive keeps working when they are unavailable.
 
-The previous website at this address (a fashion archive) is preserved in git history — `main` at `668ba93` and the
-unmerged `claude/archive-product-phase` at `43e78f9` — and none of its content or images is part of this build.
-
 ## Layout
 
 | Path | What it is |
@@ -41,7 +38,7 @@ unmerged `claude/archive-product-phase` at `43e78f9` — and none of its content
 `/cars/<make>/<family>/<generation>/`, `/cars/<make>/<family>/compare/<a>-vs-<b>/` (consecutive generations only),
 `/compare/` (any three), `/years/`, `/years/<yyyy>/` (only years with a documented event), `/search/`, `/garage/`,
 `/popular/`, `/suggest/`, `/about/`, `/credits/`, `/privacy/`.
-Search, garage and suggestion pages are `noindex`. Addresses of the earlier fashion site are not redirected; they 404.
+Search, garage and suggestion pages are `noindex`. Unknown addresses return a 404 page.
 
 ## Rules the data and pages follow
 
@@ -97,12 +94,12 @@ The local admin page is `http://localhost:8787/admin` with the token from `.dev.
 The Worker and the D1 database `brandsmodels` already exist (the database id is in `wrangler.jsonc`).
 
 ```
-npx wrangler d1 migrations apply brandsmodels --remote   # adds the car_* tables (0002); earlier tables are untouched
+npx wrangler d1 migrations apply brandsmodels --remote   # creates the car_* tables (0002) and removes unused older tables (0003)
 npx wrangler secret put ADMIN_TOKEN                      # a long random string (e.g. openssl rand -hex 32)
 npx wrangler secret put HASH_SALT                        # another long random string
 ```
 
-Or in the dashboard: run `migrations/0002_car_archive.sql` in the D1 console, and after the first deploy of this
+Or in the dashboard: run `migrations/0002_car_archive.sql` and then `migrations/0003_drop_retired_tables.sql` in the D1 console, and after the first deploy of this
 version add the two secrets under Workers & Pages → brandsmodels → Settings → Variables and Secrets (the dashboard
 only accepts secrets once the Worker has a script). Until `HASH_SALT` is set the public API answers 503 and stores
 nothing; until `ADMIN_TOKEN` is set the admin is off. The pages work throughout.
@@ -113,8 +110,15 @@ nothing; until `ADMIN_TOKEN` is set the admin is off. The pages work throughout.
 - Recommended: put `/admin*` and `/api/admin/*` behind Cloudflare Access (free for small teams) in addition to the token.
 - Optional: Turnstile on suggestions — set `TURNSTILE_SECRET` and add the widget to `/suggest/`.
 
+## Google Search Console and Analytics
+
+- **Search Console:** add a *Domain* property for the site's domain and verify it through DNS (Search Console can add the TXT
+  record in Cloudflare for you). Alternatively put the HTML-tag token in `site.config.json` → `googleSiteVerification`.
+  Then submit `<site url>/sitemap.xml`.
+- **Google Analytics (GA4):** put the measurement id (`G-…`) in `site.config.json` → `googleAnalytics`, or set the `GA_ID`
+  build variable. Visitors are asked first; Analytics loads only after they allow it, and the privacy page explains it.
+
 ## Measuring use without paid services
 
-- **Cloudflare Web Analytics** (free, cookieless): page views, top pages, referrers. Enable it for the site in the dashboard.
 - **Google Search Console** and **Bing Webmaster Tools**: submit `<site url>/sitemap.xml` for search queries and indexing.
 - **Dream garage**: `npx wrangler d1 execute brandsmodels --remote --command "SELECT item, COUNT(*) FROM car_garage WHERE counted = 1 GROUP BY item ORDER BY 2 DESC LIMIT 20"`.

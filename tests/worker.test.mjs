@@ -8,7 +8,7 @@ import worker, { validateSubmission, draftOverlay, validOverlayEntry } from '../
 function d1() {
   const db = new DatabaseSync(':memory:');
   // Both migrations, in order, as on the real database.
-  for (const m of ['0001_init.sql', '0002_car_archive.sql']) db.exec(fs.readFileSync(new URL('../migrations/' + m, import.meta.url), 'utf8'));
+  for (const m of ['0001_init.sql', '0002_car_archive.sql', '0003_drop_retired_tables.sql']) db.exec(fs.readFileSync(new URL('../migrations/' + m, import.meta.url), 'utf8'));
   const stmt = (sql, args = []) => ({
     bind: (...a) => stmt(sql, a),
     first: async () => db.prepare(sql).get(...args) ?? null,
@@ -48,14 +48,10 @@ test('garage saves are idempotent: repeats and retries count once; removing undo
   assert.ok(raw.every(r => /^[0-9a-f]{64}$/.test(r.visitor_hash)), 'browser ids are stored hashed');
 });
 
-test('earlier fashion tables are left untouched and never read', async () => {
+test('migrations leave only the car tables', () => {
   const e = env();
-  e.DB.raw.prepare("INSERT INTO favourites (visitor_hash, model, created_at) VALUES ('x', 'acme-trek', 1)").run();
-  e.DB.raw.prepare("INSERT INTO submissions (created_at, type, model, brand, kind, source_url, note, ip_day) VALUES (1, 'missing', 'A', 'B', 'campaign', 'https://x.example', 'old fashion suggestion', 'n')").run();
-  assert.equal((await (await call(e, '/api/garage/count?item=family:acme-trek')).json()).count, 0);
-  const q = await (await call(e, '/api/admin/submissions?status=all', { headers: auth })).json();
-  assert.equal(q.submissions.length, 0, 'old suggestions are not shown in the car review queue');
-  assert.equal(e.DB.raw.prepare('SELECT COUNT(*) n FROM submissions').get().n, 1);
+  const names = e.DB.raw.prepare("SELECT name FROM sqlite_master WHERE type = 'table' AND name NOT LIKE 'sqlite_%'").all().map(r => r.name).sort();
+  assert.deepEqual(names, ['car_garage', 'car_garage_networks', 'car_rate_limits', 'car_submissions']);
 });
 
 test('garage: validation, unknown items and cross-site requests are refused', async () => {

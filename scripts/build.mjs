@@ -21,7 +21,7 @@ const DATA = process.env.DATA_DIR || 'data';   // tests point this at fixtures
 const config = readJson('site.config.json');
 const SITE_URL = (process.env.SITE_URL || config.url).replace(/\/+$/, '');
 if (!/^https?:\/\/[^/]+$/.test(SITE_URL)) { console.error(`SITE_URL must be an origin like https://example.com (got ${SITE_URL})`); process.exit(1); }
-R.configure({ url: SITE_URL });
+R.configure({ url: SITE_URL, googleAnalytics: process.env.GA_ID ?? config.googleAnalytics, googleSiteVerification: config.googleSiteVerification });
 
 const manufacturers = readJson(`${DATA}/manufacturers.json`);
 const famDir = path.resolve(ROOT, DATA, 'families');

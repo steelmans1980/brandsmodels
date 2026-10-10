@@ -11,8 +11,13 @@ import {
 
 export const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 let ORIGIN = 'https://brandsmodels.com';
-/** The public base URL (no trailing slash). Set from SITE_URL at build time; the domain is not final. */
-export function configure({ url }) { if (url) ORIGIN = String(url).replace(/\/+$/, ''); }
+let GA_ID = '', GSC_TOKEN = '';
+/** Build-time settings from site.config.json: public base URL, Google Analytics id, Search Console token. */
+export function configure({ url, googleAnalytics, googleSiteVerification } = {}) {
+  if (url) ORIGIN = String(url).replace(/\/+$/, '');
+  if (googleAnalytics !== undefined) GA_ID = /^G-[A-Z0-9]{4,20}$/.test(googleAnalytics || '') ? googleAnalytics : '';
+  if (googleSiteVerification !== undefined) GSC_TOKEN = /^[\w-]{10,100}$/.test(googleSiteVerification || '') ? googleSiteVerification : '';
+}
 export const origin = () => ORIGIN;
 const hostOf = u => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return 'source'; } };
 const ext = (url, text) => `<a href="${esc(url)}" rel="noopener noreferrer nofollow" target="_blank">${esc(text)} <span aria-hidden="true">↗</span></a>`;
@@ -107,6 +112,7 @@ ${noindex ? '<meta name="robots" content="noindex,follow">\n' : ''}<meta propert
 <meta property="og:site_name" content="${SITE}">
 ${image ? `<meta property="og:image" content="${esc(ORIGIN + '/' + image)}">\n` : ''}<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 fill=%22%23293829%22/%3E%3Ctext x=%2216%22 y=%2223%22 font-family=%22Georgia%22 font-size=%2220%22 fill=%22%23f6f4ef%22 text-anchor=%22middle%22%3EC%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="/styles.css">
+${GSC_TOKEN ? `<meta name="google-site-verification" content="${esc(GSC_TOKEN)}">\n` : ''}${GA_ID ? `<meta name="ga-id" content="${esc(GA_ID)}">\n` : ''}
 ${jsonld.map(j => `<script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>`).join('\n')}
 </head>
 <body>
@@ -610,7 +616,9 @@ export function privacyPage(db) {
 <li><b>Spam limits:</b> a code derived from your network address and a secret that changes every day, kept for two days, used only to limit how often a network can save items or send suggestions. Your address itself is not stored.</li>
 <li><b>Suggestions:</b> the fields you fill in, the page you sent it from, the time and the daily network code. Suggestions are visible only to editors and are never published as you wrote them.</li>
 </ul>
-<p>We use no advertising, no tracking cookies and no third-party analytics scripts. Our host, Cloudflare, processes requests to deliver the site.</p>
+${GA_ID ? `<h2>Usage statistics</h2>
+<p>If you allow it when asked, we load Google Analytics, which sets cookies and sends Google information about your visit (pages viewed, approximate location, device and browser) so we can see which pages are useful. If you decline, it is not loaded. Your choice is kept in this browser; <button type="button" class="link-btn" data-analytics-reset>change your choice</button>. Google's privacy policy: ${ext('https://policies.google.com/privacy', 'policies.google.com/privacy')}.</p>
+<p>We use no advertising. Our host, Cloudflare, processes requests to deliver the site.</p>` : `<p>We use no advertising, no tracking cookies and no third-party analytics scripts. Our host, Cloudflare, processes requests to deliver the site.</p>`}
 <h2>Photos and text</h2>
 <p>Photos are from Wikimedia Commons under the free licences shown with each one (see <a href="/credits/">image credits</a>). Specifications and dates are facts taken from the linked sources; descriptions of changes are our own short summaries. Trademarks belong to their owners; ${SITE} is not affiliated with any manufacturer. If you believe something here should be removed, <a href="/suggest/?type=correction" rel="nofollow">tell us through the correction form</a>.</p>
 </div>`;
@@ -619,7 +627,7 @@ export function privacyPage(db) {
 
 export function notFoundPage(db) {
   const ctx = new Ctx(db);
-  const body = `<section class="page-head"><div class="eyebrow">404</div><h1>Page not found</h1><p class="lede">This address is not part of ${SITE}. Pages from the earlier website at this address were retired and are not redirected.</p>
+  const body = `<section class="page-head"><div class="eyebrow">404</div><h1>Page not found</h1><p class="lede">This address is not part of ${SITE}.</p>
 <p><a class="line-link" href="/">Home</a> · <a class="line-link" href="/manufacturers/">Manufacturers</a> · <a class="line-link" href="/search/">Search</a></p></section>`;
   return { path: '/404.html', html: layout({ title: `Page not found — ${SITE}`, description: `This page does not exist in ${SITE}. Browse manufacturers, generations or search the archive.`, path: '/404.html', noindex: true, body, ctx }) };
 }

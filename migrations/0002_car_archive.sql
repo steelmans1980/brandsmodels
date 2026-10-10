@@ -1,7 +1,4 @@
--- The Car Archive: visitor interactions in their own tables.
--- The tables from 0001 (favourites, fav_networks, rate_limits, submissions) belong to the earlier fashion website.
--- They are left exactly as they are and are never read or written by the car site, so no earlier record can be shown
--- or reinterpreted as car data. They can be exported and dropped later, after a separate decision.
+-- The Car Archive: visitor interactions (Dream garage counts, rate limits, suggestions).
 
 -- One row per (browser, item) in a Dream garage. item is 'family:<family id>' or 'generation:<generation id>'.
 -- The browser id is random, created in the visitor's browser, and stored only as a SHA-256 hash. The primary key makes

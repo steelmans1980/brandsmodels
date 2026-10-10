@@ -17,15 +17,6 @@ const params = new URLSearchParams(location.search);
 const data = (() => { try { return JSON.parse($('#page-data')?.textContent || '{}'); } catch { return {}; } })();
 const getJson = async p => { const r = await fetch(u(p)); if (!r.ok) throw new Error(r.status); return r.json(); };
 
-// ---------- links from the earlier website (#/model/…) are not redirected: say so instead ----------
-if (/^#\/(model|brand|brands|models|year|years|search|about|privacy)\b/.test(location.hash)) {
-  const n = document.createElement('p');
-  n.className = 'notice'; n.setAttribute('role', 'status');
-  n.textContent = 'The page this link pointed to belonged to the earlier website at this address and has been retired.';
-  $('main')?.prepend(n);
-  history.replaceState(null, '', location.pathname + location.search);
-}
-
 // ---------- storage (never throws) ----------
 const store = {
   get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
@@ -297,6 +288,37 @@ function searchHtml(ix, q) {
   }
   return out || `<p class="empty">Nothing matches “${esc(q)}”. Try a manufacturer, a model name, a generation code such as E70 or XA50, or a year.</p>`;
 }
+
+// ---------- Google Analytics: loaded only after the visitor agrees ----------
+const gaId = document.querySelector('meta[name="ga-id"]')?.content;
+function loadGa() {
+  const sc = document.createElement('script');
+  sc.async = true; sc.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(gaId);
+  document.head.append(sc);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+  window.gtag('config', gaId);
+}
+if (gaId && !PREVIEW) {
+  const choice = store.get('ca:analytics', null);
+  if (choice === 'yes') loadGa();
+  else if (choice === null) {
+    const bar = document.createElement('div');
+    bar.className = 'consent'; bar.setAttribute('role', 'region'); bar.setAttribute('aria-label', 'Usage statistics');
+    bar.innerHTML = `<p>May we count your visit with Google Analytics? It sets cookies and helps us see which pages are useful. <a href="${esc(u('/privacy/'))}">Privacy</a></p><div><button type="button" class="btn" data-ga="yes">Allow</button> <button type="button" class="link-btn" data-ga="no">No thanks</button></div>`;
+    document.body.append(bar);
+    bar.addEventListener('click', e => {
+      const v = e.target.closest('[data-ga]')?.dataset.ga; if (!v) return;
+      store.set('ca:analytics', v); bar.remove(); if (v === 'yes') loadGa();
+    });
+  }
+}
+document.addEventListener('click', e => {
+  if (!e.target.closest('[data-analytics-reset]')) return;
+  store.set('ca:analytics', null); try { localStorage.removeItem('ca:analytics'); } catch {}
+  toast('Your choice was cleared. You will be asked again on the next page.');
+});
 
 // ---------- suggestion form ----------
 const form = $('#suggestForm');

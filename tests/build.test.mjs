@@ -1,6 +1,6 @@
 // Builds the real site into a temporary folder and checks the HTML: content without JavaScript, unique titles and
 // canonicals, the configurable base URL, sourced facts, market labelling, photo credits and that nothing of the
-// earlier fashion website remains in the build.
+// nothing outside the car site is published.
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -40,14 +40,25 @@ test('every page has a unique title, description and canonical on the configured
   assert.match(read('robots.txt'), new RegExp(`Sitemap: ${SITE_URL}/sitemap.xml`));
 });
 
-test('nothing from the earlier fashion website is in the build', () => {
-  const banned = /fashion|runway|catwalk|campaigns?\.json|\bmodels? agenc|vogue|kendall|supermodel|magazine cover|The Model Archive/i;
+test('only the car site and its own assets are published', () => {
+  const allowedTop = new Set(['assets', 'cars', 'manufacturers', 'compare', 'years', 'search', 'garage', 'popular', 'suggest', 'about', 'credits', 'privacy', 'data']);
   for (const f of files) {
-    assert.ok(!/^(model|brand|magazine|year|most-featured|fan-favourites|favourites)\//.test(f), `old path ${f}`);
-    if (/\.(html|js|mjs|json|css|txt|xml)$/.test(f)) assert.ok(!banned.test(read(f)), `${f} mentions the fashion site`);
+    const top = f.split('/')[0];
+    assert.ok(!f.includes('/') ? /^(index\.html|404\.html|styles\.css|client\.js|lib\.mjs|render\.mjs|robots\.txt|sitemap\.xml|_headers)$/.test(f) : allowedTop.has(top), `unexpected file ${f}`);
+    if (f.startsWith('assets/')) assert.ok(f.startsWith('assets/cars/'), `unexpected asset ${f}`);
   }
-  assert.ok(!fs.existsSync(path.join(OUT, 'assets/photos')) && !fs.existsSync(path.join(OUT, 'assets/campaigns')));
-  for (const priv of ['research', 'pipeline', 'worker', 'migrations', 'data/families', '.dev.vars', 'data/overlay.json']) assert.ok(!fs.existsSync(path.join(OUT, priv)), `${priv} must not be published`);
+  for (const priv of ['research', 'worker', 'migrations', 'data/families', '.dev.vars', 'data/overlay.json']) assert.ok(!fs.existsSync(path.join(OUT, priv)), `${priv} must not be published`);
+});
+
+test('analytics and Search Console tags appear only when configured', () => {
+  const h = read('index.html');
+  assert.ok(!h.includes('googletagmanager') && !h.includes('name="ga-id"'), 'no analytics without an id');
+  const OUT2 = fs.mkdtempSync(path.join(os.tmpdir(), 'car-build-ga-'));
+  execFileSync('node', ['scripts/build.mjs'], { env: { ...process.env, BUILD_OUT: OUT2, GA_ID: 'G-TEST12345' }, stdio: 'pipe' });
+  const h2 = fs.readFileSync(path.join(OUT2, 'index.html'), 'utf8');
+  assert.match(h2, /<meta name="ga-id" content="G-TEST12345">/);
+  assert.ok(!h2.includes('googletagmanager'), 'the script itself loads only after consent');
+  assert.match(fs.readFileSync(path.join(OUT2, 'privacy/index.html'), 'utf8'), /Google Analytics/);
 });
 
 test('generation pages carry their facts in HTML, each linked to a numbered source', () => {
@@ -106,14 +117,11 @@ test('comparisons, years and the sitemap avoid thin pages', () => {
   assert.match(yi, /model year/);
 });
 
-test('pages work without JavaScript and old hash links are not redirected', () => {
+test('pages work without JavaScript', () => {
   const home = read('index.html');
   assert.ok((home.match(/<article class="card fam-card">/g) || []).length === families.length);
   const cars = read('cars/index.html');
   assert.equal((cars.match(/<article class="card gen-card"/g) || []).length, gens.length);
   assert.match(read('search/index.html'), /<noscript>/);
-  const client = read('client.js');
-  assert.match(client, /earlier website/);
-  assert.ok(!/location\.replace/.test(client));
-  assert.match(read('404.html'), /not redirected/);
+  assert.match(read('404.html'), /Page not found/);
 });

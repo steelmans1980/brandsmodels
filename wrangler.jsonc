@@ -16,7 +16,6 @@
   },
   // Created in the Cloudflare dashboard. Apply the schema with
   // `npx wrangler d1 migrations apply brandsmodels --remote` (or run migrations/*.sql in order in the D1 console).
-  // 0002 adds the car_* tables; the fashion-era tables from 0001 stay untouched and unused.
   "d1_databases": [
     { "binding": "DB", "database_name": "brandsmodels", "database_id": "5be31ace-c6ee-4c01-936c-72af74be2180", "migrations_dir": "migrations" }
   ],
