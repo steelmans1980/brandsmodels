@@ -1,62 +1,124 @@
-# The Model Archive
+# The Car Archive
 
-A searchable archive of the women who fronted clothing-brand campaigns, by brand, year and season.
-Example: search **bebe** and you'll see that Hailey Clauson fronted its Spring 2017 campaign.
+A sourced visual reference to car model families, generations, facelifts and model years: what changed between
+generations, compared like for like, with every figure linked to its source and labelled by market.
+("The Car Archive" is a provisional name; the site is currently served at brandsmodels.com and the final domain is undecided.)
 
-## Where the data comes from
+- **Pages** are plain HTML generated at deploy time from `data/`. Every manufacturer, model family, generation,
+  consecutive-generation comparison and year page is complete without JavaScript, with its own URL, title,
+  description and canonical link.
+- **Visitor features** (Dream garage, comparison tool, search, suggestions) are small additions in plain JavaScript and
+  a Cloudflare Worker with a D1 database. The archive keeps working when they are unavailable.
 
-- **Recent and high-street campaigns**: added by hand from fashion press (Fashion Gone Rogue, The Impression, NYLON, The Zoe Report, models.com credits…), each with its source link.
-- **Historical archive**: extracted from the career sections of female models' Wikipedia biographies (and brands' Wikipedia articles), using the article and the press article it cites as sources. Every dated entry that wasn't a simple "In 2014, she was the face of X" sentence was checked by hand.
-- Entries whose source gives no year are kept with `"year": null` and shown under "Year not recorded".
-- Model portraits are thumbnails from Wikimedia Commons, credited on each model page.
-- Instagram and Facebook require a login and forbid automated collection, so they are not used.
+## Layout
 
-Entries generated from Wikipedia carry `"via": "wikipedia"`; hand-written entries don't. Edit hand-written entries freely.
-
-## How it works
-
-Plain static site, no build step, deployed by Cloudflare straight from this repo.
-
-| File | Purpose |
+| Path | What it is |
 |---|---|
-| `index.html` | Page shell (header, search box, footer) |
-| `styles.css` | All styling |
-| `app.js` | Loads the data and renders every page (hash routes: `#/brand/bebe`, `#/model/hailey-clauson`, `#/year/2017`, `#/search/...`) |
-| `data/campaigns.json` | **The data.** Edit this to add campaigns |
-| `assets/` | Campaign images (only those from credited press coverage) |
+| `data/SCHEMA.md` | **The data model and sourcing rules.** Read this first. |
+| `data/manufacturers.json` | Manufacturers. |
+| `data/families/<id>.json` | One file per model family: lines, generations, revisions, specifications, sources. |
+| `data/images.json` | Photos chosen from Wikimedia Commons, keyed by generation, with author, licence and evidence. |
+| `data/overlay.json` | Reviewed corrections applied on top of the family files at build time; kept across data updates. |
+| `assets/cars/` | The photos (1600 px and 640 px). |
+| `site/lib.mjs` | Data rules shared by the build, the browser and the tests (dates, units, like-for-like comparison, overlay). |
+| `site/render.mjs` | HTML for every page; also used in the browser for the comparison table. |
+| `site/client.js` | Photo viewer, filters, comparison tool, Dream garage, search, popularity list, suggestion form. |
+| `styles.css` | All styling. |
+| `scripts/build.mjs` | Builds the public site into `public/` (the only folder that is served). |
+| `scripts/check-data.mjs` | Validates the data and re-reads every source to confirm each quoted fact. |
+| `scripts/research/` | Research tools (source text, Commons photos). Not deployed. |
+| `research/` | Research notes and photo decisions. `research/cache/` is local only (git-ignored). Not deployed. |
+| `worker/` | The Worker: `/api/*` (garage counts, suggestions, admin) and `/admin`. Everything else is static. |
+| `migrations/` | D1 schema. |
+| `tests/` | `npm test`: data rules, the built HTML, and the API against SQLite. |
 
-Cloudflare (Workers): build command empty, deploy command `npx wrangler deploy`. `wrangler.jsonc` serves the repo root as static files; `.assetsignore` keeps `.git`, this README and the config files off the site.
+## URLs
 
-## Adding a campaign
+`/manufacturers/`, `/manufacturers/<make>/`, `/cars/` (all generations, with filters), `/cars/<make>/<family>/`,
+`/cars/<make>/<family>/<generation>/`, `/cars/<make>/<family>/compare/<a>-vs-<b>/` (consecutive generations only),
+`/compare/` (any three), `/years/`, `/years/<yyyy>/` (only years with a documented event), `/search/`, `/garage/`,
+`/popular/`, `/suggest/`, `/about/`, `/credits/`, `/privacy/`.
+Search, garage and suggestion pages are `noindex`. Unknown addresses return a 404 page.
 
-Add one object to the `campaigns` array in `data/campaigns.json`:
+## Rules the data and pages follow
 
-```json
-{
-  "brand": "bebe", "year": 2017, "season": "Spring",
-  "talent": ["Hailey Clauson"],
-  "photographer": "optional",
-  "title": "optional campaign name",
-  "note": "optional one-line note",
-  "images": [
-    { "src": "assets/campaigns/bebe-2017-spring-1.jpg", "talent": ["Hailey Clauson"] }
-  ],
-  "sources": [{ "name": "Bellazon", "url": "https://…" }]
-}
+- **Every fact is sourced and checked.** Each fact records its source and a short quote; `npm run check-data` re-reads
+  every source (Wikipedia by exact revision) and fails if a quote is missing or does not contain the value used.
+- **Manufacturer sources first**, then reference works and the motoring press.
+- **Markets are never merged.** Dimensions, capacities and powertrains carry their market. Comparisons show dimensions
+  side by side only when every generation has figures for the same market and standard body; otherwise they say so.
+- **Dates are distinct**: first shown (reveal), production start/end, sales start, model years by market. The timeline
+  and year pages use production years; model years are listed separately.
+- **Units** are shown as the source states them with conversions in brackets; luggage volumes keep their measuring
+  method (VDA vs SAE), which are not comparable.
+- **Photos** come from Commons categories for the specific generation, facelift or body style and are checked by eye;
+  photos that only show the generation in general are labelled "Representative image". Author and licence are shown
+  with every photo and on `/credits/`.
+- **No opinions**: no driving impressions, reliability or safety ratings, prices or running costs. Structured data:
+  `BreadcrumbList`, `WebSite` search and `Car` (only fields visible on the page). No ratings, reviews or offers.
+
+## Local development
+
+```
+npm install                      # wrangler (pinned)
+cp .dev.vars.example .dev.vars   # local-only admin token and salt
+npm run dev                      # builds public/, applies migrations to a local D1, serves http://localhost:8787
+npm test                         # data rules, built HTML, API (Node 22+, uses node:sqlite)
+npm run check-data               # verifies every quoted fact against its source (needs network; cached in research/cache/)
 ```
 
-- `season`: one of `Full year` (use when only the year is known), `Resort`, `Cruise`, `Spring`, `Spring/Summer`, `Summer`, `Pre-Fall`, `Fall`, `Fall/Winter`, `Winter`, `Holiday`.
-- If the brand is new, also add it to the `brands` object (country and search aliases, e.g. `"bébé"`). Search ignores accents and case.
-- Always include at least one source link.
-- Photos go in `assets/campaigns/`, named `brand-year-season-N.jpg`, resized to at most 1200px on the long side.
-  Tag each photo with who is in it (`talent`); leave it out for group shots. A model's page shows her
-  tagged photos plus group shots, and never another model's solo shot. The first photo is the cover.
-- Bump `"updated"` at the top of the file.
+The local admin page is `http://localhost:8787/admin` with the token from `.dev.vars`.
+`SITE_URL=https://example.com npm run build` builds with another public base URL.
 
-## Local preview
+## Updating the data
 
-The page loads JSON with `fetch`, so open it through a server rather than as a file:
+1. Edit or add `data/families/<id>.json` following `data/SCHEMA.md`. Research helpers:
+   `node scripts/research/text.mjs --permalink en "<article>"`, `node scripts/research/text.mjs <url> --find "<quote>"`.
+2. `npm run check-data` must report 0 errors.
+3. Photos: add Commons categories to the generation (`commons`), run `node scripts/research/images.mjs candidates <family id>`,
+   look at the contact sheets in `research/cache/images/sheets/`, record choices in `research/image-decisions.json`,
+   then `node scripts/research/images.mjs apply`.
+4. `npm test`, commit, push. Ids never change once published; `data/overlay.json` is never overwritten.
 
-```sh
-python3 -m http.server 8000   # then visit http://localhost:8000
+## Community suggestions
+
+1. Visitors send "Suggest a car", "Suggest a source or photo" or "Report a correction" (`/suggest/`). Links only, no
+   uploads. Stored privately in D1 (`car_submissions`), never published automatically; links are never fetched.
+2. A reviewer opens `/admin`, checks the source, and either completes the proposed overlay entry and approves it,
+   approves the suggestion as a lead (research needed, no data change), or rejects it.
+3. "Export approved changes" gives JSON: save it and run `node scripts/apply-overlay-export.mjs export.json`, then
+   `npm run check-data`, review the diff of `data/overlay.json`, commit and push. Then "Mark these as exported".
+
+## Cloudflare setup
+
+The Worker and the D1 database `brandsmodels` already exist (the database id is in `wrangler.jsonc`).
+
 ```
+npx wrangler d1 migrations apply brandsmodels --remote   # creates the car_* tables (0002) and removes unused older tables (0003)
+npx wrangler secret put ADMIN_TOKEN                      # a long random string (e.g. openssl rand -hex 32)
+npx wrangler secret put HASH_SALT                        # another long random string
+```
+
+Or in the dashboard: run `migrations/0002_car_archive.sql` and then `migrations/0003_drop_retired_tables.sql` in the D1 console, and after the first deploy of this
+version add the two secrets under Workers & Pages → brandsmodels → Settings → Variables and Secrets (the dashboard
+only accepts secrets once the Worker has a script). Until `HASH_SALT` is set the public API answers 503 and stores
+nothing; until `ADMIN_TOKEN` is set the admin is off. The pages work throughout.
+
+- **Domain:** set the final address in `site.config.json` (`url`) or as the `SITE_URL` build variable in Workers Builds;
+  add the custom domain to the Worker in the dashboard.
+- Workers Builds: keep the deploy command `npx wrangler deploy`; wrangler runs `node scripts/build.mjs` itself. Node 20+.
+- Recommended: put `/admin*` and `/api/admin/*` behind Cloudflare Access (free for small teams) in addition to the token.
+- Optional: Turnstile on suggestions — set `TURNSTILE_SECRET` and add the widget to `/suggest/`.
+
+## Google Search Console and Analytics
+
+- **Search Console:** add a *Domain* property for the site's domain and verify it through DNS (Search Console can add the TXT
+  record in Cloudflare for you). Alternatively put the HTML-tag token in `site.config.json` → `googleSiteVerification`.
+  Then submit `<site url>/sitemap.xml`.
+- **Google Analytics (GA4):** put the measurement id (`G-…`) in `site.config.json` → `googleAnalytics`, or set the `GA_ID`
+  build variable. Visitors are asked first; Analytics loads only after they allow it, and the privacy page explains it.
+
+## Measuring use without paid services
+
+- **Google Search Console** and **Bing Webmaster Tools**: submit `<site url>/sitemap.xml` for search queries and indexing.
+- **Dream garage**: `npx wrangler d1 execute brandsmodels --remote --command "SELECT item, COUNT(*) FROM car_garage WHERE counted = 1 GROUP BY item ORDER BY 2 DESC LIMIT 20"`.

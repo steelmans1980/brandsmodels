@@ -1,0 +1,932 @@
+{
+ "_about": "Reviewer's photo choices, by index on the contact sheets made by scripts/research/images.mjs candidates. Converted to research/image-decisions.json (by file name) with scripts/research/picks-to-decisions.mjs. Revisions come only from Commons categories; photos from a generation-level category stay 'version not identified'.",
+ "audi-q7-4l": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   6,
+   {
+    "view": "rear"
+   }
+  ]
+ ],
+ "audi-q7-4m": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   0,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   5,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "audi-q7-g8": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   3,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "bmw-x5-e53": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   7,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "bmw-x5-e70": [
+  [
+   1,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   3,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "bmw-x5-f15": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   3,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "bmw-x5-g05": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   9,
+   {
+    "view": "rear three-quarter"
+   }
+  ],
+  [
+   12,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "bmw-x5-g65": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   7,
+   {
+    "view": "side"
+   }
+  ]
+ ],
+ "honda-cr-v-rd1": [
+  [
+   7,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   6,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "honda-cr-v-rd4": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   4,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "honda-cr-v-re": [
+  [
+   1,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   4,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "honda-cr-v-rm": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   9,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "honda-cr-v-rw": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   6,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "honda-cr-v-rs": [
+  [
+   1,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   0,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   11,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "hyundai-tucson-jm": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   8,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "hyundai-tucson-lm": [
+  [
+   1,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   4,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "hyundai-tucson-tl": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   9,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "hyundai-tucson-nx4": [
+  [
+   12,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "rear three-quarter"
+   }
+  ],
+  [
+   24,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   0,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "hyundai-tucson-nx5": [
+  [
+   3,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "kia-sportage-nb": [
+  [
+   1,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   5,
+   {
+    "view": "rear three-quarter"
+   }
+  ],
+  [
+   15,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "kia-sportage-km": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   9,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "kia-sportage-sl": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   8,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "kia-sportage-ql": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   4,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "kia-sportage-nq5": [
+  [
+   4,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   0,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "mazda-cx-5-ke": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   1,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "mazda-cx-5-kf": [
+  [
+   4,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   10,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "mazda-cx-5-km": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   1,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "mercedes-benz-gle-w163": [
+  [
+   8,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   12,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   19,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "mercedes-benz-gle-w164": [
+  [
+   6,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   18,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "mercedes-benz-gle-w166": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   11,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   24,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "mercedes-benz-gle-v167": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   4,
+   {
+    "view": "rear three-quarter"
+   }
+  ],
+  [
+   15,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "nissan-x-trail-rogue-t30": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   8,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "nissan-x-trail-rogue-s35": [
+  [
+   4,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   2,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "nissan-x-trail-rogue-t31": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   2,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "nissan-x-trail-rogue-t32": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "nissan-x-trail-rogue-t33": [
+  [
+   3,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   9,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   19,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "porsche-cayenne-9pa": [
+  [
+   10,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "rear three-quarter"
+   }
+  ],
+  [
+   27,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "porsche-cayenne-92a": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   5,
+   {
+    "view": "rear three-quarter"
+   }
+  ],
+  [
+   11,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "porsche-cayenne-e3": [
+  [
+   13,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   22,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   33,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "porsche-cayenne-e4": [
+  [
+   9,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   0,
+   {
+    "view": "rear three-quarter"
+   }
+  ],
+  [
+   11,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "toyota-rav4-xa10": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter",
+    "bodyStyle": "b1"
+   }
+  ],
+  [
+   16,
+   {
+    "view": "front three-quarter",
+    "bodyStyle": "b2"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "rear three-quarter",
+    "bodyStyle": "b1"
+   }
+  ]
+ ],
+ "toyota-rav4-xa20": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   12,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   19,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "toyota-rav4-xa30": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   10,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   21,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "toyota-rav4-xa40": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   10,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "toyota-rav4-xa50": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   0,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   5,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ],
+ "volkswagen-tiguan-5n": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   11,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   22,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "volkswagen-tiguan-ad1": [
+  [
+   13,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   22,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   33,
+   {
+    "view": "rear three-quarter"
+   }
+  ],
+  [
+   43,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "volkswagen-tiguan-ct1": [
+  [
+   0,
+   {
+    "lead": true,
+    "view": "front three-quarter",
+    "bodyStyle": "b1"
+   }
+  ],
+  [
+   3,
+   {
+    "view": "rear three-quarter",
+    "bodyStyle": "b1"
+   }
+  ],
+  [
+   13,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "volvo-xc90-first-generation": [
+  [
+   2,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   3,
+   {
+    "view": "rear three-quarter"
+   }
+  ],
+  [
+   7,
+   {
+    "view": "front three-quarter"
+   }
+  ]
+ ],
+ "volvo-xc90-second-generation": [
+  [
+   1,
+   {
+    "lead": true,
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   11,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   21,
+   {
+    "view": "front three-quarter"
+   }
+  ],
+  [
+   3,
+   {
+    "view": "rear three-quarter"
+   }
+  ]
+ ]
+}

@@ -1,0 +1,3 @@
+# Local development only. Never commit .dev.vars; set production values with `wrangler secret put`.
+ADMIN_TOKEN=local-test-admin-token-0123456789abcdef
+HASH_SALT=local-test-salt

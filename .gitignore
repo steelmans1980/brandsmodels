@@ -1,6 +1,5 @@
 .wrangler/
 node_modules/
-pipeline/cache/pages.sqlite
-pipeline/cache/sheets/
-__pycache__/
-pipeline/cache/*.log
+public/
+.dev.vars
+research/cache/

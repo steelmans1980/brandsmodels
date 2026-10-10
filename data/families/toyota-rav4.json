@@ -1,0 +1,2541 @@
+{
+  "id": "toyota-rav4",
+  "slug": "rav4",
+  "manufacturer": "toyota",
+  "name": "Toyota RAV4",
+  "lines": [
+    {
+      "id": "rav4",
+      "name": "RAV4"
+    }
+  ],
+  "sources": {
+    "wp": {
+      "url": "https://en.wikipedia.org/w/index.php?title=Toyota_RAV4&oldid=1378807043",
+      "title": "Toyota RAV4",
+      "publisher": "Wikipedia",
+      "type": "secondary",
+      "accessed": "2026-10-09"
+    },
+    "wpde": {
+      "url": "https://de.wikipedia.org/w/index.php?title=Toyota_RAV4&oldid=271178747",
+      "title": "Toyota RAV4",
+      "publisher": "Wikipedia (de)",
+      "type": "secondary",
+      "accessed": "2026-10-09"
+    },
+    "tg94": {
+      "url": "https://global.toyota/detail/7862794",
+      "title": "Toyota Introduces the RAV4―a New-Concept 4X4",
+      "publisher": "Toyota Motor Corporation",
+      "type": "manufacturer",
+      "date": "1994-05-10",
+      "accessed": "2026-10-09"
+    },
+    "tg00": {
+      "url": "https://global.toyota/detail/7932597",
+      "title": "New RAV4s Take \"Stylish and Rugged\" Concept to Higher Level",
+      "publisher": "Toyota Motor Corporation",
+      "type": "manufacturer",
+      "date": "2000-05-19",
+      "accessed": "2026-10-09"
+    },
+    "tg05": {
+      "url": "https://global.toyota/detail/246605",
+      "title": "Toyota Launches New RAV4 in Japan",
+      "publisher": "Toyota Motor Corporation",
+      "type": "manufacturer",
+      "date": "2005-11-14",
+      "accessed": "2026-10-09"
+    },
+    "tgvan": {
+      "url": "https://global.toyota/detail/279304",
+      "title": "Toyota Launches 'Vanguard' SUV in Japan",
+      "publisher": "Toyota Motor Corporation",
+      "type": "manufacturer",
+      "date": "2007-08-30",
+      "accessed": "2026-10-09"
+    },
+    "tg19": {
+      "url": "https://global.toyota/en/newsroom/toyota/27541875.html",
+      "title": "Toyota Rolls Out All-New RAV4",
+      "publisher": "Toyota Motor Corporation",
+      "type": "manufacturer",
+      "date": "2019-04-10",
+      "accessed": "2026-10-09"
+    },
+    "tg25": {
+      "url": "https://global.toyota/en/newsroom/toyota/42758168.html",
+      "title": "New RAV4 Makes World Premiere in Japan",
+      "publisher": "Toyota Motor Corporation",
+      "type": "manufacturer",
+      "date": "2025-05-21",
+      "accessed": "2026-10-09"
+    },
+    "uk20": {
+      "url": "https://media.toyota.co.uk/rav4-20th-anniversary/",
+      "title": "Celebrating The Original: 20 Years Of The Toyota RAV4",
+      "publisher": "Toyota (GB) media site",
+      "type": "manufacturer",
+      "accessed": "2026-10-09"
+    },
+    "uk98": {
+      "url": "https://media.toyota.co.uk/vehicles/rav4-archive-1998/",
+      "title": "RAV4 (1998–2000)",
+      "publisher": "Toyota (GB) media site",
+      "type": "manufacturer",
+      "accessed": "2026-10-09"
+    },
+    "ukphev": {
+      "url": "https://media.toyota.co.uk/the-rav4-plug-in-hybrid-toyotas-new-hybrid-flagship/",
+      "title": "The RAV4 Plug-in Hybrid, Toyota's new Hybrid Flagship",
+      "publisher": "Toyota (GB) media site",
+      "type": "manufacturer",
+      "accessed": "2026-10-09"
+    },
+    "tp13": {
+      "url": "https://pressroom.toyota.com/2013-toyota-rav4-debut-los-angeles-auto-show-nov28/",
+      "title": "All-New 2013 Toyota RAV4 Makes World Debut at Los Angeles International Auto Show",
+      "publisher": "Toyota USA Newsroom",
+      "type": "manufacturer",
+      "date": "2012-11-28",
+      "accessed": "2026-10-09"
+    },
+    "tp16": {
+      "url": "https://pressroom.toyota.com/2015-nyias-toyota-rav4-hybrid-reveal-release/",
+      "title": "Start Spreading the News: 2016 Toyota RAV4 Hybrid Debuts at New York International Auto Show",
+      "publisher": "Toyota USA Newsroom",
+      "type": "manufacturer",
+      "date": "2015-04-02",
+      "accessed": "2026-10-09"
+    },
+    "tp19d": {
+      "url": "https://pressroom.toyota.com/all-new-2019-toyota-rav4-world-debut-new-york-international-auto-show/",
+      "title": "All-New 2019 Toyota RAV4 to Make World Debut at New York International Auto Show",
+      "publisher": "Toyota USA Newsroom",
+      "type": "manufacturer",
+      "accessed": "2026-10-09"
+    },
+    "tp19": {
+      "url": "https://pressroom.toyota.com/all-new-2019-toyota-rav4-breaks-the-mold-for-the-segment-it-created/",
+      "title": "All-New 2019 Toyota RAV4 Breaks the Mold for the Segment it Created",
+      "publisher": "Toyota USA Newsroom",
+      "type": "manufacturer",
+      "accessed": "2026-10-09"
+    },
+    "tpprime": {
+      "url": "https://pressroom.toyota.com/toyota-revs-up-lineup-with-new-302-horsepower-rav4-prime/",
+      "title": "Toyota Revs Up Lineup with New 302-Horsepower RAV4 Prime",
+      "publisher": "Toyota USA Newsroom",
+      "type": "manufacturer",
+      "date": "2019-11-20",
+      "accessed": "2026-10-09"
+    },
+    "tp26": {
+      "url": "https://pressroom.toyota.com/the-next-adventure-begins-2026-rav4-arrives-this-winter/",
+      "title": "The Next Adventure Begins: 2026 RAV4 Arrives this Winter",
+      "publisher": "Toyota USA Newsroom",
+      "type": "manufacturer",
+      "accessed": "2026-10-09"
+    }
+  },
+  "generations": [
+    {
+      "id": "toyota-rav4-xa10",
+      "slug": "xa10",
+      "ordinal": 1,
+      "lines": [
+        "rav4"
+      ],
+      "name": "First generation",
+      "codes": [
+        {
+          "value": "XA10",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code XA10"
+        }
+      ],
+      "names": [
+        {
+          "value": "RAV4 L",
+          "markets": [
+            "JP"
+          ],
+          "src": "tg00",
+          "quote": "Toyota launched the RAV4 L and RAV4 J in 1994"
+        },
+        {
+          "value": "RAV4 J",
+          "markets": [
+            "JP"
+          ],
+          "src": "tg00",
+          "quote": "Toyota launched the RAV4 L and RAV4 J in 1994"
+        }
+      ],
+      "dates": {
+        "revealed": {
+          "value": "1994",
+          "event": "Geneva Motor Show",
+          "src": "uk20",
+          "quote": "The 1994 Geneva motor show marked the arrival of a new kind of vehicle"
+        },
+        "productionStart": {
+          "value": "1994-05",
+          "src": "wp",
+          "quote": "Production May 1994 – May 2000 (RAV4)"
+        },
+        "productionEnd": {
+          "value": "2000-05",
+          "src": "wp",
+          "quote": "Production May 1994 – May 2000 (RAV4)"
+        },
+        "salesStart": [
+          {
+            "value": "1994-05-10",
+            "market": "JP",
+            "src": "tg94",
+            "quotes": [
+              "May. 10, 1994",
+              "announced that from today it will market an all-new 4X4 vehicle called the RAV4"
+            ]
+          },
+          {
+            "value": "1994-06",
+            "market": "UK",
+            "src": "uk20",
+            "quotes": [
+              "The 1994 Geneva motor show marked the arrival of a new kind of vehicle",
+              "In the UK, sales of the “small, light, sporty and affordable” RAV4 kicked off in June."
+            ]
+          },
+          {
+            "value": "1996-01",
+            "market": "US",
+            "src": "wp",
+            "quote": "In March 1995, the 5-door was launched and introduced to the US in January 1996"
+          }
+        ],
+        "modelYears": [
+          {
+            "market": "NA",
+            "from": 1996,
+            "to": 2000,
+            "src": "wp",
+            "quote": "Model years 1996–2000"
+          }
+        ]
+      },
+      "ongoing": false,
+      "assembly": [
+        {
+          "value": "Motomachi plant, Toyota City, Aichi, Japan",
+          "src": "wp",
+          "quote": "Toyota, Aichi (Motomachi plant; April 1994 – July 2000)"
+        },
+        {
+          "value": "Tahara plant, Tahara, Aichi, Japan",
+          "src": "wp",
+          "quote": "Tahara, Aichi (Tahara plant; commenced January 1996)"
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "3-door SUV (hardtop)",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Body style 3-door SUV (hardtop)"
+        },
+        {
+          "id": "b2",
+          "value": "5-door SUV (long wheelbase)",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quotes": [
+            "5-door SUV 3-door convertible SUV",
+            "Wheelbase 5-door: 2,410 mm"
+          ]
+        },
+        {
+          "id": "b3",
+          "value": "3-door soft-top convertible SUV",
+          "markets": [
+            "UK"
+          ],
+          "src": "uk98",
+          "quote": "Range revised and expanded to include new three-door soft-top version"
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "AWD",
+          "system": "full-time 4WD",
+          "markets": [
+            "JP"
+          ],
+          "src": "tg94",
+          "quote": "Special features of the compact Toyota RAV4 are its monocoque body construction, independent suspension on all four wheels, and full-time 4WD."
+        },
+        {
+          "value": "FWD",
+          "markets": [
+            "US"
+          ],
+          "src": "wp",
+          "quote": "Both front-wheel drive and four-wheel drive were available"
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "JP",
+          "version": "3-door (RAV4 L/J launch)",
+          "unit": "mm",
+          "length": 3695,
+          "width": 1695,
+          "height": 1695,
+          "src": "tg94",
+          "quote": "(L:3,695mm x W:1,695mm x H:1,695mm)"
+        },
+        {
+          "id": "d2",
+          "market": "unstated",
+          "version": "5-door",
+          "unit": "mm",
+          "wheelbase": 2410,
+          "height": 1650,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 5-door: 2,410 mm (94.9 in)",
+            "5-door: 1,650 mm (65.0 in)"
+          ]
+        },
+        {
+          "id": "d3",
+          "market": "unstated",
+          "version": "3-door",
+          "unit": "mm",
+          "wheelbase": 2200,
+          "width": 1695,
+          "src": "wp",
+          "quotes": [
+            "3-door: 2,200 mm (86.6 in)",
+            "Width 1,695 mm (66.7 in)"
+          ]
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "2.0 (3S-FE)",
+          "market": "JP",
+          "fuel": "petrol",
+          "years": "1994–",
+          "engine": "2.0 L 3S-FE I4",
+          "cylinders": 4,
+          "transmission": "5-speed manual / 4-speed automatic",
+          "drivetrain": "AWD",
+          "src": "tg94",
+          "quotes": [
+            "The 2-liter twin-cam 3S-FE engine",
+            "The powerful, front-mounted 2.0-liter 16-valve engine can be mated with either a five-speed manual gearbox or four-speed automatic transmission."
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "2.0 (3S-GE)",
+          "market": "JP",
+          "fuel": "petrol",
+          "engine": "2.0 L 3S-GE I4",
+          "cylinders": 4,
+          "power": {
+            "value": 132,
+            "unit": "kW"
+          },
+          "src": "wp",
+          "quote": "In Japan, the 2.0-litre 3S-GE BEAMS engine with 132 kW (179 PS; 177 hp) was also available."
+        },
+        {
+          "id": "p3",
+          "name": "2.0 (US)",
+          "market": "US",
+          "fuel": "petrol",
+          "engine": "2.0 L I4",
+          "cylinders": 4,
+          "power": {
+            "value": 89,
+            "unit": "kW"
+          },
+          "src": "wp",
+          "quote": "In the US, a 2.0-litre straight-four producing 89 kW (121 PS; 119 hp) was available."
+        },
+        {
+          "id": "p4",
+          "name": "2.0 (UK)",
+          "market": "UK",
+          "fuel": "petrol",
+          "engine": "2.0 L I4",
+          "power": {
+            "value": 127,
+            "unit": "hp"
+          },
+          "drivetrain": "AWD",
+          "src": "uk20",
+          "quote": "It’s powered by a transverse-mounted, 2.0-litre, 127bhp petrol engine and has full-time all-wheel drive."
+        },
+        {
+          "id": "p5",
+          "name": "2.0 (1998 facelift)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "1997–2000",
+          "power": {
+            "value": 95,
+            "unit": "kW"
+          },
+          "src": "wp",
+          "quote": "Power was increased slightly to 95 kW (129 PS; 127 hp)."
+        },
+        {
+          "id": "p6",
+          "name": "RAV4 EV",
+          "market": "US",
+          "fuel": "electric",
+          "years": "1997–2003",
+          "engine": "electric motor, 27 kWh NiMH battery",
+          "power": {
+            "value": 50,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 190,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quote": "Electric motor 50 kW (67 hp), 190 N⋅m (140 ft⋅lb) (electric)"
+        }
+      ],
+      "revisions": [
+        {
+          "id": "r1",
+          "slug": "1998-facelift",
+          "kind": "facelift",
+          "name": "Facelift (1997/1998)",
+          "dates": {
+            "salesStart": {
+              "value": "1998",
+              "market": "UK",
+              "src": "uk98",
+              "quote": "Available in the UK from 1998 to 2000"
+            }
+          },
+          "changes": [
+            {
+              "id": "r1c1",
+              "topic": "design",
+              "text": "Front and rear fascias restyled.",
+              "src": "wp",
+              "quote": "In 1997 (for the 1998 model year), the RAV4 was slightly restyled on the front and rear fascias, and a soft top three-door was made available."
+            },
+            {
+              "id": "r1c2",
+              "topic": "other",
+              "text": "A three-door soft-top version was added.",
+              "src": "uk98",
+              "quote": "Range revised and expanded to include new three-door soft-top version"
+            },
+            {
+              "id": "r1c3",
+              "topic": "powertrain",
+              "text": "Power rose slightly, to 95 kW.",
+              "src": "wp",
+              "quote": "Power was increased slightly to 95 kW (129 PS; 127 hp)."
+            },
+            {
+              "id": "r1c4",
+              "topic": "interior",
+              "text": "Interior detail changes including different seat colours and a restyled steering wheel.",
+              "src": "wp",
+              "quote": "The interior has subtle changes such as different coloured seats, restyled steering wheel"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Toyota's 1994 Japanese launch release gives height as 1,695 mm for the launch three-door; Wikipedia gives 1,646–1,661 mm for the three-door. Both are recorded only where quoted; the release figure is kept.",
+        "Model years 1996–2000 are North American (US launch January 1996 for the 1996 model year).",
+        "Power figures differ by market and measuring standard (89 kW US, 127 bhp UK, 95 kW after the facelift per Wikipedia); they are kept as separate records.",
+        "The first-generation RAV4 EV (1997–2003, California fleet lease) is recorded as a powertrain of this generation."
+      ],
+      "commons": {
+        "generation": "Category:Toyota RAV4 (XA10)",
+        "original": "Category:Toyota RAV4 (XA10, 1994)",
+        "revisions": {
+          "r1": "Category:Toyota RAV4 (XA10, 1997)"
+        }
+      }
+    },
+    {
+      "id": "toyota-rav4-xa20",
+      "slug": "xa20",
+      "ordinal": 2,
+      "lines": [
+        "rav4"
+      ],
+      "name": "Second generation",
+      "codes": [
+        {
+          "value": "XA20",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code XA20"
+        }
+      ],
+      "names": [
+        {
+          "value": "RAV4 L",
+          "markets": [
+            "JP"
+          ],
+          "src": "tg00",
+          "quote": "redesigned RAV4 L and RAV4 J sports utility vehicles"
+        },
+        {
+          "value": "RAV4 J",
+          "markets": [
+            "JP"
+          ],
+          "src": "tg00",
+          "quote": "redesigned RAV4 L and RAV4 J sports utility vehicles"
+        }
+      ],
+      "dates": {
+        "productionStart": {
+          "value": "2000-05",
+          "src": "wp",
+          "quote": "Production May 2000 – November 2005"
+        },
+        "productionEnd": {
+          "value": "2005-11",
+          "src": "wp",
+          "quote": "Production May 2000 – November 2005"
+        },
+        "salesStart": [
+          {
+            "value": "2000-05-19",
+            "market": "JP",
+            "src": "tg00",
+            "quotes": [
+              "May. 19, 2000",
+              "The new models were released today through Toyota Corolla and Netz dealers nationwide."
+            ]
+          },
+          {
+            "value": "2000-08",
+            "market": "EU",
+            "src": "wpde",
+            "quote": "Im August 2000 erschien die zweite Generation des RAV4 mit deutlich gewachsener Karosserie."
+          }
+        ],
+        "modelYears": [
+          {
+            "market": "NA",
+            "from": 2001,
+            "to": 2005,
+            "src": "wp",
+            "quote": "Model years 2001–2005"
+          }
+        ]
+      },
+      "ongoing": false,
+      "platform": {
+        "value": "Toyota MC platform",
+        "src": "wp",
+        "quote": "Platform Toyota MC platform"
+      },
+      "assembly": [
+        {
+          "value": "Tahara plant, Tahara, Aichi, Japan",
+          "src": "wp",
+          "quote": "Japan: Tahara, Aichi (Tahara plant); Ōbu, Aichi (Nagakusa plant)"
+        },
+        {
+          "value": "Nagakusa plant, Ōbu, Aichi, Japan",
+          "src": "wp",
+          "quote": "Japan: Tahara, Aichi (Tahara plant); Ōbu, Aichi (Nagakusa plant)"
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "3-door SUV",
+          "markets": [
+            "EU",
+            "AU"
+          ],
+          "src": "wp",
+          "quote": "Although the RAV4 was available as a three-door in Europe, Asia and Australia, the American model was only available in a five-door configuration."
+        },
+        {
+          "id": "b2",
+          "value": "5-door SUV",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Although the RAV4 was available as a three-door in Europe, Asia and Australia, the American model was only available in a five-door configuration."
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "AWD",
+          "system": "full-time 4WD",
+          "markets": [
+            "JP"
+          ],
+          "src": "tg00",
+          "quote": "4WD models use full-time 4WD, with a viscous-coupling LSD combined with the center differential"
+        },
+        {
+          "value": "FWD",
+          "markets": [
+            "unstated"
+          ],
+          "src": "wp",
+          "quote": "A 1.8-litre inline-four engine (only with 2WD)"
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "unstated",
+          "version": "5-door",
+          "unit": "mm",
+          "wheelbase": 2490,
+          "width": 1735,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 5-door: 2,490 mm (98.0 in)",
+            "Width 1,735 mm (68.3 in)"
+          ]
+        },
+        {
+          "id": "d2",
+          "market": "unstated",
+          "version": "3-door",
+          "unit": "mm",
+          "wheelbase": 2280,
+          "length": 3860,
+          "width": 1735,
+          "src": "wp",
+          "quotes": [
+            "3-door: 2,280 mm (89.8 in)",
+            "3-door: 3,860 mm (152.0 in)",
+            "Width 1,735 mm (68.3 in)"
+          ]
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "2.0 D-4 (1AZ-FSE)",
+          "market": "JP",
+          "fuel": "petrol",
+          "engine": "2.0 L 1AZ-FSE I4 direct injection",
+          "cylinders": 4,
+          "src": "tg00",
+          "quote": "The RAV4's newly developed 2.0-liter direct fuel injection 1AZ-FSE engine and 1.8-liter 1ZZ-FE engine both provide outstanding power performance"
+        },
+        {
+          "id": "p2",
+          "name": "1.8 (1ZZ-FE)",
+          "market": "JP",
+          "fuel": "petrol",
+          "engine": "1.8 L 1ZZ-FE I4",
+          "cylinders": 4,
+          "src": "tg00",
+          "quote": "The RAV4's newly developed 2.0-liter direct fuel injection 1AZ-FSE engine and 1.8-liter 1ZZ-FE engine both provide outstanding power performance"
+        },
+        {
+          "id": "p3",
+          "name": "1.8 VVT-i",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "1.8 L I4",
+          "cylinders": 4,
+          "power": {
+            "value": 92,
+            "unit": "kW"
+          },
+          "drivetrain": "FWD",
+          "src": "wpde",
+          "quote": "1,8-Liter-4-Zylinder-Ottomotor mit 92 kW (125 PS) (VVTi)"
+        },
+        {
+          "id": "p4",
+          "name": "2.0 VVT-i",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "2.0 L I4",
+          "cylinders": 4,
+          "power": {
+            "value": 110,
+            "unit": "kW"
+          },
+          "src": "wpde",
+          "quote": "2,0-Liter-4-Zylinder-Ottomotor mit 110 kW (150 PS) (VVTi)"
+        },
+        {
+          "id": "p5",
+          "name": "2.0 D-4D",
+          "market": "unstated",
+          "fuel": "diesel",
+          "engine": "2.0 L I4 turbo-diesel",
+          "cylinders": 4,
+          "power": {
+            "value": 85,
+            "unit": "kW"
+          },
+          "src": "wpde",
+          "quote": "2,0-Liter-4-Zylinder-Dieselmotor mit 85 kW (115 PS) (D-4D)"
+        },
+        {
+          "id": "p6",
+          "name": "2.4 (2AZ-FE)",
+          "market": "US",
+          "fuel": "petrol",
+          "years": "2003–2005",
+          "engine": "2.4 L 2AZ-FE I4",
+          "cylinders": 4,
+          "power": {
+            "value": 120,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 220,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quote": "The RAV4's 2.0-litre engine was upgraded with a new 2.4-litre 2AZ-FE engine in the US and Australia producing 120 kW (163 PS; 161 hp) and 220 N⋅m (162 lb⋅ft)."
+        }
+      ],
+      "changes": [
+        {
+          "id": "c1",
+          "topic": "dimensions",
+          "text": "Wheelbases extended by 80 mm; the three- and five-door are 45 mm and 30 mm longer.",
+          "src": "tg00",
+          "quote": "Although the three-and five-door models are only 45mm and 30mm longer than their predecessors, respectively, their wheelbases have been extended by 80mm"
+        },
+        {
+          "id": "c2",
+          "topic": "chassis",
+          "text": "New platform and new suspension.",
+          "src": "tg00",
+          "quote": "The new platform, new suspension and full-time 4WD create an energetic but comfortable ride both on road and off."
+        },
+        {
+          "id": "c3",
+          "topic": "drivetrain",
+          "text": "All-wheel drive gained a limited-slip centre differential, with an optional Torsen limited-slip rear differential.",
+          "src": "uk20",
+          "quote": "The AWD system adopts a limited-slip centre differential, with a Torsen LSD provided as an option on the rear axle."
+        },
+        {
+          "id": "c4",
+          "topic": "powertrain",
+          "text": "First diesel RAV4 launched in 2002.",
+          "src": "uk20",
+          "quote": "2002 The first diesel RAV4 is launched."
+        },
+        {
+          "id": "c5",
+          "topic": "safety-equipment",
+          "text": "ABS with electronic brake-force distribution and brake assist standard on all models.",
+          "src": "tg00",
+          "quote": "ABS, with EBD (Electronic Brake Force Distribution), and a brake assist function are standard on all models"
+        },
+        {
+          "id": "c6",
+          "topic": "drivetrain",
+          "text": "First RAV4 offered without all-wheel drive.",
+          "src": "wpde",
+          "quote": "Erstmals erschien auch ein RAV4-Modell ohne Allradantrieb."
+        }
+      ],
+      "revisions": [
+        {
+          "id": "r1",
+          "slug": "2003-facelift",
+          "kind": "facelift",
+          "name": "Facelift (2003)",
+          "dates": {
+            "salesStart": {
+              "value": "2003-07",
+              "market": "EU",
+              "src": "wpde",
+              "quote": "Im Juli 2003 erfolgte wiederum eine Überarbeitung mit geändertem Interieur sowie anderen Frontschürzen."
+            }
+          },
+          "changes": [
+            {
+              "id": "r1c1",
+              "topic": "design",
+              "text": "Styling update with redesigned interior and improved equipment.",
+              "src": "wp",
+              "quote": "In late 2003 (for the 2004 model year), the RAV4 was given a styling update redesigned interior, improved equipment, and, in certain markets, a new engine."
+            },
+            {
+              "id": "r1c2",
+              "topic": "powertrain",
+              "text": "2.4-litre 2AZ-FE engine (120 kW) replaced the 2.0 in the US and Australia.",
+              "src": "wp",
+              "quote": "The RAV4's 2.0-litre engine was upgraded with a new 2.4-litre 2AZ-FE engine in the US and Australia producing 120 kW (163 PS; 161 hp) and 220 N⋅m (162 lb⋅ft)."
+            },
+            {
+              "id": "r1c3",
+              "topic": "safety-equipment",
+              "text": "US: improved safety structure and standard Vehicle Stability Control.",
+              "src": "wp",
+              "quote": "In the United States the safety structure was improved and Vehicle Stability Control made standard."
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Length increase versus the first generation conflicts: Toyota Japan (2000) says +45 mm (3-door) and +30 mm (5-door); Toyota GB (2014) says +55 mm and +40 mm. Both quoted.",
+        "The 2.0 D-4D diesel is given as 85 kW (115 PS) in the German Wikipedia engine list and 85 kW (116 PS) in its prose.",
+        "North American market had only the five-door; model years 2001–2005.",
+        "The 2003 facelift date (July 2003) is from German Wikipedia and reflects Europe; North American facelift was for model year 2004."
+      ],
+      "commons": {
+        "generation": "Category:Toyota RAV4 (XA20)",
+        "original": "Category:Toyota RAV4 (XA20, 2000)",
+        "revisions": {
+          "r1": "Category:Toyota RAV4 (XA20, 2003)"
+        }
+      }
+    },
+    {
+      "id": "toyota-rav4-xa30",
+      "slug": "xa30",
+      "ordinal": 3,
+      "lines": [
+        "rav4"
+      ],
+      "name": "Third generation",
+      "codes": [
+        {
+          "value": "XA30",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code XA30"
+        }
+      ],
+      "names": [
+        {
+          "value": "Vanguard",
+          "markets": [
+            "JP"
+          ],
+          "src": "tgvan",
+          "quote": "TOYOTA MOTOR CORPORATION (TMC) announced today the nationwide launch in Japan of the \"Vanguard\", a new mid-size SUV"
+        }
+      ],
+      "dates": {
+        "revealed": {
+          "value": "2005",
+          "event": "Frankfurt Motor Show",
+          "src": "wp",
+          "quote": "was first unveiled at the 2005 Frankfurt Motor Show"
+        },
+        "productionStart": {
+          "value": "2005-11",
+          "src": "wp",
+          "quote": "Production November 2005 – December 2012 (export)"
+        },
+        "productionEnd": {
+          "value": "2012-12",
+          "src": "wp",
+          "quote": "Production November 2005 – December 2012 (export)"
+        },
+        "salesStart": [
+          {
+            "value": "2005-11-14",
+            "market": "JP",
+            "src": "tg05",
+            "quotes": [
+              "Nov. 14, 2005",
+              "announced the nationwide launch in Japan, via \"Netz\" dealers, of the new RAV4"
+            ]
+          },
+          {
+            "value": "2006-03",
+            "market": "EU",
+            "src": "wpde",
+            "quote": "Im März 2006 erschien der dritte RAV4 in Deutschland."
+          }
+        ],
+        "modelYears": [
+          {
+            "market": "NA",
+            "from": 2006,
+            "to": 2012,
+            "src": "wp",
+            "quote": "Model years 2006–2012 (export)"
+          }
+        ]
+      },
+      "ongoing": false,
+      "platform": {
+        "value": "Toyota New MC platform",
+        "src": "wp",
+        "quote": "Platform Toyota New MC platform"
+      },
+      "assembly": [
+        {
+          "value": "Tahara plant, Tahara, Aichi, Japan",
+          "src": "tg05",
+          "quote": "Tahara Plant, Toyota Motor Corporation"
+        },
+        {
+          "value": "TMMC West Plant, Woodstock, Ontario, Canada",
+          "src": "wp",
+          "quote": "Beginning in November 2008, vehicles for the North American market were built in the Toyota Motor Manufacturing Canada Inc. at the new West Plant in Woodstock, Ontario."
+        },
+        {
+          "value": "Tianjin FAW Toyota, Tianjin, China",
+          "src": "wp",
+          "quote": "Beginning in March 2009, Chinese models began production by Tianjin FAW Toyota Motor Co. Ltd. in a joint-venture plant in Tianjin, China."
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV, short wheelbase",
+          "markets": [
+            "JP",
+            "EU"
+          ],
+          "src": "wp",
+          "quote": "Short-wheelbase versions were sold in Japan and Europe; long-wheelbase versions in Australia and North America."
+        },
+        {
+          "id": "b2",
+          "value": "5-door SUV, long wheelbase",
+          "markets": [
+            "AU",
+            "NA"
+          ],
+          "src": "wp",
+          "quote": "Short-wheelbase versions were sold in Japan and Europe; long-wheelbase versions in Australia and North America."
+        },
+        {
+          "id": "b3",
+          "value": "5-door SUV, long wheelbase (Vanguard)",
+          "markets": [
+            "JP"
+          ],
+          "src": "wp",
+          "quote": "From 2007, the extended-length RAV4 was also sold alongside its shorter counterpart in Japan as the Toyota Vanguard"
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "FWD",
+          "markets": [
+            "NA",
+            "JP"
+          ],
+          "src": "wp",
+          "quote": "For this generation, the RAV4 could be optioned with either front-wheel drive or four-wheel drive in North America and Japan"
+        },
+        {
+          "value": "AWD",
+          "system": "Active Torque Control 4WD",
+          "markets": [
+            "JP"
+          ],
+          "src": "tg05",
+          "quote": "An active torque control four-wheel-drive system distributes optimum torque to the front and rear wheels"
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "JP",
+          "version": "short wheelbase, X and G grades",
+          "unit": "mm",
+          "length": 4335,
+          "width": 1815,
+          "height": 1685,
+          "wheelbase": 2560,
+          "src": "tg05",
+          "quotes": [
+            "Length 4,335mm (+180mm)",
+            "Wheelbase 2,560mm (+70mm)",
+            "Width 1,815mm (+80mm)",
+            "Height 1,685mm (-5mm)"
+          ]
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "2.4 (2AZ-FE, Japan)",
+          "market": "JP",
+          "fuel": "petrol",
+          "engine": "2.4 L 2AZ-FE I4",
+          "cylinders": 4,
+          "transmission": "Super CVT-i",
+          "src": "tg05",
+          "quote": "An improved and more-powerful 2.4-liter 2AZ-FE gasoline engine and Super CVT-i with a seven-speed Sports Sequential Shiftmatic transmission"
+        },
+        {
+          "id": "p2",
+          "name": "2.4 (2AZ-FE)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2005–2008",
+          "engine": "2.4 L 2AZ-FE I4",
+          "displacement": 2362,
+          "cylinders": 4,
+          "power": {
+            "value": 124,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 224,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "2AZ-FE 2005–2008 2,362 cc (144.1 cu in) (88.5 mm × 96.0 mm) I4",
+            "124 kW (169 PS; 166 hp) at 6,300 rpm, 224 N⋅m (165 lb⋅ft) at 4,000 rpm"
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "2.5 (2AR-FE)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2009–2012",
+          "engine": "2.5 L 2AR-FE I4",
+          "displacement": 2494,
+          "cylinders": 4,
+          "power": {
+            "value": 133,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 233,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "2AR-FE 2009–2012 2,494 cc (152.2 cu in) (90.0 mm × 98.0 mm) I4",
+            "133 kW (181 PS; 178 hp) at 6,300 rpm, 233 N⋅m (172 lbf⋅ft) at 4,000 rpm"
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "3.5 V6 (2GR-FE)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2005–2012",
+          "engine": "3.5 L 2GR-FE V6",
+          "displacement": 3456,
+          "cylinders": 6,
+          "power": {
+            "value": 200,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 333,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "2GR-FE 2005–2012 3,456 cc (210.9 cu in) (94.0 mm × 83.0 mm) V6",
+            "200 kW (272 PS; 268 hp) at 6,200 rpm, 333 N⋅m (246 lb⋅ft) at 4,700 rpm"
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "2.0 VVT-i (1AZ-FE)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2005–2012",
+          "engine": "2.0 L 1AZ-FE I4",
+          "displacement": 1998,
+          "cylinders": 4,
+          "power": {
+            "value": 112,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 194,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "1AZ-FE (2.0 VVT-i) 2005–2012 1,998 cc (121.9 cu in) (86.0 mm × 86.0 mm) I4",
+            "112 kW (152 PS; 150 hp) at 6,000 rpm, 194 N⋅m (143 lb⋅ft) at 4,000 rpm"
+          ]
+        },
+        {
+          "id": "p6",
+          "name": "2.0 Valvematic (3ZR-FAE)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2008–2012",
+          "engine": "2.0 L 3ZR-FAE I4",
+          "displacement": 1987,
+          "cylinders": 4,
+          "power": {
+            "value": 116,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 198,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "3ZR-FAE (2.0 Valvematic) 2008–2012 1,987 cc (121.3 cu in) (80.5 mm × 97.6 mm) I4",
+            "116 kW (158 PS; 156 hp) at 6,200 rpm, 198 N⋅m (146 lbf⋅ft) at 4,400 rpm"
+          ]
+        },
+        {
+          "id": "p7",
+          "name": "2.2 D-4D 136",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2007MY–2008MY",
+          "engine": "2.2 L 2AD I4 turbo-diesel",
+          "displacement": 2231,
+          "cylinders": 4,
+          "power": {
+            "value": 100,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 310,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "2.2 D-4D Diesel 2007MY–2008MY 2,231 cc (136.1 cu in) (86.0 mm × 96.0 mm) I4",
+            "100 kW (136 PS; 134 hp) at 3,600 rpm, 310 N⋅m (229 lbf⋅ft) at 2,000–2,800 rpm"
+          ]
+        },
+        {
+          "id": "p8",
+          "name": "2.2 D-4D 150 (2.2 D-CAT in the UK)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2008–2012",
+          "engine": "2.2 L I4 turbo-diesel",
+          "power": {
+            "value": 110,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 340,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "2.2 D-4D, 2.2 D-CAT (UK) 2008–2012",
+            "110 kW (150 PS; 148 hp) at 3,600 rpm, 340 N⋅m (251 lbf⋅ft) at 2,000–2,800 rpm"
+          ]
+        },
+        {
+          "id": "p9",
+          "name": "2.2 D-CAT",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2008–2012",
+          "engine": "2.2 L I4 turbo-diesel",
+          "power": {
+            "value": 130,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 400,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "2.2 D-CAT 2008–2012",
+            "130 kW (177 PS; 174 hp) at 3,600 rpm, 400 N⋅m (295 lbf⋅ft) at 2,000–2,800 rpm"
+          ]
+        },
+        {
+          "id": "p10",
+          "name": "RAV4 EV (2012)",
+          "market": "US",
+          "fuel": "electric",
+          "years": "2012–2014",
+          "engine": "electric motor (Tesla powertrain), 41.8 kWh battery",
+          "power": {
+            "value": 115,
+            "unit": "kW"
+          },
+          "src": "wp",
+          "quote": "The second generation RAV4 EV has a 115 kW (156 PS; 154 hp) motor powered by a 41.8 kWh lithium-ion battery pack"
+        }
+      ],
+      "changes": [
+        {
+          "id": "c1",
+          "topic": "dimensions",
+          "text": "Length 4,335 mm, 180 mm more than before.",
+          "src": "tg05",
+          "quote": "Length 4,335mm (+180mm)"
+        },
+        {
+          "id": "c2",
+          "topic": "dimensions",
+          "text": "Longer overall: +190 mm (short wheelbase) and +475 mm (long wheelbase).",
+          "src": "uk20",
+          "quote": "The car is significantly longer: +190mm for the short wheelbase version and +475mm for the long wheelbase."
+        },
+        {
+          "id": "c3",
+          "topic": "chassis",
+          "text": "Newly developed platform.",
+          "src": "tg05",
+          "quote": "The new RAV4 adopts a newly developed platform"
+        },
+        {
+          "id": "c4",
+          "topic": "design",
+          "text": "Offered only as a five-door.",
+          "src": "uk20",
+          "quote": "The third generation RAV4 is built on a new platform and is exclusively a five-door model"
+        },
+        {
+          "id": "c5",
+          "topic": "drivetrain",
+          "text": "New all-wheel-drive system with an electronically controlled coupling.",
+          "src": "uk20",
+          "quote": "It features a new AWD system with an electronically controlled coupling"
+        },
+        {
+          "id": "c6",
+          "topic": "powertrain",
+          "text": "A V6 engine became available in some markets.",
+          "src": "wp",
+          "quote": "Another addition for the third-generation RAV4 is the option of a V6 engine in some markets."
+        }
+      ],
+      "revisions": [
+        {
+          "id": "r1",
+          "slug": "2008-facelift",
+          "kind": "facelift",
+          "name": "First facelift (2008)",
+          "dates": {
+            "salesStart": {
+              "value": "2009-02",
+              "market": "EU",
+              "src": "wpde",
+              "quote": "Im Februar 2009 wurde dem RAV4 ein Facelift zuteil."
+            }
+          },
+          "changes": [
+            {
+              "id": "r1c1",
+              "topic": "design",
+              "text": "Redesigned front end and revised rear (for model year 2009).",
+              "src": "wp",
+              "quote": "In 2008 (for the 2009 model year), the RAV4 was given a mid-cycle refresh in some markets, featuring a number of changes, including a redesigned front end and tweaked rear end."
+            },
+            {
+              "id": "r1c2",
+              "topic": "powertrain",
+              "text": "2.5-litre 2AR-FE replaced the 2.4-litre 2AZ-FE.",
+              "src": "wp",
+              "quote": "replacement of the 2.4-litre 4-cylinder 2AZ-FE petrol engine (124 kW; 166 hp) with the 2.5-litre 4-cylinder 2AR-FE petrol engine (133 kW; 179 hp)"
+            },
+            {
+              "id": "r1c3",
+              "topic": "powertrain",
+              "text": "2.0-litre Valvematic petrol engine with 116 kW (158 PS).",
+              "src": "wpde",
+              "quote": "2,0-Liter-4-Zylinder-Ottomotor mit 116 kW (158 PS) (VVT-i Valvematic)"
+            },
+            {
+              "id": "r1c4",
+              "topic": "drivetrain",
+              "text": "A front-wheel-drive-only version was offered.",
+              "src": "wpde",
+              "quote": "Entgegen allen Erwartungen bietet Toyota im überarbeiteten RAV4 nun doch eine Version mit reinem Frontantrieb (4x2) an."
+            }
+          ]
+        },
+        {
+          "id": "r2",
+          "slug": "2010-facelift",
+          "kind": "facelift",
+          "name": "Second facelift (2010)",
+          "dates": {
+            "salesStart": {
+              "value": "2010-04",
+              "market": "EU",
+              "src": "wpde",
+              "quote": "Im April 2010 wurde der RAV4 erneut überarbeitet."
+            }
+          },
+          "changes": [
+            {
+              "id": "r2c1",
+              "topic": "design",
+              "text": "Second facelift based on the Vanguard's styling, for specific markets.",
+              "src": "wp",
+              "quote": "In 2010 (for the 2011 model year), the RAV4 underwent another facelift, based on the Vanguard's styling. However, this only was for specific markets."
+            },
+            {
+              "id": "r2c2",
+              "topic": "design",
+              "text": "New front end including bonnet, headlamps, grille, fog lamps and bumper.",
+              "src": "wpde",
+              "quote": "Dabei wurden die gesamte Front inklusive Motorhaube, Scheinwerfer, Kühlergrill und Nebelscheinwerfer sowie Frontschürze modifiziert."
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Short wheelbase (Japan, Europe) and long wheelbase (Australia, North America; Vanguard in Japan from August 2007) were sold side by side; markets are kept distinct.",
+        "Long-wheelbase dimensions are not recorded: Wikipedia gives only ranges (wheelbase 2,560–2,660 mm) and no Toyota specification sheet is cited.",
+        "Production: November 2005 – December 2012 for export; the Japanese-market short-wheelbase car continued until May 2016 (Wikipedia).",
+        "V6 output: 200 kW in Wikipedia's engine table vs 201 kW in its prose; the table value is recorded.",
+        "The second-generation RAV4 EV (2012–2014, California only, Tesla powertrain) was based on this generation's long-wheelbase body."
+      ],
+      "commons": {
+        "generation": "Category:Toyota RAV4 (XA30)",
+        "original": "Category:Toyota RAV4 (XA30, 2005)",
+        "revisions": {
+          "r1": "Category:Toyota RAV4 (XA30, 2008)",
+          "r2": "Category:Toyota RAV4 (XA30, 2010)"
+        }
+      }
+    },
+    {
+      "id": "toyota-rav4-xa40",
+      "slug": "xa40",
+      "ordinal": 4,
+      "lines": [
+        "rav4"
+      ],
+      "name": "Fourth generation",
+      "codes": [
+        {
+          "value": "XA40",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code XA40"
+        }
+      ],
+      "dates": {
+        "revealed": {
+          "value": "2012-11-28",
+          "event": "Los Angeles Auto Show",
+          "src": "tp13",
+          "quote": "LOS ANGELES (Nov. 28, 2012) –The all-new 2013 RAV4 crossover SUV made its world debut today at the 2012 Los Angeles International Auto Show."
+        },
+        "productionStart": {
+          "value": "2012-12",
+          "src": "wp",
+          "quote": "Production December 2012 – November 2018"
+        },
+        "productionEnd": {
+          "value": "2018-11",
+          "src": "wp",
+          "quote": "Production December 2012 – November 2018"
+        },
+        "salesStart": [
+          {
+            "value": "2013-01",
+            "market": "US",
+            "src": "wp",
+            "quote": "US sales began in early January 2013."
+          },
+          {
+            "value": "2013-02",
+            "market": "AU",
+            "src": "wp",
+            "quote": "In Australia, the fourth-generation RAV4 went on sale in February 2013."
+          },
+          {
+            "value": "2013-04-13",
+            "market": "EU",
+            "src": "wpde",
+            "quote": "Europaweite Markteinführung war am 13. April 2013."
+          }
+        ],
+        "modelYears": [
+          {
+            "market": "NA",
+            "from": 2013,
+            "to": 2018,
+            "src": "wp",
+            "quote": "Model years 2013–2018"
+          }
+        ]
+      },
+      "ongoing": false,
+      "platform": {
+        "value": "Toyota New MC platform",
+        "src": "wp",
+        "quote": "Platform Toyota New MC platform"
+      },
+      "assembly": [
+        {
+          "value": "Nagakusa (Ōbu), Takaoka (Toyota City) and Tahara plants, Aichi, Japan",
+          "src": "wp",
+          "quote": "Japan: Ōbu, Aichi (Nagakusa plant); Toyota, Aichi (Takaoka plant); Tahara, Aichi (Tahara plant)"
+        },
+        {
+          "value": "TMMC, Woodstock, Ontario, Canada",
+          "src": "wp",
+          "quote": "Canada: Woodstock, Ontario (TMMC)"
+        },
+        {
+          "value": "FAW Toyota, Changchun, Jilin, China",
+          "src": "wp",
+          "quote": "China: Changchun, Jilin (FAW Toyota)"
+        },
+        {
+          "value": "Saint Petersburg, Russia",
+          "src": "wp",
+          "quote": "Russia: Saint Petersburg"
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "the XA40 was only sold in a single wheelbase length (corresponding to the long wheelbase XA30)"
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "FWD",
+          "markets": [
+            "US"
+          ],
+          "src": "tp13",
+          "quote": "RAV4 front-wheel-drive models have received EPA- estimated fuel efficiency ratings"
+        },
+        {
+          "value": "AWD",
+          "system": "Dynamic Torque Control AWD",
+          "markets": [
+            "US"
+          ],
+          "src": "tp13",
+          "quote": "Available All-wheel drive with DynamicTorque Control"
+        },
+        {
+          "value": "AWD",
+          "system": "AWD-i (hybrid, rear electric motor)",
+          "markets": [
+            "US"
+          ],
+          "src": "tp16",
+          "quote": "Both grades will be equipped with an Electronic On-Demand All-Wheel-Drive System with intelligence (AWD-i)."
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "unstated",
+          "version": "pre-facelift",
+          "unit": "mm",
+          "length": 4570,
+          "src": "wpde",
+          "quote": "Das neue Modell zeigt sich mit einer Länge von 4570 mm gegenüber dem Vorgänger um 205 mm gewachsen."
+        },
+        {
+          "id": "d2",
+          "market": "unstated",
+          "unit": "mm",
+          "wheelbase": 2660,
+          "width": 1845,
+          "src": "wp",
+          "quotes": [
+            "Wheelbase 2,660 mm (104.7 in)",
+            "Width 1,845 mm (72.6 in)"
+          ]
+        }
+      ],
+      "cargo": [
+        {
+          "id": "k1",
+          "market": "US",
+          "behind": "2nd row",
+          "value": 38.4,
+          "unit": "cu ft",
+          "standard": "not stated",
+          "src": "tp13",
+          "quote": "with just over 38.4 cu. ft. of cargo capacity behind the rear seats"
+        },
+        {
+          "id": "k2",
+          "market": "US",
+          "behind": "1st row",
+          "value": 73.4,
+          "unit": "cu ft",
+          "standard": "not stated",
+          "src": "tp13",
+          "quote": "With rear seats folded, RAV4 has a maximum cargo capacity of 73.4 cu. ft."
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "2.5 (US)",
+          "market": "US",
+          "fuel": "petrol",
+          "years": "2013 model year",
+          "engine": "2.5 L I4",
+          "cylinders": 4,
+          "power": {
+            "value": 176,
+            "unit": "hp"
+          },
+          "torque": {
+            "value": 172,
+            "unit": "lb-ft"
+          },
+          "transmission": "6-speed automatic",
+          "src": "tp13",
+          "quotes": [
+            "It will feature Toyota’s 2.5-liter four-cylinder, which will produce 176 horsepower at 6,000 rpm and 172 ft. lbs. of torque at 4,100 rpm.",
+            "Replacing the previous four-speed automatic will be a six-speed transmission with Sequential Shift."
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "2.0 FWD",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2012–2018",
+          "engine": "2.0 L I4",
+          "displacement": 1987,
+          "cylinders": 4,
+          "power": {
+            "value": 111,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 195,
+            "unit": "Nm"
+          },
+          "drivetrain": "FWD",
+          "src": "wp",
+          "quote": "2.0 FWD 2012–2018 1,987 cc (121.3 cu in) Petrol 111 kW (151 PS; 149 hp) 195 N⋅m (144 ft⋅lb)"
+        },
+        {
+          "id": "p3",
+          "name": "2.5 AWD",
+          "market": "unstated",
+          "fuel": "petrol",
+          "years": "2012–2018",
+          "engine": "2.5 L I4",
+          "displacement": 2494,
+          "cylinders": 4,
+          "power": {
+            "value": 131,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 233,
+            "unit": "Nm"
+          },
+          "drivetrain": "AWD",
+          "src": "wp",
+          "quote": "2.5 AWD 2012–2018 2,494 cc (152.2 cu in) Petrol 131 kW (178 PS; 176 hp) 233 N⋅m (172 ft⋅lb)"
+        },
+        {
+          "id": "p4",
+          "name": "2.5 Hybrid",
+          "market": "unstated",
+          "fuel": "hybrid",
+          "years": "2015–2018",
+          "engine": "2.5 L 2AR-FXE I4 Atkinson + electric motors",
+          "power": {
+            "value": 145,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 279,
+            "unit": "Nm"
+          },
+          "drivetrain": "AWD",
+          "src": "wp",
+          "quote": "2.5 Hybrid AWD 2015–2018 Petrol/Electric Motor 145 kW (197 PS; 194 hp) combined 279 N⋅m (206 ft⋅lb) combined"
+        },
+        {
+          "id": "p5",
+          "name": "120D 4x2 (2.0 diesel)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2012–2018",
+          "engine": "2.0 L I4 diesel",
+          "displacement": 1998,
+          "cylinders": 4,
+          "power": {
+            "value": 91,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 310,
+            "unit": "Nm"
+          },
+          "drivetrain": "FWD",
+          "src": "wp",
+          "quote": "120D 4x2 2012–2018 1,998 cc (121.9 cu in) 91 kW (124 PS; 122 hp) 310 N⋅m (229 ft⋅lb)"
+        },
+        {
+          "id": "p6",
+          "name": "150D AWD (2.2 D-4D)",
+          "market": "unstated",
+          "fuel": "diesel",
+          "years": "2012–2018",
+          "engine": "2.2 L I4 turbo-diesel",
+          "displacement": 2231,
+          "cylinders": 4,
+          "power": {
+            "value": 110,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 340,
+            "unit": "Nm"
+          },
+          "drivetrain": "AWD",
+          "src": "wp",
+          "quote": "150D AWD 2012–2018 2,231 cc (136.1 cu in) 110 kW (150 PS; 148 hp) 340 N⋅m (251 ft⋅lb)"
+        }
+      ],
+      "changes": [
+        {
+          "id": "c1",
+          "topic": "design",
+          "text": "Roof-hinged liftgate replaced the side-hinged rear door; spare wheel moved under the cargo floor.",
+          "src": "tp13",
+          "quote": "RAV4 will switch from its side-hinged rear door to a convenient roof-hinged liftgate with a space-saver spare tire will be stored under the cargo floor."
+        },
+        {
+          "id": "c2",
+          "topic": "powertrain",
+          "text": "The optional V6 was discontinued.",
+          "src": "tp13",
+          "quote": "The optional V6 of the previous-generation RAV4 will be discontinued."
+        },
+        {
+          "id": "c3",
+          "topic": "powertrain",
+          "text": "A six-speed automatic with sequential shift replaced the four-speed automatic.",
+          "src": "tp13",
+          "quote": "Replacing the previous four-speed automatic will be a six-speed transmission with Sequential Shift."
+        },
+        {
+          "id": "c4",
+          "topic": "dimensions",
+          "text": "235 mm longer than the previous short-wheelbase model.",
+          "src": "uk20",
+          "quote": "It’s longer by 235mm compared to the previous SWB model."
+        },
+        {
+          "id": "c5",
+          "topic": "drivetrain",
+          "text": "Debut of the Dynamic Torque Control AWD system.",
+          "src": "uk20",
+          "quote": "The latest model marks the debut of the Dynamic Torque Control AWD system."
+        },
+        {
+          "id": "c6",
+          "topic": "dimensions",
+          "text": "205 mm longer (4,570 mm), 30 mm wider and 25 mm lower than its predecessor.",
+          "src": "wpde",
+          "quote": "Das neue Modell zeigt sich mit einer Länge von 4570 mm gegenüber dem Vorgänger um 205 mm gewachsen. Zudem ist die neue Generation um 30 mm breiter und um 25 mm niedriger."
+        }
+      ],
+      "revisions": [
+        {
+          "id": "r1",
+          "slug": "2015-facelift",
+          "kind": "facelift",
+          "name": "Facelift (2015) and RAV4 Hybrid",
+          "dates": {
+            "revealed": {
+              "value": "2015-04-02",
+              "event": "New York International Auto Show",
+              "src": "tp16",
+              "quote": "NEW YORK, April 2, 2015 — There’s a new hybrid in town, and it’s called RAV4."
+            },
+            "salesStart": {
+              "value": "2016-01",
+              "market": "EU",
+              "src": "wpde",
+              "quote": "Ab Ende Januar 2016 war der überarbeitete Toyota RAV4 erhältlich."
+            }
+          },
+          "changes": [
+            {
+              "id": "r1c1",
+              "topic": "design",
+              "text": "Refreshed exterior styling on all models.",
+              "src": "tp16",
+              "quote": "all 2016 RAV4 models will feature refreshed exterior styling"
+            },
+            {
+              "id": "r1c2",
+              "topic": "powertrain",
+              "text": "RAV4 Hybrid added to the range.",
+              "src": "tp16",
+              "quote": "Toyota has unveiled its eighth hybrid offering as part of the refreshed 2016 RAV4."
+            },
+            {
+              "id": "r1c3",
+              "topic": "drivetrain",
+              "text": "Both grades use an electronic on-demand all-wheel-drive system (AWD-i).",
+              "src": "tp16",
+              "quote": "Both grades will be equipped with an Electronic On-Demand All-Wheel-Drive System with intelligence (AWD-i)."
+            },
+            {
+              "id": "r1c4",
+              "topic": "safety-equipment",
+              "text": "Toyota Safety Sense introduced (US).",
+              "src": "tp16",
+              "quote": "The 2016 RAV4 will be among the first U.S. models with Toyota Safety Sense (TSS)"
+            },
+            {
+              "id": "r1c5",
+              "topic": "powertrain",
+              "text": "The 91 kW and 110 kW diesel engines were dropped.",
+              "src": "wpde",
+              "quote": "Die 91 kW und 110 kW starken Dieselmotoren entfallen."
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Length increase over the XA30 short-wheelbase model: Toyota GB says +235 mm, German Wikipedia says +205 mm (to 4,570 mm). Both quoted.",
+        "Not sold in Japan: the XA30 short-wheelbase car stayed on sale there until 2016.",
+        "Engine tables from Wikipedia (2.0, diesels) reflect European specifications but the source does not name the market, so they are marked 'unstated'."
+      ],
+      "commons": {
+        "generation": "Category:Toyota RAV4 (XA40)",
+        "original": "Category:Toyota RAV4 (XA40, 2012)",
+        "revisions": {
+          "r1": "Category:Toyota RAV4 (XA40, 2015)"
+        }
+      }
+    },
+    {
+      "id": "toyota-rav4-xa50",
+      "slug": "xa50",
+      "ordinal": 5,
+      "lines": [
+        "rav4"
+      ],
+      "name": "Fifth generation",
+      "codes": [
+        {
+          "value": "XA50",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code XA50"
+        }
+      ],
+      "names": [
+        {
+          "value": "Wildlander",
+          "markets": [
+            "CN"
+          ],
+          "src": "wp",
+          "quote": "Toyota Wildlander (GAC Toyota, China)"
+        },
+        {
+          "value": "Suzuki Across",
+          "markets": [
+            "EU"
+          ],
+          "src": "wp",
+          "quote": "Suzuki Across (Europe, plug-in hybrid)"
+        },
+        {
+          "value": "RAV4 Prime",
+          "markets": [
+            "NA"
+          ],
+          "src": "tpprime",
+          "quote": "Toyota Revs Up Lineup with New 302-Horsepower RAV4 Prime"
+        },
+        {
+          "value": "RAV4 PHV",
+          "markets": [
+            "JP"
+          ],
+          "src": "wp",
+          "quote": "The sales have begun in Japan since 8 June 2020, initially sold as the RAV4 PHV."
+        },
+        {
+          "value": "RAV4 Plug-in Hybrid",
+          "markets": [
+            "NA"
+          ],
+          "src": "wp",
+          "quote": "In 2024, for the 2025 model year, the RAV4 Prime was renamed to RAV4 Plug-in Hybrid for the North American market."
+        }
+      ],
+      "dates": {
+        "revealed": {
+          "value": "2018-03-28",
+          "event": "New York International Auto Show",
+          "src": "tp19d",
+          "quote": "The all-new, fifth-generation 2019 Toyota RAV4 will make its world debut on Wednesday, March 28, at 9:10 a.m. EDT during the 2018 New York International Auto Show."
+        },
+        "productionStart": {
+          "value": "2018-11",
+          "src": "wp",
+          "quote": "Production November 2018 – December 2025"
+        },
+        "productionEnd": {
+          "value": "2025-12",
+          "src": "wp",
+          "quote": "Production November 2018 – December 2025"
+        },
+        "salesStart": [
+          {
+            "value": "2018-12",
+            "market": "US",
+            "src": "tp19",
+            "quote": "On Sale in December 2018 for Gas Grades, Late March 2019 for Hybrid Grades"
+          },
+          {
+            "value": "2019-01-26",
+            "market": "EU",
+            "src": "wpde",
+            "quote": "Die Markteinführung fand am 26. Januar 2019 statt."
+          },
+          {
+            "value": "2019-04-10",
+            "market": "JP",
+            "src": "tg19",
+            "quote": "Toyota City, Japan, April 10, 2019―Toyota announces the launch of its completely redesigned RAV4 in Japan"
+          },
+          {
+            "value": "2019-05-08",
+            "market": "AU",
+            "src": "wp",
+            "quote": "The fifth-generation RAV4 went on sale in Australia on 8 May 2019"
+          }
+        ],
+        "modelYears": [
+          {
+            "market": "NA",
+            "from": 2019,
+            "to": 2025,
+            "src": "wp",
+            "quote": "Model years 2019–2025"
+          }
+        ]
+      },
+      "ongoing": false,
+      "platform": {
+        "value": "TNGA-K (GA-K)",
+        "src": "tp19",
+        "quote": "the Toyota New Global Architecture (TNGA-K) platform provides the robust foundation"
+      },
+      "assembly": [
+        {
+          "value": "Takaoka plant, Toyota City, Aichi, Japan",
+          "src": "tg19",
+          "quote": "Takaoka Plant, Toyota Motor Corporation"
+        },
+        {
+          "value": "Toyota Industries Nagakusa plant, Ōbu, Aichi, Japan",
+          "src": "tg19",
+          "quote": "Nagakusa Plant, Toyota Industries Corporation"
+        },
+        {
+          "value": "TMMC, Woodstock and Cambridge, Ontario, Canada",
+          "src": "wp",
+          "quote": "Canada: Woodstock, Ontario; Cambridge, Ontario (TMMC)"
+        },
+        {
+          "value": "TMMK, Georgetown, Kentucky, US",
+          "src": "wp",
+          "quote": "United States: Georgetown, Kentucky (TMMK)"
+        },
+        {
+          "value": "FAW Toyota (Changchun) and GAC Toyota (Guangzhou), China",
+          "src": "wp",
+          "quote": "China: Changchun, Jilin (FAW Toyota); Guangzhou (GAC Toyota)"
+        },
+        {
+          "value": "TMMR, Saint Petersburg, Russia",
+          "src": "wp",
+          "quote": "Russia: Saint Petersburg (TMMR; 2018–2022)"
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Body style 5-door SUV"
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "FWD",
+          "markets": [
+            "US"
+          ],
+          "src": "tp19",
+          "quote": "In addition to standard front-wheel drive, RAV4 gas models offer two types of available all-wheel drive."
+        },
+        {
+          "value": "AWD",
+          "system": "Dynamic Torque Vectoring AWD",
+          "markets": [
+            "JP"
+          ],
+          "src": "tg19",
+          "quote": "The world's first Dynamic Torque Vectoring AWD system"
+        },
+        {
+          "value": "AWD",
+          "system": "E-Four (hybrid)",
+          "markets": [
+            "JP"
+          ],
+          "src": "tg19",
+          "quote": "RAV4 hybrid models leverage a new E-Four"
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "US",
+          "version": "LE/XLE (pre-facelift); height with antenna",
+          "unit": "in",
+          "wheelbase": 105.9,
+          "length": 180.9,
+          "width": 73,
+          "height": 67,
+          "src": "tp19",
+          "quotes": [
+            "105.9-inch wheelbase grows 1.20 inches over the previous model",
+            "Overall length comes in at 180.9 inches (181.5 inches on Adventure grade)",
+            "Height is reduced to 67.0 inches (with antenna) on LE and XLE grades",
+            "Width is 73.4 inches on Adventure grade while the rest of the grades measure at 73.0 inches"
+          ]
+        },
+        {
+          "id": "d2",
+          "market": "US",
+          "version": "Adventure grade",
+          "unit": "in",
+          "wheelbase": 105.9,
+          "length": 181.5,
+          "width": 73.4,
+          "height": 68.6,
+          "src": "tp19",
+          "quotes": [
+            "105.9-inch wheelbase grows 1.20 inches",
+            "181.5 inches on Adventure grade",
+            "Adventure grade come up just a bit higher with an overall height of 68.6 inches",
+            "Width is 73.4 inches on Adventure grade"
+          ]
+        },
+        {
+          "id": "d3",
+          "market": "unstated",
+          "unit": "mm",
+          "length": 4600,
+          "width": 1855,
+          "height": 1685,
+          "wheelbase": 2690,
+          "src": "wpde",
+          "quote": "Länge 4600 mm Breite 1855 mm Höhe 1685 mm Radstand 2690 mm"
+        }
+      ],
+      "cargo": [
+        {
+          "id": "k1",
+          "market": "JP",
+          "behind": "2nd row",
+          "value": 580,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "tg19",
+          "quote": "580-liter*8 cargo capacity is attained even when the rear seats are in use"
+        },
+        {
+          "id": "k2",
+          "market": "UK",
+          "version": "Plug-in Hybrid",
+          "behind": "unstated",
+          "value": 520,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "ukphev",
+          "quote": "cargo capacity is a generous 520 litres"
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "2.5 Dynamic Force (US)",
+          "market": "US",
+          "fuel": "petrol",
+          "years": "2019 model year",
+          "engine": "2.5 L Dynamic Force I4",
+          "cylinders": 4,
+          "power": {
+            "value": 203,
+            "unit": "hp"
+          },
+          "transmission": "8-speed automatic",
+          "src": "tp19",
+          "quotes": [
+            "the new Dynamic Force 2.5-liter inline-four-cylinder engine paired with an 8-speed Direct-Shift Automatic Transmission in the gas models",
+            "203 horsepower for the gas models"
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "RAV4 Hybrid (US)",
+          "market": "US",
+          "fuel": "hybrid",
+          "years": "2019 model year",
+          "power": {
+            "value": 219,
+            "unit": "hp"
+          },
+          "transmission": "eCVT",
+          "drivetrain": "AWD",
+          "src": "tp19",
+          "quote": "219 combined net total system horsepower for the HV models"
+        },
+        {
+          "id": "p3",
+          "name": "2.0 (M20A-FKS)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "2.0 L M20A-FKS I4",
+          "displacement": 1986,
+          "cylinders": 4,
+          "power": {
+            "value": 126,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 203,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "1,986 cc (121.2 cu in) 2.0 L M20A-FKS I4",
+            "126 kW (171 PS; 169 hp) at 6,600",
+            "203 N⋅m (150 lb⋅ft) at 4,400"
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "2.5 (A25A-FKS)",
+          "market": "unstated",
+          "fuel": "petrol",
+          "engine": "2.5 L A25A-FKS I4",
+          "displacement": 2487,
+          "cylinders": 4,
+          "power": {
+            "value": 151,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 249,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "2,487 cc (151.8 cu in) 2.5 L A25A-FKS I4",
+            "151 kW (205 PS; 202 hp) at 6,600",
+            "249 N⋅m (184 lb⋅ft) at 5,000"
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "2.5 Hybrid",
+          "market": "unstated",
+          "fuel": "hybrid",
+          "engine": "2.5 L A25A-FXS I4 + electric motors",
+          "displacement": 2487,
+          "cylinders": 4,
+          "power": {
+            "value": 163,
+            "unit": "kW"
+          },
+          "torque": {
+            "value": 279,
+            "unit": "Nm"
+          },
+          "src": "wp",
+          "quotes": [
+            "2,487 cc (151.8 cu in) 2.5 L A25A-FXS I4 (hybrid)",
+            "163 kW (222 PS; 219 hp) at 5,700 (combined) 279 N⋅m (206 lb⋅ft) at 3,600 (combined)"
+          ]
+        },
+        {
+          "id": "p6",
+          "name": "RAV4 Prime",
+          "market": "US",
+          "fuel": "plug-in hybrid",
+          "years": "2021 model year",
+          "engine": "2.5 L I4 Atkinson + electric motors",
+          "power": {
+            "value": 302,
+            "unit": "hp"
+          },
+          "drivetrain": "AWD",
+          "src": "tpprime",
+          "quote": "It produces the same projected 176 hp as in the hybrid, but paired with the electric motors, total system output equals 302 horsepower."
+        },
+        {
+          "id": "p7",
+          "name": "RAV4 Plug-in Hybrid (UK)",
+          "market": "UK",
+          "fuel": "plug-in hybrid",
+          "engine": "2.5 L I4 + electric motors",
+          "power": {
+            "value": 225,
+            "unit": "kW"
+          },
+          "src": "ukphev",
+          "quote": "With full system output of 302bhp/225kW*"
+        }
+      ],
+      "changes": [
+        {
+          "id": "c1",
+          "topic": "chassis",
+          "text": "Built on the TNGA-K platform.",
+          "src": "tp19",
+          "quote": "the Toyota New Global Architecture (TNGA-K) platform provides the robust foundation"
+        },
+        {
+          "id": "c2",
+          "topic": "dimensions",
+          "text": "Wheelbase 1.20 in longer than the previous model, at 105.9 in.",
+          "src": "tp19",
+          "quote": "The 2019 RAV4 105.9-inch wheelbase grows 1.20 inches over the previous model"
+        },
+        {
+          "id": "c3",
+          "topic": "chassis",
+          "text": "Unibody structure 57 percent more rigid.",
+          "src": "tp19",
+          "quote": "The 2019 RAV4’s unibody structure is 57-percent more rigid than the previous model"
+        },
+        {
+          "id": "c4",
+          "topic": "powertrain",
+          "text": "A new eight-speed automatic replaced the six-speed automatic.",
+          "src": "tp19",
+          "quote": "The new Direct Shift-8AT transmission provides a much wider ratio spread than the 6-speed automatic it replaces"
+        },
+        {
+          "id": "c5",
+          "topic": "drivetrain",
+          "text": "The all-wheel-drive system sends 30 percent more total torque to the rear wheels than before.",
+          "src": "tp19",
+          "quote": "increases total torque to the rear wheels by 30 percent compared to the previous system"
+        },
+        {
+          "id": "c6",
+          "topic": "powertrain",
+          "text": "No diesel engine offered.",
+          "src": "wp",
+          "quote": "No diesel engine option is offered for this generation."
+        }
+      ],
+      "revisions": [
+        {
+          "id": "r1",
+          "slug": "2020-plug-in-hybrid",
+          "kind": "update",
+          "name": "Plug-in hybrid (RAV4 Prime / PHV)",
+          "dates": {
+            "revealed": {
+              "value": "2019-11-20",
+              "event": "Los Angeles Auto Show",
+              "src": "tpprime",
+              "quote": "LOS ANGELES (Nov. 20, 2019) – The fifth-generation Toyota RAV4"
+            }
+          },
+          "changes": [
+            {
+              "id": "r1c1",
+              "topic": "powertrain",
+              "text": "The RAV4 Prime plug-in hybrid has 83 hp more total system output than the RAV4 Hybrid.",
+              "src": "tpprime",
+              "quote": "the 2021 RAV4 Prime yields an 83-horsepower (hp) jump in total system output over the RAV4 Hybrid"
+            }
+          ]
+        },
+        {
+          "id": "r2",
+          "slug": "2021-facelift",
+          "kind": "facelift",
+          "name": "Facelift (2021)",
+          "dates": {
+            "revealed": {
+              "value": "2021-09",
+              "src": "wp",
+              "quote": "In September 2021 (for the 2022 model year) Toyota revealed the updated RAV4"
+            }
+          },
+          "changes": [
+            {
+              "id": "r2c1",
+              "topic": "design",
+              "text": "New LED projector headlights and new alloy wheels.",
+              "src": "wp",
+              "quote": "Toyota revealed the updated RAV4 with new LED projector type headlights, alloy wheels which can be had in either silver or black, USB-C charging ports"
+            },
+            {
+              "id": "r2c2",
+              "topic": "technology",
+              "text": "Infotainment upgraded for model year 2023.",
+              "src": "wp",
+              "quote": "In 2022 (for the 2023 model year) Toyota upgraded the infotainment system to a new unit with their newest software"
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "US petrol output: Toyota USA states 203 hp; Wikipedia's engine table gives 151 kW (202 hp). The manufacturer figure is kept for the US record.",
+        "Plug-in hybrid names: RAV4 Prime (North America until MY2025, then RAV4 Plug-in Hybrid), RAV4 PHV (Japan, later RAV4 Z), Suzuki Across (Europe). Wildlander is the GAC Toyota version in China.",
+        "German Wikipedia's 2.0 litre displacement (1987 cm³) differs from English Wikipedia's 1,986 cc."
+      ],
+      "commons": {
+        "generation": "Category:Toyota RAV4 (XA50)"
+      }
+    },
+    {
+      "id": "toyota-rav4-xa60",
+      "slug": "xa60",
+      "ordinal": 6,
+      "lines": [
+        "rav4"
+      ],
+      "name": "Sixth generation",
+      "codes": [
+        {
+          "value": "XA60",
+          "kind": "model code",
+          "src": "wp",
+          "quote": "Model code XA60"
+        }
+      ],
+      "names": [
+        {
+          "value": "Wildlander",
+          "markets": [
+            "CN"
+          ],
+          "src": "wp",
+          "quote": "The XA60 RAV4 will be sold in China under the Wildlander name"
+        }
+      ],
+      "dates": {
+        "revealed": {
+          "value": "2025-05-21",
+          "event": "World premiere, Japan",
+          "src": "tg25",
+          "quote": "Toyota City, Japan, May 21, 2025―Toyota Motor Corporation (Toyota) unveiled its new RAV4 to the world on May 21"
+        },
+        "productionStart": {
+          "value": "2025-12",
+          "src": "wp",
+          "quote": "Production December 2025 – present"
+        },
+        "salesStart": [
+          {
+            "value": "2025-12",
+            "market": "JP",
+            "src": "wp",
+            "quote": "Japan Z, Adventure, GR Sport 224 kW (305 PS) AWD (GR Sport) Sales start December 2025."
+          }
+        ],
+        "modelYears": [
+          {
+            "market": "US",
+            "from": 2026,
+            "src": "tp26",
+            "quote": "For the 2026 model year, Toyota will move to a 100% electrified lineup"
+          }
+        ]
+      },
+      "ongoing": true,
+      "platform": {
+        "value": "TNGA-K",
+        "src": "tp26",
+        "quote": "The 2026 RAV4 models will be built on the Toyota Next Generation Architecture-K (TNGA-K) unibody platform."
+      },
+      "assembly": [
+        {
+          "value": "Toyota Motor Manufacturing Kentucky, US (hybrid)",
+          "src": "tp26",
+          "quote": "Hybrid Electric Vehicle (HEV) models will be assembled at Toyota Motor Manufacturing facilities in Lexington, Kentucky and Ontario (Woodstock & Cambridge), Canada"
+        },
+        {
+          "value": "Woodstock and Cambridge, Ontario, Canada (hybrid)",
+          "src": "tp26",
+          "quote": "Hybrid Electric Vehicle (HEV) models will be assembled at Toyota Motor Manufacturing facilities in Lexington, Kentucky and Ontario (Woodstock & Cambridge), Canada"
+        },
+        {
+          "value": "Japan (plug-in hybrid, for the US)",
+          "src": "tp26",
+          "quote": "Plug-in Hybrid models will be assembled in Japan."
+        }
+      ],
+      "bodyStyles": [
+        {
+          "id": "b1",
+          "value": "5-door SUV",
+          "markets": [
+            "global"
+          ],
+          "src": "wp",
+          "quote": "Body style 5-door SUV"
+        }
+      ],
+      "drivetrains": [
+        {
+          "value": "FWD",
+          "markets": [
+            "US"
+          ],
+          "src": "tp26",
+          "quote": "Hybrid models will be available in a choice of Front- or Electronic On-Demand All-Wheel Drive (FWD or AWD), depending on grade."
+        },
+        {
+          "value": "AWD",
+          "system": "Electronic On-Demand AWD",
+          "markets": [
+            "US"
+          ],
+          "src": "tp26",
+          "quote": "Hybrid models will be available in a choice of Front- or Electronic On-Demand All-Wheel Drive (FWD or AWD), depending on grade. PHEV models will have AWD standard."
+        }
+      ],
+      "dimensions": [
+        {
+          "id": "d1",
+          "market": "unstated",
+          "unit": "mm",
+          "wheelbase": 2690,
+          "src": "wp",
+          "quote": "Wheelbase 2,690 mm (105.9 in) Length 4,600–4,645 mm"
+        }
+      ],
+      "cargo": [
+        {
+          "id": "k1",
+          "market": "unstated",
+          "behind": "unstated",
+          "value": 749,
+          "unit": "L",
+          "standard": "not stated",
+          "src": "tg25",
+          "quote": "While the vehicle size remains the same, the trunk capacity has been expanded from the previous 733L to 749L."
+        }
+      ],
+      "powertrains": [
+        {
+          "id": "p1",
+          "name": "Hybrid AWD (US)",
+          "market": "US",
+          "fuel": "hybrid",
+          "engine": "2.5 L I4 + electric motors (5th-gen hybrid)",
+          "power": {
+            "value": 236,
+            "unit": "hp"
+          },
+          "drivetrain": "AWD",
+          "src": "tp26",
+          "quote": "Hybrid AWD models have a 236 net combined system horsepower (hp), up from 219 on the prior generation"
+        },
+        {
+          "id": "p2",
+          "name": "Hybrid FWD (US)",
+          "market": "US",
+          "fuel": "hybrid",
+          "engine": "2.5 L I4 + electric motors (5th-gen hybrid)",
+          "power": {
+            "value": 226,
+            "unit": "hp"
+          },
+          "drivetrain": "FWD",
+          "src": "tp26",
+          "quote": "FWD models have a 226 net combined system hp"
+        },
+        {
+          "id": "p3",
+          "name": "Plug-in Hybrid (US)",
+          "market": "US",
+          "fuel": "plug-in hybrid",
+          "engine": "2.5 L I4 + electric motors (6th-gen PHEV)",
+          "power": {
+            "value": 324,
+            "unit": "hp"
+          },
+          "drivetrain": "AWD",
+          "src": "tp26",
+          "quote": "It delivers an impressive 324 net combined horsepower and 172 lb.-ft. of torque (gas engine only)."
+        },
+        {
+          "id": "p4",
+          "name": "Hybrid FWD (Europe)",
+          "market": "EU",
+          "fuel": "hybrid",
+          "power": {
+            "value": 135,
+            "unit": "kW"
+          },
+          "drivetrain": "FWD",
+          "src": "wp",
+          "quote": "Europe FWD 135 kW (183 PS; 180 hp)"
+        },
+        {
+          "id": "p5",
+          "name": "Hybrid AWD (Europe)",
+          "market": "EU",
+          "fuel": "hybrid",
+          "power": {
+            "value": 140,
+            "unit": "kW"
+          },
+          "drivetrain": "AWD",
+          "src": "wp",
+          "quote": "AWD 140 kW (191 PS; 188 hp)"
+        },
+        {
+          "id": "p6",
+          "name": "Plug-in Hybrid FWD (Europe)",
+          "market": "EU",
+          "fuel": "plug-in hybrid",
+          "power": {
+            "value": 197,
+            "unit": "kW"
+          },
+          "drivetrain": "FWD",
+          "src": "wp",
+          "quote": "Europe FWD 197 kW (268 PS; 264 hp) 100 km WLTP"
+        },
+        {
+          "id": "p7",
+          "name": "Hybrid AWD (Japan)",
+          "market": "JP",
+          "fuel": "hybrid",
+          "power": {
+            "value": 177,
+            "unit": "kW"
+          },
+          "drivetrain": "AWD",
+          "src": "wp",
+          "quote": "Japan AWD 177 kW (241 PS; 237 hp)"
+        },
+        {
+          "id": "p8",
+          "name": "2.0 petrol (China)",
+          "market": "CN",
+          "fuel": "petrol",
+          "engine": "2.0 L I4",
+          "power": {
+            "value": 126,
+            "unit": "kW"
+          },
+          "src": "wpde",
+          "quote": "In China ist außerdem ein 2,0-Liter-Ottomotor mit 126 kW (171 PS) verfügbar."
+        }
+      ],
+      "changes": [
+        {
+          "id": "c1",
+          "topic": "powertrain",
+          "text": "Hybrid and plug-in hybrid only from the 2026 model year.",
+          "src": "tp26",
+          "quote": "For the 2026 model year, Toyota will move to a 100% electrified lineup, with a choice of RAV4 Hybrid or Plug-in Hybrid models."
+        },
+        {
+          "id": "c2",
+          "topic": "powertrain",
+          "text": "Electric-only range rises to 150 km from 95 km, thanks to a higher-capacity battery.",
+          "src": "tg25",
+          "quote": "BEV cruising range of 150 km*1, increased from the previous 95 km, thanks to a higher capacity battery"
+        },
+        {
+          "id": "c3",
+          "topic": "powertrain",
+          "text": "Hybrid AWD output rises to 236 hp from 219 hp.",
+          "src": "tp26",
+          "quote": "Hybrid AWD models have a 236 net combined system horsepower (hp), up from 219 on the prior generation"
+        },
+        {
+          "id": "c4",
+          "topic": "dimensions",
+          "text": "Same exterior size; luggage capacity up from 733 L to 749 L.",
+          "src": "tg25",
+          "quote": "While the vehicle size remains the same, the trunk capacity has been expanded from the previous 733L to 749L."
+        },
+        {
+          "id": "c5",
+          "topic": "technology",
+          "text": "First Toyota to use the Arene software platform.",
+          "src": "tg25",
+          "quote": "The new RAV4 uses, for the first time at Toyota, the Arene software development platform"
+        },
+        {
+          "id": "c6",
+          "topic": "interior",
+          "text": "Top of the instrument panel lowered by about 40 mm.",
+          "src": "tg25",
+          "quote": "lowering the top surface of the instrument panel by approximately 40 mm"
+        }
+      ],
+      "notes": [
+        "Revealed on 20 May 2025 (US time, Toyota USA) / 21 May 2025 (Japan, Toyota Motor Corporation).",
+        "US plug-in hybrid output: 320 hp in the May 2025 debut release, 324 hp in the later 'arrives this winter' release; the later figure is recorded.",
+        "Only the wheelbase (2,690 mm) is recorded; other dimensions are given only as ranges in the sources cited.",
+        "Toyota's 749 L luggage figure does not state the market or measuring standard."
+      ],
+      "commons": {
+        "generation": "Category:Toyota RAV4 (XA60)"
+      }
+    }
+  ]
+}

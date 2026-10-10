@@ -1,3 +1,0 @@
-{
-    "_about": "Model attributions confirmed by a person looking at the photo. One entry per photo file: {\"models\": [...], \"reviewer\": \"name\", \"date\": \"YYYY-MM-DD\", \"note\": \"what identifies her (e.g. the brand caption, a credit, a known image)\"}. The pipeline never writes to this file."
-}

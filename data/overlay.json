@@ -1,0 +1,4 @@
+{
+  "about": "Reviewed corrections applied on top of data/families/*.json at build time (see data/SCHEMA.md, Overlay). Family files may be regenerated or re-imported; these entries are kept and re-applied. Add approved suggestions with scripts/apply-overlay-export.mjs.",
+  "entries": []
+}
