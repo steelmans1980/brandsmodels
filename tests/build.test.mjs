@@ -10,7 +10,7 @@ import { execFileSync } from 'node:child_process';
 
 const OUT = fs.mkdtempSync(path.join(os.tmpdir(), 'car-build-'));
 const SITE_URL = 'https://cars.example.org';
-execFileSync('node', ['scripts/build.mjs'], { env: { ...process.env, BUILD_OUT: OUT, SITE_URL }, stdio: 'pipe' });
+execFileSync('node', ['scripts/build.mjs'], { env: { ...process.env, BUILD_OUT: OUT, SITE_URL, GA_ID: '' }, stdio: 'pipe' });
 const read = p => fs.readFileSync(path.join(OUT, p), 'utf8');
 const files = [];
 (function walk(d) { for (const e of fs.readdirSync(d, { withFileTypes: true })) { const p = path.join(d, e.name); if (e.isDirectory()) walk(p); else files.push(path.relative(OUT, p)); } })(OUT);
@@ -52,7 +52,7 @@ test('only the car site and its own assets are published', () => {
 
 test('analytics and Search Console tags appear only when configured', () => {
   const h = read('index.html');
-  assert.ok(!h.includes('googletagmanager') && !h.includes('name="ga-id"'), 'no analytics without an id');
+  assert.ok(!h.includes('googletagmanager') && !h.includes('name="ga-id"'), 'no analytics when the id is empty');
   const OUT2 = fs.mkdtempSync(path.join(os.tmpdir(), 'car-build-ga-'));
   execFileSync('node', ['scripts/build.mjs'], { env: { ...process.env, BUILD_OUT: OUT2, GA_ID: 'G-TEST12345' }, stdio: 'pipe' });
   const h2 = fs.readFileSync(path.join(OUT2, 'index.html'), 'utf8');

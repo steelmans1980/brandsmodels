@@ -1,7 +1,7 @@
 {
   "name": "The Car Archive",
   "url": "https://brandsmodels.com",
-  "googleAnalytics": "",
+  "googleAnalytics": "G-PRWBNKG09M",
   "googleSiteVerification": "",
   "about": "url: public base URL for canonical links and the sitemap (or SITE_URL at build time). googleAnalytics: a GA4 measurement id like G-XXXXXXXXXX; empty = no analytics; loaded only after a visitor agrees. googleSiteVerification: the token from Search Console's HTML-tag method, only if you do not verify through DNS."
 }
